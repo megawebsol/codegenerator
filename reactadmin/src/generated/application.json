@@ -1,0 +1,1178 @@
+{
+  "application": {
+    "name": "ImobiFlow",
+    "title": "Cadastro de imóvel",
+    "subtitle": "Registre o ativo, sua cadeia de titularidade e o contexto comercial."
+  },
+  "shell": {
+    "type": "sidebar-main",
+    "brand": "ImobiFlow",
+    "sidebar": {
+      "collapsible": true
+    },
+    "header": {
+      "show_status": true,
+      "show_progress": true
+    }
+  },
+  "navigation": [
+    {
+      "index": 0,
+      "id": "legal-unit",
+      "label": "Unidade jurídica"
+    },
+    {
+      "index": 1,
+      "id": "land-and-structure",
+      "label": "Terreno e estrutura"
+    },
+    {
+      "index": 2,
+      "id": "ownership-and-use",
+      "label": "Titularidade e uso"
+    },
+    {
+      "index": 3,
+      "id": "condominium",
+      "label": "Condomínio"
+    },
+    {
+      "index": 4,
+      "id": "mandate-and-listing",
+      "label": "Mandato e anúncio"
+    },
+    {
+      "index": 5,
+      "id": "documents",
+      "label": "Documentos"
+    },
+    {
+      "index": 6,
+      "id": "negotiation",
+      "label": "Negociação"
+    },
+    {
+      "index": 7,
+      "id": "review",
+      "label": "Revisão"
+    }
+  ],
+  "pages": [
+    {
+      "id": "legal-unit",
+      "sections": [
+        {
+          "id": "ontological-identity",
+          "title": "Identidade ontológica",
+          "layout": "card",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "asset_type",
+              "label": "Asset Type",
+              "value": "Unidade imobiliária legal",
+              "control": "select",
+              "options": [],
+              "required": true,
+              "layout": "half"
+            },
+            {
+              "id": "status",
+              "label": "Status",
+              "value": "draft",
+              "control": "select",
+              "options": [
+                "draft",
+                "under_review",
+                "ready_for_publication",
+                "published",
+                "suspended",
+                "sold",
+                "rented",
+                "closed"
+              ],
+              "required": true,
+              "layout": "half"
+            },
+            {
+              "id": "display_name",
+              "label": "Display Name",
+              "value": "Apartamento Jardins 142",
+              "control": "text",
+              "options": [],
+              "required": true,
+              "layout": "half"
+            },
+            {
+              "id": "semantic_id",
+              "label": "Semantic Id",
+              "value": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+              "control": "text",
+              "options": [],
+              "required": true,
+              "layout": "half"
+            },
+            {
+              "id": "registration_reference",
+              "label": "Registration Reference",
+              "value": "184.729 — 4º Registro de Imóveis",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "address",
+          "title": "Endereço completo",
+          "layout": "card-half",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "address",
+              "label": "Address",
+              "value": {
+                "street": "Rua Oscar Freire, 1420",
+                "neighborhood": "Jardins",
+                "postal_code": "01426-002",
+                "city": "São Paulo",
+                "state": "SP"
+              },
+              "control": "textarea",
+              "options": [],
+              "required": false,
+              "layout": "full"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "main-characteristics",
+          "title": "Características principais",
+          "layout": "card-half",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "physical.private_area_m2",
+              "label": "Private Area M2",
+              "value": 128.4,
+              "control": "number",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "physical.total_area_m2",
+              "label": "Total Area M2",
+              "value": 164.8,
+              "control": "number",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "physical.bedrooms",
+              "label": "Bedrooms",
+              "value": 3,
+              "control": "number",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "physical.suites",
+              "label": "Suites",
+              "value": 2,
+              "control": "number",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "physical.parking_spots",
+              "label": "Parking Spots",
+              "value": 2,
+              "control": "number",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "physical.floor",
+              "label": "Floor",
+              "value": 14,
+              "control": "number",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "asset-composition",
+          "title": "Composição do ativo",
+          "layout": "card",
+          "component": "relation-chain",
+          "fields": [],
+          "collection": null,
+          "relations": [
+            "evidenced_by",
+            "situated_on",
+            "embodied_in",
+            "located_at",
+            "part_of",
+            "included_in"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land-and-structure",
+      "sections": [
+        {
+          "id": "land-parcel",
+          "title": "Parcela territorial",
+          "layout": "card-half",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "land_parcel",
+              "label": "Land Parcel",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "physical-structure",
+          "title": "Estrutura física",
+          "layout": "card-half",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "physical",
+              "label": "Physical",
+              "value": {
+                "private_area_m2": 128.4,
+                "total_area_m2": 164.8,
+                "bedrooms": 3,
+                "suites": 2,
+                "parking_spots": 2,
+                "floor": 14,
+                "land_area_m2": 420,
+                "built_area_m2": 128.4,
+                "useful_area_m2": 112.1,
+                "construction_year": 2018,
+                "renovation": "2024 — cozinha e banheiros"
+              },
+              "control": "textarea",
+              "options": [],
+              "required": false,
+              "layout": "full"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "marketable-components",
+          "title": "Componentes comercializáveis",
+          "layout": "card",
+          "component": "checklist",
+          "fields": [],
+          "collection": {
+            "type": "checklist",
+            "name": "marketable_components",
+            "title": "Componentes comercializáveis",
+            "description": "",
+            "itemFields": [
+              "component_ref",
+              "component_kind",
+              "role"
+            ],
+            "rows": [
+              "Unidade 1404",
+              "Vaga 31",
+              "Vaga 32",
+              "Depósito D-14",
+              "MarketableBundle MB-481"
+            ],
+            "fields": [
+              {
+                "id": "0",
+                "label": "0",
+                "value": "U",
+                "control": "text"
+              },
+              {
+                "id": "1",
+                "label": "1",
+                "value": "n",
+                "control": "text"
+              },
+              {
+                "id": "2",
+                "label": "2",
+                "value": "i",
+                "control": "text"
+              },
+              {
+                "id": "3",
+                "label": "3",
+                "value": "d",
+                "control": "text"
+              },
+              {
+                "id": "4",
+                "label": "4",
+                "value": "a",
+                "control": "text"
+              },
+              {
+                "id": "5",
+                "label": "5",
+                "value": "d",
+                "control": "text"
+              },
+              {
+                "id": "6",
+                "label": "6",
+                "value": "e",
+                "control": "text"
+              },
+              {
+                "id": "7",
+                "label": "7",
+                "value": " ",
+                "control": "text"
+              },
+              {
+                "id": "8",
+                "label": "8",
+                "value": "1",
+                "control": "text"
+              },
+              {
+                "id": "9",
+                "label": "9",
+                "value": "4",
+                "control": "text"
+              },
+              {
+                "id": "10",
+                "label": "10",
+                "value": "0",
+                "control": "text"
+              },
+              {
+                "id": "11",
+                "label": "11",
+                "value": "4",
+                "control": "text"
+              }
+            ]
+          },
+          "relations": []
+        }
+      ]
+    },
+    {
+      "id": "ownership-and-use",
+      "sections": [
+        {
+          "id": "ownership",
+          "title": "Arranjo de titularidade",
+          "layout": "card",
+          "component": "repeatable-table",
+          "fields": [],
+          "collection": {
+            "type": "repeatable-table",
+            "name": "owners",
+            "title": "Arranjo de titularidade",
+            "description": "",
+            "itemFields": [
+              "party_ref",
+              "party_kind",
+              "ownership_share",
+              "evidence_ref"
+            ],
+            "rows": [
+              {
+                "name": "Mariana Alves de Carvalho",
+                "document": "***.482.190-**",
+                "share_percent": 50
+              },
+              {
+                "name": "Rafael Carvalho Neto",
+                "document": "***.190.774-**",
+                "share_percent": 50
+              }
+            ],
+            "fields": [
+              {
+                "id": "name",
+                "label": "Name",
+                "value": "Mariana Alves de Carvalho",
+                "control": "text"
+              },
+              {
+                "id": "document",
+                "label": "Document",
+                "value": "***.482.190-**",
+                "control": "text"
+              },
+              {
+                "id": "share_percent",
+                "label": "Share Percent",
+                "value": 50,
+                "control": "number"
+              }
+            ]
+          },
+          "relations": []
+        },
+        {
+          "id": "possession-and-occupancy",
+          "title": "Posse e ocupação",
+          "layout": "card-half",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "possession",
+              "label": "Possession",
+              "value": {
+                "possessor": "Mariana Alves de Carvalho",
+                "basis": "Proprietário",
+                "occupant": "Mariana Alves de Carvalho",
+                "purpose": "Residencial",
+                "from": "2024-01-15",
+                "to": null
+              },
+              "control": "textarea",
+              "options": [],
+              "required": false,
+              "layout": "full"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "rights-restrictions",
+          "title": "Direitos, ônus e restrições",
+          "layout": "card-half",
+          "component": "checklist",
+          "fields": [],
+          "collection": {
+            "type": "checklist",
+            "name": "rights_restrictions",
+            "title": "Direitos, ônus e restrições",
+            "description": "",
+            "itemFields": [
+              "kind",
+              "holder_ref",
+              "status",
+              "evidence_ref",
+              "valid_from",
+              "valid_to"
+            ],
+            "rows": [
+              "Alienação fiduciária"
+            ],
+            "fields": [
+              {
+                "id": "0",
+                "label": "0",
+                "value": "A",
+                "control": "text"
+              },
+              {
+                "id": "1",
+                "label": "1",
+                "value": "l",
+                "control": "text"
+              },
+              {
+                "id": "2",
+                "label": "2",
+                "value": "i",
+                "control": "text"
+              },
+              {
+                "id": "3",
+                "label": "3",
+                "value": "e",
+                "control": "text"
+              },
+              {
+                "id": "4",
+                "label": "4",
+                "value": "n",
+                "control": "text"
+              },
+              {
+                "id": "5",
+                "label": "5",
+                "value": "a",
+                "control": "text"
+              },
+              {
+                "id": "6",
+                "label": "6",
+                "value": "ç",
+                "control": "text"
+              },
+              {
+                "id": "7",
+                "label": "7",
+                "value": "ã",
+                "control": "text"
+              },
+              {
+                "id": "8",
+                "label": "8",
+                "value": "o",
+                "control": "text"
+              },
+              {
+                "id": "9",
+                "label": "9",
+                "value": " ",
+                "control": "text"
+              },
+              {
+                "id": "10",
+                "label": "10",
+                "value": "f",
+                "control": "text"
+              },
+              {
+                "id": "11",
+                "label": "11",
+                "value": "i",
+                "control": "text"
+              },
+              {
+                "id": "12",
+                "label": "12",
+                "value": "d",
+                "control": "text"
+              },
+              {
+                "id": "13",
+                "label": "13",
+                "value": "u",
+                "control": "text"
+              },
+              {
+                "id": "14",
+                "label": "14",
+                "value": "c",
+                "control": "text"
+              },
+              {
+                "id": "15",
+                "label": "15",
+                "value": "i",
+                "control": "text"
+              },
+              {
+                "id": "16",
+                "label": "16",
+                "value": "á",
+                "control": "text"
+              },
+              {
+                "id": "17",
+                "label": "17",
+                "value": "r",
+                "control": "text"
+              },
+              {
+                "id": "18",
+                "label": "18",
+                "value": "i",
+                "control": "text"
+              },
+              {
+                "id": "19",
+                "label": "19",
+                "value": "a",
+                "control": "text"
+              }
+            ]
+          },
+          "relations": []
+        }
+      ]
+    },
+    {
+      "id": "condominium",
+      "sections": [
+        {
+          "id": "building-condominium",
+          "title": "Condomínio e edifício",
+          "layout": "card-half",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "condominium",
+              "label": "Condominium",
+              "value": {
+                "legal_name": "Edifício Alameda Jardins",
+                "tax_id": "98.765.432/0001-10",
+                "type": "Condomínio edilício",
+                "units": 48,
+                "towers": "1 torre · 18 pavimentos",
+                "common_areas": "Piscina · academia · salão · lobby",
+                "syndic": "Fernanda Nogueira",
+                "administrator": "Plena Gestão Condominial",
+                "vice_syndic": "Carlos Vaz",
+                "council": "Conselho fiscal — 3 membros",
+                "fee": 1780,
+                "reserve_fund": 180
+              },
+              "control": "textarea",
+              "options": [],
+              "required": false,
+              "layout": "full"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "condominium-administration",
+          "title": "Administração condominial",
+          "layout": "card-half",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "condominium.syndic_ref",
+              "label": "Syndic Ref",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "condominium.administrator_ref",
+              "label": "Administrator Ref",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "condominium.vice_syndic_ref",
+              "label": "Vice Syndic Ref",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "condominium.council_ref",
+              "label": "Council Ref",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "financial-maintenance",
+          "title": "Gestão financeira e manutenção",
+          "layout": "card",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "condominium.fee",
+              "label": "Fee",
+              "value": 1780,
+              "control": "number",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "condominium.reserve_fund",
+              "label": "Reserve Fund",
+              "value": 180,
+              "control": "number",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        }
+      ]
+    },
+    {
+      "id": "mandate-and-listing",
+      "sections": [
+        {
+          "id": "brokerage-mandate",
+          "title": "Mandato de intermediação",
+          "layout": "card-half",
+          "component": "repeatable-form",
+          "fields": [],
+          "collection": {
+            "type": "repeatable-form",
+            "name": "mandates",
+            "title": "Mandato de intermediação",
+            "description": "",
+            "itemFields": [
+              "authorizer_ref",
+              "agency_ref",
+              "broker_refs",
+              "exclusive",
+              "minimum_price",
+              "commission",
+              "valid_from",
+              "valid_to",
+              "contract_ref"
+            ],
+            "rows": [
+              {
+                "exclusive": true,
+                "expires": "2027-03-31",
+                "minimum_price": 1420000,
+                "commission_percent": 6,
+                "territory": "São Paulo · portais e rede parceira",
+                "agency": "Alameda Negócios Imobiliários",
+                "partner_agencies": [
+                  "Ponte Alta Consultoria"
+                ],
+                "brokers": [
+                  "Camila Torres",
+                  "Eduardo Mello"
+                ]
+              }
+            ],
+            "fields": [
+              {
+                "id": "exclusive",
+                "label": "Exclusive",
+                "value": true,
+                "control": "text"
+              },
+              {
+                "id": "expires",
+                "label": "Expires",
+                "value": "2027-03-31",
+                "control": "text"
+              },
+              {
+                "id": "minimum_price",
+                "label": "Minimum Price",
+                "value": 1420000,
+                "control": "number"
+              },
+              {
+                "id": "commission_percent",
+                "label": "Commission Percent",
+                "value": 6,
+                "control": "number"
+              },
+              {
+                "id": "territory",
+                "label": "Territory",
+                "value": "São Paulo · portais e rede parceira",
+                "control": "text"
+              },
+              {
+                "id": "agency",
+                "label": "Agency",
+                "value": "Alameda Negócios Imobiliários",
+                "control": "text"
+              },
+              {
+                "id": "partner_agencies",
+                "label": "Partner Agencies",
+                "value": [
+                  "Ponte Alta Consultoria"
+                ],
+                "control": "text"
+              },
+              {
+                "id": "brokers",
+                "label": "Brokers",
+                "value": [
+                  "Camila Torres",
+                  "Eduardo Mello"
+                ],
+                "control": "text"
+              }
+            ]
+          },
+          "relations": []
+        },
+        {
+          "id": "brokers-agencies",
+          "title": "Corretores e imobiliárias",
+          "layout": "card-half",
+          "component": "repeatable-table",
+          "fields": [],
+          "collection": {
+            "type": "repeatable-table",
+            "name": "brokers",
+            "title": "Corretores e imobiliárias",
+            "description": "",
+            "itemFields": [
+              "party_ref",
+              "creci",
+              "agency_ref",
+              "role"
+            ],
+            "rows": [],
+            "fields": []
+          },
+          "relations": []
+        },
+        {
+          "id": "listing-publication",
+          "title": "Listing e publicações",
+          "layout": "card",
+          "component": "repeatable-form",
+          "fields": [],
+          "collection": {
+            "type": "repeatable-form",
+            "name": "listings",
+            "title": "Listing e publicações",
+            "description": "",
+            "itemFields": [
+              "id",
+              "status",
+              "asking_price",
+              "currency",
+              "portal_ref",
+              "channel_refs",
+              "description",
+              "media_refs"
+            ],
+            "rows": [
+              {
+                "id": "listing-jardins-142",
+                "status": "Publicado",
+                "asking_price": 1480000,
+                "currency": "BRL",
+                "primary_portal": "Portal Alameda",
+                "channels": [
+                  "Site próprio",
+                  "Instagram",
+                  "Portal parceiro"
+                ],
+                "photos": 24
+              }
+            ],
+            "fields": [
+              {
+                "id": "id",
+                "label": "Id",
+                "value": "listing-jardins-142",
+                "control": "text"
+              },
+              {
+                "id": "status",
+                "label": "Status",
+                "value": "Publicado",
+                "control": "text"
+              },
+              {
+                "id": "asking_price",
+                "label": "Asking Price",
+                "value": 1480000,
+                "control": "number"
+              },
+              {
+                "id": "currency",
+                "label": "Currency",
+                "value": "BRL",
+                "control": "text"
+              },
+              {
+                "id": "primary_portal",
+                "label": "Primary Portal",
+                "value": "Portal Alameda",
+                "control": "text"
+              },
+              {
+                "id": "channels",
+                "label": "Channels",
+                "value": [
+                  "Site próprio",
+                  "Instagram",
+                  "Portal parceiro"
+                ],
+                "control": "text"
+              },
+              {
+                "id": "photos",
+                "label": "Photos",
+                "value": 24,
+                "control": "number"
+              }
+            ]
+          },
+          "relations": []
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "sections": [
+        {
+          "id": "technical-regularity",
+          "title": "Regularidade e documentos técnicos",
+          "layout": "card",
+          "component": "checklist",
+          "fields": [],
+          "collection": {
+            "type": "checklist",
+            "name": "technical_documents",
+            "title": "Regularidade e documentos técnicos",
+            "description": "",
+            "itemFields": [
+              "document_ref",
+              "kind",
+              "status",
+              "issued_by",
+              "valid_from",
+              "valid_to"
+            ],
+            "rows": [],
+            "fields": []
+          },
+          "relations": []
+        },
+        {
+          "id": "contract-documents",
+          "title": "Documentos contratuais",
+          "layout": "card-half",
+          "component": "summary-list",
+          "fields": [],
+          "collection": {
+            "type": "summary-list",
+            "name": "contract_documents",
+            "title": "Documentos contratuais",
+            "description": "",
+            "itemFields": [
+              "document_ref",
+              "kind",
+              "status",
+              "hash"
+            ],
+            "rows": [],
+            "fields": []
+          },
+          "relations": []
+        },
+        {
+          "id": "due-diligence",
+          "title": "Diligência",
+          "layout": "card-half",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "review_status",
+              "label": "Review Status",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "pending_items",
+              "label": "Pending Items",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        }
+      ]
+    },
+    {
+      "id": "negotiation",
+      "sections": [
+        {
+          "id": "demand-visit",
+          "title": "Demanda e visita",
+          "layout": "card-third",
+          "component": "fields",
+          "fields": [],
+          "collection": {
+            "type": "collection",
+            "name": "visits",
+            "title": "Demanda e visita",
+            "description": "",
+            "itemFields": [
+              "party_ref",
+              "scheduled_at",
+              "status",
+              "notes"
+            ],
+            "rows": [],
+            "fields": []
+          },
+          "relations": []
+        },
+        {
+          "id": "offer",
+          "title": "Oferta",
+          "layout": "card-third",
+          "component": "fields",
+          "fields": [],
+          "collection": {
+            "type": "collection",
+            "name": "offers",
+            "title": "Oferta",
+            "description": "",
+            "itemFields": [
+              "buyer_ref",
+              "value",
+              "currency",
+              "financing",
+              "condition",
+              "status"
+            ],
+            "rows": [],
+            "fields": []
+          },
+          "relations": []
+        },
+        {
+          "id": "acceptance",
+          "title": "Aceite e acordo",
+          "layout": "card-third",
+          "component": "fields",
+          "fields": [
+            {
+              "id": "acceptance_status",
+              "label": "Acceptance Status",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "response_deadline",
+              "label": "Response Deadline",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            },
+            {
+              "id": "negotiation_notes",
+              "label": "Negotiation Notes",
+              "control": "text",
+              "options": [],
+              "required": false,
+              "layout": "half"
+            }
+          ],
+          "collection": null,
+          "relations": []
+        },
+        {
+          "id": "closing-case",
+          "title": "Closing case",
+          "layout": "card",
+          "component": "checklist",
+          "fields": [],
+          "collection": {
+            "type": "checklist",
+            "name": "closing_milestones",
+            "title": "Closing case",
+            "description": "",
+            "itemFields": [
+              "kind",
+              "status",
+              "completed_at",
+              "evidence_ref"
+            ],
+            "rows": [],
+            "fields": []
+          },
+          "relations": []
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "sections": [
+        {
+          "id": "review-summary",
+          "title": "Mapa final do cadastro",
+          "layout": "card",
+          "component": "record-summary",
+          "fields": [],
+          "collection": null,
+          "relations": []
+        }
+      ]
+    }
+  ],
+  "actions": {
+    "previous": "Voltar",
+    "next": "Continuar",
+    "finish": "Concluir",
+    "save": "Salvar rascunho",
+    "publish": "Publicar cadastro"
+  },
+  "asset": {
+    "id": "IM-2026-00481",
+    "displayName": "Apartamento Jardins 142",
+    "status": "draft"
+  },
+  "template": {
+    "id": "imobiflow-property-registration",
+    "version": "1.0.0",
+    "entity": "RealEstateAsset",
+    "rules": {
+      "ownership_share_total": "owners shares must total 100 when declared",
+      "publication_requires": [
+        "asset_id",
+        "display_name",
+        "address",
+        "owners",
+        "mandates",
+        "listings"
+      ],
+      "never_infer": [
+        "owner_from_advertiser",
+        "legal_identity_from_address",
+        "possession_from_ownership",
+        "occupancy_from_possession",
+        "sale_from_accepted_offer"
+      ],
+      "roles_are_distinct": [
+        "owner",
+        "possessor",
+        "occupant",
+        "realtor",
+        "advertiser"
+      ]
+    }
+  }
+}

@@ -1,44 +1,20 @@
 import React, { useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { AdminContext, AppBar, Layout, List, Resource, Show, SimpleShowLayout, TextField, Datagrid, FunctionField, useGetList, useRecordContext } from 'react-admin';
-import { Box, Card, CardContent, Chip, Divider, Drawer, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
-import ApartmentRoundedIcon from '@mui/icons-material/ApartmentRounded';
-import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
-import HomeWorkRoundedIcon from '@mui/icons-material/HomeWorkRounded';
+import { AdminContext, Resource } from 'react-admin';
+import { Box, Card, CardContent, Chip, Divider, Stack, Typography } from '@mui/material';
+import application from './generated/application.json';
 
-import hierarchy from '../data.json';
-
-const primary = hierarchy.root.children.find((node) => node.type === 'LegalPropertyUnit');
-const directRelationships = hierarchy.direct_relationships;
-
-const flatten = (node, result = []) => {
-  result.push(node);
-  (node.children || []).filter((child) => typeof child === 'object').forEach((child) => flatten(child, result));
-  return result;
-};
-
-const nodes = flatten(hierarchy.root).filter((node) => node.type !== 'RealEstateAsset');
-const records = nodes.map((node, index) => ({
-  id: node.id,
-  type: node.type,
-  label: node.label,
-  role: node.role || 'Domain entity',
-  fieldCount: (node.items || []).length,
-  relationCount: (node.direct_connections || []).length,
-  status: index % 4 === 0 ? 'active' : index % 4 === 1 ? 'linked' : 'configured',
-  items: node.items || [],
-  children: node.children || [],
-}));
+const value = (input) => typeof input === 'object' && input !== null ? JSON.stringify(input) : String(input ?? '');
 
 const dataProvider = {
   getList: async (_resource, params = {}) => {
-    const search = params.filter?.q?.toLowerCase() || '';
-    const filtered = records.filter((record) => `${record.type} ${record.label}`.toLowerCase().includes(search));
-    return { data: filtered, total: filtered.length };
+    const query = String(params.filter?.q || '').toLowerCase();
+    const records = application.pages.flatMap((page) => page.sections).map((section) => ({ id: section.id, title: section.title, layout: section.layout, fields: section.fields, collection: section.collection })).filter((record) => `${record.id} ${record.title}`.toLowerCase().includes(query));
+    return { data: records, total: records.length };
   },
-  getOne: async (_resource, params) => ({ data: records.find((record) => record.id === params.id) || records[0] }),
-  getMany: async (_resource, params) => ({ data: records.filter((record) => params.ids.includes(record.id)) }),
-  getManyReference: async (_resource) => ({ data: records, total: records.length }),
+  getOne: async (_resource, params) => ({ data: application.pages.flatMap((page) => page.sections).map((section) => ({ id: section.id, ...section })).find((record) => record.id === params.id) }),
+  getMany: async (_resource, params) => ({ data: params.ids.map((id) => ({ id })) }),
+  getManyReference: async () => ({ data: [], total: 0 }),
   create: async (_resource, params) => ({ data: { ...params.data, id: crypto.randomUUID() } }),
   update: async (_resource, params) => ({ data: params.data }),
   updateMany: async (_resource, params) => ({ data: params.ids }),
@@ -46,46 +22,21 @@ const dataProvider = {
   deleteMany: async (_resource, params) => ({ data: params.ids }),
 };
 
-const theme = {
-  palette: { mode: 'light', primary: { main: '#176b57' }, secondary: { main: '#d48545' }, background: { default: '#f5f7f4' } },
-  shape: { borderRadius: 12 },
-};
+const theme = { palette: { primary: { main: '#1c765d' }, secondary: { main: '#d78645' }, background: { default: '#f6f8f5' } }, shape: { borderRadius: 12 } };
 
-function SchemaLayout({ children }) {
-  return <Layout appBar={SchemaAppBar}>{children}</Layout>;
+function GeneratedField({ field }) {
+  return <Box sx={{ border: '1px solid #dfe7e1', borderRadius: 1, p: 1.2 }}><Typography variant="caption" color="text.secondary">{field.label}{field.required ? ' *' : ''}</Typography><Typography variant="body2">{value(field.value) || '—'}</Typography></Box>;
 }
 
-function SchemaAppBar() {
-  return <AppBar color="transparent" elevation={0} sx={{ borderBottom: '1px solid #dfe7e1' }}><Typography variant="h6" sx={{ color: '#173f35', fontWeight: 800 }}>Real Estate Schema Admin</Typography><Box sx={{ flex: 1 }} /><Chip label={`${nodes.length} schema nodes`} color="primary" variant="outlined" /></AppBar>;
-}
-
-function SchemaList() {
-  return <List title="Domain hierarchy"><Datagrid rowClick="show" bulkActionButtons={false}><TextField source="type" label="Type" /><TextField source="label" label="Label" /><TextField source="role" label="Role" /><TextField source="status" label="Status" /><FunctionField label="Metadata" render={(record) => `${record.fieldCount} fields · ${record.relationCount} relations`} /></Datagrid></List>;
-}
-
-function NodeDetails() {
-  const record = useRecordContext();
-  if (!record) return null;
-  return <Stack spacing={2} sx={{ p: 2 }}>
-    <Card><CardContent><Typography variant="overline" color="primary">Generated from JSON metadata</Typography><Typography variant="h4" sx={{ fontWeight: 800 }}>{record.label}</Typography><Typography color="text.secondary">{record.type} · {record.role}</Typography></CardContent></Card>
-    <Card><CardContent><Typography variant="h6">Declared fields</Typography><Stack direction="row" flexWrap="wrap" gap={1} mt={2}>{record.items.map((item) => <Chip key={item} label={item} variant="outlined" />)}</Stack></CardContent></Card>
-    <Card><CardContent><Typography variant="h6">Child schema</Typography><Stack gap={1} mt={2}>{record.children.length ? record.children.map((child) => <Box key={child.id} sx={{ p: 1.5, bgcolor: '#f5f7f4', borderRadius: 2 }}><b>{child.label}</b><Typography variant="caption" display="block">{child.type}{child.role ? ` · ${child.role}` : ''}</Typography></Box>) : <Typography color="text.secondary">No nested entity metadata.</Typography>}</Stack></CardContent></Card>
-  </Stack>;
-}
-
-function SchemaShow() {
-  return <Show title="Schema node"><SimpleShowLayout><NodeDetails /></SimpleShowLayout></Show>;
-}
-
-function Overview() {
-  const [selected, setSelected] = useState(primary?.id || nodes[0]?.id);
-  const selectedNode = records.find((record) => record.id === selected) || records[0];
-  const relationshipRows = useMemo(() => directRelationships.slice(0, 8), []);
-  return <Box sx={{ p: 3 }}><Stack direction={{ xs: 'column', md: 'row' }} gap={2} mb={3}><Card sx={{ flex: 1 }}><CardContent><Typography color="text.secondary">Root schema</Typography><Typography variant="h4" fontWeight={800}>{hierarchy.root.label}</Typography><Typography>{hierarchy.schema} · v{hierarchy.version}</Typography></CardContent></Card><Card sx={{ flex: 1 }}><CardContent><Typography color="text.secondary">Generated nodes</Typography><Typography variant="h4" fontWeight={800}>{nodes.length}</Typography><Typography>All records derive from <code>data.json</code>.</Typography></CardContent></Card></Stack><Stack direction={{ xs: 'column', lg: 'row' }} gap={2}><Card sx={{ flex: 1 }}><CardContent><Typography variant="h6" mb={2}>Schema tree</Typography><Stack gap={1}>{nodes.slice(0, 14).map((node) => <ListItemButton key={node.id} selected={node.id === selected} onClick={() => setSelected(node.id)}><AccountTreeRoundedIcon sx={{ mr: 1, color: 'primary.main' }} /><ListItemText primary={node.label} secondary={`${node.type} · ${node.fieldCount} fields`} /></ListItemButton>)}</Stack></CardContent></Card><Card sx={{ flex: 1.3 }}><CardContent><Typography variant="overline" color="primary">Selected node</Typography><Typography variant="h4" fontWeight={800}>{selectedNode.label}</Typography><Typography color="text.secondary">{selectedNode.type}</Typography><Divider sx={{ my: 2 }} /><Typography variant="h6">Fields</Typography><Stack direction="row" flexWrap="wrap" gap={1} mt={1}>{selectedNode.items.map((item) => <Chip key={item} label={item} />)}</Stack><Typography variant="h6" mt={3}>Direct relationships</Typography><Stack gap={1} mt={1}>{relationshipRows.map((row) => <Box key={row.type} sx={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #e2e8e3', py: 1 }}><b>{row.type}</b><span>{row.from} → {row.to}</span></Box>)}</Stack></CardContent></Card></Stack></Box>;
+function GeneratedCard({ section }) {
+  if (section.collection) return <Card><CardContent><Typography variant="h6">{section.title}</Typography><Typography variant="body2" color="text.secondary" mb={2}>{section.collection.itemFields.join(' · ')}</Typography><Stack gap={1}>{section.collection.rows.map((row, index) => <Box key={index} sx={{ border: '1px solid #dfe7e1', borderRadius: 1, p: 1.5 }}>{Object.entries(row).map(([key, item]) => <Typography variant="body2" key={key}><b>{key}:</b> {value(item)}</Typography>)}</Box>)}</Stack></CardContent></Card>;
+  return <Card><CardContent><Typography variant="h6">{section.title}</Typography><Stack direction="row" flexWrap="wrap" gap={1.5} mt={2}>{section.fields.map((field) => <Box key={field.id} sx={{ flex: field.layout === 'full' ? '1 1 100%' : '1 1 220px' }}><GeneratedField field={field} /></Box>)}</Stack></CardContent></Card>;
 }
 
 function App() {
-  return <AdminContext dataProvider={dataProvider} theme={theme}><Resource name="schema" list={SchemaList} show={SchemaShow} icon={HomeWorkRoundedIcon} options={{ label: 'Schema' }} /><Overview /></AdminContext>;
+  const [page, setPage] = useState(0);
+  const current = application.pages[page] || application.pages[0];
+  return <AdminContext dataProvider={dataProvider} theme={theme}><Resource name="generated-sections" /><Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '246px 1fr' }, minHeight: '100vh', bgcolor: 'background.default' }}><Box component="aside" sx={{ bgcolor: '#124c3e', color: '#d9eee5', p: 2.5 }}><Typography variant="h5" fontWeight={800} color="white" mb={4}>{application.shell.brand || application.application.name}</Typography><Typography variant="overline">Generated operation</Typography><Stack mt={1}>{application.navigation.map((item, index) => <Box key={item.id} onClick={() => setPage(index)} sx={{ p: 1.3, my: .3, borderRadius: 1, cursor: 'pointer', bgcolor: page === index ? 'rgba(255,255,255,.13)' : 'transparent', color: page === index ? 'white' : '#a8cabe' }}><b>{index + 1}</b> {item.label}</Box>)}</Stack><Typography variant="caption" display="block" mt={8}>Source: generated/application.json</Typography></Box><Box component="main" sx={{ p: { xs: 2, md: 4 } }}><Stack direction="row" justifyContent="space-between" alignItems="start" mb={3}><Box><Typography variant="h3" fontWeight={800}>{application.application.title}</Typography><Typography color="text.secondary">{application.application.subtitle}</Typography></Box><Chip label={`Asset: ${application.asset.displayName}`} color="primary" variant="outlined" /></Stack><Typography variant="overline" color="primary">{current.id}</Typography><Typography variant="h5" mb={2}>{current.id === 'review' ? 'Composição completa para revisão' : current.id}</Typography><Stack gap={2}>{current.sections.map((section) => <GeneratedCard key={section.id} section={section} />)}</Stack></Box></Box></AdminContext>;
 }
 
 createRoot(document.getElementById('root')).render(<App />);
