@@ -1,0 +1,454 @@
+{
+  "schema": "imobiflow-demo-record",
+  "version": "1.0.0",
+  "source": "index.html",
+  "purpose": "Base de dados declarativa do cadastro demonstrativo usado pelo protótipo ImobiFlow. A apresentação pode ser reconstruída a partir deste documento.",
+  "application": {
+    "name": "ImobiFlow",
+    "brand_mark": "⌂",
+    "screen_title": "Cadastro de imóvel",
+    "subtitle": "Registre o ativo, sua cadeia de titularidade e o contexto comercial.",
+    "eyebrow": "Novo cadastro",
+    "status": {
+      "label": "Rascunho salvo",
+      "tone": "success"
+    },
+    "record": {
+      "id": "IM-2026-00481",
+      "status": "draft",
+      "status_label": "rascunho salvo localmente",
+      "workspace": "real_estate",
+      "environment": "produção"
+    }
+  },
+  "navigation": {
+    "initial_step": 0,
+    "steps": [
+      {"index": 0, "label": "Unidade jurídica", "title": "Unidade jurídica"},
+      {"index": 1, "label": "Terreno e estrutura", "title": "Terreno e estrutura"},
+      {"index": 2, "label": "Titularidade e uso", "title": "Titularidade e uso"},
+      {"index": 3, "label": "Condomínio", "title": "Condomínio"},
+      {"index": 4, "label": "Mandato e anúncio", "title": "Mandato e anúncio"},
+      {"index": 5, "label": "Documentos", "title": "Documentos"},
+      {"index": 6, "label": "Negociação", "title": "Negociação"},
+      {"index": 7, "label": "Revisão", "title": "Revisão final"}
+    ],
+    "progress_label_template": "Etapa {current} de {total}",
+    "actions": {
+      "previous": "← Voltar",
+      "next": "Continuar →",
+      "finish": "Concluir ✓",
+      "save": "Salvar rascunho",
+      "publish": "Publicar cadastro demonstrativo"
+    }
+  },
+  "workflow": [
+    {
+      "index": 0,
+      "id": "legal-unit",
+      "title": "Unidade jurídica",
+      "cards": [
+        {
+          "id": "ontological-identity",
+          "title": "Identidade ontológica",
+          "description": "Dados-base do ativo imobiliário. O registro não substitui a identidade do imóvel.",
+          "fields": [
+            {"id": "asset_type", "label": "Tipo de ativo", "control": "select", "value": "Unidade imobiliária legal", "options": ["Unidade imobiliária legal", "Terreno", "Edificação", "Condomínio"]},
+            {"id": "registration_status", "label": "Status do cadastro", "control": "select", "value": "Em análise", "options": ["Em análise", "Ativo", "Rascunho"]},
+            {"id": "display_name", "label": "Nome de apresentação", "control": "text", "value": "Apartamento Jardins 142", "layout": "full"},
+            {"id": "semantic_id", "label": "ID semântico", "control": "text", "value": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211"},
+            {"id": "registration_reference", "label": "Matrícula / registro", "control": "text", "value": "184.729 — 4º Registro de Imóveis"}
+          ]
+        },
+        {
+          "id": "address",
+          "title": "Endereço completo",
+          "description": "Localização física e postal.",
+          "fields": [
+            {"id": "street", "label": "Logradouro", "control": "text", "value": "Rua Oscar Freire, 1420", "layout": "full"},
+            {"id": "neighborhood", "label": "Bairro", "control": "text", "value": "Jardins"},
+            {"id": "postal_code", "label": "CEP", "control": "text", "value": "01426-002"},
+            {"id": "city", "label": "Cidade", "control": "text", "value": "São Paulo"},
+            {"id": "state", "label": "UF", "control": "select", "value": "SP", "options": ["SP", "RJ", "MG"]}
+          ]
+        },
+        {
+          "id": "main-characteristics",
+          "title": "Características principais",
+          "description": "Resumo físico para a ficha comercial.",
+          "fields": [
+            {"id": "private_area", "label": "Área privativa", "control": "text", "value": "128,40 m²"},
+            {"id": "total_area", "label": "Área total", "control": "text", "value": "164,80 m²"},
+            {"id": "bedrooms", "label": "Dormitórios", "control": "number", "value": "3"},
+            {"id": "suites", "label": "Suítes", "control": "number", "value": "2"},
+            {"id": "parking_spots", "label": "Vagas", "control": "number", "value": "2"},
+            {"id": "floor", "label": "Andar", "control": "text", "value": "14º"}
+          ]
+        },
+        {
+          "id": "asset-composition",
+          "title": "Composição do ativo",
+          "description": "O imóvel não é uma entidade monolítica: esta unidade jurídica conecta os contextos abaixo.",
+          "relation_chain": [
+            {"from": "LegalPropertyUnit", "relation": "evidenced_by", "to": "RegistryEvidence"},
+            {"from": "RegistryEvidence", "relation": "situated_on", "to": "LandParcel"},
+            {"from": "LandParcel", "relation": "embodied_in", "to": "PhysicalStructure"},
+            {"from": "PhysicalStructure", "relation": "located_at", "to": "Place"},
+            {"from": "Place", "relation": "part_of", "to": "Building / Condominium"},
+            {"from": "Building / Condominium", "relation": "included_in", "to": "MarketableBundle"}
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "id": "land-and-structure",
+      "title": "Terreno e estrutura",
+      "cards": [
+        {
+          "id": "land-parcel",
+          "title": "Parcela territorial",
+          "description": "Terreno, lote ou gleba que sustenta a unidade jurídica.",
+          "fields": [
+            {"id": "parcel_origin", "label": "Origem da parcela", "control": "select", "value": "Lote urbano", "options": ["Lote urbano", "Desmembramento", "Gleba rural"]},
+            {"id": "land_area", "label": "Área do terreno", "control": "text", "value": "420,00 m²"},
+            {"id": "boundaries", "label": "Confrontações", "control": "text", "value": "Norte: lote 18 · Sul: Rua Oscar Freire · Leste: lote 20 · Oeste: lote 16", "layout": "full"},
+            {"id": "fractional_interest", "label": "Fração ideal", "control": "text", "value": "8,42%"},
+            {"id": "municipal_registration", "label": "Cadastro municipal", "control": "text", "value": "09.123.045.001-7"}
+          ]
+        },
+        {
+          "id": "physical-structure",
+          "title": "Estrutura física",
+          "description": "Edificação, unidade construída e alterações materiais.",
+          "fields": [
+            {"id": "structure_type", "label": "Tipo", "control": "select", "value": "Apartamento em torre", "options": ["Apartamento em torre", "Casa", "Sala comercial"]},
+            {"id": "construction_year", "label": "Ano de construção", "control": "number", "value": "2018"},
+            {"id": "built_area", "label": "Área construída", "control": "text", "value": "128,40 m²"},
+            {"id": "useful_area", "label": "Área útil", "control": "text", "value": "112,10 m²"},
+            {"id": "latest_renovation", "label": "Reforma mais recente", "control": "text", "value": "2024 — cozinha e banheiros"},
+            {"id": "construction_state", "label": "Estado", "control": "select", "value": "Concluída", "options": ["Concluída", "Em obra", "Demolida"]}
+          ]
+        },
+        {
+          "id": "marketable-components",
+          "title": "Unidades e acessórios no conjunto comercializável",
+          "description": "Itens vendidos ou alugados juntos, sem duplicar a identidade do imóvel.",
+          "control": "checklist",
+          "items": [
+            {"label": "Unidade 1404", "checked": true},
+            {"label": "Vaga 31", "checked": true},
+            {"label": "Vaga 32", "checked": true},
+            {"label": "Depósito D-14", "checked": true},
+            {"label": "Direito de uso da cobertura", "checked": false},
+            {"label": "MarketableBundle MB-481", "checked": true}
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "ownership-and-use",
+      "title": "Titularidade e uso",
+      "cards": [
+        {
+          "id": "ownership",
+          "title": "Arranjo de titularidade",
+          "description": "Proprietário não é sinônimo de possuidor, ocupante, corretor ou anunciante.",
+          "repeatable_collection": "owners",
+          "rows": [
+            {"name": "Mariana Alves de Carvalho", "document": "***.482.190-**", "document_label": "CPF / CNPJ"},
+            {"name": "Rafael Carvalho Neto", "document": "***.190.774-**", "document_label": "CPF / CNPJ"}
+          ],
+          "fields": [
+            {"id": "mariana_share", "label": "Mariana Alves — fração ideal", "control": "text", "value": "50%"},
+            {"id": "rafael_share", "label": "Rafael Carvalho — fração ideal", "control": "text", "value": "50%"},
+            {"id": "authorized_representative", "label": "Representante autorizado", "control": "text", "value": "Não informado"},
+            {"id": "power_of_attorney_expiry", "label": "Procuração vigente até", "control": "date", "value": "2027-02-10"}
+          ],
+          "add_action": "+ Adicionar proprietário PF/PJ"
+        },
+        {
+          "id": "possession-and-occupancy",
+          "title": "Posse e ocupação",
+          "description": "Linhas de uso independentes da titularidade.",
+          "fields": [
+            {"id": "current_possessor", "label": "Possuidor atual", "control": "text", "value": "Mariana Alves de Carvalho"},
+            {"id": "possession_basis", "label": "Base da posse", "control": "select", "value": "Proprietário", "options": ["Proprietário", "Contrato de locação", "Comodato"]},
+            {"id": "occupant", "label": "Ocupante", "control": "text", "value": "Mariana Alves de Carvalho"},
+            {"id": "use_purpose", "label": "Finalidade", "control": "select", "value": "Residencial", "options": ["Residencial", "Comercial", "Mista"]},
+            {"id": "occupancy_start", "label": "Início da vigência", "control": "date", "value": "2024-01-15"},
+            {"id": "occupancy_end", "label": "Fim da vigência", "control": "text", "value": "Em aberto"}
+          ]
+        },
+        {
+          "id": "rights-restrictions",
+          "title": "Direitos, ônus e restrições",
+          "description": "Relações jurídicas aplicáveis ao ativo.",
+          "control": "checklist",
+          "items": [
+            {"label": "Usufruto", "checked": false},
+            {"label": "Servidão", "checked": false},
+            {"label": "Alienação fiduciária", "checked": true},
+            {"label": "Hipoteca", "checked": false},
+            {"label": "Penhora", "checked": false},
+            {"label": "Restrição urbanística", "checked": false}
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "condominium",
+      "title": "Condomínio",
+      "cards": [
+        {
+          "id": "building-condominium",
+          "title": "Condomínio e edifício",
+          "description": "Estrutura coletiva, unidades autônomas e áreas comuns.",
+          "fields": [
+            {"id": "legal_name", "label": "Nome legal", "control": "text", "value": "Edifício Alameda Jardins", "layout": "full"},
+            {"id": "condominium_tax_id", "label": "CNPJ", "control": "text", "value": "98.765.432/0001-10"},
+            {"id": "condominium_type", "label": "Tipo", "control": "select", "value": "Condomínio edilício", "options": ["Condomínio edilício", "Condomínio horizontal", "Empreendimento"]},
+            {"id": "autonomous_units", "label": "Unidades autônomas", "control": "number", "value": "48"},
+            {"id": "towers_blocks", "label": "Torres/blocos", "control": "text", "value": "1 torre · 18 pavimentos"},
+            {"id": "common_areas", "label": "Áreas comuns", "control": "text", "value": "Piscina · academia · salão · lobby"}
+          ]
+        },
+        {
+          "id": "condominium-administration",
+          "title": "Administração condominial",
+          "description": "Responsáveis, conselho e governança do condomínio.",
+          "fields": [
+            {"id": "syndic", "label": "Síndica", "control": "text", "value": "Fernanda Nogueira"},
+            {"id": "administrator", "label": "Administradora", "control": "text", "value": "Plena Gestão Condominial"},
+            {"id": "vice_syndic", "label": "Subsíndico", "control": "text", "value": "Carlos Vaz"},
+            {"id": "council", "label": "Conselho", "control": "text", "value": "Conselho fiscal — 3 membros"},
+            {"id": "convention", "label": "Convenção", "control": "file", "value": "convencao-alameda-2018.pdf"},
+            {"id": "internal_rules", "label": "Regimento", "control": "file", "value": "regimento-interno-v4.pdf"}
+          ]
+        },
+        {
+          "id": "financial-maintenance",
+          "title": "Gestão financeira e manutenção",
+          "fields": [
+            {"id": "condominium_fee", "label": "Cota condominial", "control": "text", "value": "R$ 1.780,00 / mês"},
+            {"id": "reserve_fund", "label": "Fundo de reserva", "control": "text", "value": "R$ 180,00 / mês"},
+            {"id": "unit_arrears", "label": "Inadimplência da unidade", "control": "text", "value": "Nenhuma pendência"},
+            {"id": "next_assembly", "label": "Próxima assembleia", "control": "date", "value": "2026-10-22"},
+            {"id": "planned_maintenance", "label": "Manutenção programada", "control": "text", "value": "Pintura da fachada — Q1/2027"},
+            {"id": "accounts_status", "label": "Prestação de contas", "control": "text", "value": "2025/2026 aprovada"}
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "mandate-and-listing",
+      "title": "Mandato e anúncio",
+      "cards": [
+        {
+          "id": "brokerage-mandate",
+          "title": "Mandato de intermediação",
+          "description": "Autorização temporal que conecta titular, corretores e imobiliárias.",
+          "fields": [
+            {"id": "exclusivity", "label": "Exclusividade", "control": "select", "value": "Exclusivo", "options": ["Exclusivo", "Não exclusivo"]},
+            {"id": "mandate_expiry", "label": "Vigência até", "control": "date", "value": "2027-03-31"},
+            {"id": "minimum_price", "label": "Preço mínimo", "control": "text", "value": "R$ 1.420.000,00"},
+            {"id": "commission", "label": "Comissão", "control": "text", "value": "6%"},
+            {"id": "territory_channel", "label": "Território/canal", "control": "text", "value": "São Paulo · portais e rede parceira"},
+            {"id": "contract_hash", "label": "Hash contratual", "control": "text", "value": "mandate:sha256:9e3a..."}
+          ]
+        },
+        {
+          "id": "brokers-agencies",
+          "title": "Corretores e imobiliárias",
+          "description": "Agentes podem pertencer a organizações diferentes sem duplicar o imóvel.",
+          "repeatable_collection": "brokers",
+          "rows": [
+            {"role_label": "Corretor", "name": "Camila Torres", "creci": "182.443-F"},
+            {"role_label": "Corretor parceiro", "name": "Eduardo Mello", "creci": "204.718-F"}
+          ],
+          "add_action": "+ Adicionar corretor/agência",
+          "fields": [
+            {"id": "agency_a", "label": "Imobiliária A", "control": "text", "value": "Alameda Negócios Imobiliários"},
+            {"id": "agency_creci", "label": "CRECI jurídico", "control": "text", "value": "J-28.491"},
+            {"id": "partner_agency", "label": "Imobiliária parceira", "control": "text", "value": "Ponte Alta Consultoria"},
+            {"id": "commission_split", "label": "Divisão de comissão", "control": "text", "value": "70% / 30%"}
+          ]
+        },
+        {
+          "id": "listing-publication",
+          "title": "Listing e publicações",
+          "description": "Um mesmo MarketableBundle pode ter vários anúncios em canais distintos.",
+          "fields": [
+            {"id": "listing_id", "label": "Listing ID", "control": "text", "value": "listing-jardins-142"},
+            {"id": "listing_status", "label": "Status", "control": "select", "value": "Publicado", "options": ["Publicado", "Rascunho", "Suspenso", "Vendido"]},
+            {"id": "asking_price", "label": "Preço anunciado", "control": "text", "value": "R$ 1.480.000,00"},
+            {"id": "currency", "label": "Moeda", "control": "text", "value": "BRL"},
+            {"id": "primary_portal", "label": "Portal primário", "control": "text", "value": "Portal Alameda"},
+            {"id": "additional_channels", "label": "Canais adicionais", "control": "text", "value": "Site próprio · Instagram · Portal parceiro"},
+            {"id": "description", "label": "Descrição", "control": "textarea", "value": "Unidade jurídica em condomínio residencial, com duas vagas e depósito. Anúncio vinculado ao mandato MB-481.", "layout": "full"}
+          ],
+          "checklist": [
+            {"label": "Fotos (24)", "checked": true},
+            {"label": "Publicação ativa", "checked": true},
+            {"label": "Sincronização externa", "checked": false}
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "documents",
+      "title": "Documentos",
+      "cards": [
+        {
+          "id": "technical-regularity",
+          "title": "Regularidade e documentos técnicos",
+          "description": "Documentos sustentam relações jurídicas, físicas e regulatórias; não são a identidade do imóvel.",
+          "control": "checklist",
+          "items": [
+            {"label": "Matrícula atualizada", "checked": true},
+            {"label": "Certidão de ônus", "checked": true},
+            {"label": "Habite-se", "checked": true},
+            {"label": "Alvará de construção", "checked": true},
+            {"label": "AVCB/CLCB", "checked": true},
+            {"label": "Licença ambiental", "checked": false},
+            {"label": "Planta aprovada", "checked": true},
+            {"label": "Memorial descritivo", "checked": true},
+            {"label": "ART/RRT", "checked": false}
+          ]
+        },
+        {
+          "id": "contract-documents",
+          "title": "Documentos contratuais",
+          "summary": [
+            {"file": "matricula-184729.pdf", "status": "hash verificado"},
+            {"file": "convencao-alameda.pdf", "status": "vigente"},
+            {"file": "mandato-exclusivo.pdf", "status": "assinado"},
+            {"file": "laudo-avaliacao.pdf", "status": "R$ 1,45M"}
+          ]
+        },
+        {
+          "id": "due-diligence",
+          "title": "Diligência",
+          "fields": [
+            {"id": "reviewer", "label": "Responsável", "control": "text", "value": "Camila Torres"},
+            {"id": "review_status", "label": "Status", "control": "select", "value": "Em conferência", "options": ["Em conferência", "Aprovada", "Pendente"]},
+            {"id": "pending_items", "label": "Pendências", "control": "textarea", "value": "Confirmar licença ambiental apenas se houver alteração estrutural futura. Sem impedimento para anúncio atual.", "layout": "full"}
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "negotiation",
+      "title": "Negociação",
+      "cards": [
+        {
+          "id": "demand-visit",
+          "title": "Demanda e visita",
+          "description": "Interesse que não altera o ativo.",
+          "fields": [
+            {"id": "interested_party", "label": "Interessado", "control": "text", "value": "Helena Duarte — pessoa física", "layout": "full"},
+            {"id": "visit_date", "label": "Visita", "control": "date", "value": "2026-09-30"},
+            {"id": "opportunity_status", "label": "Oportunidade", "control": "select", "value": "Qualificada", "options": ["Qualificada", "Nova", "Encerrada"]}
+          ]
+        },
+        {
+          "id": "offer",
+          "title": "Oferta",
+          "description": "Proposta recebida para o Listing.",
+          "fields": [
+            {"id": "buyer", "label": "Compradora", "control": "text", "value": "Helena Duarte"},
+            {"id": "offered_value", "label": "Valor ofertado", "control": "text", "value": "R$ 1.410.000,00"},
+            {"id": "financing", "label": "Financiamento", "control": "select", "value": "Sim — banco privado", "options": ["Sim — banco privado", "Não"]},
+            {"id": "offer_condition", "label": "Condição", "control": "text", "value": "Sinal de 20%"}
+          ]
+        },
+        {
+          "id": "acceptance",
+          "title": "Aceite e acordo",
+          "description": "Estado atual da negociação.",
+          "fields": [
+            {"id": "acceptance_status", "label": "Acceptance Act", "control": "select", "value": "Em análise", "options": ["Em análise", "Aceita", "Recusada"]},
+            {"id": "response_deadline", "label": "Prazo de resposta", "control": "text", "value": "48 horas"},
+            {"id": "negotiation_notes", "label": "Notas", "control": "textarea", "value": "Oferta aguardando validação dos proprietários.", "layout": "full"}
+          ]
+        },
+        {
+          "id": "closing-case",
+          "title": "Closing case",
+          "description": "Fechamento reúne diligência, escritura, registro, pagamentos e transferência. Ainda não iniciado.",
+          "control": "checklist",
+          "items": [
+            {"label": "Due diligence concluída", "checked": false},
+            {"label": "Financiamento aprovado", "checked": false},
+            {"label": "Escritura assinada", "checked": false},
+            {"label": "Registro transferido", "checked": false},
+            {"label": "Pagamento liquidado", "checked": false},
+            {"label": "Comissão liquidada", "checked": false}
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "review",
+      "title": "Revisão final",
+      "review_banner": {
+        "title": "Composição completa para revisão.",
+        "message": "A ficha mantém separadas identidade jurídica, evidência, posse, uso, condomínio, mandato, anúncio e negociação. Esta demonstração não envia dados."
+      },
+      "summary": [
+        {"label": "LegalPropertyUnit", "value": "LPU-7E4CC0C4 · Apartamento Jardins 142"},
+        {"label": "Relações jurídicas", "value": "2 proprietários · posse · ocupação · 1 alienação fiduciária"},
+        {"label": "Base territorial/física", "value": "420 m² · estrutura 2018 · 128,40 m² construídos"},
+        {"label": "Condomínio", "value": "Edifício Alameda Jardins · 48 unidades · administradora + síndica"},
+        {"label": "Composição comercial", "value": "MarketableBundle MB-481 · 2 vagas · depósito · Listing ativo"},
+        {"label": "Intermediação", "value": "Mandato exclusivo · 2 corretores · 2 imobiliárias/parceiros"},
+        {"label": "Negociação", "value": "1 interessada · 1 visita · 1 oferta em análise"},
+        {"label": "Documentação", "value": "diligência em conferência", "tone": "tag"}
+      ],
+      "publish_action": "Publicar cadastro demonstrativo"
+    }
+  ],
+  "dynamic_behavior": {
+    "navigation": {
+      "clamp_step_to_range": true,
+      "scroll_to_top_on_change": true,
+      "progress_width_formula": "((current_step + 1) / total_steps) * 100"
+    },
+    "repeatable_collections": {
+      "owners": {"add_label": "+ Adicionar proprietário PF/PJ", "template_fields": ["Nome completo", "CPF / CNPJ"]},
+      "brokers": {"add_label": "+ Adicionar corretor/agência", "template_fields": ["Nome completo", "CPF / CNPJ"]}
+    },
+    "notifications": {
+      "save": "Rascunho salvo localmente nesta demonstração.",
+      "add_row": "Linha adicionada.",
+      "reviewed": "Cadastro revisado. Nenhum dado foi enviado.",
+      "published": "Cadastro demonstrativo pronto para publicação."
+    },
+    "persistence": {
+      "mode": "none",
+      "note": "A demonstração não envia dados e não persiste alterações fora do navegador."
+    }
+  },
+  "reconstruction": {
+    "source_of_truth": "workflow",
+    "render_order": "workflow.order/index",
+    "field_rendering": {
+      "text": "input[type=text]",
+      "number": "input[type=number]",
+      "date": "input[type=date]",
+      "select": "select with options",
+      "textarea": "textarea",
+      "file": "file/reference summary",
+      "checklist": "checkbox group",
+      "summary": "label/value rows",
+      "relation_chain": "nodes and connectors"
+    },
+    "required_runtime_features": ["step navigation", "repeatable rows", "remove row", "toast notification", "progress indicator"]
+  }
+}
