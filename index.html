@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ImobiFlow | Cadastro completo do imóvel</title>
+  <style>
+    :root {
+      --ink: #17211b;
+      --muted: #728078;
+      --line: #dfe7e1;
+      --paper: #f6f8f5;
+      --card: #ffffff;
+      --green: #1c765d;
+      --green-dark: #124c3e;
+      --mint: #dff0e7;
+      --orange: #d78645;
+      --shadow: 0 18px 50px rgba(35, 67, 51, .09);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    button, input, select, textarea { font: inherit; }
+    button { cursor: pointer; }
+    .shell { display: grid; grid-template-columns: 246px 1fr; min-height: 100vh; }
+    aside { background: var(--green-dark); color: #d9eee5; padding: 28px 18px; display: flex; flex-direction: column; }
+    .brand { display: flex; align-items: center; gap: 10px; color: #fff; margin: 0 10px 42px; font-weight: 800; letter-spacing: -.04em; font-size: 20px; }
+    .brand-mark { width: 34px; height: 34px; border-radius: 11px 11px 11px 3px; background: var(--orange); display: grid; place-items: center; color: #fff; font-size: 17px; }
+    .eyebrow { margin: 0 10px 12px; color: #88b6a4; font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    nav { display: grid; gap: 5px; }
+    nav button { border: 0; background: transparent; color: #a8cabe; padding: 12px 11px; border-radius: 10px; text-align: left; display: flex; align-items: center; gap: 11px; font-size: 13px; }
+    nav button:hover, nav button.active { background: rgba(255,255,255,.11); color: #fff; }
+    nav button strong { width: 24px; height: 24px; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; display: grid; place-items: center; font-size: 11px; }
+    .aside-footer { margin-top: auto; border-top: 1px solid rgba(255,255,255,.12); padding: 20px 10px 0; color: #94b7a9; font-size: 12px; line-height: 1.5; }
+    main { min-width: 0; }
+    header { background: var(--card); border-bottom: 1px solid var(--line); padding: 24px 42px 21px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 6px; font-size: clamp(26px, 3vw, 38px); letter-spacing: -.055em; }
+    .subtitle { color: var(--muted); margin-bottom: 0; font-size: 14px; }
+    .status { display: flex; align-items: center; gap: 9px; color: var(--green); font-weight: 700; font-size: 12px; }
+    .dot { width: 9px; height: 9px; background: #39aa77; border-radius: 50%; box-shadow: 0 0 0 5px #e3f4e9; }
+    .content { max-width: 1260px; margin: 0 auto; padding: 32px 42px 60px; }
+    .topline { display: flex; justify-content: space-between; align-items: end; margin-bottom: 22px; }
+    .step-title { margin: 0; font-size: 18px; letter-spacing: -.025em; }
+    .progress-label { color: var(--muted); font-size: 12px; }
+    .progress { height: 6px; background: #e3eae5; border-radius: 20px; overflow: hidden; margin-bottom: 26px; }
+    .progress i { display: block; height: 100%; width: 16.6%; background: var(--green); border-radius: 20px; transition: width .25s ease; }
+    .step { display: none; animation: enter .2s ease; }
+    .step.active { display: block; }
+    @keyframes enter { from { opacity: .3; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+    .card { grid-column: span 12; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 23px; box-shadow: var(--shadow); }
+    .card.half { grid-column: span 6; }
+    .card.third { grid-column: span 4; }
+    .card h2 { font-size: 15px; margin-bottom: 4px; letter-spacing: -.025em; }
+    .card > p { color: var(--muted); font-size: 12px; margin-bottom: 18px; }
+    .fields { display: grid; grid-template-columns: repeat(12, 1fr); gap: 13px; }
+    label { grid-column: span 6; display: grid; gap: 6px; color: #52625a; font-size: 11px; font-weight: 700; }
+    label.full { grid-column: span 12; }
+    label.third { grid-column: span 4; }
+    input, select, textarea { width: 100%; border: 1px solid var(--line); background: #fbfcfb; border-radius: 8px; outline: none; color: var(--ink); padding: 11px 12px; font-size: 13px; }
+    textarea { min-height: 84px; resize: vertical; }
+    input:focus, select:focus, textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px var(--mint); }
+    .entity-row { display: grid; grid-template-columns: 1fr 1fr 42px; gap: 9px; align-items: end; margin-bottom: 10px; }
+    .entity-row label { grid-column: auto; }
+    .remove { height: 40px; border: 1px solid #f0cfc0; color: #bd6547; background: #fff7f3; border-radius: 8px; }
+    .add { border: 1px dashed #9dc9b6; background: #f3fbf6; color: var(--green); border-radius: 8px; padding: 9px 13px; font-size: 12px; font-weight: 800; }
+    .check-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
+    .check { border: 1px solid var(--line); padding: 11px; border-radius: 9px; display: flex; gap: 8px; align-items: center; color: #52625a; font-size: 12px; }
+    .check input { width: auto; }
+    .summary { display: grid; gap: 9px; }
+    .summary-row { border-bottom: 1px solid var(--line); padding: 11px 0; display: flex; justify-content: space-between; gap: 25px; font-size: 13px; }
+    .summary-row span:first-child { color: var(--muted); }
+    .summary-row span:last-child { font-weight: 700; text-align: right; }
+    .review-banner { background: var(--mint); color: var(--green-dark); border-radius: 12px; padding: 15px 17px; margin-bottom: 18px; font-size: 13px; line-height: 1.5; }
+    .actions { display: flex; justify-content: space-between; gap: 12px; margin-top: 22px; }
+    .actions-right { display: flex; gap: 10px; }
+    .btn { border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 11px 17px; border-radius: 9px; font-weight: 800; font-size: 12px; }
+    .btn.primary { background: var(--green); border-color: var(--green); color: #fff; }
+    .btn.primary:hover { background: #155c49; }
+    .btn:disabled { opacity: .45; cursor: not-allowed; }
+    .tag { display: inline-flex; color: var(--green); background: var(--mint); padding: 5px 9px; border-radius: 20px; font-size: 11px; font-weight: 800; }
+    .notice { display: none; position: fixed; bottom: 22px; right: 22px; background: var(--green-dark); color: #fff; padding: 14px 17px; border-radius: 10px; box-shadow: var(--shadow); font-size: 13px; }
+    @media (max-width: 900px) { .shell { grid-template-columns: 1fr; } aside { padding: 15px 18px; } .brand { margin-bottom: 16px; } nav { grid-template-columns: repeat(6, 1fr); } nav button { justify-content: center; padding: 8px; } nav button span { display: none; } .aside-footer { display: none; } header, .content { padding-left: 20px; padding-right: 20px; } .card.half, .card.third { grid-column: span 12; } }
+    @media (max-width: 560px) { nav { grid-template-columns: repeat(3, 1fr); } header { align-items: flex-start; flex-direction: column; } label, label.third { grid-column: span 12; } .check-grid { grid-template-columns: 1fr; } .entity-row { grid-template-columns: 1fr; } .remove { width: 100%; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><span class="brand-mark">⌂</span> ImobiFlow</div>
+      <p class="eyebrow">Novo cadastro</p>
+      <nav id="sideNav">
+        <button class="active" data-step="0"><strong>1</strong><span>Identificação</span></button>
+        <button data-step="1"><strong>2</strong><span>Proprietários</span></button>
+        <button data-step="2"><strong>3</strong><span>Intermediação</span></button>
+        <button data-step="3"><strong>4</strong><span>Condomínio</span></button>
+        <button data-step="4"><strong>5</strong><span>Documentos</span></button>
+        <button data-step="5"><strong>6</strong><span>Revisão</span></button>
+      </nav>
+      <div class="aside-footer"><b>Cadastro #IM-2026-00481</b><br />rascunho salvo localmente<br /><br />Workspace: real_estate / produção</div>
+    </aside>
+    <main>
+      <header>
+        <div><h1>Cadastro de imóvel</h1><p class="subtitle">Registre o ativo, sua cadeia de titularidade e o contexto comercial.</p></div>
+        <div class="status"><i class="dot"></i> Rascunho salvo</div>
+      </header>
+      <section class="content">
+        <div class="topline"><h2 class="step-title" id="stepTitle">Identificação do imóvel</h2><span class="progress-label" id="progressLabel">Etapa 1 de 6</span></div>
+        <div class="progress"><i id="progressBar"></i></div>
+
+        <div class="step active" data-panel="0"><div class="grid">
+          <div class="card"><h2>Identidade ontológica</h2><p>Dados-base do ativo imobiliário. O registro não substitui a identidade do imóvel.</p><div class="fields">
+            <label>Tipo de ativo<select><option>Unidade imobiliária legal</option><option>Terreno</option><option>Edificação</option><option>Condomínio</option></select></label>
+            <label>Status do cadastro<select><option>Em análise</option><option>Ativo</option><option>Rascunho</option></select></label>
+            <label class="full">Nome de apresentação<input value="Apartamento Jardins 142" /></label>
+            <label>ID semântico<input value="lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211" /></label>
+            <label>Matrícula / registro<input value="184.729 — 4º Registro de Imóveis" /></label>
+          </div></div>
+          <div class="card half"><h2>Endereço completo</h2><p>Localização física e postal.</p><div class="fields">
+            <label class="full">Logradouro<input value="Rua Oscar Freire, 1420" /></label><label>Bairro<input value="Jardins" /></label><label>CEP<input value="01426-002" /></label><label>Cidade<input value="São Paulo" /></label><label>UF<select><option>SP</option><option>RJ</option><option>MG</option></select></label>
+          </div></div>
+          <div class="card half"><h2>Características principais</h2><p>Resumo físico para a ficha comercial.</p><div class="fields">
+            <label>Área privativa<input value="128,40 m²" /></label><label>Área total<input value="164,80 m²" /></label><label>Dormitórios<input value="3" /></label><label>Suítes<input value="2" /></label><label>Vagas<input value="2" /></label><label>Andar<input value="14º" /></label>
+          </div></div>
+        </div></div>
+
+        <div class="step" data-panel="1"><div class="grid"><div class="card"><h2>Proprietários e titularidade</h2><p>Registre as pessoas e organizações ligadas à propriedade.</p><div id="owners">
+          <div class="entity-row"><label>Nome completo<input value="Mariana Alves de Carvalho" /></label><label>CPF / CNPJ<input value="***.482.190-**" /></label><button class="remove">×</button></div>
+          <div class="entity-row"><label>Nome completo<input value="Rafael Carvalho Neto" /></label><label>CPF / CNPJ<input value="***.190.774-**" /></label><button class="remove">×</button></div>
+        </div><button class="add" data-add="owners">+ Adicionar proprietário</button></div>
+        <div class="card half"><h2>Evidência registral</h2><p>Documentos que sustentam a titularidade.</p><div class="fields"><label>Tipo<select><option>Matrícula atualizada</option><option>Escritura pública</option><option>Certidão</option></select></label><label>Número<input value="184.729" /></label><label>Emissão<input type="date" value="2026-08-12" /></label><label>Cartório<input value="4º RI de São Paulo" /></label></div></div>
+        <div class="card half"><h2>Participação</h2><p>Distribuição declarada entre os titulares.</p><div class="fields"><label>Mariana Alves<input value="50%" /></label><label>Rafael Carvalho<input value="50%" /></label><label class="full">Observações<textarea>Regime de comunhão parcial. Conferência documental pendente.</textarea></label></div></div></div></div>
+
+        <div class="step" data-panel="2"><div class="grid"><div class="card half"><h2>Imobiliária responsável</h2><p>Organização que conduz a comercialização.</p><div class="fields"><label class="full">Razão social<input value="Alameda Negócios Imobiliários Ltda." /></label><label>CNPJ<input value="12.345.678/0001-90" /></label><label>CRECI jurídico<input value="J-28.491" /></label><label class="full">Endereço<input value="Av. Faria Lima, 1822 — São Paulo/SP" /></label></div></div>
+        <div class="card half"><h2>Corretores envolvidos</h2><p>Profissionais com atribuição neste cadastro.</p><div id="brokers"><div class="entity-row"><label>Corretor<input value="Camila Torres" /></label><label>CRECI<input value="182.443-F" /></label><button class="remove">×</button></div><div class="entity-row"><label>Corretor<input value="Eduardo Mello" /></label><label>CRECI<input value="204.718-F" /></label><button class="remove">×</button></div></div><button class="add" data-add="brokers">+ Adicionar corretor</button></div>
+        <div class="card"><h2>Mandato e comercialização</h2><div class="fields"><label>Tipo de mandato<select><option>Exclusivo</option><option>Não exclusivo</option></select></label><label>Vigência até<input type="date" value="2027-03-31" /></label><label>Preço pedido<input value="R$ 1.480.000,00" /></label><label>Comissão<input value="6%" /></label><label class="full">Observações<textarea>Autorizada divulgação em portais parceiros. Visitas mediante agendamento.</textarea></label></div></div></div></div>
+
+        <div class="step" data-panel="3"><div class="grid"><div class="card half"><h2>Condomínio</h2><p>Dados da organização condominial.</p><div class="fields"><label class="full">Nome<input value="Edifício Alameda Jardins" /></label><label>CNPJ<input value="98.765.432/0001-10" /></label><label>Unidades<input value="48" /></label><label>Síndico<input value="Fernanda Nogueira" /></label><label>Administradora<input value="Plena Gestão Condominial" /></label></div></div>
+        <div class="card half"><h2>Custos recorrentes</h2><p>Valores informados para análise comercial.</p><div class="fields"><label>Cota condominial<input value="R$ 1.780,00 / mês" /></label><label>IPTU<input value="R$ 8.920,00 / ano" /></label><label>Fundo de reserva<input value="R$ 180,00 / mês" /></label><label>Vencimento<input value="Todo dia 10" /></label></div></div>
+        <div class="card"><h2>Estrutura e amenidades</h2><div class="check-grid"><label class="check"><input type="checkbox" checked /> Portaria 24h</label><label class="check"><input type="checkbox" checked /> Piscina</label><label class="check"><input type="checkbox" checked /> Academia</label><label class="check"><input type="checkbox" checked /> Salão de festas</label><label class="check"><input type="checkbox" /> Playground</label><label class="check"><input type="checkbox" checked /> Elevador privativo</label><label class="check"><input type="checkbox" checked /> Gerador</label><label class="check"><input type="checkbox" /> Pet place</label><label class="check"><input type="checkbox" checked /> Bicicletário</label></div></div></div></div>
+
+        <div class="step" data-panel="4"><div class="grid"><div class="card"><h2>Documentação e diligência</h2><p>Checklist dos documentos que acompanham o ativo.</p><div class="check-grid"><label class="check"><input type="checkbox" checked /> Matrícula atualizada</label><label class="check"><input type="checkbox" checked /> Certidão negativa de ônus</label><label class="check"><input type="checkbox" checked /> IPTU 2026</label><label class="check"><input type="checkbox" checked /> Ata de condomínio</label><label class="check"><input type="checkbox" /> Habite-se</label><label class="check"><input type="checkbox" checked /> Convenção condominial</label></div></div>
+        <div class="card half"><h2>Arquivos vinculados</h2><div class="summary"><div class="summary-row"><span>matricula-184729.pdf</span><span class="tag">verificado</span></div><div class="summary-row"><span>certidao-onus-2026.pdf</span><span class="tag">verificado</span></div><div class="summary-row"><span>fotos-jardins.zip</span><span class="tag">12 arquivos</span></div></div></div>
+        <div class="card half"><h2>Responsável pela conferência</h2><div class="fields"><label>Nome<input value="Camila Torres" /></label><label>Data<input type="date" value="2026-09-28" /></label><label class="full">Notas<textarea>Documentação apta para publicação após assinatura do proprietário.</textarea></label></div></div></div></div>
+
+        <div class="step" data-panel="5"><div class="grid"><div class="card"><div class="review-banner"><b>Pronto para revisão final.</b><br />Confira os vínculos antes de publicar o cadastro. Esta demonstração não envia dados e não persiste alterações fora do navegador.</div><h2>Resumo do cadastro</h2><div class="summary"><div class="summary-row"><span>Imóvel</span><span>Apartamento Jardins 142 · LPU-7E4CC0C4</span></div><div class="summary-row"><span>Localização</span><span>Rua Oscar Freire, 1420 · São Paulo/SP</span></div><div class="summary-row"><span>Titularidade</span><span>Mariana Alves 50% · Rafael Carvalho 50%</span></div><div class="summary-row"><span>Intermediação</span><span>Alameda Negócios · 2 corretores · mandato exclusivo</span></div><div class="summary-row"><span>Condomínio</span><span>Edifício Alameda Jardins · 48 unidades</span></div><div class="summary-row"><span>Documentação</span><span class="tag">5 de 6 itens conferidos</span></div><div class="summary-row"><span>Status</span><span class="tag">rascunho pronto</span></div></div><br /><button class="btn primary" id="publish">Publicar cadastro demonstrativo</button></div></div></div>
+
+        <div class="actions"><button class="btn" id="prev" disabled>← Voltar</button><div class="actions-right"><button class="btn" id="save">Salvar rascunho</button><button class="btn primary" id="next">Continuar →</button></div></div>
+      </section>
+    </main>
+  </div>
+  <div class="notice" id="notice"></div>
+  <script>
+    const panels = [...document.querySelectorAll('.step')];
+    const nav = [...document.querySelectorAll('nav button')];
+    const title = document.querySelector('#stepTitle');
+    const titles = ['Identificação do imóvel', 'Proprietários e titularidade', 'Intermediação e mandato', 'Condomínio e custos', 'Documentação e diligência', 'Revisão final'];
+    const progress = document.querySelector('#progressBar');
+    const label = document.querySelector('#progressLabel');
+    const prev = document.querySelector('#prev');
+    const next = document.querySelector('#next');
+    let current = 0;
+    function show(step) {
+      current = Math.max(0, Math.min(panels.length - 1, step));
+      panels.forEach((p, i) => p.classList.toggle('active', i === current));
+      nav.forEach((n, i) => n.classList.toggle('active', i === current));
+      title.textContent = titles[current]; label.textContent = `Etapa ${current + 1} de ${panels.length}`;
+      progress.style.width = `${((current + 1) / panels.length) * 100}%`;
+      prev.disabled = current === 0; next.textContent = current === panels.length - 1 ? 'Concluir ✓' : 'Continuar →';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    nav.forEach(n => n.addEventListener('click', () => show(Number(n.dataset.step))));
+    prev.addEventListener('click', () => show(current - 1));
+    next.addEventListener('click', () => { if (current === panels.length - 1) toast('Cadastro revisado. Nenhum dado foi enviado.'); else show(current + 1); });
+    document.querySelector('#save').addEventListener('click', () => toast('Rascunho salvo localmente nesta demonstração.'));
+    document.querySelector('#publish').addEventListener('click', () => toast('Cadastro demonstrativo pronto para publicação.'));
+    document.querySelectorAll('[data-add]').forEach(btn => btn.addEventListener('click', () => {
+      const row = document.createElement('div'); row.className = 'entity-row';
+      row.innerHTML = `<label>Nome completo<input placeholder="Nome da pessoa ou empresa" /></label><label>CPF / CNPJ<input placeholder="Documento" /></label><button class="remove">×</button>`;
+      row.querySelector('.remove').addEventListener('click', () => row.remove()); document.querySelector(`#${btn.dataset.add}`).append(row); toast('Linha adicionada.');
+    }));
+    document.querySelectorAll('.remove').forEach(btn => btn.addEventListener('click', () => btn.closest('.entity-row').remove()));
+    function toast(message) { const el = document.querySelector('#notice'); el.textContent = message; el.style.display = 'block'; clearTimeout(window.toastTimer); window.toastTimer = setTimeout(() => el.style.display = 'none', 2800); }
+  </script>
+</body>
+</html>
