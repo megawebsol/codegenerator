@@ -1,20 +1,35 @@
 # ObjectUI JSON-to-HTML Generator
 
-ObjectUI is a domain-agnostic renderer. It receives JSON and generates a complete standalone HTML application. The renderer does not know about real estate, laboratories, or any other domain; labels, sections, relationships and values come only from the input JSON.
+O gerador compila três artefatos declarativos em um HTML standalone:
 
-## Generate
-
-```bash
-node objectui/generate.mjs data/real-estate-property-hierarchy.json objectui/demo.html
+```text
+Database JSON + Template JSON + Layout JSON
+                  ↓
+          ObjectUI component tree
+                  ↓
+              index.html
 ```
 
-The output is a self-contained HTML file with:
+## Gerar a aplicação
 
-- recursive object and array rendering;
-- generated labels from input keys;
-- collapsible nested structures;
-- search across generated fields;
-- no runtime dependency or backend;
-- no domain-specific renderer branches.
+```bash
+node objectui/generate.mjs \
+  data/imobiflow-database.json \
+  data/imobiflow-template.json \
+  data/imobiflow-layout.json \
+  index.html
+```
 
-The included `demo.html` is generated from `data/real-estate-property-hierarchy.json`; the JSON remains the source of truth.
+### Fontes
+
+- `data/imobiflow-database.json`: valores dos ativos e relações demonstrativas.
+- `data/imobiflow-template.json`: contrato de entidade, campos, coleções e regras.
+- `data/imobiflow-layout.json`: navegação, páginas, seções e componentes visuais.
+
+O renderer não contém nomes de entidades imobiliárias nem valores de imóveis. Ele interpreta o component tree gerado pelo compilador e renderiza cards, fields, collections, checklist, summary e review.
+
+## Resultado
+
+`index.html` é autocontido, sem backend e sem dependência de runtime externo. Ele mantém a experiência visual do cadastro ImobiFlow, mas todo o conteúdo é compilado a partir dos três JSONs.
+
+O React Admin em `reactadmin/` é um demo separado para evolução da aplicação operacional; ele não é o gerador do HTML standalone.
