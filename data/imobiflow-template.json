@@ -1,0 +1,51 @@
+{
+  "template_id": "imobiflow-property-registration",
+  "version": "1.0.0",
+  "purpose": "Modelo reutilizável de dados e regras de cadastro. Não contém valores de ativos e não contém layout.",
+  "entity": "RealEstateAsset",
+  "collections": {
+    "owners": {"item_fields": ["party_ref", "party_kind", "ownership_share", "evidence_ref"]},
+    "marketable_components": {"item_fields": ["component_ref", "component_kind", "role"]},
+    "rights_restrictions": {"item_fields": ["kind", "holder_ref", "status", "evidence_ref", "valid_from", "valid_to"]},
+    "mandates": {"item_fields": ["authorizer_ref", "agency_ref", "broker_refs", "exclusive", "minimum_price", "commission", "valid_from", "valid_to", "contract_ref"]},
+    "brokers": {"item_fields": ["party_ref", "creci", "agency_ref", "role"]},
+    "listings": {"item_fields": ["id", "status", "asking_price", "currency", "portal_ref", "channel_refs", "description", "media_refs"]},
+    "technical_documents": {"item_fields": ["document_ref", "kind", "status", "issued_by", "valid_from", "valid_to"]},
+    "contract_documents": {"item_fields": ["document_ref", "kind", "status", "hash"]},
+    "visits": {"item_fields": ["party_ref", "scheduled_at", "status", "notes"]},
+    "offers": {"item_fields": ["buyer_ref", "value", "currency", "financing", "condition", "status"]},
+    "closing_milestones": {"item_fields": ["kind", "status", "completed_at", "evidence_ref"]}
+  },
+  "fields": {
+    "asset_id": {"type": "identifier", "required": true},
+    "status": {"type": "enum", "required": true, "values": ["draft", "under_review", "ready_for_publication", "published", "suspended", "sold", "rented", "closed"]},
+    "display_name": {"type": "text", "required": true},
+    "semantic_id": {"type": "identifier", "required": true},
+    "asset_type": {"type": "enum", "required": true},
+    "registration_reference": {"type": "text"},
+    "address": {"type": "structured", "fields": ["street", "number", "complement", "neighborhood", "postal_code", "city", "state", "country", "coordinates"]},
+    "physical": {"type": "structured", "fields": ["private_area_m2", "total_area_m2", "land_area_m2", "built_area_m2", "useful_area_m2", "bedrooms", "suites", "bathrooms", "parking_spots", "floor", "construction_year", "renovation"]},
+    "possession": {"type": "structured", "fields": ["possessor_ref", "basis", "occupant_ref", "purpose", "from", "to"]},
+    "condominium": {"type": "structured", "fields": ["legal_name", "tax_id", "type", "units", "towers", "common_areas", "syndic_ref", "administrator_ref", "vice_syndic_ref", "council_ref", "fee", "reserve_fund"]},
+    "negotiation": {"type": "structured", "fields": ["interested_party_ref", "visit_refs", "offer_refs", "acceptance_ref"]},
+    "closing": {"type": "structured", "fields": ["status", "milestone_refs"]}
+  },
+  "canonical_relationships": [
+    {"type": "owned_by", "from": "asset", "to": "party", "cardinality": "one_or_many"},
+    {"type": "situated_on", "from": "asset", "to": "land_parcel", "cardinality": "zero_or_many"},
+    {"type": "included_in", "from": "asset", "to": "marketable_bundle", "cardinality": "zero_or_many"},
+    {"type": "represented_by", "from": "marketable_bundle", "to": "mandate", "cardinality": "zero_or_many"},
+    {"type": "advertised_as", "from": "marketable_bundle", "to": "listing", "cardinality": "zero_or_many"},
+    {"type": "administered_by", "from": "condominium", "to": "party", "cardinality": "zero_or_many"},
+    {"type": "possessed_by", "from": "asset", "to": "party", "cardinality": "zero_or_many"},
+    {"type": "occupied_by", "from": "asset", "to": "party", "cardinality": "zero_or_many"},
+    {"type": "handled_by", "from": "mandate", "to": "party", "cardinality": "one_or_many"},
+    {"type": "published_by", "from": "listing", "to": "party", "cardinality": "one_or_many"}
+  ],
+  "rules": {
+    "ownership_share_total": "owners shares must total 100 when declared",
+    "publication_requires": ["asset_id", "display_name", "address", "owners", "mandates", "listings"],
+    "never_infer": ["owner_from_advertiser", "legal_identity_from_address", "possession_from_ownership", "occupancy_from_possession", "sale_from_accepted_offer"],
+    "roles_are_distinct": ["owner", "possessor", "occupant", "realtor", "advertiser"]
+  }
+}

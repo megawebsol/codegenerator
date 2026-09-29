@@ -1,11 +1,4 @@
 {
-  "schema": "imobiflow-data",
-  "version": "1.0.0",
-  "language": "pt-BR",
-  "purpose": "Instâncias de dados do cadastro imobiliário. A estrutura de telas e campos está em imobiflow-structure.json.",
-  "structure_ref": "imobiflow-structure.json",
-  "generated_at": "2026-09-29",
-  "record_count": 10,
   "assets": [
     {
       "asset_id": "IM-2026-00481",
@@ -54,17 +47,5 @@
     {
       "asset_id": "IM-2026-00490", "status": "published", "display_name": "Casa Praia Brava 17", "semantic_id": "lpu-praia-brava-17", "asset_type": "Casa", "registration_reference": "5.417 — Registro de Itajaí", "address": {"street": "Rua das Conchas, 17", "neighborhood": "Praia Brava", "postal_code": "88306-820", "city": "Itajaí", "state": "SC"}, "physical": {"private_area_m2": 310, "total_area_m2": 600, "bedrooms": 5, "suites": 4, "parking_spots": 4, "built_area_m2": 310, "land_area_m2": 600, "construction_year": 2021}, "marketable_components": ["Casa", "Piscina", "Anexo de hóspedes"], "owners": [{"name": "Marina Costa", "document": "***.555.666-**", "share_percent": 100}], "possession": {"possessor": "Marina Costa", "basis": "Proprietário", "occupant": "Marina Costa", "purpose": "Residencial"}, "rights_restrictions": [], "mandates": [{"exclusive": false, "expires": "2027-05-15", "minimum_price": 4200000, "commission_percent": 6, "agency": "Litoral Prime", "brokers": ["Isabela Mota", "Caio Freitas"]}], "listings": [{"id": "listing-praia-brava-17", "status": "Publicado", "asking_price": 4500000, "currency": "BRL", "primary_portal": "Litoral Prime", "channels": ["Instagram", "Portal parceiro"], "photos": 28}], "documents": [{"file": "matricula-praia-5417.pdf", "status": "verificado"}], "negotiation": {}, "closing": {"status": "not_started"}
     }
-  ],
-  "relations": [
-    "owned_by",
-    "situated_on",
-    "included_in",
-    "represented_by",
-    "advertised_as",
-    "administered_by",
-    "possessed_by",
-    "occupied_by",
-    "handled_by",
-    "published_by"
   ]
 }
