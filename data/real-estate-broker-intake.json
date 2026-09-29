@@ -1,0 +1,418 @@
+{
+  "schema": "real-estate-broker-intake",
+  "version": "1.0.0",
+  "language": "pt-BR",
+  "purpose": "Modelo operacional para cadastro manual de um ativo imobiliário por corretor, sem substituir a genealogia semântica do imóvel.",
+  "authority": {
+    "semantic": "QuipuDB/Real Estate Domain Pack",
+    "validation": "QuipuDB Value Contracts e Runtime",
+    "documents": "evidências anexadas ou referências externas",
+    "commercial": "mandatos, anúncios e estados comerciais declarados",
+    "operator": "corretor informa, não confirma autoridade jurídica"
+  },
+  "role_distinctions": {
+    "owner": {
+      "label": "Proprietário/titular",
+      "semantic_type": "PersonOrOrganization",
+      "evidence_required_for_authority": true,
+      "not_equivalent_to": ["possessor", "occupant", "realtor", "advertiser"]
+    },
+    "possessor": {
+      "label": "Possuidor",
+      "semantic_type": "PersonOrOrganization",
+      "basis_required": true,
+      "not_equivalent_to": ["owner", "occupant", "realtor", "advertiser"]
+    },
+    "occupant": {
+      "label": "Ocupante",
+      "semantic_type": "PersonOrOrganization",
+      "use_context_required": true,
+      "not_equivalent_to": ["owner", "possessor", "realtor", "advertiser"]
+    },
+    "realtor": {
+      "label": "Corretor/agente",
+      "semantic_type": "Person",
+      "mandate_or_assignment_required": true,
+      "not_equivalent_to": ["owner", "possessor", "occupant", "advertiser"]
+    },
+    "advertiser": {
+      "label": "Anunciante/publicador",
+      "semantic_type": "PersonOrOrganization",
+      "publication_authority_required": true,
+      "not_equivalent_to": ["owner", "possessor", "occupant", "realtor"]
+    }
+  },
+  "canonical_relationships": [
+    {"type": "owned_by", "from": "LegalPropertyUnit", "to": "PersonOrOrganization", "cardinality": "one_or_many", "requires": ["ownership_share", "supporting_evidence"]},
+    {"type": "situated_on", "from": "LegalPropertyUnit", "to": "LandParcel", "cardinality": "one_or_many"},
+    {"type": "included_in", "from": "LegalPropertyUnit", "to": "MarketableBundle", "cardinality": "one_or_many_over_time"},
+    {"type": "represented_by", "from": "MarketableBundle", "to": "BrokerageMandate", "cardinality": "zero_or_many_over_time", "requires": ["authorizer", "validity"]},
+    {"type": "advertised_as", "from": "MarketableBundle", "to": "Listing", "cardinality": "zero_or_many_over_time", "requires": ["advertiser", "publication_status"]},
+    {"type": "administered_by", "from": "Condominium", "to": "PersonOrOrganization", "cardinality": "one_or_many_over_time", "requires": ["administration_role", "validity"]},
+    {"type": "possessed_by", "from": "LegalPropertyUnit", "to": "PersonOrOrganization", "cardinality": "zero_or_many_over_time", "requires": ["possession_basis"]},
+    {"type": "occupied_by", "from": "LegalPropertyUnit", "to": "PersonOrOrganization", "cardinality": "zero_or_many_over_time", "requires": ["use_purpose"]},
+    {"type": "handled_by", "from": "BrokerageMandate", "to": "PersonOrOrganization", "cardinality": "one_or_many", "requires": ["role", "validity"]},
+    {"type": "published_by", "from": "Listing", "to": "PersonOrOrganization", "cardinality": "one_or_many", "requires": ["publication_channel", "publication_status"]}
+  ],
+  "operator_rules": [
+    "Não tratar Property como entidade monolítica.",
+    "Não inferir titularidade a partir do anunciante, endereço ou anúncio.",
+    "Não transformar informação declarada pelo corretor em fato registral.",
+    "Permitir múltiplos titulares PF/PJ e múltiplos representantes.",
+    "Permitir múltiplas imobiliárias, corretores, mandatos e anúncios.",
+    "Separar dado informado, documento anexado, dado validado e dado pendente.",
+    "Não exigir dados jurídicos para iniciar um rascunho comercial, mas bloquear publicação quando requisitos configurados estiverem ausentes."
+  ],
+  "status_model": [
+    "draft",
+    "data_incomplete",
+    "awaiting_documents",
+    "under_review",
+    "ready_for_publication",
+    "published",
+    "suspended",
+    "sold",
+    "rented",
+    "closed",
+    "rejected",
+    "vacated"
+  ],
+  "source_model": [
+    "operator_input",
+    "owner_declaration",
+    "brokerage_mandate",
+    "registry_document",
+    "municipal_document",
+    "condominium_document",
+    "technical_document",
+    "external_reference",
+    "system_validation"
+  ],
+  "workflow": [
+    {
+      "id": "capture",
+      "order": 1,
+      "label": "Captação e identificação inicial",
+      "objective": "Criar o rascunho sem afirmar ainda titularidade ou regularidade.",
+      "sections": [
+        {
+          "id": "asset-profile",
+          "label": "Perfil do ativo",
+          "fields": [
+            {
+              "id": "asset_kind",
+              "label": "Tipo aparente do ativo",
+              "value_type": "enum",
+              "options": ["unit", "land", "house", "building", "rural_property", "commercial_property", "development", "other"],
+              "required": true,
+              "source": "operator_input",
+              "semantic_ref": "LegalPropertyUnit or LandParcel, pending confirmation"
+            },
+            {
+              "id": "display_name",
+              "label": "Nome de apresentação",
+              "value_type": "text",
+              "required": true,
+              "source": "operator_input",
+              "presentation_only": true
+            },
+            {
+              "id": "source_channel",
+              "label": "Origem da captação",
+              "value_type": "enum",
+              "options": ["owner", "referral", "portal", "public_registry", "partner_agency", "internal_prospecting", "other"],
+              "required": true,
+              "source": "operator_input"
+            },
+            {
+              "id": "external_references",
+              "label": "Referências externas",
+              "value_type": "reference_list",
+              "repeatable": true,
+              "fields": ["source_name", "url_or_identifier", "observed_at", "notes"],
+              "required": false,
+              "source": "external_reference"
+            }
+          ]
+        },
+        {
+          "id": "initial-location",
+          "label": "Localização informada",
+          "fields": [
+            {"id": "street", "label": "Logradouro", "value_type": "text", "required": false, "source": "operator_input"},
+            {"id": "number", "label": "Número", "value_type": "text", "required": false, "source": "operator_input"},
+            {"id": "complement", "label": "Complemento", "value_type": "text", "required": false, "source": "operator_input"},
+            {"id": "neighborhood", "label": "Bairro", "value_type": "text", "required": false, "source": "operator_input"},
+            {"id": "city", "label": "Cidade", "value_type": "text", "required": true, "source": "operator_input"},
+            {"id": "state", "label": "UF", "value_type": "text", "required": true, "source": "operator_input"},
+            {"id": "postal_code", "label": "CEP", "value_type": "text", "required": false, "source": "operator_input"},
+            {"id": "coordinates", "label": "Coordenadas", "value_type": "geo_point", "required": false, "source": "system_validation", "auto_resolve": true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical",
+      "order": 2,
+      "label": "Características físicas e composição",
+      "objective": "Descrever o que existe fisicamente sem confundir estrutura, terreno e unidade jurídica.",
+      "sections": [
+        {
+          "id": "land",
+          "label": "Terreno/parcela",
+          "applies_when": "asset_kind in [land, house, development, rural_property, unit]",
+          "fields": [
+            {"id": "parcel_kind", "label": "Tipo de parcela", "value_type": "enum", "options": ["lot", "land", "plot", "rural_area", "fraction"], "required": false, "source": "operator_input"},
+            {"id": "land_area", "label": "Área do terreno", "value_type": "quantity", "unit": "m2", "required": false, "source": "operator_input"},
+            {"id": "boundaries", "label": "Confrontações", "value_type": "structured", "required": false, "source": "registry_document"},
+            {"id": "parcel_origin", "label": "Origem do parcelamento", "value_type": "text", "required": false, "source": "registry_document"}
+          ]
+        },
+        {
+          "id": "structure",
+          "label": "Estrutura física",
+          "fields": [
+            {"id": "structure_kind", "label": "Tipo de estrutura", "value_type": "enum", "options": ["house", "apartment", "commercial_unit", "warehouse", "building", "tower", "other"], "required": false, "source": "operator_input"},
+            {"id": "built_area", "label": "Área construída", "value_type": "quantity", "unit": "m2", "required": false, "source": "operator_input"},
+            {"id": "useful_area", "label": "Área útil/privativa", "value_type": "quantity", "unit": "m2", "required": false, "source": "operator_input"},
+            {"id": "rooms", "label": "Dormitórios/salas", "value_type": "integer", "required": false, "source": "operator_input"},
+            {"id": "bathrooms", "label": "Banheiros", "value_type": "integer", "required": false, "source": "operator_input"},
+            {"id": "parking_units", "label": "Vagas", "value_type": "reference_list", "repeatable": true, "required": false, "source": "operator_input"},
+            {"id": "storage_units", "label": "Depósitos/áreas acessórias", "value_type": "reference_list", "repeatable": true, "required": false, "source": "operator_input"}
+          ]
+        },
+        {
+          "id": "bundle",
+          "label": "Conjunto comercializável",
+          "fields": [
+            {"id": "bundle_components", "label": "Componentes incluídos", "value_type": "reference_list", "repeatable": true, "required": true, "source": "operator_input", "references": ["LegalPropertyUnit", "LandParcel", "PhysicalStructure", "parking_units", "storage_units"]},
+            {"id": "accessory_rights", "label": "Direitos acessórios", "value_type": "structured", "required": false, "source": "registry_document"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "order": 3,
+      "label": "Identidade jurídica e titularidade",
+      "objective": "Registrar evidências e titulares sem transformar declaração em verdade registral automática.",
+      "sections": [
+        {
+          "id": "legal-unit",
+          "label": "Unidade jurídica",
+          "fields": [
+            {"id": "legal_unit_confirmed", "label": "Unidade jurídica confirmada", "value_type": "boolean", "required": false, "source": "system_validation"},
+            {"id": "registration_number", "label": "Matrícula/registro", "value_type": "text", "required": false, "source": "registry_document"},
+            {"id": "registry_office", "label": "Cartório", "value_type": "text", "required": false, "source": "registry_document"},
+            {"id": "municipal_tax_id", "label": "Inscrição municipal", "value_type": "text", "required": false, "source": "municipal_document"},
+            {"id": "rural_registration_id", "label": "Cadastro rural", "value_type": "text", "required": false, "source": "registry_document"}
+          ]
+        },
+        {
+          "id": "owners",
+          "label": "Titulares e coproprietários",
+          "repeatable": true,
+          "fields": [
+            {"id": "holder_kind", "label": "Tipo", "value_type": "enum", "options": ["person", "organization"], "required": true, "source": "registry_document"},
+            {"id": "holder_ref", "label": "Pessoa/empresa", "value_type": "reference", "required": true, "source": "operator_input"},
+            {"id": "ownership_share", "label": "Fração/participação", "value_type": "quantity", "unit": "percent", "required": false, "source": "registry_document"},
+            {"id": "ownership_basis", "label": "Base da titularidade", "value_type": "reference", "required": false, "source": "registry_document"},
+            {"id": "ownership_validity", "label": "Vigência", "value_type": "date_interval", "required": false, "source": "registry_document"}
+          ]
+        },
+        {
+          "id": "rights",
+          "label": "Ônus e restrições",
+          "repeatable": true,
+          "fields": [
+            {"id": "right_or_restriction", "label": "Direito/ônus", "value_type": "enum", "options": ["usufruct", "easement", "mortgage", "fiduciary_sale", "attachment", "unavailability", "environmental", "urbanistic", "other"], "required": true, "source": "registry_document"},
+            {"id": "holder_or_beneficiary", "label": "Titular/beneficiário", "value_type": "reference", "required": false, "source": "registry_document"},
+            {"id": "status", "label": "Situação", "value_type": "enum", "options": ["active", "released", "unknown", "under_review"], "required": true, "source": "registry_document"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "condominium-and-use",
+      "order": 4,
+      "label": "Condomínio, posse e uso",
+      "objective": "Registrar organização condominial, ocupação e administração quando aplicável.",
+      "sections": [
+        {
+          "id": "condominium",
+          "label": "Condomínio/empreendimento",
+          "applies_when": "asset_kind in [unit, apartment, building, development]",
+          "fields": [
+            {"id": "condominium_ref", "label": "Condomínio", "value_type": "reference", "required": false, "source": "operator_input"},
+            {"id": "condominium_tax_id", "label": "CNPJ do condomínio", "value_type": "text", "required": false, "source": "condominium_document"},
+            {"id": "unit_number", "label": "Unidade/apartamento", "value_type": "text", "required": false, "source": "condominium_document"},
+            {"id": "building_tower", "label": "Torre/bloco", "value_type": "text", "required": false, "source": "condominium_document"},
+            {"id": "fractional_interest", "label": "Fração ideal", "value_type": "quantity", "unit": "percent", "required": false, "source": "condominium_document"}
+          ]
+        },
+        {
+          "id": "administration",
+          "label": "Administração",
+          "fields": [
+            {"id": "syndic_ref", "label": "Síndico", "value_type": "reference", "required": false, "source": "condominium_document"},
+            {"id": "administrator_ref", "label": "Administradora", "value_type": "reference", "required": false, "source": "condominium_document"},
+            {"id": "monthly_fee", "label": "Cota condominial", "value_type": "money", "required": false, "source": "condominium_document"},
+            {"id": "arrears_status", "label": "Inadimplência informada", "value_type": "enum", "options": ["none_known", "exists", "unknown", "under_review"], "required": false, "source": "condominium_document"}
+          ]
+        },
+        {
+          "id": "possession-and-use",
+          "label": "Posse, ocupação e uso",
+          "fields": [
+            {"id": "possession_holder", "label": "Possuidor", "value_type": "reference", "required": false, "source": "operator_input"},
+            {"id": "occupant", "label": "Ocupante", "value_type": "reference", "required": false, "source": "operator_input"},
+            {"id": "use_purpose", "label": "Finalidade de uso", "value_type": "enum", "options": ["residential", "commercial", "industrial", "mixed", "rural", "vacant", "unknown"], "required": false, "source": "operator_input"},
+            {"id": "lease_ref", "label": "Contrato de locação", "value_type": "reference", "required": false, "source": "contract_document"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "documents-and-compliance",
+      "order": 5,
+      "label": "Documentos e regularidade",
+      "objective": "Anexar e classificar evidências; não considerar checklist como validação jurídica automática.",
+      "sections": [
+        {
+          "id": "documents",
+          "label": "Documentos vinculados",
+          "repeatable": true,
+          "fields": [
+            {"id": "document_kind", "label": "Tipo", "value_type": "enum", "options": ["registry", "permit", "license", "habite_se", "fire_certificate", "tax_certificate", "technical_report", "plant", "contract", "condominium", "photo", "other"], "required": true, "source": "operator_input"},
+            {"id": "file_or_reference", "label": "Arquivo/referência", "value_type": "file_or_url", "required": true, "source": "operator_input"},
+            {"id": "issued_by", "label": "Emissor", "value_type": "reference", "required": false, "source": "document_content"},
+            {"id": "document_validity", "label": "Validade", "value_type": "date_interval", "required": false, "source": "document_content"},
+            {"id": "verification_status", "label": "Verificação", "value_type": "enum", "options": ["not_checked", "pending", "verified", "rejected", "expired"], "required": true, "source": "system_validation", "auto_resolve": true}
+          ]
+        },
+        {
+          "id": "compliance-review",
+          "label": "Revisão de regularidade",
+          "fields": [
+            {"id": "missing_documents", "label": "Documentos faltantes", "value_type": "reference_list", "required": false, "source": "system_validation", "auto_resolve": true},
+            {"id": "compliance_status", "label": "Situação da diligência", "value_type": "enum", "options": ["not_started", "incomplete", "under_review", "ready", "blocked"], "required": true, "source": "system_validation", "auto_resolve": true},
+            {"id": "review_notes", "label": "Observações", "value_type": "long_text", "required": false, "source": "operator_input"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brokerage-and-publication",
+      "order": 6,
+      "label": "Intermediação e publicação",
+      "objective": "Registrar quem está autorizado a comercializar e onde o ativo será publicado.",
+      "sections": [
+        {
+          "id": "mandates",
+          "label": "Mandatos",
+          "repeatable": true,
+          "fields": [
+            {"id": "authorizer", "label": "Mandante", "value_type": "reference", "required": true, "source": "brokerage_mandate"},
+            {"id": "agency", "label": "Imobiliária", "value_type": "reference", "required": true, "source": "brokerage_mandate"},
+            {"id": "brokers", "label": "Corretores", "value_type": "reference_list", "required": true, "source": "brokerage_mandate"},
+            {"id": "exclusive", "label": "Exclusividade", "value_type": "boolean", "required": true, "source": "brokerage_mandate"},
+            {"id": "minimum_price", "label": "Preço mínimo", "value_type": "money", "required": false, "source": "brokerage_mandate"},
+            {"id": "commission", "label": "Comissão", "value_type": "percentage_or_money", "required": false, "source": "brokerage_mandate"},
+            {"id": "mandate_validity", "label": "Vigência", "value_type": "date_interval", "required": true, "source": "brokerage_mandate"},
+            {"id": "partner_agencies", "label": "Imobiliárias parceiras", "value_type": "reference_list", "required": false, "source": "brokerage_mandate"}
+          ]
+        },
+        {
+          "id": "listings",
+          "label": "Anúncios e canais",
+          "repeatable": true,
+          "fields": [
+            {"id": "marketable_bundle", "label": "Conjunto anunciado", "value_type": "reference", "required": true, "source": "system_validation"},
+            {"id": "asking_price", "label": "Preço pedido", "value_type": "money", "required": true, "source": "operator_input"},
+            {"id": "currency", "label": "Moeda", "value_type": "currency", "required": true, "source": "operator_input"},
+            {"id": "channels", "label": "Portais/canais", "value_type": "reference_list", "required": false, "source": "operator_input"},
+            {"id": "description", "label": "Descrição comercial", "value_type": "long_text", "required": false, "source": "operator_input"},
+            {"id": "photos", "label": "Fotos", "value_type": "file_list", "required": false, "source": "operator_input"},
+            {"id": "publication_status", "label": "Status da publicação", "value_type": "enum", "options": ["draft", "published", "suspended", "rejected", "sold", "rented", "vacated"], "required": true, "source": "system_validation"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "negotiation-and-closing",
+      "order": 7,
+      "label": "Negociação e fechamento",
+      "objective": "Acompanhar demanda, proposta, contrato e encerramento sem confundir anúncio com venda.",
+      "sections": [
+        {
+          "id": "demand",
+          "label": "Demanda e visitas",
+          "fields": [
+            {"id": "interested_parties", "label": "Interessados", "value_type": "reference_list", "required": false, "source": "operator_input"},
+            {"id": "visits", "label": "Visitas", "value_type": "event_list", "required": false, "source": "operator_input"},
+            {"id": "opportunity_status", "label": "Oportunidade", "value_type": "enum", "options": ["new", "qualified", "negotiating", "lost", "won"], "required": false, "source": "operator_input"}
+          ]
+        },
+        {
+          "id": "offers",
+          "label": "Propostas",
+          "repeatable": true,
+          "fields": [
+            {"id": "buyer", "label": "Comprador", "value_type": "reference", "required": true, "source": "operator_input"},
+            {"id": "offered_price", "label": "Valor ofertado", "value_type": "money", "required": true, "source": "operator_input"},
+            {"id": "financing", "label": "Financiamento", "value_type": "structured", "required": false, "source": "operator_input"},
+            {"id": "conditions", "label": "Condições", "value_type": "long_text", "required": false, "source": "operator_input"},
+            {"id": "offer_status", "label": "Status", "value_type": "enum", "options": ["draft", "submitted", "accepted", "rejected", "expired", "withdrawn"], "required": true, "source": "system_validation"}
+          ]
+        },
+        {
+          "id": "closing",
+          "label": "Fechamento",
+          "fields": [
+            {"id": "agreement", "label": "Acordo/contrato", "value_type": "reference", "required": false, "source": "contract_document"},
+            {"id": "due_diligence", "label": "Diligência", "value_type": "status_record", "required": false, "source": "system_validation"},
+            {"id": "payment", "label": "Pagamento", "value_type": "status_record", "required": false, "source": "system_validation"},
+            {"id": "settlement", "label": "Liquidação", "value_type": "status_record", "required": false, "source": "system_validation"},
+            {"id": "title_transfer", "label": "Transferência de titularidade", "value_type": "status_record", "required": false, "source": "registry_document"},
+            {"id": "possession_transfer", "label": "Transferência de posse", "value_type": "status_record", "required": false, "source": "contract_document"},
+            {"id": "commission_settlement", "label": "Liquidação de comissão", "value_type": "status_record", "required": false, "source": "system_validation"},
+            {"id": "closing_status", "label": "Status do fechamento", "value_type": "enum", "options": ["open", "pending_documents", "pending_payment", "completed", "cancelled"], "required": true, "source": "system_validation"}
+          ]
+        }
+      ]
+    }
+  ],
+  "auto_derived": [
+    "semantic identity candidates from registry and external references",
+    "geocoding from confirmed address",
+    "missing-document checklist",
+    "publication readiness",
+    "duplicate listing candidates",
+    "ownership share total consistency",
+    "mandate validity conflicts",
+    "listing status from accepted closing events"
+  ],
+  "not_inferred": [
+    "owner from advertiser",
+    "legal unit from address alone",
+    "registry truth from a listing",
+    "availability from photos or description",
+    "agency authority from CRECI text alone",
+    "sale completion from accepted offer alone",
+    "possession from ownership",
+    "occupancy from possession"
+  ],
+  "renderer_notes": {
+    "renderer_neutral": true,
+    "recommended_flow": "wizard_or_sectioned_form",
+    "repeatable_groups": ["owners", "rights", "documents", "mandates", "listings", "offers", "visits"],
+    "lookup_fields": ["holder_ref", "condominium_ref", "syndic_ref", "administrator_ref", "agency", "brokers", "buyer"],
+    "renderer_must_not_infer_authority": true
+  },
+  "source_documents": [
+    "imoveltree.md",
+    "data/real-estate-property-hierarchy.json",
+    "basicquipudb/domainpacks/real_estate/README.md",
+    "basicquipudb/docs/reports/IMOBITOOLS_DOMAIN_AND_ASSET_TIMELINE_REVIEW.md"
+  ]
+}

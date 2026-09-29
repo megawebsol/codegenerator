@@ -11,6 +11,110 @@
     "Listing é uma representação comercial temporal, não o ativo físico.",
     "As relações podem ter vigência material e evidências próprias."
   ],
+  "role_distinctions": [
+    {
+      "role": "Owner",
+      "label": "Proprietário/titular",
+      "meaning": "Pessoa ou organização com titularidade sustentada por evidência jurídica.",
+      "is_not": ["Possessor", "Occupant", "Realtor", "Advertiser"]
+    },
+    {
+      "role": "Possessor",
+      "label": "Possuidor",
+      "meaning": "Pessoa ou organização que exerce posse, independentemente da titularidade.",
+      "is_not": ["Owner", "Occupant", "Realtor", "Advertiser"]
+    },
+    {
+      "role": "Occupant",
+      "label": "Ocupante",
+      "meaning": "Pessoa ou organização que ocupa ou utiliza fisicamente o imóvel.",
+      "is_not": ["Owner", "Possessor", "Realtor", "Advertiser"]
+    },
+    {
+      "role": "Realtor",
+      "label": "Corretor/agente",
+      "meaning": "Profissional que atua na intermediação mediante mandato ou atribuição válida.",
+      "is_not": ["Owner", "Possessor", "Occupant", "Advertiser"]
+    },
+    {
+      "role": "Advertiser",
+      "label": "Anunciante/publicador",
+      "meaning": "Pessoa ou organização que publica ou distribui uma representação comercial.",
+      "is_not": ["Owner", "Possessor", "Occupant", "Realtor"]
+    }
+  ],
+  "canonical_relationships": [
+    {
+      "type": "owned_by",
+      "from": "LegalPropertyUnit",
+      "to": "PersonOrOrganization",
+      "cardinality": "one_or_many",
+      "qualifiers": ["ownership_share", "valid_from", "valid_to", "supporting_evidence"]
+    },
+    {
+      "type": "situated_on",
+      "from": "LegalPropertyUnit",
+      "to": "LandParcel",
+      "cardinality": "one_or_many",
+      "qualifiers": ["fractional_interest", "valid_from", "valid_to"]
+    },
+    {
+      "type": "included_in",
+      "from": "LegalPropertyUnit",
+      "to": "MarketableBundle",
+      "cardinality": "one_or_many_over_time",
+      "qualifiers": ["bundle_role", "valid_from", "valid_to"]
+    },
+    {
+      "type": "represented_by",
+      "from": "MarketableBundle",
+      "to": "BrokerageMandate",
+      "cardinality": "zero_or_many_over_time",
+      "qualifiers": ["authorizer", "exclusive", "valid_from", "valid_to", "supporting_document"]
+    },
+    {
+      "type": "advertised_as",
+      "from": "MarketableBundle",
+      "to": "Listing",
+      "cardinality": "zero_or_many_over_time",
+      "qualifiers": ["advertiser", "channel", "asking_price", "publication_status", "valid_from", "valid_to"]
+    },
+    {
+      "type": "administered_by",
+      "from": "Condominium",
+      "to": "PersonOrOrganization",
+      "cardinality": "one_or_many_over_time",
+      "qualifiers": ["administration_role", "valid_from", "valid_to", "mandate_or_assembly_evidence"]
+    },
+    {
+      "type": "possessed_by",
+      "from": "LegalPropertyUnit",
+      "to": "PersonOrOrganization",
+      "cardinality": "zero_or_many_over_time",
+      "qualifiers": ["possession_basis", "valid_from", "valid_to", "supporting_evidence"]
+    },
+    {
+      "type": "occupied_by",
+      "from": "LegalPropertyUnit",
+      "to": "PersonOrOrganization",
+      "cardinality": "zero_or_many_over_time",
+      "qualifiers": ["use_purpose", "valid_from", "valid_to"]
+    },
+    {
+      "type": "handled_by",
+      "from": "BrokerageMandate",
+      "to": "PersonOrOrganization",
+      "cardinality": "one_or_many",
+      "qualifiers": ["role", "agency", "commission_split", "valid_from", "valid_to"]
+    },
+    {
+      "type": "published_by",
+      "from": "Listing",
+      "to": "PersonOrOrganization",
+      "cardinality": "one_or_many",
+      "qualifiers": ["publication_channel", "publication_status", "valid_from", "valid_to"]
+    }
+  ],
   "root": {
     "id": "real-estate-asset",
     "type": "RealEstateAsset",
