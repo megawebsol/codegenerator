@@ -17,6 +17,7 @@ export function compileApplication(database, template, layout, assetIndex = 0) {
   }));
 
   const pages = (layout.pages || []).map(page => ({
+    title: (layout.navigation || []).find(item => item.id === page.id)?.label || page.id,
     ...page,
     sections: page.sections.map(id => sections.find(section => section.id === id)).filter(Boolean),
   }));
@@ -36,11 +37,20 @@ export function compileApplication(database, template, layout, assetIndex = 0) {
 
 function fieldComponent(path, asset, template) {
   const definition = template.fields?.[path.split(".").at(-1)] || {};
+  const value = get(asset, path);
+  if (definition.type === "structured") {
+    return {
+      type: "group",
+      path,
+      label: definition.label || titleize(path.split(".").at(-1)),
+      fields: (definition.fields || []).map(child => fieldComponent(`${path}.${child}`, asset, template)),
+    };
+  }
   return {
     type: "field",
     path,
     label: definition.label || titleize(path.split(".").at(-1)),
-    value: get(asset, path),
+    value,
     data_type: definition.type || typeof get(asset, path),
     required: Boolean(definition.required),
     options: definition.values || [],
@@ -53,6 +63,7 @@ function collectionComponent(name, asset, template) {
     type: "collection",
     name,
     item_fields: definition.item_fields || [],
+    fields: definition.item_fields || [],
     items: Array.isArray(asset[name]) ? asset[name] : [],
   };
 }
