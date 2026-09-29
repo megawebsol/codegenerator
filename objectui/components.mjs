@@ -1,60 +1,60 @@
-export function applicationFromJSON(data) {
-  const excluded = new Set(["title", "description", "language", "version", "schema"]);
-  const sections = Object.entries(data)
-    .filter(([key]) => !excluded.has(key))
-    .map(([key, value]) => ({
-      type: "surface",
-      id: key,
-      title: titleize(key),
-      content: componentForValue(key, value),
-    }));
+const get = (object, path) => path.split(".").reduce((value, key) => value?.[key], object);
+
+export function compileApplication(database, template, layout, assetIndex = 0) {
+  const asset = database.assets?.[assetIndex];
+  if (!asset) throw new Error("database.assets must contain the selected asset");
+
+  const sections = Object.entries(layout.sections || {}).map(([id, definition]) => ({
+    id,
+    title: definition.title,
+    layout: definition.layout || "card",
+    component: definition.component || "fields",
+    fields: (definition.fields || []).map(path => fieldComponent(path, asset, template)),
+    collection: definition.collection
+      ? collectionComponent(definition.collection, asset, template)
+      : null,
+    relations: definition.relations || [],
+  }));
+
+  const pages = (layout.pages || []).map(page => ({
+    ...page,
+    sections: page.sections.map(id => sections.find(section => section.id === id)).filter(Boolean),
+  }));
 
   return {
     type: "application",
-    title: data.title || data.schema || "ObjectUI Application",
-    subtitle: data.description || "Application generated from a JSON artifact",
-    version: data.version || "unversioned",
-    sections,
+    application: layout.application || {},
+    shell: layout.shell || {},
+    navigation: layout.navigation || [],
+    pages,
+    actions: layout.actions || {},
+    asset: { asset_id: asset.asset_id, display_name: asset.display_name, status: asset.status },
+    database_asset_index: assetIndex,
+    template_id: template.template_id,
   };
 }
 
-function componentForValue(key, value) {
-  if (Array.isArray(value)) {
-    return {
-      type: "collection",
-      label: titleize(key),
-      items: value.map((item, index) => ({
-        type: "item",
-        label: String(index + 1),
-        content: componentForValue(String(index + 1), item),
-      })),
-    };
-  }
-
-  if (value && typeof value === "object") {
-    return {
-      type: "form",
-      fields: Object.entries(value).map(([field, fieldValue]) => ({
-        type: "field",
-        name: field,
-        label: titleize(field),
-        value: fieldValue,
-        editor: editorFor(fieldValue),
-      })),
-    };
-  }
-
+function fieldComponent(path, asset, template) {
+  const definition = template.fields?.[path.split(".").at(-1)] || {};
   return {
-    type: "form",
-    fields: [{ type: "field", name: key, label: titleize(key), value, editor: editorFor(value) }],
+    type: "field",
+    path,
+    label: definition.label || titleize(path.split(".").at(-1)),
+    value: get(asset, path),
+    data_type: definition.type || typeof get(asset, path),
+    required: Boolean(definition.required),
+    options: definition.values || [],
   };
 }
 
-function editorFor(value) {
-  if (typeof value === "boolean") return "boolean";
-  if (typeof value === "number") return "number";
-  if (value && typeof value === "object") return Array.isArray(value) ? "json-array" : "json-object";
-  return "text";
+function collectionComponent(name, asset, template) {
+  const definition = template.collections?.[name] || {};
+  return {
+    type: "collection",
+    name,
+    item_fields: definition.item_fields || [],
+    items: Array.isArray(asset[name]) ? asset[name] : [],
+  };
 }
 
 function titleize(value) {
