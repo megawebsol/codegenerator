@@ -1,0 +1,600 @@
+{
+  "schema": "real-estate-property-hierarchy",
+  "version": "1.0.0",
+  "language": "pt-BR",
+  "description": "Árvore hierárquica das entidades e relações diretamente conectadas a um ativo imobiliário.",
+  "principles": [
+    "LegalPropertyUnit não é sinônimo de Property genérico.",
+    "RegistryEvidence sustenta identidade ou titularidade, mas não é o imóvel.",
+    "Ownership, possession, occupancy, brokerage e publication são relações ou contextos distintos.",
+    "Endereço não substitui a identidade jurídica da unidade.",
+    "Listing é uma representação comercial temporal, não o ativo físico.",
+    "As relações podem ter vigência material e evidências próprias."
+  ],
+  "root": {
+    "id": "real-estate-asset",
+    "type": "RealEstateAsset",
+    "label": "Ativo imobiliário",
+    "children": [
+      {
+        "id": "legal-property-unit",
+        "type": "LegalPropertyUnit",
+        "label": "Unidade jurídica do imóvel",
+        "direct_connections": [
+          "registry-evidence",
+          "land-parcel",
+          "physical-structure",
+          "place",
+          "building-or-condominium",
+          "marketable-bundle",
+          "ownership-arrangement",
+          "rights-and-restrictions",
+          "possession",
+          "occupancy",
+          "regulatory-evidence",
+          "brokerage-mandate",
+          "listing"
+        ],
+        "children": [
+          {
+            "id": "registry-evidence",
+            "type": "RegistryEvidence",
+            "label": "Evidência registral",
+            "items": [
+              "matrícula",
+              "transcrição",
+              "registro",
+              "cartório",
+              "certidão registral",
+              "document_hash"
+            ]
+          },
+          {
+            "id": "ownership-arrangement",
+            "type": "OwnershipArrangement",
+            "label": "Arranjo de titularidade",
+            "children": [
+              {
+                "id": "owner-person",
+                "type": "Person",
+                "role": "Owner",
+                "label": "Proprietário pessoa física"
+              },
+              {
+                "id": "owner-organization",
+                "type": "Organization",
+                "role": "Owner",
+                "label": "Proprietário pessoa jurídica"
+              },
+              {
+                "id": "co-ownership",
+                "type": "OwnershipShare",
+                "label": "Copropriedade/fração ideal",
+                "items": [
+                  "owner",
+                  "share",
+                  "valid_from",
+                  "valid_to",
+                  "supporting_evidence"
+                ]
+              },
+              {
+                "id": "authorized-representative",
+                "type": "PersonOrOrganization",
+                "role": "AuthorizedRepresentative",
+                "label": "Representante autorizado do titular"
+              }
+            ]
+          },
+          {
+            "id": "rights-and-restrictions",
+            "type": "RightsAndRestrictions",
+            "label": "Direitos, ônus e restrições",
+            "items": [
+              "usufruto",
+              "servidão",
+              "hipoteca",
+              "alienação fiduciária",
+              "penhora",
+              "indisponibilidade",
+              "restrição ambiental",
+              "restrição urbanística"
+            ]
+          },
+          {
+            "id": "possession",
+            "type": "Possession",
+            "label": "Posse",
+            "items": [
+              "possessor",
+              "possession_basis",
+              "valid_from",
+              "valid_to",
+              "supporting_evidence"
+            ]
+          },
+          {
+            "id": "occupancy",
+            "type": "Occupancy",
+            "label": "Ocupação/uso",
+            "items": [
+              "occupant",
+              "use_purpose",
+              "valid_from",
+              "valid_to"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "land-parcel",
+        "type": "LandParcel",
+        "label": "Parcela, lote, gleba ou terreno",
+        "items": [
+          "parcel_origin",
+          "area",
+          "boundaries",
+          "fractional_interest",
+          "subdivision_or_assembly"
+        ]
+      },
+      {
+        "id": "physical-structure",
+        "type": "PhysicalStructure",
+        "label": "Estrutura física",
+        "items": [
+          "edificação",
+          "casa",
+          "prédio",
+          "torre",
+          "unidade construída",
+          "área construída",
+          "área útil",
+          "obra",
+          "reforma",
+          "demolição"
+        ]
+      },
+      {
+        "id": "place",
+        "type": "Place",
+        "label": "Localização",
+        "items": [
+          "logradouro",
+          "número",
+          "complemento",
+          "bairro",
+          "cidade",
+          "estado",
+          "CEP",
+          "país",
+          "latitude",
+          "longitude",
+          "georeference",
+          "municipality",
+          "zone"
+        ]
+      },
+      {
+        "id": "building-or-condominium",
+        "type": "BuildingOrCondominium",
+        "label": "Edifício, empreendimento ou condomínio",
+        "children": [
+          {
+            "id": "building",
+            "type": "Building",
+            "label": "Edifício/torre/bloco",
+            "items": [
+              "units",
+              "common_areas",
+              "parking_units",
+              "storage_units"
+            ]
+          },
+          {
+            "id": "condominium",
+            "type": "Condominium",
+            "label": "Condomínio",
+            "items": [
+              "legal_name",
+              "tax_id",
+              "units_count",
+              "common_areas",
+              "autonomous_units",
+              "fractional_interests",
+              "convention",
+              "internal_rules"
+            ],
+            "direct_connections": [
+              "condominium-administration",
+              "syndic",
+              "administrator"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "marketable-bundle",
+        "type": "MarketableBundle",
+        "label": "Conjunto comercializável",
+        "children": [
+          "legal-property-unit",
+          "parking-unit",
+          "storage-unit",
+          "physical-structure",
+          "accessory-right"
+        ]
+      },
+      {
+        "id": "condominium-administration",
+        "type": "CondominiumAdministration",
+        "label": "Administração condominial",
+        "children": [
+          {
+            "id": "syndic",
+            "type": "PersonOrOrganization",
+            "role": "Syndic",
+            "label": "Síndico"
+          },
+          {
+            "id": "administrator",
+            "type": "Organization",
+            "role": "CondominiumAdministrator",
+            "label": "Administradora"
+          },
+          {
+            "id": "council",
+            "type": "CondominiumCouncil",
+            "label": "Conselho"
+          },
+          {
+            "id": "assembly",
+            "type": "CondominiumAssembly",
+            "label": "Assembleia"
+          }
+        ],
+        "items": [
+          "assessments",
+          "maintenance",
+          "expenses",
+          "arrears",
+          "accounts"
+        ]
+      },
+      {
+        "id": "regulatory-evidence",
+        "type": "RegulatoryEvidence",
+        "label": "Regularidade, licenças e documentos técnicos",
+        "children": [
+          {
+            "id": "permit",
+            "type": "Permit",
+            "label": "Alvará/licença",
+            "items": [
+              "construction_permit",
+              "occupancy_permit",
+              "environmental_license",
+              "municipal_approval",
+              "fire_safety_certificate"
+            ]
+          },
+          {
+            "id": "technical-evidence",
+            "type": "TechnicalEvidence",
+            "label": "Evidência técnica",
+            "items": [
+              "plant",
+              "descriptive_memorial",
+              "technical_report",
+              "ART",
+              "RRT",
+              "survey",
+              "valuation"
+            ]
+          },
+          {
+            "id": "contract-document",
+            "type": "ContractDocument",
+            "label": "Documento contratual",
+            "items": [
+              "deed",
+              "purchase_agreement",
+              "lease_agreement",
+              "power_of_attorney",
+              "condominium_convention",
+              "amendment",
+              "signature",
+              "document_hash"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "brokerage-mandate",
+        "type": "BrokerageMandate",
+        "label": "Mandato de intermediação",
+        "children": [
+          {
+            "id": "mandate-authorizer",
+            "type": "PersonOrOrganization",
+            "role": "Authorizer",
+            "label": "Titular/mandante"
+          },
+          {
+            "id": "realtor",
+            "type": "Person",
+            "role": "Realtor",
+            "label": "Corretor",
+            "items": [
+              "name",
+              "creci",
+              "professional_validity"
+            ]
+          },
+          {
+            "id": "real-estate-agency",
+            "type": "Organization",
+            "role": "RealEstateAgency",
+            "label": "Imobiliária/agência",
+            "items": [
+              "legal_name",
+              "tax_id",
+              "creci_juridical"
+            ]
+          },
+          {
+            "id": "brokerage-partnership",
+            "type": "BrokeragePartnership",
+            "label": "Parceria entre imobiliárias/corretores",
+            "items": [
+              "partner_agencies",
+              "commission_split",
+              "validity"
+            ]
+          }
+        ],
+        "items": [
+          "exclusive",
+          "minimum_price",
+          "commission",
+          "territory",
+          "channels",
+          "valid_from",
+          "valid_to",
+          "contract_hash"
+        ]
+      },
+      {
+        "id": "listing",
+        "type": "Listing",
+        "label": "Anúncio/publicação comercial",
+        "items": [
+          "marketable_bundle",
+          "asking_price",
+          "currency",
+          "channel",
+          "portal",
+          "description",
+          "photos",
+          "availability",
+          "publication_status",
+          "valid_from",
+          "valid_to"
+        ],
+        "direct_connections": [
+          "brokerage-mandate",
+          "realtor",
+          "real-estate-agency",
+          "publication"
+        ]
+      },
+      {
+        "id": "publication",
+        "type": "Publication",
+        "label": "Publicação em canal/portal",
+        "children": [
+          {
+            "id": "publication-channel",
+            "type": "PublicationChannel",
+            "label": "Portal, site ou canal"
+          },
+          {
+            "id": "publication-status",
+            "type": "PublicationStatus",
+            "label": "Estado da publicação",
+            "values": [
+              "draft",
+              "published",
+              "suspended",
+              "rejected",
+              "sold",
+              "rented",
+              "vacated"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "negotiation-and-closing",
+        "type": "NegotiationAndClosing",
+        "label": "Negociação e fechamento",
+        "children": [
+          {
+            "id": "demand",
+            "type": "Demand",
+            "label": "Demanda/interessado"
+          },
+          {
+            "id": "visit",
+            "type": "Visit",
+            "label": "Visita"
+          },
+          {
+            "id": "opportunity",
+            "type": "Opportunity",
+            "label": "Oportunidade"
+          },
+          {
+            "id": "offer",
+            "type": "Offer",
+            "label": "Proposta",
+            "items": [
+              "buyer",
+              "listing",
+              "offered_price",
+              "currency",
+              "financing",
+              "conditions"
+            ]
+          },
+          {
+            "id": "agreement",
+            "type": "Agreement",
+            "label": "Acordo/contrato"
+          },
+          {
+            "id": "closing-case",
+            "type": "ClosingCase",
+            "label": "Caso de fechamento",
+            "items": [
+              "due_diligence",
+              "financing",
+              "deed",
+              "registration",
+              "payment",
+              "allocation",
+              "settlement",
+              "title_transferred",
+              "possession_transferred",
+              "commission_settled",
+              "case_closed"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "direct_relationships": [
+    {
+      "type": "evidenced_by",
+      "from": "LegalPropertyUnit",
+      "to": "RegistryEvidence"
+    },
+    {
+      "type": "situated_on",
+      "from": "LegalPropertyUnit",
+      "to": "LandParcel"
+    },
+    {
+      "type": "embodied_in",
+      "from": "LegalPropertyUnit",
+      "to": "PhysicalStructure"
+    },
+    {
+      "type": "located_at",
+      "from": "LegalPropertyUnit",
+      "to": "Place"
+    },
+    {
+      "type": "part_of",
+      "from": "LegalPropertyUnit",
+      "to": "BuildingOrCondominium"
+    },
+    {
+      "type": "included_in",
+      "from": "LegalPropertyUnit",
+      "to": "MarketableBundle"
+    },
+    {
+      "type": "owned_by",
+      "from": "LegalPropertyUnit",
+      "to": "PersonOrOrganization",
+      "cardinality": "one_or_many"
+    },
+    {
+      "type": "subject_to",
+      "from": "LegalPropertyUnit",
+      "to": "RightsAndRestrictions",
+      "cardinality": "zero_or_many"
+    },
+    {
+      "type": "possessed_by",
+      "from": "LegalPropertyUnit",
+      "to": "PersonOrOrganization",
+      "cardinality": "zero_or_many"
+    },
+    {
+      "type": "occupied_by",
+      "from": "LegalPropertyUnit",
+      "to": "PersonOrOrganization",
+      "cardinality": "zero_or_many"
+    },
+    {
+      "type": "administered_by",
+      "from": "Condominium",
+      "to": "PersonOrOrganization",
+      "cardinality": "one_or_many_over_time"
+    },
+    {
+      "type": "regulated_by",
+      "from": "LegalPropertyUnit",
+      "to": "RegulatoryEvidence",
+      "cardinality": "zero_or_many"
+    },
+    {
+      "type": "represented_by",
+      "from": "MarketableBundle",
+      "to": "BrokerageMandate",
+      "cardinality": "zero_or_many_over_time"
+    },
+    {
+      "type": "advertised_as",
+      "from": "MarketableBundle",
+      "to": "Listing",
+      "cardinality": "zero_or_many_over_time"
+    },
+    {
+      "type": "handled_by",
+      "from": "BrokerageMandate",
+      "to": "PersonOrOrganization",
+      "cardinality": "one_or_many"
+    },
+    {
+      "type": "published_on",
+      "from": "Listing",
+      "to": "PublicationChannel",
+      "cardinality": "one_or_many"
+    },
+    {
+      "type": "receives",
+      "from": "Listing",
+      "to": "Offer",
+      "cardinality": "zero_or_many"
+    },
+    {
+      "type": "closes_through",
+      "from": "MarketableBundle",
+      "to": "ClosingCase",
+      "cardinality": "zero_or_many_over_time"
+    }
+  ],
+  "non_equivalences": [
+    ["LegalPropertyUnit", "RegistryEvidence"],
+    ["LegalPropertyUnit", "LandParcel"],
+    ["LegalPropertyUnit", "PhysicalStructure"],
+    ["Ownership", "Possession"],
+    ["Possession", "Occupancy"],
+    ["Owner", "Realtor"],
+    ["Realtor", "ListingPublisher"],
+    ["Listing", "Publication"],
+    ["Offer", "AcceptanceAct"],
+    ["Address", "LegalPropertyUnit"]
+  ],
+  "source_references": [
+    "basicquipudb/domainpacks/real_estate/README.md",
+    "basicquipudb/apps/imobitools/README.md",
+    "basicquipudb/docs/reports/IMOBITOOLS_DOMAIN_AND_ASSET_TIMELINE_REVIEW.md",
+    "basicquipudb/dictionaries/reso-dd-2.1.0/dd-2.1.json",
+    "basicquipudb/dictionaries/opda-pdtf-3.5.0/combined.json"
+  ]
+}
