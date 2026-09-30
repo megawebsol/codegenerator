@@ -1,0 +1,2605 @@
+{
+  "macro_area": {
+    "id": "property",
+    "order": 1,
+    "label": "Property"
+  },
+  "subarea": {
+    "id": "property_identity",
+    "order": 1,
+    "label": "Property Identity and Real Estate Unit",
+    "facet_number": 1,
+    "description": "Identity of the governed real-estate object and its legal or operational unit references.",
+    "typical_concepts": {
+      "accommodation_category": {
+        "ref": "base0001.accommodation_category@1",
+        "kind": "property",
+        "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [
+              "https://schema.org/category"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/accommodationCategory",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "accommodation_floor_plan": {
+        "ref": "base0001.accommodation_floor_plan@1",
+        "kind": "property",
+        "definition": "A floorplan of some [[Accommodation]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Residence"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/FloorPlan"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/accommodationFloorPlan",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "additional_type": {
+        "ref": "base0001.additional_type@1",
+        "kind": "property",
+        "definition": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the\n    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href=\"https://schema.org/docs/styleguide.html\">style guide</a>.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Thing"
+            ],
+            "parent_refs": [
+              "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+            ],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/additionalType",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "alternate_name": {
+        "ref": "base0001.alternate_name@1",
+        "kind": "property",
+        "definition": "An alias for the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Thing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/alternateName",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "amenity_feature": {
+        "ref": "base0001.amenity_feature@1",
+        "kind": "property",
+        "definition": "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/LocationFeatureSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/amenityFeature",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "bed": {
+        "ref": "base0001.bed@1",
+        "kind": "property",
+        "definition": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text.\n      If you want to indicate the quantity of a certain kind of bed, use an instance of BedDetails. For more detailed information, use the amenityFeature property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/HotelRoom",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/BedDetails",
+              "https://schema.org/BedType",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/bed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "category": {
+        "ref": "base0001.category@1",
+        "kind": "property",
+        "definition": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/Guide",
+              "https://schema.org/Invoice",
+              "https://schema.org/Offer",
+              "https://schema.org/PhysicalActivity",
+              "https://schema.org/Product",
+              "https://schema.org/Recommendation",
+              "https://schema.org/Service",
+              "https://schema.org/SpecialAnnouncement"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CategoryCode",
+              "https://schema.org/PhysicalActivityCategory",
+              "https://schema.org/Text",
+              "https://schema.org/Thing",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/category",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "floor_level": {
+        "ref": "base0001.floor_level@1",
+        "kind": "property",
+        "definition": "The floor level for an [[Accommodation]] in a multi-storey building. Since counting\n  systems [vary internationally](https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designations), the local system should be used where possible.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/LocalBusiness",
+              "https://schema.org/Residence"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/floorLevel",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "floor_size": {
+        "ref": "base0001.floor_size@1",
+        "kind": "property",
+        "definition": "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/floorSize",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "identifier": {
+        "ref": "base0001.identifier@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Thing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/identifier",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/identifier",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/Identifiers/identifiedBy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_offered": {
+        "ref": "base0001.item_offered@1",
+        "kind": "property",
+        "definition": "An item being offered (or demanded). The transactional nature of the offer or demand is documented using [[businessFunction]], e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateOffer",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/MenuItem",
+              "https://schema.org/Product",
+              "https://schema.org/Service",
+              "https://schema.org/Trip"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemOffered",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "lease_length": {
+        "ref": "base0001.lease_length@1",
+        "kind": "property",
+        "definition": "Length of the lease for some [[Accommodation]], either particular to some [[Offer]] or in some cases intrinsic to the property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Offer",
+              "https://schema.org/RealEstateListing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Duration",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/leaseLength",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "main_entity": {
+        "ref": "base0001.main_entity@1",
+        "kind": "property",
+        "definition": "Indicates the primary entity described in some page or other CreativeWork.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork"
+            ],
+            "parent_refs": [
+              "https://schema.org/about"
+            ],
+            "range_refs": [
+              "https://schema.org/Thing"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/mainEntity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_bathrooms_total": {
+        "ref": "base0001.number_of_bathrooms_total@1",
+        "kind": "property",
+        "definition": "The total integer number of bathrooms in some [[Accommodation]], following real estate conventions as [documented in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field): \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also [[numberOfRooms]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfBathroomsTotal",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_bedrooms": {
+        "ref": "base0001.number_of_bedrooms@1",
+        "kind": "property",
+        "definition": "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfBedrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_full_bathrooms": {
+        "ref": "base0001.number_of_full_bathrooms@1",
+        "kind": "property",
+        "definition": "Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfFullBathrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_partial_bathrooms": {
+        "ref": "base0001.number_of_partial_bathrooms@1",
+        "kind": "property",
+        "definition": "Number of partial bathrooms - The total number of half and ¼ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsPartial field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfPartialBathrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_rooms": {
+        "ref": "base0001.number_of_rooms@1",
+        "kind": "property",
+        "definition": "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Apartment",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/House",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/SingleFamilyResidence",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfRooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "occupancy": {
+        "ref": "base0001.occupancy@1",
+        "kind": "property",
+        "definition": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Apartment",
+              "https://schema.org/HotelRoom",
+              "https://schema.org/SingleFamilyResidence",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/occupancy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "permitted_usage": {
+        "ref": "base0001.permitted_usage@1",
+        "kind": "property",
+        "definition": "Indications regarding the permitted usage of the accommodation.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/permittedUsage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "pets_allowed": {
+        "ref": "base0001.pets_allowed@1",
+        "kind": "property",
+        "definition": "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/petsAllowed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "property_id": {
+        "ref": "base0001.property_id@1",
+        "kind": "property",
+        "definition": "A commonly used identifier for the characteristic represented by the property, e.g. a manufacturer or a standard code for a property. propertyID can be\n(1) a prefixed string, mainly meant to be used with standards for product properties; (2) a site-specific, non-prefixed string (e.g. the primary key of the property or the vendor-specific ID of the property), or (3)\na URL indicating the type of the property, either pointing to an external vocabulary, or a Web resource that describes the property (e.g. a glossary entry).\nStandards bodies should promote a standard prefix for the identifiers of properties from their standards.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PropertyValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/propertyID",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "same_as": {
+        "ref": "base0001.same_as@1",
+        "kind": "property",
+        "definition": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Thing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/sameAs",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "seller_assigned_id": {
+        "ref": "base0001.seller_assigned_id@1",
+        "kind": "property",
+        "definition": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#sellerAssignedId",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/sku",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "serial_id": {
+        "ref": "base0001.serial_id@1",
+        "kind": "property",
+        "definition": "The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/IndividualProduct",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#SerialId",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/serialNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "tour_booking_page": {
+        "ref": "base0001.tour_booking_page@1",
+        "kind": "property",
+        "definition": "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/tourBookingPage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "year_built": {
+        "ref": "base0001.year_built@1",
+        "kind": "property",
+        "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/yearBuilt",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitTypes",
+        "source_native_name": "UnitTypes",
+        "source_label": "Unit Types",
+        "source_definition": "A collection of types of units included in the income (multifamily) property. The collection includes a type, beds, baths and other aspects of the type of unit behind described.",
+        "source_resource": "Property",
+        "source_data_type": "Collection(org.reso.metadata.PropertyUnitTypes)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitNumber",
+        "source_native_name": "UnitNumber",
+        "source_label": "Unit Number",
+        "source_definition": "A text field containing the unit number or portion of a larger building or complex that should appear following the street suffix or, if it exists, the street suffix direction in the street address (e.g., Apt G, #55).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingName",
+        "source_native_name": "BuildingName",
+        "source_label": "Building Name",
+        "source_definition": "The marketing or vanity name of the building or complex.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuildingName",
+        "source_native_name": "BuildingName",
+        "source_label": "Building Name",
+        "source_definition": "The name of the building or business park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BusinessName",
+        "source_native_name": "BusinessName",
+        "source_label": "Business Name",
+        "source_definition": "The name of the business being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyName",
+        "source_native_name": "PropertyName",
+        "source_label": "Property Name",
+        "source_definition": "The easily recognizable name identifying the property. The property name may be a general name or address (e.g., Pinelawn Shopping Center, 10 Broadway St.)",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxParcelLetter",
+        "source_native_name": "TaxParcelLetter",
+        "source_label": "Tax Parcel Letter",
+        "source_definition": "Some systems of parcel identification incorporate a method that utilizes a county identifier, a tax book number, a tax map number and a parcel identification number.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.Listing",
+        "source_native_name": "Listing",
+        "source_label": "Listing",
+        "source_definition": "The listing associated with the PropertyUnitType record.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "org.reso.metadata.Property",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.LandmarkedBuildingName",
+        "source_native_name": "LandmarkedBuildingName",
+        "source_label": "Landmark Name",
+        "source_definition": "The building's name as assigned by the Landmarks Preservation Commission.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeProForma",
+        "source_native_name": "UnitTypeProForma",
+        "source_label": "Unit Type Pro Forma",
+        "source_definition": "The pro forma rent or the expected rental income from the given type of unit. This may vary from actual rent, which can be affected by factors other than current market value.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeFurnished",
+        "source_native_name": "UnitTypeFurnished",
+        "source_label": "Unit Type Furnished",
+        "source_definition": "The level of furnishing for a given type of unit (i.e., Furnished, Partial or Unfurnished).",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "org.reso.metadata.enums.Furnished",
+        "source_enum_ref": "org.reso.metadata.enums.Furnished",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeTotalRent",
+        "source_native_name": "UnitTypeTotalRent",
+        "source_label": "Unit Type Total Rent",
+        "source_definition": "The total actual rent is the sum of all rent being collected for all units of the given type. For example, if you had five units of a particular type, each collecting $1,000, the total actual rent would be $5,000.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeActualRent",
+        "source_native_name": "UnitTypeActualRent",
+        "source_label": "Unit Type Actual Rent",
+        "source_definition": "The actual rent per month being collected for a given type of unit.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "legal_property_unit",
+        "label": "legal property unit",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "property_identifier",
+        "label": "property identifier",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "registry_reference",
+        "label": "registry reference",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "cadastral_reference",
+        "label": "cadastral reference",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "asset_type",
+        "label": "asset type",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "asset_subtype",
+        "label": "asset subtype",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "component_unit",
+        "label": "component unit",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "accessory_unit",
+        "label": "accessory unit",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "property_composition",
+        "label": "property composition",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "marketable_component",
+        "label": "marketable component",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "unit_types",
+        "label": "unit types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UnitTypes",
+            "source_native_name": "UnitTypes",
+            "source_data_type": "Collection(org.reso.metadata.PropertyUnitTypes)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "unit_number",
+        "label": "unit number",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UnitNumber",
+            "source_native_name": "UnitNumber",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_building_name",
+        "label": "building name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.BuildingName",
+            "source_native_name": "BuildingName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_parcel_number",
+        "label": "parcel number",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ParcelNumber",
+            "source_native_name": "ParcelNumber",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_name",
+        "label": "building name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuildingName",
+            "source_native_name": "BuildingName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "business_name",
+        "label": "business name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BusinessName",
+            "source_native_name": "BusinessName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "parcel_number",
+        "label": "parcel number",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParcelNumber",
+            "source_native_name": "ParcelNumber",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "property_name",
+        "label": "property name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertyName",
+            "source_native_name": "PropertyName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_type",
+        "label": "property type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertyType",
+            "source_native_name": "PropertyType",
+            "source_data_type": "org.reso.metadata.enums.PropertyType",
+            "source_enum_ref": "org.reso.metadata.enums.PropertyType",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "unit_type_type",
+        "label": "unit type type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UnitTypeType",
+            "source_native_name": "UnitTypeType",
+            "source_data_type": "org.reso.metadata.enums.UnitTypeType",
+            "source_enum_ref": "org.reso.metadata.enums.UnitTypeType",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_property_subtype",
+        "label": "property subtype",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PropertySubtype",
+            "source_native_name": "PropertySubtype",
+            "source_data_type": "org.reso.metadata.enums.PropertySubType",
+            "source_enum_ref": "org.reso.metadata.enums.PropertySubType",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "property_sub_type",
+        "label": "property sub type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertySubType",
+            "source_native_name": "PropertySubType",
+            "source_data_type": "org.reso.metadata.enums.PropertySubType",
+            "source_enum_ref": "org.reso.metadata.enums.PropertySubType",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "tax_parcel_letter",
+        "label": "tax parcel letter",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxParcelLetter",
+            "source_native_name": "TaxParcelLetter",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_listing",
+        "label": "listing",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.Listing",
+            "source_native_name": "Listing",
+            "source_data_type": "org.reso.metadata.Property",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_feed_types",
+        "label": "feed types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.FeedTypes",
+            "source_native_name": "FeedTypes",
+            "source_data_type": "org.reso.metadata.enums.FeedTypes",
+            "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_universal_property_id",
+        "label": "universal property id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.UniversalPropertyId",
+            "source_native_name": "UniversalPropertyId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "universal_property_id",
+        "label": "universal property id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UniversalPropertyId",
+            "source_native_name": "UniversalPropertyId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_unit_type_key",
+        "label": "unit type key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.UnitTypeKey",
+            "source_native_name": "UnitTypeKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_unit_type_type",
+        "label": "unit type type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.UnitTypeType",
+            "source_native_name": "UnitTypeType",
+            "source_data_type": "org.reso.metadata.enums.UnitTypeType",
+            "source_enum_ref": "org.reso.metadata.enums.UnitTypeType",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_landmarked_building_name",
+        "label": "landmark name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.LandmarkedBuildingName",
+            "source_native_name": "LandmarkedBuildingName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_universal_property_sub_id",
+        "label": "universal property sub id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.UniversalPropertySubId",
+            "source_native_name": "UniversalPropertySubId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "universal_property_sub_id",
+        "label": "universal property sub id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UniversalPropertySubId",
+            "source_native_name": "UniversalPropertySubId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_unit_type_pro_forma",
+        "label": "unit type pro forma",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.UnitTypeProForma",
+            "source_native_name": "UnitTypeProForma",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_unit_type_beds_total",
+        "label": "unit type beds total",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.UnitTypeBedsTotal",
+            "source_native_name": "UnitTypeBedsTotal",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "number_of_bedrooms",
+              "ref": "base0001.number_of_bedrooms@1",
+              "kind": "property",
+              "definition": "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_unit_type_furnished",
+        "label": "unit type furnished",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.UnitTypeFurnished",
+            "source_native_name": "UnitTypeFurnished",
+            "source_data_type": "org.reso.metadata.enums.Furnished",
+            "source_enum_ref": "org.reso.metadata.enums.Furnished",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_unit_type_total_rent",
+        "label": "unit type total rent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.UnitTypeTotalRent",
+            "source_native_name": "UnitTypeTotalRent",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_unit_type_actual_rent",
+        "label": "unit type actual rent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.UnitTypeActualRent",
+            "source_native_name": "UnitTypeActualRent",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_unit_types_unit_type_baths_total",
+        "label": "unit type baths total",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyUnitTypes.UnitTypeBathsTotal",
+            "source_native_name": "UnitTypeBathsTotal",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "number_of_bathrooms_total",
+              "ref": "base0001.number_of_bathrooms_total@1",
+              "kind": "property",
+              "definition": "The total integer number of bathrooms in some [[Accommodation]], following real estate conventions as [documented in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field): \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also [[numberOfRooms]].",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing. The value may be identical to that of the Listing Key, but the Listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitTypes",
+        "source_native_name": "UnitTypes",
+        "source_label": "Unit Types",
+        "source_definition": "A collection of types of units included in the income (multifamily) property. The collection includes a type, beds, baths and other aspects of the type of unit behind described.",
+        "source_resource": "Property",
+        "source_data_type": "Collection(org.reso.metadata.PropertyUnitTypes)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitNumber",
+        "source_native_name": "UnitNumber",
+        "source_label": "Unit Number",
+        "source_definition": "A text field containing the unit number or portion of a larger building or complex that should appear following the street suffix or, if it exists, the street suffix direction in the street address (e.g., Apt G, #55).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingName",
+        "source_native_name": "BuildingName",
+        "source_label": "Building Name",
+        "source_definition": "The marketing or vanity name of the building or complex.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParcelNumber",
+        "source_native_name": "ParcelNumber",
+        "source_label": "Parcel Number",
+        "source_definition": "A number used to uniquely identify a parcel or lot. This number is typically issued by the county or county assessor. The APN (Assessor's Parcel Number) format varies from county to county. It is recommended that all parcel numbers be transmitted without dashes or hyphens.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuildingName",
+        "source_native_name": "BuildingName",
+        "source_label": "Building Name",
+        "source_definition": "The name of the building or business park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BusinessName",
+        "source_native_name": "BusinessName",
+        "source_label": "Business Name",
+        "source_definition": "The name of the business being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParcelNumber",
+        "source_native_name": "ParcelNumber",
+        "source_label": "Parcel Number",
+        "source_definition": "A number used to uniquely identify a parcel or lot. This number is typically issued by the county or county assessor. The assessor's parcel number (APN) format varies from county to county. It is recommended that all parcel numbers are transmitted without dashes or hyphens.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyName",
+        "source_native_name": "PropertyName",
+        "source_label": "Property Name",
+        "source_definition": "The easily recognizable name identifying the property. The property name may be a general name or address (e.g., Pinelawn Shopping Center, 10 Broadway St.)",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyType",
+        "source_native_name": "PropertyType",
+        "source_label": "Property Type",
+        "source_definition": "A list of types of properties (e.g., Residential, Lease, Income, Land, Mobile, Commercial Sale).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertyType",
+        "source_enum_ref": "org.reso.metadata.enums.PropertyType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitTypeType",
+        "source_native_name": "UnitTypeType",
+        "source_label": "Unit Type Type",
+        "source_definition": "A list of floor plans or configurations of an individual unit (e.g., 1 Bedroom, Studio, Loft) in a multi-family or multi-unit development. A relational implementation of UnitTypes must omit the type from the field name and use UnitTypeType to create a vertical representation of the various unit types. Repeating of the word \"type\" in the field name is intentional.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.UnitTypeType",
+        "source_enum_ref": "org.reso.metadata.enums.UnitTypeType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PropertySubtype",
+        "source_native_name": "PropertySubtype",
+        "source_label": "Property Subtype",
+        "source_definition": "A list of types of residential and residential lease properties (e.g., Single-Family Residence, Condominium, Townhouse) or a list of subtypes for mobile (e.g., Manufactured Home, Manufactured On Land).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.PropertySubType",
+        "source_enum_ref": "org.reso.metadata.enums.PropertySubType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertySubType",
+        "source_native_name": "PropertySubType",
+        "source_label": "Property Sub Type",
+        "source_definition": "A list of types of residential and residential lease properties (e.g., Single-Family Residence, Condominium, Townhouse) or a list of subtypes for mobile (e.g., Manufactured Home, Manufactured On Land).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertySubType",
+        "source_enum_ref": "org.reso.metadata.enums.PropertySubType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxParcelLetter",
+        "source_native_name": "TaxParcelLetter",
+        "source_label": "Tax Parcel Letter",
+        "source_definition": "Some systems of parcel identification incorporate a method that utilizes a county identifier, a tax book number, a tax map number and a parcel identification number.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.Listing",
+        "source_native_name": "Listing",
+        "source_label": "Listing",
+        "source_definition": "The listing associated with the PropertyUnitType record.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "org.reso.metadata.Property",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The foreign ID relating to the Property Resource; the well-known identifier for the listing. The value may be identical to that of the Listing Key, but the Listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating or merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.UniversalPropertyId",
+        "source_native_name": "UniversalPropertyId",
+        "source_label": "Universal Property ID",
+        "source_definition": "The Universal Property Identifier (UPI) is a unique identifier for all real property in the U.S. and Canada. It is based on country and local identification methods and is limited to real property. For cases such as shares of real property, units and other more granular cases, please utilize the UniversalPropertySubId.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UniversalPropertyId",
+        "source_native_name": "UniversalPropertyId",
+        "source_label": "Universal Property ID",
+        "source_definition": "The RESO Universal Property Identifier (UPI) is a unique identifier for all real property in the U.S. and Canada. It is based on country and local identification methods and is limited to real property. For cases such as shares of real property, units and other more granular cases, please utilize the UniversalPropertySubId.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "The foreign key relating to the Property Resource; a unique identifier for this record from the immediate source; a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see the Property Resource's SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeKey",
+        "source_native_name": "UnitTypeKey",
+        "source_label": "Unit Type Key",
+        "source_definition": "A unique identifier for this record. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeType",
+        "source_native_name": "UnitTypeType",
+        "source_label": "Unit Type Type",
+        "source_definition": "A list of possible unit types (e.g., 1 Bedroom, 2 Bedroom, 3 Bedroom, Studio, Loft).",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "org.reso.metadata.enums.UnitTypeType",
+        "source_enum_ref": "org.reso.metadata.enums.UnitTypeType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.LandmarkedBuildingName",
+        "source_native_name": "LandmarkedBuildingName",
+        "source_label": "Landmark Name",
+        "source_definition": "The building's name as assigned by the Landmarks Preservation Commission.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.UniversalPropertySubId",
+        "source_native_name": "UniversalPropertySubId",
+        "source_label": "Universal Property Sub ID",
+        "source_definition": "A unique identifier for all subsets or shares of real property in the U.S. and Canada. This may include Stock Cooperatives, Community Apartment, Units for Rent, etc. Informally abbreviated as UPSI, it is based on country and local identification methods, just as the Universal Property Identifier (UPI), but it is limited to subsets or shares of real property. For cases of complete real property, please utilize the UniversalPropertyId field.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UniversalPropertySubId",
+        "source_native_name": "UniversalPropertySubId",
+        "source_label": "Universal Property Sub ID",
+        "source_definition": "A unique identifier for all subsets or shares of real property in the U.S. and Canada. This may include Stock Cooperatives, Community Apartment, Units for Rent, etc. Informally abbreviated as UPSI, it is based on country and local identification methods, just as the Universal Property Identifier (UPI), but it is limited to subsets or shares of real property. For cases of complete real property, please utilize the UniversalPropertyId field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeProForma",
+        "source_native_name": "UnitTypeProForma",
+        "source_label": "Unit Type Pro Forma",
+        "source_definition": "The pro forma rent or the expected rental income from the given type of unit. This may vary from actual rent, which can be affected by factors other than current market value.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeBedsTotal",
+        "source_native_name": "UnitTypeBedsTotal",
+        "source_label": "Unit Type Beds Total",
+        "source_definition": "The total number of bedrooms for a given type of unit.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "number_of_bedrooms",
+          "ref": "base0001.number_of_bedrooms@1",
+          "kind": "property",
+          "definition": "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeFurnished",
+        "source_native_name": "UnitTypeFurnished",
+        "source_label": "Unit Type Furnished",
+        "source_definition": "The level of furnishing for a given type of unit (i.e., Furnished, Partial or Unfurnished).",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "org.reso.metadata.enums.Furnished",
+        "source_enum_ref": "org.reso.metadata.enums.Furnished",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeTotalRent",
+        "source_native_name": "UnitTypeTotalRent",
+        "source_label": "Unit Type Total Rent",
+        "source_definition": "The total actual rent is the sum of all rent being collected for all units of the given type. For example, if you had five units of a particular type, each collecting $1,000, the total actual rent would be $5,000.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeActualRent",
+        "source_native_name": "UnitTypeActualRent",
+        "source_label": "Unit Type Actual Rent",
+        "source_definition": "The actual rent per month being collected for a given type of unit.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyUnitTypes.UnitTypeBathsTotal",
+        "source_native_name": "UnitTypeBathsTotal",
+        "source_label": "Unit Type Baths Total",
+        "source_definition": "The total number of baths for a given type of unit.",
+        "source_resource": "PropertyUnitTypes",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "number_of_bathrooms_total",
+          "ref": "base0001.number_of_bathrooms_total@1",
+          "kind": "property",
+          "definition": "The total integer number of bathrooms in some [[Accommodation]], following real estate conventions as [documented in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field): \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also [[numberOfRooms]].",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
