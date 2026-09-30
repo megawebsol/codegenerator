@@ -1,0 +1,73 @@
+{
+  "catalog_id": "real-estate-erp-form-catalog",
+  "version": "0.1.0",
+  "status": "review",
+  "language": "en",
+  "purpose": "Operational Real Estate ERP form catalog split by principal macro-area while preserving every field from real-estate-erp-domain-navigation.v0.2.1.",
+  "source": {
+    "repository": "megawebsol/codegenerator",
+    "artifact": "review/gpt-5.6-sol/real-estate-domain-pack/real-estate-erp-domain-navigation.v0.2.1.json",
+    "blob_sha": "e5bdfdf8813400053e0e9e72e356e706730399a6"
+  },
+  "macro_areas": [
+    {
+      "id": "property",
+      "path": "01-property.json",
+      "subareas": 5,
+      "concepts": 298
+    },
+    {
+      "id": "legal",
+      "path": "02-legal.json",
+      "subareas": 4,
+      "concepts": 217
+    },
+    {
+      "id": "commercial",
+      "path": "03-commercial.json",
+      "subareas": 2,
+      "concepts": 109
+    },
+    {
+      "id": "relationships",
+      "path": "04-relationships.json",
+      "subareas": 3,
+      "concepts": 181
+    },
+    {
+      "id": "negotiation",
+      "path": "05-negotiation.json",
+      "subareas": 2,
+      "concepts": 112
+    },
+    {
+      "id": "financial",
+      "path": "06-financial.json",
+      "subareas": 3,
+      "concepts": 151
+    },
+    {
+      "id": "asset_management",
+      "path": "07-asset_management.json",
+      "subareas": 2,
+      "concepts": 127
+    },
+    {
+      "id": "governance",
+      "path": "08-governance.json",
+      "subareas": 3,
+      "concepts": 143
+    }
+  ],
+  "totals": {
+    "macro_areas": 8,
+    "subareas": 24,
+    "concepts": 1338
+  },
+  "rules": [
+    "Each JSON represents one principal ERP macro-area.",
+    "Subarea boundaries and operational field identifiers are preserved.",
+    "No operational field is removed, renamed or semantically promoted by this sharding step.",
+    "Universal Lexicon binding is a separate semantic layer."
+  ]
+}
