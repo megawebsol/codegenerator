@@ -1,0 +1,2609 @@
+{
+  "macro_area": {
+    "id": "governance",
+    "order": 8,
+    "label": "Governance"
+  },
+  "subarea": {
+    "id": "review_data_quality",
+    "order": 3,
+    "label": "Review and Data Quality",
+    "facet_number": 24,
+    "description": "Automated and human validation, completeness, consistency and adjudication workflows.",
+    "typical_concepts": {
+      "action_status": {
+        "ref": "base0001.action_status@1",
+        "kind": "property",
+        "definition": "Indicates the current disposition of the Action.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Action"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/ActionStatusType"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/actionStatus",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "certification_status": {
+        "ref": "base0001.certification_status@1",
+        "kind": "property",
+        "definition": "Indicates the current status of a certification: active or inactive. See also  [gs1:certificationStatus](https://www.gs1.org/voc/certificationStatus).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CertificationStatusEnumeration"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/certificationStatus",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "comment": {
+        "ref": "base0001.comment@1",
+        "kind": "property",
+        "definition": "Comments, typically from users.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/RsvpAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Comment"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/comment",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "comment_text": {
+        "ref": "base0001.comment_text@1",
+        "kind": "property",
+        "definition": "The text of the UserComment.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/UserComments"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/commentText",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "comment_time": {
+        "ref": "base0001.comment_time@1",
+        "kind": "property",
+        "definition": "The time at which the UserComment was made.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/UserComments"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/commentTime",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "error": {
+        "ref": "base0001.error@1",
+        "kind": "property",
+        "definition": "For failed actions, more information on the cause of the failure. Consider using the Error type.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Action"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Thing"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/error",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "error_code": {
+        "ref": "base0001.error_code@1",
+        "kind": "property",
+        "definition": "Application or platform dependant error code.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Error"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/Integer",
+              "https://schema.org/StatusEnumeration",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/errorCode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "last_reviewed": {
+        "ref": "base0001.last_reviewed@1",
+        "kind": "property",
+        "definition": "Date on which the content on this web page was last reviewed for accuracy and/or completeness.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/WebPage"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/lastReviewed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "rating_explanation": {
+        "ref": "base0001.rating_explanation@1",
+        "kind": "property",
+        "definition": "A short explanation (e.g. one to two sentences) providing background context and other information that led to the conclusion expressed in the rating. This is particularly applicable to ratings associated with \"fact check\" markup using [[ClaimReview]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Rating"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/ratingExplanation",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "review": {
+        "ref": "base0001.review@1",
+        "kind": "property",
+        "definition": "A review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/review",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "review_aspect": {
+        "ref": "base0001.review_aspect@1",
+        "kind": "property",
+        "definition": "This Review or Rating is relevant to this part or facet of the itemReviewed.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Guide",
+              "https://schema.org/Rating",
+              "https://schema.org/Review"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/StructuredValue",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/reviewAspect",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "review_rating": {
+        "ref": "base0001.review_rating@1",
+        "kind": "property",
+        "definition": "The rating given in this review. Note that reviews can themselves be rated. The ```reviewRating``` applies to rating given by the review. The [[aggregateRating]] property applies to the review itself, as a creative work.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Review"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Rating"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/reviewRating",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "status": {
+        "ref": "base0001.status@1",
+        "kind": "property",
+        "definition": "The status of the study (enumerated).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MedicalCondition",
+              "https://schema.org/MedicalProcedure",
+              "https://schema.org/MedicalStudy"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/EventStatusType",
+              "https://schema.org/MedicalStudyStatus",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/status",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.ImageOf",
+        "source_native_name": "ImageOf",
+        "source_label": "Image Of",
+        "source_definition": "When the media is an image, a list of possible matches such as kitchen, bathroom, front of structure, etc. This field may be used to identify a required image under association or MLS rules.",
+        "source_resource": "Media",
+        "source_data_type": "org.reso.metadata.enums.ImageOf",
+        "source_enum_ref": "org.reso.metadata.enums.ImageOf",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.MediaStatus",
+        "source_native_name": "MediaStatus",
+        "source_label": "Media Status",
+        "source_definition": "The status of the media item referenced by this record (i.e., updated, deleted, etc.).",
+        "source_resource": "Media",
+        "source_data_type": "org.reso.metadata.enums.MediaStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MediaStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MlsStatus",
+        "source_native_name": "MlsStatus",
+        "source_label": "MLS Status",
+        "source_definition": "A local or regional status that is well known by business users. Each MlsStatus field must map to a single StandardStatus. Multiple MlsStatus fields may map to a single StandardStatus.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.MlsStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ElevatorYN",
+        "source_native_name": "ElevatorYN",
+        "source_label": "Elevator Yes/No",
+        "source_definition": "Indicates whether or not the building has a passenger elevator or elevators.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberStatus",
+        "source_native_name": "MemberStatus",
+        "source_label": "Member Status",
+        "source_definition": "Indicates if the account is active, inactive or under disciplinary action.",
+        "source_resource": "Member",
+        "source_data_type": "org.reso.metadata.enums.MemberStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MemberStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.OfficeStatus",
+        "source_native_name": "OfficeStatus",
+        "source_label": "Office Status",
+        "source_definition": "Indicates whether the office is active, inactive or under disciplinary action.",
+        "source_resource": "Office",
+        "source_data_type": "org.reso.metadata.enums.OfficeStatus",
+        "source_enum_ref": "org.reso.metadata.enums.OfficeStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantType",
+        "source_native_name": "TenantType",
+        "source_label": "Tenant Type",
+        "source_definition": "A pick list describing the current status of tenants or lack of tenants at the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantType",
+        "source_enum_ref": "org.reso.metadata.enums.TenantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Contingency",
+        "source_native_name": "Contingency",
+        "source_label": "Contingency",
+        "source_definition": "A list of contingencies that must be satisfied in order to complete the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberPassword",
+        "source_native_name": "MemberPassword",
+        "source_label": "Member Password",
+        "source_definition": "A password that the member wishes to share with other systems. Normal security considerations apply and are the responsibility of the entity utilizing this field.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentPrice",
+        "source_native_name": "CurrentPrice",
+        "source_label": "Current Price",
+        "source_definition": "The present price or most recent price (for off-market statuses) of the listing, regardless of the status of the listing. For example, listings in Active, Expired or Closed status may all have a value in the CurrentPrice field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingTerms",
+        "source_native_name": "ListingTerms",
+        "source_label": "Listing Terms",
+        "source_definition": "Terms of the listing such as Lien Release, Subject to Court Approval or Owner Will Carry. Also may include options that describe the financing terms that are acceptable to the seller (i.e., Cash, Assumable, FHA, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingTerms",
+        "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingStatus",
+        "source_native_name": "ShowingStatus",
+        "source_label": "Showing Status",
+        "source_definition": "The current state of showing acceptance on the listing.",
+        "source_resource": "Showing",
+        "source_data_type": "org.reso.metadata.enums.ShowingStatus",
+        "source_enum_ref": "org.reso.metadata.enums.ShowingStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StructureType",
+        "source_native_name": "StructureType",
+        "source_label": "Structure Type",
+        "source_definition": "The type of structure that the property completely or partially encompasses. For example, houses or cabins are the overall structure and typically sold or leased as a whole. Multifamily and docks may be sold in whole but are often sold or leased by unit/slip. This field is the type of structure as opposed to style, which is under the Architectural Style field.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.StructureType",
+        "source_enum_ref": "org.reso.metadata.enums.StructureType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.DirectionFaces",
+        "source_native_name": "DirectionFaces",
+        "source_label": "Direction Faces",
+        "source_definition": "The compass direction that the main entrance to the building faces (e.g., north, south, east, west, northeast, southwest). It may also be known as the building exposure.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.DirectionFaces",
+        "source_enum_ref": "org.reso.metadata.enums.DirectionFaces",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ActivationDate",
+        "source_native_name": "ActivationDate",
+        "source_label": "Activation Date",
+        "source_definition": "Indicates when the listing agent intends to change the property to the Active status.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DirectionFaces",
+        "source_native_name": "DirectionFaces",
+        "source_label": "Direction Faces",
+        "source_definition": "The compass direction that the main entrance to the building faces (e.g., North, South, East, West, Northeast, Southwest). It may also be known as the building exposure.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.DirectionFaces",
+        "source_enum_ref": "org.reso.metadata.enums.DirectionFaces",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DocumentStatus",
+        "source_native_name": "DocumentStatus",
+        "source_label": "Document Status",
+        "source_definition": "The statuses a document could be in during a transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.DocumentStatus",
+        "source_enum_ref": "org.reso.metadata.enums.DocumentStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FhaEligibility",
+        "source_native_name": "FhaEligibility",
+        "source_label": "FHA Eligibility",
+        "source_definition": "The status of the property's FHA eligibility.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.FhaEligibility",
+        "source_enum_ref": "org.reso.metadata.enums.FhaEligibility",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StandardStatus",
+        "source_native_name": "StandardStatus",
+        "source_label": "Standard Status",
+        "source_definition": "The status of the listing as it reflects the state of the contract between the listing agent and seller, or an agreement with a buyer (e.g., Active, Active Under Contract, Canceled, Closed, Expired, Pending, Withdrawn). This is a single-select field.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.StandardStatus",
+        "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BoardApprovalYN",
+        "source_native_name": "BoardApprovalYN",
+        "source_label": "Board Approval Yes/No",
+        "source_definition": "Indicates whether or not board approval is required.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberDesignation",
+        "source_native_name": "MemberDesignation",
+        "source_label": "Member Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® and each affiliated group upon completion of required courses.",
+        "source_resource": "Member",
+        "source_data_type": "org.reso.metadata.enums.MemberDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.MemberDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SpecialLicenses",
+        "source_native_name": "SpecialLicenses",
+        "source_label": "Special Licenses",
+        "source_definition": "Special licenses required/used by the business being sold (e.g., Beer/Wine, Class H, Professional, Gambling, None).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.SpecialLicenses",
+        "source_enum_ref": "org.reso.metadata.enums.SpecialLicenses",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.OpenHouseStatus",
+        "source_native_name": "OpenHouseStatus",
+        "source_label": "Open House Status",
+        "source_definition": "Status of the open house (i.e., Active, Canceled, Ended).",
+        "source_resource": "OpenHouse",
+        "source_data_type": "org.reso.metadata.enums.OpenHouseStatus",
+        "source_enum_ref": "org.reso.metadata.enums.OpenHouseStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LaborInformation",
+        "source_native_name": "LaborInformation",
+        "source_label": "Labor Information",
+        "source_definition": "Information about labor laws that are applicable to the business being sold (i.e., Union, Non-Union, Employee License Required).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LaborInformation",
+        "source_enum_ref": "org.reso.metadata.enums.LaborInformation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PendingTimestamp",
+        "source_native_name": "PendingTimestamp",
+        "source_label": "Pending Timestamp",
+        "source_definition": "The transactional timestamp automatically recorded by the MLS system representing the most recent date/time the listing's status was set to Pending.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.DateTimeOffset",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxStatusCurrent",
+        "source_native_name": "TaxStatusCurrent",
+        "source_label": "Tax Status Current",
+        "source_definition": "The current tax status of the mobile home in cases where the land or space is included in the sale.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TaxStatusCurrent",
+        "source_enum_ref": "org.reso.metadata.enums.TaxStatusCurrent",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.DevelopmentStatus",
+        "source_native_name": "DevelopmentStatus",
+        "source_label": "Development Status",
+        "source_definition": "A list of the development status of the building or property, which is an important factor in selling, purchasing and developing land properties.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.DevelopmentStatus",
+        "source_enum_ref": "org.reso.metadata.enums.DevelopmentStatus",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ExistingLeaseType",
+        "source_native_name": "ExistingLeaseType",
+        "source_label": "Existing Lease Type",
+        "source_definition": "Information about the status of the existing lease on the building or property (e.g., Net, NNN, NN, Gross, Absolute Net, Escalation Clause, Ground Lease).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.ExistingLeaseType",
+        "source_enum_ref": "org.reso.metadata.enums.ExistingLeaseType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DevelopmentStatus",
+        "source_native_name": "DevelopmentStatus",
+        "source_label": "Development Status",
+        "source_definition": "A list of the development status of the property, which is an important factor in selling, purchasing and developing land properties.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.DevelopmentStatus",
+        "source_enum_ref": "org.reso.metadata.enums.DevelopmentStatus",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ExistingLeaseType",
+        "source_native_name": "ExistingLeaseType",
+        "source_label": "Existing Lease Type",
+        "source_definition": "Information about the status of the existing lease on the property (i.e., Net, NNN, NN, Gross, Absolute Net, Escalation Clause, Ground Lease).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ExistingLeaseType",
+        "source_enum_ref": "org.reso.metadata.enums.ExistingLeaseType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseConsideredYN",
+        "source_native_name": "LeaseConsideredYN",
+        "source_label": "Lease Considered Yes/No",
+        "source_definition": "Indicates whether or not the seller will consider leasing the property instead of selling.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OnMarketTimestamp",
+        "source_native_name": "OnMarketTimestamp",
+        "source_label": "On Market Timestamp",
+        "source_definition": "The transactional timestamp automatically recorded by the MLS system representing the most recent date/time the listing's status was set to Active or Backup. This also includes initial input of the listing to Active/Backup or from a draft or approval status to Active/Backup.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.DateTimeOffset",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.SyndicateAgentOption",
+        "source_native_name": "SyndicateAgentOption",
+        "source_label": "Syndicate Agent Option",
+        "source_definition": "A list of options allowing the broker to pass the decision of syndication choice down to the listing agents (i.e., No Agent Choice, Allow Agent Choice, Restrict Agent Choice, etc.).",
+        "source_resource": "Office",
+        "source_data_type": "org.reso.metadata.enums.SyndicateAgentOption",
+        "source_enum_ref": "org.reso.metadata.enums.SyndicateAgentOption",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OffMarketTimestamp",
+        "source_native_name": "OffMarketTimestamp",
+        "source_label": "Off Market Timestamp",
+        "source_definition": "The transactional timestamp automatically recorded by the MLS system representing the most recent date/time the listing's status was set to an off-market status (not Active or Backup)",
+        "source_resource": "Property",
+        "source_data_type": "Edm.DateTimeOffset",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.MediaStatusDescription",
+        "source_native_name": "MediaStatusDescription",
+        "source_label": "Media Status Description",
+        "source_definition": "The textual description of the media status providing human consumable details should follow up actions need to be taken",
+        "source_resource": "Media",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenVerificationYN",
+        "source_native_name": "GreenVerificationYN",
+        "source_label": "Green Verification Yes/No",
+        "source_definition": "A flag indicating that the listing has a Green Verification.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingInstructions",
+        "source_native_name": "ShowingInstructions",
+        "source_label": "Showing Instructions",
+        "source_definition": "Remarks that detail the seller's instructions for showing the subject property. Showing instructions may include contact information, showing times, notice required or other information. These remarks are privileged and are not for public viewing.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingRequirements",
+        "source_native_name": "ShowingRequirements",
+        "source_label": "Showing Requirements",
+        "source_definition": "A pick list of types of notice required to see the home (i.e., Appointment Required, Courtesy Call Only, Go Direct, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ShowingRequirements",
+        "source_enum_ref": "org.reso.metadata.enums.ShowingRequirements",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentDesignation",
+        "source_native_name": "ListAgentDesignation",
+        "source_label": "List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingAdvanceNotice",
+        "source_native_name": "ShowingAdvanceNotice",
+        "source_label": "Showing Advance Notice",
+        "source_definition": "The hours of advance notice required to schedule a showing.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenIndoorAirQuality",
+        "source_native_name": "GreenIndoorAirQuality",
+        "source_label": "Green Indoor Air Quality",
+        "source_definition": "A pick list of indoor air quality measures without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenVerificationBody",
+        "source_native_name": "GreenVerificationBody",
+        "source_label": "Green Verification Body",
+        "source_definition": "The name of the body or group providing the verification, certification or rating named in the GreenBuildingVerificationType field. There is almost always a direct correlation between bodies and programs. If desired, use the name of the certification from the GreenBuildingVerificationType list.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "completeness",
+        "label": "completeness",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "missing_information",
+        "label": "missing information",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "invalid_value",
+        "label": "invalid value",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "unresolved_relation",
+        "label": "unresolved relation",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "inconsistent_observation",
+        "label": "inconsistent observation",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "duplicate",
+        "label": "duplicate",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "pending_verification",
+        "label": "pending verification",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "review_status",
+        "label": "review status",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "approval",
+        "label": "approval",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "rejection",
+        "label": "rejection",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "adjudication",
+        "label": "adjudication",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "quality_rule",
+        "label": "quality rule",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "validation_result",
+        "label": "validation result",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "media_image_of",
+        "label": "image of",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Media.ImageOf",
+            "source_native_name": "ImageOf",
+            "source_data_type": "org.reso.metadata.enums.ImageOf",
+            "source_enum_ref": "org.reso.metadata.enums.ImageOf",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "media_media_status",
+        "label": "media status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Media.MediaStatus",
+            "source_native_name": "MediaStatus",
+            "source_data_type": "org.reso.metadata.enums.MediaStatus",
+            "source_enum_ref": "org.reso.metadata.enums.MediaStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "mls_status",
+        "label": "mls status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.MlsStatus",
+            "source_native_name": "MlsStatus",
+            "source_data_type": "org.reso.metadata.enums.MlsStatus",
+            "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_elevator_yn",
+        "label": "elevator yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ElevatorYN",
+            "source_native_name": "ElevatorYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "member_member_status",
+        "label": "member status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.MemberStatus",
+            "source_native_name": "MemberStatus",
+            "source_data_type": "org.reso.metadata.enums.MemberStatus",
+            "source_enum_ref": "org.reso.metadata.enums.MemberStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "office_office_status",
+        "label": "office status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Office.OfficeStatus",
+            "source_native_name": "OfficeStatus",
+            "source_data_type": "org.reso.metadata.enums.OfficeStatus",
+            "source_enum_ref": "org.reso.metadata.enums.OfficeStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tenant_type",
+        "label": "tenant type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TenantType",
+            "source_native_name": "TenantType",
+            "source_data_type": "org.reso.metadata.enums.TenantType",
+            "source_enum_ref": "org.reso.metadata.enums.TenantType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "contingency",
+        "label": "contingency",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Contingency",
+            "source_native_name": "Contingency",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "down_payment",
+        "label": "down payment",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DownPayment",
+            "source_native_name": "DownPayment",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "down_payment",
+              "ref": "base0001.down_payment@1",
+              "kind": "property",
+              "definition": "a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "member_member_password",
+        "label": "member password",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.MemberPassword",
+            "source_native_name": "MemberPassword",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "current_price",
+        "label": "current price",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CurrentPrice",
+            "source_native_name": "CurrentPrice",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_terms",
+        "label": "listing terms",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingTerms",
+            "source_native_name": "ListingTerms",
+            "source_data_type": "org.reso.metadata.enums.ListingTerms",
+            "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_showing_status",
+        "label": "showing status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ShowingStatus",
+            "source_native_name": "ShowingStatus",
+            "source_data_type": "org.reso.metadata.enums.ShowingStatus",
+            "source_enum_ref": "org.reso.metadata.enums.ShowingStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "bathrooms_full",
+        "label": "bathrooms full",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BathroomsFull",
+            "source_native_name": "BathroomsFull",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_explicit_definition_crosswalk",
+            "lexicon_binding": {
+              "symbol": "number_of_full_bathrooms",
+              "ref": "base0001.number_of_full_bathrooms@1",
+              "kind": "property",
+              "definition": "Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
+              "match_method": "lexicon_definition_explicitly_mentions_source_field",
+              "confidence": 0.98
+            }
+          }
+        ]
+      },
+      {
+        "id": "structure_type",
+        "label": "structure type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.StructureType",
+            "source_native_name": "StructureType",
+            "source_data_type": "org.reso.metadata.enums.StructureType",
+            "source_enum_ref": "org.reso.metadata.enums.StructureType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_direction_faces",
+        "label": "direction faces",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.DirectionFaces",
+            "source_native_name": "DirectionFaces",
+            "source_data_type": "org.reso.metadata.enums.DirectionFaces",
+            "source_enum_ref": "org.reso.metadata.enums.DirectionFaces",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "activation_date",
+        "label": "activation date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ActivationDate",
+            "source_native_name": "ActivationDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "direction_faces",
+        "label": "direction faces",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DirectionFaces",
+            "source_native_name": "DirectionFaces",
+            "source_data_type": "org.reso.metadata.enums.DirectionFaces",
+            "source_enum_ref": "org.reso.metadata.enums.DirectionFaces",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "document_status",
+        "label": "document status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DocumentStatus",
+            "source_native_name": "DocumentStatus",
+            "source_data_type": "org.reso.metadata.enums.DocumentStatus",
+            "source_enum_ref": "org.reso.metadata.enums.DocumentStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "fha_eligibility",
+        "label": "fha eligibility",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.FhaEligibility",
+            "source_native_name": "FhaEligibility",
+            "source_data_type": "org.reso.metadata.enums.FhaEligibility",
+            "source_enum_ref": "org.reso.metadata.enums.FhaEligibility",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "standard_status",
+        "label": "standard status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.StandardStatus",
+            "source_native_name": "StandardStatus",
+            "source_data_type": "org.reso.metadata.enums.StandardStatus",
+            "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_board_approval_yn",
+        "label": "board approval yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.BoardApprovalYN",
+            "source_native_name": "BoardApprovalYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "member_member_designation",
+        "label": "member designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.MemberDesignation",
+            "source_native_name": "MemberDesignation",
+            "source_data_type": "org.reso.metadata.enums.MemberDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.MemberDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "special_licenses",
+        "label": "special licenses",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SpecialLicenses",
+            "source_native_name": "SpecialLicenses",
+            "source_data_type": "org.reso.metadata.enums.SpecialLicenses",
+            "source_enum_ref": "org.reso.metadata.enums.SpecialLicenses",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "open_house_open_house_status",
+        "label": "open house status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "OpenHouse.OpenHouseStatus",
+            "source_native_name": "OpenHouseStatus",
+            "source_data_type": "org.reso.metadata.enums.OpenHouseStatus",
+            "source_enum_ref": "org.reso.metadata.enums.OpenHouseStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "labor_information",
+        "label": "labor information",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LaborInformation",
+            "source_native_name": "LaborInformation",
+            "source_data_type": "org.reso.metadata.enums.LaborInformation",
+            "source_enum_ref": "org.reso.metadata.enums.LaborInformation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "pending_timestamp",
+        "label": "pending timestamp",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PendingTimestamp",
+            "source_native_name": "PendingTimestamp",
+            "source_data_type": "Edm.DateTimeOffset",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_status_current",
+        "label": "tax status current",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxStatusCurrent",
+            "source_native_name": "TaxStatusCurrent",
+            "source_data_type": "org.reso.metadata.enums.TaxStatusCurrent",
+            "source_enum_ref": "org.reso.metadata.enums.TaxStatusCurrent",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_development_status",
+        "label": "development status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.DevelopmentStatus",
+            "source_native_name": "DevelopmentStatus",
+            "source_data_type": "org.reso.metadata.enums.DevelopmentStatus",
+            "source_enum_ref": "org.reso.metadata.enums.DevelopmentStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_existing_lease_type",
+        "label": "existing lease type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ExistingLeaseType",
+            "source_native_name": "ExistingLeaseType",
+            "source_data_type": "org.reso.metadata.enums.ExistingLeaseType",
+            "source_enum_ref": "org.reso.metadata.enums.ExistingLeaseType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "development_status",
+        "label": "development status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DevelopmentStatus",
+            "source_native_name": "DevelopmentStatus",
+            "source_data_type": "org.reso.metadata.enums.DevelopmentStatus",
+            "source_enum_ref": "org.reso.metadata.enums.DevelopmentStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "existing_lease_type",
+        "label": "existing lease type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ExistingLeaseType",
+            "source_native_name": "ExistingLeaseType",
+            "source_data_type": "org.reso.metadata.enums.ExistingLeaseType",
+            "source_enum_ref": "org.reso.metadata.enums.ExistingLeaseType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_considered_yn",
+        "label": "lease considered yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseConsideredYN",
+            "source_native_name": "LeaseConsideredYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "on_market_timestamp",
+        "label": "on market timestamp",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OnMarketTimestamp",
+            "source_native_name": "OnMarketTimestamp",
+            "source_data_type": "Edm.DateTimeOffset",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "office_syndicate_agent_option",
+        "label": "syndicate agent option",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Office.SyndicateAgentOption",
+            "source_native_name": "SyndicateAgentOption",
+            "source_data_type": "org.reso.metadata.enums.SyndicateAgentOption",
+            "source_enum_ref": "org.reso.metadata.enums.SyndicateAgentOption",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "off_market_timestamp",
+        "label": "off market timestamp",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OffMarketTimestamp",
+            "source_native_name": "OffMarketTimestamp",
+            "source_data_type": "Edm.DateTimeOffset",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "media_media_status_description",
+        "label": "media status description",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Media.MediaStatusDescription",
+            "source_native_name": "MediaStatusDescription",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_verification_yn",
+        "label": "green verification yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenVerificationYN",
+            "source_native_name": "GreenVerificationYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_instructions",
+        "label": "showing instructions",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ShowingInstructions",
+            "source_native_name": "ShowingInstructions",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_requirements",
+        "label": "showing requirements",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ShowingRequirements",
+            "source_native_name": "ShowingRequirements",
+            "source_data_type": "org.reso.metadata.enums.ShowingRequirements",
+            "source_enum_ref": "org.reso.metadata.enums.ShowingRequirements",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_designation",
+        "label": "list agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentDesignation",
+            "source_native_name": "ListAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_advance_notice",
+        "label": "showing advance notice",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ShowingAdvanceNotice",
+            "source_native_name": "ShowingAdvanceNotice",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_indoor_air_quality",
+        "label": "green indoor air quality",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenIndoorAirQuality",
+            "source_native_name": "GreenIndoorAirQuality",
+            "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+            "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_verification_body",
+        "label": "green verification body",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenVerificationBody",
+            "source_native_name": "GreenVerificationBody",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.ImageOf",
+        "source_native_name": "ImageOf",
+        "source_label": "Image Of",
+        "source_definition": "When the media is an image, a list of possible matches such as kitchen, bathroom, front of structure, etc. This field may be used to identify a required image under association or MLS rules.",
+        "source_resource": "Media",
+        "source_data_type": "org.reso.metadata.enums.ImageOf",
+        "source_enum_ref": "org.reso.metadata.enums.ImageOf",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.MediaStatus",
+        "source_native_name": "MediaStatus",
+        "source_label": "Media Status",
+        "source_definition": "The status of the media item referenced by this record (i.e., updated, deleted, etc.).",
+        "source_resource": "Media",
+        "source_data_type": "org.reso.metadata.enums.MediaStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MediaStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MlsStatus",
+        "source_native_name": "MlsStatus",
+        "source_label": "MLS Status",
+        "source_definition": "A local or regional status that is well known by business users. Each MlsStatus field must map to a single StandardStatus. Multiple MlsStatus fields may map to a single StandardStatus.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.MlsStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ElevatorYN",
+        "source_native_name": "ElevatorYN",
+        "source_label": "Elevator Yes/No",
+        "source_definition": "Indicates whether or not the building has a passenger elevator or elevators.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberStatus",
+        "source_native_name": "MemberStatus",
+        "source_label": "Member Status",
+        "source_definition": "Indicates if the account is active, inactive or under disciplinary action.",
+        "source_resource": "Member",
+        "source_data_type": "org.reso.metadata.enums.MemberStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MemberStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.OfficeStatus",
+        "source_native_name": "OfficeStatus",
+        "source_label": "Office Status",
+        "source_definition": "Indicates whether the office is active, inactive or under disciplinary action.",
+        "source_resource": "Office",
+        "source_data_type": "org.reso.metadata.enums.OfficeStatus",
+        "source_enum_ref": "org.reso.metadata.enums.OfficeStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantType",
+        "source_native_name": "TenantType",
+        "source_label": "Tenant Type",
+        "source_definition": "A pick list describing the current status of tenants or lack of tenants at the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantType",
+        "source_enum_ref": "org.reso.metadata.enums.TenantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Contingency",
+        "source_native_name": "Contingency",
+        "source_label": "Contingency",
+        "source_definition": "A list of contingencies that must be satisfied in order to complete the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DownPayment",
+        "source_native_name": "DownPayment",
+        "source_label": "Down Payment",
+        "source_definition": "The down payment amount required by the current owner of the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "down_payment",
+          "ref": "base0001.down_payment@1",
+          "kind": "property",
+          "definition": "a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberPassword",
+        "source_native_name": "MemberPassword",
+        "source_label": "Member Password",
+        "source_definition": "A password that the member wishes to share with other systems. Normal security considerations apply and are the responsibility of the entity utilizing this field.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentPrice",
+        "source_native_name": "CurrentPrice",
+        "source_label": "Current Price",
+        "source_definition": "The present price or most recent price (for off-market statuses) of the listing, regardless of the status of the listing. For example, listings in Active, Expired or Closed status may all have a value in the CurrentPrice field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingTerms",
+        "source_native_name": "ListingTerms",
+        "source_label": "Listing Terms",
+        "source_definition": "Terms of the listing such as Lien Release, Subject to Court Approval or Owner Will Carry. Also may include options that describe the financing terms that are acceptable to the seller (i.e., Cash, Assumable, FHA, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingTerms",
+        "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingStatus",
+        "source_native_name": "ShowingStatus",
+        "source_label": "Showing Status",
+        "source_definition": "The current state of showing acceptance on the listing.",
+        "source_resource": "Showing",
+        "source_data_type": "org.reso.metadata.enums.ShowingStatus",
+        "source_enum_ref": "org.reso.metadata.enums.ShowingStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BathroomsFull",
+        "source_native_name": "BathroomsFull",
+        "source_label": "Bathrooms Full",
+        "source_definition": "A room containing all four of the four elements constituting a bath: toilet, sink, bathtub, shower head (in tub or stall). Some may considered a sink, toilet and tub (without a shower) a full bath, while others may consider that to be a three-quarters bath. In the event that the BathroomsThreeQuarter field is not in use, this field may represent the sum of all full and three-quarters bathrooms.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "number_of_full_bathrooms",
+          "ref": "base0001.number_of_full_bathrooms@1",
+          "kind": "property",
+          "definition": "Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StructureType",
+        "source_native_name": "StructureType",
+        "source_label": "Structure Type",
+        "source_definition": "The type of structure that the property completely or partially encompasses. For example, houses or cabins are the overall structure and typically sold or leased as a whole. Multifamily and docks may be sold in whole but are often sold or leased by unit/slip. This field is the type of structure as opposed to style, which is under the Architectural Style field.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.StructureType",
+        "source_enum_ref": "org.reso.metadata.enums.StructureType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.DirectionFaces",
+        "source_native_name": "DirectionFaces",
+        "source_label": "Direction Faces",
+        "source_definition": "The compass direction that the main entrance to the building faces (e.g., north, south, east, west, northeast, southwest). It may also be known as the building exposure.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.DirectionFaces",
+        "source_enum_ref": "org.reso.metadata.enums.DirectionFaces",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ActivationDate",
+        "source_native_name": "ActivationDate",
+        "source_label": "Activation Date",
+        "source_definition": "Indicates when the listing agent intends to change the property to the Active status.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DirectionFaces",
+        "source_native_name": "DirectionFaces",
+        "source_label": "Direction Faces",
+        "source_definition": "The compass direction that the main entrance to the building faces (e.g., North, South, East, West, Northeast, Southwest). It may also be known as the building exposure.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.DirectionFaces",
+        "source_enum_ref": "org.reso.metadata.enums.DirectionFaces",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DocumentStatus",
+        "source_native_name": "DocumentStatus",
+        "source_label": "Document Status",
+        "source_definition": "The statuses a document could be in during a transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.DocumentStatus",
+        "source_enum_ref": "org.reso.metadata.enums.DocumentStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FhaEligibility",
+        "source_native_name": "FhaEligibility",
+        "source_label": "FHA Eligibility",
+        "source_definition": "The status of the property's FHA eligibility.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.FhaEligibility",
+        "source_enum_ref": "org.reso.metadata.enums.FhaEligibility",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StandardStatus",
+        "source_native_name": "StandardStatus",
+        "source_label": "Standard Status",
+        "source_definition": "The status of the listing as it reflects the state of the contract between the listing agent and seller, or an agreement with a buyer (e.g., Active, Active Under Contract, Canceled, Closed, Expired, Pending, Withdrawn). This is a single-select field.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.StandardStatus",
+        "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BoardApprovalYN",
+        "source_native_name": "BoardApprovalYN",
+        "source_label": "Board Approval Yes/No",
+        "source_definition": "Indicates whether or not board approval is required.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberDesignation",
+        "source_native_name": "MemberDesignation",
+        "source_label": "Member Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® and each affiliated group upon completion of required courses.",
+        "source_resource": "Member",
+        "source_data_type": "org.reso.metadata.enums.MemberDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.MemberDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SpecialLicenses",
+        "source_native_name": "SpecialLicenses",
+        "source_label": "Special Licenses",
+        "source_definition": "Special licenses required/used by the business being sold (e.g., Beer/Wine, Class H, Professional, Gambling, None).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.SpecialLicenses",
+        "source_enum_ref": "org.reso.metadata.enums.SpecialLicenses",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.OpenHouseStatus",
+        "source_native_name": "OpenHouseStatus",
+        "source_label": "Open House Status",
+        "source_definition": "Status of the open house (i.e., Active, Canceled, Ended).",
+        "source_resource": "OpenHouse",
+        "source_data_type": "org.reso.metadata.enums.OpenHouseStatus",
+        "source_enum_ref": "org.reso.metadata.enums.OpenHouseStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LaborInformation",
+        "source_native_name": "LaborInformation",
+        "source_label": "Labor Information",
+        "source_definition": "Information about labor laws that are applicable to the business being sold (i.e., Union, Non-Union, Employee License Required).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LaborInformation",
+        "source_enum_ref": "org.reso.metadata.enums.LaborInformation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PendingTimestamp",
+        "source_native_name": "PendingTimestamp",
+        "source_label": "Pending Timestamp",
+        "source_definition": "The transactional timestamp automatically recorded by the MLS system representing the most recent date/time the listing's status was set to Pending.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.DateTimeOffset",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxStatusCurrent",
+        "source_native_name": "TaxStatusCurrent",
+        "source_label": "Tax Status Current",
+        "source_definition": "The current tax status of the mobile home in cases where the land or space is included in the sale.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TaxStatusCurrent",
+        "source_enum_ref": "org.reso.metadata.enums.TaxStatusCurrent",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.DevelopmentStatus",
+        "source_native_name": "DevelopmentStatus",
+        "source_label": "Development Status",
+        "source_definition": "A list of the development status of the building or property, which is an important factor in selling, purchasing and developing land properties.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.DevelopmentStatus",
+        "source_enum_ref": "org.reso.metadata.enums.DevelopmentStatus",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ExistingLeaseType",
+        "source_native_name": "ExistingLeaseType",
+        "source_label": "Existing Lease Type",
+        "source_definition": "Information about the status of the existing lease on the building or property (e.g., Net, NNN, NN, Gross, Absolute Net, Escalation Clause, Ground Lease).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.ExistingLeaseType",
+        "source_enum_ref": "org.reso.metadata.enums.ExistingLeaseType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DevelopmentStatus",
+        "source_native_name": "DevelopmentStatus",
+        "source_label": "Development Status",
+        "source_definition": "A list of the development status of the property, which is an important factor in selling, purchasing and developing land properties.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.DevelopmentStatus",
+        "source_enum_ref": "org.reso.metadata.enums.DevelopmentStatus",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ExistingLeaseType",
+        "source_native_name": "ExistingLeaseType",
+        "source_label": "Existing Lease Type",
+        "source_definition": "Information about the status of the existing lease on the property (i.e., Net, NNN, NN, Gross, Absolute Net, Escalation Clause, Ground Lease).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ExistingLeaseType",
+        "source_enum_ref": "org.reso.metadata.enums.ExistingLeaseType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseConsideredYN",
+        "source_native_name": "LeaseConsideredYN",
+        "source_label": "Lease Considered Yes/No",
+        "source_definition": "Indicates whether or not the seller will consider leasing the property instead of selling.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OnMarketTimestamp",
+        "source_native_name": "OnMarketTimestamp",
+        "source_label": "On Market Timestamp",
+        "source_definition": "The transactional timestamp automatically recorded by the MLS system representing the most recent date/time the listing's status was set to Active or Backup. This also includes initial input of the listing to Active/Backup or from a draft or approval status to Active/Backup.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.DateTimeOffset",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.SyndicateAgentOption",
+        "source_native_name": "SyndicateAgentOption",
+        "source_label": "Syndicate Agent Option",
+        "source_definition": "A list of options allowing the broker to pass the decision of syndication choice down to the listing agents (i.e., No Agent Choice, Allow Agent Choice, Restrict Agent Choice, etc.).",
+        "source_resource": "Office",
+        "source_data_type": "org.reso.metadata.enums.SyndicateAgentOption",
+        "source_enum_ref": "org.reso.metadata.enums.SyndicateAgentOption",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OffMarketTimestamp",
+        "source_native_name": "OffMarketTimestamp",
+        "source_label": "Off Market Timestamp",
+        "source_definition": "The transactional timestamp automatically recorded by the MLS system representing the most recent date/time the listing's status was set to an off-market status (not Active or Backup)",
+        "source_resource": "Property",
+        "source_data_type": "Edm.DateTimeOffset",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.MediaStatusDescription",
+        "source_native_name": "MediaStatusDescription",
+        "source_label": "Media Status Description",
+        "source_definition": "The textual description of the media status providing human consumable details should follow up actions need to be taken",
+        "source_resource": "Media",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenVerificationYN",
+        "source_native_name": "GreenVerificationYN",
+        "source_label": "Green Verification Yes/No",
+        "source_definition": "A flag indicating that the listing has a Green Verification.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingInstructions",
+        "source_native_name": "ShowingInstructions",
+        "source_label": "Showing Instructions",
+        "source_definition": "Remarks that detail the seller's instructions for showing the subject property. Showing instructions may include contact information, showing times, notice required or other information. These remarks are privileged and are not for public viewing.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingRequirements",
+        "source_native_name": "ShowingRequirements",
+        "source_label": "Showing Requirements",
+        "source_definition": "A pick list of types of notice required to see the home (i.e., Appointment Required, Courtesy Call Only, Go Direct, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ShowingRequirements",
+        "source_enum_ref": "org.reso.metadata.enums.ShowingRequirements",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentDesignation",
+        "source_native_name": "ListAgentDesignation",
+        "source_label": "List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingAdvanceNotice",
+        "source_native_name": "ShowingAdvanceNotice",
+        "source_label": "Showing Advance Notice",
+        "source_definition": "The hours of advance notice required to schedule a showing.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenIndoorAirQuality",
+        "source_native_name": "GreenIndoorAirQuality",
+        "source_label": "Green Indoor Air Quality",
+        "source_definition": "A pick list of indoor air quality measures without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenVerificationBody",
+        "source_native_name": "GreenVerificationBody",
+        "source_label": "Green Verification Body",
+        "source_definition": "The name of the body or group providing the verification, certification or rating named in the GreenBuildingVerificationType field. There is almost always a direct correlation between bodies and programs. If desired, use the name of the certification from the GreenBuildingVerificationType list.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
