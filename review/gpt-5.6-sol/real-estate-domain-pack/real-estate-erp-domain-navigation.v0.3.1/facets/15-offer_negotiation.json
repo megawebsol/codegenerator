@@ -1,0 +1,3866 @@
+{
+  "macro_area": {
+    "id": "negotiation",
+    "order": 5,
+    "label": "Negotiation"
+  },
+  "subarea": {
+    "id": "offer_negotiation",
+    "order": 1,
+    "label": "Offer and Negotiation",
+    "facet_number": 15,
+    "description": "Commercial negotiation, offers, counteroffers and conditional acceptance.",
+    "typical_concepts": {
+      "accepted_offer": {
+        "ref": "base0001.accepted_offer@1",
+        "kind": "property",
+        "definition": "The offer(s) -- e.g., product, quantity and price combinations -- included in the order.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Offer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/acceptedOffer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "accepted_payment_method": {
+        "ref": "base0001.accepted_payment_method@1",
+        "kind": "property",
+        "definition": "The payment method(s) that are accepted in general by an organization, or for some specific demand or offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/LoanOrCredit",
+              "https://schema.org/PaymentMethod",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/acceptedPaymentMethod",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "add_on": {
+        "ref": "base0001.add_on@1",
+        "kind": "property",
+        "definition": "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Offer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/addOn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "additional_property": {
+        "ref": "base0001.additional_property@1",
+        "kind": "property",
+        "definition": "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. https://schema.org/width, https://schema.org/color, https://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PropertyValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/additionalProperty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "advance_booking_requirement": {
+        "ref": "base0001.advance_booking_requirement@1",
+        "kind": "property",
+        "definition": "The amount of time that is required between accepting the offer and the actual usage of the resource or service.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/advanceBookingRequirement",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "aggregate_rating": {
+        "ref": "base0001.aggregate_rating@1",
+        "kind": "property",
+        "definition": "The overall rating, based on a collection of reviews or ratings, of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateRating"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/aggregateRating",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "area_served": {
+        "ref": "base0001.area_served@1",
+        "kind": "property",
+        "definition": "The geographic area where a service or offered item is provided.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdministrativeArea",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/areaServed",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasServiceArea",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "asin": {
+        "ref": "base0001.asin@1",
+        "kind": "property",
+        "definition": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number)'s article).\n\nNote also that this is a definition for how to include ASINs in Schema.org data, and not a definition of ASINs in general - see documentation from Amazon for authoritative details.\nASINs are most commonly encoded as text strings, but the [asin] property supports URL/URI as potential values too.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/asin",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "availability": {
+        "ref": "base0001.availability@1",
+        "kind": "property",
+        "definition": "The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/ItemAvailability"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availability",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "availability_ends": {
+        "ref": "base0001.availability_ends@1",
+        "kind": "property",
+        "definition": "The end of the availability of the product or service included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime",
+              "https://schema.org/Time"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availabilityEnds",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "availability_starts": {
+        "ref": "base0001.availability_starts@1",
+        "kind": "property",
+        "definition": "The beginning of the availability of the product or service included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime",
+              "https://schema.org/Time"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availabilityStarts",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "available_at_or_from": {
+        "ref": "base0001.available_at_or_from@1",
+        "kind": "property",
+        "definition": "The place(s) from which the offer can be obtained (e.g. store locations).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/areaServed"
+            ],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availableAtOrFrom",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "available_delivery_method": {
+        "ref": "base0001.available_delivery_method@1",
+        "kind": "property",
+        "definition": "The delivery method(s) available for this offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DeliveryMethod"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availableDeliveryMethod",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "business_function": {
+        "ref": "base0001.business_function@1",
+        "kind": "property",
+        "definition": "The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/TypeAndQuantityNode"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/BusinessFunction"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/businessFunction",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "category": {
+        "ref": "base0001.category@1",
+        "kind": "property",
+        "definition": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/Guide",
+              "https://schema.org/Invoice",
+              "https://schema.org/Offer",
+              "https://schema.org/PhysicalActivity",
+              "https://schema.org/Product",
+              "https://schema.org/Recommendation",
+              "https://schema.org/Service",
+              "https://schema.org/SpecialAnnouncement"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CategoryCode",
+              "https://schema.org/PhysicalActivityCategory",
+              "https://schema.org/Text",
+              "https://schema.org/Thing",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/category",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "checkout_page_urltemplate": {
+        "ref": "base0001.checkout_page_urltemplate@1",
+        "kind": "property",
+        "definition": "A URL template (RFC 6570) for a checkout page for an offer. This approach allows merchants to specify a URL for online checkout of the offered product, by interpolating parameters such as the logged in user ID, product ID, quantity, discount code etc. Parameter naming and standardization are not specified here.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/checkoutPageURLTemplate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "delivery_lead_time": {
+        "ref": "base0001.delivery_lead_time@1",
+        "kind": "property",
+        "definition": "The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/deliveryLeadTime",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "dpp": {
+        "ref": "base0001.dpp@1",
+        "kind": "property",
+        "definition": "A link to a Digital Product Passport (DPP) or a digital record detailing the lifecycle, sustainability, and compliance data for this product or offer. This may be a direct URL, a GS1 Digital Link URI, or a nested DigitalProductPassport object. Note: This property is aligned with the IANA 'dpp' link relation and the GS1 Web Vocabulary 'dpp' link type.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/hasCertification"
+            ],
+            "range_refs": [
+              "https://schema.org/DigitalProductPassport",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/dpp",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasDigitalProductPassport",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "effective_end_date_time": {
+        "ref": "base0001.effective_end_date_time@1",
+        "kind": "property",
+        "definition": "The date after which the price is no longer available.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/endDate"
+            ],
+            "range_refs": [
+              "https://schema.org/Date"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#EffectiveEndDateTime",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceValidUntil",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_customer_type": {
+        "ref": "base0001.eligible_customer_type@1",
+        "kind": "property",
+        "definition": "The type(s) of customers for which the given offer is valid.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/BusinessEntityType"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleCustomerType",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_duration": {
+        "ref": "base0001.eligible_duration@1",
+        "kind": "property",
+        "definition": "The duration for which the given offer is valid.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleDuration",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_quantity": {
+        "ref": "base0001.eligible_quantity@1",
+        "kind": "property",
+        "definition": "The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleQuantity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_region": {
+        "ref": "base0001.eligible_region@1",
+        "kind": "property",
+        "definition": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\\n\\nSee also [[ineligibleRegion]].\n    ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/areaServed"
+            ],
+            "range_refs": [
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleRegion",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_transaction_volume": {
+        "ref": "base0001.eligible_transaction_volume@1",
+        "kind": "property",
+        "definition": "The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PriceSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleTransactionVolume",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "end_date": {
+        "ref": "base0001.end_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/JobPosting",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/endDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validThrough",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasEndDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "g_tinid": {
+        "ref": "base0001.g_tinid@1",
+        "kind": "property",
+        "definition": "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nA correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) expresses GTINs as URLs (URIs, IRIs, etc.).\nDigital Links should be populated into the [[hasGS1DigitalLink]] attribute.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#gTINId",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/gtin",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "gtin12": {
+        "ref": "base0001.gtin12@1",
+        "kind": "property",
+        "definition": "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/gtin",
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin12",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "gtin13": {
+        "ref": "base0001.gtin13@1",
+        "kind": "property",
+        "definition": "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/gtin",
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin13",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "gtin14": {
+        "ref": "base0001.gtin14@1",
+        "kind": "property",
+        "definition": "The GTIN-14 code of the product, or the product to which the offer refers. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/gtin",
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin14",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "gtin8": {
+        "ref": "base0001.gtin8@1",
+        "kind": "property",
+        "definition": "The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/gtin",
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin8",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_adult_consideration": {
+        "ref": "base0001.has_adult_consideration@1",
+        "kind": "property",
+        "definition": "Used to tag an item to be intended or suitable for consumption or use by adults only.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdultOrientedEnumeration"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasAdultConsideration",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_gs1_digital_link": {
+        "ref": "base0001.has_gs1_digital_link@1",
+        "kind": "property",
+        "definition": "The <a href=\"https://www.gs1.org/standards/gs1-digital-link\">GS1 digital link</a> associated with the object. This URL should conform to the particular requirements of digital links. The link should only contain the Application Identifiers (AIs) that are relevant for the entity being annotated, for instance a [[Product]] or an [[Organization]], and for the correct granularity. In particular, for products:<ul><li>A Digital Link that contains a serial number (AI <code>21</code>) should only be present on instances of [[IndividualProduct]]</li><li>A Digital Link that contains a lot number (AI <code>10</code>) should be annotated as [[SomeProducts]] if only products from that lot are sold, or [[IndividualProduct]] if there is only a specific product.</li><li>A Digital Link that contains a global model number (AI <code>8013</code>) should be attached to a [[Product]] or a [[ProductModel]].</li></ul> Other item types should be adapted similarly.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasGS1DigitalLink",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_measurement": {
+        "ref": "base0001.has_measurement@1",
+        "kind": "property",
+        "definition": "A measurement of an item, For example, the inseam of pants, the wheel size of a bicycle, the gauge of a screw, or the carbon footprint measured for certification by an authority. Usually an exact measurement, but can also be a range of measurements for adjustable products, for example belts and ski bindings.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/Offer",
+              "https://schema.org/Product",
+              "https://schema.org/SizeSpecification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasMeasurement",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_merchant_return_policy": {
+        "ref": "base0001.has_merchant_return_policy@1",
+        "kind": "property",
+        "definition": "Specifies a MerchantReturnPolicy that may be applicable.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/MerchantReturnPolicy"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasMerchantReturnPolicy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_start_date": {
+        "ref": "base0001.has_start_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/Permit",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/startDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validFrom",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasStartDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "includes_object": {
+        "ref": "base0001.includes_object@1",
+        "kind": "property",
+        "definition": "This links to a node or nodes indicating the exact quantity of the products included in  an [[Offer]] or [[ProductCollection]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/ProductCollection"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/TypeAndQuantityNode"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/includesObject",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "ineligible_region": {
+        "ref": "base0001.ineligible_region@1",
+        "kind": "property",
+        "definition": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/MediaObject",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/ineligibleRegion",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "inventory_level": {
+        "ref": "base0001.inventory_level@1",
+        "kind": "property",
+        "definition": "The current approximate inventory level for the item or items.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/SomeProducts"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/inventoryLevel",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_family_friendly": {
+        "ref": "base0001.is_family_friendly@1",
+        "kind": "property",
+        "definition": "Indicates whether this content is family friendly.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isFamilyFriendly",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_offered_by": {
+        "ref": "base0001.is_offered_by@1",
+        "kind": "property",
+        "definition": "A pointer to the organization or person making the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/offeredBy",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/isOfferedBy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_condition": {
+        "ref": "base0001.item_condition@1",
+        "kind": "property",
+        "definition": "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OfferItemCondition"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemCondition",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_offered": {
+        "ref": "base0001.item_offered@1",
+        "kind": "property",
+        "definition": "An item being offered (or demanded). The transactional nature of the offer or demand is documented using [[businessFunction]], e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateOffer",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/MenuItem",
+              "https://schema.org/Product",
+              "https://schema.org/Service",
+              "https://schema.org/Trip"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemOffered",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_popularity": {
+        "ref": "base0001.item_popularity@1",
+        "kind": "property",
+        "definition": "A measure of the relative popularity or sales rank of the offer within a marketplace, catalog, or platform (e.g. a platform-specific bestseller ranking or sales rank). This property is intended for platform-level or catalog-wide comparative rankings rather than self-asserted promotional claims.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemPopularity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "lease_length": {
+        "ref": "base0001.lease_length@1",
+        "kind": "property",
+        "definition": "Length of the lease for some [[Accommodation]], either particular to some [[Offer]] or in some cases intrinsic to the property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Offer",
+              "https://schema.org/RealEstateListing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Duration",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/leaseLength",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "manufacturer_assigned_id": {
+        "ref": "base0001.manufacturer_assigned_id@1",
+        "kind": "property",
+        "definition": "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#manufacturerAssignedId",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/mpn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "mobile_url": {
+        "ref": "base0001.mobile_url@1",
+        "kind": "property",
+        "definition": "The [[mobileUrl]] property is provided for specific situations in which data consumers need to determine whether one of several provided URLs is a dedicated 'mobile site'.\n\nTo discourage over-use, and reflecting intial usecases, the property is expected only on [[Product]] and [[Offer]], rather than [[Thing]]. The general trend in web technology is towards [responsive design](https://en.wikipedia.org/wiki/Responsive_web_design) in which content can be flexibly adapted to a wide range of browsing environments. Pages and sites referenced with the long-established [[url]] property should ideally also be usable on a wide variety of devices, including mobile phones. In most cases, it would be pointless and counter productive to attempt to update all [[url]] markup to use [[mobileUrl]] for more mobile-oriented pages. The property is intended for the case when items (primarily [[Product]] and [[Offer]]) have extra URLs hosted on an additional \"mobile site\" alongside the main one. It should not be taken as an endorsement of this publication style.\n    ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/mobileUrl",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price": {
+        "ref": "base0001.price@1",
+        "kind": "property",
+        "definition": "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.\\n\\nUsage guidelines:\\n\\n* Use the [[priceCurrency]] property (with standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\") instead of including [ambiguous symbols](http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign) such as '$' in the value.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.\\n* Note that both [RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute) and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasAmount",
+              "https://www.omg.org/spec/Commons/Quantities/hasNumericValue"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/price",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price_currency": {
+        "ref": "base0001.price_currency@1",
+        "kind": "property",
+        "definition": "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Reservation",
+              "https://schema.org/Ticket",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceCurrency",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price_specification": {
+        "ref": "base0001.price_specification@1",
+        "kind": "property",
+        "definition": "One or more detailed price specifications, indicating the unit price and delivery or payment charges.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PriceSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "review": {
+        "ref": "base0001.review@1",
+        "kind": "property",
+        "definition": "A review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/review",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "reviews": {
+        "ref": "base0001.reviews@1",
+        "kind": "property",
+        "definition": "Review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/reviews",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "seller": {
+        "ref": "base0001.seller@1",
+        "kind": "property",
+        "definition": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/BuyAction",
+              "https://schema.org/Demand",
+              "https://schema.org/Flight",
+              "https://schema.org/Offer",
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [
+              "https://schema.org/participant",
+              "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasSupplier"
+            ],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#Seller",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/seller",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "seller_assigned_id": {
+        "ref": "base0001.seller_assigned_id@1",
+        "kind": "property",
+        "definition": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#sellerAssignedId",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/sku",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "serial_id": {
+        "ref": "base0001.serial_id@1",
+        "kind": "property",
+        "definition": "The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/IndividualProduct",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#SerialId",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/serialNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "shipping_details": {
+        "ref": "base0001.shipping_details@1",
+        "kind": "property",
+        "definition": "Indicates information about the shipping policies and options associated with an [[Offer]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OfferShippingDetails"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/shippingDetails",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "valid_for_member_tier": {
+        "ref": "base0001.valid_for_member_tier@1",
+        "kind": "property",
+        "definition": "The membership program tier(s) an Offer (or a PriceSpecification, OfferShippingDetails, or MerchantReturnPolicy under an Offer) is valid for.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/OfferShippingDetails",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/ShippingService"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/MemberProgramTier"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validForMemberTier",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "warranty": {
+        "ref": "base0001.warranty@1",
+        "kind": "property",
+        "definition": "The warranty promise(s) included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/WarrantyPromise"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/warranty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "invariants": [
+      "Offer != Agreement"
+    ],
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AuctionType",
+        "source_native_name": "AuctionType",
+        "source_label": "Auction Type",
+        "source_definition": "The type of auction in which the property is available (e.g., Absolute, Minimum Bid, Reserve).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AuctionType",
+        "source_enum_ref": "org.reso.metadata.enums.AuctionType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Contingency",
+        "source_native_name": "Contingency",
+        "source_label": "Contingency",
+        "source_definition": "A list of contingencies that must be satisfied in order to complete the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WithdrawnDate",
+        "source_native_name": "WithdrawnDate",
+        "source_label": "Withdrawn Date",
+        "source_definition": "The date that the listing was withdrawn from the market. This is not when a listing contract was canceled or closed, but a withdrawal from the market while the contract between the seller and listing agent is still in effect and an offer has not been accepted. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ContingentDate",
+        "source_native_name": "ContingentDate",
+        "source_label": "Contingent Date",
+        "source_definition": "The date an offer was made with a contingency. The listing remains on market. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UniversalParcelId",
+        "source_native_name": "UniversalParcelId",
+        "source_label": "Universal Parcel ID",
+        "source_definition": "The URN-based RESO Universal Parcel Identifier (UPI) is a unique identifier for all real property on an international level. It is based on country and local identification methods and is limited to real property. For cases such as shares of real property, units and other more granular cases, please utilize the UniversalPropertySubId.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PurchaseContractDate",
+        "source_native_name": "PurchaseContractDate",
+        "source_label": "Purchase Contract Date",
+        "source_definition": "With for-sale listings, this represents the date an offer was accepted and the listing was no longer on market. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS. With lease listings, this may represent a meeting of the minds to lease but with some contractual requirements yet to be fulfilled, such as contract signing or receipt of the deposit.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingConsiderations",
+        "source_native_name": "ShowingConsiderations",
+        "source_label": "Showing Considerations",
+        "source_definition": "A pick list of conditions that may require caution or further consideration, such as bringing someone with you, when showing the property (i.e., Electricity Not On, Inconsistent Cell Service, No Exterior Lighting).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ShowingConsiderations",
+        "source_enum_ref": "org.reso.metadata.enums.ShowingConsiderations",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.fixturesAndFittings",
+        "source_native_name": "fixturesAndFittings",
+        "source_label": "Fixtures and Fittings",
+        "source_definition": "This is so a buyer’s offer can take into account whether you are taking something of value or leaving extra items.  A full list will need to be completed after the sale is agreed.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].propertyValuation.valuationInformation.considerations",
+        "source_native_name": "considerations",
+        "source_label": "considerations",
+        "source_definition": "Considerations affecting value",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "negative_notes",
+            "ref": "base0001.negative_notes@1",
+            "kind": "property",
+            "definition": "Provides negative considerations regarding something, most typically in pro/con lists for reviews (alongside [[positiveNotes]]). For symmetry \n\nIn the case of a [[Review]], the property describes the [[itemReviewed]] from the perspective of the review; in the case of a [[Product]], the product itself is being described. Since product descriptions \ntend to emphasise positive claims, it may be relatively unusual to find [[negativeNotes]] used in this way. Nevertheless for the sake of symmetry, [[negativeNotes]] can be used on [[Product]].\n\nThe property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most negative is at the beginning of the list).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "positive_notes",
+            "ref": "base0001.positive_notes@1",
+            "kind": "property",
+            "definition": "Provides positive considerations regarding something, for example product highlights or (alongside [[negativeNotes]]) pro/con lists for reviews.\n\nIn the case of a [[Review]], the property describes the [[itemReviewed]] from the perspective of the review; in the case of a [[Product]], the product itself is being described.\n\nThe property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most positive is at the beginning of the list).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder",
+        "source_native_name": "communityInterestGroupRequestedToBeTreatedAsABidder",
+        "source_label": "Has any community interest group requested to be treated as a bidder?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder.oneOf[0].yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder.oneOf[1].yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder.oneOf[1].details",
+        "source_native_name": "details",
+        "source_label": "Details",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "application_contact",
+            "ref": "base0001.application_contact@1",
+            "kind": "property",
+            "definition": "Contact details for further information relevant to this job posting.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "asin",
+            "ref": "base0001.asin@1",
+            "kind": "property",
+            "definition": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number)'s article).\n\nNote also that this is a definition for how to include ASINs in Schema.org data, and not a definition of ASINs in general - see documentation from Amazon for authoritative details.\nASINs are most commonly encoded as text strings, but the [asin] property supports URL/URI as potential values too.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cost_origin",
+            "ref": "base0001.cost_origin@1",
+            "kind": "property",
+            "definition": "Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cvd_facility_county",
+            "ref": "base0001.cvd_facility_county@1",
+            "kind": "property",
+            "definition": "Name of the County of the NHSN facility that this data record applies to. Use [[cvdFacilityId]] to identify the facility. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cvd_facility_id",
+            "ref": "base0001.cvd_facility_id@1",
+            "kind": "property",
+            "definition": "Identifier of the NHSN facility that this data record applies to. Use [[cvdFacilityCounty]] to indicate the county. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "g_tinid",
+            "ref": "base0001.g_tinid@1",
+            "kind": "property",
+            "definition": "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nA correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) expresses GTINs as URLs (URIs, IRIs, etc.).\nDigital Links should be populated into the [[hasGS1DigitalLink]] attribute.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "gtin12",
+            "ref": "base0001.gtin12@1",
+            "kind": "property",
+            "definition": "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "gtin13",
+            "ref": "base0001.gtin13@1",
+            "kind": "property",
+            "definition": "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.mfem_property_acquisition_fees",
+        "source_native_name": "mfem_property_acquisition_fees",
+        "source_label": "Property Acquisition Fees",
+        "source_definition": "Fee charged by investment advisors, or managers, associated with the closing of a new investment. The fee compensates the real estate investment advisor, or manager, for services rendered in an investment acquisition, including sourcing, negotiating and closing the deal.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.mfem_property_disposition_fees",
+        "source_native_name": "mfem_property_disposition_fees",
+        "source_label": "Property Disposition Fees",
+        "source_definition": "Fee typically charged by investment advisors, or managers, for services rendered in an investment disposition, including sales marketing, negotiating and closing of the deal.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.ipfma_property_acquisition_fees",
+        "source_native_name": "ipfma_property_acquisition_fees",
+        "source_label": "Property Acquisition Fees",
+        "source_definition": "Fee charged by investment advisors, or managers, associated with the closing of a new investment. The fee compensates the real estate investment advisor, or manager, for services rendered in an investment acquisition, including sourcing, negotiating and closing the deal.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.ipfma_property_disposition_fees",
+        "source_native_name": "ipfma_property_disposition_fees",
+        "source_label": "Property Disposition Fees",
+        "source_definition": "Fee typically charged by investment advisors, or managers, for services rendered in an investment disposition, including sales marketing, negotiating and closing of the deal.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.vd_target_non_income_producing_investments",
+        "source_native_name": "vd_target_non_income_producing_investments",
+        "source_label": "Target Percentage Non-income Producing Investments",
+        "source_definition": "The target percentage of investments in non-income producing investments with the aim to generate future income after (re)development, refurbishment or re-letting activities.\n\nINCOME PRODUCING INVESTMENTS are investments in assets for which construction work has been completed and which are owned for the purpose of letting, producing a rental income that is negotiated at arm’s length with third parties.\n\nNON-INCOME PRODUCING INVESTMENTS are investments in assets (either properties or land) that at the time of investment are not producing any rental income and for which either (re)development, refurbishment or re-letting activities have to be undertaken before rental income is possible.",
+        "source_resource": null,
+        "source_data_type": "String",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.recon_revaluation_fv_deferred_taxes_tax_effect_inrev_nav",
+        "source_native_name": "recon_revaluation_fv_deferred_taxes_tax_effect_inrev_nav",
+        "source_label": "Revaluation to Fair Value of Deferred Taxes and Tax Effect of INREV NAV Adjustments",
+        "source_definition": "For pricing purposes only. In general, under different GAAPs, deferred tax assets and liabilities are measured at the nominal statutory tax rate. The manner in which the vehicle expects to realise deferred tax (for example, for investment properties through share sales rather than direct property sales) is generally not taken into consideration. \nThe adjustment represents the impact on the NAV of the difference between the amount determined in accordance with the GAAP and the estimate of deferred tax which takes into account the expected manner of settlement (i.e., when tax structures and the intended method of disposals or settlement of assets and liabilities have been applied to reduce the actual tax liability).\nDisclosures should include an overview of the tax structure including, for instance, details of the property ownership structure, key assumptions and broad parameters used for estimating deferred taxes for each country, the maximum deferred tax amount estimated assuming only asset sales (i.e., without taking into account the intended method of disposal) and the approximate tax rates used. \nThe estimate of the amount of the adjustment required to bring the deferred tax liability related to property disposals to fair value might have a large impact on the INREV NAV. Since the tax structures may differ from vehicle to vehicle, significant judgement is required and the mechanics of the calculation methodology for this adjustment may vary from vehicle to vehicle. Other components of the overall deferred tax adjustment require less judgement and are more mechanical in nature. This adjustment should include a full assessment of the tax impact on NAV of INREV NAV adjustments. Deferred tax balances are not discounted to take into account time value of money.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.ia_number_forward_contracted_properties_not_accounted_financial_position",
+        "source_native_name": "ia_number_forward_contracted_properties_not_accounted_financial_position",
+        "source_label": "Number of forward contracted properties not accounted for in the statement of financial position.",
+        "source_definition": "Number of acquired properties not accounted for in the vehicle's  statement of financial position, including forward contracts (which should be taken into consideration in the adjustments of INREV NAV. See NAV-Q12 of the INREV NAV Guidelines.",
+        "source_resource": null,
+        "source_data_type": "Integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.recon_revaluation_fair_value_deferred_taxes_tax_effect_inrev_nav_adjustments",
+        "source_native_name": "recon_revaluation_fair_value_deferred_taxes_tax_effect_inrev_nav_adjustments",
+        "source_label": "Revaluation to Fair Value of Deferred Taxes and Tax Effect of INREV NAV Adjustments",
+        "source_definition": "In general, under different GAAPs, deferred tax assets and liabilities are measured at the nominal statutory tax rate. The manner in which the vehicle expects to realise deferred tax (for example, for investment properties through share sales rather than direct property sales) is generally not taken into consideration. \nThe adjustment represents the impact on the NAV of the difference between the amount determined in accordance with the GAAP and the estimate of deferred tax which takes into account the expected manner of settlement (i.e., when tax structures and the intended method of disposals or settlement of assets and liabilities have been applied to reduce the actual tax liability).\nDisclosures should include an overview of the tax structure including, for instance, details of the property ownership structure, key assumptions and broad parameters used for estimating deferred taxes for each country, the maximum deferred tax amount estimated assuming only asset sales (i.e., without taking into account the intended method of disposal) and the approximate tax rates used. \nThe estimate of the amount of the adjustment required to bring the deferred tax liability related to property disposals to fair value might have a large impact on the INREV NAV. Since the tax structures may differ from vehicle to vehicle, significant judgement is required and the mechanics of the calculation methodology for this adjustment may vary from vehicle to vehicle. Other components of the overall deferred tax adjustment require less judgement and are more mechanical in nature. \nThis adjustment should include a full assessment of the tax impact on NAV of INREV NAV adjustments. \n\nDeferred tax balances are not discounted to take into account time value of money.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.hsw_training_hsw_topics_run_tenants_hours",
+        "source_native_name": "hsw_training_hsw_topics_run_tenants_hours",
+        "source_label": "Training on HSW topics run for tenants (hours)",
+        "source_definition": "Applicable for portfolio of assets. Total number of training hours offered to and completed by stakeholders on HSW divided by the total number of stakeholders (ref: ESRS S1).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.hsw_training_hsw_topics_run_employees_hours",
+        "source_native_name": "hsw_training_hsw_topics_run_employees_hours",
+        "source_label": "Training on HSW topics run for employees (hours)",
+        "source_definition": "Applicable for portfolio of assets. Total number of training hours offered to and completed by stakeholders on HSW divided by the total number of stakeholders (ref: ESRS S1).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.hsw_training_hsw_topics_run_stakeholders_hours",
+        "source_native_name": "hsw_training_hsw_topics_run_stakeholders_hours",
+        "source_label": "Training on HSW topics run for other stakeholders (hours)",
+        "source_definition": "Applicable for portfolio of assets. Total number of training hours offered to and completed by stakeholders on HSW divided by the total number of stakeholders (ref: ESRS S1). Please specify the stakeholder group in the comment box.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.si_skills_training_courses_offered_area_population",
+        "source_native_name": "si_skills_training_courses_offered_area_population",
+        "source_label": "Skills training / courses offered in area population",
+        "source_definition": "Courses, lessons or training are offered about/for mental health such as mindfulness, dealing with stress, structured work (ref: BREEAM-NL In-Use Sustainable housing and Operations 2016 v2.0, criteria HEA 28)",
+        "source_resource": null,
+        "source_data_type": "String",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.ed_average_hours_training_employees_undertaken_gender",
+        "source_native_name": "ed_average_hours_training_employees_undertaken_gender",
+        "source_label": "Average hours of training that employees have undertaken, by gender",
+        "source_definition": "It could be reported at vehicle or manager level, depending on which one is more appropriate. Please specify in the comment box: total number of training hours offered to and completed by employees divided by the total number of employees split by gender (ref: ESRS S1).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.er_exposure_energy_inefficient_real_estate_assets_percentage_aum",
+        "source_native_name": "er_exposure_energy_inefficient_real_estate_assets_percentage_aum",
+        "source_label": "Exposure to energy-inefficient real estate assets (% of AUM)",
+        "source_definition": "Inefficient real estate assets are the value of real estate assets built before 31/12/2020 with EPC C or below plus the value of real estate assets built after 31/12/2020 with PED below NZEB in Directive 2010/31/EU divided by the value of real estate assets required to abide by EPC and NZEB rules (ref: SFDR).\n\nA Nearly Zero-Energy Building (NZEB) is defined as a building that has a very high energy performance, while the nearly zero or very low amount of energy required should be covered to a very significant extent by energy from renewable sources, including energy from renewable sources produced on-site or nearby.\nPrimary Energy Demand (PED) is defined as the total energy from a raw energy source that is converted into consumable energy.\nEnergy Performance Certificate (EPC).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.dei_time_dedicated_diversity_training_employees_hours_per_employee",
+        "source_native_name": "dei_time_dedicated_diversity_training_employees_hours_per_employee",
+        "source_label": "Time dedicated for diversity training for employees (hours per employee)",
+        "source_definition": "It could be reported at vehicle or manager level, depending on which one is more appropriate. Please specify in the comment box. Total number of diversity training hours offered to and completed by employees divided by the total number of employees (ref: ESRS S1).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.ed_average_hours_training_employees_undertaken_employee_category_2",
+        "source_native_name": "ed_average_hours_training_employees_undertaken_employee_category_2",
+        "source_label": "Average hours of training that employees have undertaken, by employee category 1",
+        "source_definition": "It could be reported at vehicle or manager level, depending on which one is more appropriate. Please specify in the comment box: total number of training hours offered to and completed by employees divided by the total number of employees split by employee category (in categorising\nthe workforce, the undertaking shall define reasonable and meaningful employee categories which enable users of the information to understand different performance measures between the categories.) (ref: ESRS S1). Please indicate the employee category in the comment box.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.ed_average_hours_training_employees_undertaken_employee_category_3",
+        "source_native_name": "ed_average_hours_training_employees_undertaken_employee_category_3",
+        "source_label": "Average hours of training that employees have undertaken, by employee category 3",
+        "source_definition": "It could be reported at vehicle or manager level, depending on which one is more appropriate. Please specify in the comment box: total number of training hours offered to and completed by employees divided by the total number of employees split by employee category (in categorising\nthe workforce, the undertaking shall define reasonable and meaningful employee categories which enable users of the information to understand different performance measures between the categories.) (ref: ESRS S1). Please indicate the employee category in the comment box.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "offer",
+        "label": "offer",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "counteroffer",
+        "label": "counteroffer",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "offered_price",
+        "label": "offered price",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "offer_validity",
+        "label": "offer validity",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "financing_condition",
+        "label": "financing condition",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "contingency",
+        "label": "contingency",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Contingency",
+            "source_native_name": "Contingency",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "acceptance",
+        "label": "acceptance",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "rejection",
+        "label": "rejection",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "negotiation_status",
+        "label": "negotiation status",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "negotiation_history",
+        "label": "negotiation history",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "auction_type",
+        "label": "auction type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AuctionType",
+            "source_native_name": "AuctionType",
+            "source_data_type": "org.reso.metadata.enums.AuctionType",
+            "source_enum_ref": "org.reso.metadata.enums.AuctionType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "withdrawn_date",
+        "label": "withdrawn date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WithdrawnDate",
+            "source_native_name": "WithdrawnDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "contingent_date",
+        "label": "contingent date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ContingentDate",
+            "source_native_name": "ContingentDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "universal_parcel_id",
+        "label": "universal parcel id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UniversalParcelId",
+            "source_native_name": "UniversalParcelId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "universal_property_id",
+        "label": "universal property id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UniversalPropertyId",
+            "source_native_name": "UniversalPropertyId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "purchase_contract_date",
+        "label": "purchase contract date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PurchaseContractDate",
+            "source_native_name": "PurchaseContractDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_considerations",
+        "label": "showing considerations",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ShowingConsiderations",
+            "source_native_name": "ShowingConsiderations",
+            "source_data_type": "org.reso.metadata.enums.ShowingConsiderations",
+            "source_enum_ref": "org.reso.metadata.enums.ShowingConsiderations",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "universal_property_sub_id",
+        "label": "universal property sub id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UniversalPropertySubId",
+            "source_native_name": "UniversalPropertySubId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "property_pack_fixtures_and_fittings",
+        "label": "fixtures and fittings",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "propertyPack.fixturesAndFittings",
+            "source_native_name": "fixturesAndFittings",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "sold_subject_to_contract_completed",
+        "label": "completed",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuation_information_considerations",
+        "label": "considerations",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "property_is_listed_community_interest_group_requested_to_be_treated_as_abidder",
+        "label": "has any community interest group requested to be treated as a bidder?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "community_interest_group_requested_to_be_treated_as_abidder_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "one_of_0_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "one_of_1_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "one_of_1_details",
+        "label": "details",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "mfem_property_acquisition_fees",
+        "label": "property acquisition fees",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "mfem_property_disposition_fees",
+        "label": "property disposition fees",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ipfma_property_acquisition_fees",
+        "label": "property acquisition fees",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ipfma_property_disposition_fees",
+        "label": "property disposition fees",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "vd_target_non_income_producing_investments",
+        "label": "target percentage non-income producing investments",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "recon_revaluation_fv_deferred_taxes_tax_effect_inrev_nav",
+        "label": "revaluation to fair value of deferred taxes and tax effect of inrev nav adjustments",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ia_number_forward_contracted_properties_not_accounted_financial_position",
+        "label": "number of forward contracted properties not accounted for in the statement of financial position.",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "recon_revaluation_fair_value_deferred_taxes_tax_effect_inrev_nav_adjustments",
+        "label": "revaluation to fair value of deferred taxes and tax effect of inrev nav adjustments",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "hsw_training_hsw_topics_run_tenants_hours",
+        "label": "training on hsw topics run for tenants (hours)",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "hsw_training_hsw_topics_run_employees_hours",
+        "label": "training on hsw topics run for employees (hours)",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "hsw_training_hsw_topics_run_stakeholders_hours",
+        "label": "training on hsw topics run for other stakeholders (hours)",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "si_skills_training_courses_offered_area_population",
+        "label": "skills training / courses offered in area population",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ed_average_hours_training_employees_undertaken_gender",
+        "label": "average hours of training that employees have undertaken, by gender",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "er_exposure_energy_inefficient_real_estate_assets_percentage_aum",
+        "label": "exposure to energy-inefficient real estate assets (% of aum)",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "dei_time_dedicated_diversity_training_employees_hours_per_employee",
+        "label": "time dedicated for diversity training for employees (hours per employee)",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ed_average_hours_training_employees_undertaken_employee_category_2",
+        "label": "average hours of training that employees have undertaken, by employee category 1",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ed_average_hours_training_employees_undertaken_employee_category_3",
+        "label": "average hours of training that employees have undertaken, by employee category 3",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AuctionType",
+        "source_native_name": "AuctionType",
+        "source_label": "Auction Type",
+        "source_definition": "The type of auction in which the property is available (e.g., Absolute, Minimum Bid, Reserve).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AuctionType",
+        "source_enum_ref": "org.reso.metadata.enums.AuctionType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Contingency",
+        "source_native_name": "Contingency",
+        "source_label": "Contingency",
+        "source_definition": "A list of contingencies that must be satisfied in order to complete the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WithdrawnDate",
+        "source_native_name": "WithdrawnDate",
+        "source_label": "Withdrawn Date",
+        "source_definition": "The date that the listing was withdrawn from the market. This is not when a listing contract was canceled or closed, but a withdrawal from the market while the contract between the seller and listing agent is still in effect and an offer has not been accepted. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ContingentDate",
+        "source_native_name": "ContingentDate",
+        "source_label": "Contingent Date",
+        "source_definition": "The date an offer was made with a contingency. The listing remains on market. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UniversalParcelId",
+        "source_native_name": "UniversalParcelId",
+        "source_label": "Universal Parcel ID",
+        "source_definition": "The URN-based RESO Universal Parcel Identifier (UPI) is a unique identifier for all real property on an international level. It is based on country and local identification methods and is limited to real property. For cases such as shares of real property, units and other more granular cases, please utilize the UniversalPropertySubId.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UniversalPropertyId",
+        "source_native_name": "UniversalPropertyId",
+        "source_label": "Universal Property ID",
+        "source_definition": "The RESO Universal Property Identifier (UPI) is a unique identifier for all real property in the U.S. and Canada. It is based on country and local identification methods and is limited to real property. For cases such as shares of real property, units and other more granular cases, please utilize the UniversalPropertySubId.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PurchaseContractDate",
+        "source_native_name": "PurchaseContractDate",
+        "source_label": "Purchase Contract Date",
+        "source_definition": "With for-sale listings, this represents the date an offer was accepted and the listing was no longer on market. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS. With lease listings, this may represent a meeting of the minds to lease but with some contractual requirements yet to be fulfilled, such as contract signing or receipt of the deposit.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingConsiderations",
+        "source_native_name": "ShowingConsiderations",
+        "source_label": "Showing Considerations",
+        "source_definition": "A pick list of conditions that may require caution or further consideration, such as bringing someone with you, when showing the property (i.e., Electricity Not On, Inconsistent Cell Service, No Exterior Lighting).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ShowingConsiderations",
+        "source_enum_ref": "org.reso.metadata.enums.ShowingConsiderations",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UniversalPropertySubId",
+        "source_native_name": "UniversalPropertySubId",
+        "source_label": "Universal Property Sub ID",
+        "source_definition": "A unique identifier for all subsets or shares of real property in the U.S. and Canada. This may include Stock Cooperatives, Community Apartment, Units for Rent, etc. Informally abbreviated as UPSI, it is based on country and local identification methods, just as the Universal Property Identifier (UPI), but it is limited to subsets or shares of real property. For cases of complete real property, please utilize the UniversalPropertyId field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.fixturesAndFittings",
+        "source_native_name": "fixturesAndFittings",
+        "source_label": "Fixtures and Fittings",
+        "source_definition": "This is so a buyer’s offer can take into account whether you are taking something of value or leaving extra items.  A full list will need to be completed after the sale is agreed.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.soldSubjectToContract.completed",
+        "source_native_name": "completed",
+        "source_label": "completed",
+        "source_definition": "The date an offer for sale was accepted by a proceedable buyer",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "agent_interaction_statistic",
+          "ref": "base0001.agent_interaction_statistic@1",
+          "kind": "property",
+          "definition": "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].propertyValuation.valuationInformation.considerations",
+        "source_native_name": "considerations",
+        "source_label": "considerations",
+        "source_definition": "Considerations affecting value",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "negative_notes",
+            "ref": "base0001.negative_notes@1",
+            "kind": "property",
+            "definition": "Provides negative considerations regarding something, most typically in pro/con lists for reviews (alongside [[positiveNotes]]). For symmetry \n\nIn the case of a [[Review]], the property describes the [[itemReviewed]] from the perspective of the review; in the case of a [[Product]], the product itself is being described. Since product descriptions \ntend to emphasise positive claims, it may be relatively unusual to find [[negativeNotes]] used in this way. Nevertheless for the sake of symmetry, [[negativeNotes]] can be used on [[Product]].\n\nThe property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most negative is at the beginning of the list).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "positive_notes",
+            "ref": "base0001.positive_notes@1",
+            "kind": "property",
+            "definition": "Provides positive considerations regarding something, for example product highlights or (alongside [[negativeNotes]]) pro/con lists for reviews.\n\nIn the case of a [[Review]], the property describes the [[itemReviewed]] from the perspective of the review; in the case of a [[Product]], the product itself is being described.\n\nThe property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most positive is at the beginning of the list).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder",
+        "source_native_name": "communityInterestGroupRequestedToBeTreatedAsABidder",
+        "source_label": "Has any community interest group requested to be treated as a bidder?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder.oneOf[0].yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder.oneOf[1].yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localAuthoritySearches.otherMatters.assetsOfCommunityValue.propertyIsListed.communityInterestGroupRequestedToBeTreatedAsABidder.oneOf[1].details",
+        "source_native_name": "details",
+        "source_label": "Details",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "application_contact",
+            "ref": "base0001.application_contact@1",
+            "kind": "property",
+            "definition": "Contact details for further information relevant to this job posting.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "asin",
+            "ref": "base0001.asin@1",
+            "kind": "property",
+            "definition": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number)'s article).\n\nNote also that this is a definition for how to include ASINs in Schema.org data, and not a definition of ASINs in general - see documentation from Amazon for authoritative details.\nASINs are most commonly encoded as text strings, but the [asin] property supports URL/URI as potential values too.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cost_origin",
+            "ref": "base0001.cost_origin@1",
+            "kind": "property",
+            "definition": "Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cvd_facility_county",
+            "ref": "base0001.cvd_facility_county@1",
+            "kind": "property",
+            "definition": "Name of the County of the NHSN facility that this data record applies to. Use [[cvdFacilityId]] to identify the facility. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cvd_facility_id",
+            "ref": "base0001.cvd_facility_id@1",
+            "kind": "property",
+            "definition": "Identifier of the NHSN facility that this data record applies to. Use [[cvdFacilityCounty]] to indicate the county. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "g_tinid",
+            "ref": "base0001.g_tinid@1",
+            "kind": "property",
+            "definition": "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nA correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) expresses GTINs as URLs (URIs, IRIs, etc.).\nDigital Links should be populated into the [[hasGS1DigitalLink]] attribute.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "gtin12",
+            "ref": "base0001.gtin12@1",
+            "kind": "property",
+            "definition": "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "gtin13",
+            "ref": "base0001.gtin13@1",
+            "kind": "property",
+            "definition": "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.mfem_property_acquisition_fees",
+        "source_native_name": "mfem_property_acquisition_fees",
+        "source_label": "Property Acquisition Fees",
+        "source_definition": "Fee charged by investment advisors, or managers, associated with the closing of a new investment. The fee compensates the real estate investment advisor, or manager, for services rendered in an investment acquisition, including sourcing, negotiating and closing the deal.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.mfem_property_disposition_fees",
+        "source_native_name": "mfem_property_disposition_fees",
+        "source_label": "Property Disposition Fees",
+        "source_definition": "Fee typically charged by investment advisors, or managers, for services rendered in an investment disposition, including sales marketing, negotiating and closing of the deal.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.ipfma_property_acquisition_fees",
+        "source_native_name": "ipfma_property_acquisition_fees",
+        "source_label": "Property Acquisition Fees",
+        "source_definition": "Fee charged by investment advisors, or managers, associated with the closing of a new investment. The fee compensates the real estate investment advisor, or manager, for services rendered in an investment acquisition, including sourcing, negotiating and closing the deal.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.ipfma_property_disposition_fees",
+        "source_native_name": "ipfma_property_disposition_fees",
+        "source_label": "Property Disposition Fees",
+        "source_definition": "Fee typically charged by investment advisors, or managers, for services rendered in an investment disposition, including sales marketing, negotiating and closing of the deal.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.vd_target_non_income_producing_investments",
+        "source_native_name": "vd_target_non_income_producing_investments",
+        "source_label": "Target Percentage Non-income Producing Investments",
+        "source_definition": "The target percentage of investments in non-income producing investments with the aim to generate future income after (re)development, refurbishment or re-letting activities.\n\nINCOME PRODUCING INVESTMENTS are investments in assets for which construction work has been completed and which are owned for the purpose of letting, producing a rental income that is negotiated at arm’s length with third parties.\n\nNON-INCOME PRODUCING INVESTMENTS are investments in assets (either properties or land) that at the time of investment are not producing any rental income and for which either (re)development, refurbishment or re-letting activities have to be undertaken before rental income is possible.",
+        "source_resource": null,
+        "source_data_type": "String",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.recon_revaluation_fv_deferred_taxes_tax_effect_inrev_nav",
+        "source_native_name": "recon_revaluation_fv_deferred_taxes_tax_effect_inrev_nav",
+        "source_label": "Revaluation to Fair Value of Deferred Taxes and Tax Effect of INREV NAV Adjustments",
+        "source_definition": "For pricing purposes only. In general, under different GAAPs, deferred tax assets and liabilities are measured at the nominal statutory tax rate. The manner in which the vehicle expects to realise deferred tax (for example, for investment properties through share sales rather than direct property sales) is generally not taken into consideration. \nThe adjustment represents the impact on the NAV of the difference between the amount determined in accordance with the GAAP and the estimate of deferred tax which takes into account the expected manner of settlement (i.e., when tax structures and the intended method of disposals or settlement of assets and liabilities have been applied to reduce the actual tax liability).\nDisclosures should include an overview of the tax structure including, for instance, details of the property ownership structure, key assumptions and broad parameters used for estimating deferred taxes for each country, the maximum deferred tax amount estimated assuming only asset sales (i.e., without taking into account the intended method of disposal) and the approximate tax rates used. \nThe estimate of the amount of the adjustment required to bring the deferred tax liability related to property disposals to fair value might have a large impact on the INREV NAV. Since the tax structures may differ from vehicle to vehicle, significant judgement is required and the mechanics of the calculation methodology for this adjustment may vary from vehicle to vehicle. Other components of the overall deferred tax adjustment require less judgement and are more mechanical in nature. This adjustment should include a full assessment of the tax impact on NAV of INREV NAV adjustments. Deferred tax balances are not discounted to take into account time value of money.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.ia_number_forward_contracted_properties_not_accounted_financial_position",
+        "source_native_name": "ia_number_forward_contracted_properties_not_accounted_financial_position",
+        "source_label": "Number of forward contracted properties not accounted for in the statement of financial position.",
+        "source_definition": "Number of acquired properties not accounted for in the vehicle's  statement of financial position, including forward contracts (which should be taken into consideration in the adjustments of INREV NAV. See NAV-Q12 of the INREV NAV Guidelines.",
+        "source_resource": null,
+        "source_data_type": "Integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV SDDS 4.0.0",
+        "source_id": "inrev-sdds-4.0.0",
+        "source_path": "indicators.recon_revaluation_fair_value_deferred_taxes_tax_effect_inrev_nav_adjustments",
+        "source_native_name": "recon_revaluation_fair_value_deferred_taxes_tax_effect_inrev_nav_adjustments",
+        "source_label": "Revaluation to Fair Value of Deferred Taxes and Tax Effect of INREV NAV Adjustments",
+        "source_definition": "In general, under different GAAPs, deferred tax assets and liabilities are measured at the nominal statutory tax rate. The manner in which the vehicle expects to realise deferred tax (for example, for investment properties through share sales rather than direct property sales) is generally not taken into consideration. \nThe adjustment represents the impact on the NAV of the difference between the amount determined in accordance with the GAAP and the estimate of deferred tax which takes into account the expected manner of settlement (i.e., when tax structures and the intended method of disposals or settlement of assets and liabilities have been applied to reduce the actual tax liability).\nDisclosures should include an overview of the tax structure including, for instance, details of the property ownership structure, key assumptions and broad parameters used for estimating deferred taxes for each country, the maximum deferred tax amount estimated assuming only asset sales (i.e., without taking into account the intended method of disposal) and the approximate tax rates used. \nThe estimate of the amount of the adjustment required to bring the deferred tax liability related to property disposals to fair value might have a large impact on the INREV NAV. Since the tax structures may differ from vehicle to vehicle, significant judgement is required and the mechanics of the calculation methodology for this adjustment may vary from vehicle to vehicle. Other components of the overall deferred tax adjustment require less judgement and are more mechanical in nature. \nThis adjustment should include a full assessment of the tax impact on NAV of INREV NAV adjustments. \n\nDeferred tax balances are not discounted to take into account time value of money.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.hsw_training_hsw_topics_run_tenants_hours",
+        "source_native_name": "hsw_training_hsw_topics_run_tenants_hours",
+        "source_label": "Training on HSW topics run for tenants (hours)",
+        "source_definition": "Applicable for portfolio of assets. Total number of training hours offered to and completed by stakeholders on HSW divided by the total number of stakeholders (ref: ESRS S1).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.hsw_training_hsw_topics_run_employees_hours",
+        "source_native_name": "hsw_training_hsw_topics_run_employees_hours",
+        "source_label": "Training on HSW topics run for employees (hours)",
+        "source_definition": "Applicable for portfolio of assets. Total number of training hours offered to and completed by stakeholders on HSW divided by the total number of stakeholders (ref: ESRS S1).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.hsw_training_hsw_topics_run_stakeholders_hours",
+        "source_native_name": "hsw_training_hsw_topics_run_stakeholders_hours",
+        "source_label": "Training on HSW topics run for other stakeholders (hours)",
+        "source_definition": "Applicable for portfolio of assets. Total number of training hours offered to and completed by stakeholders on HSW divided by the total number of stakeholders (ref: ESRS S1). Please specify the stakeholder group in the comment box.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.si_skills_training_courses_offered_area_population",
+        "source_native_name": "si_skills_training_courses_offered_area_population",
+        "source_label": "Skills training / courses offered in area population",
+        "source_definition": "Courses, lessons or training are offered about/for mental health such as mindfulness, dealing with stress, structured work (ref: BREEAM-NL In-Use Sustainable housing and Operations 2016 v2.0, criteria HEA 28)",
+        "source_resource": null,
+        "source_data_type": "String",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.ed_average_hours_training_employees_undertaken_gender",
+        "source_native_name": "ed_average_hours_training_employees_undertaken_gender",
+        "source_label": "Average hours of training that employees have undertaken, by gender",
+        "source_definition": "It could be reported at vehicle or manager level, depending on which one is more appropriate. Please specify in the comment box: total number of training hours offered to and completed by employees divided by the total number of employees split by gender (ref: ESRS S1).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.er_exposure_energy_inefficient_real_estate_assets_percentage_aum",
+        "source_native_name": "er_exposure_energy_inefficient_real_estate_assets_percentage_aum",
+        "source_label": "Exposure to energy-inefficient real estate assets (% of AUM)",
+        "source_definition": "Inefficient real estate assets are the value of real estate assets built before 31/12/2020 with EPC C or below plus the value of real estate assets built after 31/12/2020 with PED below NZEB in Directive 2010/31/EU divided by the value of real estate assets required to abide by EPC and NZEB rules (ref: SFDR).\n\nA Nearly Zero-Energy Building (NZEB) is defined as a building that has a very high energy performance, while the nearly zero or very low amount of energy required should be covered to a very significant extent by energy from renewable sources, including energy from renewable sources produced on-site or nearby.\nPrimary Energy Demand (PED) is defined as the total energy from a raw energy source that is converted into consumable energy.\nEnergy Performance Certificate (EPC).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.dei_time_dedicated_diversity_training_employees_hours_per_employee",
+        "source_native_name": "dei_time_dedicated_diversity_training_employees_hours_per_employee",
+        "source_label": "Time dedicated for diversity training for employees (hours per employee)",
+        "source_definition": "It could be reported at vehicle or manager level, depending on which one is more appropriate. Please specify in the comment box. Total number of diversity training hours offered to and completed by employees divided by the total number of employees (ref: ESRS S1).",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.ed_average_hours_training_employees_undertaken_employee_category_2",
+        "source_native_name": "ed_average_hours_training_employees_undertaken_employee_category_2",
+        "source_label": "Average hours of training that employees have undertaken, by employee category 1",
+        "source_definition": "It could be reported at vehicle or manager level, depending on which one is more appropriate. Please specify in the comment box: total number of training hours offered to and completed by employees divided by the total number of employees split by employee category (in categorising\nthe workforce, the undertaking shall define reasonable and meaningful employee categories which enable users of the information to understand different performance measures between the categories.) (ref: ESRS S1). Please indicate the employee category in the comment box.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "INREV ESG SDDS 1.1.0",
+        "source_id": "inrev-esg-sdds-1.1.0",
+        "source_path": "indicators.ed_average_hours_training_employees_undertaken_employee_category_3",
+        "source_native_name": "ed_average_hours_training_employees_undertaken_employee_category_3",
+        "source_label": "Average hours of training that employees have undertaken, by employee category 3",
+        "source_definition": "It could be reported at vehicle or manager level, depending on which one is more appropriate. Please specify in the comment box: total number of training hours offered to and completed by employees divided by the total number of employees split by employee category (in categorising\nthe workforce, the undertaking shall define reasonable and meaningful employee categories which enable users of the information to understand different performance measures between the categories.) (ref: ESRS S1). Please indicate the employee category in the comment box.",
+        "source_resource": null,
+        "source_data_type": "Double",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
