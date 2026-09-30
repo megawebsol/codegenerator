@@ -5,162 +5,187 @@
   "language": "en",
   "canonical": false,
   "normative": false,
-  "purpose": "Reviewed correction preserving operational form fields while binding source fields conservatively to Universal Lexicon v2.",
+  "purpose": "Reviewed Real Estate ERP navigation database preserving operational form usability while separating source-field identity from Universal Lexicon v2 semantic identity.",
   "rules": [
-    "Form field IDs are operational CRUD/UI identifiers and MUST NOT be replaced by LexiconTerm.symbol.",
-    "LexiconTerm.ref is canonical semantic identity; LexiconTerm.symbol is the canonical runtime semantic tag.",
-    "A source-native field may remain usable in forms before semantic adjudication.",
-    "Exact spelling alone does not establish semantic equivalence.",
-    "A definition mentioning a source field is evidence, not automatic authority.",
-    "candidate_requires_semantic_adjudication does NOT mean the concept is absent from Universal Lexicon v2.",
+    "Operational form-field identity is independent from Universal Lexicon identity.",
+    "LexiconTerm.ref is canonical semantic identity; LexiconTerm.symbol is the canonical semantic tag.",
+    "A source-native field remains usable in forms even while semantic adjudication is pending.",
+    "Exact spelling alone MUST NOT establish semantic equivalence.",
+    "A Lexicon definition merely mentioning a source field MUST NOT establish semantic equivalence.",
+    "Only semantically reviewed exact matches and curated contextual crosswalks are marked mapped.",
     "External source identity and provenance MUST be preserved."
   ],
   "source_versions": {
-    "v0_2_1_blob": "e5bdfdf8813400053e0e9e72e356e706730399a6",
-    "v0_3_0_blob": "939b7aa11221380738fc3418a6d1875d895cb8ec",
-    "lexicon_v2_blob": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5"
+    "v0_2_1_blob_sha": "e5bdfdf8813400053e0e9e72e356e706730399a6",
+    "v0_3_0_blob_sha": "939b7aa11221380738fc3418a6d1875d895cb8ec",
+    "universal_lexicon_v2_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5"
   },
   "facets": [
     {
       "facet_number": 1,
       "id": "property_identity",
-      "path": "facets/01-property_identity.json"
+      "path": "facets/01-property_identity.json",
+      "sha": "93cbb691cfb11b8699d68c60934200b8aa391507"
     },
     {
       "facet_number": 2,
       "id": "location_territorial_context",
-      "path": "facets/02-location_territorial_context.json"
+      "path": "facets/02-location_territorial_context.json",
+      "sha": "b9bf4bcc0cce269639058a6c9091e60bf8e0cf72"
     },
     {
       "facet_number": 3,
       "id": "land_building_physical_structure",
-      "path": "facets/03-land_building_physical_structure.json"
+      "path": "facets/03-land_building_physical_structure.json",
+      "sha": "4e33d9b5525f68f5de07f5af060c86946b5fa67a"
     },
     {
       "facet_number": 4,
       "id": "features_equipment_infrastructure",
-      "path": "facets/04-features_equipment_infrastructure.json"
+      "path": "facets/04-features_equipment_infrastructure.json",
+      "sha": "2460bb04104719b1c07e19d967761b87cae155cf"
     },
     {
       "facet_number": 5,
       "id": "nearby_places_surroundings",
-      "path": "facets/05-nearby_places_surroundings.json"
+      "path": "facets/05-nearby_places_surroundings.json",
+      "sha": "67a5adfad13a3b6820c89c9ac83d6128fddbdade"
     },
     {
       "facet_number": 6,
       "id": "ownership_possession_occupancy",
-      "path": "facets/06-ownership_possession_occupancy.json"
+      "path": "facets/06-ownership_possession_occupancy.json",
+      "sha": "3b51e9a18f62066f18a986e0b2381fcf9c33db1c"
     },
     {
       "facet_number": 7,
       "id": "rights_encumbrances_restrictions_tenure",
-      "path": "facets/07-rights_encumbrances_restrictions_tenure.json"
+      "path": "facets/07-rights_encumbrances_restrictions_tenure.json",
+      "sha": "f9f0a96107fcb3b962c980bcf3862a81ac62a876"
     },
     {
       "facet_number": 8,
       "id": "condominium_property_administration",
-      "path": "facets/08-condominium_property_administration.json"
-    },
-    {
-      "facet_number": 10,
-      "id": "documents_evidence_compliance_records",
-      "path": "facets/10-documents_evidence_compliance_records.json"
-    },
-    {
-      "facet_number": 11,
-      "id": "acquisition_brokerage_mandate_intermediation",
-      "path": "facets/11-acquisition_brokerage_mandate_intermediation.json"
-    },
-    {
-      "facet_number": 12,
-      "id": "commercial_offering_listing_publication",
-      "path": "facets/12-commercial_offering_listing_publication.json"
+      "path": "facets/08-condominium_property_administration.json",
+      "sha": "3ef3b25bbb9a5deae04f6845b9cd3861b64781ad"
     },
     {
       "facet_number": 9,
       "id": "parties_organizations_contextual_roles",
-      "path": "facets/09-parties_organizations_contextual_roles.json"
+      "path": "facets/09-parties_organizations_contextual_roles.json",
+      "sha": "04ba19f93b370ab78b6a58cf22a7a33d194ab92f"
+    },
+    {
+      "facet_number": 10,
+      "id": "documents_evidence_compliance_records",
+      "path": "facets/10-documents_evidence_compliance_records.json",
+      "sha": "b44b1eb0f13c89a0dc60e444525cd9cbe6a2e201"
+    },
+    {
+      "facet_number": 11,
+      "id": "acquisition_brokerage_mandate_intermediation",
+      "path": "facets/11-acquisition_brokerage_mandate_intermediation.json",
+      "sha": "a1fb9068794842bfe127abf119d48e772442d51d"
+    },
+    {
+      "facet_number": 12,
+      "id": "commercial_offering_listing_publication",
+      "path": "facets/12-commercial_offering_listing_publication.json",
+      "sha": "a761863968d0036d57b76f6b81cc92f4214c66be"
     },
     {
       "facet_number": 13,
       "id": "crm_demand_commercial_relationship",
-      "path": "facets/13-crm_demand_commercial_relationship.json"
+      "path": "facets/13-crm_demand_commercial_relationship.json",
+      "sha": "c2aed2d82b189c44d0afcb00342c7a102a9edb53"
     },
     {
       "facet_number": 14,
       "id": "showings_appointments_access_operations",
-      "path": "facets/14-showings_appointments_access_operations.json"
+      "path": "facets/14-showings_appointments_access_operations.json",
+      "sha": "17582ab7a0e2afea4104e62aba2fbfecbf209e5f"
     },
     {
       "facet_number": 15,
       "id": "offer_negotiation",
-      "path": "facets/15-offer_negotiation.json"
+      "path": "facets/15-offer_negotiation.json",
+      "sha": "89ced4fe6044d1cb9112765043953a4c410036be"
     },
     {
       "facet_number": 16,
       "id": "agreement_due_diligence_closing",
-      "path": "facets/16-agreement_due_diligence_closing.json"
+      "path": "facets/16-agreement_due_diligence_closing.json",
+      "sha": "40e9f1f1f75294b05ddf292e47772884d51804a3"
     },
     {
       "facet_number": 17,
       "id": "obligations_payments_allocation_settlement",
-      "path": "facets/17-obligations_payments_allocation_settlement.json"
+      "path": "facets/17-obligations_payments_allocation_settlement.json",
+      "sha": "b4d7340a28b35193718301ee8060109192f63b73"
     },
     {
       "facet_number": 18,
       "id": "leasing_occupancy_management",
-      "path": "facets/18-leasing_occupancy_management.json"
+      "path": "facets/18-leasing_occupancy_management.json",
+      "sha": "f76589c663b20e577ec3604c2c9ca88aa17aa583"
     },
     {
       "facet_number": 19,
       "id": "valuation_finance_investment",
-      "path": "facets/19-valuation_finance_investment.json"
+      "path": "facets/19-valuation_finance_investment.json",
+      "sha": "2be4ef7dd110063d65c1cbe07d0b8e9239c6435e"
     },
     {
       "facet_number": 20,
       "id": "esg_sustainability_environmental_risk",
-      "path": "facets/20-esg_sustainability_environmental_risk.json"
+      "path": "facets/20-esg_sustainability_environmental_risk.json",
+      "sha": "9e6c3b415c4fb1af321b586cfe8bddbbb34459da"
     },
     {
       "facet_number": 21,
       "id": "insurance_warranty_maintenance_condition",
-      "path": "facets/21-insurance_warranty_maintenance_condition.json"
+      "path": "facets/21-insurance_warranty_maintenance_condition.json",
+      "sha": "7f6c55d604fbc15125587eea3fd32415d2d243c4"
     },
     {
       "facet_number": 22,
       "id": "operational_compliance",
-      "path": "facets/22-operational_compliance.json"
+      "path": "facets/22-operational_compliance.json",
+      "sha": "b08490222186ab7720b0eadab6533ecc8681279b"
     },
     {
       "facet_number": 23,
       "id": "provenance_conflict_temporal_semantics",
-      "path": "facets/23-provenance_conflict_temporal_semantics.json"
+      "path": "facets/23-provenance_conflict_temporal_semantics.json",
+      "sha": "91364fc823f4eb15a6089f032da023096af45c06"
     },
     {
       "facet_number": 24,
       "id": "review_data_quality",
-      "path": "facets/24-review_data_quality.json"
+      "path": "facets/24-review_data_quality.json",
+      "sha": "eb3a8d7f7f7556205b622b391f6695d94518e0c7"
     }
   ],
   "stats": {
-    "operational_form_fields_preserved_from_v0_2_1": 1338,
-    "form_fields_linked_to_source_fields": 892,
-    "form_fields_with_reviewed_semantic_binding": 74,
+    "operational_form_fields_preserved": 1338,
     "external_source_fields_reviewed": 1034,
     "mapped_exact_semantic_reviewed": 33,
     "mapped_contextual_reviewed": 41,
-    "candidate_exact_name_requires_semantic_adjudication": 9,
-    "candidate_multiple_exact_names_requires_semantic_adjudication": 0,
-    "candidate_definition_evidence_requires_semantic_adjudication": 48,
-    "candidate_requires_semantic_adjudication": 903
+    "mapped_total_reviewed": 74,
+    "candidates_requiring_adjudication": 960
   },
   "validation": {
+    "facet_count": 24,
     "all_24_facets_present": true,
-    "operational_form_fields_preserved": true,
-    "source_fields_reviewed": true,
-    "no_unreviewed_exact_name_promoted": true,
-    "no_definition_mention_auto_promoted": true,
-    "lexicon_symbol_not_used_as_form_field_identity": true,
-    "source_provenance_preserved": true
+    "all_json_parse_ok": true,
+    "form_fields_preserved_from_v0_2_1": true,
+    "source_field_count_matches_v0_3_0": true,
+    "prohibited_false_positive_bindings_absent": true,
+    "prohibited_false_positive_symbols": [
+      "yield",
+      "result",
+      "order",
+      "application_suite"
+    ]
   }
 }
