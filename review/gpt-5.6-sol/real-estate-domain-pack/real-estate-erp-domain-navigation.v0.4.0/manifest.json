@@ -1,0 +1,66 @@
+{
+  "database_id": "real-estate-erp-domain-navigation",
+  "version": "0.4.0",
+  "status": "manual-review",
+  "language": "en",
+  "canonical": false,
+  "normative": false,
+  "authority": {
+    "repository": "megawebsol/quipu-knowledge-hub",
+    "path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+    "blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+    "base_id": "base0001",
+    "term_count_reviewed": 1803
+  },
+  "method": {
+    "type": "manual_term_by_term_review",
+    "description": "All 1,803 Universal Lexicon v2 terms were read and evaluated manually from the Lexicon authority. Semantic inclusion, exclusion, contextual use and facet membership were decided from the Lexicon term definition, lexicalizations, domain/range constraints and Lexicon provenance. No external dictionary drives coverage, naming or semantic identity.",
+    "automation_for_semantic_matching": false,
+    "external_dictionaries_are_authority": false,
+    "external_dictionaries_role": "provenance_and_cross_reference_only"
+  },
+  "identity_model": {
+    "semantic_identity": "LexiconTerm.ref",
+    "runtime_tag": "LexiconTerm.symbol",
+    "form_slot": "Application/UI contextual slot that reuses a Lexicon term without creating a new semantic term.",
+    "rule": "A form slot may have a domain-specific UI name such as property_identifier or listing_id while its semantic authority remains an existing LexiconTerm.ref.",
+    "forbidden": [
+      "inventing Lexicon symbols in the ERP projection",
+      "promoting dictionary fields into the Lexicon",
+      "treating an external dictionary field as semantic authority",
+      "candidate_requires_semantic_adjudication as a catch-all output state",
+      "assuming identical spelling means semantic equivalence"
+    ]
+  },
+  "facet_model": {
+    "macro_area_count": 8,
+    "facet_count": 24,
+    "multi_facet_membership": true,
+    "macro_areas": [
+      {"order":1,"id":"property","facets":[1,2,3,4,5]},
+      {"order":2,"id":"legal","facets":[6,7,8,10]},
+      {"order":3,"id":"commercial","facets":[11,12]},
+      {"order":4,"id":"relationships","facets":[9,13,14]},
+      {"order":5,"id":"negotiation","facets":[15,16]},
+      {"order":6,"id":"financial","facets":[17,18,19]},
+      {"order":7,"id":"asset_management","facets":[20,21]},
+      {"order":8,"id":"governance","facets":[22,23,24]}
+    ]
+  },
+  "files": [
+    "macroareas/01-property.json",
+    "macroareas/02-legal.json",
+    "macroareas/03-commercial.json",
+    "macroareas/04-relationships.json",
+    "macroareas/05-negotiation.json",
+    "macroareas/06-financial.json",
+    "macroareas/07-asset-management.json",
+    "macroareas/08-governance.json",
+    "REVIEW.md"
+  ],
+  "supersedes_for_review": [
+    "real-estate-erp-domain-navigation.v0.3.0.json",
+    "real-estate-erp-domain-navigation.v0.3.1/",
+    "real-estate-erp-domain-navigation.v0.3.2/"
+  ]
+}
