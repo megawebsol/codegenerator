@@ -1,0 +1,5121 @@
+{
+  "macro_area": {
+    "id": "financial",
+    "order": 6,
+    "label": "Financial"
+  },
+  "subarea": {
+    "id": "leasing_occupancy_management",
+    "order": 2,
+    "label": "Leasing and Occupancy Management",
+    "facet_number": 18,
+    "description": "Lease economics, tenancy, occupancy, vacancy and rental lifecycle.",
+    "typical_concepts": {
+      "accepted_payment_method": {
+        "ref": "base0001.accepted_payment_method@1",
+        "kind": "property",
+        "definition": "The payment method(s) that are accepted in general by an organization, or for some specific demand or offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/LoanOrCredit",
+              "https://schema.org/PaymentMethod",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/acceptedPaymentMethod",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "accommodation_category": {
+        "ref": "base0001.accommodation_category@1",
+        "kind": "property",
+        "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [
+              "https://schema.org/category"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/accommodationCategory",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "accommodation_floor_plan": {
+        "ref": "base0001.accommodation_floor_plan@1",
+        "kind": "property",
+        "definition": "A floorplan of some [[Accommodation]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Residence"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/FloorPlan"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/accommodationFloorPlan",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "add_on": {
+        "ref": "base0001.add_on@1",
+        "kind": "property",
+        "definition": "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Offer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/addOn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "additional_property": {
+        "ref": "base0001.additional_property@1",
+        "kind": "property",
+        "definition": "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. https://schema.org/width, https://schema.org/color, https://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PropertyValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/additionalProperty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "advance_booking_requirement": {
+        "ref": "base0001.advance_booking_requirement@1",
+        "kind": "property",
+        "definition": "The amount of time that is required between accepting the offer and the actual usage of the resource or service.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/advanceBookingRequirement",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "aggregate_rating": {
+        "ref": "base0001.aggregate_rating@1",
+        "kind": "property",
+        "definition": "The overall rating, based on a collection of reviews or ratings, of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateRating"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/aggregateRating",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "amenity_feature": {
+        "ref": "base0001.amenity_feature@1",
+        "kind": "property",
+        "definition": "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/LocationFeatureSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/amenityFeature",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "amount": {
+        "ref": "base0001.amount@1",
+        "kind": "property",
+        "definition": "The amount of money.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/InvestmentOrDeposit",
+              "https://schema.org/LoanOrCredit",
+              "https://schema.org/MonetaryGrant",
+              "https://schema.org/MoneyTransfer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/amount",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "area_served": {
+        "ref": "base0001.area_served@1",
+        "kind": "property",
+        "definition": "The geographic area where a service or offered item is provided.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdministrativeArea",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/areaServed",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasServiceArea",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "asin": {
+        "ref": "base0001.asin@1",
+        "kind": "property",
+        "definition": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number)'s article).\n\nNote also that this is a definition for how to include ASINs in Schema.org data, and not a definition of ASINs in general - see documentation from Amazon for authoritative details.\nASINs are most commonly encoded as text strings, but the [asin] property supports URL/URI as potential values too.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/asin",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "availability": {
+        "ref": "base0001.availability@1",
+        "kind": "property",
+        "definition": "The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/ItemAvailability"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availability",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "availability_ends": {
+        "ref": "base0001.availability_ends@1",
+        "kind": "property",
+        "definition": "The end of the availability of the product or service included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime",
+              "https://schema.org/Time"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availabilityEnds",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "availability_starts": {
+        "ref": "base0001.availability_starts@1",
+        "kind": "property",
+        "definition": "The beginning of the availability of the product or service included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime",
+              "https://schema.org/Time"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availabilityStarts",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "available_at_or_from": {
+        "ref": "base0001.available_at_or_from@1",
+        "kind": "property",
+        "definition": "The place(s) from which the offer can be obtained (e.g. store locations).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/areaServed"
+            ],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availableAtOrFrom",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "available_delivery_method": {
+        "ref": "base0001.available_delivery_method@1",
+        "kind": "property",
+        "definition": "The delivery method(s) available for this offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DeliveryMethod"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/availableDeliveryMethod",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "bed": {
+        "ref": "base0001.bed@1",
+        "kind": "property",
+        "definition": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text.\n      If you want to indicate the quantity of a certain kind of bed, use an instance of BedDetails. For more detailed information, use the amenityFeature property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/HotelRoom",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/BedDetails",
+              "https://schema.org/BedType",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/bed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "business_function": {
+        "ref": "base0001.business_function@1",
+        "kind": "property",
+        "definition": "The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/TypeAndQuantityNode"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/BusinessFunction"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/businessFunction",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "category": {
+        "ref": "base0001.category@1",
+        "kind": "property",
+        "definition": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/Guide",
+              "https://schema.org/Invoice",
+              "https://schema.org/Offer",
+              "https://schema.org/PhysicalActivity",
+              "https://schema.org/Product",
+              "https://schema.org/Recommendation",
+              "https://schema.org/Service",
+              "https://schema.org/SpecialAnnouncement"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CategoryCode",
+              "https://schema.org/PhysicalActivityCategory",
+              "https://schema.org/Text",
+              "https://schema.org/Thing",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/category",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "checkout_page_urltemplate": {
+        "ref": "base0001.checkout_page_urltemplate@1",
+        "kind": "property",
+        "definition": "A URL template (RFC 6570) for a checkout page for an offer. This approach allows merchants to specify a URL for online checkout of the offered product, by interpolating parameters such as the logged in user ID, product ID, quantity, discount code etc. Parameter naming and standardization are not specified here.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/checkoutPageURLTemplate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "currency": {
+        "ref": "base0001.currency@1",
+        "kind": "property",
+        "definition": "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/ExchangeRateSpecification",
+              "https://schema.org/LoanOrCredit",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/MonetaryAmountDistribution"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/currency",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "delivery_lead_time": {
+        "ref": "base0001.delivery_lead_time@1",
+        "kind": "property",
+        "definition": "The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/deliveryLeadTime",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "dpp": {
+        "ref": "base0001.dpp@1",
+        "kind": "property",
+        "definition": "A link to a Digital Product Passport (DPP) or a digital record detailing the lifecycle, sustainability, and compliance data for this product or offer. This may be a direct URL, a GS1 Digital Link URI, or a nested DigitalProductPassport object. Note: This property is aligned with the IANA 'dpp' link relation and the GS1 Web Vocabulary 'dpp' link type.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/hasCertification"
+            ],
+            "range_refs": [
+              "https://schema.org/DigitalProductPassport",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/dpp",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasDigitalProductPassport",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "duration": {
+        "ref": "base0001.duration@1",
+        "kind": "property",
+        "definition": "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Audiobook",
+              "https://schema.org/Episode",
+              "https://schema.org/Event",
+              "https://schema.org/MediaObject",
+              "https://schema.org/Movie",
+              "https://schema.org/MusicRecording",
+              "https://schema.org/MusicRelease",
+              "https://schema.org/QuantitativeValueDistribution",
+              "https://schema.org/Schedule",
+              "https://schema.org/ServicePeriod"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Duration",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/duration",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "effective_end_date_time": {
+        "ref": "base0001.effective_end_date_time@1",
+        "kind": "property",
+        "definition": "The date after which the price is no longer available.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/endDate"
+            ],
+            "range_refs": [
+              "https://schema.org/Date"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#EffectiveEndDateTime",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceValidUntil",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_customer_type": {
+        "ref": "base0001.eligible_customer_type@1",
+        "kind": "property",
+        "definition": "The type(s) of customers for which the given offer is valid.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/BusinessEntityType"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleCustomerType",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_duration": {
+        "ref": "base0001.eligible_duration@1",
+        "kind": "property",
+        "definition": "The duration for which the given offer is valid.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleDuration",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_quantity": {
+        "ref": "base0001.eligible_quantity@1",
+        "kind": "property",
+        "definition": "The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleQuantity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_region": {
+        "ref": "base0001.eligible_region@1",
+        "kind": "property",
+        "definition": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\\n\\nSee also [[ineligibleRegion]].\n    ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/areaServed"
+            ],
+            "range_refs": [
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleRegion",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_transaction_volume": {
+        "ref": "base0001.eligible_transaction_volume@1",
+        "kind": "property",
+        "definition": "The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PriceSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleTransactionVolume",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "end_date": {
+        "ref": "base0001.end_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/JobPosting",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/endDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validThrough",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasEndDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "floor_level": {
+        "ref": "base0001.floor_level@1",
+        "kind": "property",
+        "definition": "The floor level for an [[Accommodation]] in a multi-storey building. Since counting\n  systems [vary internationally](https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designations), the local system should be used where possible.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/LocalBusiness",
+              "https://schema.org/Residence"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/floorLevel",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "floor_size": {
+        "ref": "base0001.floor_size@1",
+        "kind": "property",
+        "definition": "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/floorSize",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "g_tinid": {
+        "ref": "base0001.g_tinid@1",
+        "kind": "property",
+        "definition": "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nA correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) expresses GTINs as URLs (URIs, IRIs, etc.).\nDigital Links should be populated into the [[hasGS1DigitalLink]] attribute.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#gTINId",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/gtin",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "gtin12": {
+        "ref": "base0001.gtin12@1",
+        "kind": "property",
+        "definition": "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/gtin",
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin12",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "gtin13": {
+        "ref": "base0001.gtin13@1",
+        "kind": "property",
+        "definition": "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/gtin",
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin13",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "gtin14": {
+        "ref": "base0001.gtin14@1",
+        "kind": "property",
+        "definition": "The GTIN-14 code of the product, or the product to which the offer refers. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/gtin",
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin14",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "gtin8": {
+        "ref": "base0001.gtin8@1",
+        "kind": "property",
+        "definition": "The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/gtin",
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gtin8",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_adult_consideration": {
+        "ref": "base0001.has_adult_consideration@1",
+        "kind": "property",
+        "definition": "Used to tag an item to be intended or suitable for consumption or use by adults only.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdultOrientedEnumeration"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasAdultConsideration",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_gs1_digital_link": {
+        "ref": "base0001.has_gs1_digital_link@1",
+        "kind": "property",
+        "definition": "The <a href=\"https://www.gs1.org/standards/gs1-digital-link\">GS1 digital link</a> associated with the object. This URL should conform to the particular requirements of digital links. The link should only contain the Application Identifiers (AIs) that are relevant for the entity being annotated, for instance a [[Product]] or an [[Organization]], and for the correct granularity. In particular, for products:<ul><li>A Digital Link that contains a serial number (AI <code>21</code>) should only be present on instances of [[IndividualProduct]]</li><li>A Digital Link that contains a lot number (AI <code>10</code>) should be annotated as [[SomeProducts]] if only products from that lot are sold, or [[IndividualProduct]] if there is only a specific product.</li><li>A Digital Link that contains a global model number (AI <code>8013</code>) should be attached to a [[Product]] or a [[ProductModel]].</li></ul> Other item types should be adapted similarly.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasGS1DigitalLink",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_measurement": {
+        "ref": "base0001.has_measurement@1",
+        "kind": "property",
+        "definition": "A measurement of an item, For example, the inseam of pants, the wheel size of a bicycle, the gauge of a screw, or the carbon footprint measured for certification by an authority. Usually an exact measurement, but can also be a range of measurements for adjustable products, for example belts and ski bindings.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/Offer",
+              "https://schema.org/Product",
+              "https://schema.org/SizeSpecification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasMeasurement",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_merchant_return_policy": {
+        "ref": "base0001.has_merchant_return_policy@1",
+        "kind": "property",
+        "definition": "Specifies a MerchantReturnPolicy that may be applicable.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/MerchantReturnPolicy"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasMerchantReturnPolicy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_start_date": {
+        "ref": "base0001.has_start_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/Permit",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/startDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validFrom",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasStartDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "includes_object": {
+        "ref": "base0001.includes_object@1",
+        "kind": "property",
+        "definition": "This links to a node or nodes indicating the exact quantity of the products included in  an [[Offer]] or [[ProductCollection]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/ProductCollection"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/TypeAndQuantityNode"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/includesObject",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "ineligible_region": {
+        "ref": "base0001.ineligible_region@1",
+        "kind": "property",
+        "definition": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/MediaObject",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/ineligibleRegion",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "inventory_level": {
+        "ref": "base0001.inventory_level@1",
+        "kind": "property",
+        "definition": "The current approximate inventory level for the item or items.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/SomeProducts"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/inventoryLevel",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_family_friendly": {
+        "ref": "base0001.is_family_friendly@1",
+        "kind": "property",
+        "definition": "Indicates whether this content is family friendly.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isFamilyFriendly",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_offered_by": {
+        "ref": "base0001.is_offered_by@1",
+        "kind": "property",
+        "definition": "A pointer to the organization or person making the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/offeredBy",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/isOfferedBy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_condition": {
+        "ref": "base0001.item_condition@1",
+        "kind": "property",
+        "definition": "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OfferItemCondition"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemCondition",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_offered": {
+        "ref": "base0001.item_offered@1",
+        "kind": "property",
+        "definition": "An item being offered (or demanded). The transactional nature of the offer or demand is documented using [[businessFunction]], e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateOffer",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/MenuItem",
+              "https://schema.org/Product",
+              "https://schema.org/Service",
+              "https://schema.org/Trip"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemOffered",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_popularity": {
+        "ref": "base0001.item_popularity@1",
+        "kind": "property",
+        "definition": "A measure of the relative popularity or sales rank of the offer within a marketplace, catalog, or platform (e.g. a platform-specific bestseller ranking or sales rank). This property is intended for platform-level or catalog-wide comparative rankings rather than self-asserted promotional claims.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemPopularity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "lease_length": {
+        "ref": "base0001.lease_length@1",
+        "kind": "property",
+        "definition": "Length of the lease for some [[Accommodation]], either particular to some [[Offer]] or in some cases intrinsic to the property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Offer",
+              "https://schema.org/RealEstateListing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Duration",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/leaseLength",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "loan_term": {
+        "ref": "base0001.loan_term@1",
+        "kind": "property",
+        "definition": "The duration of the loan or credit agreement.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [
+              "https://schema.org/duration"
+            ],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/loanTerm",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "manufacturer_assigned_id": {
+        "ref": "base0001.manufacturer_assigned_id@1",
+        "kind": "property",
+        "definition": "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#manufacturerAssignedId",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/mpn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "mobile_url": {
+        "ref": "base0001.mobile_url@1",
+        "kind": "property",
+        "definition": "The [[mobileUrl]] property is provided for specific situations in which data consumers need to determine whether one of several provided URLs is a dedicated 'mobile site'.\n\nTo discourage over-use, and reflecting intial usecases, the property is expected only on [[Product]] and [[Offer]], rather than [[Thing]]. The general trend in web technology is towards [responsive design](https://en.wikipedia.org/wiki/Responsive_web_design) in which content can be flexibly adapted to a wide range of browsing environments. Pages and sites referenced with the long-established [[url]] property should ideally also be usable on a wide variety of devices, including mobile phones. In most cases, it would be pointless and counter productive to attempt to update all [[url]] markup to use [[mobileUrl]] for more mobile-oriented pages. The property is intended for the case when items (primarily [[Product]] and [[Offer]]) have extra URLs hosted on an additional \"mobile site\" alongside the main one. It should not be taken as an endorsement of this publication style.\n    ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/mobileUrl",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_bathrooms_total": {
+        "ref": "base0001.number_of_bathrooms_total@1",
+        "kind": "property",
+        "definition": "The total integer number of bathrooms in some [[Accommodation]], following real estate conventions as [documented in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field): \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also [[numberOfRooms]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfBathroomsTotal",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_bedrooms": {
+        "ref": "base0001.number_of_bedrooms@1",
+        "kind": "property",
+        "definition": "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfBedrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_full_bathrooms": {
+        "ref": "base0001.number_of_full_bathrooms@1",
+        "kind": "property",
+        "definition": "Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfFullBathrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_partial_bathrooms": {
+        "ref": "base0001.number_of_partial_bathrooms@1",
+        "kind": "property",
+        "definition": "Number of partial bathrooms - The total number of half and ¼ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsPartial field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfPartialBathrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_rooms": {
+        "ref": "base0001.number_of_rooms@1",
+        "kind": "property",
+        "definition": "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Apartment",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/House",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/SingleFamilyResidence",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfRooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "occupancy": {
+        "ref": "base0001.occupancy@1",
+        "kind": "property",
+        "definition": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Apartment",
+              "https://schema.org/HotelRoom",
+              "https://schema.org/SingleFamilyResidence",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/occupancy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "payment_due": {
+        "ref": "base0001.payment_due@1",
+        "kind": "property",
+        "definition": "The date that payment is due.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Invoice",
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasPaymentDueDate"
+            ],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#PaymentDueDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/paymentDue",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/paymentDueDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "permitted_usage": {
+        "ref": "base0001.permitted_usage@1",
+        "kind": "property",
+        "definition": "Indications regarding the permitted usage of the accommodation.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/permittedUsage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "pets_allowed": {
+        "ref": "base0001.pets_allowed@1",
+        "kind": "property",
+        "definition": "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/petsAllowed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price": {
+        "ref": "base0001.price@1",
+        "kind": "property",
+        "definition": "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.\\n\\nUsage guidelines:\\n\\n* Use the [[priceCurrency]] property (with standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\") instead of including [ambiguous symbols](http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign) such as '$' in the value.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.\\n* Note that both [RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute) and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasAmount",
+              "https://www.omg.org/spec/Commons/Quantities/hasNumericValue"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/price",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price_currency": {
+        "ref": "base0001.price_currency@1",
+        "kind": "property",
+        "definition": "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Reservation",
+              "https://schema.org/Ticket",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceCurrency",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price_specification": {
+        "ref": "base0001.price_specification@1",
+        "kind": "property",
+        "definition": "One or more detailed price specifications, indicating the unit price and delivery or payment charges.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PriceSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "required_collateral": {
+        "ref": "base0001.required_collateral@1",
+        "kind": "property",
+        "definition": "Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/Thing"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/requiredCollateral",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "review": {
+        "ref": "base0001.review@1",
+        "kind": "property",
+        "definition": "A review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/review",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "reviews": {
+        "ref": "base0001.reviews@1",
+        "kind": "property",
+        "definition": "Review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/reviews",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "seller": {
+        "ref": "base0001.seller@1",
+        "kind": "property",
+        "definition": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/BuyAction",
+              "https://schema.org/Demand",
+              "https://schema.org/Flight",
+              "https://schema.org/Offer",
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [
+              "https://schema.org/participant",
+              "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasSupplier"
+            ],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#Seller",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/seller",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "seller_assigned_id": {
+        "ref": "base0001.seller_assigned_id@1",
+        "kind": "property",
+        "definition": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#sellerAssignedId",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/sku",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "serial_id": {
+        "ref": "base0001.serial_id@1",
+        "kind": "property",
+        "definition": "The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/IndividualProduct",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#SerialId",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/serialNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "shipping_details": {
+        "ref": "base0001.shipping_details@1",
+        "kind": "property",
+        "definition": "Indicates information about the shipping policies and options associated with an [[Offer]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OfferShippingDetails"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/shippingDetails",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "tour_booking_page": {
+        "ref": "base0001.tour_booking_page@1",
+        "kind": "property",
+        "definition": "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/tourBookingPage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "valid_for_member_tier": {
+        "ref": "base0001.valid_for_member_tier@1",
+        "kind": "property",
+        "definition": "The membership program tier(s) an Offer (or a PriceSpecification, OfferShippingDetails, or MerchantReturnPolicy under an Offer) is valid for.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/OfferShippingDetails",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/ShippingService"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/MemberProgramTier"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validForMemberTier",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "warranty": {
+        "ref": "base0001.warranty@1",
+        "kind": "property",
+        "definition": "The warranty promise(s) included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/WarrantyPromise"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/warranty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "year_built": {
+        "ref": "base0001.year_built@1",
+        "kind": "property",
+        "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/yearBuilt",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the short code that is commonly used. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CapRate",
+        "source_native_name": "CapRate",
+        "source_label": "Cap Rate",
+        "source_definition": "The equivalent to the return on investment you would receive if you pay cash for a property. The ratio between the net operating income produced by an asset and its capital cost (the original price paid to buy the asset) or alternatively its current market value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CloseDate",
+        "source_native_name": "CloseDate",
+        "source_label": "Close Date",
+        "source_definition": "With for-sale listings, this is the date the purchase agreement was fulfilled. With lease listings, it is the date the requirements were fulfilled, such as contract and/or deposit. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Furnished",
+        "source_native_name": "Furnished",
+        "source_label": "Furnished",
+        "source_definition": "The property being leased is furnished, unfurnished or partially furnished.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Furnished",
+        "source_enum_ref": "org.reso.metadata.enums.Furnished",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseRate",
+        "source_native_name": "LeaseRate",
+        "source_label": "Lease Rate",
+        "source_definition": "The amount of money paid over a specified unit of time as indicated in the LeaseRateFrequency and LeaseRateUnits fields.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseTerm",
+        "source_native_name": "LeaseTerm",
+        "source_label": "Lease Term",
+        "source_definition": "A pick list of lengths that represent the length of the lease (e.g., Weekly, Month to Month, 6-Month Lease, 12-Month Lease, 2-Year Lease).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LeaseTerm",
+        "source_enum_ref": "org.reso.metadata.enums.LeaseTerm",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListPrice",
+        "source_native_name": "ListPrice",
+        "source_label": "List Price",
+        "source_definition": "The current price of the property as determined by the seller and the seller's broker. For auctions, this is the minimum or reserve price.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerPays",
+        "source_native_name": "OwnerPays",
+        "source_label": "Owner Pays",
+        "source_definition": "A list of expenses for the property paid for by the owner as opposed to the tenant (e.g., Water, Trash, Electric).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnerPays",
+        "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Ownership",
+        "source_native_name": "Ownership",
+        "source_label": "Ownership",
+        "source_definition": "A text description of the manner in which title to a property is held (e.g., Trust, Corporation, Joint Tenant, Individual).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Utilities",
+        "source_native_name": "Utilities",
+        "source_label": "Utilities",
+        "source_definition": "A list of the utilities for the property being sold/leased.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Utilities",
+        "source_enum_ref": "org.reso.metadata.enums.Utilities",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Appliances",
+        "source_native_name": "Appliances",
+        "source_label": "Appliances",
+        "source_definition": "A list of the appliances that will be included in the sale/lease of the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Appliances",
+        "source_enum_ref": "org.reso.metadata.enums.Appliances",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the property. The current use of the property is an important factor in understanding the overall condition of the land and determining appropriateness for intended use.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PostalCity",
+        "source_native_name": "PostalCity",
+        "source_label": "Postal City",
+        "source_definition": "The official city per the U.S. Postal Service (USPS), which may be different from the recorded city.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PostalCity",
+        "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SubleaseYN",
+        "source_native_name": "SubleaseYN",
+        "source_label": "Sublease Yes/No",
+        "source_definition": "Indicates whether or not a sublease is available for the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantPays",
+        "source_native_name": "TenantPays",
+        "source_label": "Tenant Pays",
+        "source_definition": "A list of services or items that the tenant is responsible to pay.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantPays",
+        "source_enum_ref": "org.reso.metadata.enums.TenantPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantType",
+        "source_native_name": "TenantType",
+        "source_label": "Tenant Type",
+        "source_definition": "A pick list describing the current status of tenants or lack of tenants at the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantType",
+        "source_enum_ref": "org.reso.metadata.enums.TenantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FuelExpense",
+        "source_native_name": "FuelExpense",
+        "source_label": "Fuel Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GrossIncome",
+        "source_native_name": "GrossIncome",
+        "source_label": "Gross Income",
+        "source_definition": "The actual current income from rent and all other revenue-generating sources.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LandLeaseYN",
+        "source_native_name": "LandLeaseYN",
+        "source_label": "Land Lease Yes/No",
+        "source_definition": "The land is not included in the sale and a lease exists.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseAmount",
+        "source_native_name": "LeaseAmount",
+        "source_label": "Lease Amount",
+        "source_definition": "The amount of any lease the business pays for its current location.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LotFeatures",
+        "source_native_name": "LotFeatures",
+        "source_label": "Lot Features",
+        "source_definition": "A list of features or a description of the lot included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LotFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.LotFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MoveInCosts",
+        "source_native_name": "MoveInCosts",
+        "source_label": "Move-in Costs",
+        "source_definition": "A pick list of the types upfront costs, both refundable and non-refundable, associated with the property being leased.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.MoveInCosts",
+        "source_enum_ref": "org.reso.metadata.enums.MoveInCosts",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PoolExpense",
+        "source_native_name": "PoolExpense",
+        "source_label": "Pool Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SpaFeatures",
+        "source_native_name": "SpaFeatures",
+        "source_label": "Spa Features",
+        "source_definition": "A list of features or a description of the spa included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.SpaFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.SpaFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantNames",
+        "source_native_name": "TenantNames",
+        "source_label": "Tenant Names",
+        "source_definition": "The names of the tenant(s) that currently reside at the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentPrice",
+        "source_native_name": "CurrentPrice",
+        "source_label": "Current Price",
+        "source_definition": "The present price or most recent price (for off-market statuses) of the listing, regardless of the status of the listing. For example, listings in Active, Expired or Closed status may all have a value in the CurrentPrice field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DoorFeatures",
+        "source_native_name": "DoorFeatures",
+        "source_label": "Door Features",
+        "source_definition": "A list of features or description of the doors included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.DoorFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.DoorFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeasableArea",
+        "source_native_name": "LeasableArea",
+        "source_label": "Leasable Area",
+        "source_definition": "The area that may be leased within the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingTerms",
+        "source_native_name": "ListingTerms",
+        "source_label": "Listing Terms",
+        "source_definition": "Terms of the listing such as Lien Release, Subject to Court Approval or Owner Will Carry. Also may include options that describe the financing terms that are acceptable to the seller (i.e., Cash, Assumable, FHA, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingTerms",
+        "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantName",
+        "source_native_name": "OccupantName",
+        "source_label": "Occupant Name",
+        "source_definition": "The name of the current occupant, if any, of the property being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantType",
+        "source_native_name": "OccupantType",
+        "source_label": "Occupant Type",
+        "source_definition": "A field that describes the type of occupant (i.e., Owner, Tenant, Vacant).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OccupantType",
+        "source_enum_ref": "org.reso.metadata.enums.OccupantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OtherExpense",
+        "source_native_name": "OtherExpense",
+        "source_label": "Other Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PetsComments",
+        "source_native_name": "PetsComments",
+        "source_label": "Pets Comments",
+        "source_definition": "A textual description for the pets allowance in the property being leased.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PoolFeatures",
+        "source_native_name": "PoolFeatures",
+        "source_label": "Pool Features",
+        "source_definition": "A list of features about or a description of a pool included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PoolFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.PoolFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RentIncludes",
+        "source_native_name": "RentIncludes",
+        "source_label": "Rent Includes",
+        "source_definition": "A list of services or items that the tenant is not responsible to pay.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RentIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.RentIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TrashExpense",
+        "source_native_name": "TrashExpense",
+        "source_label": "Trash Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseRateUnit",
+        "source_native_name": "LeaseRateUnit",
+        "source_label": "Lease Rate Unit",
+        "source_definition": "The unit of measurement used to calculate the LeaseRate (e.g., Square Feet, Square Meters, Acres).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LeaseRateUnits",
+        "source_enum_ref": "org.reso.metadata.enums.LeaseRateUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "lease",
+        "label": "lease",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "landlord",
+        "label": "landlord",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "tenant",
+        "label": "tenant",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "rent",
+        "label": "rent",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "rent_period",
+        "label": "rent period",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "indexation",
+        "label": "indexation",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "deposit",
+        "label": "deposit",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "guarantee",
+        "label": "guarantee",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "service_charge",
+        "label": "service charge",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "lease_restriction",
+        "label": "lease restriction",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "arrears",
+        "label": "arrears",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "renewal",
+        "label": "renewal",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "break_clause",
+        "label": "break clause",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "occupancy",
+        "label": "occupancy",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "vacancy",
+        "label": "vacancy",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "zoning",
+        "label": "zoning",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Zoning",
+            "source_native_name": "Zoning",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "cap_rate",
+        "label": "cap rate",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CapRate",
+            "source_native_name": "CapRate",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "close_date",
+        "label": "close date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CloseDate",
+            "source_native_name": "CloseDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "furnished",
+        "label": "furnished",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Furnished",
+            "source_native_name": "Furnished",
+            "source_data_type": "org.reso.metadata.enums.Furnished",
+            "source_enum_ref": "org.reso.metadata.enums.Furnished",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_rate",
+        "label": "lease rate",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseRate",
+            "source_native_name": "LeaseRate",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_term",
+        "label": "lease term",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseTerm",
+            "source_native_name": "LeaseTerm",
+            "source_data_type": "org.reso.metadata.enums.LeaseTerm",
+            "source_enum_ref": "org.reso.metadata.enums.LeaseTerm",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_price",
+        "label": "list price",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListPrice",
+            "source_native_name": "ListPrice",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "owner_pays",
+        "label": "owner pays",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OwnerPays",
+            "source_native_name": "OwnerPays",
+            "source_data_type": "org.reso.metadata.enums.OwnerPays",
+            "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "ownership",
+        "label": "ownership",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Ownership",
+            "source_native_name": "Ownership",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "utilities",
+        "label": "utilities",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Utilities",
+            "source_native_name": "Utilities",
+            "source_data_type": "org.reso.metadata.enums.Utilities",
+            "source_enum_ref": "org.reso.metadata.enums.Utilities",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "year_built",
+        "label": "year built",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.YearBuilt",
+            "source_native_name": "YearBuilt",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_semantic_reviewed",
+            "lexicon_binding": {
+              "symbol": "year_built",
+              "ref": "base0001.year_built@1",
+              "kind": "property",
+              "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+              "match_method": "exact_name_plus_semantic_review",
+              "confidence": 1,
+              "binding_relation": "equivalent"
+            }
+          }
+        ]
+      },
+      {
+        "id": "appliances",
+        "label": "appliances",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Appliances",
+            "source_native_name": "Appliances",
+            "source_data_type": "org.reso.metadata.enums.Appliances",
+            "source_enum_ref": "org.reso.metadata.enums.Appliances",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "current_use",
+        "label": "current use",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CurrentUse",
+            "source_native_name": "CurrentUse",
+            "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "postal_city",
+        "label": "postal city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PostalCity",
+            "source_native_name": "PostalCity",
+            "source_data_type": "org.reso.metadata.enums.PostalCity",
+            "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "sublease_yn",
+        "label": "sublease yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SubleaseYN",
+            "source_native_name": "SubleaseYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tenant_pays",
+        "label": "tenant pays",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TenantPays",
+            "source_native_name": "TenantPays",
+            "source_data_type": "org.reso.metadata.enums.TenantPays",
+            "source_enum_ref": "org.reso.metadata.enums.TenantPays",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tenant_type",
+        "label": "tenant type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TenantType",
+            "source_native_name": "TenantType",
+            "source_data_type": "org.reso.metadata.enums.TenantType",
+            "source_enum_ref": "org.reso.metadata.enums.TenantType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "down_payment",
+        "label": "down payment",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DownPayment",
+            "source_native_name": "DownPayment",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_semantic_reviewed",
+            "lexicon_binding": {
+              "symbol": "down_payment",
+              "ref": "base0001.down_payment@1",
+              "kind": "property",
+              "definition": "a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.",
+              "match_method": "exact_name_plus_semantic_review",
+              "confidence": 1,
+              "binding_relation": "equivalent"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fuel_expense",
+        "label": "fuel expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.FuelExpense",
+            "source_native_name": "FuelExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "gross_income",
+        "label": "gross income",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GrossIncome",
+            "source_native_name": "GrossIncome",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "land_lease_yn",
+        "label": "land lease yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LandLeaseYN",
+            "source_native_name": "LandLeaseYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_amount",
+        "label": "lease amount",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseAmount",
+            "source_native_name": "LeaseAmount",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lot_features",
+        "label": "lot features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LotFeatures",
+            "source_native_name": "LotFeatures",
+            "source_data_type": "org.reso.metadata.enums.LotFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.LotFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "move_in_costs",
+        "label": "move-in costs",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.MoveInCosts",
+            "source_native_name": "MoveInCosts",
+            "source_data_type": "org.reso.metadata.enums.MoveInCosts",
+            "source_enum_ref": "org.reso.metadata.enums.MoveInCosts",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "pets_allowed",
+        "label": "pets allowed",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PetsAllowed",
+            "source_native_name": "PetsAllowed",
+            "source_data_type": "org.reso.metadata.enums.PetsAllowed",
+            "source_enum_ref": "org.reso.metadata.enums.PetsAllowed",
+            "mapping_status": "mapped_exact_semantic_reviewed",
+            "lexicon_binding": {
+              "symbol": "pets_allowed",
+              "ref": "base0001.pets_allowed@1",
+              "kind": "property",
+              "definition": "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
+              "match_method": "exact_name_plus_semantic_review",
+              "confidence": 1,
+              "binding_relation": "equivalent"
+            }
+          }
+        ]
+      },
+      {
+        "id": "pool_expense",
+        "label": "pool expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PoolExpense",
+            "source_native_name": "PoolExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "spa_features",
+        "label": "spa features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SpaFeatures",
+            "source_native_name": "SpaFeatures",
+            "source_data_type": "org.reso.metadata.enums.SpaFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.SpaFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tenant_names",
+        "label": "tenant names",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TenantNames",
+            "source_native_name": "TenantNames",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "current_price",
+        "label": "current price",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CurrentPrice",
+            "source_native_name": "CurrentPrice",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "door_features",
+        "label": "door features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DoorFeatures",
+            "source_native_name": "DoorFeatures",
+            "source_data_type": "org.reso.metadata.enums.DoorFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.DoorFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "leasable_area",
+        "label": "leasable area",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeasableArea",
+            "source_native_name": "LeasableArea",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_terms",
+        "label": "listing terms",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingTerms",
+            "source_native_name": "ListingTerms",
+            "source_data_type": "org.reso.metadata.enums.ListingTerms",
+            "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "occupant_name",
+        "label": "occupant name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OccupantName",
+            "source_native_name": "OccupantName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "occupant_type",
+        "label": "occupant type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OccupantType",
+            "source_native_name": "OccupantType",
+            "source_data_type": "org.reso.metadata.enums.OccupantType",
+            "source_enum_ref": "org.reso.metadata.enums.OccupantType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "other_expense",
+        "label": "other expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OtherExpense",
+            "source_native_name": "OtherExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "pets_comments",
+        "label": "pets comments",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PetsComments",
+            "source_native_name": "PetsComments",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "pool_features",
+        "label": "pool features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PoolFeatures",
+            "source_native_name": "PoolFeatures",
+            "source_data_type": "org.reso.metadata.enums.PoolFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.PoolFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_type",
+        "label": "property type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertyType",
+            "source_native_name": "PropertyType",
+            "source_data_type": "org.reso.metadata.enums.PropertyType",
+            "source_enum_ref": "org.reso.metadata.enums.PropertyType",
+            "mapping_status": "mapped_contextual_reviewed",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_review",
+              "confidence": 0.95,
+              "binding_relation": "category_dimension"
+            }
+          }
+        ]
+      },
+      {
+        "id": "rent_includes",
+        "label": "rent includes",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.RentIncludes",
+            "source_native_name": "RentIncludes",
+            "source_data_type": "org.reso.metadata.enums.RentIncludes",
+            "source_enum_ref": "org.reso.metadata.enums.RentIncludes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "trash_expense",
+        "label": "trash expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TrashExpense",
+            "source_native_name": "TrashExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_rate_unit",
+        "label": "lease rate unit",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseRateUnit",
+            "source_native_name": "LeaseRateUnit",
+            "source_data_type": "org.reso.metadata.enums.LeaseRateUnits",
+            "source_enum_ref": "org.reso.metadata.enums.LeaseRateUnits",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the short code that is commonly used. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CapRate",
+        "source_native_name": "CapRate",
+        "source_label": "Cap Rate",
+        "source_definition": "The equivalent to the return on investment you would receive if you pay cash for a property. The ratio between the net operating income produced by an asset and its capital cost (the original price paid to buy the asset) or alternatively its current market value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CloseDate",
+        "source_native_name": "CloseDate",
+        "source_label": "Close Date",
+        "source_definition": "With for-sale listings, this is the date the purchase agreement was fulfilled. With lease listings, it is the date the requirements were fulfilled, such as contract and/or deposit. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Furnished",
+        "source_native_name": "Furnished",
+        "source_label": "Furnished",
+        "source_definition": "The property being leased is furnished, unfurnished or partially furnished.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Furnished",
+        "source_enum_ref": "org.reso.metadata.enums.Furnished",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseRate",
+        "source_native_name": "LeaseRate",
+        "source_label": "Lease Rate",
+        "source_definition": "The amount of money paid over a specified unit of time as indicated in the LeaseRateFrequency and LeaseRateUnits fields.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseTerm",
+        "source_native_name": "LeaseTerm",
+        "source_label": "Lease Term",
+        "source_definition": "A pick list of lengths that represent the length of the lease (e.g., Weekly, Month to Month, 6-Month Lease, 12-Month Lease, 2-Year Lease).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LeaseTerm",
+        "source_enum_ref": "org.reso.metadata.enums.LeaseTerm",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListPrice",
+        "source_native_name": "ListPrice",
+        "source_label": "List Price",
+        "source_definition": "The current price of the property as determined by the seller and the seller's broker. For auctions, this is the minimum or reserve price.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerPays",
+        "source_native_name": "OwnerPays",
+        "source_label": "Owner Pays",
+        "source_definition": "A list of expenses for the property paid for by the owner as opposed to the tenant (e.g., Water, Trash, Electric).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnerPays",
+        "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Ownership",
+        "source_native_name": "Ownership",
+        "source_label": "Ownership",
+        "source_definition": "A text description of the manner in which title to a property is held (e.g., Trust, Corporation, Joint Tenant, Individual).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Utilities",
+        "source_native_name": "Utilities",
+        "source_label": "Utilities",
+        "source_definition": "A list of the utilities for the property being sold/leased.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Utilities",
+        "source_enum_ref": "org.reso.metadata.enums.Utilities",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearBuilt",
+        "source_native_name": "YearBuilt",
+        "source_label": "Year Built",
+        "source_definition": "The year that an occupancy permit is first granted for the house or other local measure of initial habitability of the build. The type of definition permits an empty value with an attribute noting that it is an unknown date or that the building is new construction. While constraints have not been applied, convention at the time of adoption has this as a four-digit year value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_semantic_reviewed",
+        "binding": {
+          "symbol": "year_built",
+          "ref": "base0001.year_built@1",
+          "kind": "property",
+          "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+          "match_method": "exact_name_plus_semantic_review",
+          "confidence": 1,
+          "binding_relation": "equivalent"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Appliances",
+        "source_native_name": "Appliances",
+        "source_label": "Appliances",
+        "source_definition": "A list of the appliances that will be included in the sale/lease of the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Appliances",
+        "source_enum_ref": "org.reso.metadata.enums.Appliances",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the property. The current use of the property is an important factor in understanding the overall condition of the land and determining appropriateness for intended use.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PostalCity",
+        "source_native_name": "PostalCity",
+        "source_label": "Postal City",
+        "source_definition": "The official city per the U.S. Postal Service (USPS), which may be different from the recorded city.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PostalCity",
+        "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SubleaseYN",
+        "source_native_name": "SubleaseYN",
+        "source_label": "Sublease Yes/No",
+        "source_definition": "Indicates whether or not a sublease is available for the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantPays",
+        "source_native_name": "TenantPays",
+        "source_label": "Tenant Pays",
+        "source_definition": "A list of services or items that the tenant is responsible to pay.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantPays",
+        "source_enum_ref": "org.reso.metadata.enums.TenantPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantType",
+        "source_native_name": "TenantType",
+        "source_label": "Tenant Type",
+        "source_definition": "A pick list describing the current status of tenants or lack of tenants at the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantType",
+        "source_enum_ref": "org.reso.metadata.enums.TenantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DownPayment",
+        "source_native_name": "DownPayment",
+        "source_label": "Down Payment",
+        "source_definition": "The down payment amount required by the current owner of the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_semantic_reviewed",
+        "binding": {
+          "symbol": "down_payment",
+          "ref": "base0001.down_payment@1",
+          "kind": "property",
+          "definition": "a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.",
+          "match_method": "exact_name_plus_semantic_review",
+          "confidence": 1,
+          "binding_relation": "equivalent"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FuelExpense",
+        "source_native_name": "FuelExpense",
+        "source_label": "Fuel Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GrossIncome",
+        "source_native_name": "GrossIncome",
+        "source_label": "Gross Income",
+        "source_definition": "The actual current income from rent and all other revenue-generating sources.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LandLeaseYN",
+        "source_native_name": "LandLeaseYN",
+        "source_label": "Land Lease Yes/No",
+        "source_definition": "The land is not included in the sale and a lease exists.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseAmount",
+        "source_native_name": "LeaseAmount",
+        "source_label": "Lease Amount",
+        "source_definition": "The amount of any lease the business pays for its current location.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LotFeatures",
+        "source_native_name": "LotFeatures",
+        "source_label": "Lot Features",
+        "source_definition": "A list of features or a description of the lot included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LotFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.LotFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MoveInCosts",
+        "source_native_name": "MoveInCosts",
+        "source_label": "Move-in Costs",
+        "source_definition": "A pick list of the types upfront costs, both refundable and non-refundable, associated with the property being leased.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.MoveInCosts",
+        "source_enum_ref": "org.reso.metadata.enums.MoveInCosts",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PetsAllowed",
+        "source_native_name": "PetsAllowed",
+        "source_label": "Pets Allowed",
+        "source_definition": "Indicates whether or not pets are allowed at the property being leased, usually as a list of yes, no and more detailed restrictions/allowances.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PetsAllowed",
+        "source_enum_ref": "org.reso.metadata.enums.PetsAllowed",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_semantic_reviewed",
+        "binding": {
+          "symbol": "pets_allowed",
+          "ref": "base0001.pets_allowed@1",
+          "kind": "property",
+          "definition": "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
+          "match_method": "exact_name_plus_semantic_review",
+          "confidence": 1,
+          "binding_relation": "equivalent"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PoolExpense",
+        "source_native_name": "PoolExpense",
+        "source_label": "Pool Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SpaFeatures",
+        "source_native_name": "SpaFeatures",
+        "source_label": "Spa Features",
+        "source_definition": "A list of features or a description of the spa included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.SpaFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.SpaFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantNames",
+        "source_native_name": "TenantNames",
+        "source_label": "Tenant Names",
+        "source_definition": "The names of the tenant(s) that currently reside at the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentPrice",
+        "source_native_name": "CurrentPrice",
+        "source_label": "Current Price",
+        "source_definition": "The present price or most recent price (for off-market statuses) of the listing, regardless of the status of the listing. For example, listings in Active, Expired or Closed status may all have a value in the CurrentPrice field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DoorFeatures",
+        "source_native_name": "DoorFeatures",
+        "source_label": "Door Features",
+        "source_definition": "A list of features or description of the doors included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.DoorFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.DoorFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeasableArea",
+        "source_native_name": "LeasableArea",
+        "source_label": "Leasable Area",
+        "source_definition": "The area that may be leased within the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingTerms",
+        "source_native_name": "ListingTerms",
+        "source_label": "Listing Terms",
+        "source_definition": "Terms of the listing such as Lien Release, Subject to Court Approval or Owner Will Carry. Also may include options that describe the financing terms that are acceptable to the seller (i.e., Cash, Assumable, FHA, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingTerms",
+        "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantName",
+        "source_native_name": "OccupantName",
+        "source_label": "Occupant Name",
+        "source_definition": "The name of the current occupant, if any, of the property being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantType",
+        "source_native_name": "OccupantType",
+        "source_label": "Occupant Type",
+        "source_definition": "A field that describes the type of occupant (i.e., Owner, Tenant, Vacant).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OccupantType",
+        "source_enum_ref": "org.reso.metadata.enums.OccupantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OtherExpense",
+        "source_native_name": "OtherExpense",
+        "source_label": "Other Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PetsComments",
+        "source_native_name": "PetsComments",
+        "source_label": "Pets Comments",
+        "source_definition": "A textual description for the pets allowance in the property being leased.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PoolFeatures",
+        "source_native_name": "PoolFeatures",
+        "source_label": "Pool Features",
+        "source_definition": "A list of features about or a description of a pool included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PoolFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.PoolFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyType",
+        "source_native_name": "PropertyType",
+        "source_label": "Property Type",
+        "source_definition": "A list of types of properties (e.g., Residential, Lease, Income, Land, Mobile, Commercial Sale).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertyType",
+        "source_enum_ref": "org.reso.metadata.enums.PropertyType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_reviewed",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_review",
+          "confidence": 0.95,
+          "binding_relation": "category_dimension"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RentIncludes",
+        "source_native_name": "RentIncludes",
+        "source_label": "Rent Includes",
+        "source_definition": "A list of services or items that the tenant is not responsible to pay.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RentIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.RentIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TrashExpense",
+        "source_native_name": "TrashExpense",
+        "source_label": "Trash Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseRateUnit",
+        "source_native_name": "LeaseRateUnit",
+        "source_label": "Lease Rate Unit",
+        "source_definition": "The unit of measurement used to calculate the LeaseRate (e.g., Square Feet, Square Meters, Acres).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LeaseRateUnits",
+        "source_enum_ref": "org.reso.metadata.enums.LeaseRateUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Operational form-field identity is independent from Universal Lexicon identity.",
+      "semantic_rule": "A field may be usable in forms while semantic adjudication remains pending.",
+      "safety_rule": "Exact spelling or definition mention alone MUST NOT establish canonical semantic equivalence."
+    }
+  }
+}
