@@ -1,0 +1,2911 @@
+{
+  "macro_area": {
+    "id": "asset_management",
+    "order": 7,
+    "label": "Asset Management"
+  },
+  "subarea": {
+    "id": "esg_sustainability_environmental_risk",
+    "order": 1,
+    "label": "ESG, Sustainability and Environmental Risk",
+    "facet_number": 20,
+    "description": "Environmental performance, sustainability indicators and environmental risk.",
+    "typical_concepts": {
+      "applicable_certificate": {
+        "ref": "base0001.applicable_certificate@1",
+        "kind": "property",
+        "definition": "Certification information about a product, organization, service, place, or person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/isReferencedIn",
+              "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy"
+            ],
+            "range_refs": [
+              "https://schema.org/Certification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#ApplicableCertificate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasCertification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "certification_rating": {
+        "ref": "base0001.certification_rating@1",
+        "kind": "property",
+        "definition": "Rating of a certification instance (as defined by an independent certification body). Typically this rating can be used to rate the level to which the requirements of the certification instance are fulfilled. See also [gs1:certificationValue](https://www.gs1.org/voc/certificationValue).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Rating"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/certificationRating",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "certification_status": {
+        "ref": "base0001.certification_status@1",
+        "kind": "property",
+        "definition": "Indicates the current status of a certification: active or inactive. See also  [gs1:certificationStatus](https://www.gs1.org/voc/certificationStatus).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CertificationStatusEnumeration"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/certificationStatus",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "energy_efficiency_scale_max": {
+        "ref": "base0001.energy_efficiency_scale_max@1",
+        "kind": "property",
+        "definition": "Specifies the most energy efficient class on the regulated EU energy consumption scale for the product category a product belongs to. For example, energy consumption for televisions placed on the market after January 1, 2020 is scaled from D to A+++.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/EnergyConsumptionDetails"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/EUEnergyEfficiencyEnumeration"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/energyEfficiencyScaleMax",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "energy_efficiency_scale_min": {
+        "ref": "base0001.energy_efficiency_scale_min@1",
+        "kind": "property",
+        "definition": "Specifies the least energy efficient class on the regulated EU energy consumption scale for the product category a product belongs to. For example, energy consumption for televisions placed on the market after January 1, 2020 is scaled from D to A+++.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/EnergyConsumptionDetails"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/EUEnergyEfficiencyEnumeration"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/energyEfficiencyScaleMin",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "measurement_method": {
+        "ref": "base0001.measurement_method@1",
+        "kind": "property",
+        "definition": "A subproperty of [[measurementTechnique]] that can be used for specifying specific methods, in particular via [[MeasurementMethodEnum]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DataCatalog",
+              "https://schema.org/DataDownload",
+              "https://schema.org/Dataset",
+              "https://schema.org/Observation",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/StatisticalVariable"
+            ],
+            "parent_refs": [
+              "https://schema.org/measurementTechnique"
+            ],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/MeasurementMethodEnum",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/measurementMethod",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "measurement_technique": {
+        "ref": "base0001.measurement_technique@1",
+        "kind": "property",
+        "definition": "A technique, method or technology used in an [[Observation]], [[StatisticalVariable]] or [[Dataset]] (or [[DataDownload]], [[DataCatalog]]), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using [[variableMeasured]]; for [[Observation]], a [[StatisticalVariable]]). Often but not necessarily each [[variableMeasured]] will have an explicit representation as (or mapping to) an property such as those defined in Schema.org, or other RDF vocabularies and \"knowledge graphs\". In that case the subproperty of [[variableMeasured]] called [[measuredProperty]] is applicable.\n    \nThe [[measurementTechnique]] property helps when extra clarification is needed about how a [[measuredProperty]] was measured. This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but can often serve as a high level summary for dataset discovery. \n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\". If the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\". \n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]]. The value can also be from an enumeration, organized as a [[MeasurementMethodEnum]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DataCatalog",
+              "https://schema.org/DataDownload",
+              "https://schema.org/Dataset",
+              "https://schema.org/Observation",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/StatisticalVariable"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/MeasurementMethodEnum",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/measurementTechnique",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerPays",
+        "source_native_name": "OwnerPays",
+        "source_label": "Owner Pays",
+        "source_definition": "A list of expenses for the property paid for by the owner as opposed to the tenant (e.g., Water, Trash, Electric).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnerPays",
+        "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterSource",
+        "source_native_name": "WaterSource",
+        "source_label": "Water Source",
+        "source_definition": "A list of the source(s) of water for the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.WaterSource",
+        "source_enum_ref": "org.reso.metadata.enums.WaterSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterSource",
+        "source_native_name": "WaterSource",
+        "source_label": "Water Source",
+        "source_definition": "A list of the source(s) of water for the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.WaterSource",
+        "source_enum_ref": "org.reso.metadata.enums.WaterSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterfrontYN",
+        "source_native_name": "WaterfrontYN",
+        "source_label": "Waterfront Yes/No",
+        "source_definition": "Indicates whether or not the building is on a waterfront.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterfrontYN",
+        "source_native_name": "WaterfrontYN",
+        "source_label": "Waterfront Yes/No",
+        "source_definition": "The property is on a waterfront.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenLocation",
+        "source_native_name": "GreenLocation",
+        "source_label": "Green Location",
+        "source_definition": "A pick list of efficiencies involved with the property's location such as walkability or transportation proximity.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenLocation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterBodyName",
+        "source_native_name": "WaterBodyName",
+        "source_label": "Water Body Name",
+        "source_definition": "The name, if known, of the body of water on which the property is located (i.e., name of lake, river, ocean, sea, canal, etc.).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenLocation",
+        "source_native_name": "GreenLocation",
+        "source_label": "Green Location",
+        "source_definition": "A pick list describing efficiencies involved with the property's location such as walkability or transportation proximity without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenLocation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterBodyName",
+        "source_native_name": "WaterBodyName",
+        "source_label": "Water Body Name",
+        "source_definition": "The name, if known, of the body of water on which the property is located (e.g., lake name, river name, ocean name, sea name, canal name).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeedCertifiedYN",
+        "source_native_name": "LeedCertifiedYN",
+        "source_label": "LEED Certified Yes/No",
+        "source_definition": "Indicates whether or not a LEED certification has been issued for the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationSource",
+        "source_native_name": "IrrigationSource",
+        "source_label": "Irrigation Source",
+        "source_definition": "The source which the property receives its water for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.IrrigationSource",
+        "source_enum_ref": "org.reso.metadata.enums.IrrigationSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingOwnerPays",
+        "source_native_name": "BuildingOwnerPays",
+        "source_label": "Building Owner Pays",
+        "source_definition": "A list of expenses for the building paid by the owner as opposed to the tenant (e.g., water, trash, electric).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.OwnerPays",
+        "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterSewerExpense",
+        "source_native_name": "WaterSewerExpense",
+        "source_label": "Water Sewer Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterSewerExpense",
+        "source_native_name": "WaterSewerExpense",
+        "source_label": "Water Sewer Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterfrontFeatures",
+        "source_native_name": "WaterfrontFeatures",
+        "source_label": "Waterfront Features",
+        "source_definition": "Features of the waterfront on which the building is located.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.WaterfrontFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.WaterfrontFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterfrontFeatures",
+        "source_native_name": "WaterfrontFeatures",
+        "source_label": "Waterfront Features",
+        "source_definition": "The features of the waterfront on which the property is located.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.WaterfrontFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.WaterfrontFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenSustainability",
+        "source_native_name": "GreenSustainability",
+        "source_label": "Green Sustainability",
+        "source_definition": "A pick list of sustainable elements used in the construction of the building without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenSustainability",
+        "source_enum_ref": "org.reso.metadata.enums.GreenSustainability",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BathroomsOneQuarter",
+        "source_native_name": "BathroomsOneQuarter",
+        "source_label": "Bathrooms One Quarter",
+        "source_definition": "A room containing one of the four elements constituting a bath: toilet, sink, bathtub, shower head (in tub or stall). Examples include a vanity with a sink or a water closet (WC), which is a room with only a toilet.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenSustainability",
+        "source_native_name": "GreenSustainability",
+        "source_label": "Green Sustainability",
+        "source_definition": "A pick list of sustainable elements used in the construction of the structure without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenSustainability",
+        "source_enum_ref": "org.reso.metadata.enums.GreenSustainability",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenVerificationYN",
+        "source_native_name": "GreenVerificationYN",
+        "source_label": "Green Verification Yes/No",
+        "source_definition": "A flag indicating that the listing has a Green Verification.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenEnergyEfficient",
+        "source_native_name": "GreenEnergyEfficient",
+        "source_label": "Green Energy Efficient",
+        "source_definition": "A pick list of general green attributes, such as energy-efficient doors or appliances, without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenEnergyEfficient",
+        "source_enum_ref": "org.reso.metadata.enums.GreenEnergyEfficient",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DistanceToWaterUnits",
+        "source_native_name": "DistanceToWaterUnits",
+        "source_label": "Distance To Water Units",
+        "source_definition": "A pick list of the unit linear measurement (i.e., Feet, Meters, Yards, Kilometers, Miles, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LinearUnits",
+        "source_enum_ref": "org.reso.metadata.enums.LinearUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenEnergyEfficient",
+        "source_native_name": "GreenEnergyEfficient",
+        "source_label": "Green Energy Efficient",
+        "source_definition": "A pick list of general green attributes such as energy efficient doors or appliances without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenEnergyEfficient",
+        "source_enum_ref": "org.reso.metadata.enums.GreenEnergyEfficient",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentDesignation",
+        "source_native_name": "ListAgentDesignation",
+        "source_label": "List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenEnergyGeneration",
+        "source_native_name": "GreenEnergyGeneration",
+        "source_label": "Green Energy Generation",
+        "source_definition": "The methods of generating power that are included in the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenEnergyGeneration",
+        "source_enum_ref": "org.reso.metadata.enums.GreenEnergyGeneration",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenIndoorAirQuality",
+        "source_native_name": "GreenIndoorAirQuality",
+        "source_label": "Green Indoor Air Quality",
+        "source_definition": "A pick list of indoor air quality measures without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenVerificationBody",
+        "source_native_name": "GreenVerificationBody",
+        "source_label": "Green Verification Body",
+        "source_definition": "The name of the body or group providing the verification, certification or rating named in the GreenBuildingVerificationType field. There is almost always a direct correlation between bodies and programs. If desired, use the name of the certification from the GreenBuildingVerificationType list.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentDesignation",
+        "source_native_name": "BuyerAgentDesignation",
+        "source_label": "Buyer Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BuyerAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.BuyerAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenEnergyGeneration",
+        "source_native_name": "GreenEnergyGeneration",
+        "source_label": "Green Energy Generation",
+        "source_definition": "The methods of generating power that are included in the sale or lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenEnergyGeneration",
+        "source_enum_ref": "org.reso.metadata.enums.GreenEnergyGeneration",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenIndoorAirQuality",
+        "source_native_name": "GreenIndoorAirQuality",
+        "source_label": "Green Indoor Air Quality",
+        "source_definition": "A pick list of indoor air quality measures without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeedCertificationYear",
+        "source_native_name": "LeedCertificationYear",
+        "source_label": "LEED Certification Year",
+        "source_definition": "The year that the current LEED certification was issued for the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenWaterConservation",
+        "source_native_name": "GreenWaterConservation",
+        "source_label": "Green Water Conservation",
+        "source_definition": "A pick list of general water-conserving attributes of the property, such as landscaping or reclamation, without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenWaterConservation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenWaterConservation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFeeIncludes",
+        "source_native_name": "AssociationFeeIncludes",
+        "source_label": "Association Fee Includes",
+        "source_definition": "The services included with the association fee (e.g., landscaping, trash, water).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AssociationFeeIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.AssociationFeeIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentDesignation",
+        "source_native_name": "CoListAgentDesignation",
+        "source_label": "Co-List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CoListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.CoListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DistanceToWaterNumeric",
+        "source_native_name": "DistanceToWaterNumeric",
+        "source_label": "Distance To Water Numeric",
+        "source_definition": "The numeric distance from the property to the water utility.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenWaterConservation",
+        "source_native_name": "GreenWaterConservation",
+        "source_label": "Green Water Conservation",
+        "source_definition": "A pick list of general water conserving attributes of the property such as landscaping or reclamation without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenWaterConservation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenWaterConservation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeedCertificationLevel",
+        "source_native_name": "LeedCertificationLevel",
+        "source_label": "LEED Certification Level",
+        "source_definition": "The LEED certification level obtained for the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LeedCertificationLevel",
+        "source_enum_ref": "org.reso.metadata.enums.LeedCertificationLevel",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentDesignation",
+        "source_native_name": "CoBuyerAgentDesignation",
+        "source_label": "Co-Buyer Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DistanceToWaterComments",
+        "source_native_name": "DistanceToWaterComments",
+        "source_label": "Distance To Water Comments",
+        "source_definition": "Provides details about the property's access to serviceable water utility and the distance to it.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsYN",
+        "source_native_name": "IrrigationWaterRightsYN",
+        "source_label": "Irrigation Water Rights Yes/No",
+        "source_definition": "Indicates whether or not the property includes water rights for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.Listing",
+        "source_native_name": "Listing",
+        "source_label": "Listing",
+        "source_definition": "The listing associated with the PropertyGreenVerification record.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "org.reso.metadata.Property",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenBuildingVerifications",
+        "source_native_name": "GreenBuildingVerifications",
+        "source_label": "Green Building Verifications",
+        "source_definition": "A collection of verifications or certifications awarded to a new or pre-existing residential or commercial structure (e.g., LEED, ENERGY STAR, ICC-700). The collection includes information about the type, year, rating and other details about the awarded performance verification.",
+        "source_resource": "Building",
+        "source_data_type": "Collection(org.reso.metadata.PropertyGreenVerification)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenBuildingVerifications",
+        "source_native_name": "GreenBuildingVerifications",
+        "source_label": "Green Building Verifications",
+        "source_definition": "A collection of verifications or certifications awarded to a new or pre-existing residential or commercial structure (e.g., LEED, Energy Star, ICC-700). The collection includes information about the type, year, rating and other details about the awarded performance verification.",
+        "source_resource": "Property",
+        "source_data_type": "Collection(org.reso.metadata.PropertyGreenVerification)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsAcres",
+        "source_native_name": "IrrigationWaterRightsAcres",
+        "source_label": "Irrigation Water Rights Acres",
+        "source_definition": "The number of acres allowed under the property's water rights.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "This is the foreign ID relating to the property. The well-known identifier for the listing. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfSeparateWaterMeters",
+        "source_native_name": "NumberOfSeparateWaterMeters",
+        "source_label": "Number Of Separate Water Meters",
+        "source_definition": "The total number of separate water meters on the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "This is the foreign key relating to the property. A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see the Property Resource's SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenBuildingVerificationType",
+        "source_native_name": "GreenBuildingVerificationType",
+        "source_label": "Green Building Verification Type",
+        "source_definition": "A list of available verifications and certifications awarded to a new or pre-existing residential or commercial structures (e.g., LEED, ENERGY STAR, ICC-700).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenBuildingVerificationType",
+        "source_enum_ref": "org.reso.metadata.enums.GreenBuildingVerificationType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyPowerProduction.PowerProductionSize",
+        "source_native_name": "PowerProductionSize",
+        "source_label": "Power Production Size",
+        "source_definition": "The \"capacity\" of a renewables system. Size is measured in kilowatts (kW) DC (direct current). A kW indicates how much power the system can produce under standard conditions, like the size of a car engine. Renewables systems are sized when they are installed to cover all or a portion of the power needs of the property. Therefore, a system designed to produce 50% of the power needs will be sized smaller than a system on the exact same property designed to produce 100%. Size may be influenced by available space at the property, orientation, landscaping, etc.",
+        "source_resource": "PropertyPowerProduction",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyPowerProduction.PowerProductionAnnual",
+        "source_native_name": "PowerProductionAnnual",
+        "source_label": "Power Production Annual",
+        "source_definition": "The most important metric of a renewables system is the amount of power it produces per year. This number can be actual or estimated. Annual production for systems producing electricity like wind or solar are measured in kilowatt hours (kWh) per year. A kWh is like a measure of the distance traveled per hour for a car - how far did it go over a certain period of time. Annual production is influenced by the size of the system, the conditions (How shady are the trees? How many cloudy days?) and the installation. Sellers typically have access to software that provides historical production totals.",
+        "source_resource": "PropertyPowerProduction",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.GreenVerificationURL",
+        "source_native_name": "GreenVerificationURL",
+        "source_label": "Green Verification URL",
+        "source_definition": "Provides a link to the specific property’s high-performance rating or scoring details directly from and hosted by the sponsoring body of the program. It typically provides thorough details, for example, which points were achieved and how, or, in the case of a score, what specifically was tested and the results.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.HistoryTransactional",
+        "source_native_name": "HistoryTransactional",
+        "source_label": "History Transactional",
+        "source_definition": "The history of the PropertyGreenVerification record.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Collection(org.reso.metadata.HistoryTransactional)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.GreenVerificationBody",
+        "source_native_name": "GreenVerificationBody",
+        "source_label": "Green Verification Body",
+        "source_definition": "The name of the body or group providing the verification/certification/rating named in the GreenBuildingVerificationType field. There is almost always a direct correlation between bodies and programs.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.GreenVerificationYear",
+        "source_native_name": "GreenVerificationYear",
+        "source_label": "Green Verification Year",
+        "source_definition": "The year the green certification or verification was awarded.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "energy_consumption",
+        "label": "energy consumption",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "renewable_energy",
+        "label": "renewable energy",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "greenhouse_gas_emissions",
+        "label": "greenhouse gas emissions",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "water_consumption",
+        "label": "water consumption",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "waste",
+        "label": "waste",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "recycling",
+        "label": "recycling",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "green_certification",
+        "label": "green certification",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "energy_performance",
+        "label": "energy performance",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "climate_risk",
+        "label": "climate risk",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "flood_risk",
+        "label": "flood risk",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "biodiversity",
+        "label": "biodiversity",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "environmental_exposure",
+        "label": "environmental exposure",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "owner_pays",
+        "label": "owner pays",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OwnerPays",
+            "source_native_name": "OwnerPays",
+            "source_data_type": "org.reso.metadata.enums.OwnerPays",
+            "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_water_source",
+        "label": "water source",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.WaterSource",
+            "source_native_name": "WaterSource",
+            "source_data_type": "org.reso.metadata.enums.WaterSource",
+            "source_enum_ref": "org.reso.metadata.enums.WaterSource",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "water_source",
+        "label": "water source",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WaterSource",
+            "source_native_name": "WaterSource",
+            "source_data_type": "org.reso.metadata.enums.WaterSource",
+            "source_enum_ref": "org.reso.metadata.enums.WaterSource",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_waterfront_yn",
+        "label": "waterfront yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.WaterfrontYN",
+            "source_native_name": "WaterfrontYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "waterfront_yn",
+        "label": "waterfront yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WaterfrontYN",
+            "source_native_name": "WaterfrontYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_location",
+        "label": "green location",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenLocation",
+            "source_native_name": "GreenLocation",
+            "source_data_type": "org.reso.metadata.enums.GreenLocation",
+            "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_water_body_name",
+        "label": "water body name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.WaterBodyName",
+            "source_native_name": "WaterBodyName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_location",
+        "label": "green location",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenLocation",
+            "source_native_name": "GreenLocation",
+            "source_data_type": "org.reso.metadata.enums.GreenLocation",
+            "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "water_body_name",
+        "label": "water body name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WaterBodyName",
+            "source_native_name": "WaterBodyName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "leed_certified_yn",
+        "label": "leed certified yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeedCertifiedYN",
+            "source_native_name": "LeedCertifiedYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "irrigation_source",
+        "label": "irrigation source",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IrrigationSource",
+            "source_native_name": "IrrigationSource",
+            "source_data_type": "org.reso.metadata.enums.IrrigationSource",
+            "source_enum_ref": "org.reso.metadata.enums.IrrigationSource",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_building_owner_pays",
+        "label": "building owner pays",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.BuildingOwnerPays",
+            "source_native_name": "BuildingOwnerPays",
+            "source_data_type": "org.reso.metadata.enums.OwnerPays",
+            "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_water_sewer_expense",
+        "label": "water sewer expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.WaterSewerExpense",
+            "source_native_name": "WaterSewerExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "water_sewer_expense",
+        "label": "water sewer expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WaterSewerExpense",
+            "source_native_name": "WaterSewerExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_waterfront_features",
+        "label": "waterfront features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.WaterfrontFeatures",
+            "source_native_name": "WaterfrontFeatures",
+            "source_data_type": "org.reso.metadata.enums.WaterfrontFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.WaterfrontFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "waterfront_features",
+        "label": "waterfront features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WaterfrontFeatures",
+            "source_native_name": "WaterfrontFeatures",
+            "source_data_type": "org.reso.metadata.enums.WaterfrontFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.WaterfrontFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_sustainability",
+        "label": "green sustainability",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenSustainability",
+            "source_native_name": "GreenSustainability",
+            "source_data_type": "org.reso.metadata.enums.GreenSustainability",
+            "source_enum_ref": "org.reso.metadata.enums.GreenSustainability",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "bathrooms_one_quarter",
+        "label": "bathrooms one quarter",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BathroomsOneQuarter",
+            "source_native_name": "BathroomsOneQuarter",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_sustainability",
+        "label": "green sustainability",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenSustainability",
+            "source_native_name": "GreenSustainability",
+            "source_data_type": "org.reso.metadata.enums.GreenSustainability",
+            "source_enum_ref": "org.reso.metadata.enums.GreenSustainability",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_verification_yn",
+        "label": "green verification yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenVerificationYN",
+            "source_native_name": "GreenVerificationYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_energy_efficient",
+        "label": "green energy efficient",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenEnergyEfficient",
+            "source_native_name": "GreenEnergyEfficient",
+            "source_data_type": "org.reso.metadata.enums.GreenEnergyEfficient",
+            "source_enum_ref": "org.reso.metadata.enums.GreenEnergyEfficient",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "distance_to_water_units",
+        "label": "distance to water units",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DistanceToWaterUnits",
+            "source_native_name": "DistanceToWaterUnits",
+            "source_data_type": "org.reso.metadata.enums.LinearUnits",
+            "source_enum_ref": "org.reso.metadata.enums.LinearUnits",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_energy_efficient",
+        "label": "green energy efficient",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenEnergyEfficient",
+            "source_native_name": "GreenEnergyEfficient",
+            "source_data_type": "org.reso.metadata.enums.GreenEnergyEfficient",
+            "source_enum_ref": "org.reso.metadata.enums.GreenEnergyEfficient",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_designation",
+        "label": "list agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentDesignation",
+            "source_native_name": "ListAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_energy_generation",
+        "label": "green energy generation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenEnergyGeneration",
+            "source_native_name": "GreenEnergyGeneration",
+            "source_data_type": "org.reso.metadata.enums.GreenEnergyGeneration",
+            "source_enum_ref": "org.reso.metadata.enums.GreenEnergyGeneration",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_indoor_air_quality",
+        "label": "green indoor air quality",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenIndoorAirQuality",
+            "source_native_name": "GreenIndoorAirQuality",
+            "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+            "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_verification_body",
+        "label": "green verification body",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenVerificationBody",
+            "source_native_name": "GreenVerificationBody",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_designation",
+        "label": "buyer agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentDesignation",
+            "source_native_name": "BuyerAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.BuyerAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.BuyerAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_energy_generation",
+        "label": "green energy generation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenEnergyGeneration",
+            "source_native_name": "GreenEnergyGeneration",
+            "source_data_type": "org.reso.metadata.enums.GreenEnergyGeneration",
+            "source_enum_ref": "org.reso.metadata.enums.GreenEnergyGeneration",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_indoor_air_quality",
+        "label": "green indoor air quality",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenIndoorAirQuality",
+            "source_native_name": "GreenIndoorAirQuality",
+            "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+            "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "leed_certification_year",
+        "label": "leed certification year",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeedCertificationYear",
+            "source_native_name": "LeedCertificationYear",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_water_conservation",
+        "label": "green water conservation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenWaterConservation",
+            "source_native_name": "GreenWaterConservation",
+            "source_data_type": "org.reso.metadata.enums.GreenWaterConservation",
+            "source_enum_ref": "org.reso.metadata.enums.GreenWaterConservation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_fee_includes",
+        "label": "association fee includes",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationFeeIncludes",
+            "source_native_name": "AssociationFeeIncludes",
+            "source_data_type": "org.reso.metadata.enums.AssociationFeeIncludes",
+            "source_enum_ref": "org.reso.metadata.enums.AssociationFeeIncludes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_designation",
+        "label": "co-list agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentDesignation",
+            "source_native_name": "CoListAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.CoListAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.CoListAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "distance_to_water_numeric",
+        "label": "distance to water numeric",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DistanceToWaterNumeric",
+            "source_native_name": "DistanceToWaterNumeric",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_water_conservation",
+        "label": "green water conservation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenWaterConservation",
+            "source_native_name": "GreenWaterConservation",
+            "source_data_type": "org.reso.metadata.enums.GreenWaterConservation",
+            "source_enum_ref": "org.reso.metadata.enums.GreenWaterConservation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "leed_certification_level",
+        "label": "leed certification level",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeedCertificationLevel",
+            "source_native_name": "LeedCertificationLevel",
+            "source_data_type": "org.reso.metadata.enums.LeedCertificationLevel",
+            "source_enum_ref": "org.reso.metadata.enums.LeedCertificationLevel",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_designation",
+        "label": "co-buyer agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentDesignation",
+            "source_native_name": "CoBuyerAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "distance_to_water_comments",
+        "label": "distance to water comments",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DistanceToWaterComments",
+            "source_native_name": "DistanceToWaterComments",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "irrigation_water_rights_yn",
+        "label": "irrigation water rights yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IrrigationWaterRightsYN",
+            "source_native_name": "IrrigationWaterRightsYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_green_verification_listing",
+        "label": "listing",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyGreenVerification.Listing",
+            "source_native_name": "Listing",
+            "source_data_type": "org.reso.metadata.Property",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_building_verifications",
+        "label": "green building verifications",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenBuildingVerifications",
+            "source_native_name": "GreenBuildingVerifications",
+            "source_data_type": "Collection(org.reso.metadata.PropertyGreenVerification)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_building_verifications",
+        "label": "green building verifications",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenBuildingVerifications",
+            "source_native_name": "GreenBuildingVerifications",
+            "source_data_type": "Collection(org.reso.metadata.PropertyGreenVerification)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "irrigation_water_rights_acres",
+        "label": "irrigation water rights acres",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IrrigationWaterRightsAcres",
+            "source_native_name": "IrrigationWaterRightsAcres",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_green_verification_feed_types",
+        "label": "feed types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyGreenVerification.FeedTypes",
+            "source_native_name": "FeedTypes",
+            "source_data_type": "org.reso.metadata.enums.FeedTypes",
+            "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_green_verification_listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyGreenVerification.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "number_of_separate_water_meters",
+        "label": "number of separate water meters",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.NumberOfSeparateWaterMeters",
+            "source_native_name": "NumberOfSeparateWaterMeters",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_green_verification_listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyGreenVerification.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_building_verification_type",
+        "label": "green building verification type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenBuildingVerificationType",
+            "source_native_name": "GreenBuildingVerificationType",
+            "source_data_type": "org.reso.metadata.enums.GreenBuildingVerificationType",
+            "source_enum_ref": "org.reso.metadata.enums.GreenBuildingVerificationType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_power_production_power_production_size",
+        "label": "power production size",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyPowerProduction.PowerProductionSize",
+            "source_native_name": "PowerProductionSize",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_power_production_power_production_annual",
+        "label": "power production annual",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyPowerProduction.PowerProductionAnnual",
+            "source_native_name": "PowerProductionAnnual",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_green_verification_green_verification_url",
+        "label": "green verification url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyGreenVerification.GreenVerificationURL",
+            "source_native_name": "GreenVerificationURL",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_green_verification_history_transactional",
+        "label": "history transactional",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyGreenVerification.HistoryTransactional",
+            "source_native_name": "HistoryTransactional",
+            "source_data_type": "Collection(org.reso.metadata.HistoryTransactional)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_green_verification_green_verification_body",
+        "label": "green verification body",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyGreenVerification.GreenVerificationBody",
+            "source_native_name": "GreenVerificationBody",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_green_verification_green_verification_year",
+        "label": "green verification year",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "PropertyGreenVerification.GreenVerificationYear",
+            "source_native_name": "GreenVerificationYear",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerPays",
+        "source_native_name": "OwnerPays",
+        "source_label": "Owner Pays",
+        "source_definition": "A list of expenses for the property paid for by the owner as opposed to the tenant (e.g., Water, Trash, Electric).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnerPays",
+        "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterSource",
+        "source_native_name": "WaterSource",
+        "source_label": "Water Source",
+        "source_definition": "A list of the source(s) of water for the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.WaterSource",
+        "source_enum_ref": "org.reso.metadata.enums.WaterSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterSource",
+        "source_native_name": "WaterSource",
+        "source_label": "Water Source",
+        "source_definition": "A list of the source(s) of water for the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.WaterSource",
+        "source_enum_ref": "org.reso.metadata.enums.WaterSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterfrontYN",
+        "source_native_name": "WaterfrontYN",
+        "source_label": "Waterfront Yes/No",
+        "source_definition": "Indicates whether or not the building is on a waterfront.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterfrontYN",
+        "source_native_name": "WaterfrontYN",
+        "source_label": "Waterfront Yes/No",
+        "source_definition": "The property is on a waterfront.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenLocation",
+        "source_native_name": "GreenLocation",
+        "source_label": "Green Location",
+        "source_definition": "A pick list of efficiencies involved with the property's location such as walkability or transportation proximity.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenLocation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterBodyName",
+        "source_native_name": "WaterBodyName",
+        "source_label": "Water Body Name",
+        "source_definition": "The name, if known, of the body of water on which the property is located (i.e., name of lake, river, ocean, sea, canal, etc.).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenLocation",
+        "source_native_name": "GreenLocation",
+        "source_label": "Green Location",
+        "source_definition": "A pick list describing efficiencies involved with the property's location such as walkability or transportation proximity without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenLocation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterBodyName",
+        "source_native_name": "WaterBodyName",
+        "source_label": "Water Body Name",
+        "source_definition": "The name, if known, of the body of water on which the property is located (e.g., lake name, river name, ocean name, sea name, canal name).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeedCertifiedYN",
+        "source_native_name": "LeedCertifiedYN",
+        "source_label": "LEED Certified Yes/No",
+        "source_definition": "Indicates whether or not a LEED certification has been issued for the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationSource",
+        "source_native_name": "IrrigationSource",
+        "source_label": "Irrigation Source",
+        "source_definition": "The source which the property receives its water for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.IrrigationSource",
+        "source_enum_ref": "org.reso.metadata.enums.IrrigationSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingOwnerPays",
+        "source_native_name": "BuildingOwnerPays",
+        "source_label": "Building Owner Pays",
+        "source_definition": "A list of expenses for the building paid by the owner as opposed to the tenant (e.g., water, trash, electric).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.OwnerPays",
+        "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterSewerExpense",
+        "source_native_name": "WaterSewerExpense",
+        "source_label": "Water Sewer Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterSewerExpense",
+        "source_native_name": "WaterSewerExpense",
+        "source_label": "Water Sewer Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.WaterfrontFeatures",
+        "source_native_name": "WaterfrontFeatures",
+        "source_label": "Waterfront Features",
+        "source_definition": "Features of the waterfront on which the building is located.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.WaterfrontFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.WaterfrontFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WaterfrontFeatures",
+        "source_native_name": "WaterfrontFeatures",
+        "source_label": "Waterfront Features",
+        "source_definition": "The features of the waterfront on which the property is located.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.WaterfrontFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.WaterfrontFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenSustainability",
+        "source_native_name": "GreenSustainability",
+        "source_label": "Green Sustainability",
+        "source_definition": "A pick list of sustainable elements used in the construction of the building without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenSustainability",
+        "source_enum_ref": "org.reso.metadata.enums.GreenSustainability",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BathroomsOneQuarter",
+        "source_native_name": "BathroomsOneQuarter",
+        "source_label": "Bathrooms One Quarter",
+        "source_definition": "A room containing one of the four elements constituting a bath: toilet, sink, bathtub, shower head (in tub or stall). Examples include a vanity with a sink or a water closet (WC), which is a room with only a toilet.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenSustainability",
+        "source_native_name": "GreenSustainability",
+        "source_label": "Green Sustainability",
+        "source_definition": "A pick list of sustainable elements used in the construction of the structure without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenSustainability",
+        "source_enum_ref": "org.reso.metadata.enums.GreenSustainability",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenVerificationYN",
+        "source_native_name": "GreenVerificationYN",
+        "source_label": "Green Verification Yes/No",
+        "source_definition": "A flag indicating that the listing has a Green Verification.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenEnergyEfficient",
+        "source_native_name": "GreenEnergyEfficient",
+        "source_label": "Green Energy Efficient",
+        "source_definition": "A pick list of general green attributes, such as energy-efficient doors or appliances, without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenEnergyEfficient",
+        "source_enum_ref": "org.reso.metadata.enums.GreenEnergyEfficient",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DistanceToWaterUnits",
+        "source_native_name": "DistanceToWaterUnits",
+        "source_label": "Distance To Water Units",
+        "source_definition": "A pick list of the unit linear measurement (i.e., Feet, Meters, Yards, Kilometers, Miles, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LinearUnits",
+        "source_enum_ref": "org.reso.metadata.enums.LinearUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenEnergyEfficient",
+        "source_native_name": "GreenEnergyEfficient",
+        "source_label": "Green Energy Efficient",
+        "source_definition": "A pick list of general green attributes such as energy efficient doors or appliances without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenEnergyEfficient",
+        "source_enum_ref": "org.reso.metadata.enums.GreenEnergyEfficient",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentDesignation",
+        "source_native_name": "ListAgentDesignation",
+        "source_label": "List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenEnergyGeneration",
+        "source_native_name": "GreenEnergyGeneration",
+        "source_label": "Green Energy Generation",
+        "source_definition": "The methods of generating power that are included in the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenEnergyGeneration",
+        "source_enum_ref": "org.reso.metadata.enums.GreenEnergyGeneration",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenIndoorAirQuality",
+        "source_native_name": "GreenIndoorAirQuality",
+        "source_label": "Green Indoor Air Quality",
+        "source_definition": "A pick list of indoor air quality measures without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenVerificationBody",
+        "source_native_name": "GreenVerificationBody",
+        "source_label": "Green Verification Body",
+        "source_definition": "The name of the body or group providing the verification, certification or rating named in the GreenBuildingVerificationType field. There is almost always a direct correlation between bodies and programs. If desired, use the name of the certification from the GreenBuildingVerificationType list.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentDesignation",
+        "source_native_name": "BuyerAgentDesignation",
+        "source_label": "Buyer Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BuyerAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.BuyerAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenEnergyGeneration",
+        "source_native_name": "GreenEnergyGeneration",
+        "source_label": "Green Energy Generation",
+        "source_definition": "The methods of generating power that are included in the sale or lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenEnergyGeneration",
+        "source_enum_ref": "org.reso.metadata.enums.GreenEnergyGeneration",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenIndoorAirQuality",
+        "source_native_name": "GreenIndoorAirQuality",
+        "source_label": "Green Indoor Air Quality",
+        "source_definition": "A pick list of indoor air quality measures without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_enum_ref": "org.reso.metadata.enums.GreenIndoorAirQuality",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeedCertificationYear",
+        "source_native_name": "LeedCertificationYear",
+        "source_label": "LEED Certification Year",
+        "source_definition": "The year that the current LEED certification was issued for the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenWaterConservation",
+        "source_native_name": "GreenWaterConservation",
+        "source_label": "Green Water Conservation",
+        "source_definition": "A pick list of general water-conserving attributes of the property, such as landscaping or reclamation, without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenWaterConservation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenWaterConservation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFeeIncludes",
+        "source_native_name": "AssociationFeeIncludes",
+        "source_label": "Association Fee Includes",
+        "source_definition": "The services included with the association fee (e.g., landscaping, trash, water).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AssociationFeeIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.AssociationFeeIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentDesignation",
+        "source_native_name": "CoListAgentDesignation",
+        "source_label": "Co-List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CoListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.CoListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DistanceToWaterNumeric",
+        "source_native_name": "DistanceToWaterNumeric",
+        "source_label": "Distance To Water Numeric",
+        "source_definition": "The numeric distance from the property to the water utility.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenWaterConservation",
+        "source_native_name": "GreenWaterConservation",
+        "source_label": "Green Water Conservation",
+        "source_definition": "A pick list of general water conserving attributes of the property such as landscaping or reclamation without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenWaterConservation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenWaterConservation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeedCertificationLevel",
+        "source_native_name": "LeedCertificationLevel",
+        "source_label": "LEED Certification Level",
+        "source_definition": "The LEED certification level obtained for the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LeedCertificationLevel",
+        "source_enum_ref": "org.reso.metadata.enums.LeedCertificationLevel",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentDesignation",
+        "source_native_name": "CoBuyerAgentDesignation",
+        "source_label": "Co-Buyer Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DistanceToWaterComments",
+        "source_native_name": "DistanceToWaterComments",
+        "source_label": "Distance To Water Comments",
+        "source_definition": "Provides details about the property's access to serviceable water utility and the distance to it.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsYN",
+        "source_native_name": "IrrigationWaterRightsYN",
+        "source_label": "Irrigation Water Rights Yes/No",
+        "source_definition": "Indicates whether or not the property includes water rights for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.Listing",
+        "source_native_name": "Listing",
+        "source_label": "Listing",
+        "source_definition": "The listing associated with the PropertyGreenVerification record.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "org.reso.metadata.Property",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenBuildingVerifications",
+        "source_native_name": "GreenBuildingVerifications",
+        "source_label": "Green Building Verifications",
+        "source_definition": "A collection of verifications or certifications awarded to a new or pre-existing residential or commercial structure (e.g., LEED, ENERGY STAR, ICC-700). The collection includes information about the type, year, rating and other details about the awarded performance verification.",
+        "source_resource": "Building",
+        "source_data_type": "Collection(org.reso.metadata.PropertyGreenVerification)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenBuildingVerifications",
+        "source_native_name": "GreenBuildingVerifications",
+        "source_label": "Green Building Verifications",
+        "source_definition": "A collection of verifications or certifications awarded to a new or pre-existing residential or commercial structure (e.g., LEED, Energy Star, ICC-700). The collection includes information about the type, year, rating and other details about the awarded performance verification.",
+        "source_resource": "Property",
+        "source_data_type": "Collection(org.reso.metadata.PropertyGreenVerification)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsAcres",
+        "source_native_name": "IrrigationWaterRightsAcres",
+        "source_label": "Irrigation Water Rights Acres",
+        "source_definition": "The number of acres allowed under the property's water rights.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "This is the foreign ID relating to the property. The well-known identifier for the listing. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfSeparateWaterMeters",
+        "source_native_name": "NumberOfSeparateWaterMeters",
+        "source_label": "Number Of Separate Water Meters",
+        "source_definition": "The total number of separate water meters on the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "This is the foreign key relating to the property. A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see the Property Resource's SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenBuildingVerificationType",
+        "source_native_name": "GreenBuildingVerificationType",
+        "source_label": "Green Building Verification Type",
+        "source_definition": "A list of available verifications and certifications awarded to a new or pre-existing residential or commercial structures (e.g., LEED, ENERGY STAR, ICC-700).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenBuildingVerificationType",
+        "source_enum_ref": "org.reso.metadata.enums.GreenBuildingVerificationType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyPowerProduction.PowerProductionSize",
+        "source_native_name": "PowerProductionSize",
+        "source_label": "Power Production Size",
+        "source_definition": "The \"capacity\" of a renewables system. Size is measured in kilowatts (kW) DC (direct current). A kW indicates how much power the system can produce under standard conditions, like the size of a car engine. Renewables systems are sized when they are installed to cover all or a portion of the power needs of the property. Therefore, a system designed to produce 50% of the power needs will be sized smaller than a system on the exact same property designed to produce 100%. Size may be influenced by available space at the property, orientation, landscaping, etc.",
+        "source_resource": "PropertyPowerProduction",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyPowerProduction.PowerProductionAnnual",
+        "source_native_name": "PowerProductionAnnual",
+        "source_label": "Power Production Annual",
+        "source_definition": "The most important metric of a renewables system is the amount of power it produces per year. This number can be actual or estimated. Annual production for systems producing electricity like wind or solar are measured in kilowatt hours (kWh) per year. A kWh is like a measure of the distance traveled per hour for a car - how far did it go over a certain period of time. Annual production is influenced by the size of the system, the conditions (How shady are the trees? How many cloudy days?) and the installation. Sellers typically have access to software that provides historical production totals.",
+        "source_resource": "PropertyPowerProduction",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.GreenVerificationURL",
+        "source_native_name": "GreenVerificationURL",
+        "source_label": "Green Verification URL",
+        "source_definition": "Provides a link to the specific property’s high-performance rating or scoring details directly from and hosted by the sponsoring body of the program. It typically provides thorough details, for example, which points were achieved and how, or, in the case of a score, what specifically was tested and the results.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.HistoryTransactional",
+        "source_native_name": "HistoryTransactional",
+        "source_label": "History Transactional",
+        "source_definition": "The history of the PropertyGreenVerification record.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Collection(org.reso.metadata.HistoryTransactional)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.GreenVerificationBody",
+        "source_native_name": "GreenVerificationBody",
+        "source_label": "Green Verification Body",
+        "source_definition": "The name of the body or group providing the verification/certification/rating named in the GreenBuildingVerificationType field. There is almost always a direct correlation between bodies and programs.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "PropertyGreenVerification.GreenVerificationYear",
+        "source_native_name": "GreenVerificationYear",
+        "source_label": "Green Verification Year",
+        "source_definition": "The year the green certification or verification was awarded.",
+        "source_resource": "PropertyGreenVerification",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Operational form-field identity is independent from Universal Lexicon identity.",
+      "semantic_rule": "A field may be usable in forms while semantic adjudication remains pending.",
+      "safety_rule": "Exact spelling or definition mention alone MUST NOT establish canonical semantic equivalence."
+    }
+  }
+}
