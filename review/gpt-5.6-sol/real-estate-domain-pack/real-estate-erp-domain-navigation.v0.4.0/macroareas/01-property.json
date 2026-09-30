@@ -1,0 +1,174 @@
+{
+  "macro_area": {"order":1,"id":"property","label":"Property"},
+  "facets": [
+    {
+      "facet_number": 1,
+      "id": "property_identity",
+      "label": "Property Identity and Real Estate Unit",
+      "lexicon_terms": [
+        {"ref":"base0001.identifier@1","symbol":"identifier","use":"Canonical identifier primitive for the governed thing."},
+        {"ref":"base0001.title__c996ae73@1","symbol":"title__c996ae73","use":"Thing name/title lexical family. Preserve the Lexicon collision/resolution metadata; do not rename the semantic term here."},
+        {"ref":"base0001.alternate_name@1","symbol":"alternate_name","use":"Alternate property/building designation."},
+        {"ref":"base0001.disambiguating_description@1","symbol":"disambiguating_description","use":"Short identity disambiguation."},
+        {"ref":"base0001.additional_type@1","symbol":"additional_type","use":"Additional external or specialized type reference."},
+        {"ref":"base0001.accommodation_category@1","symbol":"accommodation_category","use":"Real-estate category/type. Its Lexicon definition explicitly covers real-estate PropertyType and PropertySubType conventions."},
+        {"ref":"base0001.same_as@1","symbol":"same_as","use":"Unambiguous external identity reference."},
+        {"ref":"base0001.contains_place@1","symbol":"contains_place","use":"Composition relation for contained real-estate places/components."}
+      ],
+      "form_slots": [
+        {"slot":"legal_property_unit","term_ref":"base0001.identifier@1","context":"legal_real_estate_unit","control":"text"},
+        {"slot":"property_identifier","term_ref":"base0001.identifier@1","context":"property","control":"text"},
+        {"slot":"registry_reference","term_ref":"base0001.identifier@1","context":"property_registry","control":"text"},
+        {"slot":"cadastral_reference","term_ref":"base0001.identifier@1","context":"cadastre","control":"text"},
+        {"slot":"asset_type","term_ref":"base0001.accommodation_category@1","context":"primary_type","control":"select"},
+        {"slot":"asset_subtype","term_ref":"base0001.accommodation_category@1","context":"subtype","control":"select"},
+        {"slot":"component_unit","term_ref":"base0001.contains_place@1","context":"component_unit","control":"entity_picker"},
+        {"slot":"accessory_unit","term_ref":"base0001.contains_place@1","context":"accessory_unit","control":"entity_picker"},
+        {"slot":"property_composition","term_ref":"base0001.contains_place@1","context":"composition","control":"entity_collection"},
+        {"slot":"unit_number","term_ref":"base0001.extended_address@1","context":"unit_designator","control":"text"},
+        {"slot":"building_name","term_ref":"base0001.title__c996ae73@1","context":"building","control":"text"},
+        {"slot":"business_name","term_ref":"base0001.title__c996ae73@1","context":"business_at_property","control":"text"},
+        {"slot":"property_name","term_ref":"base0001.title__c996ae73@1","context":"property","control":"text"},
+        {"slot":"parcel_number","term_ref":"base0001.identifier@1","context":"parcel","control":"text"},
+        {"slot":"tax_parcel_letter","term_ref":"base0001.identifier@1","context":"tax_parcel","control":"text"},
+        {"slot":"universal_property_id","term_ref":"base0001.identifier@1","context":"universal_property","control":"text"},
+        {"slot":"universal_property_sub_id","term_ref":"base0001.identifier@1","context":"universal_property_subunit","control":"text"},
+        {"slot":"unit_type_key","term_ref":"base0001.identifier@1","context":"unit_type_record","control":"text"},
+        {"slot":"unit_type_type","term_ref":"base0001.accommodation_category@1","context":"unit_type","control":"select"},
+        {"slot":"landmarked_building_name","term_ref":"base0001.title__c996ae73@1","context":"official_or_landmark_building_name","control":"text"}
+      ],
+      "moved_out_of_this_facet": {
+        "listing_and_feed_fields":"facet 12",
+        "rent_and_pro_forma_fields":"facets 18 and 19",
+        "bedroom_bathroom_fields":"facet 3",
+        "furnished_state":"facet 4",
+        "marketable_component":"facet 12"
+      }
+    },
+    {
+      "facet_number": 2,
+      "id": "location_territorial_context",
+      "label": "Location and Territorial Context",
+      "lexicon_terms": [
+        {"ref":"base0001.address@1","symbol":"address"},
+        {"ref":"base0001.street_address@1","symbol":"street_address"},
+        {"ref":"base0001.extended_address@1","symbol":"extended_address"},
+        {"ref":"base0001.post_office_box@1","symbol":"post_office_box"},
+        {"ref":"base0001.address_locality@1","symbol":"address_locality"},
+        {"ref":"base0001.address_region@1","symbol":"address_region"},
+        {"ref":"base0001.address_country@1","symbol":"address_country"},
+        {"ref":"base0001.has_postal_code@1","symbol":"has_postal_code"},
+        {"ref":"base0001.postal_code_begin@1","symbol":"postal_code_begin"},
+        {"ref":"base0001.postal_code_end@1","symbol":"postal_code_end"},
+        {"ref":"base0001.postal_code_prefix@1","symbol":"postal_code_prefix"},
+        {"ref":"base0001.postal_code_range@1","symbol":"postal_code_range"},
+        {"ref":"base0001.geo@1","symbol":"geo"},
+        {"ref":"base0001.latitude@1","symbol":"latitude"},
+        {"ref":"base0001.longitude@1","symbol":"longitude"},
+        {"ref":"base0001.polygon@1","symbol":"polygon"},
+        {"ref":"base0001.line@1","symbol":"line"},
+        {"ref":"base0001.geo_contains@1","symbol":"geo_contains"},
+        {"ref":"base0001.geo_covered_by@1","symbol":"geo_covered_by"},
+        {"ref":"base0001.geo_covers@1","symbol":"geo_covers"},
+        {"ref":"base0001.geo_crosses@1","symbol":"geo_crosses"},
+        {"ref":"base0001.geo_disjoint@1","symbol":"geo_disjoint"},
+        {"ref":"base0001.geo_equals@1","symbol":"geo_equals"},
+        {"ref":"base0001.geo_intersects@1","symbol":"geo_intersects"},
+        {"ref":"base0001.geo_overlaps@1","symbol":"geo_overlaps"},
+        {"ref":"base0001.geo_touches@1","symbol":"geo_touches"},
+        {"ref":"base0001.geo_within@1","symbol":"geo_within"},
+        {"ref":"base0001.has_map@1","symbol":"has_map"}
+      ],
+      "form_slots": [
+        {"slot":"address","term_ref":"base0001.address@1","control":"address"},
+        {"slot":"street_address","term_ref":"base0001.street_address@1","control":"text"},
+        {"slot":"unit_or_address_extension","term_ref":"base0001.extended_address@1","control":"text"},
+        {"slot":"city_or_locality","term_ref":"base0001.address_locality@1","control":"text"},
+        {"slot":"region_or_state","term_ref":"base0001.address_region@1","control":"select_or_text"},
+        {"slot":"country","term_ref":"base0001.address_country@1","control":"country"},
+        {"slot":"postal_code","term_ref":"base0001.has_postal_code@1","control":"text"},
+        {"slot":"latitude","term_ref":"base0001.latitude@1","control":"number"},
+        {"slot":"longitude","term_ref":"base0001.longitude@1","control":"number"},
+        {"slot":"geographic_shape","term_ref":"base0001.geo@1","control":"geospatial"}
+      ]
+    },
+    {
+      "facet_number": 3,
+      "id": "land_building_physical_structure",
+      "label": "Land, Building and Physical Structure",
+      "lexicon_terms": [
+        {"ref":"base0001.accommodation_floor_plan@1","symbol":"accommodation_floor_plan"},
+        {"ref":"base0001.is_plan_for_apartment@1","symbol":"is_plan_for_apartment"},
+        {"ref":"base0001.floor_level@1","symbol":"floor_level"},
+        {"ref":"base0001.floor_size@1","symbol":"floor_size"},
+        {"ref":"base0001.number_of_accommodation_units@1","symbol":"number_of_accommodation_units"},
+        {"ref":"base0001.number_of_available_accommodation_units@1","symbol":"number_of_available_accommodation_units"},
+        {"ref":"base0001.number_of_bathrooms_total@1","symbol":"number_of_bathrooms_total"},
+        {"ref":"base0001.number_of_full_bathrooms@1","symbol":"number_of_full_bathrooms"},
+        {"ref":"base0001.number_of_partial_bathrooms@1","symbol":"number_of_partial_bathrooms"},
+        {"ref":"base0001.number_of_bedrooms@1","symbol":"number_of_bedrooms"},
+        {"ref":"base0001.number_of_rooms@1","symbol":"number_of_rooms"},
+        {"ref":"base0001.bed@1","symbol":"bed"},
+        {"ref":"base0001.number_of_beds@1","symbol":"number_of_beds"},
+        {"ref":"base0001.type_of_bed@1","symbol":"type_of_bed"},
+        {"ref":"base0001.year_built@1","symbol":"year_built"},
+        {"ref":"base0001.layout_image@1","symbol":"layout_image"},
+        {"ref":"base0001.contains_place@1","symbol":"contains_place"}
+      ],
+      "form_slots": [
+        {"slot":"floor_plan","term_ref":"base0001.accommodation_floor_plan@1","control":"document_or_reference"},
+        {"slot":"floor_level","term_ref":"base0001.floor_level@1","control":"text"},
+        {"slot":"floor_size","term_ref":"base0001.floor_size@1","control":"measurement"},
+        {"slot":"units_total","term_ref":"base0001.number_of_accommodation_units@1","control":"number"},
+        {"slot":"units_available","term_ref":"base0001.number_of_available_accommodation_units@1","control":"number"},
+        {"slot":"bedrooms","term_ref":"base0001.number_of_bedrooms@1","control":"number"},
+        {"slot":"bathrooms_total","term_ref":"base0001.number_of_bathrooms_total@1","control":"number"},
+        {"slot":"bathrooms_full","term_ref":"base0001.number_of_full_bathrooms@1","control":"number"},
+        {"slot":"bathrooms_partial","term_ref":"base0001.number_of_partial_bathrooms@1","control":"number"},
+        {"slot":"rooms","term_ref":"base0001.number_of_rooms@1","control":"number"},
+        {"slot":"year_built","term_ref":"base0001.year_built@1","control":"year"}
+      ]
+    },
+    {
+      "facet_number": 4,
+      "id": "features_equipment_infrastructure",
+      "label": "Features, Equipment and Infrastructure",
+      "lexicon_terms": [
+        {"ref":"base0001.amenity_feature@1","symbol":"amenity_feature"},
+        {"ref":"base0001.pets_allowed@1","symbol":"pets_allowed"},
+        {"ref":"base0001.smoking_allowed@1","symbol":"smoking_allowed"},
+        {"ref":"base0001.public_access@1","symbol":"public_access"},
+        {"ref":"base0001.opening_hours_specification@1","symbol":"opening_hours_specification"}
+      ],
+      "form_slots": [
+        {"slot":"amenities","term_ref":"base0001.amenity_feature@1","control":"multi_value_feature_editor"},
+        {"slot":"furnished","term_ref":"base0001.amenity_feature@1","context":"furnishing_state","control":"select"},
+        {"slot":"pets_allowed","term_ref":"base0001.pets_allowed@1","control":"boolean_or_policy"},
+        {"slot":"smoking_allowed","term_ref":"base0001.smoking_allowed@1","control":"boolean"},
+        {"slot":"public_access","term_ref":"base0001.public_access@1","control":"boolean"}
+      ]
+    },
+    {
+      "facet_number": 5,
+      "id": "nearby_places_surroundings",
+      "label": "Nearby Places and Surroundings",
+      "lexicon_terms": [
+        {"ref":"base0001.relation@1","symbol":"relation","use":"Generic related-resource relation where a more specific Lexicon property is not available."},
+        {"ref":"base0001.geo@1","symbol":"geo"},
+        {"ref":"base0001.geo_within@1","symbol":"geo_within"},
+        {"ref":"base0001.geo_intersects@1","symbol":"geo_intersects"},
+        {"ref":"base0001.geo_overlaps@1","symbol":"geo_overlaps"},
+        {"ref":"base0001.geo_touches@1","symbol":"geo_touches"},
+        {"ref":"base0001.service_area@1","symbol":"service_area"},
+        {"ref":"base0001.service_location@1","symbol":"service_location"},
+        {"ref":"base0001.includes_attraction@1","symbol":"includes_attraction"}
+      ],
+      "form_slots": [
+        {"slot":"nearby_place","term_ref":"base0001.relation@1","context":"property_to_nearby_place","control":"place_picker","repeatable":true},
+        {"slot":"nearby_place_geo","term_ref":"base0001.geo@1","control":"geospatial"},
+        {"slot":"surrounding_area_relation","term_ref":"base0001.geo_intersects@1","control":"entity_relation"}
+      ],
+      "note":"School, hospital, pharmacy, transport and similar nearby-place categories are target Place classifications, not new property-semantic terms in this projection."
+    }
+  ]
+}
