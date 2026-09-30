@@ -1,0 +1,236 @@
+{
+  "contract": "real-estate.domain-virtual-pack.master-data:v1",
+  "generated_at": "2026-09-29T21:43:47-03:00",
+  "timezone": "America/Sao_Paulo",
+  "purpose": "Canonical single-asset master sample for Domain Virtual Pack Real Estate materialization.",
+  "source_reference": {
+    "repository": "megawebsol/codegenerator",
+    "path": "data/imobiflow-database.json",
+    "retrieved_via": "https://raw.githubusercontent.com/megawebsol/codegenerator/main/data/imobiflow-database.json",
+    "source_shape": "assets[]",
+    "normalization": "one asset expanded into explicit relational substructures; source fields preserved and enriched with nullable nuance fields"
+  },
+  "asset": {
+    "asset_id": "IM-2026-00481",
+    "semantic_id": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+    "asset_type": "Unidade imobiliária legal",
+    "asset_subtype": "Apartamento",
+    "lifecycle_status": "draft",
+    "display_name": "Apartamento Jardins 142",
+    "identifiers": {
+      "external_asset_id": "IM-2026-00481",
+      "semantic_entity_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "registration_reference": "184.729 — 4º Registro de Imóveis",
+      "registry": {
+        "registration_number": "184729",
+        "registry_office": "4º Registro de Imóveis",
+        "registration_type": "matrícula",
+        "registration_status": "not_provided",
+        "last_verified_at": null
+      },
+      "municipal_registration": null,
+      "tax_registration": null,
+      "parcel_reference": null,
+      "internal_codes": []
+    },
+    "address": {
+      "street": "Rua Oscar Freire",
+      "number": "1420",
+      "unit": "1404",
+      "complement": null,
+      "neighborhood": "Jardins",
+      "postal_code": "01426-002",
+      "city": "São Paulo",
+      "state": "SP",
+      "country": "BR",
+      "latitude": null,
+      "longitude": null,
+      "geocode_accuracy": null,
+      "address_visibility": "full",
+      "delivery_address": null
+    },
+    "classification": {
+      "property_nature": "urban",
+      "use_purpose": "residential",
+      "occupancy_status": "occupied_by_owner",
+      "legal_asset_class": "real_property_unit",
+      "market_segment": "residential_sale",
+      "construction_status": "existing",
+      "heritage_or_protection": null,
+      "zoning": null,
+      "urban_parameters": {
+        "allowed_uses": [],
+        "floor_area_ratio": null,
+        "site_coverage_ratio": null,
+        "height_limit_m": null,
+        "setbacks": null
+      }
+    },
+    "physical_characteristics": {
+      "areas": {
+        "private_area_m2": 128.4,
+        "useful_area_m2": 112.1,
+        "built_area_m2": 128.4,
+        "total_area_m2": 164.8,
+        "land_area_m2": 420,
+        "common_area_m2": null,
+        "exclusive_area_m2": null,
+        "fractional_common_area": null,
+        "area_measurement_standard": null
+      },
+      "rooms": {
+        "bedrooms": 3,
+        "suites": 2,
+        "bathrooms": null,
+        "half_bathrooms": null,
+        "living_rooms": null,
+        "offices": null,
+        "service_rooms": null,
+        "kitchens": null
+      },
+      "parking": {
+        "parking_spots": 2,
+        "covered_spots": null,
+        "uncovered_spots": null,
+        "accessible_spots": null,
+        "parking_assignment": "deeded_or_associated",
+        "parking_details": ["Vaga 31", "Vaga 32"]
+      },
+      "vertical_and_construction": {
+        "floor": 14,
+        "total_floors": null,
+        "building_towers": null,
+        "construction_year": 2018,
+        "delivery_date": null,
+        "renovation": "2024 — cozinha e banheiros",
+        "renovation_details": ["cozinha", "banheiros"],
+        "building_condition": null,
+        "unit_condition": "renovated_partially",
+        "accessibility_features": [],
+        "orientation": null,
+        "views": [],
+        "energy_features": [],
+        "water_features": [],
+        "security_features": []
+      },
+      "amenities": {
+        "private": [],
+        "common": []
+      }
+    },
+    "marketable_components": [
+      {"component_id": "unit-1404", "label": "Unidade 1404", "component_type": "unit", "included": true},
+      {"component_id": "parking-31", "label": "Vaga 31", "component_type": "parking", "included": true},
+      {"component_id": "parking-32", "label": "Vaga 32", "component_type": "parking", "included": true},
+      {"component_id": "storage-d14", "label": "Depósito D-14", "component_type": "storage", "included": true}
+    ],
+    "marketable_bundle": {
+      "bundle_id": "MB-481",
+      "bundle_type": "sale_bundle",
+      "component_ids": ["unit-1404", "parking-31", "parking-32", "storage-d14"],
+      "bundle_status": "active",
+      "allocation_rules": null
+    },
+    "ownership": {
+      "ownership_type": "co_ownership",
+      "owners": [
+        {"party_id": "person-mariana-alves-carvalho", "name": "Mariana Alves de Carvalho", "document": "***.482.190-**", "party_type": "individual", "share_percent": 50, "role": "owner"},
+        {"party_id": "person-rafael-carvalho-neto", "name": "Rafael Carvalho Neto", "document": "***.190.774-**", "party_type": "individual", "share_percent": 50, "role": "owner"}
+      ],
+      "total_share_percent": 100,
+      "acquisition": {"date": null, "instrument": null, "consideration": null, "source_of_title": null},
+      "beneficial_owners": [],
+      "representatives": []
+    },
+    "possession_and_occupancy": {
+      "possessor": {"party_id": "person-mariana-alves-carvalho", "name": "Mariana Alves de Carvalho"},
+      "basis": "Proprietário",
+      "occupant": {"party_id": "person-mariana-alves-carvalho", "name": "Mariana Alves de Carvalho"},
+      "purpose": "Residencial",
+      "from": "2024-01-15",
+      "to": null,
+      "possession_status": "direct",
+      "lease": null,
+      "occupancy_history": []
+    },
+    "rights_restrictions_and_encumbrances": [
+      {"type": "alienacao_fiduciaria", "label": "Alienação fiduciária", "status": "active", "holder": null, "amount": null, "registered_at": null, "released_at": null, "document_ref": null}
+    ],
+    "condominium": {
+      "is_condominium": true,
+      "legal_name": "Edifício Alameda Jardins",
+      "tax_id": "98.765.432/0001-10",
+      "type": "Condomínio edilício",
+      "units": 48,
+      "towers": "1 torre · 18 pavimentos",
+      "common_areas": ["Piscina", "academia", "salão", "lobby"],
+      "governance": {"syndic": "Fernanda Nogueira", "vice_syndic": "Carlos Vaz", "administrator": "Plena Gestão Condominial", "council": "Conselho fiscal — 3 membros"},
+      "financials": {"monthly_fee": {"amount": 1780, "currency": "BRL", "period": "month"}, "reserve_fund": {"amount": 180, "currency": "BRL", "period": "month"}, "arrears": null, "extraordinary_assessments": []},
+      "rules_and_documents": [],
+      "last_assembly_at": null
+    },
+    "financial_profile": {
+      "asking_price": {"amount": 1480000, "currency": "BRL", "period": "total"},
+      "minimum_price": {"amount": 1420000, "currency": "BRL", "period": "total"},
+      "market_value": null,
+      "valuation": {"amount": 1450000, "currency": "BRL", "method": "laudo_avaliacao", "as_of": null},
+      "taxes": {"property_tax": null, "transfer_tax": null, "tax_clearance": null},
+      "commission": {"rate_percent": 6, "basis": "transaction_value", "payer": null},
+      "recurring_costs": [{"type": "condominium_fee", "amount": 1780, "currency": "BRL", "period": "month"}, {"type": "reserve_fund", "amount": 180, "currency": "BRL", "period": "month"}],
+      "financing": {"available": null, "outstanding_lien": null, "accepted_methods": []}
+    },
+    "mandates": [
+      {"mandate_id": "mandate-mb481-001", "exclusive": true, "status": "active", "starts": null, "expires": "2027-03-31", "minimum_price": {"amount": 1420000, "currency": "BRL"}, "commission_percent": 6, "territory": "São Paulo · portais e rede parceira", "agency": {"name": "Alameda Negócios Imobiliários", "license": null}, "partner_agencies": [{"name": "Ponte Alta Consultoria", "license": null}], "brokers": [{"name": "Camila Torres", "license": null}, {"name": "Eduardo Mello", "license": null}], "contract_document_ref": "mandato-exclusivo.pdf"}
+    ],
+    "listings": [
+      {"listing_id": "listing-jardins-142", "status": "Publicado", "asking_price": {"amount": 1480000, "currency": "BRL"}, "primary_portal": "Portal Alameda", "channels": ["Site próprio", "Instagram", "Portal parceiro"], "photo_count": 24, "published_at": null, "unpublished_at": null, "headline": null, "description": null, "listing_url": null, "visibility": "public"}
+    ],
+    "media": {"photos": {"count": 24, "refs": [], "rights_status": null}, "videos": [], "floorplans": [], "virtual_tours": [], "documents_media": []},
+    "documents": [
+      {"document_id": "doc-matricula-184729", "file": "matricula-184729.pdf", "document_type": "property_registration", "status": "hash verificado", "verification": {"hash": null, "verified_at": null, "verified_by": null}, "issued_at": null, "expires_at": null, "confidentiality": "restricted"},
+      {"document_id": "doc-convencao-alameda", "file": "convencao-alameda.pdf", "document_type": "condominium_convention", "status": "vigente", "verification": {"hash": null, "verified_at": null, "verified_by": null}, "issued_at": null, "expires_at": null, "confidentiality": "restricted"},
+      {"document_id": "doc-mandato-exclusivo", "file": "mandato-exclusivo.pdf", "document_type": "brokerage_mandate", "status": "assinado", "verification": {"hash": null, "verified_at": null, "verified_by": null}, "issued_at": null, "expires_at": "2027-03-31", "confidentiality": "restricted"},
+      {"document_id": "doc-laudo-avaliacao", "file": "laudo-avaliacao.pdf", "document_type": "valuation_report", "status": "R$ 1,45M", "verification": {"hash": null, "verified_at": null, "verified_by": null}, "issued_at": null, "expires_at": null, "confidentiality": "restricted"}
+    ],
+    "negotiation": {
+      "opportunity_status": "Qualificada",
+      "interested_party": {"party_id": "person-helena-duarte", "name": "Helena Duarte", "party_type": "individual", "document": null},
+      "visits": [{"visit_id": "visit-001", "scheduled_at": "2026-09-30", "status": "scheduled", "participants": ["Helena Duarte"], "notes": null}],
+      "offers": [{"offer_id": "offer-001", "buyer": "Helena Duarte", "value": {"amount": 1410000, "currency": "BRL"}, "financing": "Sim — banco privado", "condition": "Sinal de 20%", "status": "under_analysis", "submitted_at": null, "expires_at": null}],
+      "acceptance": {"status": "Em análise", "decided_at": null, "decided_by": null, "conditions": []},
+      "communications": []
+    },
+    "closing": {
+      "status": "not_started",
+      "closing_id": null,
+      "accepted_offer_id": null,
+      "milestones": {"due_diligence": "not_started", "financing": "not_started", "deed": "not_started", "registration": "not_started", "payment": "not_started", "possession_transfer": "not_started"},
+      "parties": [],
+      "scheduled_at": null,
+      "completed_at": null,
+      "blocking_issues": []
+    },
+    "relationships": {
+      "condominium_id": "98.765.432/0001-10",
+      "marketable_bundle_id": "MB-481",
+      "owner_party_ids": ["person-mariana-alves-carvalho", "person-rafael-carvalho-neto"],
+      "possessor_party_id": "person-mariana-alves-carvalho",
+      "occupant_party_id": "person-mariana-alves-carvalho",
+      "mandate_ids": ["mandate-mb481-001"],
+      "listing_ids": ["listing-jardins-142"],
+      "document_ids": ["doc-matricula-184729", "doc-convencao-alameda", "doc-mandato-exclusivo", "doc-laudo-avaliacao"],
+      "offer_ids": ["offer-001"],
+      "visit_ids": ["visit-001"],
+      "closing_id": null
+    },
+    "provenance_and_quality": {
+      "source_asset_id": "IM-2026-00481",
+      "source_snapshot": "codegenerator/data/imobiflow-database.json",
+      "source_fields_preserved": true,
+      "enrichment_policy": "nullable fields and explicit relationship references added without asserting unavailable facts",
+      "redaction_policy": "source document identifiers retained as provided; personal documents remain masked",
+      "missing_information": ["coordinates", "municipal registration", "tax data", "full legal encumbrance details", "document hashes", "valuation date", "listing publication date", "closing schedule"],
+      "validation_status": "source-aligned-sample"
+    }
+  }
+}
