@@ -1,0 +1,2695 @@
+{
+  "sample_type": "real_estate_master_data_consolidated",
+  "version": "2.0.0",
+  "generated_at": "2026-09-29T23:14:22-03:00",
+  "timezone": "America/Sao_Paulo",
+  "canonical_sources": [
+    "master_data_sample_20260929221048.json",
+    "master_data_sample_1790730009616.json",
+    "real_estate_domain_pack",
+    "RESO Data Dictionary 2.1",
+    "PDTF/BASPI v5/TA6/TA7/RICS"
+  ],
+  "merge_policy": {
+    "canonical_real_estate_layer": "Quipu/Domain Pack semantics and explicit relationships",
+    "operational_layer": "RESO/PDTF/CRM transaction, marketing, viewing, access and property detail data",
+    "conflicts": "preserve both under their source namespace; do not silently overwrite",
+    "money": "integer minor units in canonical layer; source_operational_values preserved under operational_source when present",
+    "roles": "Owner, Possessor, Occupant, Realtor, Advertiser, Publisher, Buyer, Seller, Conveyancer, Surveyor, Lender and Administrator remain distinct"
+  },
+  "source_inventory": {
+    "canonical_file": "master_data_sample_20260929221048.json",
+    "operational_file": "master_data_sample_1790730009616.json",
+    "canonical_top_level_keys": [
+      "sample_type",
+      "version",
+      "generated_at",
+      "timezone",
+      "source_comparison",
+      "semantic_scope",
+      "people",
+      "organizations",
+      "places",
+      "land_parcels",
+      "structures",
+      "buildings_and_condominiums",
+      "accessory_units",
+      "assets",
+      "ownership_arrangements",
+      "registry_evidence",
+      "rights_and_restrictions",
+      "possession_and_occupancy",
+      "regulatory_and_technical_evidence",
+      "documents",
+      "brokerage",
+      "listings_and_publications",
+      "demand_and_negotiation",
+      "agreements_and_closing",
+      "obligations_payments_and_settlement",
+      "direct_relationships",
+      "temporal_axes",
+      "timeline",
+      "coverage_notes"
+    ],
+    "operational_top_level_keys": [
+      "schema_version",
+      "generated_at",
+      "timezone",
+      "framework_references",
+      "transaction_metadata",
+      "access_and_key_management",
+      "showings_and_appointments",
+      "internet_tracking_metrics",
+      "participants",
+      "propertyPack",
+      "historyTransactional"
+    ]
+  },
+  "canonical_real_estate": {
+    "sample_type": "real_estate_domain_virtual_pack_master_data",
+    "version": "1.0.0",
+    "generated_at": "2026-09-29T22:10:48-03:00",
+    "timezone": "America/Sao_Paulo",
+    "source_comparison": [
+      "data/imobiflow-database.json",
+      "imoveltree.md",
+      "basicquipudb/domainpacks/real_estate/README.md",
+      "basicquipudb/apps/imobitools/lexicon.yaml",
+      "basicquipudb/docs/reports/IMOBITOOLS_DOMAIN_AND_ASSET_TIMELINE_REVIEW.md",
+      "basicquipudb/master_data_sample_20260929205631.json"
+    ],
+    "semantic_scope": {
+      "asset_root": "LegalPropertyUnit",
+      "not_property_monolith": true,
+      "controlled_state_institution": "state",
+      "money_representation": "integer_minor_units",
+      "unknown_is_not_zero": true,
+      "roles_are_not_interchangeable": [
+        "Owner",
+        "Possessor",
+        "Occupant",
+        "MandateAgent",
+        "Realtor",
+        "Advertiser",
+        "Publisher",
+        "Buyer",
+        "Seller",
+        "Syndic",
+        "Administrator"
+      ]
+    },
+    "people": [
+      {
+        "id": "person-mariana-alves",
+        "type": "Person",
+        "name": "Mariana Alves de Carvalho",
+        "tax_id": "***.482.190-**",
+        "email": "mariana.alves@example.test",
+        "phone": "+55 11 99999-1001"
+      },
+      {
+        "id": "person-rafael-carvalho",
+        "type": "Person",
+        "name": "Rafael Carvalho Neto",
+        "tax_id": "***.190.774-**",
+        "email": "rafael.carvalho@example.test",
+        "phone": "+55 11 99999-1002"
+      },
+      {
+        "id": "person-fernanda-nogueira",
+        "type": "Person",
+        "name": "Fernanda Nogueira",
+        "role": "Syndic"
+      },
+      {
+        "id": "person-carlos-vaz",
+        "type": "Person",
+        "name": "Carlos Vaz",
+        "role": "ViceSyndic"
+      },
+      {
+        "id": "person-camila-torres",
+        "type": "Person",
+        "name": "Camila Torres",
+        "creci": "182.443-F",
+        "role": "Realtor"
+      },
+      {
+        "id": "person-eduardo-mello",
+        "type": "Person",
+        "name": "Eduardo Mello",
+        "creci": "204.718-F",
+        "role": "Realtor"
+      },
+      {
+        "id": "person-helena-duarte",
+        "type": "Person",
+        "name": "Helena Duarte",
+        "tax_id": "***.777.888-**",
+        "role": "Buyer"
+      },
+      {
+        "id": "person-architect-ana",
+        "type": "Person",
+        "name": "Ana Beatriz Moreira",
+        "professional_registration": "CAU-SP A123456-7",
+        "role": "Architect"
+      },
+      {
+        "id": "person-engineer-luis",
+        "type": "Person",
+        "name": "Luis Henrique Prado",
+        "professional_registration": "CREA-SP 5060000000",
+        "role": "Engineer"
+      }
+    ],
+    "organizations": [
+      {
+        "id": "org-alameda",
+        "type": "Enterprise",
+        "legal_name": "Alameda Negócios Imobiliários Ltda.",
+        "trade_name": "Alameda Negócios Imobiliários",
+        "cnpj": "12.345.678/0001-90",
+        "creci": "J-28.491"
+      },
+      {
+        "id": "org-ponte-alta",
+        "type": "Enterprise",
+        "legal_name": "Ponte Alta Consultoria Imobiliária Ltda.",
+        "trade_name": "Ponte Alta Consultoria",
+        "cnpj": "23.456.789/0001-01"
+      },
+      {
+        "id": "org-condominium",
+        "type": "Condominium",
+        "legal_name": "Edifício Alameda Jardins",
+        "cnpj": "98.765.432/0001-10",
+        "units_count": 48
+      },
+      {
+        "id": "org-municipality",
+        "type": "Authority",
+        "legal_name": "Município de São Paulo"
+      },
+      {
+        "id": "org-registry-office",
+        "type": "RegistryOffice",
+        "legal_name": "4º Registro de Imóveis de São Paulo"
+      },
+      {
+        "id": "org-bank",
+        "type": "FinancialInstitution",
+        "legal_name": "Banco Exemplo S.A."
+      },
+      {
+        "id": "org-portal-alameda",
+        "type": "PublicationChannel",
+        "legal_name": "Portal Alameda"
+      },
+      {
+        "id": "org-portal-partner",
+        "type": "PublicationChannel",
+        "legal_name": "Portal Parceiro"
+      }
+    ],
+    "places": [
+      {
+        "id": "place-jardins-1420",
+        "type": "Place",
+        "address": {
+          "street": "Rua Oscar Freire",
+          "number": "1420",
+          "neighborhood": "Jardins",
+          "city": "São Paulo",
+          "state": "SP",
+          "postal_code": "01426-002",
+          "country": "BR"
+        },
+        "coordinates": {
+          "latitude": -23.5661,
+          "longitude": -46.6768
+        },
+        "municipality": "São Paulo",
+        "zone": "ZEU"
+      },
+      {
+        "id": "place-condominium",
+        "type": "Place",
+        "label": "Edifício Alameda Jardins",
+        "address_ref": "place-jardins-1420"
+      }
+    ],
+    "land_parcels": [
+      {
+        "id": "parcel-jardins-1420",
+        "type": "LandParcel",
+        "area_m2": 420,
+        "municipal_registration": "09.123.045.001-7",
+        "origin": "urban_lot",
+        "fractional_interest_percent": 8.42,
+        "boundaries": {
+          "north": "lote 18",
+          "south": "Rua Oscar Freire",
+          "east": "lote 20",
+          "west": "lote 16"
+        }
+      }
+    ],
+    "structures": [
+      {
+        "id": "structure-alameda-tower",
+        "type": "PhysicalStructure",
+        "kind": "tower",
+        "construction_year": 2018,
+        "floors": 18,
+        "built_area_m2": 6200,
+        "state": "completed",
+        "last_renovation": {
+          "year": 2024,
+          "scope": "cozinha e banheiros da unidade"
+        }
+      },
+      {
+        "id": "structure-unit-1404",
+        "type": "PhysicalStructure",
+        "kind": "apartment",
+        "built_area_m2": 128.4,
+        "useful_area_m2": 112.1,
+        "private_area_m2": 128.4,
+        "bedrooms": 3,
+        "suites": 2,
+        "bathrooms": 3,
+        "floor": 14,
+        "construction_year": 2018
+      }
+    ],
+    "buildings_and_condominiums": [
+      {
+        "id": "building-alameda-tower",
+        "type": "Building",
+        "name": "Torre Alameda",
+        "condominium_ref": "org-condominium",
+        "units": 48,
+        "common_areas": [
+          "lobby",
+          "piscina",
+          "academia",
+          "salão de festas",
+          "bicicletário"
+        ],
+        "parking_units": [
+          "parking-31",
+          "parking-32"
+        ]
+      },
+      {
+        "id": "condominium-administration-2026",
+        "type": "CondominiumAdministration",
+        "condominium_ref": "org-condominium",
+        "syndic_ref": "person-fernanda-nogueira",
+        "vice_syndic_ref": "person-carlos-vaz",
+        "administrator_ref": "org-plena-gestao",
+        "council": {
+          "description": "Conselho fiscal",
+          "member_count": 3
+        },
+        "next_assembly": "2026-10-22",
+        "accounts_status": "2025/2026 approved",
+        "maintenance": [
+          {
+            "description": "Pintura da fachada",
+            "planned_period": "2027-Q1"
+          }
+        ]
+      },
+      {
+        "id": "org-plena-gestao",
+        "type": "Enterprise",
+        "legal_name": "Plena Gestão Condominial",
+        "role": "CondominiumAdministrator"
+      }
+    ],
+    "accessory_units": [
+      {
+        "id": "unit-apartment-1404",
+        "type": "LegalPropertyUnit",
+        "kind": "apartment",
+        "label": "Unidade 1404"
+      },
+      {
+        "id": "parking-31",
+        "type": "AccessoryUnit",
+        "kind": "parking",
+        "label": "Vaga 31"
+      },
+      {
+        "id": "parking-32",
+        "type": "AccessoryUnit",
+        "kind": "parking",
+        "label": "Vaga 32"
+      },
+      {
+        "id": "storage-d14",
+        "type": "AccessoryUnit",
+        "kind": "storage",
+        "label": "Depósito D-14"
+      }
+    ],
+    "assets": [
+      {
+        "id": "bundle-mb-481",
+        "type": "MarketableBundle",
+        "label": "MarketableBundle MB-481",
+        "components": [
+          "unit-apartment-1404",
+          "parking-31",
+          "parking-32",
+          "storage-d14"
+        ],
+        "commercial_use": "sale_or_lease",
+        "virtual_pack_extension": {
+          "legal_registral": {
+            "registration_status": "REGULAR_WITH_ACTIVE_ENCUMBRANCE",
+            "registry_entries_history": []
+          },
+          "spatial_topology": {
+            "geodetic_datum": "SIRGAS_2000",
+            "coordinate_system": "WGS84"
+          },
+          "physical_nuances": {
+            "renovation_history": [
+              {
+                "year": 2024,
+                "scope": "cozinha e banheiros"
+              }
+            ]
+          },
+          "utilities": {
+            "water_provider": "SABESP",
+            "electric_provider": "ENEL_SP",
+            "gas_provider": "COMGAS"
+          },
+          "esg": {
+            "building_certification": "LEED_GOLD_BUILDING_DESIGN",
+            "rainwater_harvesting": true
+          },
+          "governance": {
+            "registry_authority": "4º Registro de Imóveis de São Paulo",
+            "observation_status": "source_sample"
+          }
+        }
+      },
+      {
+        "id": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "type": "LegalPropertyUnit",
+        "label": "Apartamento Jardins 142",
+        "status": "under_review",
+        "classification": "residential_apartment",
+        "registration_number": "184.729",
+        "registration_office_ref": "org-registry-office",
+        "place_ref": "place-jardins-1420",
+        "parcel_ref": "parcel-jardins-1420",
+        "structure_ref": "structure-unit-1404",
+        "building_ref": "building-alameda-tower",
+        "condominium_ref": "org-condominium",
+        "marketable_bundle_ref": "bundle-mb-481",
+        "municipal_tax_id": "09.123.045.001-7"
+      }
+    ],
+    "ownership_arrangements": [
+      {
+        "id": "ownership-481",
+        "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "holders": [
+          {
+            "party_ref": "person-mariana-alves",
+            "share_percent": 50,
+            "role": "Owner"
+          },
+          {
+            "party_ref": "person-rafael-carvalho",
+            "share_percent": 50,
+            "role": "Owner"
+          }
+        ],
+        "evidence_ref": "registry-evidence-481",
+        "valid_from": "2018-06-15",
+        "valid_to": null,
+        "representation": {
+          "representative_ref": null,
+          "power_of_attorney_ref": null
+        }
+      }
+    ],
+    "registry_evidence": [
+      {
+        "id": "registry-evidence-481",
+        "type": "RegistryEvidence",
+        "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "document_ref": "doc-matricula-184729",
+        "kind": "current_registration",
+        "registration_number": "184.729",
+        "office_ref": "org-registry-office",
+        "issued_at": "2026-08-12",
+        "hash": "sha256:example-matricula-184729",
+        "status": "verified"
+      }
+    ],
+    "rights_and_restrictions": [
+      {
+        "id": "fiduciary-sale-481",
+        "type": "RightOrRestriction",
+        "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "kind": "fiduciary_sale",
+        "beneficiary_ref": "org-bank",
+        "status": "active",
+        "registered_in": "registry-evidence-481",
+        "valid_from": "2018-06-15",
+        "valid_to": null
+      },
+      {
+        "id": "deed-clearance-481",
+        "type": "Condition",
+        "kind": "DeedClearance",
+        "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "lien_count": 1,
+        "result": "not_clear_due_to_active_fiduciary_sale"
+      }
+    ],
+    "possession_and_occupancy": [
+      {
+        "id": "possession-481",
+        "type": "Possession",
+        "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "possessor_ref": "person-mariana-alves",
+        "basis": "ownership",
+        "valid_from": "2024-01-15",
+        "valid_to": null,
+        "evidence_ref": "registry-evidence-481"
+      },
+      {
+        "id": "occupancy-481",
+        "type": "Occupancy",
+        "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "occupant_ref": "person-mariana-alves",
+        "purpose": "residential",
+        "valid_from": "2024-01-15",
+        "valid_to": null
+      }
+    ],
+    "regulatory_and_technical_evidence": [
+      {
+        "id": "permit-481",
+        "type": "Permit",
+        "kind": "construction_permit",
+        "applies_to": [
+          "parcel-jardins-1420",
+          "structure-alameda-tower"
+        ],
+        "issued_by": "org-municipality",
+        "requested_by": "org-developer-alameda",
+        "document_ref": "doc-alvara-construcao",
+        "status": "verified",
+        "valid_from": "2016-02-10",
+        "valid_to": "2019-12-31"
+      },
+      {
+        "id": "occupancy-permit-481",
+        "type": "Permit",
+        "kind": "habite_se",
+        "applies_to": [
+          "structure-alameda-tower"
+        ],
+        "issued_by": "org-municipality",
+        "document_ref": "doc-habite-se-alameda",
+        "status": "verified",
+        "issued_at": "2018-11-20"
+      },
+      {
+        "id": "fire-certificate-481",
+        "type": "Certificate",
+        "kind": "AVCB",
+        "applies_to": [
+          "building-alameda-tower"
+        ],
+        "issued_by": "org-municipality",
+        "document_ref": "doc-avcb-alameda",
+        "status": "verified",
+        "valid_to": "2027-11-20"
+      },
+      {
+        "id": "technical-report-481",
+        "type": "TechnicalEvidence",
+        "kind": "valuation",
+        "applies_to": [
+          "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211"
+        ],
+        "represented_by": "person-engineer-luis",
+        "document_ref": "doc-laudo-avaliacao",
+        "value_minor": 145000000,
+        "currency": "BRL",
+        "status": "verified"
+      }
+    ],
+    "documents": [
+      {
+        "id": "doc-matricula-184729",
+        "type": "ContractDocument",
+        "kind": "registry_certificate",
+        "file": "matricula-184729.pdf",
+        "hash": "sha256:example-matricula-184729",
+        "status": "verified"
+      },
+      {
+        "id": "doc-convention-alameda",
+        "type": "ContractDocument",
+        "kind": "condominium_convention",
+        "file": "convencao-alameda.pdf",
+        "status": "current"
+      },
+      {
+        "id": "doc-mandate-481",
+        "type": "ContractDocument",
+        "kind": "brokerage_mandate",
+        "file": "mandato-exclusivo.pdf",
+        "hash": "sha256:mandate-481",
+        "status": "signed"
+      },
+      {
+        "id": "doc-laudo-avaliacao",
+        "type": "ContractDocument",
+        "kind": "valuation_report",
+        "file": "laudo-avaliacao.pdf",
+        "status": "verified"
+      },
+      {
+        "id": "doc-alvara-construcao",
+        "type": "ContractDocument",
+        "kind": "construction_permit",
+        "file": "alvara-construcao.pdf",
+        "status": "verified"
+      },
+      {
+        "id": "doc-habite-se-alameda",
+        "type": "ContractDocument",
+        "kind": "occupancy_permit",
+        "file": "habite-se-alameda.pdf",
+        "status": "verified"
+      },
+      {
+        "id": "doc-avcb-alameda",
+        "type": "ContractDocument",
+        "kind": "fire_certificate",
+        "file": "avcb-alameda.pdf",
+        "status": "current"
+      },
+      {
+        "id": "doc-power-of-attorney-481",
+        "type": "ContractDocument",
+        "kind": "power_of_attorney",
+        "file": "procuracao-mariana.pdf",
+        "status": "not_applicable"
+      }
+    ],
+    "brokerage": [
+      {
+        "id": "mandate-481",
+        "type": "BrokerageMandate",
+        "bundle_ref": "bundle-mb-481",
+        "authorized_by": [
+          "person-mariana-alves",
+          "person-rafael-carvalho"
+        ],
+        "agency_ref": "org-alameda",
+        "agent_refs": [
+          "person-camila-torres",
+          "person-eduardo-mello"
+        ],
+        "partner_agency_refs": [
+          "org-ponte-alta"
+        ],
+        "exclusive": true,
+        "minimum_price_minor": 142000000,
+        "commission_percent": 6,
+        "currency": "BRL",
+        "territory": "São Paulo; portais; rede parceira",
+        "valid_from": "2026-09-01",
+        "valid_to": "2027-03-31",
+        "contract_ref": "doc-mandate-481",
+        "status": "active"
+      },
+      {
+        "id": "agent-affiliation-camila",
+        "type": "Employs",
+        "employer_ref": "org-alameda",
+        "employee_ref": "person-camila-torres"
+      },
+      {
+        "id": "agent-affiliation-eduardo",
+        "type": "Employs",
+        "employer_ref": "org-ponte-alta",
+        "employee_ref": "person-eduardo-mello"
+      }
+    ],
+    "listings_and_publications": [
+      {
+        "id": "listing-jardins-142",
+        "type": "Listing",
+        "bundle_ref": "bundle-mb-481",
+        "mandate_ref": "mandate-481",
+        "advertiser_refs": [
+          "org-alameda",
+          "person-camila-torres"
+        ],
+        "asking_price_minor": 148000000,
+        "currency": "BRL",
+        "description": "Unidade jurídica em condomínio residencial, com duas vagas e depósito.",
+        "availability_state": "published",
+        "publication_ref": "publication-listing-jardins",
+        "media": {
+          "photo_count": 24,
+          "files": [
+            "fotos-jardins.zip"
+          ]
+        }
+      },
+      {
+        "id": "publication-listing-jardins",
+        "type": "Publication",
+        "listing_ref": "listing-jardins-142",
+        "channels": [
+          "org-portal-alameda",
+          "org-portal-partner",
+          "site-proprio",
+          "instagram"
+        ],
+        "status": "published",
+        "published_at": "2026-09-20",
+        "synchronization": {
+          "external": false,
+          "last_sync_at": null
+        }
+      },
+      {
+        "id": "publication-state-history-jardins",
+        "type": "PublicationStatusHistory",
+        "listing_ref": "listing-jardins-142",
+        "events": [
+          {
+            "state": "draft",
+            "at": "2026-08-20"
+          },
+          {
+            "state": "published",
+            "at": "2026-09-20"
+          }
+        ]
+      }
+    ],
+    "demand_and_negotiation": [
+      {
+        "id": "demand-helena-481",
+        "type": "Demand",
+        "bundle_ref": "bundle-mb-481",
+        "party_ref": "person-helena-duarte",
+        "source": "Portal Alameda",
+        "status": "qualified",
+        "created_at": "2026-09-25"
+      },
+      {
+        "id": "visit-helena-481",
+        "type": "Visit",
+        "listing_ref": "listing-jardins-142",
+        "visitor_ref": "person-helena-duarte",
+        "agent_ref": "person-camila-torres",
+        "scheduled_at": "2026-09-30T14:00:00-03:00",
+        "status": "scheduled"
+      },
+      {
+        "id": "opportunity-helena-481",
+        "type": "Opportunity",
+        "demand_ref": "demand-helena-481",
+        "listing_ref": "listing-jardins-142",
+        "status": "qualified"
+      },
+      {
+        "id": "offer-helena-481",
+        "type": "Offer",
+        "listing_ref": "listing-jardins-142",
+        "buyer_ref": "person-helena-duarte",
+        "offered_price_minor": 141000000,
+        "currency": "BRL",
+        "financing": {
+          "required": true,
+          "institution_ref": "org-bank",
+          "status": "under_analysis"
+        },
+        "conditions": [
+          {
+            "kind": "down_payment",
+            "value_minor": 28200000,
+            "currency": "BRL",
+            "percent": 20
+          }
+        ],
+        "status": "submitted",
+        "submitted_at": "2026-09-28"
+      },
+      {
+        "id": "acceptance-helena-481",
+        "type": "AcceptanceAct",
+        "offer_ref": "offer-helena-481",
+        "status": "under_analysis",
+        "response_deadline": "2026-10-02",
+        "notes": "Oferta aguardando validação dos proprietários."
+      }
+    ],
+    "agreements_and_closing": [
+      {
+        "id": "agreement-481",
+        "type": "Agreement",
+        "status": "not_started",
+        "offer_ref": "offer-helena-481",
+        "contract_document_ref": null
+      },
+      {
+        "id": "closing-481",
+        "type": "ClosingCase",
+        "bundle_ref": "bundle-mb-481",
+        "status": "open",
+        "milestones": [
+          {
+            "kind": "due_diligence",
+            "status": "in_progress"
+          },
+          {
+            "kind": "financing",
+            "status": "pending"
+          },
+          {
+            "kind": "deed",
+            "status": "pending"
+          },
+          {
+            "kind": "registration",
+            "status": "pending"
+          },
+          {
+            "kind": "payment",
+            "status": "pending"
+          },
+          {
+            "kind": "title_transfer",
+            "status": "pending"
+          },
+          {
+            "kind": "possession_transfer",
+            "status": "pending"
+          },
+          {
+            "kind": "commission",
+            "status": "pending"
+          }
+        ]
+      }
+    ],
+    "obligations_payments_and_settlement": [
+      {
+        "id": "obligation-sale-481",
+        "type": "Obligation",
+        "source": "agreement-481",
+        "debtor_ref": "person-helena-duarte",
+        "creditors": [
+          "person-mariana-alves",
+          "person-rafael-carvalho"
+        ],
+        "kind": "purchase_price",
+        "amount_minor": 141000000,
+        "currency": "BRL",
+        "status": "pending"
+      },
+      {
+        "id": "obligation-commission-481",
+        "type": "Obligation",
+        "source": "mandate-481",
+        "debtor_ref": "person-mariana-alves",
+        "creditors": [
+          "org-alameda",
+          "org-ponte-alta"
+        ],
+        "kind": "brokerage_commission",
+        "amount_minor": 8460000,
+        "currency": "BRL",
+        "status": "pending"
+      },
+      {
+        "id": "payment-down-payment-481",
+        "type": "Payment",
+        "obligation_ref": "obligation-sale-481",
+        "amount_minor": 28200000,
+        "currency": "BRL",
+        "status": "pending",
+        "due_at": "2026-10-05"
+      },
+      {
+        "id": "allocation-sale-481",
+        "type": "Allocation",
+        "payment_ref": "payment-down-payment-481",
+        "obligation_ref": "obligation-sale-481",
+        "allocated_amount_minor": 28200000,
+        "currency": "BRL",
+        "status": "pending"
+      },
+      {
+        "id": "settlement-sale-481",
+        "type": "Settlement",
+        "obligation_ref": "obligation-sale-481",
+        "status": "pending",
+        "currency": "BRL"
+      }
+    ],
+    "direct_relationships": [
+      {
+        "type": "evidenced_by",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": "registry-evidence-481"
+      },
+      {
+        "type": "owned_by",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": [
+          "person-mariana-alves",
+          "person-rafael-carvalho"
+        ],
+        "arrangement_ref": "ownership-481"
+      },
+      {
+        "type": "situated_on",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": "parcel-jardins-1420"
+      },
+      {
+        "type": "embodied_in",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": "structure-unit-1404"
+      },
+      {
+        "type": "located_at",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": "place-jardins-1420"
+      },
+      {
+        "type": "part_of",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": [
+          "building-alameda-tower",
+          "org-condominium"
+        ]
+      },
+      {
+        "type": "included_in",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": "bundle-mb-481"
+      },
+      {
+        "type": "possessed_by",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": "person-mariana-alves",
+        "record_ref": "possession-481"
+      },
+      {
+        "type": "occupied_by",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": "person-mariana-alves",
+        "record_ref": "occupancy-481"
+      },
+      {
+        "type": "administered_by",
+        "from": "org-condominium",
+        "to": [
+          "person-fernanda-nogueira",
+          "org-plena-gestao"
+        ],
+        "record_ref": "condominium-administration-2026"
+      },
+      {
+        "type": "regulated_by",
+        "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "to": [
+          "permit-481",
+          "occupancy-permit-481",
+          "fire-certificate-481"
+        ]
+      },
+      {
+        "type": "represented_by",
+        "from": "bundle-mb-481",
+        "to": "mandate-481"
+      },
+      {
+        "type": "handled_by",
+        "from": "mandate-481",
+        "to": [
+          "person-camila-torres",
+          "person-eduardo-mello"
+        ]
+      },
+      {
+        "type": "partnered_with",
+        "from": "org-alameda",
+        "to": "org-ponte-alta"
+      },
+      {
+        "type": "advertised_as",
+        "from": "bundle-mb-481",
+        "to": "listing-jardins-142"
+      },
+      {
+        "type": "published_by",
+        "from": "listing-jardins-142",
+        "to": [
+          "org-alameda",
+          "person-camila-torres"
+        ]
+      },
+      {
+        "type": "published_on",
+        "from": "listing-jardins-142",
+        "to": [
+          "org-portal-alameda",
+          "org-portal-partner"
+        ]
+      },
+      {
+        "type": "receives",
+        "from": "listing-jardins-142",
+        "to": "offer-helena-481"
+      },
+      {
+        "type": "results_in",
+        "from": "offer-helena-481",
+        "to": "agreement-481"
+      },
+      {
+        "type": "closes_through",
+        "from": "bundle-mb-481",
+        "to": "closing-481"
+      }
+    ],
+    "temporal_axes": [
+      "occurred_at",
+      "valid_from",
+      "valid_to",
+      "issued_at",
+      "delivery_at",
+      "knowledge_at",
+      "recorded_at",
+      "accepted_k",
+      "external_timestamp"
+    ],
+    "timeline": {
+      "physical": [
+        "parcel_identified",
+        "building_constructed",
+        "unit_completed",
+        "renovation"
+      ],
+      "legal": [
+        "registration_issued",
+        "ownership_recorded",
+        "fiduciary_sale_registered"
+      ],
+      "spatial": [
+        "address_assigned",
+        "georeferenced",
+        "condominium_linked"
+      ],
+      "commercial": [
+        "mandate_signed",
+        "listing_published",
+        "visit_scheduled",
+        "offer_submitted",
+        "agreement_pending",
+        "closing_open"
+      ],
+      "financial": [
+        "asking_price",
+        "offer_price",
+        "down_payment",
+        "commission",
+        "settlement"
+      ],
+      "documentary": [
+        "registry_evidence",
+        "permits",
+        "technical_report",
+        "contract_documents"
+      ],
+      "publication": [
+        "draft",
+        "published"
+      ]
+    },
+    "coverage_notes": {
+      "recovered_from_current_database": [
+        "asset identity",
+        "address",
+        "physical dimensions",
+        "owners",
+        "condominium",
+        "mandate",
+        "listing",
+        "documents",
+        "negotiation"
+      ],
+      "recovered_from_domain_dictionaries": [
+        "Person",
+        "Enterprise",
+        "Address",
+        "RegistryEvidence",
+        "OwnershipArrangement",
+        "Possession",
+        "Occupancy",
+        "Tenancy",
+        "Permit",
+        "TechnicalEvidence",
+        "PublicationStatus",
+        "Demand",
+        "Visit",
+        "Opportunity",
+        "AcceptanceAct",
+        "Agreement",
+        "Obligation",
+        "Payment",
+        "Allocation",
+        "Settlement",
+        "ClosingCase",
+        "Employs",
+        "LocatedAt",
+        "UnitOf",
+        "Manages",
+        "MandateFor",
+        "MandateAgent",
+        "Lists",
+        "ListedBy",
+        "OfferOn",
+        "OfferBy",
+        "SaleOf",
+        "SaleFrom",
+        "SaleTo",
+        "DeedClearance"
+      ],
+      "deliberately_not_inferred": [
+        "owner_from_advertiser",
+        "legal_unit_from_address",
+        "sale_from_offer_acceptance",
+        "possession_from_ownership",
+        "occupancy_from_possession",
+        "registry_truth_from_listing"
+      ]
+    }
+  },
+  "operational_transaction_and_property_data": {
+    "transaction_metadata": {
+      "transaction_id": "tx-f8a9d2c1-4e6b-8a9d-1c2d3e4f5a6b",
+      "status": "Contracts exchanged",
+      "lifecycle_stage": "Pre-Completion",
+      "exchange_date": "2026-09-28T14:30:00-03:00",
+      "target_completion_date": "2026-10-30T12:00:00-03:00",
+      "delay_factors": {
+        "has_delay_factors": false,
+        "details": null
+      }
+    },
+    "access_and_key_management": {
+      "lockbox": {
+        "has_lockbox_yn": true,
+        "lockbox_type": "SentriLock Bluetooth Smart Box",
+        "lockbox_location": "Corrimão da entrada de serviço (1º subsolo)",
+        "lockbox_serial_number": "SL-9988776655",
+        "access_code": "Não aplicável (Acesso via App)",
+        "one_day_code_active_yn": true
+      },
+      "physical_keys": [
+        {
+          "key_id": "KEY-001",
+          "key_type": "Porta Social (Biométrica/Mecânica de Backup)",
+          "quantity": 2,
+          "copies_allowed_yn": false
+        },
+        {
+          "key_id": "KEY-002",
+          "key_type": "Porta de Serviço (Multiponto)",
+          "quantity": 3,
+          "copies_allowed_yn": true
+        },
+        {
+          "key_id": "KEY-003",
+          "key_type": "Caixa de Correio",
+          "quantity": 2,
+          "copies_allowed_yn": true
+        },
+        {
+          "key_id": "KEY-004",
+          "key_type": "Depósito Privativo (Subsolo)",
+          "quantity": 1,
+          "copies_allowed_yn": true
+        },
+        {
+          "key_id": "KEY-005",
+          "key_type": "Tags RFID de Acesso ao Condomínio",
+          "quantity": 4,
+          "copies_allowed_yn": false
+        }
+      ],
+      "key_movement_log": [
+        {
+          "log_id": "KLOG-001",
+          "timestamp": "2026-04-02T09:00:00-03:00",
+          "action": "Check-in",
+          "performed_by": "Mariana Alves de Carvalho (Senhorio/Proprietária)",
+          "recipient": "Camila Torres (Agente)",
+          "reason": "Entrega inicial das chaves para início da comercialização",
+          "keys_transferred": [
+            "KEY-002",
+            "KEY-005"
+          ]
+        },
+        {
+          "log_id": "KLOG-002",
+          "timestamp": "2026-04-02T10:30:00-03:00",
+          "action": "Check-out",
+          "performed_by": "Camila Torres (Agente)",
+          "recipient": "Lockbox SL-9988776655",
+          "reason": "Armazenamento no cofre do edifício",
+          "keys_transferred": [
+            "KEY-002"
+          ]
+        },
+        {
+          "log_id": "KLOG-003",
+          "timestamp": "2026-05-15T14:00:00-03:00",
+          "action": "Check-in",
+          "performed_by": "Lockbox SL-9988776655",
+          "recipient": "Eduardo Mello (Agente)",
+          "reason": "Visita com cliente",
+          "keys_transferred": [
+            "KEY-002"
+          ]
+        },
+        {
+          "log_id": "KLOG-004",
+          "timestamp": "2026-05-15T15:30:00-03:00",
+          "action": "Check-out",
+          "performed_by": "Eduardo Mello (Agente)",
+          "recipient": "Lockbox SL-9988776655",
+          "reason": "Devolução após visita",
+          "keys_transferred": [
+            "KEY-002"
+          ]
+        },
+        {
+          "log_id": "KLOG-005",
+          "timestamp": "2026-09-30T14:45:00-03:00",
+          "action": "Check-in",
+          "performed_by": "Lockbox SL-9988776655",
+          "recipient": "Camila Torres (Agente)",
+          "reason": "Visita final pré-contrato com a compradora Helena Duarte",
+          "keys_transferred": [
+            "KEY-002"
+          ]
+        },
+        {
+          "log_id": "KLOG-006",
+          "timestamp": "2026-09-30T16:15:00-03:00",
+          "action": "Check-out",
+          "performed_by": "Camila Torres (Agente)",
+          "recipient": "Lockbox SL-9988776655",
+          "reason": "Devolução após visita bem-sucedida",
+          "keys_transferred": [
+            "KEY-002"
+          ]
+        }
+      ]
+    },
+    "showings_and_appointments": {
+      "showing_instructions": "Avisar com 24 horas de antecedência. Não permitir entrada com calçado da rua (fornecer protetores). Desligar o ar-condicionado após a saída.",
+      "showing_contact_type": "Agent",
+      "showing_requirements": [
+        "Appointment Required",
+        "Call Listing Agent",
+        "Lockbox"
+      ],
+      "appointments_log": [
+        {
+          "appointment_id": "APP-2026-001",
+          "scheduled_time": "2026-05-15T14:30:00-03:00",
+          "end_time": "2026-05-15T15:15:00-03:00",
+          "showing_agent": "Eduardo Mello",
+          "prospective_buyer_initials": "J.M.",
+          "status": "Completed",
+          "feedback": "Cliente gostou dos acabamentos, mas achou o terceiro quarto muito pequeno para o seu perfil."
+        },
+        {
+          "appointment_id": "APP-2026-002",
+          "scheduled_time": "2026-07-22T10:00:00-03:00",
+          "end_time": "2026-07-22T11:00:00-03:00",
+          "showing_agent": "Camila Torres",
+          "prospective_buyer_initials": "A.P.",
+          "status": "Completed",
+          "feedback": "Excelente localização, mas preferem uma unidade com vista para a rua oposta."
+        },
+        {
+          "appointment_id": "APP-2026-003",
+          "scheduled_time": "2026-09-30T15:00:00-03:00",
+          "end_time": "2026-09-30T16:00:00-03:00",
+          "showing_agent": "Camila Torres",
+          "prospective_buyer_initials": "H.D.",
+          "status": "Completed",
+          "feedback": "Cliente encantada com a varanda gourmet e integração dos espaços. Fez oferta no dia seguinte."
+        }
+      ],
+      "open_houses": [
+        {
+          "open_house_id": "OH-2026-01",
+          "date": "2026-06-10",
+          "start_time": "10:00:00-03:00",
+          "end_time": "16:00:00-03:00",
+          "attendees_count": 14,
+          "type": "Public",
+          "remarks": "Evento com coffee break. Geração de 3 leads quentes."
+        }
+      ]
+    },
+    "internet_tracking_metrics": {
+      "total_page_views": 14520,
+      "unique_visitors": 8432,
+      "average_time_on_page_seconds": 145,
+      "total_leads_generated": 28,
+      "portals_breakdown": [
+        {
+          "portal_name": "Portal Alameda (Site Próprio)",
+          "views": 4200,
+          "clicks_on_photos": 15600,
+          "leads": 12,
+          "listing_url": "https://www.alamedaimoveis.com.br/imoveis/apto-jardins-142"
+        },
+        {
+          "portal_name": "ZAP Imóveis",
+          "views": 6800,
+          "clicks_on_photos": 22100,
+          "leads": 9,
+          "listing_url": "https://www.zapimoveis.com.br/imovel/12345678"
+        },
+        {
+          "portal_name": "VivaReal",
+          "views": 3520,
+          "clicks_on_photos": 11400,
+          "leads": 7,
+          "listing_url": "https://www.vivareal.com.br/imovel/87654321"
+        }
+      ],
+      "social_media_tracking": {
+        "instagram_impressions": 45000,
+        "instagram_saves": 340,
+        "instagram_shares": 125,
+        "facebook_ad_clicks": 1120
+      }
+    },
+    "participants": [
+      {
+        "role": "Seller",
+        "participantStatus": "Active",
+        "sellersCapacity": {
+          "capacity": "Legal Owner",
+          "sellersCapacityDetails": "Nome atualizado conforme certidão de casamento averbada na matrícula"
+        },
+        "name": {
+          "title": "Mrs",
+          "firstName": "Mariana",
+          "middleName": "Alves de",
+          "lastName": "Carvalho",
+          "maidenName": "Alves Silva"
+        },
+        "dateOfBirth": "1985-04-12",
+        "document": "***.482.190-**",
+        "share_percentage": 50.0,
+        "civil_status": "Casada com comunhão parcial de bens",
+        "nationality": "Brasileira",
+        "email": "mariana.carvalho@email.com",
+        "phone": "+55 11 98765-4321",
+        "address": {
+          "line1": "Rua Oscar Freire, 1420",
+          "line2": "Apto 1404",
+          "town": "São Paulo",
+          "postcode": "01426-002",
+          "homeNation": "Brasil",
+          "countryCode": "BRA"
+        },
+        "verification": {
+          "identity": {
+            "result": "pass",
+            "reports": [
+              {
+                "reportName": "Serasa KYC Completo",
+                "result": "pass",
+                "details": "Biometria facial e CNH validados"
+              }
+            ]
+          },
+          "antiMoneyLaundering": {
+            "result": "pass",
+            "reports": [
+              {
+                "reportName": "COAF / PEP Check",
+                "result": "pass",
+                "details": "Nenhuma sanção encontrada"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "role": "Seller",
+        "participantStatus": "Active",
+        "sellersCapacity": {
+          "capacity": "Legal Owner"
+        },
+        "name": {
+          "title": "Mr",
+          "firstName": "Rafael",
+          "middleName": "Gomes",
+          "lastName": "Carvalho Neto"
+        },
+        "dateOfBirth": "1983-11-05",
+        "document": "***.190.774-**",
+        "share_percentage": 50.0,
+        "civil_status": "Casado com comunhão parcial de bens",
+        "nationality": "Brasileiro",
+        "email": "rafael.carvalho@email.com",
+        "phone": "+55 11 98765-4322",
+        "address": {
+          "line1": "Rua Oscar Freire, 1420",
+          "line2": "Apto 1404",
+          "town": "São Paulo",
+          "postcode": "01426-002",
+          "homeNation": "Brasil",
+          "countryCode": "BRA"
+        },
+        "verification": {
+          "identity": {
+            "result": "pass",
+            "reports": [
+              {
+                "reportName": "Serasa KYC Completo",
+                "result": "pass"
+              }
+            ]
+          },
+          "antiMoneyLaundering": {
+            "result": "pass",
+            "reports": [
+              {
+                "reportName": "COAF / PEP Check",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "role": "Buyer",
+        "participantStatus": "Active",
+        "name": {
+          "title": "Mrs",
+          "firstName": "Helena",
+          "lastName": "Duarte"
+        },
+        "dateOfBirth": "1990-02-18",
+        "document": "***.555.444-**",
+        "email": "helena.duarte@client.com",
+        "phone": "+55 11 97654-3210",
+        "address": {
+          "line1": "Av. Brigadeiro Faria Lima, 3000",
+          "line2": "Apto 82",
+          "town": "São Paulo",
+          "postcode": "01451-000",
+          "homeNation": "Brasil",
+          "countryCode": "BRA"
+        },
+        "verification": {
+          "identity": {
+            "result": "pass",
+            "reports": [
+              {
+                "reportName": "ID Check Partner",
+                "result": "pass",
+                "details": "Passaporte validado"
+              }
+            ]
+          },
+          "antiMoneyLaundering": {
+            "result": "pass",
+            "reports": [
+              {
+                "reportName": "Source of Funds Check",
+                "result": "pass",
+                "details": "Fundos confirmados via extrato bancário (Itaú)"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "role": "Estate Agent",
+        "participantStatus": "Active",
+        "organisation": "Alameda Negócios Imobiliários",
+        "organisationReference": "CRECI 029841-J",
+        "name": {
+          "title": "Miss",
+          "firstName": "Camila",
+          "lastName": "Torres"
+        },
+        "email": "camila.torres@alamedaimoveis.com.br",
+        "phone": "+55 11 99111-2233"
+      },
+      {
+        "role": "Seller's Conveyancer",
+        "participantStatus": "Active",
+        "organisation": "Pinheiro Neto Advogados",
+        "organisationReference": "OAB/SP 12345",
+        "name": {
+          "title": "Mr",
+          "firstName": "Arthur",
+          "lastName": "Mendonça"
+        },
+        "email": "amendonca@pn.com.br",
+        "phone": "+55 11 3247-8000"
+      },
+      {
+        "role": "Buyer's Conveyancer",
+        "participantStatus": "Active",
+        "organisation": "Machado Meyer Advogados",
+        "organisationReference": "OAB/SP 54321",
+        "name": {
+          "title": "Ms",
+          "firstName": "Luciana",
+          "lastName": "Viana"
+        },
+        "email": "lviana@machadomeyer.com.br",
+        "phone": "+55 11 3150-7000"
+      },
+      {
+        "role": "Surveyor",
+        "participantStatus": "Active",
+        "organisation": "RICS Brasil Valuations",
+        "organisationReference": "RICS 998877",
+        "name": {
+          "title": "Mr",
+          "firstName": "Jorge",
+          "lastName": "Medeiros"
+        },
+        "email": "jmedeiros@ricsval.com.br",
+        "phone": "+55 11 98888-7777"
+      },
+      {
+        "role": "Lender",
+        "participantStatus": "Active",
+        "organisation": "Banco Itaú Unibanco S.A.",
+        "organisationReference": "CNPJ 60.701.190/0001-04",
+        "name": {
+          "title": "Mr",
+          "firstName": "Departamento",
+          "lastName": "Crédito Imobiliário"
+        },
+        "email": "credito.imob@itau-unibanco.com.br",
+        "phone": "+55 11 4004-4828"
+      }
+    ],
+    "property_pack": {
+      "uprn": 1234567891,
+      "address": {
+        "buildingNumber": "1420",
+        "unitNumber": "1404",
+        "subBuilding": "Torre Apolo",
+        "street": "Rua Oscar Freire",
+        "line1": "Rua Oscar Freire, 1420",
+        "line2": "Torre Apolo, Apto 1404",
+        "line3": "Jardins",
+        "town": "São Paulo",
+        "postcode": "01426-002",
+        "homeNation": "Brasil",
+        "countryCode": "BRA"
+      },
+      "location": {
+        "latitude": -23.562145,
+        "longitude": -46.669812,
+        "bng": {
+          "easting": 333444,
+          "northing": 7393939
+        },
+        "googleStreetViewPOV": {
+          "heading": 45.2,
+          "pitch": 5.0,
+          "zoom": 1,
+          "lat": -23.562145,
+          "lng": -46.669812
+        }
+      },
+      "localAuthority": {
+        "localAuthorityName": "Prefeitura Municipal de São Paulo",
+        "unitaryAuthority": "Subprefeitura de Pinheiros",
+        "localAuthorityReference": "SQL 012.345.6789-1",
+        "councilSearchTurnaroundTimeInWorkingDays": 5,
+        "regulatedSearchTurnaroundTimeInWorkingDays": 3
+      },
+      "priceInformation": {
+        "price": 1410000.0,
+        "priceQualifier": "Fixed price",
+        "disposal": "Private treaty",
+        "saleAtUndervalue": "No"
+      },
+      "marketingTenure": "Leasehold",
+      "media": [
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-01-living.jpg",
+          "caption": "Living room facing Northeast, with integrated balcony"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-02-kitchen.jpg",
+          "caption": "Modern kitchen with central island and Silestone countertops"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-03-masterbed.jpg",
+          "caption": "Master bedroom with wooden flooring"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-04-masterbath.jpg",
+          "caption": "Master bathroom with dual sinks and heated floors"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-05-balcony.jpg",
+          "caption": "Gourmet balcony with built-in BBQ"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-06-office.jpg",
+          "caption": "Third bedroom converted into home office"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-07-pool.jpg",
+          "caption": "Condominium 25m heated lap pool"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-08-gym.jpg",
+          "caption": "Condominium fitness center (Life Fitness equipment)"
+        },
+        {
+          "mediaType": "Image",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-09-facade.jpg",
+          "caption": "Building facade from Rua Oscar Freire"
+        },
+        {
+          "mediaType": "Floorplan",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-floorplan.pdf",
+          "caption": "Architectural Floorplan (2024 Renovation)"
+        },
+        {
+          "mediaType": "Virtual tour",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/3d/jardins-142",
+          "caption": "Matterport 3D Tour - Fully Interactive"
+        },
+        {
+          "mediaType": "EPC graph",
+          "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-epc.png",
+          "caption": "Energy Performance Certificate Rating A"
+        }
+      ],
+      "buildInformation": {
+        "building": {
+          "builtForm": "Mid-terrace",
+          "propertyType": "Flat",
+          "numberOfFloors": 18,
+          "entranceFloor": 14,
+          "hasLift": "Yes",
+          "overCommercialPremises": {
+            "isLocatedOverCommercialPremises": "No"
+          }
+        },
+        "internalArea": {
+          "area": 128.4,
+          "units": "square metres"
+        },
+        "yearOfBuild": 2018,
+        "isNewBuild": {
+          "yesNo": "No"
+        },
+        "isHMO": "No",
+        "isStudentAccommodation": "No",
+        "roomDimensions": {
+          "hasFloorplan": "Yes",
+          "attachments": "Attached",
+          "rooms": [
+            {
+              "roomName": "Foyer/Hall Privativo",
+              "description": "Hall de entrada com elevador privativo e biometria",
+              "length": 2.1,
+              "width": 1.8,
+              "units": "meters",
+              "dimensionDetails": "Piso em mármore Travertino"
+            },
+            {
+              "roomName": "Living Ampliado",
+              "description": "Sala para 3 ambientes com projeto luminotécnico",
+              "length": 7.2,
+              "width": 4.5,
+              "units": "meters",
+              "dimensionDetails": "Integrado com a varanda"
+            },
+            {
+              "roomName": "Lavabo",
+              "description": "Lavabo social com bancada em mármore Nero Marquina",
+              "length": 1.8,
+              "width": 1.5,
+              "units": "meters",
+              "dimensionDetails": "Cuba esculpida"
+            },
+            {
+              "roomName": "Suíte Master",
+              "description": "Suíte principal com closet Sr. e Sra., isolamento acústico",
+              "length": 4.8,
+              "width": 3.8,
+              "units": "meters",
+              "dimensionDetails": "Piso em madeira maciça Tauari"
+            },
+            {
+              "roomName": "Banheiro Suíte Master",
+              "description": "Banheiro com cuba dupla, piso aquecido e toalheiro térmico",
+              "length": 3.5,
+              "width": 2.2,
+              "units": "meters",
+              "dimensionDetails": "Revestimento em porcelanato Portobello"
+            },
+            {
+              "roomName": "Suíte 2",
+              "description": "Suíte com armários embutidos Florense",
+              "length": 3.8,
+              "width": 3.4,
+              "units": "meters",
+              "dimensionDetails": "Janela com persiana de enrolar automatizada"
+            },
+            {
+              "roomName": "Banheiro Suíte 2",
+              "description": "Banheiro completo com ventilação natural",
+              "length": 2.4,
+              "width": 1.6,
+              "units": "meters",
+              "dimensionDetails": "Metais Deca"
+            },
+            {
+              "roomName": "Dormitório 3 / Home Office",
+              "description": "Convertido em escritório com painéis de madeira",
+              "length": 3.2,
+              "width": 3.0,
+              "units": "meters",
+              "dimensionDetails": "Reversível para quarto de solteiro"
+            },
+            {
+              "roomName": "Banheiro Social",
+              "description": "Atende ao dormitório 3",
+              "length": 2.2,
+              "width": 1.5,
+              "units": "meters",
+              "dimensionDetails": "Box de vidro temperado Elegance"
+            },
+            {
+              "roomName": "Cozinha",
+              "description": "Cozinha com ilha central, tampos em Silestone e cooktop indução",
+              "length": 4.5,
+              "width": 2.8,
+              "units": "meters",
+              "dimensionDetails": "Torre quente e lava-louças embutida"
+            },
+            {
+              "roomName": "Varanda Gourmet",
+              "description": "Churrasqueira a carvão com exaustão forçada e fechamento de vidro",
+              "length": 4.2,
+              "width": 2.5,
+              "units": "meters",
+              "dimensionDetails": "Piso nivelado com o living"
+            },
+            {
+              "roomName": "Área de Serviço",
+              "description": "Lavanderia com aquecedor de passagem Rinnai",
+              "length": 2.8,
+              "width": 1.6,
+              "units": "meters",
+              "dimensionDetails": "Tanque em inox e espaço para lava e seca dupla"
+            },
+            {
+              "roomName": "Dependência de Funcionários",
+              "description": "Quarto e banheiro de serviço completo",
+              "length": 2.5,
+              "width": 2.0,
+              "units": "meters",
+              "dimensionDetails": "Pode ser revertido em despensa"
+            },
+            {
+              "roomName": "Depósito Privativo",
+              "description": "No primeiro subsolo, prateleiras em aço",
+              "length": 2.5,
+              "width": 1.8,
+              "units": "meters",
+              "dimensionDetails": "4.5 metros quadrados totais"
+            }
+          ]
+        }
+      },
+      "residentialPropertyFeatures": {
+        "bedrooms": 3,
+        "bathrooms": 4,
+        "receptions": 2,
+        "kitchens": 1,
+        "diningAreas": 1,
+        "outsideAreas": [
+          "Balcony"
+        ]
+      },
+      "nearbyFacilities": {
+        "schools": [
+          {
+            "name": "Colégio Dante Alighieri",
+            "contact": {
+              "address": {
+                "line1": "Alameda Jaú, 1061",
+                "town": "São Paulo",
+                "postcode": "01420-001"
+              },
+              "telephone": "+55 11 3179-4400",
+              "emailAddress": "contato@cda.br",
+              "website": "https://www.colegiodante.com.br"
+            },
+            "ofstedRating": "Outstanding",
+            "pupils": 4500,
+            "distanceInMiles": 0.7,
+            "ageRange": "3-18",
+            "religiousCharacter": "Catholic",
+            "schoolType": {
+              "primary": {
+                "yesNoNotKnown": "Yes"
+              },
+              "secondary": {
+                "yesNoNotKnown": "Yes"
+              },
+              "private": {
+                "yesNoNotKnown": "Yes"
+              }
+            }
+          }
+        ],
+        "transport": [
+          {
+            "name": "Estação Oscar Freire (Linha 4 - Amarela)",
+            "transportType": "Underground/Subway",
+            "latitude": -23.56012,
+            "longitude": -46.6678,
+            "distanceInMiles": 0.2
+          },
+          {
+            "name": "Aeroporto de Congonhas (CGH)",
+            "transportType": "Airport",
+            "latitude": -23.626111,
+            "longitude": -46.656389,
+            "distanceInMiles": 5.8
+          }
+        ],
+        "healthCare": [
+          {
+            "name": "Hospital Sírio-Libanês",
+            "typeOfHealthCare": "Hospital",
+            "contact": {
+              "address": {
+                "line1": "Rua Dona Adma Jafet, 115",
+                "town": "São Paulo",
+                "postcode": "01308-050"
+              },
+              "telephone": "+55 11 3394-0200",
+              "website": "https://www.hospitalsiriolibanes.org.br"
+            },
+            "containsAccidentAndEmergencyFacility": "Yes",
+            "distanceInMiles": 0.9,
+            "specialties": [
+              "Oncologia",
+              "Cardiologia",
+              "Neurologia",
+              "Ortopedia"
+            ],
+            "openingHours": [
+              {
+                "day": "Mon",
+                "hours": "24/7"
+              },
+              {
+                "day": "Tue",
+                "hours": "24/7"
+              },
+              {
+                "day": "Wed",
+                "hours": "24/7"
+              },
+              {
+                "day": "Thu",
+                "hours": "24/7"
+              },
+              {
+                "day": "Fri",
+                "hours": "24/7"
+              },
+              {
+                "day": "Sat",
+                "hours": "24/7"
+              },
+              {
+                "day": "Sun",
+                "hours": "24/7"
+              }
+            ]
+          }
+        ]
+      },
+      "ownership": {
+        "numberOfSellers": 2,
+        "numberOfNonUkResidentSellers": 0,
+        "hasHelpToBuyEquityLoan": "No",
+        "isFirstRegistration": "No",
+        "isLimitedCompanySale": "No",
+        "ownershipsToBeTransferred": [
+          {
+            "titleNumber": "184729-SP-04",
+            "titlePropertyDescription": "Apartamento 1404, Vagas 31 e 32, Depósito D-14 no Edifício Alameda Jardins",
+            "ownershipType": "Leasehold",
+            "leaseholdInformation": {
+              "sharedOwnership": {
+                "isSharedOwnership": "No"
+              },
+              "leaseTerm": {
+                "startYearOfLease": 2018,
+                "lengthOfLeaseInYears": 999
+              },
+              "contactDetails": {
+                "contacts": {
+                  "landlord": {
+                    "contact": {
+                      "nameOrOrganisation": "Condomínio Edifício Alameda Jardins (Representado pelo Síndico)",
+                      "address": {
+                        "line1": "Rua Oscar Freire, 1420",
+                        "town": "São Paulo",
+                        "postcode": "01426-002"
+                      },
+                      "telephone": "+55 11 3062-0000",
+                      "emailAddress": "sindico@alamedajardins.com.br"
+                    },
+                    "bankDetails": {
+                      "accountName": "Condominio E A Jardins",
+                      "sortCode": "341",
+                      "accountNumber": 123456,
+                      "reference": "Apt1404",
+                      "feeType": "Service charges"
+                    }
+                  },
+                  "managingAgent": {
+                    "contact": {
+                      "nameOrOrganisation": "Plena Gestão Condominial",
+                      "address": {
+                        "line1": "Av. Paulista, 1000",
+                        "town": "São Paulo",
+                        "postcode": "01310-100"
+                      },
+                      "telephone": "+55 11 3214-5500",
+                      "emailAddress": "contato@plenagestao.com.br"
+                    },
+                    "appointedBy": "Landlord",
+                    "bankDetails": {
+                      "accountName": "Plena Gestao CNPJ 123",
+                      "sortCode": "033",
+                      "accountNumber": 987654,
+                      "reference": "BoletoMensal",
+                      "feeType": "All"
+                    }
+                  }
+                }
+              },
+              "consents": {
+                "changesInTermOfLease": {
+                  "isSellerAwareOfChanges": "No"
+                }
+              },
+              "transferAndRegistration": {
+                "deedOfCovenantRequired": {
+                  "yesNoNotKnown": "Yes",
+                  "costsApplicableToTheDeed": 0,
+                  "personWhoDealsWithTheDeedOfCovenant": "Administradora Plena"
+                },
+                "licenceToAssignRequired": {
+                  "yesNo": "No"
+                },
+                "awareOfConsents": {
+                  "yesNo": "Yes",
+                  "details": "Aprovação de reforma (ART/RRT) emitida pelo síndico em 10/01/2024 para modificações internas não estruturais."
+                },
+                "requirementsToBeMemberOfManagementCompany": {
+                  "yesNoNotApplicable": "No"
+                },
+                "procedureForObtainingCertificate": "Solicitar Certidão Negativa de Débitos Condominiais à Plena Gestão. Custo: R$ 0,00."
+              },
+              "groundRent": {
+                "isGroundRentPayable": "No"
+              },
+              "ownershipAndManagement": {
+                "freeholdOwner": "No",
+                "hasHeadlease": {
+                  "yesNo": "No"
+                },
+                "buildingManager": {
+                  "buildingManagerType": "Management company named in lease of the property"
+                },
+                "hasTenantCompanyDissolved": "No",
+                "isManagingAgentEmployed": "Yes"
+              },
+              "serviceCharge": {
+                "sellerContributesToServiceCharge": "Yes",
+                "annualServiceCharge": 23520.0,
+                "largeAdditionalExpense": {
+                  "yesNo": "No"
+                },
+                "problemInServiceChargeLevel": {
+                  "yesNo": "No"
+                },
+                "serviceChargeChallenged": {
+                  "yesNo": "No"
+                },
+                "dangerousCladdingOrDefects": "No",
+                "difficultyInCollectingServiceCharge": {
+                  "yesNo": "No"
+                },
+                "serviceChargeOwed": {
+                  "yesNo": "No"
+                },
+                "propertiesContributingToMaintenanceOfManagedArea": 48,
+                "adHocExpenses": "N/A - Fundo de reserva cobre eventuais sobressaltos",
+                "serviceChargePaidUpToDate": {
+                  "yesNo": "Yes"
+                },
+                "excessPaymentAnticipated": {
+                  "yesNo": "No"
+                },
+                "lastDemandPeriod": {
+                  "from": "2026-09-01",
+                  "to": "2026-09-30"
+                },
+                "hasInabilityToCollectAffectedMaintenance": {
+                  "yesNo": "No"
+                },
+                "reserveFund": {
+                  "yesNo": "Yes",
+                  "amount": {
+                    "fromTheOwners": 0,
+                    "forTheManagedAreas": 420000.0
+                  },
+                  "sufficentToCoverKnownExpenditure": {
+                    "yesNo": "Yes"
+                  }
+                },
+                "lastDecoratedPeriod": {
+                  "externally": {
+                    "year": 2023,
+                    "from": "2023-01-01",
+                    "to": "2023-03-30"
+                  },
+                  "internally": {
+                    "year": 2025,
+                    "from": "2025-05-01",
+                    "to": "2025-06-15"
+                  }
+                },
+                "section20WorksProposed": {
+                  "yesNo": "Not applicable"
+                },
+                "increaseInServiceChargeAnticipated": {
+                  "yesNo": "Yes",
+                  "details": "Ajuste inflacionário anual previsto na convenção coletiva (IPCA) em Janeiro/2027."
+                },
+                "outstandingServiceChargeConsultation": {
+                  "yesNo": "No"
+                },
+                "japaneseKnotweedAffectingManagedAreas": {
+                  "yesNo": "No"
+                },
+                "transferFees": {
+                  "yesNo": "No"
+                },
+                "allPropertiesContribute": {
+                  "yesNo": "Yes"
+                }
+              },
+              "leaseRestrictions": {
+                "yesNo": "Yes",
+                "details": "Proibido locações por temporada (Airbnb, Booking) inferiores a 90 dias conforme alteração da convenção em 2022."
+              },
+              "buildingsInsurance": {
+                "premiumsPaidUpToDate": {
+                  "yesNo": "Yes"
+                },
+                "lastDemandPeriod": {
+                  "from": "2026-01-01",
+                  "to": "2026-12-31"
+                },
+                "premiumPaidinFull": {
+                  "yesNo": "Yes"
+                },
+                "claimsMade": {
+                  "yesNo": "No"
+                },
+                "claimsAnticipated": {
+                  "yesNo": "No"
+                },
+                "managedAreasCoveredByPolicy": {
+                  "yesNo": "Yes",
+                  "riskAssessments": {
+                    "assessmentsCarriedOut": "Both",
+                    "urgentWorksRecommended": {
+                      "yesNo": "No"
+                    }
+                  }
+                },
+                "standardTermsAvailable": {
+                  "yesNo": "Yes"
+                },
+                "nonComplianceWithConditions": {
+                  "yesNo": "No"
+                },
+                "buildingsReinstatementCostAssessment": "2025-11-10",
+                "premiumIncludedInServiceCharge": {
+                  "yesNo": "Yes"
+                }
+              },
+              "disputes": {
+                "sellerReceivedComplaint": {
+                  "yesNo": "No"
+                },
+                "sellerSentComplaint": {
+                  "yesNo": "No"
+                },
+                "ongoingForfeitureProceedings": {
+                  "yesNo": "No"
+                },
+                "unresolvedDisputes": {
+                  "yesNo": "No"
+                },
+                "breachOfTermsOfLease": {
+                  "yesNo": "No"
+                }
+              },
+              "buildingSafetyAct": {
+                "isLeaseQualifying": "Yes",
+                "deedOfCertificateServed": {
+                  "yesNoNotApplicable": "Not applicable"
+                },
+                "landlordNotifiedOfSale": "Yes",
+                "landlordsCertificateServed": {
+                  "yesNoNotApplicable": "Yes",
+                  "attachments": "Attached"
+                }
+              },
+              "alterations": {
+                "sellerAwareOfAlterations": {
+                  "yesNo": "Yes",
+                  "details": "Fechamento de varanda com vidro retrátil, remoção de parede não-estrutural entre quarto 3 e sala para ampliação do living.",
+                  "landlordConsentObtained": {
+                    "yesNo": "Yes",
+                    "attachments": "Attached"
+                  }
+                }
+              },
+              "enfranchisement": {
+                "sellerOwnedProperty": "Yes",
+                "sellerServedNoticeOnLandlord": {
+                  "yesNo": "Not required"
+                },
+                "sellerAwareOfNoticeOfCollectivePurchase": {
+                  "yesNo": "No"
+                },
+                "sellerAwareOfResponse": {
+                  "yesNo": "No"
+                },
+                "enfranchisementSteps": {
+                  "yesNo": "No"
+                }
+              },
+              "general": {
+                "otherPropertiesInManagedArea": 47,
+                "leasedOnSimilarTerms": {
+                  "yesNo": "Yes"
+                },
+                "buildingKnownToBeHMO": {
+                  "yesNo": "No"
+                },
+                "additionalParkingRegulations": {
+                  "yesNo": "Yes",
+                  "details": "Proibido uso das vagas para armazenamento de bens, apenas veículos motorizados e bicicletas no bicicletário."
+                },
+                "restrictionOnKeepingPets": {
+                  "yesNo": "No"
+                }
+              },
+              "requiredDocuments": {
+                "lease": "Attached",
+                "deedsOfVariation": "Not applicable",
+                "copyOfcorrespondence": "Attached",
+                "serviceChargeAccounts": "Attached",
+                "serviceCharges": "Attached",
+                "groundRent": "Not applicable",
+                "buildingsInsurancePolicy": {
+                  "arrangedBySeller": "Attached",
+                  "arrangedByLandlord": "Attached"
+                },
+                "noticeOfSale": {
+                  "yesNo": "No"
+                },
+                "noticeOfBuildingCondition": {
+                  "yesNo": "No"
+                },
+                "managedAreasBuildingsInsurancePolicy": "Attached",
+                "serviceChargeEstimatesCurrent": "Attached",
+                "serviceChargeEstimatesPrevious": "Attached",
+                "proposedWorksNotices": "Not applicable",
+                "forfeitureDocumentation": "Not applicable",
+                "additionalRegulationsNotInLease": "Attached",
+                "deedOfCovenant": "Attached",
+                "certificateOfCompliance": "Attached",
+                "certificateOfComplianceFee": 0,
+                "licenceToAssign": "Not applicable",
+                "permissionToAlter": "Attached",
+                "noticesServedOnLessee": "Not applicable",
+                "asbestosSurvey": "Not applicable",
+                "managedAreaFireRiskAssessment": "Attached",
+                "managementCompanyDocuments": {
+                  "memorandumAndArticles": "Attached",
+                  "shareOrMembershipCertificate": "Not applicable",
+                  "companyAccounts": "Attached"
+                },
+                "managementCompanyAGMMinutes": "Attached",
+                "enforcementNotices": "Not applicable"
+              },
+              "confirmationOfAccuracy": {
+                "confirmation": true,
+                "capacity": "Landlord"
+              }
+            }
+          }
+        ]
+      },
+      "parking": {
+        "parkingArrangements": [
+          "Allocated",
+          "Covered",
+          "Gated",
+          "Private",
+          "Subterranean"
+        ],
+        "disabledParking": {
+          "yesNo": "Yes"
+        },
+        "controlledParking": {
+          "yesNo": "No"
+        },
+        "vehicleTypeRestriction": {
+          "yesNo": "Yes",
+          "details": "Somente veículos de passeio de até 2.5 toneladas. Proibido trailers e embarcações."
+        },
+        "electricVehicleChargingPoint": {
+          "yesNo": "Yes"
+        },
+        "locatedInUlez": {
+          "yesNo": "No"
+        }
+      },
+      "listingAndConservation": {
+        "isListed": {
+          "yesNo": "No"
+        },
+        "isConservationArea": {
+          "yesNo": "No"
+        },
+        "hasTreePreservationOrder": {
+          "yesNo": "Yes",
+          "workCarriedOut": {
+            "yesNo": "Yes",
+            "consentsObtained": "Yes",
+            "attachments": "Attached"
+          }
+        }
+      },
+      "typeOfConstruction": {
+        "isStandardForm": {
+          "yesNo": "Yes",
+          "constructionType": "Brick and block"
+        },
+        "buildingSafety": {
+          "yesNo": "No"
+        },
+        "loft": {
+          "loftAccess": "No"
+        },
+        "sprayFoamInsulation": {
+          "hasSprayFoamInstalled": "No"
+        },
+        "accessibilityAndAdaptations": [
+          "Level access",
+          "Lift access",
+          "Wide doorways",
+          "Lateral living"
+        ]
+      },
+      "energyEfficiency": {
+        "certificateIsSupplied": "Attached",
+        "certificate": {
+          "certificateNumber": "9876-5432-1098-7654-3210",
+          "address": "Rua Oscar Freire, 1420, Apto 1404, Jardins, São Paulo",
+          "builtForm": "Mid-Terrace",
+          "co2EmissCurrPerFloorArea": 15.2,
+          "co2EmissionsCurrent": 1.9,
+          "co2EmissionsPotential": 1.9,
+          "currentEnergyEfficiency": 92,
+          "currentEnergyRating": "A",
+          "potentialEnergyEfficiency": 92,
+          "potentialEnergyRating": "A",
+          "energyConsumptionCurrent": 85.4,
+          "energyConsumptionPotential": 85.4,
+          "lightingCostCurrent": 120.0,
+          "lightingCostPotential": 120.0,
+          "heatingCostCurrent": 0.0,
+          "heatingCostPotential": 0.0,
+          "hotWaterCostCurrent": 450.0,
+          "hotWaterCostPotential": 450.0,
+          "propertyType": "Flat",
+          "totalFloorArea": 128.4,
+          "mainsGasFlag": "Y",
+          "mainHeatDescription": "Central air conditioning VRF, electric",
+          "mainFuel": "Electricity",
+          "windTurbineCount": 0,
+          "solarWaterHeatingFlag": "N",
+          "mechanicalVentilation": "Natural",
+          "floorLevel": "14",
+          "flatTopStorey": "N",
+          "flatStoreyCount": 18
+        }
+      },
+      "greenBuildingVerification": {
+        "verifications": [
+          {
+            "type": "LEED Gold - Building Design and Construction",
+            "body": "U.S. Green Building Council",
+            "year": 2019,
+            "metric": 72,
+            "url": "https://www.usgbc.org/projects/alameda-jardins"
+          },
+          {
+            "type": "Procel Edifica (Etiqueta Nacional de Conservação de Energia)",
+            "body": "Eletrobras / Inmetro",
+            "year": 2018,
+            "rating": "A",
+            "url": "https://www.procelinfo.com.br"
+          }
+        ]
+      },
+      "councilTax": {
+        "councilTaxBand": "G",
+        "councilTaxCost": 8450.0,
+        "councilTaxYear": 2026
+      },
+      "disputesAndComplaints": {
+        "hasDisputes": {
+          "yesNo": "No"
+        }
+      },
+      "alterationsAndChanges": {
+        "hasAlterations": {
+          "yesNo": "Yes",
+          "details": "Reforma geral em 2024. Troca de revestimentos, alteração de layout interno (integração varanda/sala, ampliação sala removendo quarto 4).",
+          "planningPermission": {
+            "required": "No"
+          },
+          "buildingRegulations": {
+            "required": "Yes",
+            "obtained": "Yes",
+            "attachments": "Attached"
+          },
+          "completionCertificate": {
+            "obtained": "Yes",
+            "attachments": "Attached"
+          }
+        },
+        "hasReplacementWindowsOrDoors": {
+          "yesNo": "Yes",
+          "details": "Fechamento de varanda em vidro temperado sem esquadrias verticais (sistema Reiki).",
+          "fenSAApproval": {
+            "obtained": "Yes",
+            "attachments": "Attached"
+          }
+        }
+      },
+      "notices": {
+        "hasNotices": {
+          "yesNo": "No"
+        }
+      },
+      "specialistIssues": {
+        "hasSpecialistIssues": {
+          "yesNo": "No"
+        }
+      },
+      "fixturesAndFittings": {
+        "basicFittings": {
+          "boiler": "Included",
+          "centralHeating": "Included",
+          "lightSwitches": "Included",
+          "sockets": "Included",
+          "burglarAlarm": "Included",
+          "doors": "Included",
+          "doorFurniture": "Included",
+          "skirtingBoards": "Included"
+        },
+        "kitchen": {
+          "oven": "Included",
+          "hob": "Included",
+          "extractor": "Included",
+          "microwave": "Included",
+          "fridgeFreezer": "Excluded",
+          "dishwasher": "Included",
+          "washingMachine": "Excluded",
+          "tumbleDryer": "Excluded"
+        },
+        "bathrooms": {
+          "bath": "Included",
+          "shower": "Included",
+          "towelRail": "Included",
+          "mirror": "Included",
+          "cabinet": "Included"
+        },
+        "furnishings": {
+          "carpets": "None",
+          "curtains": "Excluded",
+          "blinds": "Included",
+          "lightFittings": "Included",
+          "fittedWardrobes": "Included",
+          "freeStandingWardrobes": "None"
+        },
+        "outdoor": {
+          "shed": "None",
+          "greenhouse": "None",
+          "outdoorPlants": "None",
+          "outdoorLighting": "Included"
+        }
+      },
+      "waterAndDrainage": {
+        "mainsWater": {
+          "connected": "Yes",
+          "supplier": "Sabesp",
+          "metered": "Yes",
+          "meterLocation": "Corredor técnico do andar"
+        },
+        "mainsDrainage": {
+          "connected": "Yes"
+        },
+        "surfaceWaterDrainage": {
+          "type": "Mains"
+        }
+      },
+      "electricity": {
+        "connected": "Yes",
+        "supplier": "Enel SP",
+        "metered": "Yes",
+        "meterLocation": "Centro de medição no térreo",
+        "smartMeter": "Yes"
+      },
+      "connectivity": {
+        "broadband": {
+          "connected": "Yes",
+          "type": "Fibre to the premises (FTTP)",
+          "provider": "Vivo Fibra",
+          "speed": "1000 Mbps"
+        },
+        "telephone": {
+          "connected": "No"
+        },
+        "tv": {
+          "connected": "Yes",
+          "type": "Cable"
+        }
+      },
+      "heating": {
+        "centralHeating": {
+          "type": "Electric VRF and Gas Water Heater",
+          "workingOrder": "Yes",
+          "lastServiced": "2026-03-10",
+          "serviceHistory": "Attached"
+        }
+      },
+      "insurance": {
+        "buildingsInsurance": {
+          "insured": "Yes",
+          "insurer": "Porto Seguro (via Condomínio)",
+          "policyNumber": "123.456.789",
+          "claimsMade": "No",
+          "claimsAnticipated": "No",
+          "premiumIncludedInServiceCharge": "Yes"
+        }
+      },
+      "rightsAndInformalArrangements": {
+        "hasRightsOrArrangements": {
+          "yesNo": "No"
+        }
+      },
+      "environmentalIssues": {
+        "flooding": {
+          "hasFlooded": "No",
+          "floodRiskReport": "Not applicable"
+        },
+        "radon": {
+          "inRadonArea": "No"
+        },
+        "japaneseKnotweed": {
+          "hasKnotweed": "No"
+        }
+      },
+      "guaranteesWarrantiesAndIndemnityInsurances": {
+        "hasWarranties": {
+          "yesNo": "Yes",
+          "details": [
+            {
+              "type": "New Home Warranty (Construtora)",
+              "provider": "Construtora Cyrela",
+              "validUntil": "2028-12-31",
+              "attachments": "Attached"
+            },
+            {
+              "type": "Móveis Planejados",
+              "provider": "Florense",
+              "validUntil": "2029-05-10",
+              "attachments": "Attached"
+            }
+          ]
+        }
+      },
+      "occupiers": {
+        "areThereOccupiers": "Yes",
+        "occupiersDetails": [
+          {
+            "name": "Mariana Alves de Carvalho",
+            "over17": "Yes",
+            "willVacateOnCompletion": "Yes"
+          },
+          {
+            "name": "Rafael Carvalho Neto",
+            "over17": "Yes",
+            "willVacateOnCompletion": "Yes"
+          },
+          {
+            "name": "Dependente 1",
+            "over17": "No",
+            "willVacateOnCompletion": "Yes"
+          },
+          {
+            "name": "Dependente 2",
+            "over17": "No",
+            "willVacateOnCompletion": "Yes"
+          }
+        ]
+      },
+      "completionAndMoving": {
+        "proposedCompletionDate": "2026-10-30",
+        "specialRequirements": "Desocupação física do imóvel ocorrerá em até 30 dias após a quitação total e lavratura da escritura, com retenção de 5% do valor retido em escrow account até a entrega das chaves à compradora."
+      },
+      "confirmationOfAccuracyByOwners": {
+        "confirmed": true,
+        "dateConfirmed": "2026-09-18T10:05:00-03:00"
+      }
+    },
+    "history_transactional": [
+      {
+        "event_type": "Sold",
+        "date": "2021-05-14T10:00:00-03:00",
+        "price": 950000.0,
+        "currency": "BRL",
+        "buyer": "Mariana Alves de Carvalho e Rafael Carvalho Neto",
+        "seller": "Construtora Cyrela",
+        "notes": "Compra direto com a construtora, financiamento pelo Banco Itaú.",
+        "dataSource": "Cartório de Imóveis"
+      },
+      {
+        "event_type": "Listed",
+        "date": "2026-04-01T09:30:00-03:00",
+        "price": 1480000.0,
+        "currency": "BRL",
+        "agency": "Alameda Negócios Imobiliários",
+        "notes": "Publicação inicial do anúncio nos portais",
+        "dataSource": "MLS / CRM Interno"
+      },
+      {
+        "event_type": "Price Change",
+        "date": "2026-08-15T11:00:00-03:00",
+        "price": 1450000.0,
+        "currency": "BRL",
+        "notes": "Redução estratégica de preço para atrair novas ofertas",
+        "dataSource": "MLS / CRM Interno"
+      },
+      {
+        "event_type": "Under Offer",
+        "date": "2026-09-05T16:45:00-03:00",
+        "price": 1410000.0,
+        "currency": "BRL",
+        "buyer": "Helena Duarte",
+        "notes": "Oferta formalizada após a segunda visita da cliente",
+        "dataSource": "MLS / CRM Interno"
+      },
+      {
+        "event_type": "Contracts Exchanged",
+        "date": "2026-09-28T14:30:00-03:00",
+        "price": 1410000.0,
+        "currency": "BRL",
+        "buyer": "Helena Duarte",
+        "seller": "Mariana Alves de Carvalho e Rafael Carvalho Neto",
+        "notes": "Assinatura digital do compromisso de compra e venda com pagamento do sinal (20%)",
+        "dataSource": "Plataforma Jurídica"
+      }
+    ]
+  },
+  "consolidated_indexes": {
+    "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+    "bundle_ref": "bundle-mb-481",
+    "listing_ref": "listing-jardins-142",
+    "mandate_ref": "mandate-481",
+    "transaction_ref": "tx-f8a9d2c1-4e6b-8a9d-1c2d3e4f5a6b",
+    "participant_roles": [
+      "Buyer",
+      "Buyer's Conveyancer",
+      "Estate Agent",
+      "Lender",
+      "Seller",
+      "Seller's Conveyancer",
+      "Surveyor"
+    ],
+    "canonical_relationships": [
+      "administered_by",
+      "advertised_as",
+      "closes_through",
+      "embodied_in",
+      "evidenced_by",
+      "handled_by",
+      "included_in",
+      "located_at",
+      "occupied_by",
+      "owned_by",
+      "part_of",
+      "partnered_with",
+      "possessed_by",
+      "published_by",
+      "published_on",
+      "receives",
+      "regulated_by",
+      "represented_by",
+      "results_in",
+      "situated_on"
+    ],
+    "temporal_axes": [
+      "occurred_at",
+      "valid_from",
+      "valid_to",
+      "issued_at",
+      "delivery_at",
+      "knowledge_at",
+      "recorded_at",
+      "accepted_k",
+      "external_timestamp"
+    ],
+    "operational_sections": [
+      "access_and_key_management",
+      "showings_and_appointments",
+      "internet_tracking_metrics",
+      "property_pack",
+      "history_transactional"
+    ]
+  },
+  "known_source_discrepancies": [
+    {
+      "field": "property_pack.marketingTenure",
+      "canonical_value": "leasehold",
+      "note": "Preserved as operational source field; Brazilian registry semantics remain in canonical ownership/registry layer."
+    },
+    {
+      "field": "property_pack.location.bng",
+      "note": "British National Grid-like source field preserved as supplied; canonical coordinates remain latitude/longitude."
+    },
+    {
+      "field": "property_pack.councilTax",
+      "note": "Preserved as operational tax label; Brazilian equivalent is municipal tax/inscricao and remains separate."
+    },
+    {
+      "field": "property_pack.energyEfficiency",
+      "note": "Preserved as source operational energy certificate; not converted into a Quipu ValueContract."
+    },
+    {
+      "field": "property_pack.ownership.leaseholdInformation",
+      "note": "Preserved without replacing canonical RegistryEvidence/OwnershipArrangement."
+    },
+    {
+      "field": "operational_transaction.status",
+      "canonical_value": "Contracts exchanged",
+      "note": "Canonical closing remains open/pre-completion with explicit milestones."
+    }
+  ],
+  "completeness_recovered": [
+    "participantes detalhados, capacity, KYC/AML e contatos",
+    "transaction metadata e ciclo pré-completion",
+    "lockbox, chaves físicas e movimentação de chaves",
+    "visitas, appointments, open house e feedback",
+    "métricas de portais, leads e redes sociais",
+    "UPRN/identificadores, geolocalização e autoridade local",
+    "media, planta, tour virtual e EPC",
+    "cômodos com dimensões e características",
+    "escolas, transporte e saúde próximos",
+    "leasehold, landlord, managing agent, service charge e reserve fund",
+    "restrições de locação, seguro, disputas, segurança predial e alterações",
+    "estacionamento, acessibilidade, energia, água, eletricidade, conectividade e aquecimento",
+    "garantias, ocupantes, desocupação e requisitos de completion",
+    "histórico transacional de compra, anúncio, alteração de preço, oferta e contratos"
+  ]
+}
