@@ -1,0 +1,3193 @@
+{
+  "macro_area": {
+    "id": "asset_management",
+    "order": 7,
+    "label": "Asset Management"
+  },
+  "subarea": {
+    "id": "insurance_warranty_maintenance_condition",
+    "order": 2,
+    "label": "Insurance, Warranty, Maintenance and Condition",
+    "facet_number": 21,
+    "description": "Property protection, inspection, maintenance, warranty and lifecycle condition.",
+    "typical_concepts": {
+      "coverage_end_time": {
+        "ref": "base0001.coverage_end_time@1",
+        "kind": "property",
+        "definition": "The time when the live blog will stop covering the Event. Note that coverage may continue after the Event concludes.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LiveBlogPosting"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/coverageEndTime",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "coverage_start_time": {
+        "ref": "base0001.coverage_start_time@1",
+        "kind": "property",
+        "definition": "The time when the live blog will begin covering the Event. Note that coverage may begin before the Event's start time. The LiveBlogPosting may also be created before coverage begins.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LiveBlogPosting"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/coverageStartTime",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_condition": {
+        "ref": "base0001.item_condition@1",
+        "kind": "property",
+        "definition": "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OfferItemCondition"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemCondition",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "warranty": {
+        "ref": "base0001.warranty@1",
+        "kind": "property",
+        "definition": "The warranty promise(s) included in the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/WarrantyPromise"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/warranty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Cooling",
+        "source_native_name": "Cooling",
+        "source_label": "Cooling",
+        "source_definition": "A list describing the cooling or air conditioning features of the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Cooling",
+        "source_enum_ref": "org.reso.metadata.enums.Cooling",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Cooling",
+        "source_native_name": "Cooling",
+        "source_label": "Cooling",
+        "source_definition": "A list describing the cooling or air conditioning features of the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Cooling",
+        "source_enum_ref": "org.reso.metadata.enums.Cooling",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CoolingYN",
+        "source_native_name": "CoolingYN",
+        "source_label": "Cooling Yes/No",
+        "source_definition": "Indicates whether or not the building has some form of cooling or air conditioning.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoolingYN",
+        "source_native_name": "CoolingYN",
+        "source_label": "Cooling Yes/No",
+        "source_definition": "Indicates whether or not the property has some form of cooling or air conditioning.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the building or property. The current use is an important factor in understanding the overall condition of the land and determining its appropriateness for intended use.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the property. The current use of the property is an important factor in understanding the overall condition of the land and determining appropriateness for intended use.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Disclaimer",
+        "source_native_name": "Disclaimer",
+        "source_label": "Disclaimer",
+        "source_definition": "Text that serves as the negation or limitation of the rights under a warranty given by a seller to a buyer.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online and typically describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online. This is typically information that describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearRenovated",
+        "source_native_name": "YearRenovated",
+        "source_label": "Year Renovated",
+        "source_definition": "The year of the most recent major rebuild or renovation of the structure.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.HomeWarrantyYN",
+        "source_native_name": "HomeWarrantyYN",
+        "source_label": "Home Warranty Yes/No",
+        "source_definition": "Indicates whether or not a home warranty is included in the sale of the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GeneralCondition",
+        "source_native_name": "GeneralCondition",
+        "source_label": "General Condition",
+        "source_definition": "A list describing the condition of the building and any other structures included in the sale.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GeneralCondition",
+        "source_enum_ref": "org.reso.metadata.enums.GeneralCondition",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.OperatingExpense",
+        "source_native_name": "OperatingExpense",
+        "source_label": "Operating Expense",
+        "source_definition": "The costs associated with the operation and maintenance of the building or income-producing property.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.InsuranceExpense",
+        "source_native_name": "InsuranceExpense",
+        "source_label": "Insurance Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OperatingExpense",
+        "source_native_name": "OperatingExpense",
+        "source_label": "Operating Expense",
+        "source_definition": "The costs associated with the operation and maintenance of an income-producing property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyCondition",
+        "source_native_name": "PropertyCondition",
+        "source_label": "Property Condition",
+        "source_definition": "A list describing the condition of the property and any structures included in the sale.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertyCondition",
+        "source_enum_ref": "org.reso.metadata.enums.PropertyCondition",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.MaintenanceExpense",
+        "source_native_name": "MaintenanceExpense",
+        "source_label": "Maintenance Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.YearBuiltEffective",
+        "source_native_name": "YearBuiltEffective",
+        "source_label": "Year Built Effective",
+        "source_definition": "The year a major rebuild/renovation of the building occurred.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MaintenanceExpense",
+        "source_native_name": "MaintenanceExpense",
+        "source_label": "Maintenance Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RoadResponsibility",
+        "source_native_name": "RoadResponsibility",
+        "source_label": "Road Responsibility",
+        "source_definition": "The person or entity responsible for road maintenance (e.g., City, County, Private).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RoadResponsibility",
+        "source_enum_ref": "org.reso.metadata.enums.RoadResponsibility",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearBuiltEffective",
+        "source_native_name": "YearBuiltEffective",
+        "source_label": "Year Built Effective",
+        "source_definition": "The year a major rebuild/renovated of the structure occurred.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.SpecialAssessmentYN",
+        "source_native_name": "SpecialAssessmentYN",
+        "source_label": "Special Assessment Yes/No",
+        "source_definition": "Indicates whether or not the building has a special assessment characterized by an extra fee that is separate from a typical maintenance fee or common charge that an association may charge to a homeowner in case reserve funds are insufficient.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingConsiderations",
+        "source_native_name": "ShowingConsiderations",
+        "source_label": "Showing Considerations",
+        "source_definition": "A pick list of conditions that may require caution or further consideration, such as bringing someone with you, when showing the property (i.e., Electricity Not On, Inconsistent Cell Service, No Exterior Lighting).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ShowingConsiderations",
+        "source_enum_ref": "org.reso.metadata.enums.ShowingConsiderations",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DistanceToStreetComments",
+        "source_native_name": "DistanceToStreetComments",
+        "source_label": "Distance To Street Comments",
+        "source_definition": "Provides details about the property's access to a maintained road or street adjacent to the lot, conditions of access and distance to a maintained road.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SpecialListingConditions",
+        "source_native_name": "SpecialListingConditions",
+        "source_label": "Special Listing Conditions",
+        "source_definition": "A list of options that describe the type of sale (e.g., Standard, REO, Short Sale, Probate, Auction, NOD) at the time of listing.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.SpecialListingConditions",
+        "source_enum_ref": "org.reso.metadata.enums.SpecialListingConditions",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FurnitureReplacementExpense",
+        "source_native_name": "FurnitureReplacementExpense",
+        "source_label": "Furniture Replacement Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance",
+        "source_native_name": "insurance",
+        "source_label": "Insurance",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "health_plan_coinsurance_option",
+            "ref": "base0001.health_plan_coinsurance_option@1",
+            "kind": "property",
+            "definition": "Whether the coinsurance applies before or after deductible, etc. TODO: Is this a closed set?",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_plan_coinsurance_rate",
+            "ref": "base0001.health_plan_coinsurance_rate@1",
+            "kind": "property",
+            "definition": "The rate of coinsurance expressed as a number between 0.0 and 1.0.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_plan_drug_tier",
+            "ref": "base0001.health_plan_drug_tier@1",
+            "kind": "property",
+            "definition": "The tier(s) of drugs offered by this formulary or insurance plan.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_plan_network_id",
+            "ref": "base0001.health_plan_network_id@1",
+            "kind": "property",
+            "definition": "Name or unique ID of network. (Networks are often reused across different insurance plans.)",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "included_in_health_insurance_plan",
+            "ref": "base0001.included_in_health_insurance_plan@1",
+            "kind": "property",
+            "definition": "The insurance plans that cover this drug.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.isInsured",
+        "source_native_name": "isInsured",
+        "source_label": "Do you currently insure the property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.oneOf[0].details",
+        "source_native_name": "details",
+        "source_label": "Why not?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "application_contact",
+            "ref": "base0001.application_contact@1",
+            "kind": "property",
+            "definition": "Contact details for further information relevant to this job posting.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "asin",
+            "ref": "base0001.asin@1",
+            "kind": "property",
+            "definition": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number)'s article).\n\nNote also that this is a definition for how to include ASINs in Schema.org data, and not a definition of ASINs in general - see documentation from Amazon for authoritative details.\nASINs are most commonly encoded as text strings, but the [asin] property supports URL/URI as potential values too.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cost_origin",
+            "ref": "base0001.cost_origin@1",
+            "kind": "property",
+            "definition": "Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cvd_facility_county",
+            "ref": "base0001.cvd_facility_county@1",
+            "kind": "property",
+            "definition": "Name of the County of the NHSN facility that this data record applies to. Use [[cvdFacilityId]] to identify the facility. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cvd_facility_id",
+            "ref": "base0001.cvd_facility_id@1",
+            "kind": "property",
+            "definition": "Identifier of the NHSN facility that this data record applies to. Use [[cvdFacilityCounty]] to indicate the county. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "g_tinid",
+            "ref": "base0001.g_tinid@1",
+            "kind": "property",
+            "definition": "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nA correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) expresses GTINs as URLs (URIs, IRIs, etc.).\nDigital Links should be populated into the [[hasGS1DigitalLink]] attribute.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "gtin12",
+            "ref": "base0001.gtin12@1",
+            "kind": "property",
+            "definition": "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "gtin13",
+            "ref": "base0001.gtin13@1",
+            "kind": "property",
+            "definition": "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.notices.requiredMaintenance",
+        "source_native_name": "requiredMaintenance",
+        "source_label": "Notice informing you that maintenance, repairs or improvements are required to your property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.oneOf[0].isInsured",
+        "source_native_name": "isInsured",
+        "source_label": "isInsured",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.oneOf[1].isInsured",
+        "source_native_name": "isInsured",
+        "source_label": "isInsured",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].inside.other.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.fixturesAndFittings.lightFittings",
+        "source_native_name": "lightFittings",
+        "source_label": "Light fittings",
+        "source_definition": "Note: If the seller removes a light fitting, it is assumed that the seller will replace the fitting with a ceiling rose, a flex, bulb holder and bulb and that they will be left in a safe condition.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.notices.requiredMaintenance.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].grounds.other.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].inside.floors.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].outside.other.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.oneOf[1].insuranceClaims",
+        "source_native_name": "insuranceClaims",
+        "source_label": "Have you ever made a claim against your building insurance in relation to the property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].grounds.garage.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "insurance",
+        "label": "insurance",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "insured_value",
+        "label": "insured value",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "coverage",
+        "label": "coverage",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "warranty",
+        "label": "warranty",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "defect",
+        "label": "defect",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "inspection",
+        "label": "inspection",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "planned_maintenance",
+        "label": "planned maintenance",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "corrective_maintenance",
+        "label": "corrective maintenance",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "refurbishment",
+        "label": "refurbishment",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "building_condition",
+        "label": "building condition",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "asset_conservation",
+        "label": "asset conservation",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "maintenance_responsibility",
+        "label": "maintenance responsibility",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "building_cooling",
+        "label": "cooling",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Cooling",
+            "source_native_name": "Cooling",
+            "source_data_type": "org.reso.metadata.enums.Cooling",
+            "source_enum_ref": "org.reso.metadata.enums.Cooling",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "cooling",
+        "label": "cooling",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Cooling",
+            "source_native_name": "Cooling",
+            "source_data_type": "org.reso.metadata.enums.Cooling",
+            "source_enum_ref": "org.reso.metadata.enums.Cooling",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_cooling_yn",
+        "label": "cooling yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CoolingYN",
+            "source_native_name": "CoolingYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "cooling_yn",
+        "label": "cooling yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoolingYN",
+            "source_native_name": "CoolingYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_current_use",
+        "label": "current use",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CurrentUse",
+            "source_native_name": "CurrentUse",
+            "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "current_use",
+        "label": "current use",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CurrentUse",
+            "source_native_name": "CurrentUse",
+            "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "disclaimer",
+        "label": "disclaimer",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Disclaimer",
+            "source_native_name": "Disclaimer",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_public_remarks",
+        "label": "public remarks",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PublicRemarks",
+            "source_native_name": "PublicRemarks",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "public_remarks",
+        "label": "public remarks",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PublicRemarks",
+            "source_native_name": "PublicRemarks",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "year_renovated",
+        "label": "year renovated",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.YearRenovated",
+            "source_native_name": "YearRenovated",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_common_interest",
+        "label": "common interest",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CommonInterest",
+            "source_native_name": "CommonInterest",
+            "source_data_type": "org.reso.metadata.enums.CommonInterest",
+            "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "common_interest",
+        "label": "common interest",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CommonInterest",
+            "source_native_name": "CommonInterest",
+            "source_data_type": "org.reso.metadata.enums.CommonInterest",
+            "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "home_warranty_yn",
+        "label": "home warranty yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.HomeWarrantyYN",
+            "source_native_name": "HomeWarrantyYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_general_condition",
+        "label": "general condition",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GeneralCondition",
+            "source_native_name": "GeneralCondition",
+            "source_data_type": "org.reso.metadata.enums.GeneralCondition",
+            "source_enum_ref": "org.reso.metadata.enums.GeneralCondition",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_operating_expense",
+        "label": "operating expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.OperatingExpense",
+            "source_native_name": "OperatingExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "insurance_expense",
+        "label": "insurance expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.InsuranceExpense",
+            "source_native_name": "InsuranceExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "operating_expense",
+        "label": "operating expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OperatingExpense",
+            "source_native_name": "OperatingExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_condition",
+        "label": "property condition",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertyCondition",
+            "source_native_name": "PropertyCondition",
+            "source_data_type": "org.reso.metadata.enums.PropertyCondition",
+            "source_enum_ref": "org.reso.metadata.enums.PropertyCondition",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_maintenance_expense",
+        "label": "maintenance expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.MaintenanceExpense",
+            "source_native_name": "MaintenanceExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_year_built_effective",
+        "label": "year built effective",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.YearBuiltEffective",
+            "source_native_name": "YearBuiltEffective",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "maintenance_expense",
+        "label": "maintenance expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.MaintenanceExpense",
+            "source_native_name": "MaintenanceExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "road_responsibility",
+        "label": "road responsibility",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.RoadResponsibility",
+            "source_native_name": "RoadResponsibility",
+            "source_data_type": "org.reso.metadata.enums.RoadResponsibility",
+            "source_enum_ref": "org.reso.metadata.enums.RoadResponsibility",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "year_built_effective",
+        "label": "year built effective",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.YearBuiltEffective",
+            "source_native_name": "YearBuiltEffective",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_special_assessment_yn",
+        "label": "special assessment yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.SpecialAssessmentYN",
+            "source_native_name": "SpecialAssessmentYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_considerations",
+        "label": "showing considerations",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ShowingConsiderations",
+            "source_native_name": "ShowingConsiderations",
+            "source_data_type": "org.reso.metadata.enums.ShowingConsiderations",
+            "source_enum_ref": "org.reso.metadata.enums.ShowingConsiderations",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "distance_to_street_comments",
+        "label": "distance to street comments",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DistanceToStreetComments",
+            "source_native_name": "DistanceToStreetComments",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "special_listing_conditions",
+        "label": "special listing conditions",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SpecialListingConditions",
+            "source_native_name": "SpecialListingConditions",
+            "source_data_type": "org.reso.metadata.enums.SpecialListingConditions",
+            "source_enum_ref": "org.reso.metadata.enums.SpecialListingConditions",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "furniture_replacement_expense",
+        "label": "furniture replacement expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.FurnitureReplacementExpense",
+            "source_native_name": "FurnitureReplacementExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_pack_insurance",
+        "label": "insurance",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "propertyPack.insurance",
+            "source_native_name": "insurance",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_definition_crosswalk_ambiguous",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "insurance_is_insured",
+        "label": "do you currently insure the property?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "one_of_0_details",
+        "label": "why not?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "notices_required_maintenance",
+        "label": "notice informing you that maintenance, repairs or improvements are required to your property?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "one_of_0_is_insured",
+        "label": "isinsured",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "one_of_1_is_insured",
+        "label": "isinsured",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "other_defects",
+        "label": "defects",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "floors_defects",
+        "label": "defects",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "garage_defects",
+        "label": "defects",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "other_condition",
+        "label": "condition",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "water_defects",
+        "label": "defects",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "fixtures_and_fittings_light_fittings",
+        "label": "light fittings",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "required_maintenance_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ceilings_defects",
+        "label": "defects",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "floors_condition",
+        "label": "condition",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "woodwork_defects",
+        "label": "defects",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "windows_defects",
+        "label": "defects",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "gas_oil_defects",
+        "label": "defects",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "one_of_1_insurance_claims",
+        "label": "have you ever made a claim against your building insurance in relation to the property?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "garage_condition",
+        "label": "condition",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Cooling",
+        "source_native_name": "Cooling",
+        "source_label": "Cooling",
+        "source_definition": "A list describing the cooling or air conditioning features of the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Cooling",
+        "source_enum_ref": "org.reso.metadata.enums.Cooling",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Cooling",
+        "source_native_name": "Cooling",
+        "source_label": "Cooling",
+        "source_definition": "A list describing the cooling or air conditioning features of the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Cooling",
+        "source_enum_ref": "org.reso.metadata.enums.Cooling",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CoolingYN",
+        "source_native_name": "CoolingYN",
+        "source_label": "Cooling Yes/No",
+        "source_definition": "Indicates whether or not the building has some form of cooling or air conditioning.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoolingYN",
+        "source_native_name": "CoolingYN",
+        "source_label": "Cooling Yes/No",
+        "source_definition": "Indicates whether or not the property has some form of cooling or air conditioning.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the building or property. The current use is an important factor in understanding the overall condition of the land and determining its appropriateness for intended use.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the property. The current use of the property is an important factor in understanding the overall condition of the land and determining appropriateness for intended use.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Disclaimer",
+        "source_native_name": "Disclaimer",
+        "source_label": "Disclaimer",
+        "source_definition": "Text that serves as the negation or limitation of the rights under a warranty given by a seller to a buyer.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online and typically describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online. This is typically information that describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearRenovated",
+        "source_native_name": "YearRenovated",
+        "source_label": "Year Renovated",
+        "source_definition": "The year of the most recent major rebuild or renovation of the structure.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.HomeWarrantyYN",
+        "source_native_name": "HomeWarrantyYN",
+        "source_label": "Home Warranty Yes/No",
+        "source_definition": "Indicates whether or not a home warranty is included in the sale of the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GeneralCondition",
+        "source_native_name": "GeneralCondition",
+        "source_label": "General Condition",
+        "source_definition": "A list describing the condition of the building and any other structures included in the sale.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GeneralCondition",
+        "source_enum_ref": "org.reso.metadata.enums.GeneralCondition",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.OperatingExpense",
+        "source_native_name": "OperatingExpense",
+        "source_label": "Operating Expense",
+        "source_definition": "The costs associated with the operation and maintenance of the building or income-producing property.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.InsuranceExpense",
+        "source_native_name": "InsuranceExpense",
+        "source_label": "Insurance Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OperatingExpense",
+        "source_native_name": "OperatingExpense",
+        "source_label": "Operating Expense",
+        "source_definition": "The costs associated with the operation and maintenance of an income-producing property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyCondition",
+        "source_native_name": "PropertyCondition",
+        "source_label": "Property Condition",
+        "source_definition": "A list describing the condition of the property and any structures included in the sale.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertyCondition",
+        "source_enum_ref": "org.reso.metadata.enums.PropertyCondition",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.MaintenanceExpense",
+        "source_native_name": "MaintenanceExpense",
+        "source_label": "Maintenance Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.YearBuiltEffective",
+        "source_native_name": "YearBuiltEffective",
+        "source_label": "Year Built Effective",
+        "source_definition": "The year a major rebuild/renovation of the building occurred.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MaintenanceExpense",
+        "source_native_name": "MaintenanceExpense",
+        "source_label": "Maintenance Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RoadResponsibility",
+        "source_native_name": "RoadResponsibility",
+        "source_label": "Road Responsibility",
+        "source_definition": "The person or entity responsible for road maintenance (e.g., City, County, Private).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RoadResponsibility",
+        "source_enum_ref": "org.reso.metadata.enums.RoadResponsibility",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearBuiltEffective",
+        "source_native_name": "YearBuiltEffective",
+        "source_label": "Year Built Effective",
+        "source_definition": "The year a major rebuild/renovated of the structure occurred.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.SpecialAssessmentYN",
+        "source_native_name": "SpecialAssessmentYN",
+        "source_label": "Special Assessment Yes/No",
+        "source_definition": "Indicates whether or not the building has a special assessment characterized by an extra fee that is separate from a typical maintenance fee or common charge that an association may charge to a homeowner in case reserve funds are insufficient.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ShowingConsiderations",
+        "source_native_name": "ShowingConsiderations",
+        "source_label": "Showing Considerations",
+        "source_definition": "A pick list of conditions that may require caution or further consideration, such as bringing someone with you, when showing the property (i.e., Electricity Not On, Inconsistent Cell Service, No Exterior Lighting).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ShowingConsiderations",
+        "source_enum_ref": "org.reso.metadata.enums.ShowingConsiderations",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DistanceToStreetComments",
+        "source_native_name": "DistanceToStreetComments",
+        "source_label": "Distance To Street Comments",
+        "source_definition": "Provides details about the property's access to a maintained road or street adjacent to the lot, conditions of access and distance to a maintained road.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SpecialListingConditions",
+        "source_native_name": "SpecialListingConditions",
+        "source_label": "Special Listing Conditions",
+        "source_definition": "A list of options that describe the type of sale (e.g., Standard, REO, Short Sale, Probate, Auction, NOD) at the time of listing.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.SpecialListingConditions",
+        "source_enum_ref": "org.reso.metadata.enums.SpecialListingConditions",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FurnitureReplacementExpense",
+        "source_native_name": "FurnitureReplacementExpense",
+        "source_label": "Furniture Replacement Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance",
+        "source_native_name": "insurance",
+        "source_label": "Insurance",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "health_plan_coinsurance_option",
+            "ref": "base0001.health_plan_coinsurance_option@1",
+            "kind": "property",
+            "definition": "Whether the coinsurance applies before or after deductible, etc. TODO: Is this a closed set?",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_plan_coinsurance_rate",
+            "ref": "base0001.health_plan_coinsurance_rate@1",
+            "kind": "property",
+            "definition": "The rate of coinsurance expressed as a number between 0.0 and 1.0.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_plan_drug_tier",
+            "ref": "base0001.health_plan_drug_tier@1",
+            "kind": "property",
+            "definition": "The tier(s) of drugs offered by this formulary or insurance plan.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_plan_network_id",
+            "ref": "base0001.health_plan_network_id@1",
+            "kind": "property",
+            "definition": "Name or unique ID of network. (Networks are often reused across different insurance plans.)",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "included_in_health_insurance_plan",
+            "ref": "base0001.included_in_health_insurance_plan@1",
+            "kind": "property",
+            "definition": "The insurance plans that cover this drug.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.isInsured",
+        "source_native_name": "isInsured",
+        "source_label": "Do you currently insure the property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.oneOf[0].details",
+        "source_native_name": "details",
+        "source_label": "Why not?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "application_contact",
+            "ref": "base0001.application_contact@1",
+            "kind": "property",
+            "definition": "Contact details for further information relevant to this job posting.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "asin",
+            "ref": "base0001.asin@1",
+            "kind": "property",
+            "definition": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number)'s article).\n\nNote also that this is a definition for how to include ASINs in Schema.org data, and not a definition of ASINs in general - see documentation from Amazon for authoritative details.\nASINs are most commonly encoded as text strings, but the [asin] property supports URL/URI as potential values too.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cost_origin",
+            "ref": "base0001.cost_origin@1",
+            "kind": "property",
+            "definition": "Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cvd_facility_county",
+            "ref": "base0001.cvd_facility_county@1",
+            "kind": "property",
+            "definition": "Name of the County of the NHSN facility that this data record applies to. Use [[cvdFacilityId]] to identify the facility. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cvd_facility_id",
+            "ref": "base0001.cvd_facility_id@1",
+            "kind": "property",
+            "definition": "Identifier of the NHSN facility that this data record applies to. Use [[cvdFacilityCounty]] to indicate the county. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "g_tinid",
+            "ref": "base0001.g_tinid@1",
+            "kind": "property",
+            "definition": "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nA correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) expresses GTINs as URLs (URIs, IRIs, etc.).\nDigital Links should be populated into the [[hasGS1DigitalLink]] attribute.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "gtin12",
+            "ref": "base0001.gtin12@1",
+            "kind": "property",
+            "definition": "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "gtin13",
+            "ref": "base0001.gtin13@1",
+            "kind": "property",
+            "definition": "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.notices.requiredMaintenance",
+        "source_native_name": "requiredMaintenance",
+        "source_label": "Notice informing you that maintenance, repairs or improvements are required to your property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.oneOf[0].isInsured",
+        "source_native_name": "isInsured",
+        "source_label": "isInsured",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.oneOf[1].isInsured",
+        "source_native_name": "isInsured",
+        "source_label": "isInsured",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].inside.other.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].grounds.other.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].inside.floors.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].outside.other.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].grounds.garage.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].inside.other.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].services.water.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.fixturesAndFittings.lightFittings",
+        "source_native_name": "lightFittings",
+        "source_label": "Light fittings",
+        "source_definition": "Note: If the seller removes a light fitting, it is assumed that the seller will replace the fitting with a ceiling rose, a flex, bulb holder and bulb and that they will be left in a safe condition.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.notices.requiredMaintenance.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].grounds.other.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].inside.ceilings.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].inside.floors.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].inside.woodwork.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].outside.other.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].outside.windows.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].services.gasOil.defects",
+        "source_native_name": "defects",
+        "source_label": "defects",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_explicit_definition_crosswalk",
+        "binding": {
+          "symbol": "serious_adverse_outcome",
+          "ref": "base0001.serious_adverse_outcome@1",
+          "kind": "property",
+          "definition": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+          "match_method": "lexicon_definition_explicitly_mentions_source_field",
+          "confidence": 0.98
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.insurance.oneOf[1].insuranceClaims",
+        "source_native_name": "insuranceClaims",
+        "source_label": "Have you ever made a claim against your building insurance in relation to the property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].grounds.garage.condition",
+        "source_native_name": "condition",
+        "source_label": "condition",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "cause",
+            "ref": "base0001.cause@1",
+            "kind": "property",
+            "definition": "The cause of a medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "cause_of",
+            "ref": "base0001.cause_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, symptom, sign, etc. caused.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "diagnosis",
+            "ref": "base0001.diagnosis@1",
+            "kind": "property",
+            "definition": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "differential_diagnosis",
+            "ref": "base0001.differential_diagnosis@1",
+            "kind": "property",
+            "definition": "One of a set of differential diagnoses for the condition. Specifically, a closely-related or competing diagnosis typically considered later in the cognitive process whereby this medical condition is distinguished from others most likely responsible for a similar collection of signs and symptoms to reach the most parsimonious diagnosis or diagnoses in a patient.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "estimates_risk_of",
+            "ref": "base0001.estimates_risk_of@1",
+            "kind": "property",
+            "definition": "The condition, complication, or symptom whose risk is being estimated.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "expected_prognosis",
+            "ref": "base0001.expected_prognosis@1",
+            "kind": "property",
+            "definition": "The likely outcome in either the short term or long term of the medical condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "guideline_subject",
+            "ref": "base0001.guideline_subject@1",
+            "kind": "property",
+            "definition": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "health_condition",
+            "ref": "base0001.health_condition@1",
+            "kind": "property",
+            "definition": "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
