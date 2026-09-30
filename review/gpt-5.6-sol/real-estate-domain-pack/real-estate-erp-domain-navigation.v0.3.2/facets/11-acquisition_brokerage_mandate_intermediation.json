@@ -1,0 +1,3091 @@
+{
+  "macro_area": {
+    "id": "commercial",
+    "order": 3,
+    "label": "Commercial"
+  },
+  "subarea": {
+    "id": "acquisition_brokerage_mandate_intermediation",
+    "order": 1,
+    "label": "Acquisition, Brokerage Mandate and Intermediation",
+    "facet_number": 11,
+    "description": "Authority, mandate, brokerage relationships and commercial intermediation.",
+    "typical_concepts": {
+      "area_served": {
+        "ref": "base0001.area_served@1",
+        "kind": "property",
+        "definition": "The geographic area where a service or offered item is provided.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdministrativeArea",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/areaServed",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasServiceArea",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "broker": {
+        "ref": "base0001.broker@1",
+        "kind": "property",
+        "definition": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Invoice",
+              "https://schema.org/Order",
+              "https://schema.org/Reservation",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/broker",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "business_function": {
+        "ref": "base0001.business_function@1",
+        "kind": "property",
+        "definition": "The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer",
+              "https://schema.org/TypeAndQuantityNode"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/BusinessFunction"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/businessFunction",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "buyer": {
+        "ref": "base0001.buyer@1",
+        "kind": "property",
+        "definition": "A sub property of participant. The participant/person/organization that bought the object.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/SellAction"
+            ],
+            "parent_refs": [
+              "https://schema.org/participant"
+            ],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/buyer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "fees_and_commissions_specification": {
+        "ref": "base0001.fees_and_commissions_specification@1",
+        "kind": "property",
+        "definition": "Description of fees, commissions, and other terms applied either to a class of financial product, or by a financial service organization.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/FinancialProduct",
+              "https://schema.org/FinancialService"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/feesAndCommissionsSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "item_offered": {
+        "ref": "base0001.item_offered@1",
+        "kind": "property",
+        "definition": "An item being offered (or demanded). The transactional nature of the offer or demand is documented using [[businessFunction]], e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateOffer",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/MenuItem",
+              "https://schema.org/Product",
+              "https://schema.org/Service",
+              "https://schema.org/Trip"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/itemOffered",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "offer_count": {
+        "ref": "base0001.offer_count@1",
+        "kind": "property",
+        "definition": "The number of offers for the product.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/AggregateOffer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/offerCount",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price_specification": {
+        "ref": "base0001.price_specification@1",
+        "kind": "property",
+        "definition": "One or more detailed price specifications, indicating the unit price and delivery or payment charges.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PriceSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "provider": {
+        "ref": "base0001.provider@1",
+        "kind": "property",
+        "definition": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Action",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/Invoice",
+              "https://schema.org/OfferShippingDetails",
+              "https://schema.org/ParcelDelivery",
+              "https://schema.org/Reservation",
+              "https://schema.org/Service",
+              "https://schema.org/Trip"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#ServiceProvider",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/provider",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "seller": {
+        "ref": "base0001.seller@1",
+        "kind": "property",
+        "definition": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/BuyAction",
+              "https://schema.org/Demand",
+              "https://schema.org/Flight",
+              "https://schema.org/Offer",
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [
+              "https://schema.org/participant",
+              "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasSupplier"
+            ],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#Seller",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/seller",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "service_type": {
+        "ref": "base0001.service_type@1",
+        "kind": "property",
+        "definition": "The type of service being offered, e.g. veterans' benefits, emergency relief, etc.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GovernmentBenefitsType",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/serviceType",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.OfficeName",
+        "source_native_name": "OfficeName",
+        "source_label": "Office Name",
+        "source_definition": "The legal name of the brokerage.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.OfficeName",
+        "source_native_name": "OfficeName",
+        "source_label": "Office Name",
+        "source_definition": "The legal name of the brokerage.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListTeam",
+        "source_native_name": "ListTeam",
+        "source_label": "List Team",
+        "source_definition": "Two or more agents working on the listing agent's team.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Teams",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RoomType",
+        "source_native_name": "RoomType",
+        "source_label": "Room Type",
+        "source_definition": "A list of identifiers for specific interior spaces within a structure (e.g., Bedroom, Bathroom, Kitchen, Living Room). A relational implementation of rooms must omit the type from the field name and use RoomType to create a vertical representation of the various rooms. Note that garage or basement should not be added as a room type, as these are represented by the ParkingFeatures and Basement fields, respectively.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RoomType",
+        "source_enum_ref": "org.reso.metadata.enums.RoomType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerTeam",
+        "source_native_name": "BuyerTeam",
+        "source_label": "Buyer Team",
+        "source_definition": "Two or more agents working on the buyer agent's team.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Teams",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgent",
+        "source_native_name": "ListAgent",
+        "source_label": "List Agent",
+        "source_definition": "The listing agent involved in the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgent",
+        "source_native_name": "BuyerAgent",
+        "source_label": "Buyer Agent",
+        "source_definition": "The buyer's agent involved in the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingURL",
+        "source_native_name": "ListingURL",
+        "source_label": "Listing URL",
+        "source_definition": "Provides a link to the specific listing on a brokerage website, agent website or other public-facing source.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListOffice",
+        "source_native_name": "ListOffice",
+        "source_label": "List Office",
+        "source_definition": "The listing agent's office.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Office",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerOffice",
+        "source_native_name": "BuyerOffice",
+        "source_label": "Buyer Office",
+        "source_definition": "The buyer agent's office.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Office",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgent",
+        "source_native_name": "CoListAgent",
+        "source_label": "Co-List Agent",
+        "source_definition": "The co-listing agent involved in the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Concessions",
+        "source_native_name": "Concessions",
+        "source_label": "Concessions",
+        "source_definition": "Indicates whether or not there are concessions included in the sales agreement (i.e., Yes, No or Call Listing Agent).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Concessions",
+        "source_enum_ref": "org.reso.metadata.enums.Concessions",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgent",
+        "source_native_name": "CoBuyerAgent",
+        "source_label": "Co-Buyer Agent",
+        "source_definition": "The co-buyer's agent involved in the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListOffice",
+        "source_native_name": "CoListOffice",
+        "source_label": "Co-List Office",
+        "source_definition": "The co-listing agent's office.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Office",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentAOR",
+        "source_native_name": "ListAgentAOR",
+        "source_label": "List Agent AOR",
+        "source_definition": "The listing agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentFax",
+        "source_native_name": "ListAgentFax",
+        "source_label": "List Agent Fax",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentKey",
+        "source_native_name": "ListAgentKey",
+        "source_label": "List Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the ListAgentKey is the system unique identifier from the system where the record was retrieved. This may be identical to the related xxxId. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentURL",
+        "source_native_name": "ListAgentURL",
+        "source_label": "List Agent URL",
+        "source_definition": "The website Uniform Resource Identifier (URI) of the listing agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitTypeType",
+        "source_native_name": "UnitTypeType",
+        "source_label": "Unit Type Type",
+        "source_definition": "A list of floor plans or configurations of an individual unit (e.g., 1 Bedroom, Studio, Loft) in a multi-family or multi-unit development. A relational implementation of UnitTypes must omit the type from the field name and use UnitTypeType to create a vertical representation of the various unit types. Repeating of the word \"type\" in the field name is intentional.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.UnitTypeType",
+        "source_enum_ref": "org.reso.metadata.enums.UnitTypeType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentAOR",
+        "source_native_name": "BuyerAgentAOR",
+        "source_label": "Buyer Agent AOR",
+        "source_definition": "The buyer agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentFax",
+        "source_native_name": "BuyerAgentFax",
+        "source_label": "Buyer Agent Fax",
+        "source_definition": "The North American 10-digit fax numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentKey",
+        "source_native_name": "BuyerAgentKey",
+        "source_label": "Buyer Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system in which the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentURL",
+        "source_native_name": "BuyerAgentURL",
+        "source_label": "Buyer Agent URL",
+        "source_definition": "The website Uniform Resource Identifier (URI) of the buyers agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerOffice",
+        "source_native_name": "CoBuyerOffice",
+        "source_label": "Co-Buyer Office",
+        "source_definition": "The co-buyer agent's office.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Office",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WithdrawnDate",
+        "source_native_name": "WithdrawnDate",
+        "source_label": "Withdrawn Date",
+        "source_definition": "The date that the listing was withdrawn from the market. This is not when a listing contract was canceled or closed, but a withdrawal from the market while the contract between the seller and listing agent is still in effect and an offer has not been accepted. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ActivationDate",
+        "source_native_name": "ActivationDate",
+        "source_label": "Activation Date",
+        "source_definition": "Indicates when the listing agent intends to change the property to the Active status.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentAOR",
+        "source_native_name": "CoListAgentAOR",
+        "source_label": "Co-List Agent AOR",
+        "source_definition": "The Co-listing Agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentFax",
+        "source_native_name": "CoListAgentFax",
+        "source_label": "Co-List Agent Fax",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentKey",
+        "source_native_name": "CoListAgentKey",
+        "source_label": "Co-List Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentURL",
+        "source_native_name": "CoListAgentURL",
+        "source_label": "Co-List Agent URL",
+        "source_definition": "The website Uniform Resource Identifier (URI) of the co-listing agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentEmail",
+        "source_native_name": "ListAgentEmail",
+        "source_label": "List Agent Email",
+        "source_definition": "The email address of the listing agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentMlsId",
+        "source_native_name": "ListAgentMlsId",
+        "source_label": "List Agent MLS ID",
+        "source_definition": "The local, well-known identifier for the member. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentPager",
+        "source_native_name": "ListAgentPager",
+        "source_label": "List Agent Pager",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListOfficeName",
+        "source_native_name": "ListOfficeName",
+        "source_label": "List Office Name",
+        "source_definition": "The legal name of the brokerage representing the seller.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StandardStatus",
+        "source_native_name": "StandardStatus",
+        "source_label": "Standard Status",
+        "source_definition": "The status of the listing as it reflects the state of the contract between the listing agent and seller, or an agreement with a buyer (e.g., Active, Active Under Contract, Canceled, Closed, Expired, Pending, Withdrawn). This is a single-select field.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.StandardStatus",
+        "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentEmail",
+        "source_native_name": "BuyerAgentEmail",
+        "source_label": "Buyer Agent Email",
+        "source_definition": "The email address of the buyer's agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentMlsId",
+        "source_native_name": "BuyerAgentMlsId",
+        "source_label": "Buyer Agent MLS ID",
+        "source_definition": "The local, well-known identifier. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentPager",
+        "source_native_name": "BuyerAgentPager",
+        "source_label": "Buyer Agent Pager",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerOfficeName",
+        "source_native_name": "BuyerOfficeName",
+        "source_label": "Buyer Office Name",
+        "source_definition": "The legal name of the brokerage representing the buyer.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentAOR",
+        "source_native_name": "CoBuyerAgentAOR",
+        "source_label": "Co-Buyer Agent AOR",
+        "source_definition": "The co-buyer agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentFax",
+        "source_native_name": "CoBuyerAgentFax",
+        "source_label": "Co-Buyer Agent Fax",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentKey",
+        "source_native_name": "CoBuyerAgentKey",
+        "source_label": "Co-Buyer Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentURL",
+        "source_native_name": "CoBuyerAgentURL",
+        "source_label": "Co-Buyer Agent URL",
+        "source_definition": "The website Uniform Resource Identifier (URI) of the co-buyers agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnparsedAddress",
+        "source_native_name": "UnparsedAddress",
+        "source_label": "Unparsed Address",
+        "source_definition": "A text representation of the address with the full civic location as a single entity. It may optionally include any of City, StateOrProvince, PostalCode and Country.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CancellationDate",
+        "source_native_name": "CancellationDate",
+        "source_label": "Cancellation Date",
+        "source_definition": "The date that the listing contract between the seller and listing agent was canceled. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentEmail",
+        "source_native_name": "CoListAgentEmail",
+        "source_label": "Co-List Agent Email",
+        "source_definition": "The email address of the co-listing agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentMlsId",
+        "source_native_name": "CoListAgentMlsId",
+        "source_label": "Co-List Agent MLS ID",
+        "source_definition": "The local, well-known identifier. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentPager",
+        "source_native_name": "CoListAgentPager",
+        "source_label": "Co-List Agent Pager",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListOfficeName",
+        "source_native_name": "CoListOfficeName",
+        "source_label": "Co-List Office Name",
+        "source_definition": "The legal name of the brokerage co-representing the seller.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingAgreement",
+        "source_native_name": "ListingAgreement",
+        "source_label": "Listing Agreement",
+        "source_definition": "The nature of the agreement between the seller and the listing agent (e.g., Exclusive Agency, Open Listing).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingAgreement",
+        "source_enum_ref": "org.reso.metadata.enums.ListingAgreement",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StartShowingDate",
+        "source_native_name": "StartShowingDate",
+        "source_label": "Start Showing Date",
+        "source_definition": "The date the listing agent/broker expects to start showing the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentEmail",
+        "source_native_name": "CoBuyerAgentEmail",
+        "source_label": "Co-Buyer Agent Email",
+        "source_definition": "The email address of the buyer's co-agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentMlsId",
+        "source_native_name": "CoBuyerAgentMlsId",
+        "source_label": "Co-Buyer Agent MLS ID",
+        "source_definition": "The local, well-known identifier. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentPager",
+        "source_native_name": "CoBuyerAgentPager",
+        "source_label": "Co-Buyer Agent Pager",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerOfficeName",
+        "source_native_name": "CoBuyerOfficeName",
+        "source_label": "Co-Buyer Office Name",
+        "source_definition": "The legal name of the brokerage co-representing the buyer.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "property_acquisition",
+        "label": "property acquisition",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "brokerage_mandate",
+        "label": "brokerage mandate",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "exclusive_mandate",
+        "label": "exclusive mandate",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "non_exclusive_mandate",
+        "label": "non-exclusive mandate",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "agent_authorization",
+        "label": "agent authorization",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "agency",
+        "label": "agency",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "responsible_broker",
+        "label": "responsible broker",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "partner_agency",
+        "label": "partner agency",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "mandate_validity",
+        "label": "mandate validity",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "minimum_price",
+        "label": "minimum price",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "commission",
+        "label": "commission",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "commission_split",
+        "label": "commission split",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "permitted_channel",
+        "label": "permitted channel",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "member_office_name",
+        "label": "office name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.OfficeName",
+            "source_native_name": "OfficeName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "office_office_name",
+        "label": "office name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Office.OfficeName",
+            "source_native_name": "OfficeName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_team",
+        "label": "list team",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListTeam",
+            "source_native_name": "ListTeam",
+            "source_data_type": "org.reso.metadata.Teams",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "room_type",
+        "label": "room type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.RoomType",
+            "source_native_name": "RoomType",
+            "source_data_type": "org.reso.metadata.enums.RoomType",
+            "source_enum_ref": "org.reso.metadata.enums.RoomType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_team",
+        "label": "buyer team",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerTeam",
+            "source_native_name": "BuyerTeam",
+            "source_data_type": "org.reso.metadata.Teams",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent",
+        "label": "list agent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgent",
+            "source_native_name": "ListAgent",
+            "source_data_type": "org.reso.metadata.Member",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent",
+        "label": "buyer agent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgent",
+            "source_native_name": "BuyerAgent",
+            "source_data_type": "org.reso.metadata.Member",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_url",
+        "label": "listing url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingURL",
+            "source_native_name": "ListingURL",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_office",
+        "label": "list office",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListOffice",
+            "source_native_name": "ListOffice",
+            "source_data_type": "org.reso.metadata.Office",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_office",
+        "label": "buyer office",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerOffice",
+            "source_native_name": "BuyerOffice",
+            "source_data_type": "org.reso.metadata.Office",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent",
+        "label": "co-list agent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgent",
+            "source_native_name": "CoListAgent",
+            "source_data_type": "org.reso.metadata.Member",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "concessions",
+        "label": "concessions",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Concessions",
+            "source_native_name": "Concessions",
+            "source_data_type": "org.reso.metadata.enums.Concessions",
+            "source_enum_ref": "org.reso.metadata.enums.Concessions",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent",
+        "label": "co-buyer agent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgent",
+            "source_native_name": "CoBuyerAgent",
+            "source_data_type": "org.reso.metadata.Member",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_office",
+        "label": "co-list office",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListOffice",
+            "source_native_name": "CoListOffice",
+            "source_data_type": "org.reso.metadata.Office",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_aor",
+        "label": "list agent aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentAOR",
+            "source_native_name": "ListAgentAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_fax",
+        "label": "list agent fax",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentFax",
+            "source_native_name": "ListAgentFax",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_key",
+        "label": "list agent key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentKey",
+            "source_native_name": "ListAgentKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_url",
+        "label": "list agent url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentURL",
+            "source_native_name": "ListAgentURL",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "unit_type_type",
+        "label": "unit type type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UnitTypeType",
+            "source_native_name": "UnitTypeType",
+            "source_data_type": "org.reso.metadata.enums.UnitTypeType",
+            "source_enum_ref": "org.reso.metadata.enums.UnitTypeType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_aor",
+        "label": "buyer agent aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentAOR",
+            "source_native_name": "BuyerAgentAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_fax",
+        "label": "buyer agent fax",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentFax",
+            "source_native_name": "BuyerAgentFax",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_key",
+        "label": "buyer agent key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentKey",
+            "source_native_name": "BuyerAgentKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_url",
+        "label": "buyer agent url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentURL",
+            "source_native_name": "BuyerAgentURL",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_office",
+        "label": "co-buyer office",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerOffice",
+            "source_native_name": "CoBuyerOffice",
+            "source_data_type": "org.reso.metadata.Office",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "withdrawn_date",
+        "label": "withdrawn date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WithdrawnDate",
+            "source_native_name": "WithdrawnDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "activation_date",
+        "label": "activation date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ActivationDate",
+            "source_native_name": "ActivationDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_aor",
+        "label": "co-list agent aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentAOR",
+            "source_native_name": "CoListAgentAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_fax",
+        "label": "co-list agent fax",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentFax",
+            "source_native_name": "CoListAgentFax",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_key",
+        "label": "co-list agent key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentKey",
+            "source_native_name": "CoListAgentKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_url",
+        "label": "co-list agent url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentURL",
+            "source_native_name": "CoListAgentURL",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_email",
+        "label": "list agent email",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentEmail",
+            "source_native_name": "ListAgentEmail",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_mls_id",
+        "label": "list agent mls id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentMlsId",
+            "source_native_name": "ListAgentMlsId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_pager",
+        "label": "list agent pager",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentPager",
+            "source_native_name": "ListAgentPager",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_office_name",
+        "label": "list office name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListOfficeName",
+            "source_native_name": "ListOfficeName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "standard_status",
+        "label": "standard status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.StandardStatus",
+            "source_native_name": "StandardStatus",
+            "source_data_type": "org.reso.metadata.enums.StandardStatus",
+            "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_email",
+        "label": "buyer agent email",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentEmail",
+            "source_native_name": "BuyerAgentEmail",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_mls_id",
+        "label": "buyer agent mls id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentMlsId",
+            "source_native_name": "BuyerAgentMlsId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_pager",
+        "label": "buyer agent pager",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentPager",
+            "source_native_name": "BuyerAgentPager",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_office_name",
+        "label": "buyer office name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerOfficeName",
+            "source_native_name": "BuyerOfficeName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_aor",
+        "label": "co-buyer agent aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentAOR",
+            "source_native_name": "CoBuyerAgentAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_fax",
+        "label": "co-buyer agent fax",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentFax",
+            "source_native_name": "CoBuyerAgentFax",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_key",
+        "label": "co-buyer agent key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentKey",
+            "source_native_name": "CoBuyerAgentKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_url",
+        "label": "co-buyer agent url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentURL",
+            "source_native_name": "CoBuyerAgentURL",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "unparsed_address",
+        "label": "unparsed address",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UnparsedAddress",
+            "source_native_name": "UnparsedAddress",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "cancellation_date",
+        "label": "cancellation date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CancellationDate",
+            "source_native_name": "CancellationDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_email",
+        "label": "co-list agent email",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentEmail",
+            "source_native_name": "CoListAgentEmail",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_mls_id",
+        "label": "co-list agent mls id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentMlsId",
+            "source_native_name": "CoListAgentMlsId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_pager",
+        "label": "co-list agent pager",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentPager",
+            "source_native_name": "CoListAgentPager",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_office_name",
+        "label": "co-list office name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListOfficeName",
+            "source_native_name": "CoListOfficeName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_agreement",
+        "label": "listing agreement",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingAgreement",
+            "source_native_name": "ListingAgreement",
+            "source_data_type": "org.reso.metadata.enums.ListingAgreement",
+            "source_enum_ref": "org.reso.metadata.enums.ListingAgreement",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "start_showing_date",
+        "label": "start showing date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.StartShowingDate",
+            "source_native_name": "StartShowingDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_email",
+        "label": "co-buyer agent email",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentEmail",
+            "source_native_name": "CoBuyerAgentEmail",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_mls_id",
+        "label": "co-buyer agent mls id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentMlsId",
+            "source_native_name": "CoBuyerAgentMlsId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_pager",
+        "label": "co-buyer agent pager",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentPager",
+            "source_native_name": "CoBuyerAgentPager",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_office_name",
+        "label": "co-buyer office name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerOfficeName",
+            "source_native_name": "CoBuyerOfficeName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.OfficeName",
+        "source_native_name": "OfficeName",
+        "source_label": "Office Name",
+        "source_definition": "The legal name of the brokerage.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.OfficeName",
+        "source_native_name": "OfficeName",
+        "source_label": "Office Name",
+        "source_definition": "The legal name of the brokerage.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListTeam",
+        "source_native_name": "ListTeam",
+        "source_label": "List Team",
+        "source_definition": "Two or more agents working on the listing agent's team.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Teams",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RoomType",
+        "source_native_name": "RoomType",
+        "source_label": "Room Type",
+        "source_definition": "A list of identifiers for specific interior spaces within a structure (e.g., Bedroom, Bathroom, Kitchen, Living Room). A relational implementation of rooms must omit the type from the field name and use RoomType to create a vertical representation of the various rooms. Note that garage or basement should not be added as a room type, as these are represented by the ParkingFeatures and Basement fields, respectively.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RoomType",
+        "source_enum_ref": "org.reso.metadata.enums.RoomType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerTeam",
+        "source_native_name": "BuyerTeam",
+        "source_label": "Buyer Team",
+        "source_definition": "Two or more agents working on the buyer agent's team.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Teams",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgent",
+        "source_native_name": "ListAgent",
+        "source_label": "List Agent",
+        "source_definition": "The listing agent involved in the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgent",
+        "source_native_name": "BuyerAgent",
+        "source_label": "Buyer Agent",
+        "source_definition": "The buyer's agent involved in the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingURL",
+        "source_native_name": "ListingURL",
+        "source_label": "Listing URL",
+        "source_definition": "Provides a link to the specific listing on a brokerage website, agent website or other public-facing source.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListOffice",
+        "source_native_name": "ListOffice",
+        "source_label": "List Office",
+        "source_definition": "The listing agent's office.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Office",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerOffice",
+        "source_native_name": "BuyerOffice",
+        "source_label": "Buyer Office",
+        "source_definition": "The buyer agent's office.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Office",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgent",
+        "source_native_name": "CoListAgent",
+        "source_label": "Co-List Agent",
+        "source_definition": "The co-listing agent involved in the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Concessions",
+        "source_native_name": "Concessions",
+        "source_label": "Concessions",
+        "source_definition": "Indicates whether or not there are concessions included in the sales agreement (i.e., Yes, No or Call Listing Agent).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Concessions",
+        "source_enum_ref": "org.reso.metadata.enums.Concessions",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgent",
+        "source_native_name": "CoBuyerAgent",
+        "source_label": "Co-Buyer Agent",
+        "source_definition": "The co-buyer's agent involved in the transaction.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListOffice",
+        "source_native_name": "CoListOffice",
+        "source_label": "Co-List Office",
+        "source_definition": "The co-listing agent's office.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Office",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentAOR",
+        "source_native_name": "ListAgentAOR",
+        "source_label": "List Agent AOR",
+        "source_definition": "The listing agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentFax",
+        "source_native_name": "ListAgentFax",
+        "source_label": "List Agent Fax",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentKey",
+        "source_native_name": "ListAgentKey",
+        "source_label": "List Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the ListAgentKey is the system unique identifier from the system where the record was retrieved. This may be identical to the related xxxId. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentURL",
+        "source_native_name": "ListAgentURL",
+        "source_label": "List Agent URL",
+        "source_definition": "The website Uniform Resource Identifier (URI) of the listing agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitTypeType",
+        "source_native_name": "UnitTypeType",
+        "source_label": "Unit Type Type",
+        "source_definition": "A list of floor plans or configurations of an individual unit (e.g., 1 Bedroom, Studio, Loft) in a multi-family or multi-unit development. A relational implementation of UnitTypes must omit the type from the field name and use UnitTypeType to create a vertical representation of the various unit types. Repeating of the word \"type\" in the field name is intentional.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.UnitTypeType",
+        "source_enum_ref": "org.reso.metadata.enums.UnitTypeType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentAOR",
+        "source_native_name": "BuyerAgentAOR",
+        "source_label": "Buyer Agent AOR",
+        "source_definition": "The buyer agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentFax",
+        "source_native_name": "BuyerAgentFax",
+        "source_label": "Buyer Agent Fax",
+        "source_definition": "The North American 10-digit fax numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentKey",
+        "source_native_name": "BuyerAgentKey",
+        "source_label": "Buyer Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system in which the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentURL",
+        "source_native_name": "BuyerAgentURL",
+        "source_label": "Buyer Agent URL",
+        "source_definition": "The website Uniform Resource Identifier (URI) of the buyers agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerOffice",
+        "source_native_name": "CoBuyerOffice",
+        "source_label": "Co-Buyer Office",
+        "source_definition": "The co-buyer agent's office.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.Office",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WithdrawnDate",
+        "source_native_name": "WithdrawnDate",
+        "source_label": "Withdrawn Date",
+        "source_definition": "The date that the listing was withdrawn from the market. This is not when a listing contract was canceled or closed, but a withdrawal from the market while the contract between the seller and listing agent is still in effect and an offer has not been accepted. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ActivationDate",
+        "source_native_name": "ActivationDate",
+        "source_label": "Activation Date",
+        "source_definition": "Indicates when the listing agent intends to change the property to the Active status.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentAOR",
+        "source_native_name": "CoListAgentAOR",
+        "source_label": "Co-List Agent AOR",
+        "source_definition": "The Co-listing Agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentFax",
+        "source_native_name": "CoListAgentFax",
+        "source_label": "Co-List Agent Fax",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentKey",
+        "source_native_name": "CoListAgentKey",
+        "source_label": "Co-List Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentURL",
+        "source_native_name": "CoListAgentURL",
+        "source_label": "Co-List Agent URL",
+        "source_definition": "The website Uniform Resource Identifier (URI) of the co-listing agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentEmail",
+        "source_native_name": "ListAgentEmail",
+        "source_label": "List Agent Email",
+        "source_definition": "The email address of the listing agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentMlsId",
+        "source_native_name": "ListAgentMlsId",
+        "source_label": "List Agent MLS ID",
+        "source_definition": "The local, well-known identifier for the member. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentPager",
+        "source_native_name": "ListAgentPager",
+        "source_label": "List Agent Pager",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListOfficeName",
+        "source_native_name": "ListOfficeName",
+        "source_label": "List Office Name",
+        "source_definition": "The legal name of the brokerage representing the seller.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StandardStatus",
+        "source_native_name": "StandardStatus",
+        "source_label": "Standard Status",
+        "source_definition": "The status of the listing as it reflects the state of the contract between the listing agent and seller, or an agreement with a buyer (e.g., Active, Active Under Contract, Canceled, Closed, Expired, Pending, Withdrawn). This is a single-select field.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.StandardStatus",
+        "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentEmail",
+        "source_native_name": "BuyerAgentEmail",
+        "source_label": "Buyer Agent Email",
+        "source_definition": "The email address of the buyer's agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentMlsId",
+        "source_native_name": "BuyerAgentMlsId",
+        "source_label": "Buyer Agent MLS ID",
+        "source_definition": "The local, well-known identifier. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentPager",
+        "source_native_name": "BuyerAgentPager",
+        "source_label": "Buyer Agent Pager",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerOfficeName",
+        "source_native_name": "BuyerOfficeName",
+        "source_label": "Buyer Office Name",
+        "source_definition": "The legal name of the brokerage representing the buyer.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentAOR",
+        "source_native_name": "CoBuyerAgentAOR",
+        "source_label": "Co-Buyer Agent AOR",
+        "source_definition": "The co-buyer agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentFax",
+        "source_native_name": "CoBuyerAgentFax",
+        "source_label": "Co-Buyer Agent Fax",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentKey",
+        "source_native_name": "CoBuyerAgentKey",
+        "source_label": "Co-Buyer Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentURL",
+        "source_native_name": "CoBuyerAgentURL",
+        "source_label": "Co-Buyer Agent URL",
+        "source_definition": "The website Uniform Resource Identifier (URI) of the co-buyers agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnparsedAddress",
+        "source_native_name": "UnparsedAddress",
+        "source_label": "Unparsed Address",
+        "source_definition": "A text representation of the address with the full civic location as a single entity. It may optionally include any of City, StateOrProvince, PostalCode and Country.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CancellationDate",
+        "source_native_name": "CancellationDate",
+        "source_label": "Cancellation Date",
+        "source_definition": "The date that the listing contract between the seller and listing agent was canceled. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentEmail",
+        "source_native_name": "CoListAgentEmail",
+        "source_label": "Co-List Agent Email",
+        "source_definition": "The email address of the co-listing agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentMlsId",
+        "source_native_name": "CoListAgentMlsId",
+        "source_label": "Co-List Agent MLS ID",
+        "source_definition": "The local, well-known identifier. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentPager",
+        "source_native_name": "CoListAgentPager",
+        "source_label": "Co-List Agent Pager",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListOfficeName",
+        "source_native_name": "CoListOfficeName",
+        "source_label": "Co-List Office Name",
+        "source_definition": "The legal name of the brokerage co-representing the seller.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingAgreement",
+        "source_native_name": "ListingAgreement",
+        "source_label": "Listing Agreement",
+        "source_definition": "The nature of the agreement between the seller and the listing agent (e.g., Exclusive Agency, Open Listing).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingAgreement",
+        "source_enum_ref": "org.reso.metadata.enums.ListingAgreement",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StartShowingDate",
+        "source_native_name": "StartShowingDate",
+        "source_label": "Start Showing Date",
+        "source_definition": "The date the listing agent/broker expects to start showing the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentEmail",
+        "source_native_name": "CoBuyerAgentEmail",
+        "source_label": "Co-Buyer Agent Email",
+        "source_definition": "The email address of the buyer's co-agent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentMlsId",
+        "source_native_name": "CoBuyerAgentMlsId",
+        "source_label": "Co-Buyer Agent MLS ID",
+        "source_definition": "The local, well-known identifier. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentPager",
+        "source_native_name": "CoBuyerAgentPager",
+        "source_label": "Co-Buyer Agent Pager",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerOfficeName",
+        "source_native_name": "CoBuyerOfficeName",
+        "source_label": "Co-Buyer Office Name",
+        "source_definition": "The legal name of the brokerage co-representing the buyer.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Operational form-field identity is independent from Universal Lexicon identity.",
+      "semantic_rule": "A field may be usable in forms while semantic adjudication remains pending.",
+      "safety_rule": "Exact spelling or definition mention alone MUST NOT establish canonical semantic equivalence."
+    }
+  }
+}
