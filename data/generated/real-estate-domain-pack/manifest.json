@@ -1,0 +1,169 @@
+{
+  "pack_id": "imobitools.real-estate-term-relation-pack",
+  "version": "1.0.0",
+  "status": "generated_candidate",
+  "generator": {
+    "language": "Go",
+    "command": "go run ./cmd/domainpackgen -basicquipudb ../basicquipudb -out data/generated/real-estate-domain-pack"
+  },
+  "normative_rules": [
+    "UNKNOWN FIELD != DROP",
+    "UNKNOWN JURISDICTION != DROP",
+    "OPERATIONAL DATA != DROP",
+    "SOURCE-SPECIFIC DATA != DROP",
+    "UNMAPPED != INVALID",
+    "No semantic equivalence is inferred from labels, names or source-path similarity.",
+    "UI control metadata is a presentation hint derived from source structure, never semantic authority."
+  ],
+  "sources": [
+    {
+      "source_id": "reso-dd-2.1",
+      "path": "megawebsol/basicquipudb/dictionaries/reso-dd-2.1.0/dd-2.1.json",
+      "version": "2.1",
+      "blob_sha": "3b79202c2ca93d27bf6654a88d4f926946272b61"
+    },
+    {
+      "source_id": "opda-pdtf-3.5",
+      "path": "megawebsol/basicquipudb/dictionaries/opda-pdtf-3.5.0/combined.json",
+      "version": "3.5.0",
+      "blob_sha": "c18e84600b201b9ed704f0bc61c704dcf549d8fc",
+      "jurisdiction": "England/Wales source"
+    },
+    {
+      "source_id": "inrev-sdds-4.0",
+      "path": "megawebsol/basicquipudb/dictionaries/inrev-sdds-4.0.0/sdds-indicators.json",
+      "version": "4.0.0"
+    },
+    {
+      "source_id": "inrev-esg-sdds-1.1",
+      "path": "megawebsol/basicquipudb/dictionaries/inrev-esg-sdds-1.1.0/esg-sdds-indicators.json",
+      "version": "1.1.0"
+    },
+    {
+      "source_id": "quipu-real-estate-core-1.1",
+      "path": "megawebsol/basicquipudb/domainpacks/real_estate/generated/real-estate-lexicon.yaml",
+      "version": "1.1.0",
+      "blob_sha": "394d87c269fa4563c3c12e5f124ecffeaee0e716"
+    }
+  ],
+  "shards": [
+    {
+      "path": "terms/reso-01.json",
+      "source": "reso-dd-2.1"
+    },
+    {
+      "path": "terms/reso-02.json",
+      "source": "reso-dd-2.1"
+    },
+    {
+      "path": "terms/reso-03.json",
+      "source": "reso-dd-2.1"
+    },
+    {
+      "path": "relations/reso.json",
+      "source": "reso-dd-2.1"
+    },
+    {
+      "path": "terms/pdtf-01.json",
+      "source": "opda-pdtf-3.5"
+    },
+    {
+      "path": "terms/pdtf-02.json",
+      "source": "opda-pdtf-3.5"
+    },
+    {
+      "path": "relations/pdtf-01.json",
+      "source": "opda-pdtf-3.5"
+    },
+    {
+      "path": "relations/pdtf-02.json",
+      "source": "opda-pdtf-3.5"
+    },
+    {
+      "path": "terms/inrev.json",
+      "source": "inrev-sdds-4.0"
+    },
+    {
+      "path": "terms/inrev-esg.json",
+      "source": "inrev-esg-sdds-1.1"
+    },
+    {
+      "path": "terms/quipu-real-estate-core.json",
+      "source": "quipu-real-estate-core-1.1"
+    }
+  ],
+  "statistics": {
+    "total_terms": 14278,
+    "total_relations": 15764,
+    "reso": {
+      "terms": 6521,
+      "relations": 6769,
+      "fields": 2140,
+      "lookup_values": 4129
+    },
+    "pdtf": {
+      "terms": 6708,
+      "relations": 8995
+    },
+    "inrev": {
+      "terms": 475
+    },
+    "inrev_esg": {
+      "terms": 388
+    },
+    "quipu_real_estate_core": {
+      "terms": 186
+    }
+  },
+  "relationship_types": [
+    "contains_field",
+    "uses_lookup",
+    "enumeration_value_of",
+    "contains",
+    "requires",
+    "unlocks",
+    "conditionally_requires"
+  ],
+  "crud_contract": {
+    "load_strategy": "lazy_shards",
+    "search_fields": [
+      "id",
+      "label",
+      "description",
+      "source_path",
+      "raw_metadata"
+    ],
+    "progressive_disclosure": [
+      "unlocks",
+      "conditionally_requires",
+      "requires",
+      "uses_lookup"
+    ],
+    "persistence_ready": true,
+    "controls_are_hints": true
+  },
+  "package_ownership": {
+    "packages": [
+      "core",
+      "extension",
+      "jurisdiction",
+      "application",
+      "operational",
+      "unassigned"
+    ],
+    "statuses": [
+      "candidate",
+      "adjudicated",
+      "rejected"
+    ]
+  },
+  "supersedes": [
+    "data/real-estate-crud-domain-pack.v0.1.0.json",
+    "data/real-estate-term-relation-pack.json"
+  ],
+  "golden_corpus": {
+    "path": "data/master_data_sample_20260929231422.json",
+    "status": "immutable_coverage_corpus",
+    "not_canon": true
+  }
+}
