@@ -1,0 +1,1183 @@
+{
+  "schema": "real-estate-master-data-sample",
+  "version": "1.0.0",
+  "generated_at": "2026-09-29T22:06:32-03:00",
+  "timezone": "America/Sao_Paulo",
+  "purpose": "Single synthetic real-estate asset master sample for Domain Virtual Pack Real Estate design. It consolidates information recovered from ImobiFlow, broker-intake/property-hierarchy artifacts, RESO, OPDA/PDTF, INREV SDDS and INREV ESG SDDS without treating any source schema as the physical QuipuDB model.",
+  "modeling_rules": [
+    "One governed asset identity is reused across legal, physical, commercial, leasing, valuation, transaction and ESG contexts.",
+    "This file is a logical/domain sample, not a relational schema and not a list of physical tables.",
+    "Registry evidence is evidence about the asset and title; it is not the asset itself.",
+    "Ownership, possession, occupancy, brokerage, publication and administration are distinct relationships or roles.",
+    "Listing and publication are temporal commercial representations, not the property identity.",
+    "External corpus fields are represented as domain facts, observations, evidence or relations and must not be copied mechanically into the future Domain Virtual Pack.",
+    "Jurisdiction-specific facts remain explicitly qualified and must not silently become universal real-estate semantics."
+  ],
+  "source_comparison": {
+    "baseline": "megawebsol/codegenerator/data/imobiflow-database.json",
+    "recovered_from_repository_artifacts": [
+      "megawebsol/codegenerator/data/real-estate-broker-intake.json",
+      "megawebsol/codegenerator/data/real-estate-property-hierarchy.json",
+      "megawebsol/codegenerator/data/imobiflow-template.json"
+    ],
+    "external_reference_corpus": [
+      "megawebsol/basicquipudb/dictionaries/reso-dd-2.1.0/dd-2.1.json",
+      "megawebsol/basicquipudb/dictionaries/opda-pdtf-3.5.0/combined.json",
+      "megawebsol/basicquipudb/dictionaries/inrev-sdds-4.0.0/sdds-indicators.json",
+      "megawebsol/basicquipudb/dictionaries/inrev-esg-sdds-1.1.0/esg-sdds-indicators.json"
+    ],
+    "recovered_dimensions": [
+      "separation of legal property unit, land parcel, physical structure, place and marketable bundle",
+      "registry evidence and documentary provenance",
+      "ownership shares, validity and evidence",
+      "possession and occupancy separated from ownership",
+      "rights, encumbrances and restrictions",
+      "building and condominium structure and administration",
+      "regulatory and technical evidence",
+      "brokerage mandate, partner agencies and broker roles",
+      "listing versus publication",
+      "media and publication channels",
+      "demand, visits, opportunity, offer, agreement and closing milestones",
+      "lease and tenant context",
+      "valuation observations with valuation date and evidence",
+      "occupancy and rental-income observations",
+      "capex and asset-management context",
+      "ESG/environmental observations and building certifications",
+      "temporal validity and source provenance throughout"
+    ],
+    "comparison_generated_at": "2026-09-29T22:06:32-03:00"
+  },
+  "asset": {
+    "asset_id": "IM-MASTER-000001",
+    "display_name": "Apartamento Alameda Jardins 1404",
+    "status": "published",
+    "identity": {
+      "semantic_id": "asset-master-a1f9b87d-7d12-4ecb-92b2-140400000001",
+      "asset_kind": "urban_condominium_unit",
+      "legal_unit_confirmed": true,
+      "legal_property_unit_ref": "LPU-184729-1404",
+      "land_parcel_ref": "PARCEL-OSCAR-FREIRE-1420",
+      "physical_structure_ref": "STRUCT-ALAMEDA-1404",
+      "building_ref": "BUILDING-ALAMEDA-JARDINS",
+      "condominium_ref": "CONDO-ALAMEDA-JARDINS",
+      "marketable_bundle_ref": "MB-481",
+      "lifecycle_status": "active",
+      "source_channel": "owner",
+      "created_at": "2026-09-01T10:30:00-03:00",
+      "updated_at": "2026-09-29T18:40:00-03:00"
+    },
+    "external_references": [
+      {
+        "source_name": "internal_legacy_imobiflow",
+        "url_or_identifier": "IM-2026-00481",
+        "observed_at": "2026-09-29T20:57:42-03:00",
+        "notes": "Baseline record used to recover previously flattened information."
+      },
+      {
+        "source_name": "registry_reference",
+        "url_or_identifier": "184729-4RI-SP",
+        "observed_at": "2026-09-25T11:20:00-03:00",
+        "notes": "Synthetic sample reference representing registry evidence."
+      }
+    ],
+    "legal_identity_and_registry": {
+      "registration_reference": "184.729",
+      "registration_kind": "matricula",
+      "registry_office": {
+        "name": "4º Registro de Imóveis",
+        "jurisdiction": "São Paulo/SP",
+        "country": "BR"
+      },
+      "municipal_tax_registration": "SQL-01426-002-1404",
+      "rural_registration_id": null,
+      "title_status": "active",
+      "registry_evidence": [
+        {
+          "evidence_id": "REG-EV-184729-CURRENT",
+          "kind": "registry_certificate",
+          "registry_identifier": "184.729",
+          "issued_by": "4º Registro de Imóveis",
+          "issued_at": "2026-09-20",
+          "valid_from": "2026-09-20",
+          "valid_to": null,
+          "verification_status": "verified",
+          "document_ref": "DOC-MATRICULA-184729",
+          "document_hash": "sha256:synthetic-master-sample-matricula-184729",
+          "supports": [
+            "legal_identity",
+            "ownership",
+            "rights_and_restrictions"
+          ]
+        },
+        {
+          "evidence_id": "REG-EV-DEED-2021",
+          "kind": "deed",
+          "registry_identifier": "R.12/184.729",
+          "issued_by": "4º Registro de Imóveis",
+          "issued_at": "2021-08-18",
+          "verification_status": "verified",
+          "document_ref": "DOC-ESCRITURA-2021",
+          "supports": [
+            "ownership_basis"
+          ]
+        }
+      ]
+    },
+    "place_and_geospatial": {
+      "address": {
+        "street_type": "Rua",
+        "street_name": "Oscar Freire",
+        "number": "1420",
+        "complement": "Apto 1404",
+        "neighborhood": "Jardins",
+        "district": "Cerqueira César",
+        "postal_code": "01426-002",
+        "city": "São Paulo",
+        "municipality_code": "3550308",
+        "state": "SP",
+        "country": "BR"
+      },
+      "coordinates": {
+        "latitude": -23.5629,
+        "longitude": -46.6691,
+        "geocode_precision": "rooftop",
+        "observed_at": "2026-09-10T09:00:00-03:00",
+        "source": "system_validation"
+      },
+      "zoning": {
+        "zone": "urban_residential_mixed",
+        "municipal_reference": "ZEU-sample",
+        "verification_status": "under_review"
+      }
+    },
+    "land_parcel": {
+      "parcel_id": "PARCEL-OSCAR-FREIRE-1420",
+      "parcel_kind": "urban_lot",
+      "land_area": {
+        "value": 420,
+        "unit": "m2"
+      },
+      "fractional_interest_for_unit": {
+        "value": 3.125,
+        "unit": "percent"
+      },
+      "parcel_origin": "registered urban parcel",
+      "boundaries": [
+        {
+          "orientation": "front",
+          "description": "Rua Oscar Freire"
+        },
+        {
+          "orientation": "rear",
+          "description": "adjacent parcel"
+        },
+        {
+          "orientation": "left",
+          "description": "adjacent parcel"
+        },
+        {
+          "orientation": "right",
+          "description": "adjacent parcel"
+        }
+      ],
+      "subdivision_or_assembly": null,
+      "evidence_refs": [
+        "REG-EV-184729-CURRENT",
+        "DOC-PLANT-PARCEL"
+      ]
+    },
+    "physical_structure": {
+      "structure_id": "STRUCT-ALAMEDA-1404",
+      "structure_kind": "apartment",
+      "use_classification": "residential",
+      "private_area": {
+        "value": 128.4,
+        "unit": "m2"
+      },
+      "useful_area": {
+        "value": 112.1,
+        "unit": "m2"
+      },
+      "built_area": {
+        "value": 128.4,
+        "unit": "m2"
+      },
+      "total_area": {
+        "value": 164.8,
+        "unit": "m2"
+      },
+      "bedrooms": 3,
+      "suites": 2,
+      "bathrooms": 4,
+      "living_rooms": 2,
+      "kitchens": 1,
+      "service_rooms": 1,
+      "parking_spots": 2,
+      "floor": 14,
+      "floors_in_building": 18,
+      "construction_year": 2018,
+      "condition": "excellent",
+      "renovation": {
+        "occurred": true,
+        "year": 2024,
+        "scope": [
+          "kitchen",
+          "bathrooms"
+        ],
+        "evidence_refs": [
+          "DOC-RENOVATION-2024"
+        ]
+      },
+      "accessibility": {
+        "step_free_common_access": true,
+        "elevator_access": true,
+        "adapted_unit": false
+      },
+      "systems_and_features": {
+        "climate_control": [
+          "split_air_conditioning"
+        ],
+        "water_heating": "central_gas",
+        "flooring": [
+          "wood",
+          "porcelain"
+        ],
+        "security": [
+          "controlled_access",
+          "24h_concierge",
+          "cctv"
+        ],
+        "connectivity": [
+          "fiber_ready"
+        ],
+        "appliances_included": [
+          "built_in_oven",
+          "cooktop"
+        ],
+        "outdoor_private_space": [
+          "balcony"
+        ]
+      },
+      "accessory_units": [
+        {
+          "component_id": "PARK-31",
+          "kind": "parking_unit",
+          "designation": "Vaga 31",
+          "independently_registered": true,
+          "registration_reference": "184.730"
+        },
+        {
+          "component_id": "PARK-32",
+          "kind": "parking_unit",
+          "designation": "Vaga 32",
+          "independently_registered": true,
+          "registration_reference": "184.731"
+        },
+        {
+          "component_id": "STORAGE-D14",
+          "kind": "storage_unit",
+          "designation": "Depósito D-14",
+          "independently_registered": false
+        }
+      ]
+    },
+    "building_and_condominium": {
+      "building": {
+        "building_id": "BUILDING-ALAMEDA-JARDINS",
+        "name": "Edifício Alameda Jardins",
+        "towers": 1,
+        "floors": 18,
+        "units": 48,
+        "elevators": 3,
+        "year_built": 2018,
+        "common_areas": [
+          "lobby",
+          "swimming_pool",
+          "gym",
+          "party_room",
+          "children_area",
+          "bicycle_storage"
+        ]
+      },
+      "condominium": {
+        "condominium_id": "CONDO-ALAMEDA-JARDINS",
+        "legal_name": "Condomínio Edifício Alameda Jardins",
+        "tax_id": "98.765.432/0001-10",
+        "type": "condominio_edilicio",
+        "unit_number": "1404",
+        "tower": "Única",
+        "fractional_interest": {
+          "value": 3.125,
+          "unit": "percent"
+        },
+        "convention_ref": "DOC-CONVENCAO-ALAMEDA",
+        "internal_rules_ref": "DOC-REGIMENTO-ALAMEDA",
+        "monthly_fee": {
+          "amount": 1780,
+          "currency": "BRL"
+        },
+        "reserve_fund_monthly": {
+          "amount": 180,
+          "currency": "BRL"
+        },
+        "arrears_status": "none_known"
+      },
+      "administration": {
+        "syndic": {
+          "party_ref": "PERSON-FERNANDA-NOGUEIRA",
+          "role": "syndic",
+          "valid_from": "2025-04-01",
+          "valid_to": "2027-03-31",
+          "evidence_ref": "DOC-ASSEMBLY-2025"
+        },
+        "vice_syndic": {
+          "party_ref": "PERSON-CARLOS-VAZ",
+          "role": "vice_syndic",
+          "valid_from": "2025-04-01",
+          "valid_to": "2027-03-31"
+        },
+        "administrator": {
+          "party_ref": "ORG-PLENA-GESTAO",
+          "role": "condominium_administrator",
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-12-31"
+        },
+        "council": {
+          "council_ref": "COUNCIL-ALAMEDA-2025",
+          "members_count": 3,
+          "kind": "fiscal"
+        },
+        "maintenance_status": "regular",
+        "latest_assembly_ref": "DOC-ASSEMBLY-2026-08"
+      }
+    },
+    "parties": [
+      {
+        "party_ref": "PERSON-MARIANA-CARVALHO",
+        "kind": "person",
+        "display_name": "Mariana Alves de Carvalho",
+        "document_masked": "***.482.190-**"
+      },
+      {
+        "party_ref": "PERSON-RAFAEL-CARVALHO",
+        "kind": "person",
+        "display_name": "Rafael Carvalho Neto",
+        "document_masked": "***.190.774-**"
+      },
+      {
+        "party_ref": "PERSON-LUCAS-TENANT",
+        "kind": "person",
+        "display_name": "Lucas Martins",
+        "document_masked": "***.321.654-**"
+      },
+      {
+        "party_ref": "ORG-ALAMEDA-NEGOCIOS",
+        "kind": "organization",
+        "display_name": "Alameda Negócios Imobiliários",
+        "tax_id_masked": "**.***.***/0001-**"
+      },
+      {
+        "party_ref": "PERSON-CAMILA-TORRES",
+        "kind": "person",
+        "display_name": "Camila Torres",
+        "professional_registration": "CRECI-SP 123456-F"
+      },
+      {
+        "party_ref": "PERSON-EDUARDO-MELLO",
+        "kind": "person",
+        "display_name": "Eduardo Mello",
+        "professional_registration": "CRECI-SP 234567-F"
+      }
+    ],
+    "ownership_arrangement": {
+      "ownerships": [
+        {
+          "owner_ref": "PERSON-MARIANA-CARVALHO",
+          "role": "owner",
+          "share": {
+            "value": 50,
+            "unit": "percent"
+          },
+          "basis": "registered_acquisition",
+          "valid_from": "2021-08-18",
+          "valid_to": null,
+          "supporting_evidence": [
+            "REG-EV-184729-CURRENT",
+            "REG-EV-DEED-2021"
+          ]
+        },
+        {
+          "owner_ref": "PERSON-RAFAEL-CARVALHO",
+          "role": "owner",
+          "share": {
+            "value": 50,
+            "unit": "percent"
+          },
+          "basis": "registered_acquisition",
+          "valid_from": "2021-08-18",
+          "valid_to": null,
+          "supporting_evidence": [
+            "REG-EV-184729-CURRENT",
+            "REG-EV-DEED-2021"
+          ]
+        }
+      ],
+      "declared_share_total_percent": 100,
+      "authorized_representatives": [
+        {
+          "party_ref": "PERSON-MARIANA-CARVALHO",
+          "authority": "brokerage_mandate_signatory",
+          "valid_from": "2026-04-01",
+          "valid_to": "2027-03-31",
+          "evidence_ref": "DOC-MANDATE-EXCLUSIVE"
+        }
+      ]
+    },
+    "possession_and_occupancy": {
+      "possession": {
+        "possessor_ref": "PERSON-MARIANA-CARVALHO",
+        "basis": "owner_possession",
+        "valid_from": "2024-01-15",
+        "valid_to": "2026-05-31",
+        "evidence_refs": [
+          "REG-EV-184729-CURRENT"
+        ]
+      },
+      "occupancy": {
+        "occupant_ref": "PERSON-LUCAS-TENANT",
+        "use_purpose": "residential",
+        "basis": "lease",
+        "valid_from": "2026-06-01",
+        "valid_to": "2028-05-31",
+        "lease_ref": "LEASE-ALAMEDA-1404-2026"
+      },
+      "current_occupancy_status": "occupied_by_tenant"
+    },
+    "rights_and_restrictions": [
+      {
+        "restriction_id": "RR-FIDUCIARY-01",
+        "kind": "fiduciary_sale",
+        "holder_or_beneficiary_ref": "ORG-BANK-SAMPLE",
+        "status": "active",
+        "valid_from": "2023-07-01",
+        "valid_to": null,
+        "evidence_ref": "REG-EV-184729-CURRENT"
+      },
+      {
+        "restriction_id": "RR-CONDO-CONVENTION",
+        "kind": "condominium_use_restriction",
+        "status": "active",
+        "description": "Residential use and internal rules apply.",
+        "valid_from": "2018-01-01",
+        "valid_to": null,
+        "evidence_ref": "DOC-CONVENCAO-ALAMEDA"
+      }
+    ],
+    "taxation_and_charges": {
+      "municipal_property_tax": {
+        "tax_kind": "IPTU",
+        "fiscal_year": 2026,
+        "annual_amount": {
+          "amount": 12600,
+          "currency": "BRL"
+        },
+        "payment_status": "current",
+        "evidence_ref": "DOC-IPTU-2026"
+      },
+      "condominium_charge_status": "current",
+      "extraordinary_assessments": [
+        {
+          "assessment_ref": "ASSESSMENT-ELEVATOR-2026",
+          "purpose": "elevator modernization",
+          "total_for_unit": {
+            "amount": 4800,
+            "currency": "BRL"
+          },
+          "installments": 12,
+          "paid_installments": 6
+        }
+      ]
+    },
+    "regulatory_and_technical_evidence": {
+      "permits_and_certificates": [
+        {
+          "document_ref": "DOC-HABITE-SE",
+          "kind": "occupancy_permit",
+          "issued_by": "Município de São Paulo",
+          "issued_at": "2018-03-15",
+          "verification_status": "verified"
+        },
+        {
+          "document_ref": "DOC-FIRE-CERT",
+          "kind": "fire_safety_certificate",
+          "issued_by": "Corpo de Bombeiros",
+          "valid_from": "2025-01-10",
+          "valid_to": "2028-01-09",
+          "verification_status": "verified"
+        }
+      ],
+      "technical_documents": [
+        {
+          "document_ref": "DOC-PLANT-1404",
+          "kind": "plant",
+          "verification_status": "verified"
+        },
+        {
+          "document_ref": "DOC-DESCRIPTIVE-MEMORIAL",
+          "kind": "descriptive_memorial",
+          "verification_status": "verified"
+        },
+        {
+          "document_ref": "DOC-RENOVATION-2024",
+          "kind": "technical_report",
+          "issued_by": "ENG-SAMPLE-001",
+          "professional_record": "ART sample",
+          "verification_status": "verified"
+        }
+      ],
+      "compliance_review": {
+        "status": "ready",
+        "missing_documents": [],
+        "reviewed_at": "2026-09-26T16:00:00-03:00",
+        "notes": "Synthetic sample completeness state."
+      }
+    },
+    "marketable_bundle": {
+      "bundle_id": "MB-481",
+      "bundle_status": "active",
+      "components": [
+        {
+          "component_ref": "LPU-184729-1404",
+          "kind": "legal_property_unit",
+          "role": "primary"
+        },
+        {
+          "component_ref": "PARK-31",
+          "kind": "parking_unit",
+          "role": "included"
+        },
+        {
+          "component_ref": "PARK-32",
+          "kind": "parking_unit",
+          "role": "included"
+        },
+        {
+          "component_ref": "STORAGE-D14",
+          "kind": "storage_unit",
+          "role": "included"
+        }
+      ],
+      "accessory_rights": [
+        {
+          "right": "use_common_areas",
+          "basis_ref": "DOC-CONVENCAO-ALAMEDA"
+        }
+      ]
+    },
+    "brokerage": {
+      "mandates": [
+        {
+          "mandate_id": "MANDATE-ALAMEDA-481",
+          "authorizer_ref": "PERSON-MARIANA-CARVALHO",
+          "agency_ref": "ORG-ALAMEDA-NEGOCIOS",
+          "broker_refs": [
+            "PERSON-CAMILA-TORRES",
+            "PERSON-EDUARDO-MELLO"
+          ],
+          "exclusive": true,
+          "minimum_price": {
+            "amount": 1420000,
+            "currency": "BRL"
+          },
+          "commission": {
+            "kind": "percentage",
+            "value": 6
+          },
+          "territory": [
+            "São Paulo",
+            "internet_portals",
+            "partner_network"
+          ],
+          "channels_authorized": [
+            "agency_site",
+            "social_media",
+            "partner_portals"
+          ],
+          "valid_from": "2026-04-01",
+          "valid_to": "2027-03-31",
+          "contract_ref": "DOC-MANDATE-EXCLUSIVE",
+          "contract_hash": "sha256:synthetic-master-sample-mandate"
+        }
+      ],
+      "partnerships": [
+        {
+          "partnership_id": "PARTNERSHIP-ALAMEDA-PONTE",
+          "partner_agency_ref": "ORG-PONTE-ALTA",
+          "commission_split": [
+            {
+              "party_ref": "ORG-ALAMEDA-NEGOCIOS",
+              "percent": 50
+            },
+            {
+              "party_ref": "ORG-PONTE-ALTA",
+              "percent": 50
+            }
+          ],
+          "valid_from": "2026-07-01",
+          "valid_to": "2027-03-31"
+        }
+      ]
+    },
+    "listing_and_publication": {
+      "listings": [
+        {
+          "listing_id": "listing-jardins-142",
+          "marketable_bundle_ref": "MB-481",
+          "listing_status": "active",
+          "asking_price": {
+            "amount": 1480000,
+            "currency": "BRL"
+          },
+          "minimum_authorized_price": {
+            "amount": 1420000,
+            "currency": "BRL"
+          },
+          "description": "Apartamento residencial com três dormitórios, duas suítes, duas vagas e depósito.",
+          "availability": "available_with_lease",
+          "valid_from": "2026-09-01",
+          "valid_to": null,
+          "mandate_ref": "MANDATE-ALAMEDA-481"
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB-ALAMEDA-SITE-01",
+          "listing_ref": "listing-jardins-142",
+          "channel": "agency_site",
+          "portal_name": "Portal Alameda",
+          "external_listing_id": "PA-481",
+          "status": "published",
+          "published_at": "2026-09-02T09:00:00-03:00",
+          "last_synced_at": "2026-09-29T18:00:00-03:00"
+        },
+        {
+          "publication_id": "PUB-ALAMEDA-PARTNER-01",
+          "listing_ref": "listing-jardins-142",
+          "channel": "partner_portal",
+          "portal_name": "Portal Parceiro",
+          "external_listing_id": "PP-99412",
+          "status": "published",
+          "published_at": "2026-09-03T10:00:00-03:00"
+        }
+      ],
+      "media": [
+        {
+          "media_id": "MEDIA-001",
+          "kind": "photo",
+          "url": "https://example.invalid/imobitools/master/property-1404/01.jpg",
+          "order": 1,
+          "title": "Sala de estar",
+          "verification_status": "sample"
+        },
+        {
+          "media_id": "MEDIA-002",
+          "kind": "floor_plan",
+          "document_ref": "DOC-PLANT-1404",
+          "order": 2,
+          "verification_status": "sample"
+        },
+        {
+          "media_id": "MEDIA-003",
+          "kind": "video",
+          "url": "https://example.invalid/imobitools/master/property-1404/tour.mp4",
+          "order": 3,
+          "verification_status": "sample"
+        }
+      ],
+      "media_summary": {
+        "photos": 24,
+        "videos": 1,
+        "floor_plans": 1
+      }
+    },
+    "leasing": {
+      "leases": [
+        {
+          "lease_id": "LEASE-ALAMEDA-1404-2026",
+          "landlord_refs": [
+            "PERSON-MARIANA-CARVALHO",
+            "PERSON-RAFAEL-CARVALHO"
+          ],
+          "tenant_ref": "PERSON-LUCAS-TENANT",
+          "asset_ref": "LPU-184729-1404",
+          "status": "active",
+          "use": "residential",
+          "valid_from": "2026-06-01",
+          "valid_to": "2028-05-31",
+          "monthly_base_rent": {
+            "amount": 8500,
+            "currency": "BRL"
+          },
+          "security_deposit": {
+            "amount": 25500,
+            "currency": "BRL"
+          },
+          "indexation": {
+            "frequency": "annual",
+            "index_reference": "contractual_index"
+          },
+          "document_ref": "DOC-LEASE-2026"
+        }
+      ],
+      "occupancy_observation": {
+        "observed_at": "2026-09-29",
+        "occupancy_state": "occupied",
+        "occupancy_rate_for_unit_percent": 100,
+        "tenant_concentration_note": "Single-unit asset; one current tenant."
+      },
+      "rental_income_observation": {
+        "period": "2026-09",
+        "contractual_rent": {
+          "amount": 8500,
+          "currency": "BRL"
+        },
+        "received_rent": {
+          "amount": 8500,
+          "currency": "BRL"
+        },
+        "arrears": {
+          "amount": 0,
+          "currency": "BRL"
+        }
+      }
+    },
+    "valuation_and_investment_observations": {
+      "valuations": [
+        {
+          "valuation_id": "VAL-2026-Q3",
+          "valuation_date": "2026-09-30",
+          "market_value": {
+            "amount": 1450000,
+            "currency": "BRL"
+          },
+          "valuation_kind": "market_value",
+          "valuer_type": "external",
+          "valuer_ref": "ORG-VALUER-SAMPLE",
+          "methodology": "comparative_market_approach",
+          "evidence_ref": "DOC-VALUATION-2026-Q3",
+          "status": "final"
+        }
+      ],
+      "capex": [
+        {
+          "capex_id": "CAPEX-2024-KITCHEN",
+          "period": "2024",
+          "category": "refurbishment",
+          "amount": {
+            "amount": 95000,
+            "currency": "BRL"
+          },
+          "description": "Kitchen and bathroom renovation.",
+          "evidence_ref": "DOC-RENOVATION-2024"
+        }
+      ],
+      "periodic_asset_snapshot": {
+        "reporting_period_end": "2026-09-30",
+        "market_value": {
+          "amount": 1450000,
+          "currency": "BRL"
+        },
+        "occupancy_rate_percent": 100,
+        "annualized_contractual_rent": {
+          "amount": 102000,
+          "currency": "BRL"
+        },
+        "capex_ytd": {
+          "amount": 0,
+          "currency": "BRL"
+        }
+      }
+    },
+    "esg_and_sustainability": {
+      "applicability": "building_and_unit_context",
+      "energy": {
+        "reporting_period": "2026",
+        "electricity_consumption_kwh_ytd": 4280,
+        "gas_consumption_kwh_equivalent_ytd": 1920,
+        "renewable_electricity_share_percent": 38,
+        "data_quality": "metered_and_allocated"
+      },
+      "greenhouse_gas": {
+        "reporting_period": "2026",
+        "operational_emissions_kgco2e_ytd": 1120,
+        "methodology_reference": "sample_only_not_normative"
+      },
+      "water": {
+        "reporting_period": "2026",
+        "consumption_m3_ytd": 92,
+        "data_quality": "submetered"
+      },
+      "waste": {
+        "building_level": true,
+        "selective_collection": true,
+        "hazardous_waste_program": false
+      },
+      "certification_and_performance": [
+        {
+          "kind": "building_environmental_certification",
+          "scheme": "sample_scheme",
+          "status": "not_certified"
+        }
+      ],
+      "climate_and_environmental_risk": [
+        {
+          "risk": "flood",
+          "level": "low",
+          "assessment_date": "2026-08-15",
+          "evidence_ref": "DOC-ENV-RISK-2026"
+        }
+      ]
+    },
+    "demand_negotiation_and_transaction": {
+      "demands": [
+        {
+          "demand_id": "DEMAND-HELENA-001",
+          "interested_party_ref": "PERSON-HELENA-DUARTE",
+          "source": "partner_portal",
+          "created_at": "2026-09-20T14:00:00-03:00",
+          "status": "qualified"
+        }
+      ],
+      "visits": [
+        {
+          "visit_id": "VISIT-20260930-01",
+          "party_ref": "PERSON-HELENA-DUARTE",
+          "listing_ref": "listing-jardins-142",
+          "scheduled_at": "2026-09-30T15:00:00-03:00",
+          "status": "scheduled",
+          "broker_ref": "PERSON-CAMILA-TORRES",
+          "notes": "Visit scheduled after qualification."
+        }
+      ],
+      "opportunities": [
+        {
+          "opportunity_id": "OPP-HELENA-481",
+          "demand_ref": "DEMAND-HELENA-001",
+          "status": "negotiating",
+          "probability_percent": 65
+        }
+      ],
+      "offers": [
+        {
+          "offer_id": "OFFER-HELENA-001",
+          "buyer_ref": "PERSON-HELENA-DUARTE",
+          "listing_ref": "listing-jardins-142",
+          "offered_price": {
+            "amount": 1410000,
+            "currency": "BRL"
+          },
+          "financing": {
+            "required": true,
+            "lender_type": "private_bank",
+            "target_loan_to_value_percent": 60
+          },
+          "conditions": [
+            "20_percent_down_payment",
+            "subject_to_financing_approval",
+            "subject_to_due_diligence"
+          ],
+          "submitted_at": "2026-09-28T11:00:00-03:00",
+          "status": "under_review",
+          "valid_until": "2026-10-03T18:00:00-03:00"
+        }
+      ],
+      "acceptance": {
+        "acceptance_id": "ACCEPTANCE-PENDING-001",
+        "offer_ref": "OFFER-HELENA-001",
+        "status": "under_review",
+        "response_deadline": "2026-10-03T18:00:00-03:00"
+      },
+      "agreement": {
+        "agreement_id": null,
+        "status": "not_created"
+      },
+      "closing_case": {
+        "closing_case_id": "CLOSING-481",
+        "status": "not_started",
+        "milestones": [
+          {
+            "kind": "due_diligence",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "financing",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "purchase_agreement",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "deed",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "registration",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "payment",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "settlement",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "title_transfer",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "possession_transfer",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          },
+          {
+            "kind": "commission_settlement",
+            "status": "not_started",
+            "completed_at": null,
+            "evidence_ref": null
+          }
+        ]
+      }
+    },
+    "documents": [
+      {
+        "document_ref": "DOC-MATRICULA-184729",
+        "kind": "registry",
+        "file": "matricula-184729.pdf",
+        "issued_by": "4º Registro de Imóveis",
+        "status": "verified",
+        "hash_status": "verified"
+      },
+      {
+        "document_ref": "DOC-CONVENCAO-ALAMEDA",
+        "kind": "condominium",
+        "file": "convencao-alameda.pdf",
+        "status": "current"
+      },
+      {
+        "document_ref": "DOC-MANDATE-EXCLUSIVE",
+        "kind": "contract",
+        "file": "mandato-exclusivo.pdf",
+        "status": "signed"
+      },
+      {
+        "document_ref": "DOC-VALUATION-2026-Q3",
+        "kind": "valuation",
+        "file": "laudo-avaliacao-2026-q3.pdf",
+        "status": "final"
+      },
+      {
+        "document_ref": "DOC-LEASE-2026",
+        "kind": "lease_agreement",
+        "file": "contrato-locacao-2026.pdf",
+        "status": "active"
+      },
+      {
+        "document_ref": "DOC-IPTU-2026",
+        "kind": "tax",
+        "file": "iptu-2026.pdf",
+        "status": "verified"
+      }
+    ],
+    "relationships": [
+      {
+        "type": "evidenced_by",
+        "from": "LPU-184729-1404",
+        "to": "REG-EV-184729-CURRENT",
+        "valid_from": "2026-09-20",
+        "valid_to": null
+      },
+      {
+        "type": "situated_on",
+        "from": "LPU-184729-1404",
+        "to": "PARCEL-OSCAR-FREIRE-1420",
+        "valid_from": "2018-01-01",
+        "valid_to": null
+      },
+      {
+        "type": "embodied_in",
+        "from": "LPU-184729-1404",
+        "to": "STRUCT-ALAMEDA-1404",
+        "valid_from": "2018-01-01",
+        "valid_to": null
+      },
+      {
+        "type": "located_at",
+        "from": "LPU-184729-1404",
+        "to": "PLACE-OSCAR-FREIRE-1420-1404",
+        "valid_from": "2018-01-01",
+        "valid_to": null
+      },
+      {
+        "type": "part_of",
+        "from": "LPU-184729-1404",
+        "to": "CONDO-ALAMEDA-JARDINS",
+        "valid_from": "2018-01-01",
+        "valid_to": null
+      },
+      {
+        "type": "included_in",
+        "from": "LPU-184729-1404",
+        "to": "MB-481",
+        "valid_from": "2026-04-01",
+        "valid_to": null
+      },
+      {
+        "type": "owned_by",
+        "from": "LPU-184729-1404",
+        "to": "PERSON-MARIANA-CARVALHO",
+        "share_percent": 50,
+        "valid_from": "2021-08-18",
+        "valid_to": null,
+        "evidence_refs": [
+          "REG-EV-184729-CURRENT"
+        ]
+      },
+      {
+        "type": "owned_by",
+        "from": "LPU-184729-1404",
+        "to": "PERSON-RAFAEL-CARVALHO",
+        "share_percent": 50,
+        "valid_from": "2021-08-18",
+        "valid_to": null,
+        "evidence_refs": [
+          "REG-EV-184729-CURRENT"
+        ]
+      },
+      {
+        "type": "possessed_by",
+        "from": "LPU-184729-1404",
+        "to": "PERSON-MARIANA-CARVALHO",
+        "valid_from": "2024-01-15",
+        "valid_to": "2026-05-31"
+      },
+      {
+        "type": "occupied_by",
+        "from": "LPU-184729-1404",
+        "to": "PERSON-LUCAS-TENANT",
+        "valid_from": "2026-06-01",
+        "valid_to": "2028-05-31",
+        "basis_ref": "LEASE-ALAMEDA-1404-2026"
+      },
+      {
+        "type": "subject_to",
+        "from": "LPU-184729-1404",
+        "to": "RR-FIDUCIARY-01",
+        "valid_from": "2023-07-01",
+        "valid_to": null
+      },
+      {
+        "type": "administered_by",
+        "from": "CONDO-ALAMEDA-JARDINS",
+        "to": "ORG-PLENA-GESTAO",
+        "valid_from": "2025-01-01",
+        "valid_to": "2026-12-31"
+      },
+      {
+        "type": "represented_by",
+        "from": "MB-481",
+        "to": "MANDATE-ALAMEDA-481",
+        "valid_from": "2026-04-01",
+        "valid_to": "2027-03-31"
+      },
+      {
+        "type": "advertised_as",
+        "from": "MB-481",
+        "to": "listing-jardins-142",
+        "valid_from": "2026-09-01",
+        "valid_to": null
+      },
+      {
+        "type": "handled_by",
+        "from": "MANDATE-ALAMEDA-481",
+        "to": "PERSON-CAMILA-TORRES",
+        "valid_from": "2026-04-01",
+        "valid_to": "2027-03-31"
+      },
+      {
+        "type": "handled_by",
+        "from": "MANDATE-ALAMEDA-481",
+        "to": "PERSON-EDUARDO-MELLO",
+        "valid_from": "2026-04-01",
+        "valid_to": "2027-03-31"
+      },
+      {
+        "type": "published_on",
+        "from": "listing-jardins-142",
+        "to": "PUB-ALAMEDA-SITE-01",
+        "valid_from": "2026-09-02",
+        "valid_to": null
+      },
+      {
+        "type": "leased_to",
+        "from": "LPU-184729-1404",
+        "to": "PERSON-LUCAS-TENANT",
+        "valid_from": "2026-06-01",
+        "valid_to": "2028-05-31",
+        "agreement_ref": "LEASE-ALAMEDA-1404-2026"
+      },
+      {
+        "type": "valued_by",
+        "from": "LPU-184729-1404",
+        "to": "VAL-2026-Q3",
+        "valid_from": "2026-09-30",
+        "valid_to": null
+      },
+      {
+        "type": "receives",
+        "from": "listing-jardins-142",
+        "to": "OFFER-HELENA-001",
+        "valid_from": "2026-09-28",
+        "valid_to": null
+      },
+      {
+        "type": "closes_through",
+        "from": "MB-481",
+        "to": "CLOSING-481",
+        "valid_from": "2026-09-28",
+        "valid_to": null
+      }
+    ],
+    "audit_and_provenance": {
+      "sample_is_synthetic": true,
+      "baseline_asset_id": "IM-2026-00481",
+      "provenance_rule": "Every authoritative claim in a production pack must retain source/evidence and temporal context.",
+      "conflicts_allowed": true,
+      "conflict_example": {
+        "registry_area_m2": 128.4,
+        "operator_observed_area_m2": 129,
+        "appraisal_area_m2": 128.4,
+        "projection_policy": "select registry-backed value for legal area while preserving all observations"
+      }
+    }
+  }
+}
