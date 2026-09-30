@@ -1,0 +1,79 @@
+{
+  "macro_area": {"order":5,"id":"negotiation","label":"Negotiation"},
+  "facets": [
+    {
+      "facet_number": 15,
+      "id": "offer_negotiation",
+      "label": "Offer and Negotiation",
+      "lexicon_terms": [
+        {"ref":"base0001.makes_offer@1","symbol":"makes_offer"},
+        {"ref":"base0001.accepted_offer@1","symbol":"accepted_offer"},
+        {"ref":"base0001.item_offered@1","symbol":"item_offered"},
+        {"ref":"base0001.price@1","symbol":"price"},
+        {"ref":"base0001.price_currency@1","symbol":"price_currency"},
+        {"ref":"base0001.price_specification@1","symbol":"price_specification"},
+        {"ref":"base0001.seller@1","symbol":"seller"},
+        {"ref":"base0001.buyer@1","symbol":"buyer"},
+        {"ref":"base0001.participant@1","symbol":"participant"},
+        {"ref":"base0001.action_status@1","symbol":"action_status"},
+        {"ref":"base0001.has_start_date@1","symbol":"has_start_date"},
+        {"ref":"base0001.valid@1","symbol":"valid"},
+        {"ref":"base0001.description@1","symbol":"description"},
+        {"ref":"base0001.identifier@1","symbol":"identifier"}
+      ],
+      "form_slots": [
+        {"slot":"offer_id","term_ref":"base0001.identifier@1","context":"commercial_offer","control":"text"},
+        {"slot":"offeror","term_ref":"base0001.participant@1","context":"offeror","control":"entity_picker"},
+        {"slot":"offeree","term_ref":"base0001.participant@1","context":"offeree","control":"entity_picker"},
+        {"slot":"buyer","term_ref":"base0001.buyer@1","control":"entity_picker"},
+        {"slot":"seller","term_ref":"base0001.seller@1","control":"entity_picker"},
+        {"slot":"offered_item","term_ref":"base0001.item_offered@1","control":"entity_picker"},
+        {"slot":"offered_price","term_ref":"base0001.price@1","control":"money"},
+        {"slot":"currency","term_ref":"base0001.price_currency@1","control":"currency"},
+        {"slot":"price_terms","term_ref":"base0001.price_specification@1","control":"structured_price"},
+        {"slot":"counteroffer","term_ref":"base0001.makes_offer@1","context":"counteroffer","control":"nested_offer"},
+        {"slot":"accepted_offer","term_ref":"base0001.accepted_offer@1","control":"entity_reference"},
+        {"slot":"negotiation_status","term_ref":"base0001.action_status@1","context":"negotiation","control":"select"},
+        {"slot":"offer_validity","term_ref":"base0001.valid@1","context":"offer","control":"date_or_range"},
+        {"slot":"conditions_and_contingencies","term_ref":"base0001.description@1","context":"offer_conditions","control":"structured_text","repeatable":true}
+      ],
+      "invariants":["Offer != Agreement","Counteroffer remains an Offer context, not a new semantic primitive."]
+    },
+    {
+      "facet_number": 16,
+      "id": "agreement_due_diligence_closing",
+      "label": "Agreement, Due Diligence and Closing",
+      "lexicon_terms": [
+        {"ref":"base0001.identifier@1","symbol":"identifier"},
+        {"ref":"base0001.review@1","symbol":"review"},
+        {"ref":"base0001.review_aspect@1","symbol":"review_aspect"},
+        {"ref":"base0001.applicable_certificate@1","symbol":"applicable_certificate"},
+        {"ref":"base0001.rights@1","symbol":"rights"},
+        {"ref":"base0001.provenance@1","symbol":"provenance"},
+        {"ref":"base0001.participant@1","symbol":"participant"},
+        {"ref":"base0001.object@1","symbol":"object"},
+        {"ref":"base0001.action_status@1","symbol":"action_status"},
+        {"ref":"base0001.has_start_date@1","symbol":"has_start_date"},
+        {"ref":"base0001.purchase_date@1","symbol":"purchase_date"},
+        {"ref":"base0001.owner@1","symbol":"owner"},
+        {"ref":"base0001.acquired_from@1","symbol":"acquired_from"},
+        {"ref":"base0001.description@1","symbol":"description"}
+      ],
+      "form_slots": [
+        {"slot":"agreement_id","term_ref":"base0001.identifier@1","context":"agreement","control":"text"},
+        {"slot":"agreement_document","term_ref":"base0001.identifier@1","context":"agreement_document","control":"document"},
+        {"slot":"agreement_parties","term_ref":"base0001.participant@1","context":"agreement_party","control":"entity_collection"},
+        {"slot":"due_diligence_review","term_ref":"base0001.review@1","context":"due_diligence","control":"review_workflow"},
+        {"slot":"due_diligence_aspect","term_ref":"base0001.review_aspect@1","control":"select_or_text","repeatable":true},
+        {"slot":"supporting_certificate","term_ref":"base0001.applicable_certificate@1","control":"entity_or_document","repeatable":true},
+        {"slot":"rights_review","term_ref":"base0001.rights@1","context":"title_and_rights_due_diligence","control":"relation_editor"},
+        {"slot":"closing_status","term_ref":"base0001.action_status@1","context":"closing","control":"select"},
+        {"slot":"closing_date","term_ref":"base0001.purchase_date@1","context":"transaction_completion","control":"date"},
+        {"slot":"transferred_asset","term_ref":"base0001.object@1","context":"closing","control":"entity_picker"},
+        {"slot":"transferor","term_ref":"base0001.acquired_from@1","context":"closing","control":"entity_picker"},
+        {"slot":"new_owner","term_ref":"base0001.owner@1","context":"post_closing","control":"entity_picker"}
+      ],
+      "invariants":["Agreement != Closing","Due diligence is a review process and does not mutate historical evidence."]
+    }
+  ]
+}
