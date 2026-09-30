@@ -1,0 +1,85 @@
+{
+  "macro_area": {"order":3,"id":"commercial","label":"Commercial"},
+  "facets": [
+    {
+      "facet_number": 11,
+      "id": "acquisition_brokerage_mandate_intermediation",
+      "label": "Acquisition, Brokerage Mandate and Intermediation",
+      "lexicon_terms": [
+        {"ref":"base0001.agent@1","symbol":"agent"},
+        {"ref":"base0001.real_estate_agent@1","symbol":"real_estate_agent"},
+        {"ref":"base0001.seller@1","symbol":"seller"},
+        {"ref":"base0001.provider@1","symbol":"provider"},
+        {"ref":"base0001.makes_offer@1","symbol":"makes_offer"},
+        {"ref":"base0001.fees_and_commissions_specification@1","symbol":"fees_and_commissions_specification"},
+        {"ref":"base0001.service_area@1","symbol":"service_area"},
+        {"ref":"base0001.valid@1","symbol":"valid"},
+        {"ref":"base0001.has_start_date@1","symbol":"has_start_date"},
+        {"ref":"base0001.identifier@1","symbol":"identifier"}
+      ],
+      "form_slots": [
+        {"slot":"mandate_identifier","term_ref":"base0001.identifier@1","context":"brokerage_mandate","control":"text"},
+        {"slot":"principal_or_seller","term_ref":"base0001.seller@1","control":"entity_picker"},
+        {"slot":"responsible_broker","term_ref":"base0001.real_estate_agent@1","control":"entity_picker"},
+        {"slot":"brokerage_agent","term_ref":"base0001.agent@1","control":"entity_picker","repeatable":true},
+        {"slot":"partner_agency","term_ref":"base0001.provider@1","context":"partner_agency","control":"entity_picker","repeatable":true},
+        {"slot":"mandate_valid_from","term_ref":"base0001.has_start_date@1","control":"date"},
+        {"slot":"mandate_validity","term_ref":"base0001.valid@1","control":"date_or_range"},
+        {"slot":"commission","term_ref":"base0001.fees_and_commissions_specification@1","control":"money_or_percentage"},
+        {"slot":"commission_split","term_ref":"base0001.fees_and_commissions_specification@1","context":"split","control":"allocation_editor"},
+        {"slot":"territory","term_ref":"base0001.service_area@1","control":"area_picker"}
+      ]
+    },
+    {
+      "facet_number": 12,
+      "id": "commercial_offering_listing_publication",
+      "label": "Commercial Offering, Listing and Publication",
+      "lexicon_terms": [
+        {"ref":"base0001.item_offered@1","symbol":"item_offered"},
+        {"ref":"base0001.makes_offer@1","symbol":"makes_offer"},
+        {"ref":"base0001.is_offered_by@1","symbol":"is_offered_by"},
+        {"ref":"base0001.price@1","symbol":"price"},
+        {"ref":"base0001.price_currency@1","symbol":"price_currency"},
+        {"ref":"base0001.price_specification@1","symbol":"price_specification"},
+        {"ref":"base0001.price_type@1","symbol":"price_type"},
+        {"ref":"base0001.availability@1","symbol":"availability"},
+        {"ref":"base0001.availability_starts@1","symbol":"availability_starts"},
+        {"ref":"base0001.availability_ends@1","symbol":"availability_ends"},
+        {"ref":"base0001.date_posted@1","symbol":"date_posted"},
+        {"ref":"base0001.description@1","symbol":"description"},
+        {"ref":"base0001.keywords@1","symbol":"keywords"},
+        {"ref":"base0001.image__509ccca4@1","symbol":"image__509ccca4"},
+        {"ref":"base0001.photo@1","symbol":"photo"},
+        {"ref":"base0001.photos@1","symbol":"photos"},
+        {"ref":"base0001.video@1","symbol":"video"},
+        {"ref":"base0001.thumbnail_url@1","symbol":"thumbnail_url"},
+        {"ref":"base0001.url__76d0e84d@1","symbol":"url__76d0e84d"},
+        {"ref":"base0001.publication@1","symbol":"publication"},
+        {"ref":"base0001.publisher@1","symbol":"publisher"},
+        {"ref":"base0001.item_condition@1","symbol":"item_condition"}
+      ],
+      "form_slots": [
+        {"slot":"listing_id","term_ref":"base0001.identifier@1","context":"listing","control":"text"},
+        {"slot":"listing_key","term_ref":"base0001.identifier@1","context":"listing_record","control":"text"},
+        {"slot":"marketable_component","term_ref":"base0001.item_offered@1","context":"property_component","control":"entity_picker","repeatable":true},
+        {"slot":"offer_item","term_ref":"base0001.item_offered@1","control":"entity_picker"},
+        {"slot":"asking_price","term_ref":"base0001.price@1","control":"money"},
+        {"slot":"currency","term_ref":"base0001.price_currency@1","control":"currency"},
+        {"slot":"price_type","term_ref":"base0001.price_type@1","control":"select"},
+        {"slot":"availability","term_ref":"base0001.availability@1","control":"select"},
+        {"slot":"available_from","term_ref":"base0001.availability_starts@1","control":"datetime"},
+        {"slot":"available_until","term_ref":"base0001.availability_ends@1","control":"datetime"},
+        {"slot":"date_posted","term_ref":"base0001.date_posted@1","control":"datetime"},
+        {"slot":"description","term_ref":"base0001.description@1","control":"textarea"},
+        {"slot":"keywords","term_ref":"base0001.keywords@1","control":"tag_editor"},
+        {"slot":"photos","term_ref":"base0001.photos@1","control":"media_collection"},
+        {"slot":"video","term_ref":"base0001.video@1","control":"media"},
+        {"slot":"publication_url","term_ref":"base0001.url__76d0e84d@1","control":"url"},
+        {"slot":"publication","term_ref":"base0001.publication@1","control":"relation_editor"},
+        {"slot":"publisher","term_ref":"base0001.publisher@1","control":"entity_picker"},
+        {"slot":"condition","term_ref":"base0001.item_condition@1","context":"commercial_condition","control":"select"}
+      ],
+      "invariants":["Asset != Listing","Listing != Publication","Asset != MarketableBundle"]
+    }
+  ]
+}
