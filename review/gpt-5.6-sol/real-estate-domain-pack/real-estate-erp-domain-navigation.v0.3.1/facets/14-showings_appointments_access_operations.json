@@ -1,0 +1,5020 @@
+{
+  "macro_area": {
+    "id": "relationships",
+    "order": 4,
+    "label": "Relationships"
+  },
+  "subarea": {
+    "id": "showings_appointments_access_operations",
+    "order": 3,
+    "label": "Showings, Appointments and Access Operations",
+    "facet_number": 14,
+    "description": "Operational access, visits, schedules, lockboxes and key custody.",
+    "typical_concepts": {
+      "access_code": {
+        "ref": "base0001.access_code@1",
+        "kind": "property",
+        "definition": "Password, PIN, or access code needed for delivery (e.g. from a locker).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DeliveryEvent"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/accessCode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "actor": {
+        "ref": "base0001.actor@1",
+        "kind": "property",
+        "definition": "An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Clip",
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/Episode",
+              "https://schema.org/Event",
+              "https://schema.org/Movie",
+              "https://schema.org/MovieSeries",
+              "https://schema.org/PodcastSeries",
+              "https://schema.org/RadioSeries",
+              "https://schema.org/TVSeries",
+              "https://schema.org/VideoGame",
+              "https://schema.org/VideoGameSeries",
+              "https://schema.org/VideoObject"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PerformingGroup",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/actor",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "additional_property": {
+        "ref": "base0001.additional_property@1",
+        "kind": "property",
+        "definition": "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. https://schema.org/width, https://schema.org/color, https://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PropertyValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/additionalProperty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "address": {
+        "ref": "base0001.address@1",
+        "kind": "property",
+        "definition": "Physical address of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PostalAddress",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/address",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/address",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "aggregate_rating": {
+        "ref": "base0001.aggregate_rating@1",
+        "kind": "property",
+        "definition": "The overall rating, based on a collection of reviews or ratings, of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateRating"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/aggregateRating",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "amenity_feature": {
+        "ref": "base0001.amenity_feature@1",
+        "kind": "property",
+        "definition": "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/LocationFeatureSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/amenityFeature",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "applicable_certificate": {
+        "ref": "base0001.applicable_certificate@1",
+        "kind": "property",
+        "definition": "Certification information about a product, organization, service, place, or person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/isReferencedIn",
+              "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy"
+            ],
+            "range_refs": [
+              "https://schema.org/Certification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#ApplicableCertificate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasCertification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "attendee": {
+        "ref": "base0001.attendee@1",
+        "kind": "property",
+        "definition": "A person or organization attending the event.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/attendee",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "attendees": {
+        "ref": "base0001.attendees@1",
+        "kind": "property",
+        "definition": "A person attending the event.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/attendees",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "audience": {
+        "ref": "base0001.audience@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/PlayAction",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Audience"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/audience",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/audience",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "branch_code": {
+        "ref": "base0001.branch_code@1",
+        "kind": "property",
+        "definition": "A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\\n\\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is a branchCode for a particular branch.\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/branchCode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "checkin_time": {
+        "ref": "base0001.checkin_time@1",
+        "kind": "property",
+        "definition": "The earliest someone may check into a lodging establishment.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/LodgingReservation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DateTime",
+              "https://schema.org/Time"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/checkinTime",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "checkout_time": {
+        "ref": "base0001.checkout_time@1",
+        "kind": "property",
+        "definition": "The latest someone may check out of a lodging establishment.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/LodgingReservation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DateTime",
+              "https://schema.org/Time"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/checkoutTime",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "composer": {
+        "ref": "base0001.composer@1",
+        "kind": "property",
+        "definition": "The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event",
+              "https://schema.org/MusicComposition"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/composer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contained_in": {
+        "ref": "base0001.contained_in@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and one that contains it.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containedIn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contained_in_place": {
+        "ref": "base0001.contained_in_place@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and one that contains it.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containedInPlace",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contains_place": {
+        "ref": "base0001.contains_place@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and another that it contains.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containsPlace",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contributor": {
+        "ref": "base0001.contributor@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/contributor",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/contributor",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "director": {
+        "ref": "base0001.director@1",
+        "kind": "property",
+        "definition": "A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Clip",
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/Episode",
+              "https://schema.org/Event",
+              "https://schema.org/Movie",
+              "https://schema.org/MovieSeries",
+              "https://schema.org/RadioSeries",
+              "https://schema.org/TVSeries",
+              "https://schema.org/VideoGame",
+              "https://schema.org/VideoGameSeries",
+              "https://schema.org/VideoObject"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/director",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "door_time": {
+        "ref": "base0001.door_time@1",
+        "kind": "property",
+        "definition": "The time admission will commence.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DateTime",
+              "https://schema.org/Time"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/doorTime",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "duration": {
+        "ref": "base0001.duration@1",
+        "kind": "property",
+        "definition": "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Audiobook",
+              "https://schema.org/Episode",
+              "https://schema.org/Event",
+              "https://schema.org/MediaObject",
+              "https://schema.org/Movie",
+              "https://schema.org/MusicRecording",
+              "https://schema.org/MusicRelease",
+              "https://schema.org/QuantitativeValueDistribution",
+              "https://schema.org/Schedule",
+              "https://schema.org/ServicePeriod"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Duration",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/duration",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "end_date": {
+        "ref": "base0001.end_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/JobPosting",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/endDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validThrough",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasEndDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "event": {
+        "ref": "base0001.event@1",
+        "kind": "property",
+        "definition": "Upcoming or past event associated with this place, organization, or action.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/InformAction",
+              "https://schema.org/InviteAction",
+              "https://schema.org/JoinAction",
+              "https://schema.org/LeaveAction",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/PlayAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/event",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "event_attendance_mode": {
+        "ref": "base0001.event_attendance_mode@1",
+        "kind": "property",
+        "definition": "The eventAttendanceMode of an event indicates whether it occurs online, offline, or a mix.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/EventAttendanceModeEnumeration"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eventAttendanceMode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "event_schedule": {
+        "ref": "base0001.event_schedule@1",
+        "kind": "property",
+        "definition": "Associates an [[Event]] with a [[Schedule]]. There are circumstances where it is preferable to share a schedule for a series of\n      repeating events rather than data on the individual events themselves. For example, a website or application might prefer to publish a schedule for a weekly\n      gym class rather than provide data on every event. A schedule could be processed by applications to add forthcoming events to a calendar. An [[Event]] that\n      is associated with a [[Schedule]] using this property should not have [[startDate]] or [[endDate]] properties. These are instead defined within the associated\n      [[Schedule]], this avoids any ambiguity for clients using the data. The property might have repeated values to specify different schedules, e.g. for different months\n      or seasons.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Schedule"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eventSchedule",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "event_status": {
+        "ref": "base0001.event_status@1",
+        "kind": "property",
+        "definition": "An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/EventStatusType"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eventStatus",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "events": {
+        "ref": "base0001.events@1",
+        "kind": "property",
+        "definition": "Upcoming or past events associated with this place or organization.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/events",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "fax_number": {
+        "ref": "base0001.fax_number@1",
+        "kind": "property",
+        "definition": "The fax number.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/faxNumber",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/faxNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "funder": {
+        "ref": "base0001.funder@1",
+        "kind": "property",
+        "definition": "A person or organization that supports (sponsors) something through some kind of financial contribution.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Grant",
+              "https://schema.org/MonetaryGrant",
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ],
+            "parent_refs": [
+              "https://schema.org/sponsor"
+            ],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/funder",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "funding": {
+        "ref": "base0001.funding@1",
+        "kind": "property",
+        "definition": "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/BioChemEntity",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/MedicalEntity",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Grant"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/funding",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "g_lnid": {
+        "ref": "base0001.g_lnid@1",
+        "kind": "property",
+        "definition": "The [Global Location Number](http://www.gs1.org/gln) (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#gLNId",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/globalLocationNumber",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/globalLocationNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo": {
+        "ref": "base0001.geo@1",
+        "kind": "property",
+        "definition": "The geo coordinates of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_contains": {
+        "ref": "base0001.geo_contains@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. \"a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoContains",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_covered_by": {
+        "ref": "base0001.geo_covered_by@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCoveredBy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_covers": {
+        "ref": "base0001.geo_covers@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. \"Every point of b is a point of (the interior or boundary of) a\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCovers",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_crosses": {
+        "ref": "base0001.geo_crosses@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: \"a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCrosses",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_disjoint": {
+        "ref": "base0001.geo_disjoint@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: \"they have no point in common. They form a set of disconnected geometries.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoDisjoint",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_equals": {
+        "ref": "base0001.geo_equals@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM). \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoEquals",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_intersects": {
+        "ref": "base0001.geo_intersects@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoIntersects",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_overlaps": {
+        "ref": "base0001.geo_overlaps@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoOverlaps",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_touches": {
+        "ref": "base0001.geo_touches@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) touch: \"they have at least one boundary point in common, but no interior points.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoTouches",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_within": {
+        "ref": "base0001.geo_within@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoWithin",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_drive_through_service": {
+        "ref": "base0001.has_drive_through_service@1",
+        "kind": "property",
+        "definition": "Indicates whether some facility (e.g. [[FoodEstablishment]], [[CovidTestingFacility]]) offers a service that can be used by driving through in a car. In the case of [[CovidTestingFacility]] such facilities could potentially help with social distancing from other potentially-infected users.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasDriveThroughService",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_gs1_digital_link": {
+        "ref": "base0001.has_gs1_digital_link@1",
+        "kind": "property",
+        "definition": "The <a href=\"https://www.gs1.org/standards/gs1-digital-link\">GS1 digital link</a> associated with the object. This URL should conform to the particular requirements of digital links. The link should only contain the Application Identifiers (AIs) that are relevant for the entity being annotated, for instance a [[Product]] or an [[Organization]], and for the correct granularity. In particular, for products:<ul><li>A Digital Link that contains a serial number (AI <code>21</code>) should only be present on instances of [[IndividualProduct]]</li><li>A Digital Link that contains a lot number (AI <code>10</code>) should be annotated as [[SomeProducts]] if only products from that lot are sold, or [[IndividualProduct]] if there is only a specific product.</li><li>A Digital Link that contains a global model number (AI <code>8013</code>) should be attached to a [[Product]] or a [[ProductModel]].</li></ul> Other item types should be adapted similarly.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasGS1DigitalLink",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_map": {
+        "ref": "base0001.has_map@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Map",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasMap",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_participation_offer": {
+        "ref": "base0001.has_participation_offer@1",
+        "kind": "property",
+        "definition": "An offer to participate in the event, for example, Call for Proposals, Call for Speakers, or Call for Performers.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Offer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasParticipationOffer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_sponsorship_offer": {
+        "ref": "base0001.has_sponsorship_offer@1",
+        "kind": "property",
+        "definition": "An offer to sponsor the event, for example, Sponsorship Prospectus, Sponsorship Opportunities, or Sponsor Packages.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Offer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasSponsorshipOffer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_start_date": {
+        "ref": "base0001.has_start_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/Permit",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/startDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validFrom",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasStartDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "hours_available": {
+        "ref": "base0001.hours_available@1",
+        "kind": "property",
+        "definition": "The hours during which this service or contact is available.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OpeningHoursSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hoursAvailable",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_accessible_for_free": {
+        "ref": "base0001.is_accessible_for_free@1",
+        "kind": "property",
+        "definition": "A flag to signal that the item, event, or place is accessible for free.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isAccessibleForFree",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_located_in": {
+        "ref": "base0001.is_located_in@1",
+        "kind": "property",
+        "definition": "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Action",
+              "https://schema.org/Event",
+              "https://schema.org/InteractionCounter",
+              "https://schema.org/Organization"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place",
+              "https://schema.org/PostalAddress",
+              "https://schema.org/Text",
+              "https://schema.org/VirtualLocation"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/location",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/Locations/isLocatedIn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_product_of": {
+        "ref": "base0001.is_product_of@1",
+        "kind": "property",
+        "definition": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/AggregateOffer",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/MenuItem",
+              "https://schema.org/Product",
+              "https://schema.org/Service",
+              "https://schema.org/Trip"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/offers",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/isProductOf",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "isic_v4": {
+        "ref": "base0001.isic_v4@1",
+        "kind": "property",
+        "definition": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isicV4",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "keywords": {
+        "ref": "base0001.keywords@1",
+        "kind": "property",
+        "definition": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/keywords",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "language__8433cd47": {
+        "ref": "base0001.language__8433cd47@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/BroadcastService",
+              "https://schema.org/CommunicateAction",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/LinkRole",
+              "https://schema.org/PronounceableText",
+              "https://schema.org/WriteAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Language",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/language",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/inLanguage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "latitude": {
+        "ref": "base0001.latitude@1",
+        "kind": "property",
+        "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Locations/hasLatitude"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/latitude",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "logo": {
+        "ref": "base0001.logo@1",
+        "kind": "property",
+        "definition": "An associated logo.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/Certification",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [
+              "https://schema.org/image"
+            ],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#logoReferencedDocument",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/logo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "longitude": {
+        "ref": "base0001.longitude@1",
+        "kind": "property",
+        "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Locations/hasLongitude"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/longitude",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "map": {
+        "ref": "base0001.map@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/map",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "maps": {
+        "ref": "base0001.maps@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maps",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "maximum_attendee_capacity": {
+        "ref": "base0001.maximum_attendee_capacity@1",
+        "kind": "property",
+        "definition": "The total number of individuals that may attend an event or venue.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Quantities/hasUpperBound"
+            ],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maximumAttendeeCapacity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "maximum_physical_attendee_capacity": {
+        "ref": "base0001.maximum_physical_attendee_capacity@1",
+        "kind": "property",
+        "definition": "The maximum physical attendee capacity of an [[Event]] whose [[eventAttendanceMode]] is [[OfflineEventAttendanceMode]] (or the offline aspects, in the case of a [[MixedEventAttendanceMode]]). ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maximumPhysicalAttendeeCapacity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "maximum_virtual_attendee_capacity": {
+        "ref": "base0001.maximum_virtual_attendee_capacity@1",
+        "kind": "property",
+        "definition": "The maximum virtual attendee capacity of an [[Event]] whose [[eventAttendanceMode]] is [[OnlineEventAttendanceMode]] (or the online aspects, in the case of a [[MixedEventAttendanceMode]]). ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maximumVirtualAttendeeCapacity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "opening_hours": {
+        "ref": "base0001.opening_hours@1",
+        "kind": "property",
+        "definition": "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.\\n\\n* Days are specified using the following two-letter combinations: ```Mo```, ```Tu```, ```We```, ```Th```, ```Fr```, ```Sa```, ```Su```.\\n* Times are specified using 24:00 format. For example, 3pm is specified as ```15:00```, 10am as ```10:00```. \\n* Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.\\n* If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CivicStructure",
+              "https://schema.org/LocalBusiness"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/openingHours",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "opening_hours_specification": {
+        "ref": "base0001.opening_hours_specification@1",
+        "kind": "property",
+        "definition": "The opening hours of a certain place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OpeningHoursSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/openingHoursSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "organizer": {
+        "ref": "base0001.organizer@1",
+        "kind": "property",
+        "definition": "An organizer of an Event.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/organizer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "performer": {
+        "ref": "base0001.performer@1",
+        "kind": "property",
+        "definition": "A performer at the event&#x2014;for example, a presenter, musician, musical group or actor.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/performer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "performers": {
+        "ref": "base0001.performers@1",
+        "kind": "property",
+        "definition": "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/performers",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "photo": {
+        "ref": "base0001.photo@1",
+        "kind": "property",
+        "definition": "A photograph of this place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://schema.org/image"
+            ],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/Photograph"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/photo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "photos": {
+        "ref": "base0001.photos@1",
+        "kind": "property",
+        "definition": "Photographs of this place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/Photograph"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/photos",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "previous_start_date": {
+        "ref": "base0001.previous_start_date@1",
+        "kind": "property",
+        "definition": "Used in conjunction with eventStatus for rescheduled or cancelled events. This property contains the previously scheduled start date. For rescheduled events, the startDate property should be used for the newly scheduled start date. In the (rare) case of an event that has been postponed and rescheduled multiple times, this field may be repeated.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/previousStartDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "promotional_message": {
+        "ref": "base0001.promotional_message@1",
+        "kind": "property",
+        "definition": "A slogan or motto associated with the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#PromotionalMessage",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/slogan",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "public_access": {
+        "ref": "base0001.public_access@1",
+        "kind": "property",
+        "definition": "A flag to signal that the [[Place]] is open to public visitors.  If this property is omitted there is no assumed default boolean value.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/publicAccess",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "recorded_in": {
+        "ref": "base0001.recorded_in@1",
+        "kind": "property",
+        "definition": "The CreativeWork that captured all or part of this Event.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CreativeWork"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/recordedIn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "remaining_attendee_capacity": {
+        "ref": "base0001.remaining_attendee_capacity@1",
+        "kind": "property",
+        "definition": "The number of attendee places for an event that remain unallocated.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/remainingAttendeeCapacity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "reservation_id": {
+        "ref": "base0001.reservation_id@1",
+        "kind": "property",
+        "definition": "A unique identifier for the reservation.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Reservation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/reservationId",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "review": {
+        "ref": "base0001.review@1",
+        "kind": "property",
+        "definition": "A review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/review",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "reviews": {
+        "ref": "base0001.reviews@1",
+        "kind": "property",
+        "definition": "Review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/reviews",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "smoking_allowed": {
+        "ref": "base0001.smoking_allowed@1",
+        "kind": "property",
+        "definition": "Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/smokingAllowed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "special_opening_hours_specification": {
+        "ref": "base0001.special_opening_hours_specification@1",
+        "kind": "property",
+        "definition": "The special opening hours of a certain place.\\n\\nUse this to explicitly override general opening hours brought in scope by [[openingHoursSpecification]] or [[openingHours]].\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OpeningHoursSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/specialOpeningHoursSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "sponsor": {
+        "ref": "base0001.sponsor@1",
+        "kind": "property",
+        "definition": "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Grant",
+              "https://schema.org/MedicalStudy",
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/sponsor",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "sub_event": {
+        "ref": "base0001.sub_event@1",
+        "kind": "property",
+        "definition": "An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/subEvent",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "sub_events": {
+        "ref": "base0001.sub_events@1",
+        "kind": "property",
+        "definition": "Events that are a part of this event. For example, a conference event includes many presentations, each subEvents of the conference.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/subEvents",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "subject": {
+        "ref": "base0001.subject@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/CommunicateAction",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/DefinedTermSet",
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Thing"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/subject",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/about",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "super_event": {
+        "ref": "base0001.super_event@1",
+        "kind": "property",
+        "definition": "An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/superEvent",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "telephone": {
+        "ref": "base0001.telephone@1",
+        "kind": "property",
+        "definition": "The telephone number.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/telephone",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/telephone",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "tour_booking_page": {
+        "ref": "base0001.tour_booking_page@1",
+        "kind": "property",
+        "definition": "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/tourBookingPage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "translator": {
+        "ref": "base0001.translator@1",
+        "kind": "property",
+        "definition": "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/translator",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "typical_age_range": {
+        "ref": "base0001.typical_age_range@1",
+        "kind": "property",
+        "definition": "The typical expected age range, e.g. '7-9', '11-'.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/typicalAgeRange",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "work_featured": {
+        "ref": "base0001.work_featured@1",
+        "kind": "property",
+        "definition": "A work featured in some event, e.g. exhibited in an ExhibitionEvent.\n       Specific subproperties are available for workPerformed (e.g. a play), or a workPresented (a Movie at a ScreeningEvent).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CreativeWork"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/workFeatured",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "work_performed": {
+        "ref": "base0001.work_performed@1",
+        "kind": "property",
+        "definition": "A work performed in some event, for example a play performed in a TheaterEvent.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event"
+            ],
+            "parent_refs": [
+              "https://schema.org/workFeatured"
+            ],
+            "range_refs": [
+              "https://schema.org/CreativeWork"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/workPerformed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.Media",
+        "source_native_name": "Media",
+        "source_label": "Media",
+        "source_definition": "The media associated with the Showing record.",
+        "source_resource": "Showing",
+        "source_data_type": "Collection(org.reso.metadata.Media)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.Notes",
+        "source_native_name": "Notes",
+        "source_label": "Notes",
+        "source_definition": "Notes or feedback about the property or showing.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.Listing",
+        "source_native_name": "Listing",
+        "source_label": "Listing",
+        "source_definition": "The listing associated with the showing.",
+        "source_resource": "Showing",
+        "source_data_type": "org.reso.metadata.Property",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "Caravan",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.Listing",
+        "source_native_name": "Listing",
+        "source_label": "Listing",
+        "source_definition": "The listing associated with the open house.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "org.reso.metadata.Property",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "Showing",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing being shown. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingId",
+        "source_native_name": "ShowingId",
+        "source_label": "Showing ID",
+        "source_definition": "The well-known identifier for the Showing record. The value may be identical to that of the ShowingKey, but the ShowingId is intended to be the value used by a human to retrieve the information about a specific showing. In a multiple-originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanKey",
+        "source_native_name": "CaravanKey",
+        "source_label": "Caravan Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the CaravanKey is the system unique identifier from the system that the record was retrieved.",
+        "source_resource": "Caravan",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.StopId",
+        "source_native_name": "StopId",
+        "source_label": "Stop ID",
+        "source_definition": "The ID of a caravan stop record. Typical stops are represented by an open house or listing record's ID. A stop might also be another custom/local resource.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingKey",
+        "source_native_name": "ShowingKey",
+        "source_label": "Showing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemShowingKey and OriginatingSystemShowingKey.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingUrl",
+        "source_native_name": "ShowingUrl",
+        "source_label": "Showing Deep Link URL",
+        "source_definition": "The Uniform Resource Locator (URL) that links to the originating system.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanDate",
+        "source_native_name": "CaravanDate",
+        "source_label": "Caravan Date",
+        "source_definition": "The date of the organized tour.",
+        "source_resource": "Caravan",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanName",
+        "source_native_name": "CaravanName",
+        "source_label": "Caravan Name",
+        "source_definition": "The name or short description of the tour.",
+        "source_resource": "Caravan",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanType",
+        "source_native_name": "CaravanType",
+        "source_label": "Caravan Type",
+        "source_definition": "The type of organized tour (e.g., AOR, Broker, Other, etc.).",
+        "source_resource": "Caravan",
+        "source_data_type": "org.reso.metadata.enums.CaravanType",
+        "source_enum_ref": "org.reso.metadata.enums.CaravanType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.StopKey",
+        "source_native_name": "StopKey",
+        "source_label": "Stop Key",
+        "source_definition": "The key of a caravan stop record. This is a foreign key to the CaravanStop Resource. Typical stops are represented by an open house or listing record's key. A stop might also be another custom/local resource.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing where the lockbox/smart lock is located. The value may be identical to that of the Listing Key, but the Listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing related to this open house. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating or merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.SocialMedia",
+        "source_native_name": "SocialMedia",
+        "source_label": "Social Media",
+        "source_definition": "The social media associated with the Showing record.",
+        "source_resource": "Showing",
+        "source_data_type": "Collection(org.reso.metadata.SocialMedia)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.StopDate",
+        "source_native_name": "StopDate",
+        "source_label": "Stop Date",
+        "source_definition": "The date the caravan stop will be open.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemLockOrBoxKey and OriginatingSystemLockOrBoxKey.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for the listing record related to this open house. This may be a number or string that can include a Uniform Resource Identifier (URI) or other forms. This is the system being connected to and not necessarily the original source of the record. This may be a foreign key from the resource selected in the ResourceName field.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingAgent",
+        "source_native_name": "ShowingAgent",
+        "source_label": "Showing Agent",
+        "source_definition": "The showing agent.",
+        "source_resource": "Showing",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanStatus",
+        "source_native_name": "CaravanStatus",
+        "source_label": "Caravan Status",
+        "source_definition": "Status of the organized tour (e.g., Active, Cancelled, Ended, etc.).",
+        "source_resource": "Caravan",
+        "source_data_type": "org.reso.metadata.enums.CaravanStatus",
+        "source_enum_ref": "org.reso.metadata.enums.CaravanStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.StopOrder",
+        "source_native_name": "StopOrder",
+        "source_label": "Stop Order",
+        "source_definition": "This is used when the order of stops needs to be communicated.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingCity",
+        "source_native_name": "ListingCity",
+        "source_label": "Listing City",
+        "source_definition": "The city of the property where the lockbox/smart lock is located.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.LockOrBoxId",
+        "source_native_name": "LockOrBoxId",
+        "source_label": "Lock or Box ID",
+        "source_definition": "The local, well-known identifier for a given lockbox/smartlock system. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "showing",
+        "label": "showing",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "appointment",
+        "label": "appointment",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "open_house",
+        "label": "open house",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "schedule",
+        "label": "schedule",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "visitor",
+        "label": "visitor",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "broker_attendance",
+        "label": "broker attendance",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "access_instruction",
+        "label": "access instruction",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "lockbox",
+        "label": "lockbox",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "key_custody",
+        "label": "key custody",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "key_movement",
+        "label": "key movement",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "access_code",
+        "label": "access code",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "attendance_status",
+        "label": "attendance status",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "showing_media",
+        "label": "media",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.Media",
+            "source_native_name": "Media",
+            "source_data_type": "Collection(org.reso.metadata.Media)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_notes",
+        "label": "notes",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.Notes",
+            "source_native_name": "Notes",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_listing",
+        "label": "listing",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.Listing",
+            "source_native_name": "Listing",
+            "source_data_type": "org.reso.metadata.Property",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_feed_types",
+        "label": "feed types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Caravan.FeedTypes",
+            "source_native_name": "FeedTypes",
+            "source_data_type": "org.reso.metadata.enums.FeedTypes",
+            "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "open_house_listing",
+        "label": "listing",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "OpenHouse.Listing",
+            "source_native_name": "Listing",
+            "source_data_type": "org.reso.metadata.Property",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_feed_types",
+        "label": "feed types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.FeedTypes",
+            "source_native_name": "FeedTypes",
+            "source_data_type": "org.reso.metadata.enums.FeedTypes",
+            "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_showing_id",
+        "label": "showing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ShowingId",
+            "source_native_name": "ShowingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_caravan_key",
+        "label": "caravan key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Caravan.CaravanKey",
+            "source_native_name": "CaravanKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_stop_stop_id",
+        "label": "stop id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "CaravanStop.StopId",
+            "source_native_name": "StopId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_showing_key",
+        "label": "showing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ShowingKey",
+            "source_native_name": "ShowingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_showing_url",
+        "label": "showing deep link url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ShowingUrl",
+            "source_native_name": "ShowingUrl",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_caravan_date",
+        "label": "caravan date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Caravan.CaravanDate",
+            "source_native_name": "CaravanDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_caravan_name",
+        "label": "caravan name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Caravan.CaravanName",
+            "source_native_name": "CaravanName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_caravan_type",
+        "label": "caravan type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Caravan.CaravanType",
+            "source_native_name": "CaravanType",
+            "source_data_type": "org.reso.metadata.enums.CaravanType",
+            "source_enum_ref": "org.reso.metadata.enums.CaravanType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_stop_stop_key",
+        "label": "stop key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "CaravanStop.StopKey",
+            "source_native_name": "StopKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_feed_types",
+        "label": "feed types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.FeedTypes",
+            "source_native_name": "FeedTypes",
+            "source_data_type": "org.reso.metadata.enums.FeedTypes",
+            "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "open_house_listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "OpenHouse.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_social_media",
+        "label": "social media",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.SocialMedia",
+            "source_native_name": "SocialMedia",
+            "source_data_type": "Collection(org.reso.metadata.SocialMedia)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_stop_stop_date",
+        "label": "stop date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "CaravanStop.StopDate",
+            "source_native_name": "StopDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "open_house_listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "OpenHouse.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_showing_agent",
+        "label": "showing agent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ShowingAgent",
+            "source_native_name": "ShowingAgent",
+            "source_data_type": "org.reso.metadata.Member",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_caravan_status",
+        "label": "caravan status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Caravan.CaravanStatus",
+            "source_native_name": "CaravanStatus",
+            "source_data_type": "org.reso.metadata.enums.CaravanStatus",
+            "source_enum_ref": "org.reso.metadata.enums.CaravanStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_stop_feed_types",
+        "label": "feed types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "CaravanStop.FeedTypes",
+            "source_native_name": "FeedTypes",
+            "source_data_type": "org.reso.metadata.enums.FeedTypes",
+            "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "caravan_stop_stop_order",
+        "label": "stop order",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "CaravanStop.StopOrder",
+            "source_native_name": "StopOrder",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_listing_city",
+        "label": "listing city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.ListingCity",
+            "source_native_name": "ListingCity",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_lock_or_box_id",
+        "label": "lock or box id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.LockOrBoxId",
+            "source_native_name": "LockOrBoxId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.Media",
+        "source_native_name": "Media",
+        "source_label": "Media",
+        "source_definition": "The media associated with the Showing record.",
+        "source_resource": "Showing",
+        "source_data_type": "Collection(org.reso.metadata.Media)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.Notes",
+        "source_native_name": "Notes",
+        "source_label": "Notes",
+        "source_definition": "Notes or feedback about the property or showing.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.Listing",
+        "source_native_name": "Listing",
+        "source_label": "Listing",
+        "source_definition": "The listing associated with the showing.",
+        "source_resource": "Showing",
+        "source_data_type": "org.reso.metadata.Property",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "Caravan",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.Listing",
+        "source_native_name": "Listing",
+        "source_label": "Listing",
+        "source_definition": "The listing associated with the open house.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "org.reso.metadata.Property",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "Showing",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing being shown. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingId",
+        "source_native_name": "ShowingId",
+        "source_label": "Showing ID",
+        "source_definition": "The well-known identifier for the Showing record. The value may be identical to that of the ShowingKey, but the ShowingId is intended to be the value used by a human to retrieve the information about a specific showing. In a multiple-originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanKey",
+        "source_native_name": "CaravanKey",
+        "source_label": "Caravan Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the CaravanKey is the system unique identifier from the system that the record was retrieved.",
+        "source_resource": "Caravan",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.StopId",
+        "source_native_name": "StopId",
+        "source_label": "Stop ID",
+        "source_definition": "The ID of a caravan stop record. Typical stops are represented by an open house or listing record's ID. A stop might also be another custom/local resource.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingKey",
+        "source_native_name": "ShowingKey",
+        "source_label": "Showing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemShowingKey and OriginatingSystemShowingKey.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingUrl",
+        "source_native_name": "ShowingUrl",
+        "source_label": "Showing Deep Link URL",
+        "source_definition": "The Uniform Resource Locator (URL) that links to the originating system.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanDate",
+        "source_native_name": "CaravanDate",
+        "source_label": "Caravan Date",
+        "source_definition": "The date of the organized tour.",
+        "source_resource": "Caravan",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanName",
+        "source_native_name": "CaravanName",
+        "source_label": "Caravan Name",
+        "source_definition": "The name or short description of the tour.",
+        "source_resource": "Caravan",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanType",
+        "source_native_name": "CaravanType",
+        "source_label": "Caravan Type",
+        "source_definition": "The type of organized tour (e.g., AOR, Broker, Other, etc.).",
+        "source_resource": "Caravan",
+        "source_data_type": "org.reso.metadata.enums.CaravanType",
+        "source_enum_ref": "org.reso.metadata.enums.CaravanType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.StopKey",
+        "source_native_name": "StopKey",
+        "source_label": "Stop Key",
+        "source_definition": "The key of a caravan stop record. This is a foreign key to the CaravanStop Resource. Typical stops are represented by an open house or listing record's key. A stop might also be another custom/local resource.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing where the lockbox/smart lock is located. The value may be identical to that of the Listing Key, but the Listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing related to this open house. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating or merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.SocialMedia",
+        "source_native_name": "SocialMedia",
+        "source_label": "Social Media",
+        "source_definition": "The social media associated with the Showing record.",
+        "source_resource": "Showing",
+        "source_data_type": "Collection(org.reso.metadata.SocialMedia)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.StopDate",
+        "source_native_name": "StopDate",
+        "source_label": "Stop Date",
+        "source_definition": "The date the caravan stop will be open.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemLockOrBoxKey and OriginatingSystemLockOrBoxKey.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for the listing record related to this open house. This may be a number or string that can include a Uniform Resource Identifier (URI) or other forms. This is the system being connected to and not necessarily the original source of the record. This may be a foreign key from the resource selected in the ResourceName field.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingAgent",
+        "source_native_name": "ShowingAgent",
+        "source_label": "Showing Agent",
+        "source_definition": "The showing agent.",
+        "source_resource": "Showing",
+        "source_data_type": "org.reso.metadata.Member",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Caravan.CaravanStatus",
+        "source_native_name": "CaravanStatus",
+        "source_label": "Caravan Status",
+        "source_definition": "Status of the organized tour (e.g., Active, Cancelled, Ended, etc.).",
+        "source_resource": "Caravan",
+        "source_data_type": "org.reso.metadata.enums.CaravanStatus",
+        "source_enum_ref": "org.reso.metadata.enums.CaravanStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "CaravanStop.StopOrder",
+        "source_native_name": "StopOrder",
+        "source_label": "Stop Order",
+        "source_definition": "This is used when the order of stops needs to be communicated.",
+        "source_resource": "CaravanStop",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingCity",
+        "source_native_name": "ListingCity",
+        "source_label": "Listing City",
+        "source_definition": "The city of the property where the lockbox/smart lock is located.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.LockOrBoxId",
+        "source_native_name": "LockOrBoxId",
+        "source_label": "Lock or Box ID",
+        "source_definition": "The local, well-known identifier for a given lockbox/smartlock system. This value may not be unique, specifically in the case of aggregation systems, and it should be the identifier from the original system.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
