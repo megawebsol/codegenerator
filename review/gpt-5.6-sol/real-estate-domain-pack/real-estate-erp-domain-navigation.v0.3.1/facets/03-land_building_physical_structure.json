@@ -1,0 +1,3485 @@
+{
+  "macro_area": {
+    "id": "property",
+    "order": 1,
+    "label": "Property"
+  },
+  "subarea": {
+    "id": "land_building_physical_structure",
+    "order": 3,
+    "label": "Land, Building and Physical Structure",
+    "facet_number": 3,
+    "description": "Physical composition of parcels, buildings, structures, units and measurable areas.",
+    "typical_concepts": {
+      "accommodation_category": {
+        "ref": "base0001.accommodation_category@1",
+        "kind": "property",
+        "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [
+              "https://schema.org/category"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/accommodationCategory",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "accommodation_floor_plan": {
+        "ref": "base0001.accommodation_floor_plan@1",
+        "kind": "property",
+        "definition": "A floorplan of some [[Accommodation]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Residence"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/FloorPlan"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/accommodationFloorPlan",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "amenity_feature": {
+        "ref": "base0001.amenity_feature@1",
+        "kind": "property",
+        "definition": "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/LocationFeatureSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/amenityFeature",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "area": {
+        "ref": "base0001.area@1",
+        "kind": "property",
+        "definition": "The area within which users can expect to reach the broadcast service.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/BroadcastService"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/area",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "bed": {
+        "ref": "base0001.bed@1",
+        "kind": "property",
+        "definition": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text.\n      If you want to indicate the quantity of a certain kind of bed, use an instance of BedDetails. For more detailed information, use the amenityFeature property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/HotelRoom",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/BedDetails",
+              "https://schema.org/BedType",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/bed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "depth": {
+        "ref": "base0001.depth@1",
+        "kind": "property",
+        "definition": "The depth of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/OfferShippingDetails",
+              "https://schema.org/Product",
+              "https://schema.org/ShippingConditions",
+              "https://schema.org/VisualArtwork"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Distance",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/depth",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "floor_level": {
+        "ref": "base0001.floor_level@1",
+        "kind": "property",
+        "definition": "The floor level for an [[Accommodation]] in a multi-storey building. Since counting\n  systems [vary internationally](https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designations), the local system should be used where possible.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/LocalBusiness",
+              "https://schema.org/Residence"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/floorLevel",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "floor_size": {
+        "ref": "base0001.floor_size@1",
+        "kind": "property",
+        "definition": "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/floorSize",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "lease_length": {
+        "ref": "base0001.lease_length@1",
+        "kind": "property",
+        "definition": "Length of the lease for some [[Accommodation]], either particular to some [[Offer]] or in some cases intrinsic to the property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Offer",
+              "https://schema.org/RealEstateListing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Duration",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/leaseLength",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_accommodation_units": {
+        "ref": "base0001.number_of_accommodation_units@1",
+        "kind": "property",
+        "definition": "Indicates the total (available plus unavailable) number of accommodation units in an [[ApartmentComplex]], or the number of accommodation units for a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See also [[numberOfAvailableAccommodationUnits]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfAccommodationUnits",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_available_accommodation_units": {
+        "ref": "base0001.number_of_available_accommodation_units@1",
+        "kind": "property",
+        "definition": "Indicates the number of available accommodation units in an [[ApartmentComplex]], or the number of accommodation units for a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See also [[numberOfAccommodationUnits]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfAvailableAccommodationUnits",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_bathrooms_total": {
+        "ref": "base0001.number_of_bathrooms_total@1",
+        "kind": "property",
+        "definition": "The total integer number of bathrooms in some [[Accommodation]], following real estate conventions as [documented in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field): \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also [[numberOfRooms]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfBathroomsTotal",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_bedrooms": {
+        "ref": "base0001.number_of_bedrooms@1",
+        "kind": "property",
+        "definition": "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfBedrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_full_bathrooms": {
+        "ref": "base0001.number_of_full_bathrooms@1",
+        "kind": "property",
+        "definition": "Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfFullBathrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_partial_bathrooms": {
+        "ref": "base0001.number_of_partial_bathrooms@1",
+        "kind": "property",
+        "definition": "Number of partial bathrooms - The total number of half and ¼ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsPartial field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfPartialBathrooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "number_of_rooms": {
+        "ref": "base0001.number_of_rooms@1",
+        "kind": "property",
+        "definition": "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Apartment",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/House",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/SingleFamilyResidence",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/numberOfRooms",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "occupancy": {
+        "ref": "base0001.occupancy@1",
+        "kind": "property",
+        "definition": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Apartment",
+              "https://schema.org/HotelRoom",
+              "https://schema.org/SingleFamilyResidence",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/occupancy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "permitted_usage": {
+        "ref": "base0001.permitted_usage@1",
+        "kind": "property",
+        "definition": "Indications regarding the permitted usage of the accommodation.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/permittedUsage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "pets_allowed": {
+        "ref": "base0001.pets_allowed@1",
+        "kind": "property",
+        "definition": "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/petsAllowed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "tour_booking_page": {
+        "ref": "base0001.tour_booking_page@1",
+        "kind": "property",
+        "definition": "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/tourBookingPage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "year_built": {
+        "ref": "base0001.year_built@1",
+        "kind": "property",
+        "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/yearBuilt",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.View",
+        "source_native_name": "View",
+        "source_label": "View",
+        "source_definition": "A pick list of views, as seen from the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.View",
+        "source_enum_ref": "org.reso.metadata.enums.View",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Roof",
+        "source_native_name": "Roof",
+        "source_label": "Roof",
+        "source_definition": "A list describing the roof style type (e.g., Spanish Tile, Composite, Shake).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Roof",
+        "source_enum_ref": "org.reso.metadata.enums.Roof",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Media",
+        "source_native_name": "Media",
+        "source_label": "Media",
+        "source_definition": "A collection of media items related to the Building record.",
+        "source_resource": "Building",
+        "source_data_type": "Collection(org.reso.metadata.Media)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Rooms",
+        "source_native_name": "Rooms",
+        "source_label": "Rooms",
+        "source_definition": "A collection of types of rooms and details/features about the given room.",
+        "source_resource": "Property",
+        "source_data_type": "Collection(org.reso.metadata.PropertyRooms)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PetFee",
+        "source_native_name": "PetFee",
+        "source_label": "Pet Fee",
+        "source_definition": "The amount of the fee paid by residents in order to keep a pet in the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TaxLot",
+        "source_native_name": "TaxLot",
+        "source_label": "Tax Lot",
+        "source_definition": "The tax lot identifier of the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the commonly used short code. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Levels",
+        "source_native_name": "Levels",
+        "source_label": "Levels",
+        "source_definition": "The number of levels in the property being sold (e.g., One, Two, Three or More, Multi/Split). A discreet horizontal plane of interior living space (excluding basements).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Levels",
+        "source_enum_ref": "org.reso.metadata.enums.Levels",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxLot",
+        "source_native_name": "TaxLot",
+        "source_label": "Tax Lot",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the short code that is commonly used. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Cooling",
+        "source_native_name": "Cooling",
+        "source_label": "Cooling",
+        "source_definition": "A list describing the cooling or air conditioning features of the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Cooling",
+        "source_enum_ref": "org.reso.metadata.enums.Cooling",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Fencing",
+        "source_native_name": "Fencing",
+        "source_label": "Fencing",
+        "source_definition": "A pick list of types of fencing surrounding the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Fencing",
+        "source_enum_ref": "org.reso.metadata.enums.Fencing",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Heating",
+        "source_native_name": "Heating",
+        "source_label": "Heating",
+        "source_definition": "A pick list describing the heating features of the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Heating",
+        "source_enum_ref": "org.reso.metadata.enums.Heating",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TaxYear",
+        "source_native_name": "TaxYear",
+        "source_label": "Tax Year",
+        "source_definition": "The year in with the last assessment of the property value/tax was made.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Stories",
+        "source_native_name": "Stories",
+        "source_label": "Stories",
+        "source_definition": "The number of floors in the property being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Basement",
+        "source_native_name": "Basement",
+        "source_label": "Basement",
+        "source_definition": "A list of information and features about the basement (i.e., None/Slab, Finished, Partially Finished, Crawl Space, Dirt, Outside Entrance, Radon Mitigation).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Basement",
+        "source_enum_ref": "org.reso.metadata.enums.Basement",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Electric",
+        "source_native_name": "Electric",
+        "source_label": "Electric",
+        "source_definition": "A list of electric-service related features of the building (e.g., 110 Volt, 3 Phase, 220 Volt).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Electric",
+        "source_enum_ref": "org.reso.metadata.enums.Electric",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Flooring",
+        "source_native_name": "Flooring",
+        "source_label": "Flooring",
+        "source_definition": "A pick list of the types of flooring found within the common spaces of the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Flooring",
+        "source_enum_ref": "org.reso.metadata.enums.Flooring",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GarageYN",
+        "source_native_name": "GarageYN",
+        "source_label": "Garage Yes/No",
+        "source_definition": "Indicated whether or not the building has a parking garage or garages available to residents of the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Basement",
+        "source_native_name": "Basement",
+        "source_label": "Basement",
+        "source_definition": "A list of information and features about the basement (i.e., None/Slab, Finished, Partially Finished, Crawl Space, Dirt, Outside Entrance, Radon Mitigation).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Basement",
+        "source_enum_ref": "org.reso.metadata.enums.Basement",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Flooring",
+        "source_native_name": "Flooring",
+        "source_label": "Flooring",
+        "source_definition": "A list of the type(s) of flooring found within the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Flooring",
+        "source_enum_ref": "org.reso.metadata.enums.Flooring",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RoomType",
+        "source_native_name": "RoomType",
+        "source_label": "Room Type",
+        "source_definition": "A list of identifiers for specific interior spaces within a structure (e.g., Bedroom, Bathroom, Kitchen, Living Room). A relational implementation of rooms must omit the type from the field name and use RoomType to create a vertical representation of the various rooms. Note that garage or basement should not be added as a room type, as these are represented by the ParkingFeatures and Basement fields, respectively.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RoomType",
+        "source_enum_ref": "org.reso.metadata.enums.RoomType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxTract",
+        "source_native_name": "TaxTract",
+        "source_label": "Tax Tract",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Amenities",
+        "source_native_name": "Amenities",
+        "source_label": "Amenities",
+        "source_definition": "The amenities provided by the building, homeowner association or complex (e.g., pool, dog park).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Amenities",
+        "source_enum_ref": "org.reso.metadata.enums.Amenities",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ComplexId",
+        "source_native_name": "ComplexId",
+        "source_label": "Complex ID",
+        "source_definition": "The identifier for the complex or campus to which the building belongs.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CoolingYN",
+        "source_native_name": "CoolingYN",
+        "source_label": "Cooling Yes/No",
+        "source_definition": "Indicates whether or not the building has some form of cooling or air conditioning.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.HeatingYN",
+        "source_native_name": "HeatingYN",
+        "source_label": "Heating Yes/No",
+        "source_definition": "Indicates whether or not the building has heating.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.LeaseTerm",
+        "source_native_name": "LeaseTerm",
+        "source_label": "Lease Term",
+        "source_definition": "A pick list of lengths that represent the length of the lease (e.g., weekly, month to month, 6-month lease, 12-month lease, 2-year lease).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.LeaseTerm",
+        "source_enum_ref": "org.reso.metadata.enums.LeaseTerm",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TerraceYN",
+        "source_native_name": "TerraceYN",
+        "source_label": "Terrace Yes/No",
+        "source_definition": "Indicates whether or not the building includes a shared terrace or terraces or individual units with terraces.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RangeArea",
+        "source_native_name": "RangeArea",
+        "source_label": "Range Area",
+        "source_definition": "The measurement or percentage of the property that has been allocated as range.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AreaSource",
+        "source_native_name": "AreaSource",
+        "source_label": "Area Source",
+        "source_definition": "The source of the measurements. This is a pick list of options showing the source of the measurement (e.g., Agent, Assessor, Estimate).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.AreaSource",
+        "source_enum_ref": "org.reso.metadata.enums.AreaSource",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingId",
+        "source_native_name": "BuildingId",
+        "source_label": "Building ID",
+        "source_definition": "The Building Identification Number (BIN) from the relevant building authority.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CityRegion",
+        "source_native_name": "CityRegion",
+        "source_label": "City Region",
+        "source_definition": "A subsection or area of a defined city (e.g., Soho in New York City; Ironbound in Newark, New Jersey; Georgetown in Washington, DC).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the building or property. The current use is an important factor in understanding the overall condition of the land and determining its appropriateness for intended use.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ElevatorYN",
+        "source_native_name": "ElevatorYN",
+        "source_label": "Elevator Yes/No",
+        "source_definition": "Indicates whether or not the building has a passenger elevator or elevators.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.HighSchool",
+        "source_native_name": "HighSchool",
+        "source_label": "High School",
+        "source_definition": "The name of the high school having a catchment area that includes the associated property.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.HighSchool",
+        "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParkingFee",
+        "source_native_name": "ParkingFee",
+        "source_label": "Parking Fee",
+        "source_definition": "The fee paid by the resident of the building for parking.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PetDeposit",
+        "source_native_name": "PetDeposit",
+        "source_label": "Pet Deposit",
+        "source_definition": "The amount of a one-time deposit paid by residents in order to keep a pet in the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Possession",
+        "source_native_name": "Possession",
+        "source_label": "Possession",
+        "source_definition": "A list defining when possession will occur (i.e., Close Of Escrow, Close Plus 1 Day, etc.).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Possession",
+        "source_enum_ref": "org.reso.metadata.enums.Possession",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PostalCity",
+        "source_native_name": "PostalCity",
+        "source_label": "Postal City",
+        "source_definition": "The official city per the U.S. Postal Service (USPS), which may be different from the recorded city.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.PostalCity",
+        "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.StreetName",
+        "source_native_name": "StreetName",
+        "source_label": "Street Name",
+        "source_definition": "The street name portion of the building's street address.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BasementYN",
+        "source_native_name": "BasementYN",
+        "source_label": "Basement Yes/No",
+        "source_definition": "Indicates whether or not the property has a basement.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CityRegion",
+        "source_native_name": "CityRegion",
+        "source_label": "City Region",
+        "source_definition": "A subsection or area of a defined city (e.g., SOHO in New York, NY; Ironbound in Newark, NJ; Inside the Beltway).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the property. The current use of the property is an important factor in understanding the overall condition of the land and determining appropriateness for intended use.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.EntryLevel",
+        "source_native_name": "EntryLevel",
+        "source_label": "Entry Level",
+        "source_definition": "A numeric field that describes the level within the structure, single-family residence (SFR) or a unit in a building, where the main entry to the dwelling is located. When a unit has one floor, it is implicit that this is also the level of the unit itself.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.HeightUnit",
+        "source_native_name": "HeightUnit",
+        "source_label": "Height Unit",
+        "source_definition": "A pick list of the unit of measurement for height (e.g., Feet, Meters).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LinearUnits",
+        "source_enum_ref": "org.reso.metadata.enums.LinearUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "parcel",
+        "label": "parcel",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "lot",
+        "label": "lot",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "land_area",
+        "label": "land area",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "building",
+        "label": "building",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "physical_structure",
+        "label": "physical structure",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "unit",
+        "label": "unit",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "floor",
+        "label": "floor",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "room",
+        "label": "room",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "gross_area",
+        "label": "gross area",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "net_area",
+        "label": "net area",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "private_area",
+        "label": "private area",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "built_area",
+        "label": "built area",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "construction_date",
+        "label": "construction date",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "renovation",
+        "label": "renovation",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "construction_material",
+        "label": "construction material",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "physical_condition",
+        "label": "physical condition",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "building_city",
+        "label": "city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.City",
+            "source_native_name": "City",
+            "source_data_type": "org.reso.metadata.enums.City",
+            "source_enum_ref": "org.reso.metadata.enums.City",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "address_locality",
+              "ref": "base0001.address_locality@1",
+              "kind": "property",
+              "definition": "The locality in which the street address is, and which is in the region. For example, Mountain View.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_view",
+        "label": "view",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.View",
+            "source_native_name": "View",
+            "source_data_type": "org.reso.metadata.enums.View",
+            "source_enum_ref": "org.reso.metadata.enums.View",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "roof",
+        "label": "roof",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Roof",
+            "source_native_name": "Roof",
+            "source_data_type": "org.reso.metadata.enums.Roof",
+            "source_enum_ref": "org.reso.metadata.enums.Roof",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_media",
+        "label": "media",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Media",
+            "source_native_name": "Media",
+            "source_data_type": "Collection(org.reso.metadata.Media)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "rooms",
+        "label": "rooms",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Rooms",
+            "source_native_name": "Rooms",
+            "source_data_type": "Collection(org.reso.metadata.PropertyRooms)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_pet_fee",
+        "label": "pet fee",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PetFee",
+            "source_native_name": "PetFee",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_tax_lot",
+        "label": "tax lot",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.TaxLot",
+            "source_native_name": "TaxLot",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_zoning",
+        "label": "zoning",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Zoning",
+            "source_native_name": "Zoning",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "levels",
+        "label": "levels",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Levels",
+            "source_native_name": "Levels",
+            "source_data_type": "org.reso.metadata.enums.Levels",
+            "source_enum_ref": "org.reso.metadata.enums.Levels",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_lot",
+        "label": "tax lot",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxLot",
+            "source_native_name": "TaxLot",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "zoning",
+        "label": "zoning",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Zoning",
+            "source_native_name": "Zoning",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_cooling",
+        "label": "cooling",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Cooling",
+            "source_native_name": "Cooling",
+            "source_data_type": "org.reso.metadata.enums.Cooling",
+            "source_enum_ref": "org.reso.metadata.enums.Cooling",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_country",
+        "label": "country",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Country",
+            "source_native_name": "Country",
+            "source_data_type": "org.reso.metadata.enums.Country",
+            "source_enum_ref": "org.reso.metadata.enums.Country",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "address_country",
+              "ref": "base0001.address_country@1",
+              "kind": "property",
+              "definition": "The country. Recommended to be in 2-letter [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) format, for example \"US\". For backward compatibility, a 3-letter [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such as \"SGP\" or a full country name such as \"Singapore\" can also be used.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_fencing",
+        "label": "fencing",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Fencing",
+            "source_native_name": "Fencing",
+            "source_data_type": "org.reso.metadata.enums.Fencing",
+            "source_enum_ref": "org.reso.metadata.enums.Fencing",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_heating",
+        "label": "heating",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Heating",
+            "source_native_name": "Heating",
+            "source_data_type": "org.reso.metadata.enums.Heating",
+            "source_enum_ref": "org.reso.metadata.enums.Heating",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_tax_year",
+        "label": "tax year",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.TaxYear",
+            "source_native_name": "TaxYear",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "stories",
+        "label": "stories",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Stories",
+            "source_native_name": "Stories",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_basement",
+        "label": "basement",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Basement",
+            "source_native_name": "Basement",
+            "source_data_type": "org.reso.metadata.enums.Basement",
+            "source_enum_ref": "org.reso.metadata.enums.Basement",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_electric",
+        "label": "electric",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Electric",
+            "source_native_name": "Electric",
+            "source_data_type": "org.reso.metadata.enums.Electric",
+            "source_enum_ref": "org.reso.metadata.enums.Electric",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_flooring",
+        "label": "flooring",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Flooring",
+            "source_native_name": "Flooring",
+            "source_data_type": "org.reso.metadata.enums.Flooring",
+            "source_enum_ref": "org.reso.metadata.enums.Flooring",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_garage_yn",
+        "label": "garage yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GarageYN",
+            "source_native_name": "GarageYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_latitude",
+        "label": "latitude",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Latitude",
+            "source_native_name": "Latitude",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "latitude",
+              "ref": "base0001.latitude@1",
+              "kind": "property",
+              "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_tax_block",
+        "label": "tax block",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.TaxBlock",
+            "source_native_name": "TaxBlock",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "basement",
+        "label": "basement",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Basement",
+            "source_native_name": "Basement",
+            "source_data_type": "org.reso.metadata.enums.Basement",
+            "source_enum_ref": "org.reso.metadata.enums.Basement",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "flooring",
+        "label": "flooring",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Flooring",
+            "source_native_name": "Flooring",
+            "source_data_type": "org.reso.metadata.enums.Flooring",
+            "source_enum_ref": "org.reso.metadata.enums.Flooring",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "room_type",
+        "label": "room type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.RoomType",
+            "source_native_name": "RoomType",
+            "source_data_type": "org.reso.metadata.enums.RoomType",
+            "source_enum_ref": "org.reso.metadata.enums.RoomType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_block",
+        "label": "tax block",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxBlock",
+            "source_native_name": "TaxBlock",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_tract",
+        "label": "tax tract",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxTract",
+            "source_native_name": "TaxTract",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_amenities",
+        "label": "amenities",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Amenities",
+            "source_native_name": "Amenities",
+            "source_data_type": "org.reso.metadata.enums.Amenities",
+            "source_enum_ref": "org.reso.metadata.enums.Amenities",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_complex_id",
+        "label": "complex id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ComplexId",
+            "source_native_name": "ComplexId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_cooling_yn",
+        "label": "cooling yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CoolingYN",
+            "source_native_name": "CoolingYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_feed_types",
+        "label": "feed types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.FeedTypes",
+            "source_native_name": "FeedTypes",
+            "source_data_type": "org.reso.metadata.enums.FeedTypes",
+            "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_heating_yn",
+        "label": "heating yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.HeatingYN",
+            "source_native_name": "HeatingYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_lease_term",
+        "label": "lease term",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.LeaseTerm",
+            "source_native_name": "LeaseTerm",
+            "source_data_type": "org.reso.metadata.enums.LeaseTerm",
+            "source_enum_ref": "org.reso.metadata.enums.LeaseTerm",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_longitude",
+        "label": "longitude",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Longitude",
+            "source_native_name": "Longitude",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "longitude",
+              "ref": "base0001.longitude@1",
+              "kind": "property",
+              "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_terrace_yn",
+        "label": "terrace yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.TerraceYN",
+            "source_native_name": "TerraceYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_year_built",
+        "label": "year built",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.YearBuilt",
+            "source_native_name": "YearBuilt",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "year_built",
+              "ref": "base0001.year_built@1",
+              "kind": "property",
+              "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "range_area",
+        "label": "range area",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.RangeArea",
+            "source_native_name": "RangeArea",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "year_built",
+        "label": "year built",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.YearBuilt",
+            "source_native_name": "YearBuilt",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "year_built",
+              "ref": "base0001.year_built@1",
+              "kind": "property",
+              "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_area_source",
+        "label": "area source",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.AreaSource",
+            "source_native_name": "AreaSource",
+            "source_data_type": "org.reso.metadata.enums.AreaSource",
+            "source_enum_ref": "org.reso.metadata.enums.AreaSource",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_building_id",
+        "label": "building id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.BuildingId",
+            "source_native_name": "BuildingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_city_region",
+        "label": "city region",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CityRegion",
+            "source_native_name": "CityRegion",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_current_use",
+        "label": "current use",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CurrentUse",
+            "source_native_name": "CurrentUse",
+            "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_elevator_yn",
+        "label": "elevator yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ElevatorYN",
+            "source_native_name": "ElevatorYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_high_school",
+        "label": "high school",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.HighSchool",
+            "source_native_name": "HighSchool",
+            "source_data_type": "org.reso.metadata.enums.HighSchool",
+            "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_parking_fee",
+        "label": "parking fee",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ParkingFee",
+            "source_native_name": "ParkingFee",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_pet_deposit",
+        "label": "pet deposit",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PetDeposit",
+            "source_native_name": "PetDeposit",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_possession",
+        "label": "possession",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Possession",
+            "source_native_name": "Possession",
+            "source_data_type": "org.reso.metadata.enums.Possession",
+            "source_enum_ref": "org.reso.metadata.enums.Possession",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_postal_city",
+        "label": "postal city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PostalCity",
+            "source_native_name": "PostalCity",
+            "source_data_type": "org.reso.metadata.enums.PostalCity",
+            "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_postal_code",
+        "label": "postal code",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PostalCode",
+            "source_native_name": "PostalCode",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "has_postal_code",
+              "ref": "base0001.has_postal_code@1",
+              "kind": "property",
+              "definition": "The postal code. For example, 94043.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_street_name",
+        "label": "street name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.StreetName",
+            "source_native_name": "StreetName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "basement_yn",
+        "label": "basement yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BasementYN",
+            "source_native_name": "BasementYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "city_region",
+        "label": "city region",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CityRegion",
+            "source_native_name": "CityRegion",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "current_use",
+        "label": "current use",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CurrentUse",
+            "source_native_name": "CurrentUse",
+            "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "entry_level",
+        "label": "entry level",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.EntryLevel",
+            "source_native_name": "EntryLevel",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "height_unit",
+        "label": "height unit",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.HeightUnit",
+            "source_native_name": "HeightUnit",
+            "source_data_type": "org.reso.metadata.enums.LinearUnits",
+            "source_enum_ref": "org.reso.metadata.enums.LinearUnits",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.City",
+        "source_native_name": "City",
+        "source_label": "City",
+        "source_definition": "The city in the listing address.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.City",
+        "source_enum_ref": "org.reso.metadata.enums.City",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "address_locality",
+          "ref": "base0001.address_locality@1",
+          "kind": "property",
+          "definition": "The locality in which the street address is, and which is in the region. For example, Mountain View.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.View",
+        "source_native_name": "View",
+        "source_label": "View",
+        "source_definition": "A pick list of views, as seen from the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.View",
+        "source_enum_ref": "org.reso.metadata.enums.View",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Roof",
+        "source_native_name": "Roof",
+        "source_label": "Roof",
+        "source_definition": "A list describing the roof style type (e.g., Spanish Tile, Composite, Shake).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Roof",
+        "source_enum_ref": "org.reso.metadata.enums.Roof",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Media",
+        "source_native_name": "Media",
+        "source_label": "Media",
+        "source_definition": "A collection of media items related to the Building record.",
+        "source_resource": "Building",
+        "source_data_type": "Collection(org.reso.metadata.Media)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Rooms",
+        "source_native_name": "Rooms",
+        "source_label": "Rooms",
+        "source_definition": "A collection of types of rooms and details/features about the given room.",
+        "source_resource": "Property",
+        "source_data_type": "Collection(org.reso.metadata.PropertyRooms)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PetFee",
+        "source_native_name": "PetFee",
+        "source_label": "Pet Fee",
+        "source_definition": "The amount of the fee paid by residents in order to keep a pet in the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TaxLot",
+        "source_native_name": "TaxLot",
+        "source_label": "Tax Lot",
+        "source_definition": "The tax lot identifier of the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the commonly used short code. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Levels",
+        "source_native_name": "Levels",
+        "source_label": "Levels",
+        "source_definition": "The number of levels in the property being sold (e.g., One, Two, Three or More, Multi/Split). A discreet horizontal plane of interior living space (excluding basements).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Levels",
+        "source_enum_ref": "org.reso.metadata.enums.Levels",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxLot",
+        "source_native_name": "TaxLot",
+        "source_label": "Tax Lot",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the short code that is commonly used. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Cooling",
+        "source_native_name": "Cooling",
+        "source_label": "Cooling",
+        "source_definition": "A list describing the cooling or air conditioning features of the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Cooling",
+        "source_enum_ref": "org.reso.metadata.enums.Cooling",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Country",
+        "source_native_name": "Country",
+        "source_label": "Country",
+        "source_definition": "The country abbreviation in the building's postal address.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Country",
+        "source_enum_ref": "org.reso.metadata.enums.Country",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "address_country",
+          "ref": "base0001.address_country@1",
+          "kind": "property",
+          "definition": "The country. Recommended to be in 2-letter [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) format, for example \"US\". For backward compatibility, a 3-letter [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such as \"SGP\" or a full country name such as \"Singapore\" can also be used.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Fencing",
+        "source_native_name": "Fencing",
+        "source_label": "Fencing",
+        "source_definition": "A pick list of types of fencing surrounding the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Fencing",
+        "source_enum_ref": "org.reso.metadata.enums.Fencing",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Heating",
+        "source_native_name": "Heating",
+        "source_label": "Heating",
+        "source_definition": "A pick list describing the heating features of the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Heating",
+        "source_enum_ref": "org.reso.metadata.enums.Heating",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TaxYear",
+        "source_native_name": "TaxYear",
+        "source_label": "Tax Year",
+        "source_definition": "The year in with the last assessment of the property value/tax was made.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Stories",
+        "source_native_name": "Stories",
+        "source_label": "Stories",
+        "source_definition": "The number of floors in the property being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Basement",
+        "source_native_name": "Basement",
+        "source_label": "Basement",
+        "source_definition": "A list of information and features about the basement (i.e., None/Slab, Finished, Partially Finished, Crawl Space, Dirt, Outside Entrance, Radon Mitigation).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Basement",
+        "source_enum_ref": "org.reso.metadata.enums.Basement",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Electric",
+        "source_native_name": "Electric",
+        "source_label": "Electric",
+        "source_definition": "A list of electric-service related features of the building (e.g., 110 Volt, 3 Phase, 220 Volt).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Electric",
+        "source_enum_ref": "org.reso.metadata.enums.Electric",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Flooring",
+        "source_native_name": "Flooring",
+        "source_label": "Flooring",
+        "source_definition": "A pick list of the types of flooring found within the common spaces of the building.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Flooring",
+        "source_enum_ref": "org.reso.metadata.enums.Flooring",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GarageYN",
+        "source_native_name": "GarageYN",
+        "source_label": "Garage Yes/No",
+        "source_definition": "Indicated whether or not the building has a parking garage or garages available to residents of the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Latitude",
+        "source_native_name": "Latitude",
+        "source_label": "Latitude",
+        "source_definition": "The geographic latitude of some reference point on the property, specified in degrees and decimal parts. Positive numbers must not include the plus symbol.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "latitude",
+          "ref": "base0001.latitude@1",
+          "kind": "property",
+          "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Basement",
+        "source_native_name": "Basement",
+        "source_label": "Basement",
+        "source_definition": "A list of information and features about the basement (i.e., None/Slab, Finished, Partially Finished, Crawl Space, Dirt, Outside Entrance, Radon Mitigation).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Basement",
+        "source_enum_ref": "org.reso.metadata.enums.Basement",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Flooring",
+        "source_native_name": "Flooring",
+        "source_label": "Flooring",
+        "source_definition": "A list of the type(s) of flooring found within the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Flooring",
+        "source_enum_ref": "org.reso.metadata.enums.Flooring",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RoomType",
+        "source_native_name": "RoomType",
+        "source_label": "Room Type",
+        "source_definition": "A list of identifiers for specific interior spaces within a structure (e.g., Bedroom, Bathroom, Kitchen, Living Room). A relational implementation of rooms must omit the type from the field name and use RoomType to create a vertical representation of the various rooms. Note that garage or basement should not be added as a room type, as these are represented by the ParkingFeatures and Basement fields, respectively.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RoomType",
+        "source_enum_ref": "org.reso.metadata.enums.RoomType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxTract",
+        "source_native_name": "TaxTract",
+        "source_label": "Tax Tract",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Amenities",
+        "source_native_name": "Amenities",
+        "source_label": "Amenities",
+        "source_definition": "The amenities provided by the building, homeowner association or complex (e.g., pool, dog park).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Amenities",
+        "source_enum_ref": "org.reso.metadata.enums.Amenities",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ComplexId",
+        "source_native_name": "ComplexId",
+        "source_label": "Complex ID",
+        "source_definition": "The identifier for the complex or campus to which the building belongs.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CoolingYN",
+        "source_native_name": "CoolingYN",
+        "source_label": "Cooling Yes/No",
+        "source_definition": "Indicates whether or not the building has some form of cooling or air conditioning.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.HeatingYN",
+        "source_native_name": "HeatingYN",
+        "source_label": "Heating Yes/No",
+        "source_definition": "Indicates whether or not the building has heating.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.LeaseTerm",
+        "source_native_name": "LeaseTerm",
+        "source_label": "Lease Term",
+        "source_definition": "A pick list of lengths that represent the length of the lease (e.g., weekly, month to month, 6-month lease, 12-month lease, 2-year lease).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.LeaseTerm",
+        "source_enum_ref": "org.reso.metadata.enums.LeaseTerm",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Longitude",
+        "source_native_name": "Longitude",
+        "source_label": "Longitude",
+        "source_definition": "The geographic longitude of some reference point on the property, specified in degrees and decimal parts. Positive numbers must not include the plus symbol.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "longitude",
+          "ref": "base0001.longitude@1",
+          "kind": "property",
+          "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TerraceYN",
+        "source_native_name": "TerraceYN",
+        "source_label": "Terrace Yes/No",
+        "source_definition": "Indicates whether or not the building includes a shared terrace or terraces or individual units with terraces.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.YearBuilt",
+        "source_native_name": "YearBuilt",
+        "source_label": "Year Built",
+        "source_definition": "The year that an occupancy permit was first granted for the building or some other local measure of initial habitability. An empty value is permitted with an attribute noting that it is an unknown date or that the building is new construction. While constraints have not been applied, convention is a four-digit year value.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "year_built",
+          "ref": "base0001.year_built@1",
+          "kind": "property",
+          "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RangeArea",
+        "source_native_name": "RangeArea",
+        "source_label": "Range Area",
+        "source_definition": "The measurement or percentage of the property that has been allocated as range.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearBuilt",
+        "source_native_name": "YearBuilt",
+        "source_label": "Year Built",
+        "source_definition": "The year that an occupancy permit is first granted for the house or other local measure of initial habitability of the build. The type of definition permits an empty value with an attribute noting that it is an unknown date or that the building is new construction. While constraints have not been applied, convention at the time of adoption has this as a four-digit year value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "year_built",
+          "ref": "base0001.year_built@1",
+          "kind": "property",
+          "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AreaSource",
+        "source_native_name": "AreaSource",
+        "source_label": "Area Source",
+        "source_definition": "The source of the measurements. This is a pick list of options showing the source of the measurement (e.g., Agent, Assessor, Estimate).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.AreaSource",
+        "source_enum_ref": "org.reso.metadata.enums.AreaSource",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingId",
+        "source_native_name": "BuildingId",
+        "source_label": "Building ID",
+        "source_definition": "The Building Identification Number (BIN) from the relevant building authority.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CityRegion",
+        "source_native_name": "CityRegion",
+        "source_label": "City Region",
+        "source_definition": "A subsection or area of a defined city (e.g., Soho in New York City; Ironbound in Newark, New Jersey; Georgetown in Washington, DC).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the building or property. The current use is an important factor in understanding the overall condition of the land and determining its appropriateness for intended use.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ElevatorYN",
+        "source_native_name": "ElevatorYN",
+        "source_label": "Elevator Yes/No",
+        "source_definition": "Indicates whether or not the building has a passenger elevator or elevators.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.HighSchool",
+        "source_native_name": "HighSchool",
+        "source_label": "High School",
+        "source_definition": "The name of the high school having a catchment area that includes the associated property.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.HighSchool",
+        "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParkingFee",
+        "source_native_name": "ParkingFee",
+        "source_label": "Parking Fee",
+        "source_definition": "The fee paid by the resident of the building for parking.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PetDeposit",
+        "source_native_name": "PetDeposit",
+        "source_label": "Pet Deposit",
+        "source_definition": "The amount of a one-time deposit paid by residents in order to keep a pet in the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Possession",
+        "source_native_name": "Possession",
+        "source_label": "Possession",
+        "source_definition": "A list defining when possession will occur (i.e., Close Of Escrow, Close Plus 1 Day, etc.).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Possession",
+        "source_enum_ref": "org.reso.metadata.enums.Possession",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PostalCity",
+        "source_native_name": "PostalCity",
+        "source_label": "Postal City",
+        "source_definition": "The official city per the U.S. Postal Service (USPS), which may be different from the recorded city.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.PostalCity",
+        "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PostalCode",
+        "source_native_name": "PostalCode",
+        "source_label": "Postal Code",
+        "source_definition": "The postal code portion of the building's street or mailing address.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "has_postal_code",
+          "ref": "base0001.has_postal_code@1",
+          "kind": "property",
+          "definition": "The postal code. For example, 94043.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.StreetName",
+        "source_native_name": "StreetName",
+        "source_label": "Street Name",
+        "source_definition": "The street name portion of the building's street address.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BasementYN",
+        "source_native_name": "BasementYN",
+        "source_label": "Basement Yes/No",
+        "source_definition": "Indicates whether or not the property has a basement.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CityRegion",
+        "source_native_name": "CityRegion",
+        "source_label": "City Region",
+        "source_definition": "A subsection or area of a defined city (e.g., SOHO in New York, NY; Ironbound in Newark, NJ; Inside the Beltway).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentUse",
+        "source_native_name": "CurrentUse",
+        "source_label": "Current Use",
+        "source_definition": "A list of the type(s) of current use of the property. The current use of the property is an important factor in understanding the overall condition of the land and determining appropriateness for intended use.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.EntryLevel",
+        "source_native_name": "EntryLevel",
+        "source_label": "Entry Level",
+        "source_definition": "A numeric field that describes the level within the structure, single-family residence (SFR) or a unit in a building, where the main entry to the dwelling is located. When a unit has one floor, it is implicit that this is also the level of the unit itself.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.HeightUnit",
+        "source_native_name": "HeightUnit",
+        "source_label": "Height Unit",
+        "source_definition": "A pick list of the unit of measurement for height (e.g., Feet, Meters).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LinearUnits",
+        "source_enum_ref": "org.reso.metadata.enums.LinearUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
