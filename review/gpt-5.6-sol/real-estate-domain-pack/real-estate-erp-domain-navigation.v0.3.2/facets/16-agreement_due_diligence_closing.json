@@ -1,0 +1,3696 @@
+{
+  "macro_area": {
+    "id": "negotiation",
+    "order": 5,
+    "label": "Negotiation"
+  },
+  "subarea": {
+    "id": "agreement_due_diligence_closing",
+    "order": 2,
+    "label": "Agreement, Due Diligence and Closing",
+    "facet_number": 16,
+    "description": "Contractual progression, due diligence and transaction completion milestones.",
+    "typical_concepts": {
+      "citation": {
+        "ref": "base0001.citation@1",
+        "kind": "property",
+        "definition": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/citation",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "confirmation_number": {
+        "ref": "base0001.confirmation_number@1",
+        "kind": "property",
+        "definition": "A number that confirms the given order or payment has been received.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Invoice",
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/confirmationNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "date_issued": {
+        "ref": "base0001.date_issued@1",
+        "kind": "property",
+        "definition": "The date the ticket was issued.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Ticket"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/dateIssued",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "end_date": {
+        "ref": "base0001.end_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/JobPosting",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/endDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validThrough",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasEndDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_start_date": {
+        "ref": "base0001.has_start_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/Permit",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/startDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validFrom",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasStartDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_based_on": {
+        "ref": "base0001.is_based_on@1",
+        "kind": "property",
+        "definition": "A resource from which this work is derived or from which it is a modification or adaptation.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Product",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isBasedOn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "order_date": {
+        "ref": "base0001.order_date@1",
+        "kind": "property",
+        "definition": "Date order was placed.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/DatesAndTimes/hasDate"
+            ],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#OrderDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/orderDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "order_identifier": {
+        "ref": "base0001.order_identifier@1",
+        "kind": "property",
+        "definition": "The identifier of the transaction.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#OrderIdentifier",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/orderNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "order_status": {
+        "ref": "base0001.order_status@1",
+        "kind": "property",
+        "definition": "The current status of the order.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OrderStatus"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/orderStatus",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "terms_of_service": {
+        "ref": "base0001.terms_of_service@1",
+        "kind": "property",
+        "definition": "Human-readable terms of service documentation.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/termsOfService",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "valid": {
+        "ref": "base0001.valid@1",
+        "kind": "property",
+        "definition": "Date (often a range) of validity of a resource.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [],
+            "parent_refs": [],
+            "range_refs": [
+              "http://www.w3.org/2000/01/rdf-schema#Literal"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/valid",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "invariants": [
+      "Agreement != Closing"
+    ],
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CloseDate",
+        "source_native_name": "CloseDate",
+        "source_label": "Close Date",
+        "source_definition": "With for-sale listings, this is the date the purchase agreement was fulfilled. With lease listings, it is the date the requirements were fulfilled, such as contract and/or deposit. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ClosePrice",
+        "source_native_name": "ClosePrice",
+        "source_label": "Close Price",
+        "source_definition": "The amount of money paid by the purchaser to the seller for the property under the agreement.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Concessions",
+        "source_native_name": "Concessions",
+        "source_label": "Concessions",
+        "source_definition": "Indicates whether or not there are concessions included in the sales agreement (i.e., Yes, No or Call Listing Agent).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Concessions",
+        "source_enum_ref": "org.reso.metadata.enums.Concessions",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OnMarketDate",
+        "source_native_name": "OnMarketDate",
+        "source_label": "On Market Date",
+        "source_definition": "The date the listing was placed on market. Where possible, this date is reflective of the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OffMarketDate",
+        "source_native_name": "OffMarketDate",
+        "source_label": "Off Market Date",
+        "source_definition": "The date the listing was taken off market. Where possible, this date represents the date entered by the agent, reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WithdrawnDate",
+        "source_native_name": "WithdrawnDate",
+        "source_label": "Withdrawn Date",
+        "source_definition": "The date that the listing was withdrawn from the market. This is not when a listing contract was canceled or closed, but a withdrawal from the market while the contract between the seller and listing agent is still in effect and an offer has not been accepted. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ContingentDate",
+        "source_native_name": "ContingentDate",
+        "source_label": "Contingent Date",
+        "source_definition": "The date an offer was made with a contingency. The listing remains on market. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ExpirationDate",
+        "source_native_name": "ExpirationDate",
+        "source_label": "Expiration Date",
+        "source_definition": "The date when the listing agreement will expire. This is the date entered by the agent reflecting when the change contractually occurred or will occur, not a timestamp of when the change was made in the MLS. The expiration date of listings, prior to their expiration, cancellation, sale or lease, is confidential information and should be restricted to the agent and their managers, partners or broker.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StandardStatus",
+        "source_native_name": "StandardStatus",
+        "source_label": "Standard Status",
+        "source_definition": "The status of the listing as it reflects the state of the contract between the listing agent and seller, or an agreement with a buyer (e.g., Active, Active Under Contract, Canceled, Closed, Expired, Pending, Withdrawn). This is a single-select field.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.StandardStatus",
+        "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BackOnMarketDate",
+        "source_native_name": "BackOnMarketDate",
+        "source_label": "Back on Market Date",
+        "source_definition": "The date a listing, which had previously gone off market, went back to being on market. This date typically will reflect contractual dates. System timestamp should leverage the term Timestamp rather than Date in the field name.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CancellationDate",
+        "source_native_name": "CancellationDate",
+        "source_label": "Cancellation Date",
+        "source_definition": "The date that the listing contract between the seller and listing agent was canceled. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingAgreement",
+        "source_native_name": "ListingAgreement",
+        "source_label": "Listing Agreement",
+        "source_definition": "The nature of the agreement between the seller and the listing agent (e.g., Exclusive Agency, Open Listing).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingAgreement",
+        "source_enum_ref": "org.reso.metadata.enums.ListingAgreement",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OriginalListPrice",
+        "source_native_name": "OriginalListPrice",
+        "source_label": "Original List Price",
+        "source_definition": "The original price of the property on the initial agreement between the seller and the seller's broker.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SimpleDaysOnMarket",
+        "source_native_name": "SimpleDaysOnMarket",
+        "source_label": "Simple Days on Market",
+        "source_definition": "A simplified version of days on market (DOM) where the calculation is a simple start and end, such as the difference between the listing input or contract date and the date of sale.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingContractDate",
+        "source_native_name": "ListingContractDate",
+        "source_label": "Listing Contract Date",
+        "source_definition": "The effective date of the agreement between the seller and the seller's broker. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfUnitsLeased",
+        "source_native_name": "NumberOfUnitsLeased",
+        "source_label": "Number Of Units Leased",
+        "source_definition": "The total number of units currently under a lease agreement.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentDesignation",
+        "source_native_name": "ListAgentDesignation",
+        "source_label": "List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PurchaseContractDate",
+        "source_native_name": "PurchaseContractDate",
+        "source_label": "Purchase Contract Date",
+        "source_definition": "With for-sale listings, this represents the date an offer was accepted and the listing was no longer on market. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS. With lease listings, this may represent a meeting of the minds to lease but with some contractual requirements yet to be fulfilled, such as contract signing or receipt of the deposit.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentDesignation",
+        "source_native_name": "BuyerAgentDesignation",
+        "source_label": "Buyer Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BuyerAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.BuyerAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentDesignation",
+        "source_native_name": "CoListAgentDesignation",
+        "source_label": "Co-List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CoListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.CoListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentDesignation",
+        "source_native_name": "CoBuyerAgentDesignation",
+        "source_label": "Co-Buyer Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ContractStatusChangeDate",
+        "source_native_name": "ContractStatusChangeDate",
+        "source_label": "Contract Status Change Date",
+        "source_definition": "The date of the listing's contractual status change. This is not necessarily the time the agent made the change in the MLS system, but rather the date of the contractual change.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts",
+        "source_native_name": "contracts",
+        "source_label": "contracts",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract",
+        "source_native_name": "contract",
+        "source_label": "contract",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "billing_duration",
+            "ref": "base0001.billing_duration@1",
+            "kind": "property",
+            "definition": "Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan. Type can be either a Duration or a Number (in which case the unit of measurement, for example month, is specified by the unitCode property).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "eligible_with_supplier",
+            "ref": "base0001.eligible_with_supplier@1",
+            "kind": "property",
+            "definition": "The supplier of the incentivized item/service for which the incentive is valid for such as a utility company, merchant, or contractor.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "employment_type",
+            "ref": "base0001.employment_type@1",
+            "kind": "property",
+            "definition": "Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "number_of_loan_payments",
+            "ref": "base0001.number_of_loan_payments@1",
+            "kind": "property",
+            "definition": "The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "occupancy",
+            "ref": "base0001.occupancy@1",
+            "kind": "property",
+            "definition": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "risk_factor",
+            "ref": "base0001.risk_factor@1",
+            "kind": "property",
+            "definition": "A modifiable or non-modifiable factor that increases the risk of a patient contracting this condition, e.g. age,  coexisting condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "service_operator",
+            "ref": "base0001.service_operator@1",
+            "kind": "property",
+            "definition": "The operating organization, if different from the provider.  This enables the representation of services that are provided by an organization, but operated by another organization like a subcontractor.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.completion",
+        "source_native_name": "completion",
+        "source_label": "completion",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "course_prerequisites",
+            "ref": "base0001.course_prerequisites@1",
+            "kind": "property",
+            "definition": "Requirements for taking the Course. May be completion of another [[Course]] or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using [[AlignmentObject]].",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "educational_credential_awarded",
+            "ref": "base0001.educational_credential_awarded@1",
+            "kind": "property",
+            "definition": "A description of the qualification, award, certificate, diploma or other educational credential awarded as a consequence of successful completion of this course or program.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "occupational_credential_awarded",
+            "ref": "base0001.occupational_credential_awarded@1",
+            "kind": "property",
+            "definition": "A description of the qualification, award, certificate, diploma or other occupational credential awarded as a consequence of successful completion of this course or program.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.legalForms",
+        "source_native_name": "legalForms",
+        "source_label": "legalForms",
+        "source_definition": "The progress of the legal forms completion, including TA6, TA7 where relevant, and TA10 forms or their equivalents",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].signatures",
+        "source_native_name": "signatures",
+        "source_label": "signatures",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.terms",
+        "source_native_name": "terms",
+        "source_label": "terms",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.enquiries.started",
+        "source_native_name": "started",
+        "source_label": "started",
+        "source_definition": "The date the enquiries process between conveyancers was commenced",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "except_date",
+            "ref": "base0001.except_date@1",
+            "kind": "property",
+            "definition": "Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will not take place. The property allows exceptions to\n      a [[Schedule]] to be specified. If an exception is specified as a [[DateTime]] then only the event that would have started at that specific date and time\n      should be excluded from the schedule. If an exception is specified as a [[Date]] then any event that is scheduled for that 24 hour period should be\n      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template",
+        "source_native_name": "template",
+        "source_label": "template",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "checkout_page_urltemplate",
+            "ref": "base0001.checkout_page_urltemplate@1",
+            "kind": "property",
+            "definition": "A URL template (RFC 6570) for a checkout page for an offer. This approach allows merchants to specify a URL for online checkout of the offered product, by interpolating parameters such as the logged in user ID, product ID, quantity, discount code etc. Parameter naming and standardization are not specified here.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "code_sample_type",
+            "ref": "base0001.code_sample_type@1",
+            "kind": "property",
+            "definition": "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "is_variant_of",
+            "ref": "base0001.is_variant_of@1",
+            "kind": "property",
+            "definition": "Indicates the kind of product that this is a variant of. In the case of [[ProductModel]], this is a pointer (from a ProductModel) to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive. In the case of a [[ProductGroup]], the group description also serves as a template, representing a set of Products that vary on explicitly defined, specific dimensions only (so it defines both a set of variants, as well as which values distinguish amongst those variants). When used with [[ProductGroup]], this property can apply to any [[Product]] included in the group.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "num_constraints",
+            "ref": "base0001.num_constraints@1",
+            "kind": "property",
+            "definition": "Indicates the number of constraints property values defined for a particular [[ConstraintNode]] such as [[StatisticalVariable]]. This helps applications understand if they have access to a sufficiently complete description of a [[StatisticalVariable]] or other construct that is defined using properties on template-style nodes.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "sample_type",
+            "ref": "base0001.sample_type@1",
+            "kind": "property",
+            "definition": "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "url_template",
+            "ref": "base0001.url_template@1",
+            "kind": "property",
+            "definition": "An url template (RFC6570) that will be used to construct the target of the execution of the action.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "value_name",
+            "ref": "base0001.value_name@1",
+            "kind": "property",
+            "definition": "Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML's input@name.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].signatures[].name",
+        "source_native_name": "name",
+        "source_label": "name",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.completion.started",
+        "source_native_name": "started",
+        "source_label": "started",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "except_date",
+            "ref": "base0001.except_date@1",
+            "kind": "property",
+            "definition": "Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will not take place. The property allows exceptions to\n      a [[Schedule]] to be specified. If an exception is specified as a [[DateTime]] then only the event that would have started at that specific date and time\n      should be excluded from the schedule. If an exception is specified as a [[Date]] then any event that is scheduled for that 24 hour period should be\n      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.legalForms.started",
+        "source_native_name": "started",
+        "source_label": "started",
+        "source_definition": "The date the legal forms were shared with the vendors for completion",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "except_date",
+            "ref": "base0001.except_date@1",
+            "kind": "property",
+            "definition": "Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will not take place. The property allows exceptions to\n      a [[Schedule]] to be specified. If an exception is specified as a [[DateTime]] then only the event that would have started at that specific date and time\n      should be excluded from the schedule. If an exception is specified as a [[Date]] then any event that is scheduled for that 24 hour period should be\n      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.completion.expected",
+        "source_native_name": "expected",
+        "source_label": "expected",
+        "source_definition": "A proposed or agreed date for completion",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "arrival_time",
+            "ref": "base0001.arrival_time@1",
+            "kind": "property",
+            "definition": "The expected arrival time.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "course_workload",
+            "ref": "base0001.course_workload@1",
+            "kind": "property",
+            "definition": "The amount of work expected of students taking the course, often provided as a figure per week or per month, and may be broken down by type. For example, \"2 hours of lectures, 1 hour of lab work and 3 hours of independent study per week\".",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "cutoff_time",
+            "ref": "base0001.cutoff_time@1",
+            "kind": "property",
+            "definition": "Order cutoff time allows merchants to describe the time after which they will no longer process orders received on that day. For orders processed after cutoff time, one day gets added to the delivery time estimate. This property is expected to be most typically used via the [[ShippingRateSettings]] publication pattern. The time is indicated using the ISO-8601 Time format, e.g. \"23:30:00-05:00\" would represent 6:30 pm Eastern Standard Time (EST) which is 5 hours behind Coordinated Universal Time (UTC).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "departure_time",
+            "ref": "base0001.departure_time@1",
+            "kind": "property",
+            "definition": "The expected departure time.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "domain_includes",
+            "ref": "base0001.domain_includes@1",
+            "kind": "property",
+            "definition": "Relates a property to a class that is (one of) the type(s) the property is expected to be used on.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "end_time",
+            "ref": "base0001.end_time@1",
+            "kind": "property",
+            "definition": "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. E.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "ethics_policy",
+            "ref": "base0001.ethics_policy@1",
+            "kind": "property",
+            "definition": "Statement about ethics policy, e.g. of a [[NewsMediaOrganization]] regarding journalistic and publishing practices, or of a [[Restaurant]], a page describing food source policies. In the case of a [[NewsMediaOrganization]], an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "is_product_of",
+            "ref": "base0001.is_product_of@1",
+            "kind": "property",
+            "definition": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.exchangeOfContracts",
+        "source_native_name": "exchangeOfContracts",
+        "source_label": "exchangeOfContracts",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.completion.completed",
+        "source_native_name": "completed",
+        "source_label": "completed",
+        "source_definition": "The actual date the property sale was completed",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "agent_interaction_statistic",
+            "ref": "base0001.agent_interaction_statistic@1",
+            "kind": "property",
+            "definition": "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.soldSubjectToContract",
+        "source_native_name": "soldSubjectToContract",
+        "source_label": "soldSubjectToContract",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving",
+        "source_native_name": "completionAndMoving",
+        "source_label": "Completion and Moving",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.url",
+        "source_native_name": "url",
+        "source_label": "url",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].signatures[].signedOn",
+        "source_native_name": "signedOn",
+        "source_label": "signedOn",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.name",
+        "source_native_name": "name",
+        "source_label": "name",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].signatures[].externalIds",
+        "source_native_name": "externalIds",
+        "source_label": "externalIds",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.exchangeOfContracts.expected",
+        "source_native_name": "expected",
+        "source_label": "expected",
+        "source_definition": "A proposed or agreed date for the exchange of contracts",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "arrival_time",
+            "ref": "base0001.arrival_time@1",
+            "kind": "property",
+            "definition": "The expected arrival time.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "course_workload",
+            "ref": "base0001.course_workload@1",
+            "kind": "property",
+            "definition": "The amount of work expected of students taking the course, often provided as a figure per week or per month, and may be broken down by type. For example, \"2 hours of lectures, 1 hour of lab work and 3 hours of independent study per week\".",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "cutoff_time",
+            "ref": "base0001.cutoff_time@1",
+            "kind": "property",
+            "definition": "Order cutoff time allows merchants to describe the time after which they will no longer process orders received on that day. For orders processed after cutoff time, one day gets added to the delivery time estimate. This property is expected to be most typically used via the [[ShippingRateSettings]] publication pattern. The time is indicated using the ISO-8601 Time format, e.g. \"23:30:00-05:00\" would represent 6:30 pm Eastern Standard Time (EST) which is 5 hours behind Coordinated Universal Time (UTC).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "departure_time",
+            "ref": "base0001.departure_time@1",
+            "kind": "property",
+            "definition": "The expected departure time.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "domain_includes",
+            "ref": "base0001.domain_includes@1",
+            "kind": "property",
+            "definition": "Relates a property to a class that is (one of) the type(s) the property is expected to be used on.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "end_time",
+            "ref": "base0001.end_time@1",
+            "kind": "property",
+            "definition": "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. E.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "ethics_policy",
+            "ref": "base0001.ethics_policy@1",
+            "kind": "property",
+            "definition": "Statement about ethics policy, e.g. of a [[NewsMediaOrganization]] regarding journalistic and publishing practices, or of a [[Restaurant]], a page describing food source policies. In the case of a [[NewsMediaOrganization]], an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "is_product_of",
+            "ref": "base0001.is_product_of@1",
+            "kind": "property",
+            "definition": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.exchangeOfContracts.completed",
+        "source_native_name": "completed",
+        "source_label": "completed",
+        "source_definition": "The actual date the contracts were exchanged",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "agent_interaction_statistic",
+            "ref": "base0001.agent_interaction_statistic@1",
+            "kind": "property",
+            "definition": "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.externalIds",
+        "source_native_name": "externalIds",
+        "source_label": "externalIds",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.soldSubjectToContract.completed",
+        "source_native_name": "completed",
+        "source_label": "completed",
+        "source_definition": "The date an offer for sale was accepted by a proceedable buyer",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "agent_interaction_statistic",
+            "ref": "base0001.agent_interaction_statistic@1",
+            "kind": "property",
+            "definition": "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.requiredSignatories",
+        "source_native_name": "requiredSignatories",
+        "source_label": "requiredSignatories",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.sellerWillEnsure",
+        "source_native_name": "sellerWillEnsure",
+        "source_label": "Please confirm that on completion you will:",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.saleReadyDeclarations.sellerSignatures",
+        "source_native_name": "sellerSignatures",
+        "source_label": "I confirm that all information provided is accurate to the best of my knowledge and if I become aware of any change to/changes which alter the information supplied/provided prior to exchange of contracts for the sale of the property, I will immediately notify the person marketing the property as well as my property lawyer.",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.waterAndDrainage.maintenanceAgreements",
+        "source_native_name": "maintenanceAgreements",
+        "source_label": "Do you have any licences, maintenance agreements, contracts or service agreements in relation to these services?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.moveRestrictionDates",
+        "source_native_name": "moveRestrictionDates",
+        "source_label": "Are there any dates on which you cannot move?",
+        "source_definition": "Note that: the moving date will not be fixed until contracts are exchanged i.e. have become binding, until then you should only make provisional removal arrangements; you do not need to be physically present on the day of completion so long as the property is cleared; timescales to completion vary depending on the complexity of the transaction, length of the chain and requirements of the people involved.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.otherPropertyInChain",
+        "source_native_name": "otherPropertyInChain",
+        "source_label": "Will you need the purchase, sale or remortgage of another property to co-ordinate with the sale of this property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.digitalPropertyLogbook",
+        "source_native_name": "digitalPropertyLogbook",
+        "source_label": "Do you have a Digital Property Logbook?",
+        "source_definition": "See https://www.rlba.org.uk/what-is-a-property-logbook?",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.requiredSignatories[].role",
+        "source_native_name": "role",
+        "source_label": "role",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.servicesCrossing.formalOrInformalAgreements",
+        "source_native_name": "formalOrInformalAgreements",
+        "source_label": "Are you aware of any formal or informal agreements or arrangements for pipes, wires cables or drains to cross either your property or neighbouring property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.waterAndDrainage.maintenanceAgreements.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.moveRestrictionDates.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.otherPropertyInChain.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "agreement",
+        "label": "agreement",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "contract",
+        "label": "contract",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "condition_precedent",
+        "label": "condition precedent",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "due_diligence",
+        "label": "due diligence",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "financing_approval",
+        "label": "financing approval",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "deed",
+        "label": "deed",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "registration",
+        "label": "registration",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "closing_case",
+        "label": "closing case",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "closing_milestone",
+        "label": "closing milestone",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "title_transfer",
+        "label": "title transfer",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "possession_transfer",
+        "label": "possession transfer",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "close_date",
+        "label": "close date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CloseDate",
+            "source_native_name": "CloseDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "close_price",
+        "label": "close price",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ClosePrice",
+            "source_native_name": "ClosePrice",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "concessions",
+        "label": "concessions",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Concessions",
+            "source_native_name": "Concessions",
+            "source_data_type": "org.reso.metadata.enums.Concessions",
+            "source_enum_ref": "org.reso.metadata.enums.Concessions",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "on_market_date",
+        "label": "on market date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OnMarketDate",
+            "source_native_name": "OnMarketDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "off_market_date",
+        "label": "off market date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OffMarketDate",
+            "source_native_name": "OffMarketDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "withdrawn_date",
+        "label": "withdrawn date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WithdrawnDate",
+            "source_native_name": "WithdrawnDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "contingent_date",
+        "label": "contingent date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ContingentDate",
+            "source_native_name": "ContingentDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "expiration_date",
+        "label": "expiration date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ExpirationDate",
+            "source_native_name": "ExpirationDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "standard_status",
+        "label": "standard status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.StandardStatus",
+            "source_native_name": "StandardStatus",
+            "source_data_type": "org.reso.metadata.enums.StandardStatus",
+            "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "back_on_market_date",
+        "label": "back on market date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BackOnMarketDate",
+            "source_native_name": "BackOnMarketDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "cancellation_date",
+        "label": "cancellation date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CancellationDate",
+            "source_native_name": "CancellationDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_agreement",
+        "label": "listing agreement",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingAgreement",
+            "source_native_name": "ListingAgreement",
+            "source_data_type": "org.reso.metadata.enums.ListingAgreement",
+            "source_enum_ref": "org.reso.metadata.enums.ListingAgreement",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "original_list_price",
+        "label": "original list price",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OriginalListPrice",
+            "source_native_name": "OriginalListPrice",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "simple_days_on_market",
+        "label": "simple days on market",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SimpleDaysOnMarket",
+            "source_native_name": "SimpleDaysOnMarket",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_contract_date",
+        "label": "listing contract date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingContractDate",
+            "source_native_name": "ListingContractDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "number_of_units_leased",
+        "label": "number of units leased",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.NumberOfUnitsLeased",
+            "source_native_name": "NumberOfUnitsLeased",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_designation",
+        "label": "list agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentDesignation",
+            "source_native_name": "ListAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "purchase_contract_date",
+        "label": "purchase contract date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PurchaseContractDate",
+            "source_native_name": "PurchaseContractDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_designation",
+        "label": "buyer agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentDesignation",
+            "source_native_name": "BuyerAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.BuyerAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.BuyerAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_designation",
+        "label": "co-list agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentDesignation",
+            "source_native_name": "CoListAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.CoListAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.CoListAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_designation",
+        "label": "co-buyer agent designation",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentDesignation",
+            "source_native_name": "CoBuyerAgentDesignation",
+            "source_data_type": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+            "source_enum_ref": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "contract_status_change_date",
+        "label": "contract status change date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ContractStatusChangeDate",
+            "source_native_name": "ContractStatusChangeDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "contracts",
+        "label": "contracts",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "contracts",
+            "source_native_name": "contracts",
+            "source_data_type": "array",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "contracts_contract",
+        "label": "contract",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "contracts[].contract",
+            "source_native_name": "contract",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_definition_evidence_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "milestones_completion",
+        "label": "completion",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "milestones.completion",
+            "source_native_name": "completion",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_definition_evidence_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "milestones_legal_forms",
+        "label": "legalforms",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "milestones.legalForms",
+            "source_native_name": "legalForms",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "contracts_signatures",
+        "label": "signatures",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "contracts[].signatures",
+            "source_native_name": "signatures",
+            "source_data_type": "array",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "contract_terms",
+        "label": "terms",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "enquiries_started",
+        "label": "started",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "contract_template",
+        "label": "template",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "signatures_name",
+        "label": "name",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "completion_started",
+        "label": "started",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "legal_forms_started",
+        "label": "started",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "completion_expected",
+        "label": "expected",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "milestones_exchange_of_contracts",
+        "label": "exchangeofcontracts",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "milestones.exchangeOfContracts",
+            "source_native_name": "exchangeOfContracts",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "completion_completed",
+        "label": "completed",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "milestones_sold_subject_to_contract",
+        "label": "soldsubjecttocontract",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "milestones.soldSubjectToContract",
+            "source_native_name": "soldSubjectToContract",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_pack_completion_and_moving",
+        "label": "completion and moving",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "propertyPack.completionAndMoving",
+            "source_native_name": "completionAndMoving",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "template_url",
+        "label": "url",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "signatures_signed_on",
+        "label": "signedon",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "template_name",
+        "label": "name",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "signatures_external_ids",
+        "label": "externalids",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "exchange_of_contracts_expected",
+        "label": "expected",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "exchange_of_contracts_completed",
+        "label": "completed",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "template_external_ids",
+        "label": "externalids",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "sold_subject_to_contract_completed",
+        "label": "completed",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "template_required_signatories",
+        "label": "requiredsignatories",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "completion_and_moving_seller_will_ensure",
+        "label": "please confirm that on completion you will:",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "sale_ready_declarations_seller_signatures",
+        "label": "i confirm that all information provided is accurate to the best of my knowledge and if i become aware of any change to/changes which alter the information supplied/provided prior to exchange of contracts for the sale of the property, i will immediately notify the person marketing the property as well as my property lawyer.",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "water_and_drainage_maintenance_agreements",
+        "label": "do you have any licences, maintenance agreements, contracts or service agreements in relation to these services?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "completion_and_moving_move_restriction_dates",
+        "label": "are there any dates on which you cannot move?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "completion_and_moving_other_property_in_chain",
+        "label": "will you need the purchase, sale or remortgage of another property to co-ordinate with the sale of this property?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "completion_and_moving_digital_property_logbook",
+        "label": "do you have a digital property logbook?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "required_signatories_role",
+        "label": "role",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "services_crossing_formal_or_informal_agreements",
+        "label": "are you aware of any formal or informal agreements or arrangements for pipes, wires cables or drains to cross either your property or neighbouring property?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "maintenance_agreements_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "move_restriction_dates_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "other_property_in_chain_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CloseDate",
+        "source_native_name": "CloseDate",
+        "source_label": "Close Date",
+        "source_definition": "With for-sale listings, this is the date the purchase agreement was fulfilled. With lease listings, it is the date the requirements were fulfilled, such as contract and/or deposit. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ClosePrice",
+        "source_native_name": "ClosePrice",
+        "source_label": "Close Price",
+        "source_definition": "The amount of money paid by the purchaser to the seller for the property under the agreement.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Concessions",
+        "source_native_name": "Concessions",
+        "source_label": "Concessions",
+        "source_definition": "Indicates whether or not there are concessions included in the sales agreement (i.e., Yes, No or Call Listing Agent).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Concessions",
+        "source_enum_ref": "org.reso.metadata.enums.Concessions",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OnMarketDate",
+        "source_native_name": "OnMarketDate",
+        "source_label": "On Market Date",
+        "source_definition": "The date the listing was placed on market. Where possible, this date is reflective of the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OffMarketDate",
+        "source_native_name": "OffMarketDate",
+        "source_label": "Off Market Date",
+        "source_definition": "The date the listing was taken off market. Where possible, this date represents the date entered by the agent, reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WithdrawnDate",
+        "source_native_name": "WithdrawnDate",
+        "source_label": "Withdrawn Date",
+        "source_definition": "The date that the listing was withdrawn from the market. This is not when a listing contract was canceled or closed, but a withdrawal from the market while the contract between the seller and listing agent is still in effect and an offer has not been accepted. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ContingentDate",
+        "source_native_name": "ContingentDate",
+        "source_label": "Contingent Date",
+        "source_definition": "The date an offer was made with a contingency. The listing remains on market. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ExpirationDate",
+        "source_native_name": "ExpirationDate",
+        "source_label": "Expiration Date",
+        "source_definition": "The date when the listing agreement will expire. This is the date entered by the agent reflecting when the change contractually occurred or will occur, not a timestamp of when the change was made in the MLS. The expiration date of listings, prior to their expiration, cancellation, sale or lease, is confidential information and should be restricted to the agent and their managers, partners or broker.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StandardStatus",
+        "source_native_name": "StandardStatus",
+        "source_label": "Standard Status",
+        "source_definition": "The status of the listing as it reflects the state of the contract between the listing agent and seller, or an agreement with a buyer (e.g., Active, Active Under Contract, Canceled, Closed, Expired, Pending, Withdrawn). This is a single-select field.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.StandardStatus",
+        "source_enum_ref": "org.reso.metadata.enums.StandardStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BackOnMarketDate",
+        "source_native_name": "BackOnMarketDate",
+        "source_label": "Back on Market Date",
+        "source_definition": "The date a listing, which had previously gone off market, went back to being on market. This date typically will reflect contractual dates. System timestamp should leverage the term Timestamp rather than Date in the field name.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CancellationDate",
+        "source_native_name": "CancellationDate",
+        "source_label": "Cancellation Date",
+        "source_definition": "The date that the listing contract between the seller and listing agent was canceled. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingAgreement",
+        "source_native_name": "ListingAgreement",
+        "source_label": "Listing Agreement",
+        "source_definition": "The nature of the agreement between the seller and the listing agent (e.g., Exclusive Agency, Open Listing).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingAgreement",
+        "source_enum_ref": "org.reso.metadata.enums.ListingAgreement",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OriginalListPrice",
+        "source_native_name": "OriginalListPrice",
+        "source_label": "Original List Price",
+        "source_definition": "The original price of the property on the initial agreement between the seller and the seller's broker.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SimpleDaysOnMarket",
+        "source_native_name": "SimpleDaysOnMarket",
+        "source_label": "Simple Days on Market",
+        "source_definition": "A simplified version of days on market (DOM) where the calculation is a simple start and end, such as the difference between the listing input or contract date and the date of sale.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingContractDate",
+        "source_native_name": "ListingContractDate",
+        "source_label": "Listing Contract Date",
+        "source_definition": "The effective date of the agreement between the seller and the seller's broker. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfUnitsLeased",
+        "source_native_name": "NumberOfUnitsLeased",
+        "source_label": "Number Of Units Leased",
+        "source_definition": "The total number of units currently under a lease agreement.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentDesignation",
+        "source_native_name": "ListAgentDesignation",
+        "source_label": "List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.ListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PurchaseContractDate",
+        "source_native_name": "PurchaseContractDate",
+        "source_label": "Purchase Contract Date",
+        "source_definition": "With for-sale listings, this represents the date an offer was accepted and the listing was no longer on market. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS. With lease listings, this may represent a meeting of the minds to lease but with some contractual requirements yet to be fulfilled, such as contract signing or receipt of the deposit.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentDesignation",
+        "source_native_name": "BuyerAgentDesignation",
+        "source_label": "Buyer Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BuyerAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.BuyerAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentDesignation",
+        "source_native_name": "CoListAgentDesignation",
+        "source_label": "Co-List Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CoListAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.CoListAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentDesignation",
+        "source_native_name": "CoBuyerAgentDesignation",
+        "source_label": "Co-Buyer Agent Designation",
+        "source_definition": "Designations and certifications acknowledging experience and expertise in various real estate sectors are awarded by the National Association of REALTORS® (NAR) and each affiliated group upon completion of required courses.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+        "source_enum_ref": "org.reso.metadata.enums.CoBuyerAgentDesignation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ContractStatusChangeDate",
+        "source_native_name": "ContractStatusChangeDate",
+        "source_label": "Contract Status Change Date",
+        "source_definition": "The date of the listing's contractual status change. This is not necessarily the time the agent made the change in the MLS system, but rather the date of the contractual change.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts",
+        "source_native_name": "contracts",
+        "source_label": "contracts",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract",
+        "source_native_name": "contract",
+        "source_label": "contract",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "billing_duration",
+            "ref": "base0001.billing_duration@1",
+            "kind": "property",
+            "definition": "Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan. Type can be either a Duration or a Number (in which case the unit of measurement, for example month, is specified by the unitCode property).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "eligible_with_supplier",
+            "ref": "base0001.eligible_with_supplier@1",
+            "kind": "property",
+            "definition": "The supplier of the incentivized item/service for which the incentive is valid for such as a utility company, merchant, or contractor.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "employment_type",
+            "ref": "base0001.employment_type@1",
+            "kind": "property",
+            "definition": "Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "number_of_loan_payments",
+            "ref": "base0001.number_of_loan_payments@1",
+            "kind": "property",
+            "definition": "The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "occupancy",
+            "ref": "base0001.occupancy@1",
+            "kind": "property",
+            "definition": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "risk_factor",
+            "ref": "base0001.risk_factor@1",
+            "kind": "property",
+            "definition": "A modifiable or non-modifiable factor that increases the risk of a patient contracting this condition, e.g. age,  coexisting condition.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "service_operator",
+            "ref": "base0001.service_operator@1",
+            "kind": "property",
+            "definition": "The operating organization, if different from the provider.  This enables the representation of services that are provided by an organization, but operated by another organization like a subcontractor.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.completion",
+        "source_native_name": "completion",
+        "source_label": "completion",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "course_prerequisites",
+            "ref": "base0001.course_prerequisites@1",
+            "kind": "property",
+            "definition": "Requirements for taking the Course. May be completion of another [[Course]] or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using [[AlignmentObject]].",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "educational_credential_awarded",
+            "ref": "base0001.educational_credential_awarded@1",
+            "kind": "property",
+            "definition": "A description of the qualification, award, certificate, diploma or other educational credential awarded as a consequence of successful completion of this course or program.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "occupational_credential_awarded",
+            "ref": "base0001.occupational_credential_awarded@1",
+            "kind": "property",
+            "definition": "A description of the qualification, award, certificate, diploma or other occupational credential awarded as a consequence of successful completion of this course or program.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.legalForms",
+        "source_native_name": "legalForms",
+        "source_label": "legalForms",
+        "source_definition": "The progress of the legal forms completion, including TA6, TA7 where relevant, and TA10 forms or their equivalents",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].signatures",
+        "source_native_name": "signatures",
+        "source_label": "signatures",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.terms",
+        "source_native_name": "terms",
+        "source_label": "terms",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.enquiries.started",
+        "source_native_name": "started",
+        "source_label": "started",
+        "source_definition": "The date the enquiries process between conveyancers was commenced",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "except_date",
+            "ref": "base0001.except_date@1",
+            "kind": "property",
+            "definition": "Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will not take place. The property allows exceptions to\n      a [[Schedule]] to be specified. If an exception is specified as a [[DateTime]] then only the event that would have started at that specific date and time\n      should be excluded from the schedule. If an exception is specified as a [[Date]] then any event that is scheduled for that 24 hour period should be\n      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template",
+        "source_native_name": "template",
+        "source_label": "template",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "checkout_page_urltemplate",
+            "ref": "base0001.checkout_page_urltemplate@1",
+            "kind": "property",
+            "definition": "A URL template (RFC 6570) for a checkout page for an offer. This approach allows merchants to specify a URL for online checkout of the offered product, by interpolating parameters such as the logged in user ID, product ID, quantity, discount code etc. Parameter naming and standardization are not specified here.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "code_sample_type",
+            "ref": "base0001.code_sample_type@1",
+            "kind": "property",
+            "definition": "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "is_variant_of",
+            "ref": "base0001.is_variant_of@1",
+            "kind": "property",
+            "definition": "Indicates the kind of product that this is a variant of. In the case of [[ProductModel]], this is a pointer (from a ProductModel) to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive. In the case of a [[ProductGroup]], the group description also serves as a template, representing a set of Products that vary on explicitly defined, specific dimensions only (so it defines both a set of variants, as well as which values distinguish amongst those variants). When used with [[ProductGroup]], this property can apply to any [[Product]] included in the group.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "num_constraints",
+            "ref": "base0001.num_constraints@1",
+            "kind": "property",
+            "definition": "Indicates the number of constraints property values defined for a particular [[ConstraintNode]] such as [[StatisticalVariable]]. This helps applications understand if they have access to a sufficiently complete description of a [[StatisticalVariable]] or other construct that is defined using properties on template-style nodes.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "sample_type",
+            "ref": "base0001.sample_type@1",
+            "kind": "property",
+            "definition": "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "url_template",
+            "ref": "base0001.url_template@1",
+            "kind": "property",
+            "definition": "An url template (RFC6570) that will be used to construct the target of the execution of the action.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "value_name",
+            "ref": "base0001.value_name@1",
+            "kind": "property",
+            "definition": "Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML's input@name.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].signatures[].name",
+        "source_native_name": "name",
+        "source_label": "name",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.completion.started",
+        "source_native_name": "started",
+        "source_label": "started",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "except_date",
+            "ref": "base0001.except_date@1",
+            "kind": "property",
+            "definition": "Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will not take place. The property allows exceptions to\n      a [[Schedule]] to be specified. If an exception is specified as a [[DateTime]] then only the event that would have started at that specific date and time\n      should be excluded from the schedule. If an exception is specified as a [[Date]] then any event that is scheduled for that 24 hour period should be\n      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.legalForms.started",
+        "source_native_name": "started",
+        "source_label": "started",
+        "source_definition": "The date the legal forms were shared with the vendors for completion",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "except_date",
+            "ref": "base0001.except_date@1",
+            "kind": "property",
+            "definition": "Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will not take place. The property allows exceptions to\n      a [[Schedule]] to be specified. If an exception is specified as a [[DateTime]] then only the event that would have started at that specific date and time\n      should be excluded from the schedule. If an exception is specified as a [[Date]] then any event that is scheduled for that 24 hour period should be\n      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.completion.expected",
+        "source_native_name": "expected",
+        "source_label": "expected",
+        "source_definition": "A proposed or agreed date for completion",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "arrival_time",
+            "ref": "base0001.arrival_time@1",
+            "kind": "property",
+            "definition": "The expected arrival time.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "course_workload",
+            "ref": "base0001.course_workload@1",
+            "kind": "property",
+            "definition": "The amount of work expected of students taking the course, often provided as a figure per week or per month, and may be broken down by type. For example, \"2 hours of lectures, 1 hour of lab work and 3 hours of independent study per week\".",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "cutoff_time",
+            "ref": "base0001.cutoff_time@1",
+            "kind": "property",
+            "definition": "Order cutoff time allows merchants to describe the time after which they will no longer process orders received on that day. For orders processed after cutoff time, one day gets added to the delivery time estimate. This property is expected to be most typically used via the [[ShippingRateSettings]] publication pattern. The time is indicated using the ISO-8601 Time format, e.g. \"23:30:00-05:00\" would represent 6:30 pm Eastern Standard Time (EST) which is 5 hours behind Coordinated Universal Time (UTC).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "departure_time",
+            "ref": "base0001.departure_time@1",
+            "kind": "property",
+            "definition": "The expected departure time.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "domain_includes",
+            "ref": "base0001.domain_includes@1",
+            "kind": "property",
+            "definition": "Relates a property to a class that is (one of) the type(s) the property is expected to be used on.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "end_time",
+            "ref": "base0001.end_time@1",
+            "kind": "property",
+            "definition": "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. E.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "ethics_policy",
+            "ref": "base0001.ethics_policy@1",
+            "kind": "property",
+            "definition": "Statement about ethics policy, e.g. of a [[NewsMediaOrganization]] regarding journalistic and publishing practices, or of a [[Restaurant]], a page describing food source policies. In the case of a [[NewsMediaOrganization]], an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "is_product_of",
+            "ref": "base0001.is_product_of@1",
+            "kind": "property",
+            "definition": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.exchangeOfContracts",
+        "source_native_name": "exchangeOfContracts",
+        "source_label": "exchangeOfContracts",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.completion.completed",
+        "source_native_name": "completed",
+        "source_label": "completed",
+        "source_definition": "The actual date the property sale was completed",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "agent_interaction_statistic",
+            "ref": "base0001.agent_interaction_statistic@1",
+            "kind": "property",
+            "definition": "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.soldSubjectToContract",
+        "source_native_name": "soldSubjectToContract",
+        "source_label": "soldSubjectToContract",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving",
+        "source_native_name": "completionAndMoving",
+        "source_label": "Completion and Moving",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.url",
+        "source_native_name": "url",
+        "source_label": "url",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].signatures[].signedOn",
+        "source_native_name": "signedOn",
+        "source_label": "signedOn",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.name",
+        "source_native_name": "name",
+        "source_label": "name",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].signatures[].externalIds",
+        "source_native_name": "externalIds",
+        "source_label": "externalIds",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.exchangeOfContracts.expected",
+        "source_native_name": "expected",
+        "source_label": "expected",
+        "source_definition": "A proposed or agreed date for the exchange of contracts",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "arrival_time",
+            "ref": "base0001.arrival_time@1",
+            "kind": "property",
+            "definition": "The expected arrival time.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "course_workload",
+            "ref": "base0001.course_workload@1",
+            "kind": "property",
+            "definition": "The amount of work expected of students taking the course, often provided as a figure per week or per month, and may be broken down by type. For example, \"2 hours of lectures, 1 hour of lab work and 3 hours of independent study per week\".",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "cutoff_time",
+            "ref": "base0001.cutoff_time@1",
+            "kind": "property",
+            "definition": "Order cutoff time allows merchants to describe the time after which they will no longer process orders received on that day. For orders processed after cutoff time, one day gets added to the delivery time estimate. This property is expected to be most typically used via the [[ShippingRateSettings]] publication pattern. The time is indicated using the ISO-8601 Time format, e.g. \"23:30:00-05:00\" would represent 6:30 pm Eastern Standard Time (EST) which is 5 hours behind Coordinated Universal Time (UTC).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "departure_time",
+            "ref": "base0001.departure_time@1",
+            "kind": "property",
+            "definition": "The expected departure time.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "domain_includes",
+            "ref": "base0001.domain_includes@1",
+            "kind": "property",
+            "definition": "Relates a property to a class that is (one of) the type(s) the property is expected to be used on.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "end_time",
+            "ref": "base0001.end_time@1",
+            "kind": "property",
+            "definition": "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. E.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "ethics_policy",
+            "ref": "base0001.ethics_policy@1",
+            "kind": "property",
+            "definition": "Statement about ethics policy, e.g. of a [[NewsMediaOrganization]] regarding journalistic and publishing practices, or of a [[Restaurant]], a page describing food source policies. In the case of a [[NewsMediaOrganization]], an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          },
+          {
+            "symbol": "is_product_of",
+            "ref": "base0001.is_product_of@1",
+            "kind": "property",
+            "definition": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.exchangeOfContracts.completed",
+        "source_native_name": "completed",
+        "source_label": "completed",
+        "source_definition": "The actual date the contracts were exchanged",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "agent_interaction_statistic",
+            "ref": "base0001.agent_interaction_statistic@1",
+            "kind": "property",
+            "definition": "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.externalIds",
+        "source_native_name": "externalIds",
+        "source_label": "externalIds",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "milestones.soldSubjectToContract.completed",
+        "source_native_name": "completed",
+        "source_label": "completed",
+        "source_definition": "The date an offer for sale was accepted by a proceedable buyer",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_evidence_requires_semantic_adjudication",
+        "evidence_matches": [
+          {
+            "symbol": "agent_interaction_statistic",
+            "ref": "base0001.agent_interaction_statistic@1",
+            "kind": "property",
+            "definition": "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.4,
+            "binding_relation": "equivalent"
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.requiredSignatories",
+        "source_native_name": "requiredSignatories",
+        "source_label": "requiredSignatories",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.sellerWillEnsure",
+        "source_native_name": "sellerWillEnsure",
+        "source_label": "Please confirm that on completion you will:",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.saleReadyDeclarations.sellerSignatures",
+        "source_native_name": "sellerSignatures",
+        "source_label": "I confirm that all information provided is accurate to the best of my knowledge and if I become aware of any change to/changes which alter the information supplied/provided prior to exchange of contracts for the sale of the property, I will immediately notify the person marketing the property as well as my property lawyer.",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.waterAndDrainage.maintenanceAgreements",
+        "source_native_name": "maintenanceAgreements",
+        "source_label": "Do you have any licences, maintenance agreements, contracts or service agreements in relation to these services?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.moveRestrictionDates",
+        "source_native_name": "moveRestrictionDates",
+        "source_label": "Are there any dates on which you cannot move?",
+        "source_definition": "Note that: the moving date will not be fixed until contracts are exchanged i.e. have become binding, until then you should only make provisional removal arrangements; you do not need to be physically present on the day of completion so long as the property is cleared; timescales to completion vary depending on the complexity of the transaction, length of the chain and requirements of the people involved.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.otherPropertyInChain",
+        "source_native_name": "otherPropertyInChain",
+        "source_label": "Will you need the purchase, sale or remortgage of another property to co-ordinate with the sale of this property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.digitalPropertyLogbook",
+        "source_native_name": "digitalPropertyLogbook",
+        "source_label": "Do you have a Digital Property Logbook?",
+        "source_definition": "See https://www.rlba.org.uk/what-is-a-property-logbook?",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "contracts[].contract.template.requiredSignatories[].role",
+        "source_native_name": "role",
+        "source_label": "role",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.servicesCrossing.formalOrInformalAgreements",
+        "source_native_name": "formalOrInformalAgreements",
+        "source_label": "Are you aware of any formal or informal agreements or arrangements for pipes, wires cables or drains to cross either your property or neighbouring property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.waterAndDrainage.maintenanceAgreements.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.moveRestrictionDates.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.completionAndMoving.otherPropertyInChain.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Operational form-field identity is independent from Universal Lexicon identity.",
+      "semantic_rule": "A field may be usable in forms while semantic adjudication remains pending.",
+      "safety_rule": "Exact spelling or definition mention alone MUST NOT establish canonical semantic equivalence."
+    }
+  }
+}
