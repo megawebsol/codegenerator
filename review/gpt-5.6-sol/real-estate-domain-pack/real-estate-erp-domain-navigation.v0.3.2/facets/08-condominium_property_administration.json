@@ -1,0 +1,2279 @@
+{
+  "macro_area": {
+    "id": "legal",
+    "order": 2,
+    "label": "Legal"
+  },
+  "subarea": {
+    "id": "condominium_property_administration",
+    "order": 3,
+    "label": "Condominium and Property Administration",
+    "facet_number": 8,
+    "description": "Collective property structures, governance and administration.",
+    "typical_concepts": {
+      "department": {
+        "ref": "base0001.department@1",
+        "kind": "property",
+        "definition": "A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, or a bakery with a cafe.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/department",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "employee": {
+        "ref": "base0001.employee@1",
+        "kind": "property",
+        "definition": "Someone working for this organization.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/employee",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "fees_and_commissions_specification": {
+        "ref": "base0001.fees_and_commissions_specification@1",
+        "kind": "property",
+        "definition": "Description of fees, commissions, and other terms applied either to a class of financial product, or by a financial service organization.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/FinancialProduct",
+              "https://schema.org/FinancialService"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/feesAndCommissionsSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "founder": {
+        "ref": "base0001.founder@1",
+        "kind": "property",
+        "definition": "A person or organization who founded this organization.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/founder",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "funder": {
+        "ref": "base0001.funder@1",
+        "kind": "property",
+        "definition": "A person or organization that supports (sponsors) something through some kind of financial contribution.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Grant",
+              "https://schema.org/MonetaryGrant",
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ],
+            "parent_refs": [
+              "https://schema.org/sponsor"
+            ],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/funder",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "member_of": {
+        "ref": "base0001.member_of@1",
+        "kind": "property",
+        "definition": "An Organization (or ProgramMembership) to which this Person or Organization belongs.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/MemberProgramTier",
+              "https://schema.org/Organization",
+              "https://schema.org/ProgramMembership"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/memberOf",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "parent_organization": {
+        "ref": "base0001.parent_organization@1",
+        "kind": "property",
+        "definition": "The larger organization that this organization is a [[subOrganization]] of, if any.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/parentOrganization",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/parentOrganization",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "sponsor": {
+        "ref": "base0001.sponsor@1",
+        "kind": "property",
+        "definition": "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Grant",
+              "https://schema.org/MedicalStudy",
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/sponsor",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAOR",
+        "source_native_name": "ListAOR",
+        "source_label": "List AOR",
+        "source_definition": "The responsible board or association of REALTORS® for this listing.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Amenities",
+        "source_native_name": "Amenities",
+        "source_label": "Amenities",
+        "source_definition": "The amenities provided by the building, homeowner association or complex (e.g., pool, dog park).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Amenities",
+        "source_enum_ref": "org.reso.metadata.enums.Amenities",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "Association",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentAOR",
+        "source_native_name": "ListAgentAOR",
+        "source_label": "List Agent AOR",
+        "source_definition": "The listing agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationYN",
+        "source_native_name": "AssociationYN",
+        "source_label": "Association Yes/No",
+        "source_definition": "Indicates if there is a homeowner association. A separate Y/N field is needed because not all associations have dues.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationYN",
+        "source_native_name": "AssociationYN",
+        "source_label": "Association Yes/No",
+        "source_definition": "Indicates if there a homeowner association. A separate Y/N field is needed because not all associations have dues.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentAOR",
+        "source_native_name": "BuyerAgentAOR",
+        "source_label": "Buyer Agent AOR",
+        "source_definition": "The buyer agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListOfficeAOR",
+        "source_native_name": "ListOfficeAOR",
+        "source_label": "List Office AOR",
+        "source_definition": "The listing office's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationFee",
+        "source_native_name": "AssociationFee",
+        "source_label": "Association Fee",
+        "source_definition": "A fee paid by owners within the building to the homeowner association or other association that is used for upkeep of the building, common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ManagerExpense",
+        "source_native_name": "ManagerExpense",
+        "source_label": "Manager Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations. This is for an individual manager. Use ProfessionalManagementExpense for a management company.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFee",
+        "source_native_name": "AssociationFee",
+        "source_label": "Association Fee",
+        "source_definition": "A fee paid by the homeowner to the homeowner association that is used for upkeep of common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerOfficeAOR",
+        "source_native_name": "BuyerOfficeAOR",
+        "source_label": "Buyer Office AOR",
+        "source_definition": "The buyer's office's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentAOR",
+        "source_native_name": "CoListAgentAOR",
+        "source_label": "Co-List Agent AOR",
+        "source_definition": "The Co-listing Agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ManagerExpense",
+        "source_native_name": "ManagerExpense",
+        "source_label": "Manager Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations. This is for an individual manager. Use ProfessionalManagementExpense for a management company.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Association record.",
+        "source_resource": "Association",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationName",
+        "source_native_name": "AssociationName",
+        "source_label": "Association Name",
+        "source_definition": "The name of the homeowner association.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BoardApprovalYN",
+        "source_native_name": "BoardApprovalYN",
+        "source_label": "Board Approval Yes/No",
+        "source_definition": "Indicates whether or not board approval is required.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFee2",
+        "source_native_name": "AssociationFee2",
+        "source_label": "Association Fee 2",
+        "source_definition": "A fee paid by the homeowner to the second of two homeowner associations that is used for upkeep of common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationName",
+        "source_native_name": "AssociationName",
+        "source_label": "Association Name",
+        "source_definition": "The name of the homeowner association.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentAOR",
+        "source_native_name": "CoBuyerAgentAOR",
+        "source_label": "Co-Buyer Agent AOR",
+        "source_definition": "The co-buyer agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListOfficeAOR",
+        "source_native_name": "CoListOfficeAOR",
+        "source_label": "Co-List Office AOR",
+        "source_definition": "The co-listing office's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationName2",
+        "source_native_name": "AssociationName2",
+        "source_label": "Association Name 2",
+        "source_definition": "The name of the second of two homeowner associations.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationPhone",
+        "source_native_name": "AssociationPhone",
+        "source_label": "Association Phone",
+        "source_definition": "The phone number of the homeowner association. North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationName2",
+        "source_native_name": "AssociationName2",
+        "source_label": "Association Name 2",
+        "source_definition": "The name of the second of two homeowner associations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationPhone",
+        "source_native_name": "AssociationPhone",
+        "source_label": "Association Phone",
+        "source_definition": "The phone number of the homeowner association. North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerOfficeAOR",
+        "source_native_name": "CoBuyerOfficeAOR",
+        "source_label": "Co-Buyer Office AOR",
+        "source_definition": "The co-buyer's office's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationFax",
+        "source_native_name": "AssociationFax",
+        "source_label": "Association Fax",
+        "source_definition": "The North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationKey",
+        "source_native_name": "AssociationKey",
+        "source_label": "Association Key",
+        "source_definition": "The unique identifier for the association record.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.SourceSystemId",
+        "source_native_name": "SourceSystemId",
+        "source_label": "Source System ID",
+        "source_definition": "The RESO Unique Organization Identifier (UOI) OrganizationUniqueId of the source record provider. The source system is the system from which the record was directly received. In cases where the source system was not where the record originated (the authoritative system), see the originating system fields.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationPhone2",
+        "source_native_name": "AssociationPhone2",
+        "source_label": "Association Phone 2",
+        "source_definition": "The phone number of the second of two homeowner associations. North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingContactId",
+        "source_native_name": "BuildingContactId",
+        "source_label": "Building Contact ID",
+        "source_definition": "The building contact company unique identifier, if it differs from management company.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationPhone2",
+        "source_native_name": "AssociationPhone2",
+        "source_label": "Association Phone 2",
+        "source_definition": "The phone number of the second of two homeowner associations. North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationCity",
+        "source_native_name": "AssociationCity",
+        "source_label": "Association City",
+        "source_definition": "The city where the association is located.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationName",
+        "source_native_name": "AssociationName",
+        "source_label": "Association Name",
+        "source_definition": "The name of the association.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationType",
+        "source_native_name": "AssociationType",
+        "source_label": "Association Type",
+        "source_definition": "The type of association (MLS, Local, Not Applicable, etc.).",
+        "source_resource": "Association",
+        "source_data_type": "org.reso.metadata.enums.AssociationType",
+        "source_enum_ref": "org.reso.metadata.enums.AssociationType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.SocialMediaType",
+        "source_native_name": "SocialMediaType",
+        "source_label": "Social Media Type",
+        "source_definition": "A list of types of websites or social media the association Uniform Resource Locator (URL) or ID is referring to (e.g., Website, Blog, Facebook, Twitter, LinkedIn, Instagram).",
+        "source_resource": "Association",
+        "source_data_type": "org.reso.metadata.enums.SocialMediaType",
+        "source_enum_ref": "org.reso.metadata.enums.SocialMediaType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "condominium",
+        "label": "condominium",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "association",
+        "label": "association",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "shared_ownership_structure",
+        "label": "shared ownership structure",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "common_area",
+        "label": "common area",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "unit_share",
+        "label": "unit share",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "condominium_fee",
+        "label": "condominium fee",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "service_charge",
+        "label": "service charge",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "reserve_fund",
+        "label": "reserve fund",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "property_manager",
+        "label": "property manager",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "syndic_equivalent_role",
+        "label": "syndic-equivalent role",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "board",
+        "label": "board",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "council",
+        "label": "council",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "meeting",
+        "label": "meeting",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "resolution",
+        "label": "resolution",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "bylaws",
+        "label": "bylaws",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "internal_rules",
+        "label": "internal rules",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "list_aor",
+        "label": "list aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAOR",
+            "source_native_name": "ListAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_amenities",
+        "label": "amenities",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Amenities",
+            "source_native_name": "Amenities",
+            "source_data_type": "org.reso.metadata.enums.Amenities",
+            "source_enum_ref": "org.reso.metadata.enums.Amenities",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_feed_types",
+        "label": "feed types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.FeedTypes",
+            "source_native_name": "FeedTypes",
+            "source_data_type": "org.reso.metadata.enums.FeedTypes",
+            "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_aor",
+        "label": "list agent aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentAOR",
+            "source_native_name": "ListAgentAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_association_yn",
+        "label": "association yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.AssociationYN",
+            "source_native_name": "AssociationYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_yn",
+        "label": "association yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationYN",
+            "source_native_name": "AssociationYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_agent_aor",
+        "label": "buyer agent aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerAgentAOR",
+            "source_native_name": "BuyerAgentAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_office_aor",
+        "label": "list office aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListOfficeAOR",
+            "source_native_name": "ListOfficeAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_association_fee",
+        "label": "association fee",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.AssociationFee",
+            "source_native_name": "AssociationFee",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_common_interest",
+        "label": "common interest",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CommonInterest",
+            "source_native_name": "CommonInterest",
+            "source_data_type": "org.reso.metadata.enums.CommonInterest",
+            "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_manager_expense",
+        "label": "manager expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ManagerExpense",
+            "source_native_name": "ManagerExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_fee",
+        "label": "association fee",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationFee",
+            "source_native_name": "AssociationFee",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_office_aor",
+        "label": "buyer office aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerOfficeAOR",
+            "source_native_name": "BuyerOfficeAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_agent_aor",
+        "label": "co-list agent aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListAgentAOR",
+            "source_native_name": "CoListAgentAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "common_interest",
+        "label": "common interest",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CommonInterest",
+            "source_native_name": "CommonInterest",
+            "source_data_type": "org.reso.metadata.enums.CommonInterest",
+            "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "manager_expense",
+        "label": "manager expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ManagerExpense",
+            "source_native_name": "ManagerExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_source_system",
+        "label": "source system",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.SourceSystem",
+            "source_native_name": "SourceSystem",
+            "source_data_type": "org.reso.metadata.OUID",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_association_name",
+        "label": "association name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.AssociationName",
+            "source_native_name": "AssociationName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_board_approval_yn",
+        "label": "board approval yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.BoardApprovalYN",
+            "source_native_name": "BoardApprovalYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_property_subtype",
+        "label": "property subtype",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PropertySubtype",
+            "source_native_name": "PropertySubtype",
+            "source_data_type": "org.reso.metadata.enums.PropertySubType",
+            "source_enum_ref": "org.reso.metadata.enums.PropertySubType",
+            "mapping_status": "mapped_contextual_reviewed",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_review",
+              "confidence": 0.95,
+              "binding_relation": "category_dimension"
+            }
+          }
+        ]
+      },
+      {
+        "id": "association_fee2",
+        "label": "association fee 2",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationFee2",
+            "source_native_name": "AssociationFee2",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_name",
+        "label": "association name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationName",
+            "source_native_name": "AssociationName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_agent_aor",
+        "label": "co-buyer agent aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerAgentAOR",
+            "source_native_name": "CoBuyerAgentAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_list_office_aor",
+        "label": "co-list office aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoListOfficeAOR",
+            "source_native_name": "CoListOfficeAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_sub_type",
+        "label": "property sub type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertySubType",
+            "source_native_name": "PropertySubType",
+            "source_data_type": "org.reso.metadata.enums.PropertySubType",
+            "source_enum_ref": "org.reso.metadata.enums.PropertySubType",
+            "mapping_status": "mapped_contextual_reviewed",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_review",
+              "confidence": 0.95,
+              "binding_relation": "category_dimension"
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_association_name2",
+        "label": "association name 2",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.AssociationName2",
+            "source_native_name": "AssociationName2",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_association_phone",
+        "label": "association phone",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.AssociationPhone",
+            "source_native_name": "AssociationPhone",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_name2",
+        "label": "association name 2",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationName2",
+            "source_native_name": "AssociationName2",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_phone",
+        "label": "association phone",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationPhone",
+            "source_native_name": "AssociationPhone",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "co_buyer_office_aor",
+        "label": "co-buyer office aor",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CoBuyerOfficeAOR",
+            "source_native_name": "CoBuyerOfficeAOR",
+            "source_data_type": "org.reso.metadata.enums.AOR",
+            "source_enum_ref": "org.reso.metadata.enums.AOR",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_association_fax",
+        "label": "association fax",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.AssociationFax",
+            "source_native_name": "AssociationFax",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_association_key",
+        "label": "association key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.AssociationKey",
+            "source_native_name": "AssociationKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_source_system_id",
+        "label": "source system id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.SourceSystemId",
+            "source_native_name": "SourceSystemId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_association_phone2",
+        "label": "association phone 2",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.AssociationPhone2",
+            "source_native_name": "AssociationPhone2",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_building_contact_id",
+        "label": "building contact id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.BuildingContactId",
+            "source_native_name": "BuildingContactId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_phone2",
+        "label": "association phone 2",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationPhone2",
+            "source_native_name": "AssociationPhone2",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_association_city",
+        "label": "association city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.AssociationCity",
+            "source_native_name": "AssociationCity",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_association_name",
+        "label": "association name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.AssociationName",
+            "source_native_name": "AssociationName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_association_type",
+        "label": "association type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.AssociationType",
+            "source_native_name": "AssociationType",
+            "source_data_type": "org.reso.metadata.enums.AssociationType",
+            "source_enum_ref": "org.reso.metadata.enums.AssociationType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_social_media_type",
+        "label": "social media type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Association.SocialMediaType",
+            "source_native_name": "SocialMediaType",
+            "source_data_type": "org.reso.metadata.enums.SocialMediaType",
+            "source_enum_ref": "org.reso.metadata.enums.SocialMediaType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAOR",
+        "source_native_name": "ListAOR",
+        "source_label": "List AOR",
+        "source_definition": "The responsible board or association of REALTORS® for this listing.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Amenities",
+        "source_native_name": "Amenities",
+        "source_label": "Amenities",
+        "source_definition": "The amenities provided by the building, homeowner association or complex (e.g., pool, dog park).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Amenities",
+        "source_enum_ref": "org.reso.metadata.enums.Amenities",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.FeedTypes",
+        "source_native_name": "FeedTypes",
+        "source_label": "Feed Types",
+        "source_definition": "A list of feeds that the given record is included in.",
+        "source_resource": "Association",
+        "source_data_type": "org.reso.metadata.enums.FeedTypes",
+        "source_enum_ref": "org.reso.metadata.enums.FeedTypes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentAOR",
+        "source_native_name": "ListAgentAOR",
+        "source_label": "List Agent AOR",
+        "source_definition": "The listing agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationYN",
+        "source_native_name": "AssociationYN",
+        "source_label": "Association Yes/No",
+        "source_definition": "Indicates if there is a homeowner association. A separate Y/N field is needed because not all associations have dues.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationYN",
+        "source_native_name": "AssociationYN",
+        "source_label": "Association Yes/No",
+        "source_definition": "Indicates if there a homeowner association. A separate Y/N field is needed because not all associations have dues.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerAgentAOR",
+        "source_native_name": "BuyerAgentAOR",
+        "source_label": "Buyer Agent AOR",
+        "source_definition": "The buyer agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListOfficeAOR",
+        "source_native_name": "ListOfficeAOR",
+        "source_label": "List Office AOR",
+        "source_definition": "The listing office's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationFee",
+        "source_native_name": "AssociationFee",
+        "source_label": "Association Fee",
+        "source_definition": "A fee paid by owners within the building to the homeowner association or other association that is used for upkeep of the building, common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ManagerExpense",
+        "source_native_name": "ManagerExpense",
+        "source_label": "Manager Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations. This is for an individual manager. Use ProfessionalManagementExpense for a management company.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFee",
+        "source_native_name": "AssociationFee",
+        "source_label": "Association Fee",
+        "source_definition": "A fee paid by the homeowner to the homeowner association that is used for upkeep of common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerOfficeAOR",
+        "source_native_name": "BuyerOfficeAOR",
+        "source_label": "Buyer Office AOR",
+        "source_definition": "The buyer's office's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListAgentAOR",
+        "source_native_name": "CoListAgentAOR",
+        "source_label": "Co-List Agent AOR",
+        "source_definition": "The Co-listing Agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ManagerExpense",
+        "source_native_name": "ManagerExpense",
+        "source_label": "Manager Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations. This is for an individual manager. Use ProfessionalManagementExpense for a management company.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Association record.",
+        "source_resource": "Association",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationName",
+        "source_native_name": "AssociationName",
+        "source_label": "Association Name",
+        "source_definition": "The name of the homeowner association.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BoardApprovalYN",
+        "source_native_name": "BoardApprovalYN",
+        "source_label": "Board Approval Yes/No",
+        "source_definition": "Indicates whether or not board approval is required.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PropertySubtype",
+        "source_native_name": "PropertySubtype",
+        "source_label": "Property Subtype",
+        "source_definition": "A list of types of residential and residential lease properties (e.g., Single-Family Residence, Condominium, Townhouse) or a list of subtypes for mobile (e.g., Manufactured Home, Manufactured On Land).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.PropertySubType",
+        "source_enum_ref": "org.reso.metadata.enums.PropertySubType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_reviewed",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_review",
+          "confidence": 0.95,
+          "binding_relation": "category_dimension"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFee2",
+        "source_native_name": "AssociationFee2",
+        "source_label": "Association Fee 2",
+        "source_definition": "A fee paid by the homeowner to the second of two homeowner associations that is used for upkeep of common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationName",
+        "source_native_name": "AssociationName",
+        "source_label": "Association Name",
+        "source_definition": "The name of the homeowner association.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerAgentAOR",
+        "source_native_name": "CoBuyerAgentAOR",
+        "source_label": "Co-Buyer Agent AOR",
+        "source_definition": "The co-buyer agent's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoListOfficeAOR",
+        "source_native_name": "CoListOfficeAOR",
+        "source_label": "Co-List Office AOR",
+        "source_definition": "The co-listing office's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertySubType",
+        "source_native_name": "PropertySubType",
+        "source_label": "Property Sub Type",
+        "source_definition": "A list of types of residential and residential lease properties (e.g., Single-Family Residence, Condominium, Townhouse) or a list of subtypes for mobile (e.g., Manufactured Home, Manufactured On Land).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertySubType",
+        "source_enum_ref": "org.reso.metadata.enums.PropertySubType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_reviewed",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_review",
+          "confidence": 0.95,
+          "binding_relation": "category_dimension"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationName2",
+        "source_native_name": "AssociationName2",
+        "source_label": "Association Name 2",
+        "source_definition": "The name of the second of two homeowner associations.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationPhone",
+        "source_native_name": "AssociationPhone",
+        "source_label": "Association Phone",
+        "source_definition": "The phone number of the homeowner association. North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationName2",
+        "source_native_name": "AssociationName2",
+        "source_label": "Association Name 2",
+        "source_definition": "The name of the second of two homeowner associations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationPhone",
+        "source_native_name": "AssociationPhone",
+        "source_label": "Association Phone",
+        "source_definition": "The phone number of the homeowner association. North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CoBuyerOfficeAOR",
+        "source_native_name": "CoBuyerOfficeAOR",
+        "source_label": "Co-Buyer Office AOR",
+        "source_definition": "The co-buyer's office's board or association of REALTORS®.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AOR",
+        "source_enum_ref": "org.reso.metadata.enums.AOR",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationFax",
+        "source_native_name": "AssociationFax",
+        "source_label": "Association Fax",
+        "source_definition": "The North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationKey",
+        "source_native_name": "AssociationKey",
+        "source_label": "Association Key",
+        "source_definition": "The unique identifier for the association record.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.SourceSystemId",
+        "source_native_name": "SourceSystemId",
+        "source_label": "Source System ID",
+        "source_definition": "The RESO Unique Organization Identifier (UOI) OrganizationUniqueId of the source record provider. The source system is the system from which the record was directly received. In cases where the source system was not where the record originated (the authoritative system), see the originating system fields.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AssociationPhone2",
+        "source_native_name": "AssociationPhone2",
+        "source_label": "Association Phone 2",
+        "source_definition": "The phone number of the second of two homeowner associations. North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingContactId",
+        "source_native_name": "BuildingContactId",
+        "source_label": "Building Contact ID",
+        "source_definition": "The building contact company unique identifier, if it differs from management company.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationPhone2",
+        "source_native_name": "AssociationPhone2",
+        "source_label": "Association Phone 2",
+        "source_definition": "The phone number of the second of two homeowner associations. North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationCity",
+        "source_native_name": "AssociationCity",
+        "source_label": "Association City",
+        "source_definition": "The city where the association is located.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationName",
+        "source_native_name": "AssociationName",
+        "source_label": "Association Name",
+        "source_definition": "The name of the association.",
+        "source_resource": "Association",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.AssociationType",
+        "source_native_name": "AssociationType",
+        "source_label": "Association Type",
+        "source_definition": "The type of association (MLS, Local, Not Applicable, etc.).",
+        "source_resource": "Association",
+        "source_data_type": "org.reso.metadata.enums.AssociationType",
+        "source_enum_ref": "org.reso.metadata.enums.AssociationType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Association.SocialMediaType",
+        "source_native_name": "SocialMediaType",
+        "source_label": "Social Media Type",
+        "source_definition": "A list of types of websites or social media the association Uniform Resource Locator (URL) or ID is referring to (e.g., Website, Blog, Facebook, Twitter, LinkedIn, Instagram).",
+        "source_resource": "Association",
+        "source_data_type": "org.reso.metadata.enums.SocialMediaType",
+        "source_enum_ref": "org.reso.metadata.enums.SocialMediaType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Operational form-field identity is independent from Universal Lexicon identity.",
+      "semantic_rule": "A field may be usable in forms while semantic adjudication remains pending.",
+      "safety_rule": "Exact spelling or definition mention alone MUST NOT establish canonical semantic equivalence."
+    }
+  }
+}
