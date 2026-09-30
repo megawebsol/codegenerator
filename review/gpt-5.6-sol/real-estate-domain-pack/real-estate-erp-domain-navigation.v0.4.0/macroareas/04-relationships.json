@@ -1,0 +1,121 @@
+{
+  "macro_area": {"order":4,"id":"relationships","label":"Relationships"},
+  "facets": [
+    {
+      "facet_number": 9,
+      "id": "parties_organizations_contextual_roles",
+      "label": "Parties, Organizations and Contextual Roles",
+      "lexicon_terms": [
+        {"ref":"base0001.given_name@1","symbol":"given_name"},
+        {"ref":"base0001.family_name@1","symbol":"family_name"},
+        {"ref":"base0001.additional_name@1","symbol":"additional_name"},
+        {"ref":"base0001.honorific_prefix@1","symbol":"honorific_prefix"},
+        {"ref":"base0001.honorific_suffix@1","symbol":"honorific_suffix"},
+        {"ref":"base0001.email@1","symbol":"email"},
+        {"ref":"base0001.telephone@1","symbol":"telephone"},
+        {"ref":"base0001.fax_number@1","symbol":"fax_number"},
+        {"ref":"base0001.contact_point@1","symbol":"contact_point"},
+        {"ref":"base0001.contact_type@1","symbol":"contact_type"},
+        {"ref":"base0001.role_name@1","symbol":"role_name"},
+        {"ref":"base0001.agent@1","symbol":"agent"},
+        {"ref":"base0001.provider@1","symbol":"provider"},
+        {"ref":"base0001.seller@1","symbol":"seller"},
+        {"ref":"base0001.buyer@1","symbol":"buyer"},
+        {"ref":"base0001.landlord@1","symbol":"landlord"},
+        {"ref":"base0001.real_estate_agent@1","symbol":"real_estate_agent"},
+        {"ref":"base0001.lender@1","symbol":"lender"},
+        {"ref":"base0001.works_for@1","symbol":"works_for"},
+        {"ref":"base0001.affiliation@1","symbol":"affiliation"},
+        {"ref":"base0001.job_title@1","symbol":"job_title"},
+        {"ref":"base0001.legal_representative@1","symbol":"legal_representative"},
+        {"ref":"base0001.has_legal_name@1","symbol":"has_legal_name"},
+        {"ref":"base0001.has_registered_address@1","symbol":"has_registered_address"},
+        {"ref":"base0001.has_tax_identifier@1","symbol":"has_tax_identifier"},
+        {"ref":"base0001.has_legal_entity_identifier@1","symbol":"has_legal_entity_identifier"},
+        {"ref":"base0001.vat_id@1","symbol":"vat_id"},
+        {"ref":"base0001.iso6523_code@1","symbol":"iso6523_code"},
+        {"ref":"base0001.company_registration@1","symbol":"company_registration"}
+      ],
+      "form_slots": [
+        {"slot":"person_given_name","term_ref":"base0001.given_name@1","control":"text"},
+        {"slot":"person_family_name","term_ref":"base0001.family_name@1","control":"text"},
+        {"slot":"person_additional_name","term_ref":"base0001.additional_name@1","control":"text"},
+        {"slot":"email","term_ref":"base0001.email@1","control":"email"},
+        {"slot":"telephone","term_ref":"base0001.telephone@1","control":"tel"},
+        {"slot":"role","term_ref":"base0001.role_name@1","control":"select","repeatable":true},
+        {"slot":"organization_legal_name","term_ref":"base0001.has_legal_name@1","control":"text"},
+        {"slot":"organization_tax_id","term_ref":"base0001.has_tax_identifier@1","control":"text"},
+        {"slot":"organization_registration","term_ref":"base0001.company_registration@1","control":"text_or_document"},
+        {"slot":"legal_representative","term_ref":"base0001.legal_representative@1","control":"entity_picker"},
+        {"slot":"broker","term_ref":"base0001.real_estate_agent@1","control":"entity_picker"},
+        {"slot":"seller","term_ref":"base0001.seller@1","control":"entity_picker"},
+        {"slot":"buyer","term_ref":"base0001.buyer@1","control":"entity_picker"},
+        {"slot":"landlord","term_ref":"base0001.landlord@1","control":"entity_picker"},
+        {"slot":"lender","term_ref":"base0001.lender@1","control":"entity_picker"}
+      ],
+      "invariants":["Person != RoleAssignment","Realtor != Advertiser"]
+    },
+    {
+      "facet_number": 13,
+      "id": "crm_demand_commercial_relationship",
+      "label": "CRM, Demand and Commercial Relationship",
+      "lexicon_terms": [
+        {"ref":"base0001.seeks@1","symbol":"seeks","use":"Person/Organization points to Demand."},
+        {"ref":"base0001.item_offered@1","symbol":"item_offered","use":"Demand can identify the item/service sought."},
+        {"ref":"base0001.price_specification@1","symbol":"price_specification"},
+        {"ref":"base0001.eligible_region@1","symbol":"eligible_region"},
+        {"ref":"base0001.ineligible_region@1","symbol":"ineligible_region"},
+        {"ref":"base0001.participant@1","symbol":"participant"},
+        {"ref":"base0001.contact_point@1","symbol":"contact_point"},
+        {"ref":"base0001.contact_type@1","symbol":"contact_type"},
+        {"ref":"base0001.action_status@1","symbol":"action_status"},
+        {"ref":"base0001.description@1","symbol":"description"},
+        {"ref":"base0001.identifier@1","symbol":"identifier"}
+      ],
+      "form_slots": [
+        {"slot":"lead_id","term_ref":"base0001.identifier@1","context":"lead","control":"text"},
+        {"slot":"lead_or_contact","term_ref":"base0001.participant@1","context":"commercial_relationship","control":"entity_picker"},
+        {"slot":"demand","term_ref":"base0001.seeks@1","control":"relation_editor"},
+        {"slot":"desired_property_or_service","term_ref":"base0001.item_offered@1","context":"demand","control":"entity_or_category_picker"},
+        {"slot":"desired_price","term_ref":"base0001.price_specification@1","context":"demand","control":"money_range"},
+        {"slot":"desired_region","term_ref":"base0001.eligible_region@1","control":"area_picker"},
+        {"slot":"qualification_status","term_ref":"base0001.action_status@1","context":"crm_qualification","control":"select"},
+        {"slot":"notes","term_ref":"base0001.description@1","context":"crm_notes","control":"textarea"}
+      ]
+    },
+    {
+      "facet_number": 14,
+      "id": "showings_appointments_access_operations",
+      "label": "Showings, Appointments and Access Operations",
+      "lexicon_terms": [
+        {"ref":"base0001.tour_booking_page@1","symbol":"tour_booking_page"},
+        {"ref":"base0001.event@1","symbol":"event"},
+        {"ref":"base0001.event_schedule@1","symbol":"event_schedule"},
+        {"ref":"base0001.event_status@1","symbol":"event_status"},
+        {"ref":"base0001.start_time@1","symbol":"start_time"},
+        {"ref":"base0001.schedule_timezone@1","symbol":"schedule_timezone"},
+        {"ref":"base0001.organizer@1","symbol":"organizer"},
+        {"ref":"base0001.participant@1","symbol":"participant"},
+        {"ref":"base0001.reservation_id@1","symbol":"reservation_id"},
+        {"ref":"base0001.reservation_status@1","symbol":"reservation_status"},
+        {"ref":"base0001.reservation_for@1","symbol":"reservation_for"},
+        {"ref":"base0001.under_name@1","symbol":"under_name"},
+        {"ref":"base0001.public_access@1","symbol":"public_access"},
+        {"ref":"base0001.conditions_of_access@1","symbol":"conditions_of_access"},
+        {"ref":"base0001.opening_hours_specification@1","symbol":"opening_hours_specification"}
+      ],
+      "form_slots": [
+        {"slot":"showing_or_open_house","term_ref":"base0001.event@1","context":"property_showing","control":"event_editor"},
+        {"slot":"schedule","term_ref":"base0001.event_schedule@1","control":"schedule"},
+        {"slot":"status","term_ref":"base0001.event_status@1","control":"select"},
+        {"slot":"start_time","term_ref":"base0001.start_time@1","control":"datetime"},
+        {"slot":"organizer","term_ref":"base0001.organizer@1","control":"entity_picker"},
+        {"slot":"visitor","term_ref":"base0001.participant@1","context":"visitor","control":"entity_picker","repeatable":true},
+        {"slot":"reservation_id","term_ref":"base0001.reservation_id@1","control":"text"},
+        {"slot":"reservation_status","term_ref":"base0001.reservation_status@1","control":"select"},
+        {"slot":"tour_booking_page","term_ref":"base0001.tour_booking_page@1","control":"url"},
+        {"slot":"access_instructions","term_ref":"base0001.conditions_of_access@1","control":"textarea"}
+      ]
+    }
+  ]
+}
