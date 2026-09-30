@@ -1,0 +1,1044 @@
+{
+  "sample_type": "real_estate_domain_virtual_pack_master_data",
+  "version": "1.0.0",
+  "generated_at": "2026-09-29T22:10:48-03:00",
+  "timezone": "America/Sao_Paulo",
+  "source_comparison": [
+    "data/imobiflow-database.json",
+    "imoveltree.md",
+    "basicquipudb/domainpacks/real_estate/README.md",
+    "basicquipudb/apps/imobitools/lexicon.yaml",
+    "basicquipudb/docs/reports/IMOBITOOLS_DOMAIN_AND_ASSET_TIMELINE_REVIEW.md",
+    "basicquipudb/master_data_sample_20260929205631.json"
+  ],
+  "semantic_scope": {
+    "asset_root": "LegalPropertyUnit",
+    "not_property_monolith": true,
+    "controlled_state_institution": "state",
+    "money_representation": "integer_minor_units",
+    "unknown_is_not_zero": true,
+    "roles_are_not_interchangeable": [
+      "Owner",
+      "Possessor",
+      "Occupant",
+      "MandateAgent",
+      "Realtor",
+      "Advertiser",
+      "Publisher",
+      "Buyer",
+      "Seller",
+      "Syndic",
+      "Administrator"
+    ]
+  },
+  "people": [
+    {
+      "id": "person-mariana-alves",
+      "type": "Person",
+      "name": "Mariana Alves de Carvalho",
+      "tax_id": "***.482.190-**",
+      "email": "mariana.alves@example.test",
+      "phone": "+55 11 99999-1001"
+    },
+    {
+      "id": "person-rafael-carvalho",
+      "type": "Person",
+      "name": "Rafael Carvalho Neto",
+      "tax_id": "***.190.774-**",
+      "email": "rafael.carvalho@example.test",
+      "phone": "+55 11 99999-1002"
+    },
+    {
+      "id": "person-fernanda-nogueira",
+      "type": "Person",
+      "name": "Fernanda Nogueira",
+      "role": "Syndic"
+    },
+    {
+      "id": "person-carlos-vaz",
+      "type": "Person",
+      "name": "Carlos Vaz",
+      "role": "ViceSyndic"
+    },
+    {
+      "id": "person-camila-torres",
+      "type": "Person",
+      "name": "Camila Torres",
+      "creci": "182.443-F",
+      "role": "Realtor"
+    },
+    {
+      "id": "person-eduardo-mello",
+      "type": "Person",
+      "name": "Eduardo Mello",
+      "creci": "204.718-F",
+      "role": "Realtor"
+    },
+    {
+      "id": "person-helena-duarte",
+      "type": "Person",
+      "name": "Helena Duarte",
+      "tax_id": "***.777.888-**",
+      "role": "Buyer"
+    },
+    {
+      "id": "person-architect-ana",
+      "type": "Person",
+      "name": "Ana Beatriz Moreira",
+      "professional_registration": "CAU-SP A123456-7",
+      "role": "Architect"
+    },
+    {
+      "id": "person-engineer-luis",
+      "type": "Person",
+      "name": "Luis Henrique Prado",
+      "professional_registration": "CREA-SP 5060000000",
+      "role": "Engineer"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "org-alameda",
+      "type": "Enterprise",
+      "legal_name": "Alameda Negócios Imobiliários Ltda.",
+      "trade_name": "Alameda Negócios Imobiliários",
+      "cnpj": "12.345.678/0001-90",
+      "creci": "J-28.491"
+    },
+    {
+      "id": "org-ponte-alta",
+      "type": "Enterprise",
+      "legal_name": "Ponte Alta Consultoria Imobiliária Ltda.",
+      "trade_name": "Ponte Alta Consultoria",
+      "cnpj": "23.456.789/0001-01"
+    },
+    {
+      "id": "org-condominium",
+      "type": "Condominium",
+      "legal_name": "Edifício Alameda Jardins",
+      "cnpj": "98.765.432/0001-10",
+      "units_count": 48
+    },
+    {
+      "id": "org-municipality",
+      "type": "Authority",
+      "legal_name": "Município de São Paulo"
+    },
+    {
+      "id": "org-registry-office",
+      "type": "RegistryOffice",
+      "legal_name": "4º Registro de Imóveis de São Paulo"
+    },
+    {
+      "id": "org-bank",
+      "type": "FinancialInstitution",
+      "legal_name": "Banco Exemplo S.A."
+    },
+    {
+      "id": "org-portal-alameda",
+      "type": "PublicationChannel",
+      "legal_name": "Portal Alameda"
+    },
+    {
+      "id": "org-portal-partner",
+      "type": "PublicationChannel",
+      "legal_name": "Portal Parceiro"
+    }
+  ],
+  "places": [
+    {
+      "id": "place-jardins-1420",
+      "type": "Place",
+      "address": {
+        "street": "Rua Oscar Freire",
+        "number": "1420",
+        "neighborhood": "Jardins",
+        "city": "São Paulo",
+        "state": "SP",
+        "postal_code": "01426-002",
+        "country": "BR"
+      },
+      "coordinates": {
+        "latitude": -23.5661,
+        "longitude": -46.6768
+      },
+      "municipality": "São Paulo",
+      "zone": "ZEU"
+    },
+    {
+      "id": "place-condominium",
+      "type": "Place",
+      "label": "Edifício Alameda Jardins",
+      "address_ref": "place-jardins-1420"
+    }
+  ],
+  "land_parcels": [
+    {
+      "id": "parcel-jardins-1420",
+      "type": "LandParcel",
+      "area_m2": 420,
+      "municipal_registration": "09.123.045.001-7",
+      "origin": "urban_lot",
+      "fractional_interest_percent": 8.42,
+      "boundaries": {
+        "north": "lote 18",
+        "south": "Rua Oscar Freire",
+        "east": "lote 20",
+        "west": "lote 16"
+      }
+    }
+  ],
+  "structures": [
+    {
+      "id": "structure-alameda-tower",
+      "type": "PhysicalStructure",
+      "kind": "tower",
+      "construction_year": 2018,
+      "floors": 18,
+      "built_area_m2": 6200,
+      "state": "completed",
+      "last_renovation": {
+        "year": 2024,
+        "scope": "cozinha e banheiros da unidade"
+      }
+    },
+    {
+      "id": "structure-unit-1404",
+      "type": "PhysicalStructure",
+      "kind": "apartment",
+      "built_area_m2": 128.4,
+      "useful_area_m2": 112.1,
+      "private_area_m2": 128.4,
+      "bedrooms": 3,
+      "suites": 2,
+      "bathrooms": 3,
+      "floor": 14,
+      "construction_year": 2018
+    }
+  ],
+  "buildings_and_condominiums": [
+    {
+      "id": "building-alameda-tower",
+      "type": "Building",
+      "name": "Torre Alameda",
+      "condominium_ref": "org-condominium",
+      "units": 48,
+      "common_areas": [
+        "lobby",
+        "piscina",
+        "academia",
+        "salão de festas",
+        "bicicletário"
+      ],
+      "parking_units": [
+        "parking-31",
+        "parking-32"
+      ]
+    },
+    {
+      "id": "condominium-administration-2026",
+      "type": "CondominiumAdministration",
+      "condominium_ref": "org-condominium",
+      "syndic_ref": "person-fernanda-nogueira",
+      "vice_syndic_ref": "person-carlos-vaz",
+      "administrator_ref": "org-plena-gestao",
+      "council": {
+        "description": "Conselho fiscal",
+        "member_count": 3
+      },
+      "next_assembly": "2026-10-22",
+      "accounts_status": "2025/2026 approved",
+      "maintenance": [
+        {
+          "description": "Pintura da fachada",
+          "planned_period": "2027-Q1"
+        }
+      ]
+    },
+    {
+      "id": "org-plena-gestao",
+      "type": "Enterprise",
+      "legal_name": "Plena Gestão Condominial",
+      "role": "CondominiumAdministrator"
+    }
+  ],
+  "accessory_units": [
+    {
+      "id": "unit-apartment-1404",
+      "type": "LegalPropertyUnit",
+      "kind": "apartment",
+      "label": "Unidade 1404"
+    },
+    {
+      "id": "parking-31",
+      "type": "AccessoryUnit",
+      "kind": "parking",
+      "label": "Vaga 31"
+    },
+    {
+      "id": "parking-32",
+      "type": "AccessoryUnit",
+      "kind": "parking",
+      "label": "Vaga 32"
+    },
+    {
+      "id": "storage-d14",
+      "type": "AccessoryUnit",
+      "kind": "storage",
+      "label": "Depósito D-14"
+    }
+  ],
+  "assets": [
+    {
+      "id": "bundle-mb-481",
+      "type": "MarketableBundle",
+      "label": "MarketableBundle MB-481",
+      "components": [
+        "unit-apartment-1404",
+        "parking-31",
+        "parking-32",
+        "storage-d14"
+      ],
+      "commercial_use": "sale_or_lease",
+      "virtual_pack_extension": {
+        "legal_registral": {
+          "registration_status": "REGULAR_WITH_ACTIVE_ENCUMBRANCE",
+          "registry_entries_history": []
+        },
+        "spatial_topology": {
+          "geodetic_datum": "SIRGAS_2000",
+          "coordinate_system": "WGS84"
+        },
+        "physical_nuances": {
+          "renovation_history": [
+            {
+              "year": 2024,
+              "scope": "cozinha e banheiros"
+            }
+          ]
+        },
+        "utilities": {
+          "water_provider": "SABESP",
+          "electric_provider": "ENEL_SP",
+          "gas_provider": "COMGAS"
+        },
+        "esg": {
+          "building_certification": "LEED_GOLD_BUILDING_DESIGN",
+          "rainwater_harvesting": true
+        },
+        "governance": {
+          "registry_authority": "4º Registro de Imóveis de São Paulo",
+          "observation_status": "source_sample"
+        }
+      }
+    },
+    {
+      "id": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "type": "LegalPropertyUnit",
+      "label": "Apartamento Jardins 142",
+      "status": "under_review",
+      "classification": "residential_apartment",
+      "registration_number": "184.729",
+      "registration_office_ref": "org-registry-office",
+      "place_ref": "place-jardins-1420",
+      "parcel_ref": "parcel-jardins-1420",
+      "structure_ref": "structure-unit-1404",
+      "building_ref": "building-alameda-tower",
+      "condominium_ref": "org-condominium",
+      "marketable_bundle_ref": "bundle-mb-481",
+      "municipal_tax_id": "09.123.045.001-7"
+    }
+  ],
+  "ownership_arrangements": [
+    {
+      "id": "ownership-481",
+      "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "holders": [
+        {
+          "party_ref": "person-mariana-alves",
+          "share_percent": 50,
+          "role": "Owner"
+        },
+        {
+          "party_ref": "person-rafael-carvalho",
+          "share_percent": 50,
+          "role": "Owner"
+        }
+      ],
+      "evidence_ref": "registry-evidence-481",
+      "valid_from": "2018-06-15",
+      "valid_to": null,
+      "representation": {
+        "representative_ref": null,
+        "power_of_attorney_ref": null
+      }
+    }
+  ],
+  "registry_evidence": [
+    {
+      "id": "registry-evidence-481",
+      "type": "RegistryEvidence",
+      "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "document_ref": "doc-matricula-184729",
+      "kind": "current_registration",
+      "registration_number": "184.729",
+      "office_ref": "org-registry-office",
+      "issued_at": "2026-08-12",
+      "hash": "sha256:example-matricula-184729",
+      "status": "verified"
+    }
+  ],
+  "rights_and_restrictions": [
+    {
+      "id": "fiduciary-sale-481",
+      "type": "RightOrRestriction",
+      "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "kind": "fiduciary_sale",
+      "beneficiary_ref": "org-bank",
+      "status": "active",
+      "registered_in": "registry-evidence-481",
+      "valid_from": "2018-06-15",
+      "valid_to": null
+    },
+    {
+      "id": "deed-clearance-481",
+      "type": "Condition",
+      "kind": "DeedClearance",
+      "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "lien_count": 1,
+      "result": "not_clear_due_to_active_fiduciary_sale"
+    }
+  ],
+  "possession_and_occupancy": [
+    {
+      "id": "possession-481",
+      "type": "Possession",
+      "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "possessor_ref": "person-mariana-alves",
+      "basis": "ownership",
+      "valid_from": "2024-01-15",
+      "valid_to": null,
+      "evidence_ref": "registry-evidence-481"
+    },
+    {
+      "id": "occupancy-481",
+      "type": "Occupancy",
+      "asset_ref": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "occupant_ref": "person-mariana-alves",
+      "purpose": "residential",
+      "valid_from": "2024-01-15",
+      "valid_to": null
+    }
+  ],
+  "regulatory_and_technical_evidence": [
+    {
+      "id": "permit-481",
+      "type": "Permit",
+      "kind": "construction_permit",
+      "applies_to": [
+        "parcel-jardins-1420",
+        "structure-alameda-tower"
+      ],
+      "issued_by": "org-municipality",
+      "requested_by": "org-developer-alameda",
+      "document_ref": "doc-alvara-construcao",
+      "status": "verified",
+      "valid_from": "2016-02-10",
+      "valid_to": "2019-12-31"
+    },
+    {
+      "id": "occupancy-permit-481",
+      "type": "Permit",
+      "kind": "habite_se",
+      "applies_to": [
+        "structure-alameda-tower"
+      ],
+      "issued_by": "org-municipality",
+      "document_ref": "doc-habite-se-alameda",
+      "status": "verified",
+      "issued_at": "2018-11-20"
+    },
+    {
+      "id": "fire-certificate-481",
+      "type": "Certificate",
+      "kind": "AVCB",
+      "applies_to": [
+        "building-alameda-tower"
+      ],
+      "issued_by": "org-municipality",
+      "document_ref": "doc-avcb-alameda",
+      "status": "verified",
+      "valid_to": "2027-11-20"
+    },
+    {
+      "id": "technical-report-481",
+      "type": "TechnicalEvidence",
+      "kind": "valuation",
+      "applies_to": [
+        "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211"
+      ],
+      "represented_by": "person-engineer-luis",
+      "document_ref": "doc-laudo-avaliacao",
+      "value_minor": 145000000,
+      "currency": "BRL",
+      "status": "verified"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-matricula-184729",
+      "type": "ContractDocument",
+      "kind": "registry_certificate",
+      "file": "matricula-184729.pdf",
+      "hash": "sha256:example-matricula-184729",
+      "status": "verified"
+    },
+    {
+      "id": "doc-convention-alameda",
+      "type": "ContractDocument",
+      "kind": "condominium_convention",
+      "file": "convencao-alameda.pdf",
+      "status": "current"
+    },
+    {
+      "id": "doc-mandate-481",
+      "type": "ContractDocument",
+      "kind": "brokerage_mandate",
+      "file": "mandato-exclusivo.pdf",
+      "hash": "sha256:mandate-481",
+      "status": "signed"
+    },
+    {
+      "id": "doc-laudo-avaliacao",
+      "type": "ContractDocument",
+      "kind": "valuation_report",
+      "file": "laudo-avaliacao.pdf",
+      "status": "verified"
+    },
+    {
+      "id": "doc-alvara-construcao",
+      "type": "ContractDocument",
+      "kind": "construction_permit",
+      "file": "alvara-construcao.pdf",
+      "status": "verified"
+    },
+    {
+      "id": "doc-habite-se-alameda",
+      "type": "ContractDocument",
+      "kind": "occupancy_permit",
+      "file": "habite-se-alameda.pdf",
+      "status": "verified"
+    },
+    {
+      "id": "doc-avcb-alameda",
+      "type": "ContractDocument",
+      "kind": "fire_certificate",
+      "file": "avcb-alameda.pdf",
+      "status": "current"
+    },
+    {
+      "id": "doc-power-of-attorney-481",
+      "type": "ContractDocument",
+      "kind": "power_of_attorney",
+      "file": "procuracao-mariana.pdf",
+      "status": "not_applicable"
+    }
+  ],
+  "brokerage": [
+    {
+      "id": "mandate-481",
+      "type": "BrokerageMandate",
+      "bundle_ref": "bundle-mb-481",
+      "authorized_by": [
+        "person-mariana-alves",
+        "person-rafael-carvalho"
+      ],
+      "agency_ref": "org-alameda",
+      "agent_refs": [
+        "person-camila-torres",
+        "person-eduardo-mello"
+      ],
+      "partner_agency_refs": [
+        "org-ponte-alta"
+      ],
+      "exclusive": true,
+      "minimum_price_minor": 142000000,
+      "commission_percent": 6,
+      "currency": "BRL",
+      "territory": "São Paulo; portais; rede parceira",
+      "valid_from": "2026-09-01",
+      "valid_to": "2027-03-31",
+      "contract_ref": "doc-mandate-481",
+      "status": "active"
+    },
+    {
+      "id": "agent-affiliation-camila",
+      "type": "Employs",
+      "employer_ref": "org-alameda",
+      "employee_ref": "person-camila-torres"
+    },
+    {
+      "id": "agent-affiliation-eduardo",
+      "type": "Employs",
+      "employer_ref": "org-ponte-alta",
+      "employee_ref": "person-eduardo-mello"
+    }
+  ],
+  "listings_and_publications": [
+    {
+      "id": "listing-jardins-142",
+      "type": "Listing",
+      "bundle_ref": "bundle-mb-481",
+      "mandate_ref": "mandate-481",
+      "advertiser_refs": [
+        "org-alameda",
+        "person-camila-torres"
+      ],
+      "asking_price_minor": 148000000,
+      "currency": "BRL",
+      "description": "Unidade jurídica em condomínio residencial, com duas vagas e depósito.",
+      "availability_state": "published",
+      "publication_ref": "publication-listing-jardins",
+      "media": {
+        "photo_count": 24,
+        "files": [
+          "fotos-jardins.zip"
+        ]
+      }
+    },
+    {
+      "id": "publication-listing-jardins",
+      "type": "Publication",
+      "listing_ref": "listing-jardins-142",
+      "channels": [
+        "org-portal-alameda",
+        "org-portal-partner",
+        "site-proprio",
+        "instagram"
+      ],
+      "status": "published",
+      "published_at": "2026-09-20",
+      "synchronization": {
+        "external": false,
+        "last_sync_at": null
+      }
+    },
+    {
+      "id": "publication-state-history-jardins",
+      "type": "PublicationStatusHistory",
+      "listing_ref": "listing-jardins-142",
+      "events": [
+        {
+          "state": "draft",
+          "at": "2026-08-20"
+        },
+        {
+          "state": "published",
+          "at": "2026-09-20"
+        }
+      ]
+    }
+  ],
+  "demand_and_negotiation": [
+    {
+      "id": "demand-helena-481",
+      "type": "Demand",
+      "bundle_ref": "bundle-mb-481",
+      "party_ref": "person-helena-duarte",
+      "source": "Portal Alameda",
+      "status": "qualified",
+      "created_at": "2026-09-25"
+    },
+    {
+      "id": "visit-helena-481",
+      "type": "Visit",
+      "listing_ref": "listing-jardins-142",
+      "visitor_ref": "person-helena-duarte",
+      "agent_ref": "person-camila-torres",
+      "scheduled_at": "2026-09-30T14:00:00-03:00",
+      "status": "scheduled"
+    },
+    {
+      "id": "opportunity-helena-481",
+      "type": "Opportunity",
+      "demand_ref": "demand-helena-481",
+      "listing_ref": "listing-jardins-142",
+      "status": "qualified"
+    },
+    {
+      "id": "offer-helena-481",
+      "type": "Offer",
+      "listing_ref": "listing-jardins-142",
+      "buyer_ref": "person-helena-duarte",
+      "offered_price_minor": 141000000,
+      "currency": "BRL",
+      "financing": {
+        "required": true,
+        "institution_ref": "org-bank",
+        "status": "under_analysis"
+      },
+      "conditions": [
+        {
+          "kind": "down_payment",
+          "value_minor": 28200000,
+          "currency": "BRL",
+          "percent": 20
+        }
+      ],
+      "status": "submitted",
+      "submitted_at": "2026-09-28"
+    },
+    {
+      "id": "acceptance-helena-481",
+      "type": "AcceptanceAct",
+      "offer_ref": "offer-helena-481",
+      "status": "under_analysis",
+      "response_deadline": "2026-10-02",
+      "notes": "Oferta aguardando validação dos proprietários."
+    }
+  ],
+  "agreements_and_closing": [
+    {
+      "id": "agreement-481",
+      "type": "Agreement",
+      "status": "not_started",
+      "offer_ref": "offer-helena-481",
+      "contract_document_ref": null
+    },
+    {
+      "id": "closing-481",
+      "type": "ClosingCase",
+      "bundle_ref": "bundle-mb-481",
+      "status": "open",
+      "milestones": [
+        {
+          "kind": "due_diligence",
+          "status": "in_progress"
+        },
+        {
+          "kind": "financing",
+          "status": "pending"
+        },
+        {
+          "kind": "deed",
+          "status": "pending"
+        },
+        {
+          "kind": "registration",
+          "status": "pending"
+        },
+        {
+          "kind": "payment",
+          "status": "pending"
+        },
+        {
+          "kind": "title_transfer",
+          "status": "pending"
+        },
+        {
+          "kind": "possession_transfer",
+          "status": "pending"
+        },
+        {
+          "kind": "commission",
+          "status": "pending"
+        }
+      ]
+    }
+  ],
+  "obligations_payments_and_settlement": [
+    {
+      "id": "obligation-sale-481",
+      "type": "Obligation",
+      "source": "agreement-481",
+      "debtor_ref": "person-helena-duarte",
+      "creditors": [
+        "person-mariana-alves",
+        "person-rafael-carvalho"
+      ],
+      "kind": "purchase_price",
+      "amount_minor": 141000000,
+      "currency": "BRL",
+      "status": "pending"
+    },
+    {
+      "id": "obligation-commission-481",
+      "type": "Obligation",
+      "source": "mandate-481",
+      "debtor_ref": "person-mariana-alves",
+      "creditors": [
+        "org-alameda",
+        "org-ponte-alta"
+      ],
+      "kind": "brokerage_commission",
+      "amount_minor": 8460000,
+      "currency": "BRL",
+      "status": "pending"
+    },
+    {
+      "id": "payment-down-payment-481",
+      "type": "Payment",
+      "obligation_ref": "obligation-sale-481",
+      "amount_minor": 28200000,
+      "currency": "BRL",
+      "status": "pending",
+      "due_at": "2026-10-05"
+    },
+    {
+      "id": "allocation-sale-481",
+      "type": "Allocation",
+      "payment_ref": "payment-down-payment-481",
+      "obligation_ref": "obligation-sale-481",
+      "allocated_amount_minor": 28200000,
+      "currency": "BRL",
+      "status": "pending"
+    },
+    {
+      "id": "settlement-sale-481",
+      "type": "Settlement",
+      "obligation_ref": "obligation-sale-481",
+      "status": "pending",
+      "currency": "BRL"
+    }
+  ],
+  "direct_relationships": [
+    {
+      "type": "evidenced_by",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": "registry-evidence-481"
+    },
+    {
+      "type": "owned_by",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": [
+        "person-mariana-alves",
+        "person-rafael-carvalho"
+      ],
+      "arrangement_ref": "ownership-481"
+    },
+    {
+      "type": "situated_on",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": "parcel-jardins-1420"
+    },
+    {
+      "type": "embodied_in",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": "structure-unit-1404"
+    },
+    {
+      "type": "located_at",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": "place-jardins-1420"
+    },
+    {
+      "type": "part_of",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": [
+        "building-alameda-tower",
+        "org-condominium"
+      ]
+    },
+    {
+      "type": "included_in",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": "bundle-mb-481"
+    },
+    {
+      "type": "possessed_by",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": "person-mariana-alves",
+      "record_ref": "possession-481"
+    },
+    {
+      "type": "occupied_by",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": "person-mariana-alves",
+      "record_ref": "occupancy-481"
+    },
+    {
+      "type": "administered_by",
+      "from": "org-condominium",
+      "to": [
+        "person-fernanda-nogueira",
+        "org-plena-gestao"
+      ],
+      "record_ref": "condominium-administration-2026"
+    },
+    {
+      "type": "regulated_by",
+      "from": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+      "to": [
+        "permit-481",
+        "occupancy-permit-481",
+        "fire-certificate-481"
+      ]
+    },
+    {
+      "type": "represented_by",
+      "from": "bundle-mb-481",
+      "to": "mandate-481"
+    },
+    {
+      "type": "handled_by",
+      "from": "mandate-481",
+      "to": [
+        "person-camila-torres",
+        "person-eduardo-mello"
+      ]
+    },
+    {
+      "type": "partnered_with",
+      "from": "org-alameda",
+      "to": "org-ponte-alta"
+    },
+    {
+      "type": "advertised_as",
+      "from": "bundle-mb-481",
+      "to": "listing-jardins-142"
+    },
+    {
+      "type": "published_by",
+      "from": "listing-jardins-142",
+      "to": [
+        "org-alameda",
+        "person-camila-torres"
+      ]
+    },
+    {
+      "type": "published_on",
+      "from": "listing-jardins-142",
+      "to": [
+        "org-portal-alameda",
+        "org-portal-partner"
+      ]
+    },
+    {
+      "type": "receives",
+      "from": "listing-jardins-142",
+      "to": "offer-helena-481"
+    },
+    {
+      "type": "results_in",
+      "from": "offer-helena-481",
+      "to": "agreement-481"
+    },
+    {
+      "type": "closes_through",
+      "from": "bundle-mb-481",
+      "to": "closing-481"
+    }
+  ],
+  "temporal_axes": [
+    "occurred_at",
+    "valid_from",
+    "valid_to",
+    "issued_at",
+    "delivery_at",
+    "knowledge_at",
+    "recorded_at",
+    "accepted_k",
+    "external_timestamp"
+  ],
+  "timeline": {
+    "physical": [
+      "parcel_identified",
+      "building_constructed",
+      "unit_completed",
+      "renovation"
+    ],
+    "legal": [
+      "registration_issued",
+      "ownership_recorded",
+      "fiduciary_sale_registered"
+    ],
+    "spatial": [
+      "address_assigned",
+      "georeferenced",
+      "condominium_linked"
+    ],
+    "commercial": [
+      "mandate_signed",
+      "listing_published",
+      "visit_scheduled",
+      "offer_submitted",
+      "agreement_pending",
+      "closing_open"
+    ],
+    "financial": [
+      "asking_price",
+      "offer_price",
+      "down_payment",
+      "commission",
+      "settlement"
+    ],
+    "documentary": [
+      "registry_evidence",
+      "permits",
+      "technical_report",
+      "contract_documents"
+    ],
+    "publication": [
+      "draft",
+      "published"
+    ]
+  },
+  "coverage_notes": {
+    "recovered_from_current_database": [
+      "asset identity",
+      "address",
+      "physical dimensions",
+      "owners",
+      "condominium",
+      "mandate",
+      "listing",
+      "documents",
+      "negotiation"
+    ],
+    "recovered_from_domain_dictionaries": [
+      "Person",
+      "Enterprise",
+      "Address",
+      "RegistryEvidence",
+      "OwnershipArrangement",
+      "Possession",
+      "Occupancy",
+      "Tenancy",
+      "Permit",
+      "TechnicalEvidence",
+      "PublicationStatus",
+      "Demand",
+      "Visit",
+      "Opportunity",
+      "AcceptanceAct",
+      "Agreement",
+      "Obligation",
+      "Payment",
+      "Allocation",
+      "Settlement",
+      "ClosingCase",
+      "Employs",
+      "LocatedAt",
+      "UnitOf",
+      "Manages",
+      "MandateFor",
+      "MandateAgent",
+      "Lists",
+      "ListedBy",
+      "OfferOn",
+      "OfferBy",
+      "SaleOf",
+      "SaleFrom",
+      "SaleTo",
+      "DeedClearance"
+    ],
+    "deliberately_not_inferred": [
+      "owner_from_advertiser",
+      "legal_unit_from_address",
+      "sale_from_offer_acceptance",
+      "possession_from_ownership",
+      "occupancy_from_possession",
+      "registry_truth_from_listing"
+    ]
+  }
+}
