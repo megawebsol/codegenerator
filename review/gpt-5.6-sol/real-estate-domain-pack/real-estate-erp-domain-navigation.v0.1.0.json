@@ -1,0 +1,762 @@
+{
+  "database_id": "real-estate-erp-domain-navigation",
+  "version": "0.1.0",
+  "status": "review",
+  "language": "en",
+  "canonical": false,
+  "normative": false,
+  "purpose": "Structured JSON database describing the Real Estate ERP navigation macro-areas and their domain subareas/facets. This artifact is intended for generators, CRUD navigation, HTML composition and later persistence. It is not a physical schema, ontology tree, or canonical Domain Pack.",
+  "rules": [
+    "Macro-areas are UX/navigation groupings.",
+    "Subareas are domain facets.",
+    "A term may belong to multiple subareas.",
+    "Subareas do not define physical tables.",
+    "Subareas do not determine package ownership.",
+    "Regional terminology must be applied later through mappings, aliases, jurisdiction metadata or extensions."
+  ],
+  "macro_areas": [
+    {
+      "id": "property",
+      "order": 1,
+      "label": "Property",
+      "description": "Describe what the property is, where it is, and how it is physically composed.",
+      "ui": {
+        "navigation_icon_hint": "building",
+        "default_expanded": true
+      },
+      "subareas": [
+        {
+          "id": "property_identity",
+          "order": 1,
+          "label": "Property Identity and Real Estate Unit",
+          "facet_number": 1,
+          "description": "Identity of the governed real-estate object and its legal or operational unit references.",
+          "typical_concepts": [
+            "legal property unit",
+            "property identifier",
+            "registry reference",
+            "cadastral reference",
+            "asset type",
+            "asset subtype",
+            "component unit",
+            "accessory unit",
+            "property composition",
+            "marketable component"
+          ]
+        },
+        {
+          "id": "location_territorial_context",
+          "order": 2,
+          "label": "Location and Territorial Context",
+          "facet_number": 2,
+          "description": "Spatial identity, address, jurisdiction and territorial context.",
+          "typical_concepts": [
+            "address",
+            "geographic coordinates",
+            "country",
+            "region",
+            "municipality",
+            "district",
+            "neighborhood",
+            "postal code",
+            "urban context",
+            "rural context",
+            "zoning",
+            "cadastral geography",
+            "georeferencing",
+            "territorial restriction"
+          ]
+        },
+        {
+          "id": "land_building_physical_structure",
+          "order": 3,
+          "label": "Land, Building and Physical Structure",
+          "facet_number": 3,
+          "description": "Physical composition of parcels, buildings, structures, units and measurable areas.",
+          "typical_concepts": [
+            "parcel",
+            "lot",
+            "land area",
+            "building",
+            "physical structure",
+            "unit",
+            "floor",
+            "room",
+            "gross area",
+            "net area",
+            "private area",
+            "built area",
+            "construction date",
+            "renovation",
+            "construction material",
+            "physical condition"
+          ]
+        },
+        {
+          "id": "features_equipment_infrastructure",
+          "order": 4,
+          "label": "Features, Equipment and Infrastructure",
+          "facet_number": 4,
+          "description": "Internal, external, shared, accessibility, utility and infrastructure characteristics.",
+          "typical_concepts": [
+            "internal feature",
+            "external feature",
+            "common facility",
+            "parking",
+            "accessibility",
+            "security",
+            "water",
+            "drainage",
+            "electricity",
+            "gas",
+            "heating",
+            "cooling",
+            "connectivity",
+            "broadband",
+            "telecommunications",
+            "building system"
+          ]
+        },
+        {
+          "id": "nearby_places_surroundings",
+          "order": 5,
+          "label": "Nearby Places and Surroundings",
+          "facet_number": 5,
+          "description": "Nearby services, facilities and environmental context relevant to the property.",
+          "typical_concepts": [
+            "school",
+            "university",
+            "hospital",
+            "clinic",
+            "pharmacy",
+            "public transport",
+            "subway",
+            "railway",
+            "airport",
+            "retail",
+            "supermarket",
+            "shopping center",
+            "park",
+            "public service"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "order": 2,
+      "label": "Legal",
+      "description": "Describe legal position, evidence, rights, occupancy and property administration.",
+      "ui": {
+        "navigation_icon_hint": "scale",
+        "default_expanded": false
+      },
+      "subareas": [
+        {
+          "id": "ownership_possession_occupancy",
+          "order": 1,
+          "label": "Ownership, Possession and Occupancy",
+          "facet_number": 6,
+          "description": "Legal and factual relationships between parties and the property.",
+          "typical_concepts": [
+            "owner",
+            "co-owner",
+            "ownership share",
+            "possessor",
+            "occupant",
+            "tenant",
+            "beneficial interest",
+            "occupancy basis",
+            "validity period",
+            "supporting evidence"
+          ],
+          "invariants": [
+            "Owner != Possessor",
+            "Possessor != Occupant"
+          ]
+        },
+        {
+          "id": "rights_encumbrances_restrictions_tenure",
+          "order": 2,
+          "label": "Rights, Encumbrances, Restrictions and Tenure",
+          "facet_number": 7,
+          "description": "Rights, burdens, restrictions and jurisdiction-specific tenure concepts.",
+          "typical_concepts": [
+            "mortgage",
+            "fiduciary security",
+            "lien",
+            "attachment",
+            "easement",
+            "usufruct",
+            "right of way",
+            "environmental restriction",
+            "planning restriction",
+            "urban restriction",
+            "leasehold",
+            "shared ownership",
+            "restrictive covenant",
+            "title restriction"
+          ]
+        },
+        {
+          "id": "condominium_property_administration",
+          "order": 3,
+          "label": "Condominium and Property Administration",
+          "facet_number": 8,
+          "description": "Collective property structures, governance and administration.",
+          "typical_concepts": [
+            "condominium",
+            "association",
+            "shared ownership structure",
+            "common area",
+            "unit share",
+            "condominium fee",
+            "service charge",
+            "reserve fund",
+            "property manager",
+            "syndic-equivalent role",
+            "board",
+            "council",
+            "meeting",
+            "resolution",
+            "bylaws",
+            "internal rules"
+          ]
+        },
+        {
+          "id": "documents_evidence_compliance_records",
+          "order": 4,
+          "label": "Documents, Evidence and Compliance Records",
+          "facet_number": 10,
+          "description": "Documents and evidence supporting identity, rights, compliance, transactions and technical facts.",
+          "typical_concepts": [
+            "registry certificate",
+            "deed",
+            "title document",
+            "purchase agreement",
+            "lease agreement",
+            "brokerage mandate",
+            "power of attorney",
+            "identity document",
+            "professional license",
+            "tax document",
+            "permit",
+            "occupancy permit",
+            "fire certificate",
+            "environmental license",
+            "floor plan",
+            "technical report",
+            "valuation report",
+            "insurance policy",
+            "energy certificate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commercial",
+      "order": 3,
+      "label": "Commercial",
+      "description": "Describe authority to market the property and its commercial representation.",
+      "ui": {
+        "navigation_icon_hint": "megaphone",
+        "default_expanded": false
+      },
+      "subareas": [
+        {
+          "id": "acquisition_brokerage_mandate_intermediation",
+          "order": 1,
+          "label": "Acquisition, Brokerage Mandate and Intermediation",
+          "facet_number": 11,
+          "description": "Authority, mandate, brokerage relationships and commercial intermediation.",
+          "typical_concepts": [
+            "property acquisition",
+            "brokerage mandate",
+            "exclusive mandate",
+            "non-exclusive mandate",
+            "agent authorization",
+            "agency",
+            "responsible broker",
+            "partner agency",
+            "mandate validity",
+            "minimum price",
+            "commission",
+            "commission split",
+            "permitted channel"
+          ]
+        },
+        {
+          "id": "commercial_offering_listing_publication",
+          "order": 2,
+          "label": "Commercial Offering, Listing and Publication",
+          "facet_number": 12,
+          "description": "Commercial offer, listing content, publication channels and media representation.",
+          "typical_concepts": [
+            "sale",
+            "rent",
+            "asking price",
+            "availability",
+            "listing",
+            "listing content",
+            "publication",
+            "publication channel",
+            "portal",
+            "external listing identifier",
+            "photograph",
+            "video",
+            "floor plan",
+            "virtual tour",
+            "publication status"
+          ],
+          "invariants": [
+            "Asset != Listing",
+            "Asset != MarketableBundle",
+            "Listing != Publication"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relationships",
+      "order": 4,
+      "label": "Relationships",
+      "description": "Manage people, organizations, prospects, visits and operational interactions.",
+      "ui": {
+        "navigation_icon_hint": "users",
+        "default_expanded": false
+      },
+      "subareas": [
+        {
+          "id": "parties_organizations_contextual_roles",
+          "order": 1,
+          "label": "Parties, Organizations and Contextual Roles",
+          "facet_number": 9,
+          "description": "Persons, organizations and their contextual, temporal roles.",
+          "typical_concepts": [
+            "person",
+            "organization",
+            "agency",
+            "bank",
+            "insurer",
+            "public authority",
+            "professional service provider",
+            "owner role",
+            "seller role",
+            "buyer role",
+            "broker role",
+            "agent role",
+            "tenant role",
+            "landlord role",
+            "surveyor role",
+            "valuer role",
+            "conveyancer role",
+            "lawyer role",
+            "lender role",
+            "administrator role"
+          ],
+          "invariants": [
+            "Person != RoleAssignment",
+            "Realtor != Advertiser"
+          ]
+        },
+        {
+          "id": "crm_demand_commercial_relationship",
+          "order": 2,
+          "label": "CRM, Demand and Commercial Relationship",
+          "facet_number": 13,
+          "description": "Prospecting, demand, matching, qualification and relationship history.",
+          "typical_concepts": [
+            "lead",
+            "contact",
+            "inquiry",
+            "demand",
+            "search criteria",
+            "qualification",
+            "matching",
+            "opportunity",
+            "source channel",
+            "contact history",
+            "broker follow-up",
+            "customer preference"
+          ]
+        },
+        {
+          "id": "showings_appointments_access_operations",
+          "order": 3,
+          "label": "Showings, Appointments and Access Operations",
+          "facet_number": 14,
+          "description": "Operational access, visits, schedules, lockboxes and key custody.",
+          "typical_concepts": [
+            "showing",
+            "appointment",
+            "open house",
+            "schedule",
+            "visitor",
+            "broker attendance",
+            "access instruction",
+            "lockbox",
+            "key custody",
+            "key movement",
+            "access code",
+            "attendance status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "negotiation",
+      "order": 5,
+      "label": "Negotiation",
+      "description": "Manage progression from interest to legally effective transaction completion.",
+      "ui": {
+        "navigation_icon_hint": "handshake",
+        "default_expanded": false
+      },
+      "subareas": [
+        {
+          "id": "offer_negotiation",
+          "order": 1,
+          "label": "Offer and Negotiation",
+          "facet_number": 15,
+          "description": "Commercial negotiation, offers, counteroffers and conditional acceptance.",
+          "typical_concepts": [
+            "offer",
+            "counteroffer",
+            "offered price",
+            "offer validity",
+            "financing condition",
+            "contingency",
+            "acceptance",
+            "rejection",
+            "negotiation status",
+            "negotiation history"
+          ],
+          "invariants": [
+            "Offer != Agreement"
+          ]
+        },
+        {
+          "id": "agreement_due_diligence_closing",
+          "order": 2,
+          "label": "Agreement, Due Diligence and Closing",
+          "facet_number": 16,
+          "description": "Contractual progression, due diligence and transaction completion milestones.",
+          "typical_concepts": [
+            "agreement",
+            "contract",
+            "condition precedent",
+            "due diligence",
+            "financing approval",
+            "deed",
+            "registration",
+            "closing case",
+            "closing milestone",
+            "title transfer",
+            "possession transfer"
+          ],
+          "invariants": [
+            "Agreement != Closing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "financial",
+      "order": 6,
+      "label": "Financial",
+      "description": "Manage payments, leasing economics, value and investment performance.",
+      "ui": {
+        "navigation_icon_hint": "wallet",
+        "default_expanded": false
+      },
+      "subareas": [
+        {
+          "id": "obligations_payments_allocation_settlement",
+          "order": 1,
+          "label": "Obligations, Payments, Allocation and Settlement",
+          "facet_number": 17,
+          "description": "Monetary obligations, payments, allocations, fees and settlement.",
+          "typical_concepts": [
+            "obligation",
+            "deposit",
+            "installment",
+            "commission",
+            "payment",
+            "allocation",
+            "tax payment",
+            "fee",
+            "settlement",
+            "distribution",
+            "reconciliation"
+          ],
+          "invariants": [
+            "Closing != Settlement"
+          ]
+        },
+        {
+          "id": "leasing_occupancy_management",
+          "order": 2,
+          "label": "Leasing and Occupancy Management",
+          "facet_number": 18,
+          "description": "Lease economics, tenancy, occupancy, vacancy and rental lifecycle.",
+          "typical_concepts": [
+            "lease",
+            "landlord",
+            "tenant",
+            "rent",
+            "rent period",
+            "indexation",
+            "deposit",
+            "guarantee",
+            "service charge",
+            "lease restriction",
+            "arrears",
+            "renewal",
+            "break clause",
+            "occupancy",
+            "vacancy"
+          ]
+        },
+        {
+          "id": "valuation_finance_investment",
+          "order": 3,
+          "label": "Valuation, Finance and Investment",
+          "facet_number": 19,
+          "description": "Valuation observations, income, expenses, capex and investment metrics.",
+          "typical_concepts": [
+            "market value",
+            "valuation date",
+            "valuation method",
+            "assessor",
+            "valuation observation",
+            "valuation report",
+            "rental income",
+            "net operating income",
+            "occupancy rate",
+            "vacancy",
+            "capex",
+            "operating expenditure",
+            "asset performance",
+            "portfolio metric",
+            "investment metric"
+          ],
+          "invariants": [
+            "ValuationObservation != ValuationReport"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asset_management",
+      "order": 7,
+      "label": "Asset Management",
+      "description": "Manage environmental, physical, insurance and lifecycle aspects of the property.",
+      "ui": {
+        "navigation_icon_hint": "tools",
+        "default_expanded": false
+      },
+      "subareas": [
+        {
+          "id": "esg_sustainability_environmental_risk",
+          "order": 1,
+          "label": "ESG, Sustainability and Environmental Risk",
+          "facet_number": 20,
+          "description": "Environmental performance, sustainability indicators and environmental risk.",
+          "typical_concepts": [
+            "energy consumption",
+            "renewable energy",
+            "greenhouse gas emissions",
+            "water consumption",
+            "waste",
+            "recycling",
+            "green certification",
+            "energy performance",
+            "climate risk",
+            "flood risk",
+            "biodiversity",
+            "environmental exposure"
+          ]
+        },
+        {
+          "id": "insurance_warranty_maintenance_condition",
+          "order": 2,
+          "label": "Insurance, Warranty, Maintenance and Condition",
+          "facet_number": 21,
+          "description": "Property protection, inspection, maintenance, warranty and lifecycle condition.",
+          "typical_concepts": [
+            "insurance",
+            "insured value",
+            "coverage",
+            "warranty",
+            "defect",
+            "inspection",
+            "planned maintenance",
+            "corrective maintenance",
+            "refurbishment",
+            "building condition",
+            "asset conservation",
+            "maintenance responsibility"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "order": 8,
+      "label": "Governance",
+      "description": "Control trust, compliance, provenance, conflict, temporal validity and data quality.",
+      "ui": {
+        "navigation_icon_hint": "shield-check",
+        "default_expanded": false
+      },
+      "subareas": [
+        {
+          "id": "operational_compliance",
+          "order": 1,
+          "label": "Operational Compliance",
+          "facet_number": 22,
+          "description": "Operational verification and transaction compliance controls.",
+          "typical_concepts": [
+            "identity verification",
+            "KYC",
+            "AML",
+            "source of funds",
+            "sanctions screening",
+            "compliance check",
+            "verification report",
+            "consent",
+            "authorization"
+          ]
+        },
+        {
+          "id": "provenance_conflict_temporal_semantics",
+          "order": 2,
+          "label": "Provenance, Conflict and Temporal Semantics",
+          "facet_number": 23,
+          "description": "Lineage, source identity, conflicting observations, authority and temporal truth.",
+          "typical_concepts": [
+            "source",
+            "source version",
+            "artifact",
+            "source path",
+            "source record",
+            "observed time",
+            "effective time",
+            "valid from",
+            "valid to",
+            "jurisdiction",
+            "mapping status",
+            "authority",
+            "conflict",
+            "adjudication",
+            "historical assertion",
+            "raw value",
+            "normalized value",
+            "resolved value"
+          ],
+          "invariants": [
+            "SourceObservation != CanonicalFact",
+            "ExternalSource != QuipuAuthority",
+            "conflict resolution does not erase historical conflict"
+          ]
+        },
+        {
+          "id": "review_data_quality",
+          "order": 3,
+          "label": "Review and Data Quality",
+          "facet_number": 24,
+          "description": "Automated and human validation, completeness, consistency and adjudication workflows.",
+          "typical_concepts": [
+            "completeness",
+            "missing information",
+            "invalid value",
+            "unresolved relation",
+            "inconsistent observation",
+            "duplicate",
+            "pending verification",
+            "review status",
+            "approval",
+            "rejection",
+            "adjudication",
+            "quality rule",
+            "validation result"
+          ]
+        }
+      ]
+    }
+  ],
+  "indexes": {
+    "by_macro_area": {
+      "property": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "legal": [
+        6,
+        7,
+        8,
+        10
+      ],
+      "commercial": [
+        11,
+        12
+      ],
+      "relationships": [
+        9,
+        13,
+        14
+      ],
+      "negotiation": [
+        15,
+        16
+      ],
+      "financial": [
+        17,
+        18,
+        19
+      ],
+      "asset_management": [
+        20,
+        21
+      ],
+      "governance": [
+        22,
+        23,
+        24
+      ]
+    },
+    "by_facet_number": {
+      "1": "property_identity",
+      "2": "location_territorial_context",
+      "3": "land_building_physical_structure",
+      "4": "features_equipment_infrastructure",
+      "5": "nearby_places_surroundings",
+      "6": "ownership_possession_occupancy",
+      "7": "rights_encumbrances_restrictions_tenure",
+      "8": "condominium_property_administration",
+      "9": "parties_organizations_contextual_roles",
+      "10": "documents_evidence_compliance_records",
+      "11": "acquisition_brokerage_mandate_intermediation",
+      "12": "commercial_offering_listing_publication",
+      "13": "crm_demand_commercial_relationship",
+      "14": "showings_appointments_access_operations",
+      "15": "offer_negotiation",
+      "16": "agreement_due_diligence_closing",
+      "17": "obligations_payments_allocation_settlement",
+      "18": "leasing_occupancy_management",
+      "19": "valuation_finance_investment",
+      "20": "esg_sustainability_environmental_risk",
+      "21": "insurance_warranty_maintenance_condition",
+      "22": "operational_compliance",
+      "23": "provenance_conflict_temporal_semantics",
+      "24": "review_data_quality"
+    }
+  },
+  "stats": {
+    "macro_areas": 8,
+    "subareas": 24
+  }
+}
