@@ -1,0 +1,86 @@
+{
+  "macro_area": {"order":7,"id":"asset_management","label":"Asset Management"},
+  "facets": [
+    {
+      "facet_number": 20,
+      "id": "esg_sustainability_environmental_risk",
+      "label": "ESG, Sustainability and Environmental Risk",
+      "lexicon_terms": [
+        {"ref":"base0001.observation_about@1","symbol":"observation_about"},
+        {"ref":"base0001.observation_date@1","symbol":"observation_date"},
+        {"ref":"base0001.observation_period@1","symbol":"observation_period"},
+        {"ref":"base0001.measured_property@1","symbol":"measured_property"},
+        {"ref":"base0001.measurement_method@1","symbol":"measurement_method"},
+        {"ref":"base0001.measurement_qualifier@1","symbol":"measurement_qualifier"},
+        {"ref":"base0001.measurement_technique@1","symbol":"measurement_technique"},
+        {"ref":"base0001.variable_measured@1","symbol":"variable_measured"},
+        {"ref":"base0001.value__6cd2a6da@1","symbol":"value__6cd2a6da"},
+        {"ref":"base0001.unit_code@1","symbol":"unit_code"},
+        {"ref":"base0001.unit_text@1","symbol":"unit_text"},
+        {"ref":"base0001.has_energy_consumption_details@1","symbol":"has_energy_consumption_details"},
+        {"ref":"base0001.has_energy_efficiency_category@1","symbol":"has_energy_efficiency_category"},
+        {"ref":"base0001.energy_efficiency_scale_max@1","symbol":"energy_efficiency_scale_max"},
+        {"ref":"base0001.energy_efficiency_scale_min@1","symbol":"energy_efficiency_scale_min"},
+        {"ref":"base0001.applicable_certificate@1","symbol":"applicable_certificate"},
+        {"ref":"base0001.valid_in@1","symbol":"valid_in"},
+        {"ref":"base0001.margin_of_error@1","symbol":"margin_of_error"},
+        {"ref":"base0001.standard_uncertainty@1","symbol":"standard_uncertainty"}
+      ],
+      "form_slots": [
+        {"slot":"energy_consumption","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=energy_consumption","control":"measurement"},
+        {"slot":"energy_efficiency","term_ref":"base0001.has_energy_efficiency_category@1","control":"select_or_reference"},
+        {"slot":"renewable_energy","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=renewable_energy_share","control":"percentage_or_measurement"},
+        {"slot":"greenhouse_gas_emissions","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=greenhouse_gas_emissions","control":"measurement"},
+        {"slot":"water_consumption","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=water_consumption","control":"measurement"},
+        {"slot":"waste_generation","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=waste_generation","control":"measurement"},
+        {"slot":"recycling_rate","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=recycling_rate","control":"percentage"},
+        {"slot":"climate_risk","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=climate_risk","control":"measurement_or_rating"},
+        {"slot":"flood_risk","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=flood_risk","control":"measurement_or_rating"},
+        {"slot":"biodiversity","term_ref":"base0001.value__6cd2a6da@1","context":"measured_property=biodiversity","control":"measurement_or_rating"},
+        {"slot":"environmental_certificate","term_ref":"base0001.applicable_certificate@1","control":"entity_or_document","repeatable":true},
+        {"slot":"observation_method","term_ref":"base0001.measurement_method@1","control":"select_or_text"},
+        {"slot":"observation_date","term_ref":"base0001.observation_date@1","control":"date"}
+      ],
+      "note":"ESG metrics that are not dedicated Lexicon properties are represented as observations of measured properties. The projection does not invent semantic terms for each metric."
+    },
+    {
+      "facet_number": 21,
+      "id": "insurance_warranty_maintenance_condition",
+      "label": "Insurance, Warranty, Maintenance and Condition",
+      "lexicon_terms": [
+        {"ref":"base0001.warranty@1","symbol":"warranty"},
+        {"ref":"base0001.warranty_promise@1","symbol":"warranty_promise"},
+        {"ref":"base0001.warranty_scope@1","symbol":"warranty_scope"},
+        {"ref":"base0001.duration_of_warranty@1","symbol":"duration_of_warranty"},
+        {"ref":"base0001.item_condition@1","symbol":"item_condition"},
+        {"ref":"base0001.review@1","symbol":"review"},
+        {"ref":"base0001.review_aspect@1","symbol":"review_aspect"},
+        {"ref":"base0001.observation_about@1","symbol":"observation_about"},
+        {"ref":"base0001.observation_date@1","symbol":"observation_date"},
+        {"ref":"base0001.provider@1","symbol":"provider"},
+        {"ref":"base0001.participant@1","symbol":"participant"},
+        {"ref":"base0001.object@1","symbol":"object"},
+        {"ref":"base0001.action_status@1","symbol":"action_status"},
+        {"ref":"base0001.has_start_date@1","symbol":"has_start_date"},
+        {"ref":"base0001.description@1","symbol":"description"},
+        {"ref":"base0001.identifier@1","symbol":"identifier"}
+      ],
+      "form_slots": [
+        {"slot":"insurance_policy","term_ref":"base0001.identifier@1","context":"insurance_policy_document","control":"document","repeatable":true},
+        {"slot":"insured_value","term_ref":"base0001.value__6cd2a6da@1","context":"insured_value","control":"money"},
+        {"slot":"insurance_coverage","term_ref":"base0001.description@1","context":"insurance_coverage","control":"structured_text"},
+        {"slot":"warranty","term_ref":"base0001.warranty@1","control":"entity_or_document"},
+        {"slot":"warranty_scope","term_ref":"base0001.warranty_scope@1","control":"select_or_text"},
+        {"slot":"warranty_duration","term_ref":"base0001.duration_of_warranty@1","control":"duration"},
+        {"slot":"inspection","term_ref":"base0001.review@1","context":"physical_inspection","control":"review_workflow","repeatable":true},
+        {"slot":"inspection_date","term_ref":"base0001.observation_date@1","context":"inspection","control":"date"},
+        {"slot":"maintenance_action","term_ref":"base0001.object@1","context":"maintenance_action_target","control":"maintenance_editor","repeatable":true},
+        {"slot":"maintenance_provider","term_ref":"base0001.provider@1","context":"maintenance","control":"entity_picker"},
+        {"slot":"maintenance_status","term_ref":"base0001.action_status@1","context":"maintenance","control":"select"},
+        {"slot":"maintenance_date","term_ref":"base0001.has_start_date@1","context":"maintenance","control":"date"},
+        {"slot":"condition","term_ref":"base0001.item_condition@1","context":"asset_condition","control":"select_or_text"},
+        {"slot":"defect_or_condition_note","term_ref":"base0001.description@1","context":"asset_condition","control":"textarea","repeatable":true}
+      ]
+    }
+  ]
+}
