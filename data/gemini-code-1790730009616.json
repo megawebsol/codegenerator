@@ -1,0 +1,1394 @@
+{
+  "schema_version": "4.0.0",
+  "generated_at": "2026-09-29T22:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "framework_references": [
+    "RESO Data Dictionary 2.1 (OData)",
+    "PDTF / BASPI v5 / TA6 / TA7 / RICS (Property Data Trust Framework v3)",
+    "ImobiFlow Database Domain Virtual Pack"
+  ],
+  "transaction_metadata": {
+    "transaction_id": "tx-f8a9d2c1-4e6b-8a9d-1c2d3e4f5a6b",
+    "status": "Contracts exchanged",
+    "lifecycle_stage": "Pre-Completion",
+    "exchange_date": "2026-09-28T14:30:00-03:00",
+    "target_completion_date": "2026-10-30T12:00:00-03:00",
+    "delay_factors": {
+      "has_delay_factors": false,
+      "details": null
+    }
+  },
+  "access_and_key_management": {
+    "lockbox": {
+      "has_lockbox_yn": true,
+      "lockbox_type": "SentriLock Bluetooth Smart Box",
+      "lockbox_location": "Corrimão da entrada de serviço (1º subsolo)",
+      "lockbox_serial_number": "SL-9988776655",
+      "access_code": "Não aplicável (Acesso via App)",
+      "one_day_code_active_yn": true
+    },
+    "physical_keys": [
+      {
+        "key_id": "KEY-001",
+        "key_type": "Porta Social (Biométrica/Mecânica de Backup)",
+        "quantity": 2,
+        "copies_allowed_yn": false
+      },
+      {
+        "key_id": "KEY-002",
+        "key_type": "Porta de Serviço (Multiponto)",
+        "quantity": 3,
+        "copies_allowed_yn": true
+      },
+      {
+        "key_id": "KEY-003",
+        "key_type": "Caixa de Correio",
+        "quantity": 2,
+        "copies_allowed_yn": true
+      },
+      {
+        "key_id": "KEY-004",
+        "key_type": "Depósito Privativo (Subsolo)",
+        "quantity": 1,
+        "copies_allowed_yn": true
+      },
+      {
+        "key_id": "KEY-005",
+        "key_type": "Tags RFID de Acesso ao Condomínio",
+        "quantity": 4,
+        "copies_allowed_yn": false
+      }
+    ],
+    "key_movement_log": [
+      {
+        "log_id": "KLOG-001",
+        "timestamp": "2026-04-02T09:00:00-03:00",
+        "action": "Check-in",
+        "performed_by": "Mariana Alves de Carvalho (Senhorio/Proprietária)",
+        "recipient": "Camila Torres (Agente)",
+        "reason": "Entrega inicial das chaves para início da comercialização",
+        "keys_transferred": ["KEY-002", "KEY-005"]
+      },
+      {
+        "log_id": "KLOG-002",
+        "timestamp": "2026-04-02T10:30:00-03:00",
+        "action": "Check-out",
+        "performed_by": "Camila Torres (Agente)",
+        "recipient": "Lockbox SL-9988776655",
+        "reason": "Armazenamento no cofre do edifício",
+        "keys_transferred": ["KEY-002"]
+      },
+      {
+        "log_id": "KLOG-003",
+        "timestamp": "2026-05-15T14:00:00-03:00",
+        "action": "Check-in",
+        "performed_by": "Lockbox SL-9988776655",
+        "recipient": "Eduardo Mello (Agente)",
+        "reason": "Visita com cliente",
+        "keys_transferred": ["KEY-002"]
+      },
+      {
+        "log_id": "KLOG-004",
+        "timestamp": "2026-05-15T15:30:00-03:00",
+        "action": "Check-out",
+        "performed_by": "Eduardo Mello (Agente)",
+        "recipient": "Lockbox SL-9988776655",
+        "reason": "Devolução após visita",
+        "keys_transferred": ["KEY-002"]
+      },
+      {
+        "log_id": "KLOG-005",
+        "timestamp": "2026-09-30T14:45:00-03:00",
+        "action": "Check-in",
+        "performed_by": "Lockbox SL-9988776655",
+        "recipient": "Camila Torres (Agente)",
+        "reason": "Visita final pré-contrato com a compradora Helena Duarte",
+        "keys_transferred": ["KEY-002"]
+      },
+      {
+        "log_id": "KLOG-006",
+        "timestamp": "2026-09-30T16:15:00-03:00",
+        "action": "Check-out",
+        "performed_by": "Camila Torres (Agente)",
+        "recipient": "Lockbox SL-9988776655",
+        "reason": "Devolução após visita bem-sucedida",
+        "keys_transferred": ["KEY-002"]
+      }
+    ]
+  },
+  "showings_and_appointments": {
+    "showing_instructions": "Avisar com 24 horas de antecedência. Não permitir entrada com calçado da rua (fornecer protetores). Desligar o ar-condicionado após a saída.",
+    "showing_contact_type": "Agent",
+    "showing_requirements": ["Appointment Required", "Call Listing Agent", "Lockbox"],
+    "appointments_log": [
+      {
+        "appointment_id": "APP-2026-001",
+        "scheduled_time": "2026-05-15T14:30:00-03:00",
+        "end_time": "2026-05-15T15:15:00-03:00",
+        "showing_agent": "Eduardo Mello",
+        "prospective_buyer_initials": "J.M.",
+        "status": "Completed",
+        "feedback": "Cliente gostou dos acabamentos, mas achou o terceiro quarto muito pequeno para o seu perfil."
+      },
+      {
+        "appointment_id": "APP-2026-002",
+        "scheduled_time": "2026-07-22T10:00:00-03:00",
+        "end_time": "2026-07-22T11:00:00-03:00",
+        "showing_agent": "Camila Torres",
+        "prospective_buyer_initials": "A.P.",
+        "status": "Completed",
+        "feedback": "Excelente localização, mas preferem uma unidade com vista para a rua oposta."
+      },
+      {
+        "appointment_id": "APP-2026-003",
+        "scheduled_time": "2026-09-30T15:00:00-03:00",
+        "end_time": "2026-09-30T16:00:00-03:00",
+        "showing_agent": "Camila Torres",
+        "prospective_buyer_initials": "H.D.",
+        "status": "Completed",
+        "feedback": "Cliente encantada com a varanda gourmet e integração dos espaços. Fez oferta no dia seguinte."
+      }
+    ],
+    "open_houses": [
+      {
+        "open_house_id": "OH-2026-01",
+        "date": "2026-06-10",
+        "start_time": "10:00:00-03:00",
+        "end_time": "16:00:00-03:00",
+        "attendees_count": 14,
+        "type": "Public",
+        "remarks": "Evento com coffee break. Geração de 3 leads quentes."
+      }
+    ]
+  },
+  "internet_tracking_metrics": {
+    "total_page_views": 14520,
+    "unique_visitors": 8432,
+    "average_time_on_page_seconds": 145,
+    "total_leads_generated": 28,
+    "portals_breakdown": [
+      {
+        "portal_name": "Portal Alameda (Site Próprio)",
+        "views": 4200,
+        "clicks_on_photos": 15600,
+        "leads": 12,
+        "listing_url": "https://www.alamedaimoveis.com.br/imoveis/apto-jardins-142"
+      },
+      {
+        "portal_name": "ZAP Imóveis",
+        "views": 6800,
+        "clicks_on_photos": 22100,
+        "leads": 9,
+        "listing_url": "https://www.zapimoveis.com.br/imovel/12345678"
+      },
+      {
+        "portal_name": "VivaReal",
+        "views": 3520,
+        "clicks_on_photos": 11400,
+        "leads": 7,
+        "listing_url": "https://www.vivareal.com.br/imovel/87654321"
+      }
+    ],
+    "social_media_tracking": {
+      "instagram_impressions": 45000,
+      "instagram_saves": 340,
+      "instagram_shares": 125,
+      "facebook_ad_clicks": 1120
+    }
+  },
+  "participants": [
+    {
+      "role": "Seller",
+      "participantStatus": "Active",
+      "sellersCapacity": {
+        "capacity": "Legal Owner",
+        "sellersCapacityDetails": "Nome atualizado conforme certidão de casamento averbada na matrícula"
+      },
+      "name": {
+        "title": "Mrs",
+        "firstName": "Mariana",
+        "middleName": "Alves de",
+        "lastName": "Carvalho",
+        "maidenName": "Alves Silva"
+      },
+      "dateOfBirth": "1985-04-12",
+      "document": "***.482.190-**",
+      "share_percentage": 50.0,
+      "civil_status": "Casada com comunhão parcial de bens",
+      "nationality": "Brasileira",
+      "email": "mariana.carvalho@email.com",
+      "phone": "+55 11 98765-4321",
+      "address": {
+        "line1": "Rua Oscar Freire, 1420",
+        "line2": "Apto 1404",
+        "town": "São Paulo",
+        "postcode": "01426-002",
+        "homeNation": "Brasil",
+        "countryCode": "BRA"
+      },
+      "verification": {
+        "identity": {
+          "result": "pass",
+          "reports": [{"reportName": "Serasa KYC Completo", "result": "pass", "details": "Biometria facial e CNH validados"}]
+        },
+        "antiMoneyLaundering": {
+          "result": "pass",
+          "reports": [{"reportName": "COAF / PEP Check", "result": "pass", "details": "Nenhuma sanção encontrada"}]
+        }
+      }
+    },
+    {
+      "role": "Seller",
+      "participantStatus": "Active",
+      "sellersCapacity": {
+        "capacity": "Legal Owner"
+      },
+      "name": {
+        "title": "Mr",
+        "firstName": "Rafael",
+        "middleName": "Gomes",
+        "lastName": "Carvalho Neto"
+      },
+      "dateOfBirth": "1983-11-05",
+      "document": "***.190.774-**",
+      "share_percentage": 50.0,
+      "civil_status": "Casado com comunhão parcial de bens",
+      "nationality": "Brasileiro",
+      "email": "rafael.carvalho@email.com",
+      "phone": "+55 11 98765-4322",
+      "address": {
+        "line1": "Rua Oscar Freire, 1420",
+        "line2": "Apto 1404",
+        "town": "São Paulo",
+        "postcode": "01426-002",
+        "homeNation": "Brasil",
+        "countryCode": "BRA"
+      },
+      "verification": {
+        "identity": {"result": "pass", "reports": [{"reportName": "Serasa KYC Completo", "result": "pass"}]},
+        "antiMoneyLaundering": {"result": "pass", "reports": [{"reportName": "COAF / PEP Check", "result": "pass"}]}
+      }
+    },
+    {
+      "role": "Buyer",
+      "participantStatus": "Active",
+      "name": {
+        "title": "Mrs",
+        "firstName": "Helena",
+        "lastName": "Duarte"
+      },
+      "dateOfBirth": "1990-02-18",
+      "document": "***.555.444-**",
+      "email": "helena.duarte@client.com",
+      "phone": "+55 11 97654-3210",
+      "address": {
+        "line1": "Av. Brigadeiro Faria Lima, 3000",
+        "line2": "Apto 82",
+        "town": "São Paulo",
+        "postcode": "01451-000",
+        "homeNation": "Brasil",
+        "countryCode": "BRA"
+      },
+      "verification": {
+        "identity": {"result": "pass", "reports": [{"reportName": "ID Check Partner", "result": "pass", "details": "Passaporte validado"}]},
+        "antiMoneyLaundering": {"result": "pass", "reports": [{"reportName": "Source of Funds Check", "result": "pass", "details": "Fundos confirmados via extrato bancário (Itaú)"}]}
+      }
+    },
+    {
+      "role": "Estate Agent",
+      "participantStatus": "Active",
+      "organisation": "Alameda Negócios Imobiliários",
+      "organisationReference": "CRECI 029841-J",
+      "name": {
+        "title": "Miss",
+        "firstName": "Camila",
+        "lastName": "Torres"
+      },
+      "email": "camila.torres@alamedaimoveis.com.br",
+      "phone": "+55 11 99111-2233"
+    },
+    {
+      "role": "Seller's Conveyancer",
+      "participantStatus": "Active",
+      "organisation": "Pinheiro Neto Advogados",
+      "organisationReference": "OAB/SP 12345",
+      "name": {
+        "title": "Mr",
+        "firstName": "Arthur",
+        "lastName": "Mendonça"
+      },
+      "email": "amendonca@pn.com.br",
+      "phone": "+55 11 3247-8000"
+    },
+    {
+      "role": "Buyer's Conveyancer",
+      "participantStatus": "Active",
+      "organisation": "Machado Meyer Advogados",
+      "organisationReference": "OAB/SP 54321",
+      "name": {
+        "title": "Ms",
+        "firstName": "Luciana",
+        "lastName": "Viana"
+      },
+      "email": "lviana@machadomeyer.com.br",
+      "phone": "+55 11 3150-7000"
+    },
+    {
+      "role": "Surveyor",
+      "participantStatus": "Active",
+      "organisation": "RICS Brasil Valuations",
+      "organisationReference": "RICS 998877",
+      "name": {
+        "title": "Mr",
+        "firstName": "Jorge",
+        "lastName": "Medeiros"
+      },
+      "email": "jmedeiros@ricsval.com.br",
+      "phone": "+55 11 98888-7777"
+    },
+    {
+      "role": "Lender",
+      "participantStatus": "Active",
+      "organisation": "Banco Itaú Unibanco S.A.",
+      "organisationReference": "CNPJ 60.701.190/0001-04",
+      "name": {
+        "title": "Mr",
+        "firstName": "Departamento",
+        "lastName": "Crédito Imobiliário"
+      },
+      "email": "credito.imob@itau-unibanco.com.br",
+      "phone": "+55 11 4004-4828"
+    }
+  ],
+  "propertyPack": {
+    "uprn": 1234567891,
+    "address": {
+      "buildingNumber": "1420",
+      "unitNumber": "1404",
+      "subBuilding": "Torre Apolo",
+      "street": "Rua Oscar Freire",
+      "line1": "Rua Oscar Freire, 1420",
+      "line2": "Torre Apolo, Apto 1404",
+      "line3": "Jardins",
+      "town": "São Paulo",
+      "postcode": "01426-002",
+      "homeNation": "Brasil",
+      "countryCode": "BRA"
+    },
+    "location": {
+      "latitude": -23.562145,
+      "longitude": -46.669812,
+      "bng": {
+        "easting": 333444,
+        "northing": 7393939
+      },
+      "googleStreetViewPOV": {
+        "heading": 45.2,
+        "pitch": 5.0,
+        "zoom": 1,
+        "lat": -23.562145,
+        "lng": -46.669812
+      }
+    },
+    "localAuthority": {
+      "localAuthorityName": "Prefeitura Municipal de São Paulo",
+      "unitaryAuthority": "Subprefeitura de Pinheiros",
+      "localAuthorityReference": "SQL 012.345.6789-1",
+      "councilSearchTurnaroundTimeInWorkingDays": 5,
+      "regulatedSearchTurnaroundTimeInWorkingDays": 3
+    },
+    "priceInformation": {
+      "price": 1410000.00,
+      "priceQualifier": "Fixed price",
+      "disposal": "Private treaty",
+      "saleAtUndervalue": "No"
+    },
+    "marketingTenure": "Leasehold",
+    "media": [
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-01-living.jpg",
+        "caption": "Living room facing Northeast, with integrated balcony"
+      },
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-02-kitchen.jpg",
+        "caption": "Modern kitchen with central island and Silestone countertops"
+      },
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-03-masterbed.jpg",
+        "caption": "Master bedroom with wooden flooring"
+      },
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-04-masterbath.jpg",
+        "caption": "Master bathroom with dual sinks and heated floors"
+      },
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-05-balcony.jpg",
+        "caption": "Gourmet balcony with built-in BBQ"
+      },
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-06-office.jpg",
+        "caption": "Third bedroom converted into home office"
+      },
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-07-pool.jpg",
+        "caption": "Condominium 25m heated lap pool"
+      },
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-08-gym.jpg",
+        "caption": "Condominium fitness center (Life Fitness equipment)"
+      },
+      {
+        "mediaType": "Image",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-09-facade.jpg",
+        "caption": "Building facade from Rua Oscar Freire"
+      },
+      {
+        "mediaType": "Floorplan",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-floorplan.pdf",
+        "caption": "Architectural Floorplan (2024 Renovation)"
+      },
+      {
+        "mediaType": "Virtual tour",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/3d/jardins-142",
+        "caption": "Matterport 3D Tour - Fully Interactive"
+      },
+      {
+        "mediaType": "EPC graph",
+        "mediaUrl": "https://media.alamedaimoveis.com.br/img/142-epc.png",
+        "caption": "Energy Performance Certificate Rating A"
+      }
+    ],
+    "buildInformation": {
+      "building": {
+        "builtForm": "Mid-terrace",
+        "propertyType": "Flat",
+        "numberOfFloors": 18,
+        "entranceFloor": 14,
+        "hasLift": "Yes",
+        "overCommercialPremises": {
+          "isLocatedOverCommercialPremises": "No"
+        }
+      },
+      "internalArea": {
+        "area": 128.4,
+        "units": "square metres"
+      },
+      "yearOfBuild": 2018,
+      "isNewBuild": {
+        "yesNo": "No"
+      },
+      "isHMO": "No",
+      "isStudentAccommodation": "No",
+      "roomDimensions": {
+        "hasFloorplan": "Yes",
+        "attachments": "Attached",
+        "rooms": [
+          {
+            "roomName": "Foyer/Hall Privativo",
+            "description": "Hall de entrada com elevador privativo e biometria",
+            "length": 2.1,
+            "width": 1.8,
+            "units": "meters",
+            "dimensionDetails": "Piso em mármore Travertino"
+          },
+          {
+            "roomName": "Living Ampliado",
+            "description": "Sala para 3 ambientes com projeto luminotécnico",
+            "length": 7.2,
+            "width": 4.5,
+            "units": "meters",
+            "dimensionDetails": "Integrado com a varanda"
+          },
+          {
+            "roomName": "Lavabo",
+            "description": "Lavabo social com bancada em mármore Nero Marquina",
+            "length": 1.8,
+            "width": 1.5,
+            "units": "meters",
+            "dimensionDetails": "Cuba esculpida"
+          },
+          {
+            "roomName": "Suíte Master",
+            "description": "Suíte principal com closet Sr. e Sra., isolamento acústico",
+            "length": 4.8,
+            "width": 3.8,
+            "units": "meters",
+            "dimensionDetails": "Piso em madeira maciça Tauari"
+          },
+          {
+            "roomName": "Banheiro Suíte Master",
+            "description": "Banheiro com cuba dupla, piso aquecido e toalheiro térmico",
+            "length": 3.5,
+            "width": 2.2,
+            "units": "meters",
+            "dimensionDetails": "Revestimento em porcelanato Portobello"
+          },
+          {
+            "roomName": "Suíte 2",
+            "description": "Suíte com armários embutidos Florense",
+            "length": 3.8,
+            "width": 3.4,
+            "units": "meters",
+            "dimensionDetails": "Janela com persiana de enrolar automatizada"
+          },
+          {
+            "roomName": "Banheiro Suíte 2",
+            "description": "Banheiro completo com ventilação natural",
+            "length": 2.4,
+            "width": 1.6,
+            "units": "meters",
+            "dimensionDetails": "Metais Deca"
+          },
+          {
+            "roomName": "Dormitório 3 / Home Office",
+            "description": "Convertido em escritório com painéis de madeira",
+            "length": 3.2,
+            "width": 3.0,
+            "units": "meters",
+            "dimensionDetails": "Reversível para quarto de solteiro"
+          },
+          {
+            "roomName": "Banheiro Social",
+            "description": "Atende ao dormitório 3",
+            "length": 2.2,
+            "width": 1.5,
+            "units": "meters",
+            "dimensionDetails": "Box de vidro temperado Elegance"
+          },
+          {
+            "roomName": "Cozinha",
+            "description": "Cozinha com ilha central, tampos em Silestone e cooktop indução",
+            "length": 4.5,
+            "width": 2.8,
+            "units": "meters",
+            "dimensionDetails": "Torre quente e lava-louças embutida"
+          },
+          {
+            "roomName": "Varanda Gourmet",
+            "description": "Churrasqueira a carvão com exaustão forçada e fechamento de vidro",
+            "length": 4.2,
+            "width": 2.5,
+            "units": "meters",
+            "dimensionDetails": "Piso nivelado com o living"
+          },
+          {
+            "roomName": "Área de Serviço",
+            "description": "Lavanderia com aquecedor de passagem Rinnai",
+            "length": 2.8,
+            "width": 1.6,
+            "units": "meters",
+            "dimensionDetails": "Tanque em inox e espaço para lava e seca dupla"
+          },
+          {
+            "roomName": "Dependência de Funcionários",
+            "description": "Quarto e banheiro de serviço completo",
+            "length": 2.5,
+            "width": 2.0,
+            "units": "meters",
+            "dimensionDetails": "Pode ser revertido em despensa"
+          },
+          {
+            "roomName": "Depósito Privativo",
+            "description": "No primeiro subsolo, prateleiras em aço",
+            "length": 2.5,
+            "width": 1.8,
+            "units": "meters",
+            "dimensionDetails": "4.5 metros quadrados totais"
+          }
+        ]
+      }
+    },
+    "residentialPropertyFeatures": {
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "receptions": 2,
+      "kitchens": 1,
+      "diningAreas": 1,
+      "outsideAreas": ["Balcony"]
+    },
+    "nearbyFacilities": {
+      "schools": [
+        {
+          "name": "Colégio Dante Alighieri",
+          "contact": {
+            "address": {
+              "line1": "Alameda Jaú, 1061",
+              "town": "São Paulo",
+              "postcode": "01420-001"
+            },
+            "telephone": "+55 11 3179-4400",
+            "emailAddress": "contato@cda.br",
+            "website": "https://www.colegiodante.com.br"
+          },
+          "ofstedRating": "Outstanding",
+          "pupils": 4500,
+          "distanceInMiles": 0.7,
+          "ageRange": "3-18",
+          "religiousCharacter": "Catholic",
+          "schoolType": {
+            "primary": {"yesNoNotKnown": "Yes"},
+            "secondary": {"yesNoNotKnown": "Yes"},
+            "private": {"yesNoNotKnown": "Yes"}
+          }
+        }
+      ],
+      "transport": [
+        {
+          "name": "Estação Oscar Freire (Linha 4 - Amarela)",
+          "transportType": "Underground/Subway",
+          "latitude": -23.560120,
+          "longitude": -46.667800,
+          "distanceInMiles": 0.2
+        },
+        {
+          "name": "Aeroporto de Congonhas (CGH)",
+          "transportType": "Airport",
+          "latitude": -23.626111,
+          "longitude": -46.656389,
+          "distanceInMiles": 5.8
+        }
+      ],
+      "healthCare": [
+        {
+          "name": "Hospital Sírio-Libanês",
+          "typeOfHealthCare": "Hospital",
+          "contact": {
+            "address": {
+              "line1": "Rua Dona Adma Jafet, 115",
+              "town": "São Paulo",
+              "postcode": "01308-050"
+            },
+            "telephone": "+55 11 3394-0200",
+            "website": "https://www.hospitalsiriolibanes.org.br"
+          },
+          "containsAccidentAndEmergencyFacility": "Yes",
+          "distanceInMiles": 0.9,
+          "specialties": ["Oncologia", "Cardiologia", "Neurologia", "Ortopedia"],
+          "openingHours": [
+            {"day": "Mon", "hours": "24/7"},
+            {"day": "Tue", "hours": "24/7"},
+            {"day": "Wed", "hours": "24/7"},
+            {"day": "Thu", "hours": "24/7"},
+            {"day": "Fri", "hours": "24/7"},
+            {"day": "Sat", "hours": "24/7"},
+            {"day": "Sun", "hours": "24/7"}
+          ]
+        }
+      ]
+    },
+    "ownership": {
+      "numberOfSellers": 2,
+      "numberOfNonUkResidentSellers": 0,
+      "hasHelpToBuyEquityLoan": "No",
+      "isFirstRegistration": "No",
+      "isLimitedCompanySale": "No",
+      "ownershipsToBeTransferred": [
+        {
+          "titleNumber": "184729-SP-04",
+          "titlePropertyDescription": "Apartamento 1404, Vagas 31 e 32, Depósito D-14 no Edifício Alameda Jardins",
+          "ownershipType": "Leasehold",
+          "leaseholdInformation": {
+            "sharedOwnership": {
+              "isSharedOwnership": "No"
+            },
+            "leaseTerm": {
+              "startYearOfLease": 2018,
+              "lengthOfLeaseInYears": 999
+            },
+            "contactDetails": {
+              "contacts": {
+                "landlord": {
+                  "contact": {
+                    "nameOrOrganisation": "Condomínio Edifício Alameda Jardins (Representado pelo Síndico)",
+                    "address": {
+                      "line1": "Rua Oscar Freire, 1420",
+                      "town": "São Paulo",
+                      "postcode": "01426-002"
+                    },
+                    "telephone": "+55 11 3062-0000",
+                    "emailAddress": "sindico@alamedajardins.com.br"
+                  },
+                  "bankDetails": {
+                    "accountName": "Condominio E A Jardins",
+                    "sortCode": "341",
+                    "accountNumber": 123456,
+                    "reference": "Apt1404",
+                    "feeType": "Service charges"
+                  }
+                },
+                "managingAgent": {
+                  "contact": {
+                    "nameOrOrganisation": "Plena Gestão Condominial",
+                    "address": {
+                      "line1": "Av. Paulista, 1000",
+                      "town": "São Paulo",
+                      "postcode": "01310-100"
+                    },
+                    "telephone": "+55 11 3214-5500",
+                    "emailAddress": "contato@plenagestao.com.br"
+                  },
+                  "appointedBy": "Landlord",
+                  "bankDetails": {
+                    "accountName": "Plena Gestao CNPJ 123",
+                    "sortCode": "033",
+                    "accountNumber": 987654,
+                    "reference": "BoletoMensal",
+                    "feeType": "All"
+                  }
+                }
+              }
+            },
+            "consents": {
+              "changesInTermOfLease": {
+                "isSellerAwareOfChanges": "No"
+              }
+            },
+            "transferAndRegistration": {
+              "deedOfCovenantRequired": {
+                "yesNoNotKnown": "Yes",
+                "costsApplicableToTheDeed": 0,
+                "personWhoDealsWithTheDeedOfCovenant": "Administradora Plena"
+              },
+              "licenceToAssignRequired": {
+                "yesNo": "No"
+              },
+              "awareOfConsents": {
+                "yesNo": "Yes",
+                "details": "Aprovação de reforma (ART/RRT) emitida pelo síndico em 10/01/2024 para modificações internas não estruturais."
+              },
+              "requirementsToBeMemberOfManagementCompany": {
+                "yesNoNotApplicable": "No"
+              },
+              "procedureForObtainingCertificate": "Solicitar Certidão Negativa de Débitos Condominiais à Plena Gestão. Custo: R$ 0,00."
+            },
+            "groundRent": {
+              "isGroundRentPayable": "No"
+            },
+            "ownershipAndManagement": {
+              "freeholdOwner": "No",
+              "hasHeadlease": {
+                "yesNo": "No"
+              },
+              "buildingManager": {
+                "buildingManagerType": "Management company named in lease of the property"
+              },
+              "hasTenantCompanyDissolved": "No",
+              "isManagingAgentEmployed": "Yes"
+            },
+            "serviceCharge": {
+              "sellerContributesToServiceCharge": "Yes",
+              "annualServiceCharge": 23520.00,
+              "largeAdditionalExpense": {
+                "yesNo": "No"
+              },
+              "problemInServiceChargeLevel": {
+                "yesNo": "No"
+              },
+              "serviceChargeChallenged": {
+                "yesNo": "No"
+              },
+              "dangerousCladdingOrDefects": "No",
+              "difficultyInCollectingServiceCharge": {
+                "yesNo": "No"
+              },
+              "serviceChargeOwed": {
+                "yesNo": "No"
+              },
+              "propertiesContributingToMaintenanceOfManagedArea": 48,
+              "adHocExpenses": "N/A - Fundo de reserva cobre eventuais sobressaltos",
+              "serviceChargePaidUpToDate": {
+                "yesNo": "Yes"
+              },
+              "excessPaymentAnticipated": {
+                "yesNo": "No"
+              },
+              "lastDemandPeriod": {
+                "from": "2026-09-01",
+                "to": "2026-09-30"
+              },
+              "hasInabilityToCollectAffectedMaintenance": {
+                "yesNo": "No"
+              },
+              "reserveFund": {
+                "yesNo": "Yes",
+                "amount": {
+                  "fromTheOwners": 0,
+                  "forTheManagedAreas": 420000.00
+                },
+                "sufficentToCoverKnownExpenditure": {
+                  "yesNo": "Yes"
+                }
+              },
+              "lastDecoratedPeriod": {
+                "externally": {
+                  "year": 2023,
+                  "from": "2023-01-01",
+                  "to": "2023-03-30"
+                },
+                "internally": {
+                  "year": 2025,
+                  "from": "2025-05-01",
+                  "to": "2025-06-15"
+                }
+              },
+              "section20WorksProposed": {
+                "yesNo": "Not applicable"
+              },
+              "increaseInServiceChargeAnticipated": {
+                "yesNo": "Yes",
+                "details": "Ajuste inflacionário anual previsto na convenção coletiva (IPCA) em Janeiro/2027."
+              },
+              "outstandingServiceChargeConsultation": {
+                "yesNo": "No"
+              },
+              "japaneseKnotweedAffectingManagedAreas": {
+                "yesNo": "No"
+              },
+              "transferFees": {
+                "yesNo": "No"
+              },
+              "allPropertiesContribute": {
+                "yesNo": "Yes"
+              }
+            },
+            "leaseRestrictions": {
+              "yesNo": "Yes",
+              "details": "Proibido locações por temporada (Airbnb, Booking) inferiores a 90 dias conforme alteração da convenção em 2022."
+            },
+            "buildingsInsurance": {
+              "premiumsPaidUpToDate": {
+                "yesNo": "Yes"
+              },
+              "lastDemandPeriod": {
+                "from": "2026-01-01",
+                "to": "2026-12-31"
+              },
+              "premiumPaidinFull": {
+                "yesNo": "Yes"
+              },
+              "claimsMade": {
+                "yesNo": "No"
+              },
+              "claimsAnticipated": {
+                "yesNo": "No"
+              },
+              "managedAreasCoveredByPolicy": {
+                "yesNo": "Yes",
+                "riskAssessments": {
+                  "assessmentsCarriedOut": "Both",
+                  "urgentWorksRecommended": {
+                    "yesNo": "No"
+                  }
+                }
+              },
+              "standardTermsAvailable": {
+                "yesNo": "Yes"
+              },
+              "nonComplianceWithConditions": {
+                "yesNo": "No"
+              },
+              "buildingsReinstatementCostAssessment": "2025-11-10",
+              "premiumIncludedInServiceCharge": {
+                "yesNo": "Yes"
+              }
+            },
+            "disputes": {
+              "sellerReceivedComplaint": {
+                "yesNo": "No"
+              },
+              "sellerSentComplaint": {
+                "yesNo": "No"
+              },
+              "ongoingForfeitureProceedings": {
+                "yesNo": "No"
+              },
+              "unresolvedDisputes": {
+                "yesNo": "No"
+              },
+              "breachOfTermsOfLease": {
+                "yesNo": "No"
+              }
+            },
+            "buildingSafetyAct": {
+              "isLeaseQualifying": "Yes",
+              "deedOfCertificateServed": {
+                "yesNoNotApplicable": "Not applicable"
+              },
+              "landlordNotifiedOfSale": "Yes",
+              "landlordsCertificateServed": {
+                "yesNoNotApplicable": "Yes",
+                "attachments": "Attached"
+              }
+            },
+            "alterations": {
+              "sellerAwareOfAlterations": {
+                "yesNo": "Yes",
+                "details": "Fechamento de varanda com vidro retrátil, remoção de parede não-estrutural entre quarto 3 e sala para ampliação do living.",
+                "landlordConsentObtained": {
+                  "yesNo": "Yes",
+                  "attachments": "Attached"
+                }
+              }
+            },
+            "enfranchisement": {
+              "sellerOwnedProperty": "Yes",
+              "sellerServedNoticeOnLandlord": {
+                "yesNo": "Not required"
+              },
+              "sellerAwareOfNoticeOfCollectivePurchase": {
+                "yesNo": "No"
+              },
+              "sellerAwareOfResponse": {
+                "yesNo": "No"
+              },
+              "enfranchisementSteps": {
+                "yesNo": "No"
+              }
+            },
+            "general": {
+              "otherPropertiesInManagedArea": 47,
+              "leasedOnSimilarTerms": {
+                "yesNo": "Yes"
+              },
+              "buildingKnownToBeHMO": {
+                "yesNo": "No"
+              },
+              "additionalParkingRegulations": {
+                "yesNo": "Yes",
+                "details": "Proibido uso das vagas para armazenamento de bens, apenas veículos motorizados e bicicletas no bicicletário."
+              },
+              "restrictionOnKeepingPets": {
+                "yesNo": "No"
+              }
+            },
+            "requiredDocuments": {
+              "lease": "Attached",
+              "deedsOfVariation": "Not applicable",
+              "copyOfcorrespondence": "Attached",
+              "serviceChargeAccounts": "Attached",
+              "serviceCharges": "Attached",
+              "groundRent": "Not applicable",
+              "buildingsInsurancePolicy": {
+                "arrangedBySeller": "Attached",
+                "arrangedByLandlord": "Attached"
+              },
+              "noticeOfSale": {
+                "yesNo": "No"
+              },
+              "noticeOfBuildingCondition": {
+                "yesNo": "No"
+              },
+              "managedAreasBuildingsInsurancePolicy": "Attached",
+              "serviceChargeEstimatesCurrent": "Attached",
+              "serviceChargeEstimatesPrevious": "Attached",
+              "proposedWorksNotices": "Not applicable",
+              "forfeitureDocumentation": "Not applicable",
+              "additionalRegulationsNotInLease": "Attached",
+              "deedOfCovenant": "Attached",
+              "certificateOfCompliance": "Attached",
+              "certificateOfComplianceFee": 0,
+              "licenceToAssign": "Not applicable",
+              "permissionToAlter": "Attached",
+              "noticesServedOnLessee": "Not applicable",
+              "asbestosSurvey": "Not applicable",
+              "managedAreaFireRiskAssessment": "Attached",
+              "managementCompanyDocuments": {
+                "memorandumAndArticles": "Attached",
+                "shareOrMembershipCertificate": "Not applicable",
+                "companyAccounts": "Attached"
+              },
+              "managementCompanyAGMMinutes": "Attached",
+              "enforcementNotices": "Not applicable"
+            },
+            "confirmationOfAccuracy": {
+              "confirmation": true,
+              "capacity": "Landlord"
+            }
+          }
+        }
+      ]
+    },
+    "parking": {
+      "parkingArrangements": [
+        "Allocated",
+        "Covered",
+        "Gated",
+        "Private",
+        "Subterranean"
+      ],
+      "disabledParking": {
+        "yesNo": "Yes"
+      },
+      "controlledParking": {
+        "yesNo": "No"
+      },
+      "vehicleTypeRestriction": {
+        "yesNo": "Yes",
+        "details": "Somente veículos de passeio de até 2.5 toneladas. Proibido trailers e embarcações."
+      },
+      "electricVehicleChargingPoint": {
+        "yesNo": "Yes"
+      },
+      "locatedInUlez": {
+        "yesNo": "No"
+      }
+    },
+    "listingAndConservation": {
+      "isListed": {
+        "yesNo": "No"
+      },
+      "isConservationArea": {
+        "yesNo": "No"
+      },
+      "hasTreePreservationOrder": {
+        "yesNo": "Yes",
+        "workCarriedOut": {
+          "yesNo": "Yes",
+          "consentsObtained": "Yes",
+          "attachments": "Attached"
+        }
+      }
+    },
+    "typeOfConstruction": {
+      "isStandardForm": {
+        "yesNo": "Yes",
+        "constructionType": "Brick and block"
+      },
+      "buildingSafety": {
+        "yesNo": "No"
+      },
+      "loft": {
+        "loftAccess": "No"
+      },
+      "sprayFoamInsulation": {
+        "hasSprayFoamInstalled": "No"
+      },
+      "accessibilityAndAdaptations": [
+        "Level access",
+        "Lift access",
+        "Wide doorways",
+        "Lateral living"
+      ]
+    },
+    "energyEfficiency": {
+      "certificateIsSupplied": "Attached",
+      "certificate": {
+        "certificateNumber": "9876-5432-1098-7654-3210",
+        "address": "Rua Oscar Freire, 1420, Apto 1404, Jardins, São Paulo",
+        "builtForm": "Mid-Terrace",
+        "co2EmissCurrPerFloorArea": 15.2,
+        "co2EmissionsCurrent": 1.9,
+        "co2EmissionsPotential": 1.9,
+        "currentEnergyEfficiency": 92,
+        "currentEnergyRating": "A",
+        "potentialEnergyEfficiency": 92,
+        "potentialEnergyRating": "A",
+        "energyConsumptionCurrent": 85.4,
+        "energyConsumptionPotential": 85.4,
+        "lightingCostCurrent": 120.0,
+        "lightingCostPotential": 120.0,
+        "heatingCostCurrent": 0.0,
+        "heatingCostPotential": 0.0,
+        "hotWaterCostCurrent": 450.0,
+        "hotWaterCostPotential": 450.0,
+        "propertyType": "Flat",
+        "totalFloorArea": 128.4,
+        "mainsGasFlag": "Y",
+        "mainHeatDescription": "Central air conditioning VRF, electric",
+        "mainFuel": "Electricity",
+        "windTurbineCount": 0,
+        "solarWaterHeatingFlag": "N",
+        "mechanicalVentilation": "Natural",
+        "floorLevel": "14",
+        "flatTopStorey": "N",
+        "flatStoreyCount": 18
+      }
+    },
+    "greenBuildingVerification": {
+      "verifications": [
+        {
+          "type": "LEED Gold - Building Design and Construction",
+          "body": "U.S. Green Building Council",
+          "year": 2019,
+          "metric": 72,
+          "url": "https://www.usgbc.org/projects/alameda-jardins"
+        },
+        {
+          "type": "Procel Edifica (Etiqueta Nacional de Conservação de Energia)",
+          "body": "Eletrobras / Inmetro",
+          "year": 2018,
+          "rating": "A",
+          "url": "https://www.procelinfo.com.br"
+        }
+      ]
+    },
+    "councilTax": {
+      "councilTaxBand": "G",
+      "councilTaxCost": 8450.00,
+      "councilTaxYear": 2026
+    },
+    "disputesAndComplaints": {
+      "hasDisputes": {
+        "yesNo": "No"
+      }
+    },
+    "alterationsAndChanges": {
+      "hasAlterations": {
+        "yesNo": "Yes",
+        "details": "Reforma geral em 2024. Troca de revestimentos, alteração de layout interno (integração varanda/sala, ampliação sala removendo quarto 4).",
+        "planningPermission": {
+          "required": "No"
+        },
+        "buildingRegulations": {
+          "required": "Yes",
+          "obtained": "Yes",
+          "attachments": "Attached"
+        },
+        "completionCertificate": {
+          "obtained": "Yes",
+          "attachments": "Attached"
+        }
+      },
+      "hasReplacementWindowsOrDoors": {
+        "yesNo": "Yes",
+        "details": "Fechamento de varanda em vidro temperado sem esquadrias verticais (sistema Reiki).",
+        "fenSAApproval": {
+          "obtained": "Yes",
+          "attachments": "Attached"
+        }
+      }
+    },
+    "notices": {
+      "hasNotices": {
+        "yesNo": "No"
+      }
+    },
+    "specialistIssues": {
+      "hasSpecialistIssues": {
+        "yesNo": "No"
+      }
+    },
+    "fixturesAndFittings": {
+      "basicFittings": {
+        "boiler": "Included",
+        "centralHeating": "Included",
+        "lightSwitches": "Included",
+        "sockets": "Included",
+        "burglarAlarm": "Included",
+        "doors": "Included",
+        "doorFurniture": "Included",
+        "skirtingBoards": "Included"
+      },
+      "kitchen": {
+        "oven": "Included",
+        "hob": "Included",
+        "extractor": "Included",
+        "microwave": "Included",
+        "fridgeFreezer": "Excluded",
+        "dishwasher": "Included",
+        "washingMachine": "Excluded",
+        "tumbleDryer": "Excluded"
+      },
+      "bathrooms": {
+        "bath": "Included",
+        "shower": "Included",
+        "towelRail": "Included",
+        "mirror": "Included",
+        "cabinet": "Included"
+      },
+      "furnishings": {
+        "carpets": "None",
+        "curtains": "Excluded",
+        "blinds": "Included",
+        "lightFittings": "Included",
+        "fittedWardrobes": "Included",
+        "freeStandingWardrobes": "None"
+      },
+      "outdoor": {
+        "shed": "None",
+        "greenhouse": "None",
+        "outdoorPlants": "None",
+        "outdoorLighting": "Included"
+      }
+    },
+    "waterAndDrainage": {
+      "mainsWater": {
+        "connected": "Yes",
+        "supplier": "Sabesp",
+        "metered": "Yes",
+        "meterLocation": "Corredor técnico do andar"
+      },
+      "mainsDrainage": {
+        "connected": "Yes"
+      },
+      "surfaceWaterDrainage": {
+        "type": "Mains"
+      }
+    },
+    "electricity": {
+      "connected": "Yes",
+      "supplier": "Enel SP",
+      "metered": "Yes",
+      "meterLocation": "Centro de medição no térreo",
+      "smartMeter": "Yes"
+    },
+    "connectivity": {
+      "broadband": {
+        "connected": "Yes",
+        "type": "Fibre to the premises (FTTP)",
+        "provider": "Vivo Fibra",
+        "speed": "1000 Mbps"
+      },
+      "telephone": {
+        "connected": "No"
+      },
+      "tv": {
+        "connected": "Yes",
+        "type": "Cable"
+      }
+    },
+    "heating": {
+      "centralHeating": {
+        "type": "Electric VRF and Gas Water Heater",
+        "workingOrder": "Yes",
+        "lastServiced": "2026-03-10",
+        "serviceHistory": "Attached"
+      }
+    },
+    "insurance": {
+      "buildingsInsurance": {
+        "insured": "Yes",
+        "insurer": "Porto Seguro (via Condomínio)",
+        "policyNumber": "123.456.789",
+        "claimsMade": "No",
+        "claimsAnticipated": "No",
+        "premiumIncludedInServiceCharge": "Yes"
+      }
+    },
+    "rightsAndInformalArrangements": {
+      "hasRightsOrArrangements": {
+        "yesNo": "No"
+      }
+    },
+    "environmentalIssues": {
+      "flooding": {
+        "hasFlooded": "No",
+        "floodRiskReport": "Not applicable"
+      },
+      "radon": {
+        "inRadonArea": "No"
+      },
+      "japaneseKnotweed": {
+        "hasKnotweed": "No"
+      }
+    },
+    "guaranteesWarrantiesAndIndemnityInsurances": {
+      "hasWarranties": {
+        "yesNo": "Yes",
+        "details": [
+          {
+            "type": "New Home Warranty (Construtora)",
+            "provider": "Construtora Cyrela",
+            "validUntil": "2028-12-31",
+            "attachments": "Attached"
+          },
+          {
+            "type": "Móveis Planejados",
+            "provider": "Florense",
+            "validUntil": "2029-05-10",
+            "attachments": "Attached"
+          }
+        ]
+      }
+    },
+    "occupiers": {
+      "areThereOccupiers": "Yes",
+      "occupiersDetails": [
+        {
+          "name": "Mariana Alves de Carvalho",
+          "over17": "Yes",
+          "willVacateOnCompletion": "Yes"
+        },
+        {
+          "name": "Rafael Carvalho Neto",
+          "over17": "Yes",
+          "willVacateOnCompletion": "Yes"
+        },
+        {
+          "name": "Dependente 1",
+          "over17": "No",
+          "willVacateOnCompletion": "Yes"
+        },
+        {
+          "name": "Dependente 2",
+          "over17": "No",
+          "willVacateOnCompletion": "Yes"
+        }
+      ]
+    },
+    "completionAndMoving": {
+      "proposedCompletionDate": "2026-10-30",
+      "specialRequirements": "Desocupação física do imóvel ocorrerá em até 30 dias após a quitação total e lavratura da escritura, com retenção de 5% do valor retido em escrow account até a entrega das chaves à compradora."
+    },
+    "confirmationOfAccuracyByOwners": {
+      "confirmed": true,
+      "dateConfirmed": "2026-09-18T10:05:00-03:00"
+    }
+  },
+  "historyTransactional": [
+    {
+      "event_type": "Sold",
+      "date": "2021-05-14T10:00:00-03:00",
+      "price": 950000.00,
+      "currency": "BRL",
+      "buyer": "Mariana Alves de Carvalho e Rafael Carvalho Neto",
+      "seller": "Construtora Cyrela",
+      "notes": "Compra direto com a construtora, financiamento pelo Banco Itaú.",
+      "dataSource": "Cartório de Imóveis"
+    },
+    {
+      "event_type": "Listed",
+      "date": "2026-04-01T09:30:00-03:00",
+      "price": 1480000.00,
+      "currency": "BRL",
+      "agency": "Alameda Negócios Imobiliários",
+      "notes": "Publicação inicial do anúncio nos portais",
+      "dataSource": "MLS / CRM Interno"
+    },
+    {
+      "event_type": "Price Change",
+      "date": "2026-08-15T11:00:00-03:00",
+      "price": 1450000.00,
+      "currency": "BRL",
+      "notes": "Redução estratégica de preço para atrair novas ofertas",
+      "dataSource": "MLS / CRM Interno"
+    },
+    {
+      "event_type": "Under Offer",
+      "date": "2026-09-05T16:45:00-03:00",
+      "price": 1410000.00,
+      "currency": "BRL",
+      "buyer": "Helena Duarte",
+      "notes": "Oferta formalizada após a segunda visita da cliente",
+      "dataSource": "MLS / CRM Interno"
+    },
+    {
+      "event_type": "Contracts Exchanged",
+      "date": "2026-09-28T14:30:00-03:00",
+      "price": 1410000.00,
+      "currency": "BRL",
+      "buyer": "Helena Duarte",
+      "seller": "Mariana Alves de Carvalho e Rafael Carvalho Neto",
+      "notes": "Assinatura digital do compromisso de compra e venda com pagamento do sinal (20%)",
+      "dataSource": "Plataforma Jurídica"
+    }
+  ]
+}
