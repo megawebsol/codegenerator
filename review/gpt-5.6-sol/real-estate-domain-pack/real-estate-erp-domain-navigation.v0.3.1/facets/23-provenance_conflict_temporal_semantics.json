@@ -1,0 +1,2163 @@
+{
+  "macro_area": {
+    "id": "governance",
+    "order": 8,
+    "label": "Governance"
+  },
+  "subarea": {
+    "id": "provenance_conflict_temporal_semantics",
+    "order": 2,
+    "label": "Provenance, Conflict and Temporal Semantics",
+    "facet_number": 23,
+    "description": "Lineage, source identity, conflicting observations, authority and temporal truth.",
+    "typical_concepts": {
+      "citation": {
+        "ref": "base0001.citation@1",
+        "kind": "property",
+        "definition": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/citation",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "date_created": {
+        "ref": "base0001.date_created@1",
+        "kind": "property",
+        "definition": "The date on which the CreativeWork was created or the item was added to a DataFeed.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/DataFeedItem"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/dateCreated",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "date_modified": {
+        "ref": "base0001.date_modified@1",
+        "kind": "property",
+        "definition": "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/DataFeedItem"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/dateModified",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "date_published": {
+        "ref": "base0001.date_published@1",
+        "kind": "property",
+        "definition": "Date of first publication or broadcast. For example the date a [[CreativeWork]] was broadcast or a [[Certification]] was issued.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/CreativeWork"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/datePublished",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "end_date": {
+        "ref": "base0001.end_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/JobPosting",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/endDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validThrough",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasEndDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "identifier": {
+        "ref": "base0001.identifier@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Thing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/identifier",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/identifier",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/Identifiers/identifiedBy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_based_on": {
+        "ref": "base0001.is_based_on@1",
+        "kind": "property",
+        "definition": "A resource from which this work is derived or from which it is a modification or adaptation.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Product",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isBasedOn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "same_as": {
+        "ref": "base0001.same_as@1",
+        "kind": "property",
+        "definition": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Thing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/sameAs",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "valid": {
+        "ref": "base0001.valid@1",
+        "kind": "property",
+        "definition": "Date (often a range) of validity of a resource.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [],
+            "parent_refs": [],
+            "range_refs": [
+              "http://www.w3.org/2000/01/rdf-schema#Literal"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/valid",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "invariants": [
+      "SourceObservation != CanonicalFact",
+      "ExternalSource != QuipuAuthority",
+      "conflict resolution does not erase historical conflict"
+    ],
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.MediaKey",
+        "source_native_name": "MediaKey",
+        "source_label": "Media Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This may be a number or a string that can include a Uniform Resource Identifier (URI) or other forms. This is the system you are connecting to and not necessarily the original source of the record.",
+        "source_resource": "Media",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberKey",
+        "source_native_name": "MemberKey",
+        "source_label": "Member Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemMemberKey and OriginatingSystemMemberKey.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.OfficeKey",
+        "source_native_name": "OfficeKey",
+        "source_label": "Office Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Office Resource's OfficeKey.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.OfficeKey",
+        "source_native_name": "OfficeKey",
+        "source_label": "Office Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing being shown. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingId",
+        "source_native_name": "ShowingId",
+        "source_label": "Showing ID",
+        "source_definition": "The well-known identifier for the Showing record. The value may be identical to that of the ShowingKey, but the ShowingId is intended to be the value used by a human to retrieve the information about a specific showing. In a multiple-originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Media record.",
+        "source_resource": "Media",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CloseDate",
+        "source_native_name": "CloseDate",
+        "source_label": "Close Date",
+        "source_definition": "With for-sale listings, this is the date the purchase agreement was fulfilled. With lease listings, it is the date the requirements were fulfilled, such as contract and/or deposit. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DaysInMls",
+        "source_native_name": "DaysInMls",
+        "source_label": "Days in MLS",
+        "source_definition": "The number of days the listing was on market within the MLS system. Like Days on Market, where the calculation can be based on a number of on-market and off-market events, Days in MLS is best defined as being based upon timestamps of when entry or changes were made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingKey",
+        "source_native_name": "ShowingKey",
+        "source_label": "Showing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemShowingKey and OriginatingSystemShowingKey.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingUrl",
+        "source_native_name": "ShowingUrl",
+        "source_label": "Showing Deep Link URL",
+        "source_definition": "The Uniform Resource Locator (URL) that links to the originating system.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing where the lockbox/smart lock is located. The value may be identical to that of the Listing Key, but the Listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberAORkey",
+        "source_native_name": "MemberAORkey",
+        "source_label": "Member AOR Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the Member AOR Key is the system unique identifier from the system that the record was retrieved. This may be identical to the related xxxId.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Member record.",
+        "source_resource": "Member",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.OfficeAORkey",
+        "source_native_name": "OfficeAORkey",
+        "source_label": "Office AOR Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the OfficeAorKey is the system unique identifier from the system that the record was retrieved. This may be identical to the related xxxId. This is a foreign key relating to the association of REALTORS® member management system in which the record was originated.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Office record.",
+        "source_resource": "Office",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing related to this open house. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating or merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingKey",
+        "source_native_name": "BuildingKey",
+        "source_label": "Building Key",
+        "source_definition": "A unique identifier for this record of the Building Resource.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemLockOrBoxKey and OriginatingSystemLockOrBoxKey.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.SourceSystemID",
+        "source_native_name": "SourceSystemID",
+        "source_label": "Source System ID",
+        "source_definition": "The OUID Resource's OrganizationUniqueId of the source record provider. The source system is the system from which the record was directly received. In cases where the source system was not where the record originated (the authoritative system), see the Originating System fields.",
+        "source_resource": "Media",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.MainOfficeKey",
+        "source_native_name": "MainOfficeKey",
+        "source_label": "Main Office Key",
+        "source_definition": "The OfficeKey of the main office in a firm/company of offices. This is a self-referencing foreign key relating to this resource's OfficeKey. This key may be the same value as the OfficeKey for a given record if the given office is the main office.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for the listing record related to this open house. This may be a number or string that can include a Uniform Resource Identifier (URI) or other forms. This is the system being connected to and not necessarily the original source of the record. This may be a foreign key from the resource selected in the ResourceName field.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListTeamKey",
+        "source_native_name": "ListTeamKey",
+        "source_label": "List Team Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Team Resource's TeamKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StateRegion",
+        "source_native_name": "StateRegion",
+        "source_label": "State Region",
+        "source_definition": "A subsection or area of a defined state or province (e.g., Florida Keys, Hudson Valley in New York, Silicon Valley in California).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.SourceSystemID",
+        "source_native_name": "SourceSystemID",
+        "source_label": "Source System ID",
+        "source_definition": "The OUID Resource's OrganizationUniqueId of the source record provider. The source system is the system from which the record was directly received. In cases where the source system was not where the record originated (the authoritative system), see the Originating System fields.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.SourceSystemID",
+        "source_native_name": "SourceSystemID",
+        "source_label": "Source System ID",
+        "source_definition": "The OUID Resource's OrganizationUniqueId of the source record provider. The source system is the system from which the record was directly received. In cases where the source system was not where the record originated (the authoritative system), see the Originating System fields.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.OpenHouseId",
+        "source_native_name": "OpenHouseId",
+        "source_label": "Open House ID",
+        "source_definition": "The well-known identifier for the OpenHouse Resource. The value may be identical to that of OpenHouseKey, but OpenHouseId is intended to be the value used by a human to retrieve the information about a specific open house. In a multiple-originating or merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerTeamKey",
+        "source_native_name": "BuyerTeamKey",
+        "source_label": "Buyer Team Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Team Resource's TeamKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentKey",
+        "source_native_name": "ListAgentKey",
+        "source_label": "List Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the ListAgentKey is the system unique identifier from the system where the record was retrieved. This may be identical to the related xxxId. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OnMarketDate",
+        "source_native_name": "OnMarketDate",
+        "source_label": "On Market Date",
+        "source_definition": "The date the listing was placed on market. Where possible, this date is reflective of the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Property record.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.LockOrBoxKey",
+        "source_native_name": "LockOrBoxKey",
+        "source_label": "Lock or Box Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the LockOrBox record.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "source",
+        "label": "source",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "source_version",
+        "label": "source version",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "artifact",
+        "label": "artifact",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "source_path",
+        "label": "source path",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "source_record",
+        "label": "source record",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "observed_time",
+        "label": "observed time",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "effective_time",
+        "label": "effective time",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valid_from",
+        "label": "valid from",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valid_to",
+        "label": "valid to",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "jurisdiction",
+        "label": "jurisdiction",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "mapping_status",
+        "label": "mapping status",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "authority",
+        "label": "authority",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "conflict",
+        "label": "conflict",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "adjudication",
+        "label": "adjudication",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "historical_assertion",
+        "label": "historical assertion",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "raw_value",
+        "label": "raw value",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "normalized_value",
+        "label": "normalized value",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "resolved_value",
+        "label": "resolved value",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "media_media_key",
+        "label": "media key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Media.MediaKey",
+            "source_native_name": "MediaKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "member_member_key",
+        "label": "member key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.MemberKey",
+            "source_native_name": "MemberKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "member_office_key",
+        "label": "office key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.OfficeKey",
+            "source_native_name": "OfficeKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "office_office_key",
+        "label": "office key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Office.OfficeKey",
+            "source_native_name": "OfficeKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_showing_id",
+        "label": "showing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ShowingId",
+            "source_native_name": "ShowingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "media_source_system",
+        "label": "source system",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Media.SourceSystem",
+            "source_native_name": "SourceSystem",
+            "source_data_type": "org.reso.metadata.OUID",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "close_date",
+        "label": "close date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CloseDate",
+            "source_native_name": "CloseDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "days_in_mls",
+        "label": "days in mls",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DaysInMls",
+            "source_native_name": "DaysInMls",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "showing_listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_showing_key",
+        "label": "showing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ShowingKey",
+            "source_native_name": "ShowingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "showing_showing_url",
+        "label": "showing deep link url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Showing.ShowingUrl",
+            "source_native_name": "ShowingUrl",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "member_member_aorkey",
+        "label": "member aor key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.MemberAORkey",
+            "source_native_name": "MemberAORkey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "member_source_system",
+        "label": "source system",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.SourceSystem",
+            "source_native_name": "SourceSystem",
+            "source_data_type": "org.reso.metadata.OUID",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "office_office_aorkey",
+        "label": "office aor key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Office.OfficeAORkey",
+            "source_native_name": "OfficeAORkey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "office_source_system",
+        "label": "source system",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Office.SourceSystem",
+            "source_native_name": "SourceSystem",
+            "source_data_type": "org.reso.metadata.OUID",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "open_house_listing_id",
+        "label": "listing id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "OpenHouse.ListingId",
+            "source_native_name": "ListingId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_building_key",
+        "label": "building key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.BuildingKey",
+            "source_native_name": "BuildingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "media_source_system_id",
+        "label": "source system id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Media.SourceSystemID",
+            "source_native_name": "SourceSystemID",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "office_main_office_key",
+        "label": "main office key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Office.MainOfficeKey",
+            "source_native_name": "MainOfficeKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "open_house_listing_key",
+        "label": "listing key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "OpenHouse.ListingKey",
+            "source_native_name": "ListingKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_team_key",
+        "label": "list team key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListTeamKey",
+            "source_native_name": "ListTeamKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "state_region",
+        "label": "state region",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.StateRegion",
+            "source_native_name": "StateRegion",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "member_source_system_id",
+        "label": "source system id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Member.SourceSystemID",
+            "source_native_name": "SourceSystemID",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "office_source_system_id",
+        "label": "source system id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Office.SourceSystemID",
+            "source_native_name": "SourceSystemID",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "open_house_open_house_id",
+        "label": "open house id",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "OpenHouse.OpenHouseId",
+            "source_native_name": "OpenHouseId",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_team_key",
+        "label": "buyer team key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerTeamKey",
+            "source_native_name": "BuyerTeamKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "list_agent_key",
+        "label": "list agent key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListAgentKey",
+            "source_native_name": "ListAgentKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "on_market_date",
+        "label": "on market date",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OnMarketDate",
+            "source_native_name": "OnMarketDate",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "source_system",
+        "label": "source system",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SourceSystem",
+            "source_native_name": "SourceSystem",
+            "source_data_type": "org.reso.metadata.OUID",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_lock_or_box_key",
+        "label": "lock or box key",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.LockOrBoxKey",
+            "source_native_name": "LockOrBoxKey",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lock_or_box_source_system",
+        "label": "source system",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "LockOrBox.SourceSystem",
+            "source_native_name": "SourceSystem",
+            "source_data_type": "org.reso.metadata.OUID",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.MediaKey",
+        "source_native_name": "MediaKey",
+        "source_label": "Media Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This may be a number or a string that can include a Uniform Resource Identifier (URI) or other forms. This is the system you are connecting to and not necessarily the original source of the record.",
+        "source_resource": "Media",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberKey",
+        "source_native_name": "MemberKey",
+        "source_label": "Member Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemMemberKey and OriginatingSystemMemberKey.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.OfficeKey",
+        "source_native_name": "OfficeKey",
+        "source_label": "Office Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Office Resource's OfficeKey.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.OfficeKey",
+        "source_native_name": "OfficeKey",
+        "source_label": "Office Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing being shown. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingId",
+        "source_native_name": "ShowingId",
+        "source_label": "Showing ID",
+        "source_definition": "The well-known identifier for the Showing record. The value may be identical to that of the ShowingKey, but the ShowingId is intended to be the value used by a human to retrieve the information about a specific showing. In a multiple-originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Media record.",
+        "source_resource": "Media",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CloseDate",
+        "source_native_name": "CloseDate",
+        "source_label": "Close Date",
+        "source_definition": "With for-sale listings, this is the date the purchase agreement was fulfilled. With lease listings, it is the date the requirements were fulfilled, such as contract and/or deposit. This is the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DaysInMls",
+        "source_native_name": "DaysInMls",
+        "source_label": "Days in MLS",
+        "source_definition": "The number of days the listing was on market within the MLS system. Like Days on Market, where the calculation can be based on a number of on-market and off-market events, Days in MLS is best defined as being based upon timestamps of when entry or changes were made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing. The value may be identical to that of the Listing Key, but the Listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingKey",
+        "source_native_name": "ShowingKey",
+        "source_label": "Showing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemShowingKey and OriginatingSystemShowingKey.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Showing.ShowingUrl",
+        "source_native_name": "ShowingUrl",
+        "source_label": "Showing Deep Link URL",
+        "source_definition": "The Uniform Resource Locator (URL) that links to the originating system.",
+        "source_resource": "Showing",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing where the lockbox/smart lock is located. The value may be identical to that of the Listing Key, but the Listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple originating system or a merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.MemberAORkey",
+        "source_native_name": "MemberAORkey",
+        "source_label": "Member AOR Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the Member AOR Key is the system unique identifier from the system that the record was retrieved. This may be identical to the related xxxId.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Member record.",
+        "source_resource": "Member",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.OfficeAORkey",
+        "source_native_name": "OfficeAORkey",
+        "source_label": "Office AOR Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the OfficeAorKey is the system unique identifier from the system that the record was retrieved. This may be identical to the related xxxId. This is a foreign key relating to the association of REALTORS® member management system in which the record was originated.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Office record.",
+        "source_resource": "Office",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.ListingId",
+        "source_native_name": "ListingId",
+        "source_label": "Listing ID",
+        "source_definition": "The well-known identifier for the listing related to this open house. The value may be identical to that of the listing key, but the listing ID is intended to be the value used by a human to retrieve the information about a specific listing. In a multiple-originating or merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BuildingKey",
+        "source_native_name": "BuildingKey",
+        "source_label": "Building Key",
+        "source_definition": "A unique identifier for this record of the Building Resource.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemLockOrBoxKey and OriginatingSystemLockOrBoxKey.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Media.SourceSystemID",
+        "source_native_name": "SourceSystemID",
+        "source_label": "Source System ID",
+        "source_definition": "The OUID Resource's OrganizationUniqueId of the source record provider. The source system is the system from which the record was directly received. In cases where the source system was not where the record originated (the authoritative system), see the Originating System fields.",
+        "source_resource": "Media",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.MainOfficeKey",
+        "source_native_name": "MainOfficeKey",
+        "source_label": "Main Office Key",
+        "source_definition": "The OfficeKey of the main office in a firm/company of offices. This is a self-referencing foreign key relating to this resource's OfficeKey. This key may be the same value as the OfficeKey for a given record if the given office is the main office.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.ListingKey",
+        "source_native_name": "ListingKey",
+        "source_label": "Listing Key",
+        "source_definition": "A unique identifier for the listing record related to this open house. This may be a number or string that can include a Uniform Resource Identifier (URI) or other forms. This is the system being connected to and not necessarily the original source of the record. This may be a foreign key from the resource selected in the ResourceName field.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListTeamKey",
+        "source_native_name": "ListTeamKey",
+        "source_label": "List Team Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Team Resource's TeamKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StateRegion",
+        "source_native_name": "StateRegion",
+        "source_label": "State Region",
+        "source_definition": "A subsection or area of a defined state or province (e.g., Florida Keys, Hudson Valley in New York, Silicon Valley in California).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Member.SourceSystemID",
+        "source_native_name": "SourceSystemID",
+        "source_label": "Source System ID",
+        "source_definition": "The OUID Resource's OrganizationUniqueId of the source record provider. The source system is the system from which the record was directly received. In cases where the source system was not where the record originated (the authoritative system), see the Originating System fields.",
+        "source_resource": "Member",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Office.SourceSystemID",
+        "source_native_name": "SourceSystemID",
+        "source_label": "Source System ID",
+        "source_definition": "The OUID Resource's OrganizationUniqueId of the source record provider. The source system is the system from which the record was directly received. In cases where the source system was not where the record originated (the authoritative system), see the Originating System fields.",
+        "source_resource": "Office",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "OpenHouse.OpenHouseId",
+        "source_native_name": "OpenHouseId",
+        "source_label": "Open House ID",
+        "source_definition": "The well-known identifier for the OpenHouse Resource. The value may be identical to that of OpenHouseKey, but OpenHouseId is intended to be the value used by a human to retrieve the information about a specific open house. In a multiple-originating or merged system, this value may not be unique and may require the use of the provider system to create a synthetic unique value.",
+        "source_resource": "OpenHouse",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerTeamKey",
+        "source_native_name": "BuyerTeamKey",
+        "source_label": "Buyer Team Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the key is the system unique identifier from the system where the record was just retrieved. This may be identical to the related xxxId identifier, but the key is guaranteed unique for this record set. This is a foreign key relating to the Team Resource's TeamKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListAgentKey",
+        "source_native_name": "ListAgentKey",
+        "source_label": "List Agent Key",
+        "source_definition": "A system unique identifier. Specifically, in aggregation systems, the ListAgentKey is the system unique identifier from the system where the record was retrieved. This may be identical to the related xxxId. This is a foreign key relating to the Member Resource's MemberKey.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OnMarketDate",
+        "source_native_name": "OnMarketDate",
+        "source_label": "On Market Date",
+        "source_definition": "The date the listing was placed on market. Where possible, this date is reflective of the date entered by the agent reflecting when the change occurred contractually, not a timestamp of when the change was made in the MLS.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the Property record.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.LockOrBoxKey",
+        "source_native_name": "LockOrBoxKey",
+        "source_label": "Lock or Box Key",
+        "source_definition": "A unique identifier for this record from the immediate source. This is a string that can include a Uniform Resource Identifier (URI) or other forms. This is the local key of the system. When records are received from other systems, a local key is commonly applied. If conveying the original keys from the source or originating systems, see SourceSystemKey and OriginatingSystemKey.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "LockOrBox.SourceSystem",
+        "source_native_name": "SourceSystem",
+        "source_label": "Source System",
+        "source_definition": "The source system of the LockOrBox record.",
+        "source_resource": "LockOrBox",
+        "source_data_type": "org.reso.metadata.OUID",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
