@@ -1,0 +1,2228 @@
+{
+  "macro_area": {
+    "id": "legal",
+    "order": 2,
+    "label": "Legal"
+  },
+  "subarea": {
+    "id": "ownership_possession_occupancy",
+    "order": 1,
+    "label": "Ownership, Possession and Occupancy",
+    "facet_number": 6,
+    "description": "Legal and factual relationships between parties and the property.",
+    "typical_concepts": {
+      "buyer": {
+        "ref": "base0001.buyer@1",
+        "kind": "property",
+        "definition": "A sub property of participant. The participant/person/organization that bought the object.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/SellAction"
+            ],
+            "parent_refs": [
+              "https://schema.org/participant"
+            ],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/buyer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "customer": {
+        "ref": "base0001.customer@1",
+        "kind": "property",
+        "definition": "Party placing the order or paying the invoice.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Invoice",
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/customer",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "occupancy": {
+        "ref": "base0001.occupancy@1",
+        "kind": "property",
+        "definition": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/Apartment",
+              "https://schema.org/HotelRoom",
+              "https://schema.org/SingleFamilyResidence",
+              "https://schema.org/Suite"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/occupancy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "owner": {
+        "ref": "base0001.owner@1",
+        "kind": "property",
+        "definition": "A person or organization who owns this Thing.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Thing"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/owner",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "ownership_funding_info": {
+        "ref": "base0001.ownership_funding_info@1",
+        "kind": "property",
+        "definition": "For an [[Organization]] (often but not necessarily a [[NewsMediaOrganization]]), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the [[funder]] is also available and can be used to make basic funder information machine-readable.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/NewsMediaOrganization",
+              "https://schema.org/Organization"
+            ],
+            "parent_refs": [
+              "https://schema.org/publishingPrinciples"
+            ],
+            "range_refs": [
+              "https://schema.org/AboutPage",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/ownershipFundingInfo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "owns": {
+        "ref": "base0001.owns@1",
+        "kind": "property",
+        "definition": "Things owned by the organization or person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Thing"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/owns",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/owns",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "provider": {
+        "ref": "base0001.provider@1",
+        "kind": "property",
+        "definition": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Action",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/Invoice",
+              "https://schema.org/OfferShippingDetails",
+              "https://schema.org/ParcelDelivery",
+              "https://schema.org/Reservation",
+              "https://schema.org/Service",
+              "https://schema.org/Trip"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#ServiceProvider",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/provider",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "seller": {
+        "ref": "base0001.seller@1",
+        "kind": "property",
+        "definition": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/BuyAction",
+              "https://schema.org/Demand",
+              "https://schema.org/Flight",
+              "https://schema.org/Offer",
+              "https://schema.org/Order"
+            ],
+            "parent_refs": [
+              "https://schema.org/participant",
+              "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasSupplier"
+            ],
+            "range_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#Seller",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/seller",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "invariants": [
+      "Owner != Possessor",
+      "Possessor != Occupant"
+    ],
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerName",
+        "source_native_name": "OwnerName",
+        "source_label": "Owner Name",
+        "source_definition": "The name of the owner of the property being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerPays",
+        "source_native_name": "OwnerPays",
+        "source_label": "Owner Pays",
+        "source_definition": "A list of expenses for the property paid for by the owner as opposed to the tenant (e.g., Water, Trash, Electric).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnerPays",
+        "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Ownership",
+        "source_native_name": "Ownership",
+        "source_label": "Ownership",
+        "source_definition": "A text description of the manner in which title to a property is held (e.g., Trust, Corporation, Joint Tenant, Individual).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerPhone",
+        "source_native_name": "OwnerPhone",
+        "source_label": "Owner Phone",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Possession",
+        "source_native_name": "Possession",
+        "source_label": "Possession",
+        "source_definition": "A list defining when possession will occur (i.e., COE, COE+1, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Possession",
+        "source_enum_ref": "org.reso.metadata.enums.Possession",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantPays",
+        "source_native_name": "TenantPays",
+        "source_label": "Tenant Pays",
+        "source_definition": "A list of services or items that the tenant is responsible to pay.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantPays",
+        "source_enum_ref": "org.reso.metadata.enums.TenantPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantType",
+        "source_native_name": "TenantType",
+        "source_label": "Tenant Type",
+        "source_definition": "A pick list describing the current status of tenants or lack of tenants at the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantType",
+        "source_enum_ref": "org.reso.metadata.enums.TenantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FuelExpense",
+        "source_native_name": "FuelExpense",
+        "source_label": "Fuel Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PoolExpense",
+        "source_native_name": "PoolExpense",
+        "source_label": "Pool Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantNames",
+        "source_native_name": "TenantNames",
+        "source_label": "Tenant Names",
+        "source_definition": "The names of the tenant(s) that currently reside at the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingTerms",
+        "source_native_name": "ListingTerms",
+        "source_label": "Listing Terms",
+        "source_definition": "Terms of the listing such as Lien Release, Subject to Court Approval or Owner Will Carry. Also may include options that describe the financing terms that are acceptable to the seller (i.e., Cash, Assumable, FHA, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingTerms",
+        "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantName",
+        "source_native_name": "OccupantName",
+        "source_label": "Occupant Name",
+        "source_definition": "The name of the current occupant, if any, of the property being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantType",
+        "source_native_name": "OccupantType",
+        "source_label": "Occupant Type",
+        "source_definition": "A field that describes the type of occupant (i.e., Owner, Tenant, Vacant).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OccupantType",
+        "source_enum_ref": "org.reso.metadata.enums.OccupantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OtherExpense",
+        "source_native_name": "OtherExpense",
+        "source_label": "Other Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RentIncludes",
+        "source_native_name": "RentIncludes",
+        "source_label": "Rent Includes",
+        "source_definition": "A list of services or items that the tenant is not responsible to pay.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RentIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.RentIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TrashExpense",
+        "source_native_name": "TrashExpense",
+        "source_label": "Trash Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationYN",
+        "source_native_name": "AssociationYN",
+        "source_label": "Association Yes/No",
+        "source_definition": "Indicates if there a homeowner association. A separate Y/N field is needed because not all associations have dues.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupancyRate",
+        "source_native_name": "OccupancyRate",
+        "source_label": "Occupancy Rate",
+        "source_definition": "Indicates how much space of the property is occupied/leased compared to how much space is available.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantPhone",
+        "source_native_name": "OccupantPhone",
+        "source_label": "Occupant Phone",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnershipType",
+        "source_native_name": "OwnershipType",
+        "source_label": "Ownership Type",
+        "source_definition": "The current type of ownership of the business being sold (e.g., Corporation, LLC, Sole Proprietor, Partnership).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnershipType",
+        "source_enum_ref": "org.reso.metadata.enums.OwnershipType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online. This is typically information that describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AdditionalRent",
+        "source_native_name": "AdditionalRent",
+        "source_label": "Additional Rent",
+        "source_definition": "Describes a variety of rent-like cash flows from tenants that are not a part of the traditional base rent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFee",
+        "source_native_name": "AssociationFee",
+        "source_label": "Association Fee",
+        "source_definition": "A fee paid by the homeowner to the homeowner association that is used for upkeep of common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CableTvExpense",
+        "source_native_name": "CableTvExpense",
+        "source_label": "Cable TV Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingService",
+        "source_native_name": "ListingService",
+        "source_label": "Listing Service",
+        "source_definition": "The type or level of service the listing member will be providing to the selling homeowner (e.g., Full Service, Limited Service, Entry Only). This will typically be a single selection.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingService",
+        "source_enum_ref": "org.reso.metadata.enums.ListingService",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ManagerExpense",
+        "source_native_name": "ManagerExpense",
+        "source_label": "Manager Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations. This is for an individual manager. Use ProfessionalManagementExpense for a management company.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PrivateRemarks",
+        "source_native_name": "PrivateRemarks",
+        "source_label": "Private Remarks",
+        "source_definition": "Remarks that may contain security or proprietary information and should be restricted from public view.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFee2",
+        "source_native_name": "AssociationFee2",
+        "source_label": "Association Fee 2",
+        "source_definition": "A fee paid by the homeowner to the second of two homeowner associations that is used for upkeep of common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationName",
+        "source_native_name": "AssociationName",
+        "source_label": "Association Name",
+        "source_definition": "The name of the homeowner association.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ElectricExpense",
+        "source_native_name": "ElectricExpense",
+        "source_label": "Electric Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GardenerExpense",
+        "source_native_name": "GardenerExpense",
+        "source_label": "Gardener Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LicensesExpense",
+        "source_native_name": "LicensesExpense",
+        "source_label": "Licenses Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NewTaxesExpense",
+        "source_native_name": "NewTaxesExpense",
+        "source_label": "New Taxes Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SuppliesExpense",
+        "source_native_name": "SuppliesExpense",
+        "source_label": "Supplies Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TotalActualRent",
+        "source_native_name": "TotalActualRent",
+        "source_label": "Total Actual Rent",
+        "source_definition": "Total actual rent currently being collected from tenants of the income property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "owner",
+        "label": "owner",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "co_owner",
+        "label": "co-owner",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ownership_share",
+        "label": "ownership share",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "possessor",
+        "label": "possessor",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "occupant",
+        "label": "occupant",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "tenant",
+        "label": "tenant",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "beneficial_interest",
+        "label": "beneficial interest",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "occupancy_basis",
+        "label": "occupancy basis",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "validity_period",
+        "label": "validity period",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "supporting_evidence",
+        "label": "supporting evidence",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "owner_name",
+        "label": "owner name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OwnerName",
+            "source_native_name": "OwnerName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "owner_pays",
+        "label": "owner pays",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OwnerPays",
+            "source_native_name": "OwnerPays",
+            "source_data_type": "org.reso.metadata.enums.OwnerPays",
+            "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "ownership",
+        "label": "ownership",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Ownership",
+            "source_native_name": "Ownership",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "year_built",
+        "label": "year built",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.YearBuilt",
+            "source_native_name": "YearBuilt",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_semantic_reviewed",
+            "lexicon_binding": {
+              "symbol": "year_built",
+              "ref": "base0001.year_built@1",
+              "kind": "property",
+              "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+              "match_method": "exact_name_plus_semantic_review",
+              "confidence": 1,
+              "binding_relation": "equivalent"
+            }
+          }
+        ]
+      },
+      {
+        "id": "owner_phone",
+        "label": "owner phone",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OwnerPhone",
+            "source_native_name": "OwnerPhone",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "possession",
+        "label": "possession",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Possession",
+            "source_native_name": "Possession",
+            "source_data_type": "org.reso.metadata.enums.Possession",
+            "source_enum_ref": "org.reso.metadata.enums.Possession",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tenant_pays",
+        "label": "tenant pays",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TenantPays",
+            "source_native_name": "TenantPays",
+            "source_data_type": "org.reso.metadata.enums.TenantPays",
+            "source_enum_ref": "org.reso.metadata.enums.TenantPays",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tenant_type",
+        "label": "tenant type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TenantType",
+            "source_native_name": "TenantType",
+            "source_data_type": "org.reso.metadata.enums.TenantType",
+            "source_enum_ref": "org.reso.metadata.enums.TenantType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "down_payment",
+        "label": "down payment",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DownPayment",
+            "source_native_name": "DownPayment",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_semantic_reviewed",
+            "lexicon_binding": {
+              "symbol": "down_payment",
+              "ref": "base0001.down_payment@1",
+              "kind": "property",
+              "definition": "a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.",
+              "match_method": "exact_name_plus_semantic_review",
+              "confidence": 1,
+              "binding_relation": "equivalent"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fuel_expense",
+        "label": "fuel expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.FuelExpense",
+            "source_native_name": "FuelExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "pool_expense",
+        "label": "pool expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PoolExpense",
+            "source_native_name": "PoolExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tenant_names",
+        "label": "tenant names",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TenantNames",
+            "source_native_name": "TenantNames",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_terms",
+        "label": "listing terms",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingTerms",
+            "source_native_name": "ListingTerms",
+            "source_data_type": "org.reso.metadata.enums.ListingTerms",
+            "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "occupant_name",
+        "label": "occupant name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OccupantName",
+            "source_native_name": "OccupantName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "occupant_type",
+        "label": "occupant type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OccupantType",
+            "source_native_name": "OccupantType",
+            "source_data_type": "org.reso.metadata.enums.OccupantType",
+            "source_enum_ref": "org.reso.metadata.enums.OccupantType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "other_expense",
+        "label": "other expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OtherExpense",
+            "source_native_name": "OtherExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "rent_includes",
+        "label": "rent includes",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.RentIncludes",
+            "source_native_name": "RentIncludes",
+            "source_data_type": "org.reso.metadata.enums.RentIncludes",
+            "source_enum_ref": "org.reso.metadata.enums.RentIncludes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "trash_expense",
+        "label": "trash expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TrashExpense",
+            "source_native_name": "TrashExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_yn",
+        "label": "association yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationYN",
+            "source_native_name": "AssociationYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "occupancy_rate",
+        "label": "occupancy rate",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OccupancyRate",
+            "source_native_name": "OccupancyRate",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "occupant_phone",
+        "label": "occupant phone",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OccupantPhone",
+            "source_native_name": "OccupantPhone",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "ownership_type",
+        "label": "ownership type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OwnershipType",
+            "source_native_name": "OwnershipType",
+            "source_data_type": "org.reso.metadata.enums.OwnershipType",
+            "source_enum_ref": "org.reso.metadata.enums.OwnershipType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "public_remarks",
+        "label": "public remarks",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PublicRemarks",
+            "source_native_name": "PublicRemarks",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "additional_rent",
+        "label": "additional rent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AdditionalRent",
+            "source_native_name": "AdditionalRent",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_fee",
+        "label": "association fee",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationFee",
+            "source_native_name": "AssociationFee",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "cable_tv_expense",
+        "label": "cable tv expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CableTvExpense",
+            "source_native_name": "CableTvExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "common_interest",
+        "label": "common interest",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CommonInterest",
+            "source_native_name": "CommonInterest",
+            "source_data_type": "org.reso.metadata.enums.CommonInterest",
+            "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "listing_service",
+        "label": "listing service",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingService",
+            "source_native_name": "ListingService",
+            "source_data_type": "org.reso.metadata.enums.ListingService",
+            "source_enum_ref": "org.reso.metadata.enums.ListingService",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "manager_expense",
+        "label": "manager expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ManagerExpense",
+            "source_native_name": "ManagerExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "private_remarks",
+        "label": "private remarks",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PrivateRemarks",
+            "source_native_name": "PrivateRemarks",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_fee2",
+        "label": "association fee 2",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationFee2",
+            "source_native_name": "AssociationFee2",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "association_name",
+        "label": "association name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AssociationName",
+            "source_native_name": "AssociationName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "copyright_notice",
+        "label": "copyright notice",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CopyrightNotice",
+            "source_native_name": "CopyrightNotice",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_semantic_reviewed",
+            "lexicon_binding": {
+              "symbol": "copyright_notice",
+              "ref": "base0001.copyright_notice@1",
+              "kind": "property",
+              "definition": "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work.",
+              "match_method": "exact_name_plus_semantic_review",
+              "confidence": 1,
+              "binding_relation": "equivalent"
+            }
+          }
+        ]
+      },
+      {
+        "id": "electric_expense",
+        "label": "electric expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ElectricExpense",
+            "source_native_name": "ElectricExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "gardener_expense",
+        "label": "gardener expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GardenerExpense",
+            "source_native_name": "GardenerExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "licenses_expense",
+        "label": "licenses expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LicensesExpense",
+            "source_native_name": "LicensesExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "new_taxes_expense",
+        "label": "new taxes expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.NewTaxesExpense",
+            "source_native_name": "NewTaxesExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "supplies_expense",
+        "label": "supplies expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SuppliesExpense",
+            "source_native_name": "SuppliesExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "total_actual_rent",
+        "label": "total actual rent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TotalActualRent",
+            "source_native_name": "TotalActualRent",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerName",
+        "source_native_name": "OwnerName",
+        "source_label": "Owner Name",
+        "source_definition": "The name of the owner of the property being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerPays",
+        "source_native_name": "OwnerPays",
+        "source_label": "Owner Pays",
+        "source_definition": "A list of expenses for the property paid for by the owner as opposed to the tenant (e.g., Water, Trash, Electric).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnerPays",
+        "source_enum_ref": "org.reso.metadata.enums.OwnerPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Ownership",
+        "source_native_name": "Ownership",
+        "source_label": "Ownership",
+        "source_definition": "A text description of the manner in which title to a property is held (e.g., Trust, Corporation, Joint Tenant, Individual).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearBuilt",
+        "source_native_name": "YearBuilt",
+        "source_label": "Year Built",
+        "source_definition": "The year that an occupancy permit is first granted for the house or other local measure of initial habitability of the build. The type of definition permits an empty value with an attribute noting that it is an unknown date or that the building is new construction. While constraints have not been applied, convention at the time of adoption has this as a four-digit year value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_semantic_reviewed",
+        "binding": {
+          "symbol": "year_built",
+          "ref": "base0001.year_built@1",
+          "kind": "property",
+          "definition": "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+          "match_method": "exact_name_plus_semantic_review",
+          "confidence": 1,
+          "binding_relation": "equivalent"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnerPhone",
+        "source_native_name": "OwnerPhone",
+        "source_label": "Owner Phone",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Possession",
+        "source_native_name": "Possession",
+        "source_label": "Possession",
+        "source_definition": "A list defining when possession will occur (i.e., COE, COE+1, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Possession",
+        "source_enum_ref": "org.reso.metadata.enums.Possession",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantPays",
+        "source_native_name": "TenantPays",
+        "source_label": "Tenant Pays",
+        "source_definition": "A list of services or items that the tenant is responsible to pay.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantPays",
+        "source_enum_ref": "org.reso.metadata.enums.TenantPays",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantType",
+        "source_native_name": "TenantType",
+        "source_label": "Tenant Type",
+        "source_definition": "A pick list describing the current status of tenants or lack of tenants at the property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.TenantType",
+        "source_enum_ref": "org.reso.metadata.enums.TenantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DownPayment",
+        "source_native_name": "DownPayment",
+        "source_label": "Down Payment",
+        "source_definition": "The down payment amount required by the current owner of the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_semantic_reviewed",
+        "binding": {
+          "symbol": "down_payment",
+          "ref": "base0001.down_payment@1",
+          "kind": "property",
+          "definition": "a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.",
+          "match_method": "exact_name_plus_semantic_review",
+          "confidence": 1,
+          "binding_relation": "equivalent"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FuelExpense",
+        "source_native_name": "FuelExpense",
+        "source_label": "Fuel Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PoolExpense",
+        "source_native_name": "PoolExpense",
+        "source_label": "Pool Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TenantNames",
+        "source_native_name": "TenantNames",
+        "source_label": "Tenant Names",
+        "source_definition": "The names of the tenant(s) that currently reside at the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingTerms",
+        "source_native_name": "ListingTerms",
+        "source_label": "Listing Terms",
+        "source_definition": "Terms of the listing such as Lien Release, Subject to Court Approval or Owner Will Carry. Also may include options that describe the financing terms that are acceptable to the seller (i.e., Cash, Assumable, FHA, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingTerms",
+        "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantName",
+        "source_native_name": "OccupantName",
+        "source_label": "Occupant Name",
+        "source_definition": "The name of the current occupant, if any, of the property being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantType",
+        "source_native_name": "OccupantType",
+        "source_label": "Occupant Type",
+        "source_definition": "A field that describes the type of occupant (i.e., Owner, Tenant, Vacant).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OccupantType",
+        "source_enum_ref": "org.reso.metadata.enums.OccupantType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OtherExpense",
+        "source_native_name": "OtherExpense",
+        "source_label": "Other Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RentIncludes",
+        "source_native_name": "RentIncludes",
+        "source_label": "Rent Includes",
+        "source_definition": "A list of services or items that the tenant is not responsible to pay.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RentIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.RentIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TrashExpense",
+        "source_native_name": "TrashExpense",
+        "source_label": "Trash Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationYN",
+        "source_native_name": "AssociationYN",
+        "source_label": "Association Yes/No",
+        "source_definition": "Indicates if there a homeowner association. A separate Y/N field is needed because not all associations have dues.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupancyRate",
+        "source_native_name": "OccupancyRate",
+        "source_label": "Occupancy Rate",
+        "source_definition": "Indicates how much space of the property is occupied/leased compared to how much space is available.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupantPhone",
+        "source_native_name": "OccupantPhone",
+        "source_label": "Occupant Phone",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnershipType",
+        "source_native_name": "OwnershipType",
+        "source_label": "Ownership Type",
+        "source_definition": "The current type of ownership of the business being sold (e.g., Corporation, LLC, Sole Proprietor, Partnership).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnershipType",
+        "source_enum_ref": "org.reso.metadata.enums.OwnershipType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online. This is typically information that describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AdditionalRent",
+        "source_native_name": "AdditionalRent",
+        "source_label": "Additional Rent",
+        "source_definition": "Describes a variety of rent-like cash flows from tenants that are not a part of the traditional base rent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFee",
+        "source_native_name": "AssociationFee",
+        "source_label": "Association Fee",
+        "source_definition": "A fee paid by the homeowner to the homeowner association that is used for upkeep of common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CableTvExpense",
+        "source_native_name": "CableTvExpense",
+        "source_label": "Cable TV Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingService",
+        "source_native_name": "ListingService",
+        "source_label": "Listing Service",
+        "source_definition": "The type or level of service the listing member will be providing to the selling homeowner (e.g., Full Service, Limited Service, Entry Only). This will typically be a single selection.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingService",
+        "source_enum_ref": "org.reso.metadata.enums.ListingService",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ManagerExpense",
+        "source_native_name": "ManagerExpense",
+        "source_label": "Manager Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations. This is for an individual manager. Use ProfessionalManagementExpense for a management company.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PrivateRemarks",
+        "source_native_name": "PrivateRemarks",
+        "source_label": "Private Remarks",
+        "source_definition": "Remarks that may contain security or proprietary information and should be restricted from public view.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationFee2",
+        "source_native_name": "AssociationFee2",
+        "source_label": "Association Fee 2",
+        "source_definition": "A fee paid by the homeowner to the second of two homeowner associations that is used for upkeep of common areas, the neighborhood or other association-related benefits.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AssociationName",
+        "source_native_name": "AssociationName",
+        "source_label": "Association Name",
+        "source_definition": "The name of the homeowner association.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CopyrightNotice",
+        "source_native_name": "CopyrightNotice",
+        "source_label": "Copyright Notice",
+        "source_definition": "A notice of the legal rights of the owner of the information or data.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_semantic_reviewed",
+        "binding": {
+          "symbol": "copyright_notice",
+          "ref": "base0001.copyright_notice@1",
+          "kind": "property",
+          "definition": "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work.",
+          "match_method": "exact_name_plus_semantic_review",
+          "confidence": 1,
+          "binding_relation": "equivalent"
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ElectricExpense",
+        "source_native_name": "ElectricExpense",
+        "source_label": "Electric Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GardenerExpense",
+        "source_native_name": "GardenerExpense",
+        "source_label": "Gardener Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LicensesExpense",
+        "source_native_name": "LicensesExpense",
+        "source_label": "Licenses Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NewTaxesExpense",
+        "source_native_name": "NewTaxesExpense",
+        "source_label": "New Taxes Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SuppliesExpense",
+        "source_native_name": "SuppliesExpense",
+        "source_label": "Supplies Expense",
+        "source_definition": "The annual expense that is not paid directly by the tenant and is included in the Operating Expense calculations.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TotalActualRent",
+        "source_native_name": "TotalActualRent",
+        "source_label": "Total Actual Rent",
+        "source_definition": "Total actual rent currently being collected from tenants of the income property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Operational form-field identity is independent from Universal Lexicon identity.",
+      "semantic_rule": "A field may be usable in forms while semantic adjudication remains pending.",
+      "safety_rule": "Exact spelling or definition mention alone MUST NOT establish canonical semantic equivalence."
+    }
+  }
+}
