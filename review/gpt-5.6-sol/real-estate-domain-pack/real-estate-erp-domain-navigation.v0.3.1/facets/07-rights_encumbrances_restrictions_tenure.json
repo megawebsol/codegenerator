@@ -1,0 +1,1772 @@
+{
+  "macro_area": {
+    "id": "legal",
+    "order": 2,
+    "label": "Legal"
+  },
+  "subarea": {
+    "id": "rights_encumbrances_restrictions_tenure",
+    "order": 2,
+    "label": "Rights, Encumbrances, Restrictions and Tenure",
+    "facet_number": 7,
+    "description": "Rights, burdens, restrictions and jurisdiction-specific tenure concepts.",
+    "typical_concepts": {
+      "duration": {
+        "ref": "base0001.duration@1",
+        "kind": "property",
+        "definition": "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Audiobook",
+              "https://schema.org/Episode",
+              "https://schema.org/Event",
+              "https://schema.org/MediaObject",
+              "https://schema.org/Movie",
+              "https://schema.org/MusicRecording",
+              "https://schema.org/MusicRelease",
+              "https://schema.org/QuantitativeValueDistribution",
+              "https://schema.org/Schedule",
+              "https://schema.org/ServicePeriod"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Duration",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/duration",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "eligible_region": {
+        "ref": "base0001.eligible_region@1",
+        "kind": "property",
+        "definition": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\\n\\nSee also [[ineligibleRegion]].\n    ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [
+              "https://schema.org/areaServed"
+            ],
+            "range_refs": [
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/eligibleRegion",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "ineligible_region": {
+        "ref": "base0001.ineligible_region@1",
+        "kind": "property",
+        "definition": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ActionAccessSpecification",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/MediaObject",
+              "https://schema.org/Offer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/ineligibleRegion",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "terms_of_service": {
+        "ref": "base0001.terms_of_service@1",
+        "kind": "property",
+        "definition": "Human-readable terms of service documentation.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/termsOfService",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "usage_info": {
+        "ref": "base0001.usage_info@1",
+        "kind": "property",
+        "definition": "The schema.org [[usageInfo]] property indicates further information about a [[CreativeWork]]. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information, e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.\n\nThis property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/usageInfo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "valid": {
+        "ref": "base0001.valid@1",
+        "kind": "property",
+        "definition": "Date (often a range) of validity of a resource.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [],
+            "parent_refs": [],
+            "range_refs": [
+              "http://www.w3.org/2000/01/rdf-schema#Literal"
+            ]
+          },
+          "sources": [
+            {
+              "source": "dcmi",
+              "source_ref": "http://purl.org/dc/terms/valid",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxLot",
+        "source_native_name": "TaxLot",
+        "source_label": "Tax Lot",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxTract",
+        "source_native_name": "TaxTract",
+        "source_label": "Tax Tract",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AirRights",
+        "source_native_name": "AirRights",
+        "source_label": "Air Rights",
+        "source_definition": "The amount of vertical space extending above the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Disclaimer",
+        "source_native_name": "Disclaimer",
+        "source_label": "Disclaimer",
+        "source_definition": "Text that serves as the negation or limitation of the rights under a warranty given by a seller to a buyer.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingTerms",
+        "source_native_name": "ListingTerms",
+        "source_label": "Listing Terms",
+        "source_definition": "Terms of the listing such as Lien Release, Subject to Court Approval or Owner Will Carry. Also may include options that describe the financing terms that are acceptable to the seller (i.e., Cash, Assumable, FHA, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingTerms",
+        "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AirRightsUnit",
+        "source_native_name": "AirRightsUnit",
+        "source_label": "Air Rights Unit",
+        "source_definition": "A pick list of the unit of measurement of vertical space extending above the commercial property (e.g., Square Feet, Square Meters).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AreaUnits",
+        "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParcelSubcomponent",
+        "source_native_name": "ParcelSubcomponent",
+        "source_label": "Parcel Subcomponent",
+        "source_definition": "A number used to identify smaller elements of a parcel (e.g., parking spaces, outbuildings, air rights).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxLegalDescription",
+        "source_native_name": "TaxLegalDescription",
+        "source_label": "Tax Legal Description",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein. The text here is also an index into the property as described by the County Recorder.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsYN",
+        "source_native_name": "IrrigationWaterRightsYN",
+        "source_label": "Irrigation Water Rights Yes/No",
+        "source_definition": "Indicates whether or not the property includes water rights for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsAcres",
+        "source_native_name": "IrrigationWaterRightsAcres",
+        "source_label": "Irrigation Water Rights Acres",
+        "source_definition": "The number of acres allowed under the property's water rights.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches",
+        "source_native_name": "localSearches",
+        "source_label": "Result of local searches, including Local Land Charges and CON29R",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.marketingTenure",
+        "source_native_name": "marketingTenure",
+        "source_label": "What tenure is the property being marketed as?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.connectivity.mobilePhone",
+        "source_native_name": "mobilePhone",
+        "source_label": "Mobile phone coverage",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.legalBoundaries.ownership",
+        "source_native_name": "ownership",
+        "source_label": "Boundary ownership",
+        "source_definition": "If the property is leasehold this section, or parts of it, may not apply.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "broker",
+            "ref": "base0001.broker@1",
+            "kind": "property",
+            "definition": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "funded_item",
+            "ref": "base0001.funded_item@1",
+            "kind": "property",
+            "definition": "Indicates something directly or indirectly funded or sponsored through a [[Grant]]. See also [[ownershipFundingInfo]].",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "funding",
+            "ref": "base0001.funding@1",
+            "kind": "property",
+            "definition": "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "owned_through",
+            "ref": "base0001.owned_through@1",
+            "kind": "property",
+            "definition": "The date and time of giving up ownership on the product.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "ownership_funding_info",
+            "ref": "base0001.ownership_funding_info@1",
+            "kind": "property",
+            "definition": "For an [[Organization]] (often but not necessarily a [[NewsMediaOrganization]]), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the [[funder]] is also available and can be used to make basic funder information machine-readable.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "provenance",
+            "ref": "base0001.provenance@1",
+            "kind": "property",
+            "definition": "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].misc.tenureSource",
+        "source_native_name": "tenureSource",
+        "source_label": "tenureSource",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.rightsAndInformalArrangements",
+        "source_native_name": "rightsAndInformalArrangements",
+        "source_label": "Rights and Informal Arrangements",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.legalBoundaries.flyingFreehold",
+        "source_native_name": "flyingFreehold",
+        "source_label": "Is there a flying freehold?",
+        "source_definition": "NOTE: a flying freehold is when part of the property overhangs a neighbour's property or an accessway - e.g. a terrace house where part of the upstairs is over an accessway which belongs to someone else.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localLandCharges",
+        "source_native_name": "localLandCharges",
+        "source_label": "Local Land Charges",
+        "source_definition": "In accordance with JSON supplied by HMLR LLC API, with charge extents stringified",
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.parking.vehicleTypeRestriction",
+        "source_native_name": "vehicleTypeRestriction",
+        "source_label": "Is there a restriction on the types of vehicle which may be parked?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].declaration.clientName",
+        "source_native_name": "clientName",
+        "source_label": "clientName",
+        "source_definition": "Customer Name",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.councilTax.councilTaxAnnualCharge",
+        "source_native_name": "councilTaxAnnualCharge",
+        "source_label": "What is the current annual Council Tax charge? (£)",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "number",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].legalIssues.rightsOfWay",
+        "source_native_name": "rightsOfWay",
+        "source_label": "rightsOfWay",
+        "source_definition": "Legal Issues Rights of Way/Restrictions details",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.additionalInformation.otherCharges",
+        "source_native_name": "otherCharges",
+        "source_label": "Does the seller have to pay any charges relating to the property (excluding any payments such as council tax, utility charges, etc.), for example payments to a management company?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.energyEfficiency.certificate.tenure",
+        "source_native_name": "tenure",
+        "source_label": "tenure",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.legalBoundaries.flyingFreehold.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localLandCharges[].law",
+        "source_native_name": "law",
+        "source_label": "law",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.parking.vehicleTypeRestriction.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].grounds.other.restrictions",
+        "source_native_name": "restrictions",
+        "source_label": "restrictions",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "mortgage",
+        "label": "mortgage",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "fiduciary_security",
+        "label": "fiduciary security",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "lien",
+        "label": "lien",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "attachment",
+        "label": "attachment",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "easement",
+        "label": "easement",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "usufruct",
+        "label": "usufruct",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "right_of_way",
+        "label": "right of way",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "environmental_restriction",
+        "label": "environmental restriction",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "planning_restriction",
+        "label": "planning restriction",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "urban_restriction",
+        "label": "urban restriction",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "leasehold",
+        "label": "leasehold",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "shared_ownership",
+        "label": "shared ownership",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "restrictive_covenant",
+        "label": "restrictive covenant",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "title_restriction",
+        "label": "title restriction",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "tax_lot",
+        "label": "tax lot",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxLot",
+            "source_native_name": "TaxLot",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_block",
+        "label": "tax block",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxBlock",
+            "source_native_name": "TaxBlock",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_tract",
+        "label": "tax tract",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxTract",
+            "source_native_name": "TaxTract",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "air_rights",
+        "label": "air rights",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AirRights",
+            "source_native_name": "AirRights",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "disclaimer",
+        "label": "disclaimer",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Disclaimer",
+            "source_native_name": "Disclaimer",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "pets_allowed",
+        "label": "pets allowed",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PetsAllowed",
+            "source_native_name": "PetsAllowed",
+            "source_data_type": "org.reso.metadata.enums.PetsAllowed",
+            "source_enum_ref": "org.reso.metadata.enums.PetsAllowed",
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "pets_allowed",
+              "ref": "base0001.pets_allowed@1",
+              "kind": "property",
+              "definition": "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "listing_terms",
+        "label": "listing terms",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ListingTerms",
+            "source_native_name": "ListingTerms",
+            "source_data_type": "org.reso.metadata.enums.ListingTerms",
+            "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "air_rights_unit",
+        "label": "air rights unit",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AirRightsUnit",
+            "source_native_name": "AirRightsUnit",
+            "source_data_type": "org.reso.metadata.enums.AreaUnits",
+            "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "common_interest",
+        "label": "common interest",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CommonInterest",
+            "source_native_name": "CommonInterest",
+            "source_data_type": "org.reso.metadata.enums.CommonInterest",
+            "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "copyright_notice",
+        "label": "copyright notice",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CopyrightNotice",
+            "source_native_name": "CopyrightNotice",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "copyright_notice",
+              "ref": "base0001.copyright_notice@1",
+              "kind": "property",
+              "definition": "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work.",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "parcel_subcomponent",
+        "label": "parcel subcomponent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParcelSubcomponent",
+            "source_native_name": "ParcelSubcomponent",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_legal_description",
+        "label": "tax legal description",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxLegalDescription",
+            "source_native_name": "TaxLegalDescription",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "irrigation_water_rights_yn",
+        "label": "irrigation water rights yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IrrigationWaterRightsYN",
+            "source_native_name": "IrrigationWaterRightsYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "irrigation_water_rights_acres",
+        "label": "irrigation water rights acres",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IrrigationWaterRightsAcres",
+            "source_native_name": "IrrigationWaterRightsAcres",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_pack_local_searches",
+        "label": "result of local searches, including local land charges and con29r",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "propertyPack.localSearches",
+            "source_native_name": "localSearches",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_pack_marketing_tenure",
+        "label": "what tenure is the property being marketed as?",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "propertyPack.marketingTenure",
+            "source_native_name": "marketingTenure",
+            "source_data_type": "string",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "connectivity_mobile_phone",
+        "label": "mobile phone coverage",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "legal_boundaries_ownership",
+        "label": "boundary ownership",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "misc_tenure_source",
+        "label": "tenuresource",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "property_pack_rights_and_informal_arrangements",
+        "label": "rights and informal arrangements",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "propertyPack.rightsAndInformalArrangements",
+            "source_native_name": "rightsAndInformalArrangements",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "legal_boundaries_flying_freehold",
+        "label": "is there a flying freehold?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "local_searches_local_land_charges",
+        "label": "local land charges",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "parking_vehicle_type_restriction",
+        "label": "is there a restriction on the types of vehicle which may be parked?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "declaration_client_name",
+        "label": "clientname",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "council_tax_council_tax_annual_charge",
+        "label": "what is the current annual council tax charge? (£)",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "legal_issues_rights_of_way",
+        "label": "rightsofway",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "additional_information_other_charges",
+        "label": "does the seller have to pay any charges relating to the property (excluding any payments such as council tax, utility charges, etc.), for example payments to a management company?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "certificate_tenure",
+        "label": "tenure",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "flying_freehold_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "local_land_charges_law",
+        "label": "law",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "vehicle_type_restriction_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "other_restrictions",
+        "label": "restrictions",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxLot",
+        "source_native_name": "TaxLot",
+        "source_label": "Tax Lot",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxTract",
+        "source_native_name": "TaxTract",
+        "source_label": "Tax Tract",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AirRights",
+        "source_native_name": "AirRights",
+        "source_label": "Air Rights",
+        "source_definition": "The amount of vertical space extending above the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Disclaimer",
+        "source_native_name": "Disclaimer",
+        "source_label": "Disclaimer",
+        "source_definition": "Text that serves as the negation or limitation of the rights under a warranty given by a seller to a buyer.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PetsAllowed",
+        "source_native_name": "PetsAllowed",
+        "source_label": "Pets Allowed",
+        "source_definition": "Indicates whether or not pets are allowed at the property being leased, usually as a list of yes, no and more detailed restrictions/allowances.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PetsAllowed",
+        "source_enum_ref": "org.reso.metadata.enums.PetsAllowed",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "pets_allowed",
+          "ref": "base0001.pets_allowed@1",
+          "kind": "property",
+          "definition": "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ListingTerms",
+        "source_native_name": "ListingTerms",
+        "source_label": "Listing Terms",
+        "source_definition": "Terms of the listing such as Lien Release, Subject to Court Approval or Owner Will Carry. Also may include options that describe the financing terms that are acceptable to the seller (i.e., Cash, Assumable, FHA, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ListingTerms",
+        "source_enum_ref": "org.reso.metadata.enums.ListingTerms",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AirRightsUnit",
+        "source_native_name": "AirRightsUnit",
+        "source_label": "Air Rights Unit",
+        "source_definition": "A pick list of the unit of measurement of vertical space extending above the commercial property (e.g., Square Feet, Square Meters).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AreaUnits",
+        "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CommonInterest",
+        "source_native_name": "CommonInterest",
+        "source_label": "Common Interest",
+        "source_definition": "A type of ownership in a property that is composed of an individual lot or unit and a share of the ownership or use of common areas. A Common Interest Development (CID) is usually governed by a recorded set of Covenants, Conditions & Restrictions (CC&Rs).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CommonInterest",
+        "source_enum_ref": "org.reso.metadata.enums.CommonInterest",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CopyrightNotice",
+        "source_native_name": "CopyrightNotice",
+        "source_label": "Copyright Notice",
+        "source_definition": "A notice of the legal rights of the owner of the information or data.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "copyright_notice",
+          "ref": "base0001.copyright_notice@1",
+          "kind": "property",
+          "definition": "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work.",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParcelSubcomponent",
+        "source_native_name": "ParcelSubcomponent",
+        "source_label": "Parcel Subcomponent",
+        "source_definition": "A number used to identify smaller elements of a parcel (e.g., parking spaces, outbuildings, air rights).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxLegalDescription",
+        "source_native_name": "TaxLegalDescription",
+        "source_label": "Tax Legal Description",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein. The text here is also an index into the property as described by the County Recorder.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsYN",
+        "source_native_name": "IrrigationWaterRightsYN",
+        "source_label": "Irrigation Water Rights Yes/No",
+        "source_definition": "Indicates whether or not the property includes water rights for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsAcres",
+        "source_native_name": "IrrigationWaterRightsAcres",
+        "source_label": "Irrigation Water Rights Acres",
+        "source_definition": "The number of acres allowed under the property's water rights.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches",
+        "source_native_name": "localSearches",
+        "source_label": "Result of local searches, including Local Land Charges and CON29R",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.marketingTenure",
+        "source_native_name": "marketingTenure",
+        "source_label": "What tenure is the property being marketed as?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.connectivity.mobilePhone",
+        "source_native_name": "mobilePhone",
+        "source_label": "Mobile phone coverage",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.legalBoundaries.ownership",
+        "source_native_name": "ownership",
+        "source_label": "Boundary ownership",
+        "source_definition": "If the property is leasehold this section, or parts of it, may not apply.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_definition_crosswalk_ambiguous",
+        "matches": [
+          {
+            "symbol": "broker",
+            "ref": "base0001.broker@1",
+            "kind": "property",
+            "definition": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "funded_item",
+            "ref": "base0001.funded_item@1",
+            "kind": "property",
+            "definition": "Indicates something directly or indirectly funded or sponsored through a [[Grant]]. See also [[ownershipFundingInfo]].",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "funding",
+            "ref": "base0001.funding@1",
+            "kind": "property",
+            "definition": "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "owned_through",
+            "ref": "base0001.owned_through@1",
+            "kind": "property",
+            "definition": "The date and time of giving up ownership on the product.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "ownership_funding_info",
+            "ref": "base0001.ownership_funding_info@1",
+            "kind": "property",
+            "definition": "For an [[Organization]] (often but not necessarily a [[NewsMediaOrganization]]), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the [[funder]] is also available and can be used to make basic funder information machine-readable.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          },
+          {
+            "symbol": "provenance",
+            "ref": "base0001.provenance@1",
+            "kind": "property",
+            "definition": "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.",
+            "match_method": "definition_mentions_source_field",
+            "confidence": 0.8
+          }
+        ]
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].misc.tenureSource",
+        "source_native_name": "tenureSource",
+        "source_label": "tenureSource",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.rightsAndInformalArrangements",
+        "source_native_name": "rightsAndInformalArrangements",
+        "source_label": "Rights and Informal Arrangements",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.legalBoundaries.flyingFreehold",
+        "source_native_name": "flyingFreehold",
+        "source_label": "Is there a flying freehold?",
+        "source_definition": "NOTE: a flying freehold is when part of the property overhangs a neighbour's property or an accessway - e.g. a terrace house where part of the upstairs is over an accessway which belongs to someone else.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localLandCharges",
+        "source_native_name": "localLandCharges",
+        "source_label": "Local Land Charges",
+        "source_definition": "In accordance with JSON supplied by HMLR LLC API, with charge extents stringified",
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.parking.vehicleTypeRestriction",
+        "source_native_name": "vehicleTypeRestriction",
+        "source_label": "Is there a restriction on the types of vehicle which may be parked?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].declaration.clientName",
+        "source_native_name": "clientName",
+        "source_label": "clientName",
+        "source_definition": "Customer Name",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.councilTax.councilTaxAnnualCharge",
+        "source_native_name": "councilTaxAnnualCharge",
+        "source_label": "What is the current annual Council Tax charge? (£)",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "number",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].legalIssues.rightsOfWay",
+        "source_native_name": "rightsOfWay",
+        "source_label": "rightsOfWay",
+        "source_definition": "Legal Issues Rights of Way/Restrictions details",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.additionalInformation.otherCharges",
+        "source_native_name": "otherCharges",
+        "source_label": "Does the seller have to pay any charges relating to the property (excluding any payments such as council tax, utility charges, etc.), for example payments to a management company?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.energyEfficiency.certificate.tenure",
+        "source_native_name": "tenure",
+        "source_label": "tenure",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.legalBoundaries.flyingFreehold.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.localSearches.localLandCharges[].law",
+        "source_native_name": "law",
+        "source_label": "law",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.parking.vehicleTypeRestriction.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].grounds.other.restrictions",
+        "source_native_name": "restrictions",
+        "source_label": "restrictions",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
