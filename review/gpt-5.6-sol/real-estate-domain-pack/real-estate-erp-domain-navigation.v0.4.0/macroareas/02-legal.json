@@ -1,0 +1,125 @@
+{
+  "macro_area": {"order":2,"id":"legal","label":"Legal"},
+  "facets": [
+    {
+      "facet_number": 6,
+      "id": "ownership_possession_occupancy",
+      "label": "Ownership, Possession and Occupancy",
+      "lexicon_terms": [
+        {"ref":"base0001.owner@1","symbol":"owner","use":"Direct ownership relation from Thing to Person/Organization."},
+        {"ref":"base0001.owns@1","symbol":"owns","use":"Inverse ownership-oriented relation from Person/Organization to Thing."},
+        {"ref":"base0001.owned_from@1","symbol":"owned_from","use":"Ownership effective start."},
+        {"ref":"base0001.owned_through@1","symbol":"owned_through","use":"Ownership effective end."},
+        {"ref":"base0001.role_name@1","symbol":"role_name","use":"Contextual role designation when the party is not semantically an owner."},
+        {"ref":"base0001.participant@1","symbol":"participant","use":"Party participating in the contextual relationship or action."},
+        {"ref":"base0001.occupancy@1","symbol":"occupancy","use":"Permitted occupancy quantity of an Accommodation; not a synonym for occupant."},
+        {"ref":"base0001.permitted_usage@1","symbol":"permitted_usage","use":"Permitted use of an Accommodation."}
+      ],
+      "form_slots": [
+        {"slot":"owner","term_ref":"base0001.owner@1","control":"entity_picker","repeatable":true},
+        {"slot":"ownership_from","term_ref":"base0001.owned_from@1","control":"datetime"},
+        {"slot":"ownership_through","term_ref":"base0001.owned_through@1","control":"datetime"},
+        {"slot":"ownership_share","term_ref":"base0001.value__6cd2a6da@1","context":"ownership_fraction_or_percentage","control":"number"},
+        {"slot":"possessor","term_ref":"base0001.participant@1","context":"role_name=possessor","control":"entity_picker"},
+        {"slot":"occupant","term_ref":"base0001.participant@1","context":"role_name=occupant","control":"entity_picker"},
+        {"slot":"occupancy_basis","term_ref":"base0001.role_name@1","context":"basis_of_possession_or_occupancy","control":"select_or_text"},
+        {"slot":"permitted_occupancy","term_ref":"base0001.occupancy@1","control":"measurement"},
+        {"slot":"permitted_usage","term_ref":"base0001.permitted_usage@1","control":"text_or_select"}
+      ],
+      "invariants":["Owner != Possessor","Possessor != Occupant","occupancy != occupant"]
+    },
+    {
+      "facet_number": 7,
+      "id": "rights_encumbrances_restrictions_tenure",
+      "label": "Rights, Encumbrances, Restrictions and Tenure",
+      "lexicon_terms": [
+        {"ref":"base0001.rights@1","symbol":"rights","use":"Generic information about rights held in or over a resource."},
+        {"ref":"base0001.rights_holder@1","symbol":"rights_holder","use":"Party owning or managing rights."},
+        {"ref":"base0001.permitted_usage@1","symbol":"permitted_usage","use":"Use restriction/permission for Accommodation."},
+        {"ref":"base0001.conditions_of_access@1","symbol":"conditions_of_access","use":"Conditions affecting availability or access."},
+        {"ref":"base0001.required_collateral@1","symbol":"required_collateral","use":"Collateral associated with secured credit."},
+        {"ref":"base0001.license__bbc3eab1@1","symbol":"license__bbc3eab1","use":"Legal document granting official permission."},
+        {"ref":"base0001.valid@1","symbol":"valid","use":"Validity interval/date of a right or supporting resource."},
+        {"ref":"base0001.valid_in@1","symbol":"valid_in","use":"Geographic validity for permits/certifications/credentials."}
+      ],
+      "form_slots": [
+        {"slot":"right_or_encumbrance","term_ref":"base0001.rights@1","control":"relation_editor","repeatable":true},
+        {"slot":"right_type","term_ref":"base0001.role_name@1","context":"right_or_encumbrance_type","control":"select"},
+        {"slot":"rights_holder","term_ref":"base0001.rights_holder@1","control":"entity_picker"},
+        {"slot":"mortgage","term_ref":"base0001.rights@1","context":"mortgage_right_or_security","control":"relation_editor"},
+        {"slot":"lien","term_ref":"base0001.rights@1","context":"lien","control":"relation_editor"},
+        {"slot":"easement","term_ref":"base0001.rights@1","context":"easement","control":"relation_editor"},
+        {"slot":"usufruct","term_ref":"base0001.rights@1","context":"usufruct","control":"relation_editor"},
+        {"slot":"right_of_way","term_ref":"base0001.rights@1","context":"right_of_way","control":"relation_editor"},
+        {"slot":"title_restriction","term_ref":"base0001.rights@1","context":"title_restriction","control":"relation_editor"},
+        {"slot":"planning_or_environmental_restriction","term_ref":"base0001.permitted_usage@1","context":"restriction","control":"text_or_relation"}
+      ],
+      "note":"Specific jurisdictional right names remain form/application contexts over Lexicon rights primitives unless the Lexicon already provides a more specific term."
+    },
+    {
+      "facet_number": 8,
+      "id": "condominium_property_administration",
+      "label": "Condominium and Property Administration",
+      "lexicon_terms": [
+        {"ref":"base0001.parent_organization@1","symbol":"parent_organization"},
+        {"ref":"base0001.has_member@1","symbol":"has_member"},
+        {"ref":"base0001.member_of@1","symbol":"member_of"},
+        {"ref":"base0001.has_subsidiary@1","symbol":"has_subsidiary"},
+        {"ref":"base0001.contains_place@1","symbol":"contains_place"},
+        {"ref":"base0001.role_name@1","symbol":"role_name"},
+        {"ref":"base0001.provider@1","symbol":"provider"},
+        {"ref":"base0001.service_operator@1","symbol":"service_operator"},
+        {"ref":"base0001.amount@1","symbol":"amount"},
+        {"ref":"base0001.identifier@1","symbol":"identifier"}
+      ],
+      "form_slots": [
+        {"slot":"condominium_or_association","term_ref":"base0001.parent_organization@1","context":"property_governance_organization","control":"entity_picker"},
+        {"slot":"unit_membership","term_ref":"base0001.member_of@1","context":"unit_membership_in_property_governance","control":"entity_relation"},
+        {"slot":"common_area","term_ref":"base0001.contains_place@1","context":"common_area","control":"entity_collection"},
+        {"slot":"property_manager","term_ref":"base0001.provider@1","context":"property_management","control":"entity_picker"},
+        {"slot":"syndic_or_equivalent","term_ref":"base0001.role_name@1","context":"property_governance_role","control":"entity_role"},
+        {"slot":"board_or_council_member","term_ref":"base0001.has_member@1","context":"governing_body","control":"entity_collection"},
+        {"slot":"condominium_fee","term_ref":"base0001.amount@1","context":"condominium_fee","control":"money"},
+        {"slot":"reserve_fund","term_ref":"base0001.amount@1","context":"reserve_fund","control":"money"},
+        {"slot":"governance_identifier","term_ref":"base0001.identifier@1","context":"condominium_or_association","control":"text"}
+      ]
+    },
+    {
+      "facet_number": 10,
+      "id": "documents_evidence_compliance_records",
+      "label": "Documents, Evidence and Compliance Records",
+      "lexicon_terms": [
+        {"ref":"base0001.identifier@1","symbol":"identifier"},
+        {"ref":"base0001.issued@1","symbol":"issued"},
+        {"ref":"base0001.issued_by@1","symbol":"issued_by"},
+        {"ref":"base0001.issued_through@1","symbol":"issued_through"},
+        {"ref":"base0001.valid@1","symbol":"valid"},
+        {"ref":"base0001.valid_for@1","symbol":"valid_for"},
+        {"ref":"base0001.valid_in@1","symbol":"valid_in"},
+        {"ref":"base0001.valid_until@1","symbol":"valid_until"},
+        {"ref":"base0001.sha256@1","symbol":"sha256"},
+        {"ref":"base0001.upload_date@1","symbol":"upload_date"},
+        {"ref":"base0001.license__bbc3eab1@1","symbol":"license__bbc3eab1"},
+        {"ref":"base0001.applicable_certificate@1","symbol":"applicable_certificate"},
+        {"ref":"base0001.has_credential@1","symbol":"has_credential"},
+        {"ref":"base0001.rights@1","symbol":"rights"},
+        {"ref":"base0001.provenance@1","symbol":"provenance"}
+      ],
+      "form_slots": [
+        {"slot":"document","term_ref":"base0001.identifier@1","context":"document_reference","control":"document"},
+        {"slot":"document_type","term_ref":"base0001.additional_type@1","context":"document_type","control":"select"},
+        {"slot":"document_identifier","term_ref":"base0001.identifier@1","context":"document","control":"text"},
+        {"slot":"issuer","term_ref":"base0001.issued_by@1","control":"entity_picker"},
+        {"slot":"issued_date","term_ref":"base0001.issued@1","control":"date"},
+        {"slot":"valid_until","term_ref":"base0001.valid_until@1","control":"date"},
+        {"slot":"valid_in","term_ref":"base0001.valid_in@1","control":"area_picker"},
+        {"slot":"file_sha256","term_ref":"base0001.sha256@1","control":"readonly_text"},
+        {"slot":"upload_date","term_ref":"base0001.upload_date@1","control":"datetime"},
+        {"slot":"registry_certificate","term_ref":"base0001.identifier@1","context":"registry_certificate_document","control":"document"},
+        {"slot":"deed","term_ref":"base0001.identifier@1","context":"deed_document","control":"document"},
+        {"slot":"permit_or_license","term_ref":"base0001.license__bbc3eab1@1","control":"document"},
+        {"slot":"certification","term_ref":"base0001.applicable_certificate@1","control":"entity_or_document"}
+      ]
+    }
+  ]
+}
