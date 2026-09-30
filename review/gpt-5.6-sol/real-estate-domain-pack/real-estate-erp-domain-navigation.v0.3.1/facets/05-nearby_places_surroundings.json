@@ -1,0 +1,4883 @@
+{
+  "macro_area": {
+    "id": "property",
+    "order": 1,
+    "label": "Property"
+  },
+  "subarea": {
+    "id": "nearby_places_surroundings",
+    "order": 5,
+    "label": "Nearby Places and Surroundings",
+    "facet_number": 5,
+    "description": "Nearby services, facilities and environmental context relevant to the property.",
+    "typical_concepts": {
+      "additional_property": {
+        "ref": "base0001.additional_property@1",
+        "kind": "property",
+        "definition": "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. https://schema.org/width, https://schema.org/color, https://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PropertyValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/additionalProperty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "address": {
+        "ref": "base0001.address@1",
+        "kind": "property",
+        "definition": "Physical address of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PostalAddress",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/address",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/address",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "address_country": {
+        "ref": "base0001.address_country@1",
+        "kind": "property",
+        "definition": "The country. Recommended to be in 2-letter [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) format, for example \"US\". For backward compatibility, a 3-letter [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such as \"SGP\" or a full country name such as \"Singapore\" can also be used.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DefinedRegion",
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape",
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Country",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/addressCountry",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "aggregate_rating": {
+        "ref": "base0001.aggregate_rating@1",
+        "kind": "property",
+        "definition": "The overall rating, based on a collection of reviews or ratings, of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateRating"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/aggregateRating",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "amenity_feature": {
+        "ref": "base0001.amenity_feature@1",
+        "kind": "property",
+        "definition": "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/LocationFeatureSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/amenityFeature",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "applicable_certificate": {
+        "ref": "base0001.applicable_certificate@1",
+        "kind": "property",
+        "definition": "Certification information about a product, organization, service, place, or person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/isReferencedIn",
+              "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy"
+            ],
+            "range_refs": [
+              "https://schema.org/Certification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#ApplicableCertificate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasCertification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "area_served": {
+        "ref": "base0001.area_served@1",
+        "kind": "property",
+        "definition": "The geographic area where a service or offered item is provided.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdministrativeArea",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/areaServed",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasServiceArea",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "box": {
+        "ref": "base0001.box@1",
+        "kind": "property",
+        "definition": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/box",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "branch_code": {
+        "ref": "base0001.branch_code@1",
+        "kind": "property",
+        "definition": "A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\\n\\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is a branchCode for a particular branch.\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/branchCode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "circle": {
+        "ref": "base0001.circle@1",
+        "kind": "property",
+        "definition": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/circle",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contained_in": {
+        "ref": "base0001.contained_in@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and one that contains it.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containedIn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contained_in_place": {
+        "ref": "base0001.contained_in_place@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and one that contains it.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containedInPlace",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contains_place": {
+        "ref": "base0001.contains_place@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and another that it contains.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containsPlace",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "distance": {
+        "ref": "base0001.distance@1",
+        "kind": "property",
+        "definition": "The distance travelled, e.g. exercising or travelling.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ExerciseAction",
+              "https://schema.org/TravelAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Distance"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/distance",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "elevation": {
+        "ref": "base0001.elevation@1",
+        "kind": "property",
+        "definition": "The elevation of a location ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of the form 'NUMBER UNIT\\_OF\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/elevation",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "event": {
+        "ref": "base0001.event@1",
+        "kind": "property",
+        "definition": "Upcoming or past event associated with this place, organization, or action.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/InformAction",
+              "https://schema.org/InviteAction",
+              "https://schema.org/JoinAction",
+              "https://schema.org/LeaveAction",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/PlayAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/event",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "events": {
+        "ref": "base0001.events@1",
+        "kind": "property",
+        "definition": "Upcoming or past events associated with this place or organization.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/events",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "fax_number": {
+        "ref": "base0001.fax_number@1",
+        "kind": "property",
+        "definition": "The fax number.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/faxNumber",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/faxNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "g_lnid": {
+        "ref": "base0001.g_lnid@1",
+        "kind": "property",
+        "definition": "The [Global Location Number](http://www.gs1.org/gln) (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#gLNId",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/globalLocationNumber",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/globalLocationNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo": {
+        "ref": "base0001.geo@1",
+        "kind": "property",
+        "definition": "The geo coordinates of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_contains": {
+        "ref": "base0001.geo_contains@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. \"a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoContains",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_covered_by": {
+        "ref": "base0001.geo_covered_by@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCoveredBy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_covers": {
+        "ref": "base0001.geo_covers@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. \"Every point of b is a point of (the interior or boundary of) a\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCovers",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_crosses": {
+        "ref": "base0001.geo_crosses@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: \"a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCrosses",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_disjoint": {
+        "ref": "base0001.geo_disjoint@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: \"they have no point in common. They form a set of disconnected geometries.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoDisjoint",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_equals": {
+        "ref": "base0001.geo_equals@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM). \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoEquals",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_intersects": {
+        "ref": "base0001.geo_intersects@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoIntersects",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_overlaps": {
+        "ref": "base0001.geo_overlaps@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoOverlaps",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_radius": {
+        "ref": "base0001.geo_radius@1",
+        "kind": "property",
+        "definition": "Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise via Distance notation).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCircle"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Distance",
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoRadius",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_touches": {
+        "ref": "base0001.geo_touches@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) touch: \"they have at least one boundary point in common, but no interior points.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoTouches",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_within": {
+        "ref": "base0001.geo_within@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoWithin",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_drive_through_service": {
+        "ref": "base0001.has_drive_through_service@1",
+        "kind": "property",
+        "definition": "Indicates whether some facility (e.g. [[FoodEstablishment]], [[CovidTestingFacility]]) offers a service that can be used by driving through in a car. In the case of [[CovidTestingFacility]] such facilities could potentially help with social distancing from other potentially-infected users.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasDriveThroughService",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_gs1_digital_link": {
+        "ref": "base0001.has_gs1_digital_link@1",
+        "kind": "property",
+        "definition": "The <a href=\"https://www.gs1.org/standards/gs1-digital-link\">GS1 digital link</a> associated with the object. This URL should conform to the particular requirements of digital links. The link should only contain the Application Identifiers (AIs) that are relevant for the entity being annotated, for instance a [[Product]] or an [[Organization]], and for the correct granularity. In particular, for products:<ul><li>A Digital Link that contains a serial number (AI <code>21</code>) should only be present on instances of [[IndividualProduct]]</li><li>A Digital Link that contains a lot number (AI <code>10</code>) should be annotated as [[SomeProducts]] if only products from that lot are sold, or [[IndividualProduct]] if there is only a specific product.</li><li>A Digital Link that contains a global model number (AI <code>8013</code>) should be attached to a [[Product]] or a [[ProductModel]].</li></ul> Other item types should be adapted similarly.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasGS1DigitalLink",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_map": {
+        "ref": "base0001.has_map@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Map",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasMap",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_postal_code": {
+        "ref": "base0001.has_postal_code@1",
+        "kind": "property",
+        "definition": "The postal code. For example, 94043.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DefinedRegion",
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape",
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#postcodeCode",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/postalCode",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/postalCode",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_accessible_for_free": {
+        "ref": "base0001.is_accessible_for_free@1",
+        "kind": "property",
+        "definition": "A flag to signal that the item, event, or place is accessible for free.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isAccessibleForFree",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "isic_v4": {
+        "ref": "base0001.isic_v4@1",
+        "kind": "property",
+        "definition": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isicV4",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "keywords": {
+        "ref": "base0001.keywords@1",
+        "kind": "property",
+        "definition": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/keywords",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "latitude": {
+        "ref": "base0001.latitude@1",
+        "kind": "property",
+        "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Locations/hasLatitude"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/latitude",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "line": {
+        "ref": "base0001.line@1",
+        "kind": "property",
+        "definition": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/line",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "logo": {
+        "ref": "base0001.logo@1",
+        "kind": "property",
+        "definition": "An associated logo.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/Certification",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [
+              "https://schema.org/image"
+            ],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#logoReferencedDocument",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/logo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "longitude": {
+        "ref": "base0001.longitude@1",
+        "kind": "property",
+        "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Locations/hasLongitude"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/longitude",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "map": {
+        "ref": "base0001.map@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/map",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "maps": {
+        "ref": "base0001.maps@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maps",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "maximum_attendee_capacity": {
+        "ref": "base0001.maximum_attendee_capacity@1",
+        "kind": "property",
+        "definition": "The total number of individuals that may attend an event or venue.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Quantities/hasUpperBound"
+            ],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maximumAttendeeCapacity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "opening_hours_specification": {
+        "ref": "base0001.opening_hours_specification@1",
+        "kind": "property",
+        "definition": "The opening hours of a certain place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OpeningHoursSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/openingHoursSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "photo": {
+        "ref": "base0001.photo@1",
+        "kind": "property",
+        "definition": "A photograph of this place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://schema.org/image"
+            ],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/Photograph"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/photo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "photos": {
+        "ref": "base0001.photos@1",
+        "kind": "property",
+        "definition": "Photographs of this place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/Photograph"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/photos",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "polygon": {
+        "ref": "base0001.polygon@1",
+        "kind": "property",
+        "definition": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/polygon",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "promotional_message": {
+        "ref": "base0001.promotional_message@1",
+        "kind": "property",
+        "definition": "A slogan or motto associated with the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#PromotionalMessage",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/slogan",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "public_access": {
+        "ref": "base0001.public_access@1",
+        "kind": "property",
+        "definition": "A flag to signal that the [[Place]] is open to public visitors.  If this property is omitted there is no assumed default boolean value.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/publicAccess",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "review": {
+        "ref": "base0001.review@1",
+        "kind": "property",
+        "definition": "A review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/review",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "reviews": {
+        "ref": "base0001.reviews@1",
+        "kind": "property",
+        "definition": "Review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/reviews",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "service_area": {
+        "ref": "base0001.service_area@1",
+        "kind": "property",
+        "definition": "The geographic area where the service is provided.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/Organization",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdministrativeArea",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/serviceArea",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "smoking_allowed": {
+        "ref": "base0001.smoking_allowed@1",
+        "kind": "property",
+        "definition": "Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/smokingAllowed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "special_opening_hours_specification": {
+        "ref": "base0001.special_opening_hours_specification@1",
+        "kind": "property",
+        "definition": "The special opening hours of a certain place.\\n\\nUse this to explicitly override general opening hours brought in scope by [[openingHoursSpecification]] or [[openingHours]].\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OpeningHoursSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/specialOpeningHoursSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "telephone": {
+        "ref": "base0001.telephone@1",
+        "kind": "property",
+        "definition": "The telephone number.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/telephone",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/telephone",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "tour_booking_page": {
+        "ref": "base0001.tour_booking_page@1",
+        "kind": "property",
+        "definition": "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/tourBookingPage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GarageYN",
+        "source_native_name": "GarageYN",
+        "source_label": "Garage Yes/No",
+        "source_definition": "Indicated whether or not the building has a parking garage or garages available to residents of the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Electric",
+        "source_native_name": "Electric",
+        "source_label": "Electric",
+        "source_definition": "A list of electric-service related features of the property (e.g., 110 Volt, 3 Phase, 220 Volt, RV Hookup). Note: the previous Electric field was renamed to DistanceToElectricComments.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Electric",
+        "source_enum_ref": "org.reso.metadata.enums.Electric",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkName",
+        "source_native_name": "ParkName",
+        "source_label": "Park Name",
+        "source_definition": "The name of the mobile home park or corporate/commercial park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RoomType",
+        "source_native_name": "RoomType",
+        "source_label": "Room Type",
+        "source_definition": "A list of identifiers for specific interior spaces within a structure (e.g., Bedroom, Bathroom, Kitchen, Living Room). A relational implementation of rooms must omit the type from the field name and use RoomType to create a vertical representation of the various rooms. Note that garage or basement should not be added as a room type, as these are represented by the ParkingFeatures and Basement fields, respectively.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RoomType",
+        "source_enum_ref": "org.reso.metadata.enums.RoomType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Amenities",
+        "source_native_name": "Amenities",
+        "source_label": "Amenities",
+        "source_definition": "The amenities provided by the building, homeowner association or complex (e.g., pool, dog park).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Amenities",
+        "source_enum_ref": "org.reso.metadata.enums.Amenities",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MlsStatus",
+        "source_native_name": "MlsStatus",
+        "source_label": "MLS Status",
+        "source_definition": "A local or regional status that is well known by business users. Each MlsStatus field must map to a single StandardStatus. Multiple MlsStatus fields may map to a single StandardStatus.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.MlsStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WalkScore",
+        "source_native_name": "WalkScore",
+        "source_label": "Walk Score",
+        "source_definition": "A walkability index based on the time to walk from a property to nearby essentials such as grocery stores, schools, churches, etc. See https://www.walkscore.com/ for more information and requirements for using Walk Score.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.HighSchool",
+        "source_native_name": "HighSchool",
+        "source_label": "High School",
+        "source_definition": "The name of the high school having a catchment area that includes the associated property.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.HighSchool",
+        "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParkingFee",
+        "source_native_name": "ParkingFee",
+        "source_label": "Parking Fee",
+        "source_definition": "The fee paid by the resident of the building for parking.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.HighSchool",
+        "source_native_name": "HighSchool",
+        "source_label": "High School",
+        "source_definition": "The name of the high school having a catchment area that includes the associated property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.HighSchool",
+        "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ClearHeight",
+        "source_native_name": "ClearHeight",
+        "source_label": "Clear Height",
+        "source_definition": "The distance from the floor to the lowest hanging ceiling member, beams, joists, trusses or other hanging objects at the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseAmount",
+        "source_native_name": "LeaseAmount",
+        "source_label": "Lease Amount",
+        "source_definition": "The amount of any lease the business pays for its current location.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PossibleUse",
+        "source_native_name": "PossibleUse",
+        "source_label": "Possible Use",
+        "source_definition": "A list of the type(s) of possible or best uses of the property. Probable use gives a good indication of what the best use or potential use of the property could be (e.g., Residential, Recreational, Commercial, Retail).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BusinessType",
+        "source_native_name": "BusinessType",
+        "source_label": "Business Type",
+        "source_definition": "A pick list of all the types of business on the property or in the building (e.g., Retail, Wholesale, Grocery, Food & Beverage).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.BusinessType",
+        "source_enum_ref": "org.reso.metadata.enums.BusinessType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuildingName",
+        "source_native_name": "BuildingName",
+        "source_label": "Building Name",
+        "source_definition": "The name of the building or business park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BusinessName",
+        "source_native_name": "BusinessName",
+        "source_label": "Business Name",
+        "source_definition": "The name of the business being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BusinessType",
+        "source_native_name": "BusinessType",
+        "source_label": "Business Type",
+        "source_definition": "The type of business being sold (e.g., Retail, Wholesale, Grocery, Food & Bev).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BusinessType",
+        "source_enum_ref": "org.reso.metadata.enums.BusinessType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DaysOnMarket",
+        "source_native_name": "DaysOnMarket",
+        "source_label": "Days On Market",
+        "source_definition": "The number of days the listing is on market, as defined by the MLS business rules.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfPads",
+        "source_native_name": "NumberOfPads",
+        "source_label": "Number Of Pads",
+        "source_definition": "The number of pads or spaces in the mobile home park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OtherParking",
+        "source_native_name": "OtherParking",
+        "source_label": "Other Parking",
+        "source_definition": "Other types of parking available to, or part of, the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkingRatio",
+        "source_native_name": "ParkingRatio",
+        "source_label": "Parking Ratio",
+        "source_definition": "A calculation dividing the total available area of a building by the building's total number of parking spaces.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkingTotal",
+        "source_native_name": "ParkingTotal",
+        "source_label": "Parking Total",
+        "source_definition": "The total number of parking spaces included in the sale.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyName",
+        "source_native_name": "PropertyName",
+        "source_label": "Property Name",
+        "source_definition": "The easily recognizable name identifying the property. The property name may be a general name or address (e.g., Pinelawn Shopping Center, 10 Broadway St.)",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RailAccessYN",
+        "source_native_name": "RailAccessYN",
+        "source_label": "Rail Access Yes/No",
+        "source_definition": "Indicates whether or not the property includes access to rail transportation.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CarportSpaces",
+        "source_native_name": "CarportSpaces",
+        "source_label": "Carport Spaces",
+        "source_definition": "The total number of carport parking spaces for the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenLocation",
+        "source_native_name": "GreenLocation",
+        "source_label": "Green Location",
+        "source_definition": "A pick list of efficiencies involved with the property's location such as walkability or transportation proximity.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenLocation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online and typically describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenLocation",
+        "source_native_name": "GreenLocation",
+        "source_label": "Green Location",
+        "source_definition": "A pick list describing efficiencies involved with the property's location such as walkability or transportation proximity without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenLocation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OpenParkingYN",
+        "source_native_name": "OpenParkingYN",
+        "source_label": "Open Parking Yes/No",
+        "source_definition": "A flag indicating that any parking spaces associated with the property are not covered by a roof.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnershipType",
+        "source_native_name": "OwnershipType",
+        "source_label": "Ownership Type",
+        "source_definition": "The current type of ownership of the business being sold (e.g., Corporation, LLC, Sole Proprietor, Partnership).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnershipType",
+        "source_enum_ref": "org.reso.metadata.enums.OwnershipType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online. This is typically information that describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IncomeIncludes",
+        "source_native_name": "IncomeIncludes",
+        "source_label": "Income Includes",
+        "source_definition": "A list of income sources included in the GrossScheduledIncome and GrossIncome (e.g., Laundry, Parking, Recreation, Storage).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.IncomeIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.IncomeIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.NumberOfGarages",
+        "source_native_name": "NumberOfGarages",
+        "source_label": "Number of Garages",
+        "source_definition": "Indicates the number of parking garages included with the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParkingFeatures",
+        "source_native_name": "ParkingFeatures",
+        "source_label": "Parking Features",
+        "source_definition": "A pick list of features or descriptions of the parking garage or parking spaces.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.ParkingFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.ParkingFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LandLeaseAmount",
+        "source_native_name": "LandLeaseAmount",
+        "source_label": "Land Lease Amount",
+        "source_definition": "When the land is not included in the sale, but is leased, the amount of the lease. This is the space rent for mobile homes in a park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseExpiration",
+        "source_native_name": "LeaseExpiration",
+        "source_label": "Lease Expiration",
+        "source_definition": "The expiration date of the lease for the current location of the business.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkingFeatures",
+        "source_native_name": "ParkingFeatures",
+        "source_label": "Parking Features",
+        "source_definition": "A list of features about or a description of the parking included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ParkingFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.ParkingFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkManagerName",
+        "source_native_name": "ParkManagerName",
+        "source_label": "Park Manager Name",
+        "source_definition": "The name of the manager of the mobile home park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SpecialLicenses",
+        "source_native_name": "SpecialLicenses",
+        "source_label": "Special Licenses",
+        "source_definition": "Special licenses required/used by the business being sold (e.g., Beer/Wine, Class H, Professional, Gambling, None).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.SpecialLicenses",
+        "source_enum_ref": "org.reso.metadata.enums.SpecialLicenses",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearEstablished",
+        "source_native_name": "YearEstablished",
+        "source_label": "Year Established",
+        "source_definition": "The year the business being sold was established.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AttachedGarageYN",
+        "source_native_name": "AttachedGarageYN",
+        "source_label": "Attached Garage Yes/No",
+        "source_definition": "Indicates whether or not the parking garage is attached to the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ElementarySchool",
+        "source_native_name": "ElementarySchool",
+        "source_label": "Elementary School",
+        "source_definition": "The name of the primary school having a catchment area that includes the associated property.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.ElementarySchool",
+        "source_enum_ref": "org.reso.metadata.enums.ElementarySchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AnchorsCoTenants",
+        "source_native_name": "AnchorsCoTenants",
+        "source_label": "Anchors & Cotenants",
+        "source_definition": "The main or most notable tenants as well as other tenants of the shopping center or mall in which the commercial property is located.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuildingFeatures",
+        "source_native_name": "BuildingFeatures",
+        "source_label": "Building Features",
+        "source_definition": "The features or amenities of the building or business park.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BuildingFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.BuildingFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ElementarySchool",
+        "source_native_name": "ElementarySchool",
+        "source_label": "Elementary School",
+        "source_definition": "The name of the primary school having a catchment area that includes the associated property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ElementarySchool",
+        "source_enum_ref": "org.reso.metadata.enums.ElementarySchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LaborInformation",
+        "source_native_name": "LaborInformation",
+        "source_label": "Labor Information",
+        "source_definition": "Information about labor laws that are applicable to the business being sold (i.e., Union, Non-Union, Employee License Required).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LaborInformation",
+        "source_enum_ref": "org.reso.metadata.enums.LaborInformation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkingRatioUnit",
+        "source_native_name": "ParkingRatioUnit",
+        "source_label": "Parking Ratio Unit",
+        "source_definition": "A pick list of the unit of measurement for the area used in the calculation of ParkingRatio (e.g., Square Feet, Square Meters).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AreaUnits",
+        "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkManagerPhone",
+        "source_native_name": "ParkManagerPhone",
+        "source_label": "Park Manager Phone",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyCategory",
+        "source_native_name": "PropertyCategory",
+        "source_label": "Property Category",
+        "source_definition": "Indicates the high-level category of the commercial property (e.g., Hospitality, Land, Retail).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertyCategory",
+        "source_enum_ref": "org.reso.metadata.enums.PropertyCategory",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CommercialUnitsYN",
+        "source_native_name": "CommercialUnitsYN",
+        "source_label": "Commercial Units Yes/No",
+        "source_definition": "Indicates whether or not there are any commercial units connected to the property (e.g., retail, office, hotel)",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GarageSpacesTotal",
+        "source_native_name": "GarageSpacesTotal",
+        "source_label": "Garage Spaces Total",
+        "source_definition": "The total number of parking spaces in the building's parking garage(s).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParkingAssignedYN",
+        "source_native_name": "ParkingAssignedYN",
+        "source_label": "Parking Assigned Yes/No",
+        "source_definition": "Indicates whether or not the building includes assigned parking spaces (garaged or otherwise).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseAssignableYN",
+        "source_native_name": "LeaseAssignableYN",
+        "source_label": "Lease Assignable Yes/No",
+        "source_definition": "Indicates whether or not the lease at the current location of the business can be assigned to another party.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfRailDoors",
+        "source_native_name": "NumberOfRailDoors",
+        "source_label": "Number of Rail Doors",
+        "source_definition": "The number of rail doors included with the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "school",
+        "label": "school",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "university",
+        "label": "university",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "hospital",
+        "label": "hospital",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "clinic",
+        "label": "clinic",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "pharmacy",
+        "label": "pharmacy",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "public_transport",
+        "label": "public transport",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "subway",
+        "label": "subway",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "railway",
+        "label": "railway",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "airport",
+        "label": "airport",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "retail",
+        "label": "retail",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "supermarket",
+        "label": "supermarket",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "shopping_center",
+        "label": "shopping center",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "park",
+        "label": "park",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "public_service",
+        "label": "public service",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "building_garage_yn",
+        "label": "garage yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GarageYN",
+            "source_native_name": "GarageYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "electric",
+        "label": "electric",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Electric",
+            "source_native_name": "Electric",
+            "source_data_type": "org.reso.metadata.enums.Electric",
+            "source_enum_ref": "org.reso.metadata.enums.Electric",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "park_name",
+        "label": "park name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParkName",
+            "source_native_name": "ParkName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "room_type",
+        "label": "room type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.RoomType",
+            "source_native_name": "RoomType",
+            "source_data_type": "org.reso.metadata.enums.RoomType",
+            "source_enum_ref": "org.reso.metadata.enums.RoomType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_amenities",
+        "label": "amenities",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Amenities",
+            "source_native_name": "Amenities",
+            "source_data_type": "org.reso.metadata.enums.Amenities",
+            "source_enum_ref": "org.reso.metadata.enums.Amenities",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "mls_status",
+        "label": "mls status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.MlsStatus",
+            "source_native_name": "MlsStatus",
+            "source_data_type": "org.reso.metadata.enums.MlsStatus",
+            "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "walk_score",
+        "label": "walk score",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.WalkScore",
+            "source_native_name": "WalkScore",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_high_school",
+        "label": "high school",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.HighSchool",
+            "source_native_name": "HighSchool",
+            "source_data_type": "org.reso.metadata.enums.HighSchool",
+            "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_parking_fee",
+        "label": "parking fee",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ParkingFee",
+            "source_native_name": "ParkingFee",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "high_school",
+        "label": "high school",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.HighSchool",
+            "source_native_name": "HighSchool",
+            "source_data_type": "org.reso.metadata.enums.HighSchool",
+            "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "clear_height",
+        "label": "clear height",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ClearHeight",
+            "source_native_name": "ClearHeight",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_amount",
+        "label": "lease amount",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseAmount",
+            "source_native_name": "LeaseAmount",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "possible_use",
+        "label": "possible use",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PossibleUse",
+            "source_native_name": "PossibleUse",
+            "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_business_type",
+        "label": "business type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.BusinessType",
+            "source_native_name": "BusinessType",
+            "source_data_type": "org.reso.metadata.enums.BusinessType",
+            "source_enum_ref": "org.reso.metadata.enums.BusinessType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_name",
+        "label": "building name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuildingName",
+            "source_native_name": "BuildingName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "business_name",
+        "label": "business name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BusinessName",
+            "source_native_name": "BusinessName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "business_type",
+        "label": "business type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BusinessType",
+            "source_native_name": "BusinessType",
+            "source_data_type": "org.reso.metadata.enums.BusinessType",
+            "source_enum_ref": "org.reso.metadata.enums.BusinessType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "days_on_market",
+        "label": "days on market",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.DaysOnMarket",
+            "source_native_name": "DaysOnMarket",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "number_of_pads",
+        "label": "number of pads",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.NumberOfPads",
+            "source_native_name": "NumberOfPads",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "other_parking",
+        "label": "other parking",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OtherParking",
+            "source_native_name": "OtherParking",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "parking_ratio",
+        "label": "parking ratio",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParkingRatio",
+            "source_native_name": "ParkingRatio",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "parking_total",
+        "label": "parking total",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParkingTotal",
+            "source_native_name": "ParkingTotal",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_name",
+        "label": "property name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertyName",
+            "source_native_name": "PropertyName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "rail_access_yn",
+        "label": "rail access yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.RailAccessYN",
+            "source_native_name": "RailAccessYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_carport_spaces",
+        "label": "carport spaces",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CarportSpaces",
+            "source_native_name": "CarportSpaces",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_green_location",
+        "label": "green location",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GreenLocation",
+            "source_native_name": "GreenLocation",
+            "source_data_type": "org.reso.metadata.enums.GreenLocation",
+            "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_public_remarks",
+        "label": "public remarks",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PublicRemarks",
+            "source_native_name": "PublicRemarks",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "green_location",
+        "label": "green location",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GreenLocation",
+            "source_native_name": "GreenLocation",
+            "source_data_type": "org.reso.metadata.enums.GreenLocation",
+            "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "open_parking_yn",
+        "label": "open parking yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OpenParkingYN",
+            "source_native_name": "OpenParkingYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "ownership_type",
+        "label": "ownership type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OwnershipType",
+            "source_native_name": "OwnershipType",
+            "source_data_type": "org.reso.metadata.enums.OwnershipType",
+            "source_enum_ref": "org.reso.metadata.enums.OwnershipType",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "public_remarks",
+        "label": "public remarks",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PublicRemarks",
+            "source_native_name": "PublicRemarks",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "income_includes",
+        "label": "income includes",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IncomeIncludes",
+            "source_native_name": "IncomeIncludes",
+            "source_data_type": "org.reso.metadata.enums.IncomeIncludes",
+            "source_enum_ref": "org.reso.metadata.enums.IncomeIncludes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_number_of_garages",
+        "label": "number of garages",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.NumberOfGarages",
+            "source_native_name": "NumberOfGarages",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_parking_features",
+        "label": "parking features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ParkingFeatures",
+            "source_native_name": "ParkingFeatures",
+            "source_data_type": "org.reso.metadata.enums.ParkingFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.ParkingFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "land_lease_amount",
+        "label": "land lease amount",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LandLeaseAmount",
+            "source_native_name": "LandLeaseAmount",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_expiration",
+        "label": "lease expiration",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseExpiration",
+            "source_native_name": "LeaseExpiration",
+            "source_data_type": "Edm.Date",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "parking_features",
+        "label": "parking features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParkingFeatures",
+            "source_native_name": "ParkingFeatures",
+            "source_data_type": "org.reso.metadata.enums.ParkingFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.ParkingFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "park_manager_name",
+        "label": "park manager name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParkManagerName",
+            "source_native_name": "ParkManagerName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "seating_capacity",
+        "label": "seating capacity",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SeatingCapacity",
+            "source_native_name": "SeatingCapacity",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "seating_capacity",
+              "ref": "base0001.seating_capacity@1",
+              "kind": "property",
+              "definition": "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons.",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "special_licenses",
+        "label": "special licenses",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.SpecialLicenses",
+            "source_native_name": "SpecialLicenses",
+            "source_data_type": "org.reso.metadata.enums.SpecialLicenses",
+            "source_enum_ref": "org.reso.metadata.enums.SpecialLicenses",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "year_established",
+        "label": "year established",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.YearEstablished",
+            "source_native_name": "YearEstablished",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_attached_garage_yn",
+        "label": "attached garage yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.AttachedGarageYN",
+            "source_native_name": "AttachedGarageYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_elementary_school",
+        "label": "elementary school",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ElementarySchool",
+            "source_native_name": "ElementarySchool",
+            "source_data_type": "org.reso.metadata.enums.ElementarySchool",
+            "source_enum_ref": "org.reso.metadata.enums.ElementarySchool",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "anchors_co_tenants",
+        "label": "anchors & cotenants",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AnchorsCoTenants",
+            "source_native_name": "AnchorsCoTenants",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_features",
+        "label": "building features",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuildingFeatures",
+            "source_native_name": "BuildingFeatures",
+            "source_data_type": "org.reso.metadata.enums.BuildingFeatures",
+            "source_enum_ref": "org.reso.metadata.enums.BuildingFeatures",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "elementary_school",
+        "label": "elementary school",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ElementarySchool",
+            "source_native_name": "ElementarySchool",
+            "source_data_type": "org.reso.metadata.enums.ElementarySchool",
+            "source_enum_ref": "org.reso.metadata.enums.ElementarySchool",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "labor_information",
+        "label": "labor information",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LaborInformation",
+            "source_native_name": "LaborInformation",
+            "source_data_type": "org.reso.metadata.enums.LaborInformation",
+            "source_enum_ref": "org.reso.metadata.enums.LaborInformation",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "parking_ratio_unit",
+        "label": "parking ratio unit",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParkingRatioUnit",
+            "source_native_name": "ParkingRatioUnit",
+            "source_data_type": "org.reso.metadata.enums.AreaUnits",
+            "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "park_manager_phone",
+        "label": "park manager phone",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ParkManagerPhone",
+            "source_native_name": "ParkManagerPhone",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_category",
+        "label": "property category",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertyCategory",
+            "source_native_name": "PropertyCategory",
+            "source_data_type": "org.reso.metadata.enums.PropertyCategory",
+            "source_enum_ref": "org.reso.metadata.enums.PropertyCategory",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_commercial_units_yn",
+        "label": "commercial units yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CommercialUnitsYN",
+            "source_native_name": "CommercialUnitsYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_garage_spaces_total",
+        "label": "garage spaces total",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.GarageSpacesTotal",
+            "source_native_name": "GarageSpacesTotal",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_parking_assigned_yn",
+        "label": "parking assigned yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ParkingAssignedYN",
+            "source_native_name": "ParkingAssignedYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_assignable_yn",
+        "label": "lease assignable yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseAssignableYN",
+            "source_native_name": "LeaseAssignableYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "number_of_rail_doors",
+        "label": "number of rail doors",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.NumberOfRailDoors",
+            "source_native_name": "NumberOfRailDoors",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GarageYN",
+        "source_native_name": "GarageYN",
+        "source_label": "Garage Yes/No",
+        "source_definition": "Indicated whether or not the building has a parking garage or garages available to residents of the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Electric",
+        "source_native_name": "Electric",
+        "source_label": "Electric",
+        "source_definition": "A list of electric-service related features of the property (e.g., 110 Volt, 3 Phase, 220 Volt, RV Hookup). Note: the previous Electric field was renamed to DistanceToElectricComments.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Electric",
+        "source_enum_ref": "org.reso.metadata.enums.Electric",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkName",
+        "source_native_name": "ParkName",
+        "source_label": "Park Name",
+        "source_definition": "The name of the mobile home park or corporate/commercial park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RoomType",
+        "source_native_name": "RoomType",
+        "source_label": "Room Type",
+        "source_definition": "A list of identifiers for specific interior spaces within a structure (e.g., Bedroom, Bathroom, Kitchen, Living Room). A relational implementation of rooms must omit the type from the field name and use RoomType to create a vertical representation of the various rooms. Note that garage or basement should not be added as a room type, as these are represented by the ParkingFeatures and Basement fields, respectively.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.RoomType",
+        "source_enum_ref": "org.reso.metadata.enums.RoomType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Amenities",
+        "source_native_name": "Amenities",
+        "source_label": "Amenities",
+        "source_definition": "The amenities provided by the building, homeowner association or complex (e.g., pool, dog park).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Amenities",
+        "source_enum_ref": "org.reso.metadata.enums.Amenities",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MlsStatus",
+        "source_native_name": "MlsStatus",
+        "source_label": "MLS Status",
+        "source_definition": "A local or regional status that is well known by business users. Each MlsStatus field must map to a single StandardStatus. Multiple MlsStatus fields may map to a single StandardStatus.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.MlsStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.WalkScore",
+        "source_native_name": "WalkScore",
+        "source_label": "Walk Score",
+        "source_definition": "A walkability index based on the time to walk from a property to nearby essentials such as grocery stores, schools, churches, etc. See https://www.walkscore.com/ for more information and requirements for using Walk Score.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.HighSchool",
+        "source_native_name": "HighSchool",
+        "source_label": "High School",
+        "source_definition": "The name of the high school having a catchment area that includes the associated property.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.HighSchool",
+        "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParkingFee",
+        "source_native_name": "ParkingFee",
+        "source_label": "Parking Fee",
+        "source_definition": "The fee paid by the resident of the building for parking.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.HighSchool",
+        "source_native_name": "HighSchool",
+        "source_label": "High School",
+        "source_definition": "The name of the high school having a catchment area that includes the associated property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.HighSchool",
+        "source_enum_ref": "org.reso.metadata.enums.HighSchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ClearHeight",
+        "source_native_name": "ClearHeight",
+        "source_label": "Clear Height",
+        "source_definition": "The distance from the floor to the lowest hanging ceiling member, beams, joists, trusses or other hanging objects at the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseAmount",
+        "source_native_name": "LeaseAmount",
+        "source_label": "Lease Amount",
+        "source_definition": "The amount of any lease the business pays for its current location.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PossibleUse",
+        "source_native_name": "PossibleUse",
+        "source_label": "Possible Use",
+        "source_definition": "A list of the type(s) of possible or best uses of the property. Probable use gives a good indication of what the best use or potential use of the property could be (e.g., Residential, Recreational, Commercial, Retail).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentOrPossibleUse",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.BusinessType",
+        "source_native_name": "BusinessType",
+        "source_label": "Business Type",
+        "source_definition": "A pick list of all the types of business on the property or in the building (e.g., Retail, Wholesale, Grocery, Food & Beverage).",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.BusinessType",
+        "source_enum_ref": "org.reso.metadata.enums.BusinessType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuildingName",
+        "source_native_name": "BuildingName",
+        "source_label": "Building Name",
+        "source_definition": "The name of the building or business park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BusinessName",
+        "source_native_name": "BusinessName",
+        "source_label": "Business Name",
+        "source_definition": "The name of the business being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BusinessType",
+        "source_native_name": "BusinessType",
+        "source_label": "Business Type",
+        "source_definition": "The type of business being sold (e.g., Retail, Wholesale, Grocery, Food & Bev).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BusinessType",
+        "source_enum_ref": "org.reso.metadata.enums.BusinessType",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.DaysOnMarket",
+        "source_native_name": "DaysOnMarket",
+        "source_label": "Days On Market",
+        "source_definition": "The number of days the listing is on market, as defined by the MLS business rules.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfPads",
+        "source_native_name": "NumberOfPads",
+        "source_label": "Number Of Pads",
+        "source_definition": "The number of pads or spaces in the mobile home park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OtherParking",
+        "source_native_name": "OtherParking",
+        "source_label": "Other Parking",
+        "source_definition": "Other types of parking available to, or part of, the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkingRatio",
+        "source_native_name": "ParkingRatio",
+        "source_label": "Parking Ratio",
+        "source_definition": "A calculation dividing the total available area of a building by the building's total number of parking spaces.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkingTotal",
+        "source_native_name": "ParkingTotal",
+        "source_label": "Parking Total",
+        "source_definition": "The total number of parking spaces included in the sale.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyName",
+        "source_native_name": "PropertyName",
+        "source_label": "Property Name",
+        "source_definition": "The easily recognizable name identifying the property. The property name may be a general name or address (e.g., Pinelawn Shopping Center, 10 Broadway St.)",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.RailAccessYN",
+        "source_native_name": "RailAccessYN",
+        "source_label": "Rail Access Yes/No",
+        "source_definition": "Indicates whether or not the property includes access to rail transportation.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CarportSpaces",
+        "source_native_name": "CarportSpaces",
+        "source_label": "Carport Spaces",
+        "source_definition": "The total number of carport parking spaces for the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GreenLocation",
+        "source_native_name": "GreenLocation",
+        "source_label": "Green Location",
+        "source_definition": "A pick list of efficiencies involved with the property's location such as walkability or transportation proximity.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.GreenLocation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online and typically describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GreenLocation",
+        "source_native_name": "GreenLocation",
+        "source_label": "Green Location",
+        "source_definition": "A pick list describing efficiencies involved with the property's location such as walkability or transportation proximity without naming specific elements with ratings that may wane over time.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.GreenLocation",
+        "source_enum_ref": "org.reso.metadata.enums.GreenLocation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OpenParkingYN",
+        "source_native_name": "OpenParkingYN",
+        "source_label": "Open Parking Yes/No",
+        "source_definition": "A flag indicating that any parking spaces associated with the property are not covered by a roof.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OwnershipType",
+        "source_native_name": "OwnershipType",
+        "source_label": "Ownership Type",
+        "source_definition": "The current type of ownership of the business being sold (e.g., Corporation, LLC, Sole Proprietor, Partnership).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.OwnershipType",
+        "source_enum_ref": "org.reso.metadata.enums.OwnershipType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PublicRemarks",
+        "source_native_name": "PublicRemarks",
+        "source_label": "Public Remarks",
+        "source_definition": "Text remarks that may be displayed to the public. In an MLS, it is the field where information is entered for the public. This information is intended to be visible online. This is typically information that describes the selling points of the building and/or land for sale. Local conditions and rules will determine what such content can contain. Generally, any information pertaining to entry to the property, the seller and/or tenant, or listing member contact information is excluded. In other systems, these remarks will be determined by local business rules.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IncomeIncludes",
+        "source_native_name": "IncomeIncludes",
+        "source_label": "Income Includes",
+        "source_definition": "A list of income sources included in the GrossScheduledIncome and GrossIncome (e.g., Laundry, Parking, Recreation, Storage).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.IncomeIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.IncomeIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.NumberOfGarages",
+        "source_native_name": "NumberOfGarages",
+        "source_label": "Number of Garages",
+        "source_definition": "Indicates the number of parking garages included with the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParkingFeatures",
+        "source_native_name": "ParkingFeatures",
+        "source_label": "Parking Features",
+        "source_definition": "A pick list of features or descriptions of the parking garage or parking spaces.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.ParkingFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.ParkingFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LandLeaseAmount",
+        "source_native_name": "LandLeaseAmount",
+        "source_label": "Land Lease Amount",
+        "source_definition": "When the land is not included in the sale, but is leased, the amount of the lease. This is the space rent for mobile homes in a park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseExpiration",
+        "source_native_name": "LeaseExpiration",
+        "source_label": "Lease Expiration",
+        "source_definition": "The expiration date of the lease for the current location of the business.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Date",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkingFeatures",
+        "source_native_name": "ParkingFeatures",
+        "source_label": "Parking Features",
+        "source_definition": "A list of features about or a description of the parking included in the sale/lease.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ParkingFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.ParkingFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkManagerName",
+        "source_native_name": "ParkManagerName",
+        "source_label": "Park Manager Name",
+        "source_definition": "The name of the manager of the mobile home park.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SeatingCapacity",
+        "source_native_name": "SeatingCapacity",
+        "source_label": "Seating Capacity",
+        "source_definition": "The seating capacity of the business being sold.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "seating_capacity",
+          "ref": "base0001.seating_capacity@1",
+          "kind": "property",
+          "definition": "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons.",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.SpecialLicenses",
+        "source_native_name": "SpecialLicenses",
+        "source_label": "Special Licenses",
+        "source_definition": "Special licenses required/used by the business being sold (e.g., Beer/Wine, Class H, Professional, Gambling, None).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.SpecialLicenses",
+        "source_enum_ref": "org.reso.metadata.enums.SpecialLicenses",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.YearEstablished",
+        "source_native_name": "YearEstablished",
+        "source_label": "Year Established",
+        "source_definition": "The year the business being sold was established.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.AttachedGarageYN",
+        "source_native_name": "AttachedGarageYN",
+        "source_label": "Attached Garage Yes/No",
+        "source_definition": "Indicates whether or not the parking garage is attached to the building.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ElementarySchool",
+        "source_native_name": "ElementarySchool",
+        "source_label": "Elementary School",
+        "source_definition": "The name of the primary school having a catchment area that includes the associated property.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.ElementarySchool",
+        "source_enum_ref": "org.reso.metadata.enums.ElementarySchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AnchorsCoTenants",
+        "source_native_name": "AnchorsCoTenants",
+        "source_label": "Anchors & Cotenants",
+        "source_definition": "The main or most notable tenants as well as other tenants of the shopping center or mall in which the commercial property is located.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuildingFeatures",
+        "source_native_name": "BuildingFeatures",
+        "source_label": "Building Features",
+        "source_definition": "The features or amenities of the building or business park.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BuildingFeatures",
+        "source_enum_ref": "org.reso.metadata.enums.BuildingFeatures",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ElementarySchool",
+        "source_native_name": "ElementarySchool",
+        "source_label": "Elementary School",
+        "source_definition": "The name of the primary school having a catchment area that includes the associated property.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.ElementarySchool",
+        "source_enum_ref": "org.reso.metadata.enums.ElementarySchool",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LaborInformation",
+        "source_native_name": "LaborInformation",
+        "source_label": "Labor Information",
+        "source_definition": "Information about labor laws that are applicable to the business being sold (i.e., Union, Non-Union, Employee License Required).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.LaborInformation",
+        "source_enum_ref": "org.reso.metadata.enums.LaborInformation",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkingRatioUnit",
+        "source_native_name": "ParkingRatioUnit",
+        "source_label": "Parking Ratio Unit",
+        "source_definition": "A pick list of the unit of measurement for the area used in the calculation of ParkingRatio (e.g., Square Feet, Square Meters).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AreaUnits",
+        "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ParkManagerPhone",
+        "source_native_name": "ParkManagerPhone",
+        "source_label": "Park Manager Phone",
+        "source_definition": "North American 10-digit phone numbers should be in the format of ###-###-#### (separated by hyphens). Other conventions should use the common local standard. International numbers should be preceded by a plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyCategory",
+        "source_native_name": "PropertyCategory",
+        "source_label": "Property Category",
+        "source_definition": "Indicates the high-level category of the commercial property (e.g., Hospitality, Land, Retail).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertyCategory",
+        "source_enum_ref": "org.reso.metadata.enums.PropertyCategory",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CommercialUnitsYN",
+        "source_native_name": "CommercialUnitsYN",
+        "source_label": "Commercial Units Yes/No",
+        "source_definition": "Indicates whether or not there are any commercial units connected to the property (e.g., retail, office, hotel)",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.GarageSpacesTotal",
+        "source_native_name": "GarageSpacesTotal",
+        "source_label": "Garage Spaces Total",
+        "source_definition": "The total number of parking spaces in the building's parking garage(s).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParkingAssignedYN",
+        "source_native_name": "ParkingAssignedYN",
+        "source_label": "Parking Assigned Yes/No",
+        "source_definition": "Indicates whether or not the building includes assigned parking spaces (garaged or otherwise).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseAssignableYN",
+        "source_native_name": "LeaseAssignableYN",
+        "source_label": "Lease Assignable Yes/No",
+        "source_definition": "Indicates whether or not the lease at the current location of the business can be assigned to another party.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfRailDoors",
+        "source_native_name": "NumberOfRailDoors",
+        "source_label": "Number of Rail Doors",
+        "source_definition": "The number of rail doors included with the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
