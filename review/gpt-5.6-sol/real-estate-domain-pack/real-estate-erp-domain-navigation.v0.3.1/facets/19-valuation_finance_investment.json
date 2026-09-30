@@ -1,0 +1,3269 @@
+{
+  "macro_area": {
+    "id": "financial",
+    "order": 6,
+    "label": "Financial"
+  },
+  "subarea": {
+    "id": "valuation_finance_investment",
+    "order": 3,
+    "label": "Valuation, Finance and Investment",
+    "facet_number": 19,
+    "description": "Valuation observations, income, expenses, capex and investment metrics.",
+    "typical_concepts": {
+      "additional_property": {
+        "ref": "base0001.additional_property@1",
+        "kind": "property",
+        "definition": "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. https://schema.org/width, https://schema.org/color, https://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PropertyValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/additionalProperty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "amount": {
+        "ref": "base0001.amount@1",
+        "kind": "property",
+        "definition": "The amount of money.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/InvestmentOrDeposit",
+              "https://schema.org/LoanOrCredit",
+              "https://schema.org/MonetaryGrant",
+              "https://schema.org/MoneyTransfer"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/amount",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "annual_percentage_rate": {
+        "ref": "base0001.annual_percentage_rate@1",
+        "kind": "property",
+        "definition": "The annual rate that is charged for borrowing (or made by investing), expressed as a single percentage number that represents the actual yearly cost of funds over the term of a loan. This includes any fees or additional costs associated with the transaction.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/FinancialProduct"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/annualPercentageRate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "currency": {
+        "ref": "base0001.currency@1",
+        "kind": "property",
+        "definition": "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/ExchangeRateSpecification",
+              "https://schema.org/LoanOrCredit",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/MonetaryAmountDistribution"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/currency",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "end_date": {
+        "ref": "base0001.end_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/JobPosting",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/endDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validThrough",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasEndDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "fees_and_commissions_specification": {
+        "ref": "base0001.fees_and_commissions_specification@1",
+        "kind": "property",
+        "definition": "Description of fees, commissions, and other terms applied either to a class of financial product, or by a financial service organization.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/FinancialProduct",
+              "https://schema.org/FinancialService"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/feesAndCommissionsSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "grace_period": {
+        "ref": "base0001.grace_period@1",
+        "kind": "property",
+        "definition": "The period of time after any due date that the borrower has to fulfil its obligations before a default (failure to pay) is deemed to have occurred.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Duration"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/gracePeriod",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_start_date": {
+        "ref": "base0001.has_start_date@1",
+        "kind": "property",
+        "definition": "",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Certification",
+              "https://schema.org/CreativeWorkSeason",
+              "https://schema.org/CreativeWorkSeries",
+              "https://schema.org/DatedMoneySpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/EducationalOccupationalProgram",
+              "https://schema.org/Event",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/LocationFeatureSpecification",
+              "https://schema.org/MerchantReturnPolicySeasonalOverride",
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/Offer",
+              "https://schema.org/OpeningHoursSpecification",
+              "https://schema.org/Permit",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Role",
+              "https://schema.org/Schedule"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Date",
+              "https://schema.org/DateTime"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/startDate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/validFrom",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://www.omg.org/spec/Commons/DatesAndTimes/hasStartDate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "interest_rate": {
+        "ref": "base0001.interest_rate@1",
+        "kind": "property",
+        "definition": "The interest rate, charged or paid, applicable to the financial product. Note: This is different from the calculated annualPercentageRate.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/FinancialProduct"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/interestRate",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "loan_repayment_form": {
+        "ref": "base0001.loan_repayment_form@1",
+        "kind": "property",
+        "definition": "A form of paying back money previously borrowed from a lender. Repayment usually takes the form of periodic payments that normally include part principal plus interest in each payment.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/RepaymentSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/loanRepaymentForm",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "loan_term": {
+        "ref": "base0001.loan_term@1",
+        "kind": "property",
+        "definition": "The duration of the loan or credit agreement.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [
+              "https://schema.org/duration"
+            ],
+            "range_refs": [
+              "https://schema.org/QuantitativeValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/loanTerm",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "loan_type": {
+        "ref": "base0001.loan_type@1",
+        "kind": "property",
+        "definition": "The type of a loan or credit.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/loanType",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "max_value": {
+        "ref": "base0001.max_value@1",
+        "kind": "property",
+        "definition": "The upper value of some characteristic or property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/PropertyValueSpecification",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Quantities/hasUpperBound"
+            ],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maxValue",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "measurement_method": {
+        "ref": "base0001.measurement_method@1",
+        "kind": "property",
+        "definition": "A subproperty of [[measurementTechnique]] that can be used for specifying specific methods, in particular via [[MeasurementMethodEnum]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DataCatalog",
+              "https://schema.org/DataDownload",
+              "https://schema.org/Dataset",
+              "https://schema.org/Observation",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/StatisticalVariable"
+            ],
+            "parent_refs": [
+              "https://schema.org/measurementTechnique"
+            ],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/MeasurementMethodEnum",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/measurementMethod",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "measurement_technique": {
+        "ref": "base0001.measurement_technique@1",
+        "kind": "property",
+        "definition": "A technique, method or technology used in an [[Observation]], [[StatisticalVariable]] or [[Dataset]] (or [[DataDownload]], [[DataCatalog]]), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using [[variableMeasured]]; for [[Observation]], a [[StatisticalVariable]]). Often but not necessarily each [[variableMeasured]] will have an explicit representation as (or mapping to) an property such as those defined in Schema.org, or other RDF vocabularies and \"knowledge graphs\". In that case the subproperty of [[variableMeasured]] called [[measuredProperty]] is applicable.\n    \nThe [[measurementTechnique]] property helps when extra clarification is needed about how a [[measuredProperty]] was measured. This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but can often serve as a high level summary for dataset discovery. \n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\". If the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\". \n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]]. The value can also be from an enumeration, organized as a [[MeasurementMethodEnum]].",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DataCatalog",
+              "https://schema.org/DataDownload",
+              "https://schema.org/Dataset",
+              "https://schema.org/Observation",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/StatisticalVariable"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/MeasurementMethodEnum",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/measurementTechnique",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "min_value": {
+        "ref": "base0001.min_value@1",
+        "kind": "property",
+        "definition": "The lower value of some characteristic or property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/PropertyValueSpecification",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Quantities/hasLowerBound"
+            ],
+            "range_refs": [
+              "https://schema.org/Number"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/minValue",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price": {
+        "ref": "base0001.price@1",
+        "kind": "property",
+        "definition": "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.\\n\\nUsage guidelines:\\n\\n* Use the [[priceCurrency]] property (with standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\") instead of including [ambiguous symbols](http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign) such as '$' in the value.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.\\n* Note that both [RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute) and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasAmount",
+              "https://www.omg.org/spec/Commons/Quantities/hasNumericValue"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/price",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price_currency": {
+        "ref": "base0001.price_currency@1",
+        "kind": "property",
+        "definition": "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/PriceSpecification",
+              "https://schema.org/Reservation",
+              "https://schema.org/Ticket",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceCurrency",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "price_specification": {
+        "ref": "base0001.price_specification@1",
+        "kind": "property",
+        "definition": "One or more detailed price specifications, indicating the unit price and delivery or payment charges.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Demand",
+              "https://schema.org/DonateAction",
+              "https://schema.org/Offer",
+              "https://schema.org/TradeAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PriceSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/priceSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "property_id": {
+        "ref": "base0001.property_id@1",
+        "kind": "property",
+        "definition": "A commonly used identifier for the characteristic represented by the property, e.g. a manufacturer or a standard code for a property. propertyID can be\n(1) a prefixed string, mainly meant to be used with standards for product properties; (2) a site-specific, non-prefixed string (e.g. the primary key of the property or the vendor-specific ID of the property), or (3)\na URL indicating the type of the property, either pointing to an external vocabulary, or a Web resource that describes the property (e.g. a glossary entry).\nStandards bodies should promote a standard prefix for the identifiers of properties from their standards.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PropertyValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/propertyID",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "recourse_loan": {
+        "ref": "base0001.recourse_loan@1",
+        "kind": "property",
+        "definition": "The only way you get the money back in the event of default is the security. Recourse is where you still have the opportunity to go back to the borrower for the rest of the money.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/recourseLoan",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "renegotiable_loan": {
+        "ref": "base0001.renegotiable_loan@1",
+        "kind": "property",
+        "definition": "Whether the terms for payment of interest can be renegotiated during the life of the loan.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/renegotiableLoan",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "required_collateral": {
+        "ref": "base0001.required_collateral@1",
+        "kind": "property",
+        "definition": "Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/LoanOrCredit"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/Thing"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/requiredCollateral",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "unit_code": {
+        "ref": "base0001.unit_code@1",
+        "kind": "property",
+        "definition": "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PropertyValue",
+              "https://schema.org/QuantitativeValue",
+              "https://schema.org/TypeAndQuantityNode",
+              "https://schema.org/UnitPriceSpecification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/unitCode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "unit_text": {
+        "ref": "base0001.unit_text@1",
+        "kind": "property",
+        "definition": "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PropertyValue",
+              "https://schema.org/QuantitativeValue",
+              "https://schema.org/TypeAndQuantityNode",
+              "https://schema.org/UnitPriceSpecification"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/unitText",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "value__6cd2a6da": {
+        "ref": "base0001.value__6cd2a6da@1",
+        "kind": "property",
+        "definition": "The value of a [[QuantitativeValue]] (including [[Observation]]) or property value node.\\n\\n* For [[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for values is 'Number'.\\n* For [[PropertyValue]], it can be 'Text', 'Number', 'Boolean', 'StructuredValue' or 'QualitativeValue'.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MonetaryAmount",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean",
+              "https://schema.org/Number",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/StructuredValue",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/value",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "value_group": {
+        "ref": "base0001.value_group@1",
+        "kind": "property",
+        "definition": "A header or section name for grouping related property values.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PropertyValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/valueGroup",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "value_reference": {
+        "ref": "base0001.value_reference@1",
+        "kind": "property",
+        "definition": "A secondary value that provides additional information on the original value, e.g. a reference temperature or a type of measurement.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PropertyValue",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/Enumeration",
+              "https://schema.org/MeasurementTypeEnumeration",
+              "https://schema.org/PropertyValue",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/QuantitativeValue",
+              "https://schema.org/StructuredValue",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/valueReference",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "invariants": [
+      "ValuationObservation != ValuationReport"
+    ],
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CapRate",
+        "source_native_name": "CapRate",
+        "source_label": "Cap Rate",
+        "source_definition": "The equivalent to the return on investment you would receive if you pay cash for a property. The ratio between the net operating income produced by an asset and its capital cost (the original price paid to buy the asset) or alternatively its current market value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AirRights",
+        "source_native_name": "AirRights",
+        "source_label": "Air Rights",
+        "source_definition": "The amount of vertical space extending above the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitTypes",
+        "source_native_name": "UnitTypes",
+        "source_label": "Unit Types",
+        "source_definition": "A collection of types of units included in the income (multifamily) property. The collection includes a type, beds, baths and other aspects of the type of unit behind described.",
+        "source_resource": "Property",
+        "source_data_type": "Collection(org.reso.metadata.PropertyUnitTypes)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GrossIncome",
+        "source_native_name": "GrossIncome",
+        "source_label": "Gross Income",
+        "source_definition": "The actual current income from rent and all other revenue-generating sources.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OtherIncome",
+        "source_native_name": "OtherIncome",
+        "source_label": "Other Income",
+        "source_definition": "The total of all other possible incomes for the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AirRightsUnit",
+        "source_native_name": "AirRightsUnit",
+        "source_label": "Air Rights Unit",
+        "source_definition": "A pick list of the unit of measurement of vertical space extending above the commercial property (e.g., Square Feet, Square Meters).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AreaUnits",
+        "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupancyRate",
+        "source_native_name": "OccupancyRate",
+        "source_label": "Occupancy Rate",
+        "source_definition": "Indicates how much space of the property is occupied/leased compared to how much space is available.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerFinancing",
+        "source_native_name": "BuyerFinancing",
+        "source_label": "Buyer Financing",
+        "source_definition": "A list of options that describe the type of financing used. This field is used when setting a listing to Closed (i.e., Cash, FHA Loan, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BuyerFinancing",
+        "source_enum_ref": "org.reso.metadata.enums.BuyerFinancing",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IncomeIncludes",
+        "source_native_name": "IncomeIncludes",
+        "source_label": "Income Includes",
+        "source_definition": "A list of income sources included in the GrossScheduledIncome and GrossIncome (e.g., Laundry, Parking, Recreation, Storage).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.IncomeIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.IncomeIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ProFormaCapRate",
+        "source_native_name": "ProFormaCapRate",
+        "source_label": "Pro Forma Cap Rate",
+        "source_definition": "The projected capitalization rate of a property based on its potential net operating income (NOI) rather than its current, actual performance.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TotalActualRent",
+        "source_native_name": "TotalActualRent",
+        "source_label": "Total Actual Rent",
+        "source_definition": "Total actual rent currently being collected from tenants of the income property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentFinancing",
+        "source_native_name": "CurrentFinancing",
+        "source_label": "Current Financing",
+        "source_definition": "A list of options that describe the type of financing that the seller currently has in place for the property being sold (i.e., Cash, FHA Loan, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentFinancing",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentFinancing",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationSource",
+        "source_native_name": "IrrigationSource",
+        "source_label": "Irrigation Source",
+        "source_definition": "The source which the property receives its water for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.IrrigationSource",
+        "source_enum_ref": "org.reso.metadata.enums.IrrigationSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OperatingExpense",
+        "source_native_name": "OperatingExpense",
+        "source_label": "Operating Expense",
+        "source_definition": "The costs associated with the operation and maintenance of an income-producing property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfBuildings",
+        "source_native_name": "NumberOfBuildings",
+        "source_label": "Number Of Buildings",
+        "source_definition": "The total number of separate buildings included in the income property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NetOperatingIncome",
+        "source_native_name": "NetOperatingIncome",
+        "source_label": "Net Operating Income",
+        "source_definition": "The net operating income is the revenue from a property after operating expenses have been deducted but before deducting income taxes and financing expenses (interest and principal payments). For example, gross income - operating expenses = net operating income (NOI).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfUnitsTotal",
+        "source_native_name": "NumberOfUnitsTotal",
+        "source_label": "Number Of Units Total",
+        "source_definition": "Total number of units included in the income property, occupied or unoccupied.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FinancialDataSource",
+        "source_native_name": "FinancialDataSource",
+        "source_label": "Financial Data Source",
+        "source_definition": "The source of the rental information (e.g., Accountant, Owner).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.FinancialDataSource",
+        "source_enum_ref": "org.reso.metadata.enums.FinancialDataSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GrossScheduledIncome",
+        "source_native_name": "GrossScheduledIncome",
+        "source_label": "Gross Scheduled Income",
+        "source_definition": "The maximum amount of annual rent collected if the property were 100% occupied all year and all tenants paid their rent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsYN",
+        "source_native_name": "IrrigationWaterRightsYN",
+        "source_label": "Irrigation Water Rights Yes/No",
+        "source_definition": "Indicates whether or not the property includes water rights for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsAcres",
+        "source_native_name": "IrrigationWaterRightsAcres",
+        "source_label": "Irrigation Water Rights Acres",
+        "source_definition": "The number of acres allowed under the property's water rights.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.InternetAutomatedValuationDisplayYN",
+        "source_native_name": "InternetAutomatedValuationDisplayYN",
+        "source_label": "Internet Automated Valuation Display Yes/No",
+        "source_definition": "Indicates whether or not the seller allows the listing to be displayed with an automated valuation model (AVM) on Internet sites.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations",
+        "source_native_name": "valuations",
+        "source_label": "Valuation reports",
+        "source_definition": "Valuation reports associated with the transaction",
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData",
+        "source_native_name": "valuationComparisonData",
+        "source_label": "Valuation Comparison Data",
+        "source_definition": "A collection of data used to compare the valuations (market values) of properties in the real estate or property market.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].rentalValue",
+        "source_native_name": "rentalValue",
+        "source_label": "rentalValue",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].valuationId",
+        "source_native_name": "valuationId",
+        "source_label": "valuationId",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].capitalValue",
+        "source_native_name": "capitalValue",
+        "source_label": "capitalValue",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.otherIssues.excessiveNoise",
+        "source_native_name": "excessiveNoise",
+        "source_label": "To your knowledge, has anyone occupying the property been disturbed by excessive noise which is likely to reoccur at the property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].valuationType",
+        "source_native_name": "valuationType",
+        "source_label": "valuationType",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyDetails",
+        "source_native_name": "propertyDetails",
+        "source_label": "Property Details",
+        "source_definition": "Details and information related to individual properties for valuation comparison.",
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyPricing",
+        "source_native_name": "propertyPricing",
+        "source_label": "Property Pricing Estimates",
+        "source_definition": "Detailed property pricing estimates, including rental estimates, market value, and yield calculations.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].propertyValuation",
+        "source_native_name": "propertyValuation",
+        "source_label": "propertyValuation",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].confidenceBand",
+        "source_native_name": "confidenceBand",
+        "source_label": "confidenceBand",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].confidenceLevel",
+        "source_native_name": "confidenceLevel",
+        "source_label": "confidenceLevel",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "number",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].instructionType",
+        "source_native_name": "instructionType",
+        "source_label": "instructionType",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].valuationContext",
+        "source_native_name": "valuationContext",
+        "source_label": "valuationContext",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.energyEfficiency.greenDealLoan",
+        "source_native_name": "greenDealLoan",
+        "source_label": "Green Deal Loan",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].misc.valuationFactor",
+        "source_native_name": "valuationFactor",
+        "source_label": "valuationFactor",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].reinstatementCost",
+        "source_native_name": "reinstatementCost",
+        "source_label": "reinstatementCost",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].valuationTimestamp",
+        "source_native_name": "valuationTimestamp",
+        "source_label": "valuationTimestamp",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.otherIssues.excessiveNoise.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.ownership.hasHelpToBuyEquityLoan",
+        "source_native_name": "hasHelpToBuyEquityLoan",
+        "source_label": "Is the property being sold with a Help to Buy equity loan outstanding?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].checkValuationResult",
+        "source_native_name": "checkValuationResult",
+        "source_label": "checkValuationResult",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyDetails[].uprn",
+        "source_native_name": "uprn",
+        "source_label": "Unique Property Reference Number (UPRN)",
+        "source_definition": "A unique identifier for the property.",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.fixturesAndFittings.itemsToInclude",
+        "source_native_name": "itemsToInclude",
+        "source_label": "Are there additional furniture items or possessions are you very likely to include in the sale, irrespective of sale price?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].rentalConfidenceLevel",
+        "source_native_name": "rentalConfidenceLevel",
+        "source_label": "rentalConfidenceLevel",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "number",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyDetails[].media",
+        "source_native_name": "media",
+        "source_label": "Media",
+        "source_definition": "Media content related to the property listing.",
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "market_value",
+        "label": "market value",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuation_date",
+        "label": "valuation date",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuation_method",
+        "label": "valuation method",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "assessor",
+        "label": "assessor",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuation_observation",
+        "label": "valuation observation",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuation_report",
+        "label": "valuation report",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "rental_income",
+        "label": "rental income",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "net_operating_income",
+        "label": "net operating income",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.NetOperatingIncome",
+            "source_native_name": "NetOperatingIncome",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "occupancy_rate",
+        "label": "occupancy rate",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OccupancyRate",
+            "source_native_name": "OccupancyRate",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "vacancy",
+        "label": "vacancy",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "capex",
+        "label": "capex",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "operating_expenditure",
+        "label": "operating expenditure",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "asset_performance",
+        "label": "asset performance",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "portfolio_metric",
+        "label": "portfolio metric",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "investment_metric",
+        "label": "investment metric",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "cap_rate",
+        "label": "cap rate",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CapRate",
+            "source_native_name": "CapRate",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "air_rights",
+        "label": "air rights",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AirRights",
+            "source_native_name": "AirRights",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "unit_types",
+        "label": "unit types",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UnitTypes",
+            "source_native_name": "UnitTypes",
+            "source_data_type": "Collection(org.reso.metadata.PropertyUnitTypes)",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "gross_income",
+        "label": "gross income",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GrossIncome",
+            "source_native_name": "GrossIncome",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "other_income",
+        "label": "other income",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OtherIncome",
+            "source_native_name": "OtherIncome",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_type",
+        "label": "property type",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PropertyType",
+            "source_native_name": "PropertyType",
+            "source_data_type": "org.reso.metadata.enums.PropertyType",
+            "source_enum_ref": "org.reso.metadata.enums.PropertyType",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "accommodation_category",
+              "ref": "base0001.accommodation_category@1",
+              "kind": "property",
+              "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "air_rights_unit",
+        "label": "air rights unit",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.AirRightsUnit",
+            "source_native_name": "AirRightsUnit",
+            "source_data_type": "org.reso.metadata.enums.AreaUnits",
+            "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "buyer_financing",
+        "label": "buyer financing",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.BuyerFinancing",
+            "source_native_name": "BuyerFinancing",
+            "source_data_type": "org.reso.metadata.enums.BuyerFinancing",
+            "source_enum_ref": "org.reso.metadata.enums.BuyerFinancing",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "income_includes",
+        "label": "income includes",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IncomeIncludes",
+            "source_native_name": "IncomeIncludes",
+            "source_data_type": "org.reso.metadata.enums.IncomeIncludes",
+            "source_enum_ref": "org.reso.metadata.enums.IncomeIncludes",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "pro_forma_cap_rate",
+        "label": "pro forma cap rate",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.ProFormaCapRate",
+            "source_native_name": "ProFormaCapRate",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "total_actual_rent",
+        "label": "total actual rent",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TotalActualRent",
+            "source_native_name": "TotalActualRent",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "current_financing",
+        "label": "current financing",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CurrentFinancing",
+            "source_native_name": "CurrentFinancing",
+            "source_data_type": "org.reso.metadata.enums.CurrentFinancing",
+            "source_enum_ref": "org.reso.metadata.enums.CurrentFinancing",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "irrigation_source",
+        "label": "irrigation source",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IrrigationSource",
+            "source_native_name": "IrrigationSource",
+            "source_data_type": "org.reso.metadata.enums.IrrigationSource",
+            "source_enum_ref": "org.reso.metadata.enums.IrrigationSource",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "operating_expense",
+        "label": "operating expense",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.OperatingExpense",
+            "source_native_name": "OperatingExpense",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "number_of_buildings",
+        "label": "number of buildings",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.NumberOfBuildings",
+            "source_native_name": "NumberOfBuildings",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "number_of_units_total",
+        "label": "number of units total",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.NumberOfUnitsTotal",
+            "source_native_name": "NumberOfUnitsTotal",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "financial_data_source",
+        "label": "financial data source",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.FinancialDataSource",
+            "source_native_name": "FinancialDataSource",
+            "source_data_type": "org.reso.metadata.enums.FinancialDataSource",
+            "source_enum_ref": "org.reso.metadata.enums.FinancialDataSource",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "gross_scheduled_income",
+        "label": "gross scheduled income",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.GrossScheduledIncome",
+            "source_native_name": "GrossScheduledIncome",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "irrigation_water_rights_yn",
+        "label": "irrigation water rights yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IrrigationWaterRightsYN",
+            "source_native_name": "IrrigationWaterRightsYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "irrigation_water_rights_acres",
+        "label": "irrigation water rights acres",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.IrrigationWaterRightsAcres",
+            "source_native_name": "IrrigationWaterRightsAcres",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "internet_automated_valuation_display_yn",
+        "label": "internet automated valuation display yes/no",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.InternetAutomatedValuationDisplayYN",
+            "source_native_name": "InternetAutomatedValuationDisplayYN",
+            "source_data_type": "Edm.Boolean",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "property_pack_valuations",
+        "label": "valuation reports",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "propertyPack.valuations",
+            "source_native_name": "valuations",
+            "source_data_type": "array",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "valuation_comparison_data",
+        "label": "valuation comparison data",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "valuationComparisonData",
+            "source_native_name": "valuationComparisonData",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "valuations_rental_value",
+        "label": "rentalvalue",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_valuation_id",
+        "label": "valuationid",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_capital_value",
+        "label": "capitalvalue",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "other_issues_excessive_noise",
+        "label": "to your knowledge, has anyone occupying the property been disturbed by excessive noise which is likely to reoccur at the property?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_valuation_type",
+        "label": "valuationtype",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuation_comparison_data_property_details",
+        "label": "property details",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "valuationComparisonData.propertyDetails",
+            "source_native_name": "propertyDetails",
+            "source_data_type": "array",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "valuation_comparison_data_property_pricing",
+        "label": "property pricing estimates",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "PDTF 3.5.0",
+            "source_path": "valuationComparisonData.propertyPricing",
+            "source_native_name": "propertyPricing",
+            "source_data_type": "object",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "surveys_property_valuation",
+        "label": "propertyvaluation",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_confidence_band",
+        "label": "confidenceband",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_confidence_level",
+        "label": "confidencelevel",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_instruction_type",
+        "label": "instructiontype",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_valuation_context",
+        "label": "valuationcontext",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "energy_efficiency_green_deal_loan",
+        "label": "green deal loan",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "misc_valuation_factor",
+        "label": "valuationfactor",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_reinstatement_cost",
+        "label": "reinstatementcost",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_valuation_timestamp",
+        "label": "valuationtimestamp",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "excessive_noise_yes_no",
+        "label": "yesno",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "ownership_has_help_to_buy_equity_loan",
+        "label": "is the property being sold with a help to buy equity loan outstanding?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "property_pricing_yield",
+        "label": "yield",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_check_valuation_result",
+        "label": "checkvaluationresult",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "property_details_uprn",
+        "label": "unique property reference number (uprn)",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "fixtures_and_fittings_items_to_include",
+        "label": "are there additional furniture items or possessions are you very likely to include in the sale, irrespective of sale price?",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "valuations_rental_confidence_level",
+        "label": "rentalconfidencelevel",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "property_details_media",
+        "label": "media",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CapRate",
+        "source_native_name": "CapRate",
+        "source_label": "Cap Rate",
+        "source_definition": "The equivalent to the return on investment you would receive if you pay cash for a property. The ratio between the net operating income produced by an asset and its capital cost (the original price paid to buy the asset) or alternatively its current market value.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AirRights",
+        "source_native_name": "AirRights",
+        "source_label": "Air Rights",
+        "source_definition": "The amount of vertical space extending above the commercial property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitTypes",
+        "source_native_name": "UnitTypes",
+        "source_label": "Unit Types",
+        "source_definition": "A collection of types of units included in the income (multifamily) property. The collection includes a type, beds, baths and other aspects of the type of unit behind described.",
+        "source_resource": "Property",
+        "source_data_type": "Collection(org.reso.metadata.PropertyUnitTypes)",
+        "source_enum_ref": null,
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GrossIncome",
+        "source_native_name": "GrossIncome",
+        "source_label": "Gross Income",
+        "source_definition": "The actual current income from rent and all other revenue-generating sources.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OtherIncome",
+        "source_native_name": "OtherIncome",
+        "source_label": "Other Income",
+        "source_definition": "The total of all other possible incomes for the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PropertyType",
+        "source_native_name": "PropertyType",
+        "source_label": "Property Type",
+        "source_definition": "A list of types of properties (e.g., Residential, Lease, Income, Land, Mobile, Commercial Sale).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PropertyType",
+        "source_enum_ref": "org.reso.metadata.enums.PropertyType",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "accommodation_category",
+          "ref": "base0001.accommodation_category@1",
+          "kind": "property",
+          "definition": "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.AirRightsUnit",
+        "source_native_name": "AirRightsUnit",
+        "source_label": "Air Rights Unit",
+        "source_definition": "A pick list of the unit of measurement of vertical space extending above the commercial property (e.g., Square Feet, Square Meters).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.AreaUnits",
+        "source_enum_ref": "org.reso.metadata.enums.AreaUnits",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OccupancyRate",
+        "source_native_name": "OccupancyRate",
+        "source_label": "Occupancy Rate",
+        "source_definition": "Indicates how much space of the property is occupied/leased compared to how much space is available.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.BuyerFinancing",
+        "source_native_name": "BuyerFinancing",
+        "source_label": "Buyer Financing",
+        "source_definition": "A list of options that describe the type of financing used. This field is used when setting a listing to Closed (i.e., Cash, FHA Loan, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.BuyerFinancing",
+        "source_enum_ref": "org.reso.metadata.enums.BuyerFinancing",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IncomeIncludes",
+        "source_native_name": "IncomeIncludes",
+        "source_label": "Income Includes",
+        "source_definition": "A list of income sources included in the GrossScheduledIncome and GrossIncome (e.g., Laundry, Parking, Recreation, Storage).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.IncomeIncludes",
+        "source_enum_ref": "org.reso.metadata.enums.IncomeIncludes",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.ProFormaCapRate",
+        "source_native_name": "ProFormaCapRate",
+        "source_label": "Pro Forma Cap Rate",
+        "source_definition": "The projected capitalization rate of a property based on its potential net operating income (NOI) rather than its current, actual performance.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TotalActualRent",
+        "source_native_name": "TotalActualRent",
+        "source_label": "Total Actual Rent",
+        "source_definition": "Total actual rent currently being collected from tenants of the income property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CurrentFinancing",
+        "source_native_name": "CurrentFinancing",
+        "source_label": "Current Financing",
+        "source_definition": "A list of options that describe the type of financing that the seller currently has in place for the property being sold (i.e., Cash, FHA Loan, etc.).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.CurrentFinancing",
+        "source_enum_ref": "org.reso.metadata.enums.CurrentFinancing",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationSource",
+        "source_native_name": "IrrigationSource",
+        "source_label": "Irrigation Source",
+        "source_definition": "The source which the property receives its water for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.IrrigationSource",
+        "source_enum_ref": "org.reso.metadata.enums.IrrigationSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.OperatingExpense",
+        "source_native_name": "OperatingExpense",
+        "source_label": "Operating Expense",
+        "source_definition": "The costs associated with the operation and maintenance of an income-producing property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfBuildings",
+        "source_native_name": "NumberOfBuildings",
+        "source_label": "Number Of Buildings",
+        "source_definition": "The total number of separate buildings included in the income property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NetOperatingIncome",
+        "source_native_name": "NetOperatingIncome",
+        "source_label": "Net Operating Income",
+        "source_definition": "The net operating income is the revenue from a property after operating expenses have been deducted but before deducting income taxes and financing expenses (interest and principal payments). For example, gross income - operating expenses = net operating income (NOI).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.NumberOfUnitsTotal",
+        "source_native_name": "NumberOfUnitsTotal",
+        "source_label": "Number Of Units Total",
+        "source_definition": "Total number of units included in the income property, occupied or unoccupied.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.FinancialDataSource",
+        "source_native_name": "FinancialDataSource",
+        "source_label": "Financial Data Source",
+        "source_definition": "The source of the rental information (e.g., Accountant, Owner).",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.FinancialDataSource",
+        "source_enum_ref": "org.reso.metadata.enums.FinancialDataSource",
+        "source_is_collection": true,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.GrossScheduledIncome",
+        "source_native_name": "GrossScheduledIncome",
+        "source_label": "Gross Scheduled Income",
+        "source_definition": "The maximum amount of annual rent collected if the property were 100% occupied all year and all tenants paid their rent.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsYN",
+        "source_native_name": "IrrigationWaterRightsYN",
+        "source_label": "Irrigation Water Rights Yes/No",
+        "source_definition": "Indicates whether or not the property includes water rights for irrigation.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.IrrigationWaterRightsAcres",
+        "source_native_name": "IrrigationWaterRightsAcres",
+        "source_label": "Irrigation Water Rights Acres",
+        "source_definition": "The number of acres allowed under the property's water rights.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.InternetAutomatedValuationDisplayYN",
+        "source_native_name": "InternetAutomatedValuationDisplayYN",
+        "source_label": "Internet Automated Valuation Display Yes/No",
+        "source_definition": "Indicates whether or not the seller allows the listing to be displayed with an automated valuation model (AVM) on Internet sites.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Boolean",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations",
+        "source_native_name": "valuations",
+        "source_label": "Valuation reports",
+        "source_definition": "Valuation reports associated with the transaction",
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData",
+        "source_native_name": "valuationComparisonData",
+        "source_label": "Valuation Comparison Data",
+        "source_definition": "A collection of data used to compare the valuations (market values) of properties in the real estate or property market.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].rentalValue",
+        "source_native_name": "rentalValue",
+        "source_label": "rentalValue",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].valuationId",
+        "source_native_name": "valuationId",
+        "source_label": "valuationId",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].capitalValue",
+        "source_native_name": "capitalValue",
+        "source_label": "capitalValue",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.otherIssues.excessiveNoise",
+        "source_native_name": "excessiveNoise",
+        "source_label": "To your knowledge, has anyone occupying the property been disturbed by excessive noise which is likely to reoccur at the property?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].valuationType",
+        "source_native_name": "valuationType",
+        "source_label": "valuationType",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyDetails",
+        "source_native_name": "propertyDetails",
+        "source_label": "Property Details",
+        "source_definition": "Details and information related to individual properties for valuation comparison.",
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyPricing",
+        "source_native_name": "propertyPricing",
+        "source_label": "Property Pricing Estimates",
+        "source_definition": "Detailed property pricing estimates, including rental estimates, market value, and yield calculations.",
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].propertyValuation",
+        "source_native_name": "propertyValuation",
+        "source_label": "propertyValuation",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].confidenceBand",
+        "source_native_name": "confidenceBand",
+        "source_label": "confidenceBand",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].confidenceLevel",
+        "source_native_name": "confidenceLevel",
+        "source_label": "confidenceLevel",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "number",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].instructionType",
+        "source_native_name": "instructionType",
+        "source_label": "instructionType",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].valuationContext",
+        "source_native_name": "valuationContext",
+        "source_label": "valuationContext",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.energyEfficiency.greenDealLoan",
+        "source_native_name": "greenDealLoan",
+        "source_label": "Green Deal Loan",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.surveys[].misc.valuationFactor",
+        "source_native_name": "valuationFactor",
+        "source_label": "valuationFactor",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].reinstatementCost",
+        "source_native_name": "reinstatementCost",
+        "source_label": "reinstatementCost",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "integer",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].valuationTimestamp",
+        "source_native_name": "valuationTimestamp",
+        "source_label": "valuationTimestamp",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.otherIssues.excessiveNoise.yesNo",
+        "source_native_name": "yesNo",
+        "source_label": "yesNo",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.ownership.hasHelpToBuyEquityLoan",
+        "source_native_name": "hasHelpToBuyEquityLoan",
+        "source_label": "Is the property being sold with a Help to Buy equity loan outstanding?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyPricing.yield",
+        "source_native_name": "yield",
+        "source_label": "Yield",
+        "source_definition": "Return on investment (ROI) generated by an income-producing asset",
+        "source_resource": null,
+        "source_data_type": "number",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "yield",
+          "ref": "base0001.yield@1",
+          "kind": "property",
+          "definition": "The quantity that results by performing instructions. For example, a paper airplane, 10 personalized candles.",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].checkValuationResult",
+        "source_native_name": "checkValuationResult",
+        "source_label": "checkValuationResult",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyDetails[].uprn",
+        "source_native_name": "uprn",
+        "source_label": "Unique Property Reference Number (UPRN)",
+        "source_definition": "A unique identifier for the property.",
+        "source_resource": null,
+        "source_data_type": "string",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.fixturesAndFittings.itemsToInclude",
+        "source_native_name": "itemsToInclude",
+        "source_label": "Are there additional furniture items or possessions are you very likely to include in the sale, irrespective of sale price?",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "object",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "propertyPack.valuations[].rentalConfidenceLevel",
+        "source_native_name": "rentalConfidenceLevel",
+        "source_label": "rentalConfidenceLevel",
+        "source_definition": null,
+        "source_resource": null,
+        "source_data_type": "number",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "PDTF 3.5.0",
+        "source_id": "opda-pdtf-3.5.0",
+        "source_path": "valuationComparisonData.propertyDetails[].media",
+        "source_native_name": "media",
+        "source_label": "Media",
+        "source_definition": "Media content related to the property listing.",
+        "source_resource": null,
+        "source_data_type": "array",
+        "source_enum_ref": null,
+        "source_is_collection": null,
+        "source_nullable": null,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
