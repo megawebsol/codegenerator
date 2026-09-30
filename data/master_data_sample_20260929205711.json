@@ -1,0 +1,370 @@
+{
+  "sample_id": "master_data_sample_20260929205711",
+  "generated_at": "2026-09-29T20:57:11-03:00",
+  "timezone": "America/Sao_Paulo",
+  "schema": "real-estate-domain-virtual-pack-master-sample",
+  "schema_version": "1.0.0",
+  "purpose": "Fixture mestre de um único ativo imobiliário composto, para geração e validação do Domain Virtual Pack Real Estate.",
+  "source_documents": [
+    "data/imobiflow-database.json",
+    "data/real-estate-property-hierarchy.json",
+    "imoveltree.md",
+    "../basicquipudb/domainpacks/real_estate/generated/real-estate-lexicon.yaml",
+    "../basicquipudb/domainpacks/real_estate/generated/real-estate-manifests.yaml",
+    "../basicquipudb/domainpacks/real_estate/generated/real-estate-invariants.yaml"
+  ],
+  "asset": {
+    "entity_type": "RealEstateAsset",
+    "asset_id": "IM-2026-00481",
+    "status": "ready_for_publication",
+    "display_name": "Apartamento Jardins 142",
+    "semantic_id": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+    "asset_type": "LegalPropertyUnit",
+    "workspace": "real_estate",
+    "jurisdiction": {
+      "country": "BR",
+      "state": "SP",
+      "city": "São Paulo",
+      "municipality_code": "3550308",
+      "registry_system": "Brazilian real estate registry"
+    },
+    "identity": {
+      "legal_property_unit": {
+        "id": "lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211",
+        "type": "LegalPropertyUnit",
+        "label": "Unidade autônoma residencial 1404",
+        "usage": "residential",
+        "status": "active",
+        "valid_from": "2018-08-01",
+        "valid_to": null
+      },
+      "external_identifiers": [
+        {"system": "imobiflow", "key": "asset_id", "value": "IM-2026-00481"},
+        {"system": "municipal_tax", "key": "inscricao_imobiliaria", "value": "09.123.045.001-7"},
+        {"system": "condominium", "key": "unit_reference", "value": "T1-1404"},
+        {"system": "internal_listing", "key": "listing_id", "value": "listing-jardins-142"}
+      ]
+    },
+    "registry_evidence": [
+      {
+        "id": "registry-evidence-184729",
+        "type": "matricula",
+        "number": "184.729",
+        "office": "4º Registro de Imóveis de São Paulo",
+        "jurisdiction": "São Paulo/SP",
+        "issued_at": "2026-08-12",
+        "valid_at": "2026-08-12",
+        "status": "verified",
+        "document_ref": "matricula-184729.pdf",
+        "document_hash": "sha256:demo-matricula-184729",
+        "supports": ["lpu-7e4cc0c4-2db9-4b78-a241-0c64f7b36211", "ownership-arrangement-481"]
+      },
+      {
+        "id": "registry-evidence-transcription-184729",
+        "type": "registry_transcription",
+        "number": "R-8-184729",
+        "office": "4º Registro de Imóveis de São Paulo",
+        "status": "verified",
+        "issued_at": "2026-08-12",
+        "document_ref": "certidao-onus-2026.pdf",
+        "document_hash": "sha256:demo-certidao-onus-2026",
+        "supports": ["rights-restrictions-481"]
+      }
+    ],
+    "fiscal_and_cadastral_evidence": {
+      "municipal_registration": "09.123.045.001-7",
+      "iptu_registration": "IPTU-SP-09-123-045-001-7",
+      "condominium_registration": "T1-1404",
+      "rural_registration": null,
+      "external_references": [
+        {"system": "prefeitura_sp", "value": "3550308-09.123.045.001-7"},
+        {"system": "cartorio", "value": "4RI-SP-184729"}
+      ]
+    },
+    "land_parcels": [
+      {
+        "id": "land-parcel-481",
+        "type": "LandParcel",
+        "parcel_type": "urban_lot",
+        "area_m2": 420,
+        "origin": "approved urban subdivision",
+        "municipal_registration": "09.123.045.001-7",
+        "fractional_interest_percent": 8.42,
+        "boundaries": {
+          "north": "Lote 18",
+          "south": "Rua Oscar Freire",
+          "east": "Lote 20",
+          "west": "Lote 16"
+        },
+        "valid_from": "2018-08-01",
+        "valid_to": null,
+        "evidence_refs": ["registry-evidence-184729"]
+      }
+    ],
+    "physical_structures": [
+      {
+        "id": "physical-structure-t1",
+        "type": "PhysicalStructure",
+        "structure_type": "residential_tower",
+        "label": "Torre 1",
+        "construction_year": 2018,
+        "built_area_m2": 128.4,
+        "useful_area_m2": 112.1,
+        "private_area_m2": 128.4,
+        "total_area_m2": 164.8,
+        "condition": "good",
+        "renovation": {
+          "status": "completed",
+          "completed_at": "2024-06-15",
+          "scope": ["kitchen", "bathrooms"],
+          "evidence_ref": "technical-doc-renovation-481"
+        },
+        "demolition": null,
+        "valid_from": "2018-08-01",
+        "valid_to": null
+      }
+    ],
+    "buildings": [
+      {
+        "id": "building-alameda-jardins",
+        "type": "Building",
+        "legal_name": "Edifício Alameda Jardins",
+        "tower": "Torre 1",
+        "blocks": ["Torre 1"],
+        "floors": 18,
+        "units": 48,
+        "unit_reference": "T1-1404",
+        "construction_evidence_ref": "technical-doc-habite-se-481"
+      }
+    ],
+    "places": [
+      {
+        "id": "place-oscar-freire-1420",
+        "type": "Place",
+        "address": {
+          "street": "Rua Oscar Freire",
+          "number": "1420",
+          "complement": "Apto 1404, Torre 1",
+          "neighborhood": "Jardins",
+          "city": "São Paulo",
+          "state": "SP",
+          "postal_code": "01426-002",
+          "country": "BR"
+        },
+        "coordinates": {"latitude": -23.5652, "longitude": -46.6728, "source": "survey_reference"},
+        "georeferencing": {"datum": "SIRGAS2000", "precision_m": 3},
+        "spatial_relations": [
+          {"type": "located_in", "target": "Jardins", "valid_from": "2018-08-01"},
+          {"type": "located_in", "target": "São Paulo", "valid_from": "2018-08-01"}
+        ]
+      }
+    ],
+    "ownership_arrangement": {
+      "id": "ownership-arrangement-481",
+      "type": "OwnershipArrangement",
+      "status": "verified",
+      "valid_from": "2018-08-01",
+      "valid_to": null,
+      "owners": [
+        {
+          "party_ref": "party-mariana-carvalho",
+          "party_kind": "person",
+          "display_name": "Mariana Alves de Carvalho",
+          "document_masked": "***.482.190-**",
+          "ownership_share_percent": 50,
+          "title_basis": "registry",
+          "evidence_refs": ["registry-evidence-184729"]
+        },
+        {
+          "party_ref": "party-rafael-carvalho",
+          "party_kind": "person",
+          "display_name": "Rafael Carvalho Neto",
+          "document_masked": "***.190.774-**",
+          "ownership_share_percent": 50,
+          "title_basis": "registry",
+          "evidence_refs": ["registry-evidence-184729"]
+        }
+      ],
+      "shares_total_percent": 100,
+      "joint_ownership": true,
+      "authorized_representative": {
+        "party_ref": "party-mariana-carvalho",
+        "power_of_attorney_ref": "contract-power-of-attorney-481",
+        "valid_to": "2027-02-10"
+      }
+    },
+    "rights_restrictions": [
+      {
+        "id": "rights-restrictions-481",
+        "type": "RightsAndRestrictions",
+        "kind": "alienacao_fiduciaria",
+        "holder_ref": "financial-institution-demo",
+        "status": "active",
+        "valid_from": "2018-08-01",
+        "valid_to": null,
+        "evidence_ref": "registry-evidence-transcription-184729",
+        "notes": "Sem impedimento registrado para análise de venda condicionada à quitação."
+      }
+    ],
+    "possession": {
+      "id": "possession-481",
+      "type": "Possession",
+      "possessor_ref": "party-mariana-carvalho",
+      "basis": "owner",
+      "valid_from": "2024-01-15",
+      "valid_to": null,
+      "evidence_ref": "registry-evidence-184729"
+    },
+    "occupancy": {
+      "id": "occupancy-481",
+      "type": "Occupancy",
+      "occupant_ref": "party-mariana-carvalho",
+      "purpose": "residential",
+      "valid_from": "2024-01-15",
+      "valid_to": null
+    },
+    "condominium": {
+      "id": "condominium-alameda-jardins",
+      "type": "Condominium",
+      "legal_name": "Edifício Alameda Jardins",
+      "tax_id": "98.765.432/0001-10",
+      "condominium_type": "edilicio",
+      "units": 48,
+      "towers": 1,
+      "floors": 18,
+      "common_areas": ["Piscina", "Academia", "Salão de festas", "Lobby", "Bicicletário", "Gerador"],
+      "autonomous_unit_ref": "unit-t1-1404",
+      "accessories": ["parking-31", "parking-32", "storage-d14"],
+      "syndic_ref": "party-fernanda-nogueira",
+      "administrator_ref": "organization-plena-gestao",
+      "vice_syndic_ref": "party-carlos-vaz",
+      "council_ref": "condominium-council-alameda",
+      "convention_document_ref": "contract-convention-alameda",
+      "internal_rules_ref": "contract-internal-rules-alameda",
+      "fee_monthly_brl": 1780,
+      "reserve_fund_monthly_brl": 180,
+      "arrears": {"status": "none", "amount_brl": 0},
+      "next_assembly": "2026-10-22",
+      "maintenance": {"status": "planned", "scope": "facade painting", "planned_for": "2027-Q1"}
+    },
+    "marketable_bundle": {
+      "id": "marketable-bundle-mb-481",
+      "type": "MarketableBundle",
+      "status": "active",
+      "components": [
+        {"component_ref": "unit-t1-1404", "component_kind": "autonomous_unit", "role": "primary"},
+        {"component_ref": "parking-31", "component_kind": "parking_spot", "role": "accessory"},
+        {"component_ref": "parking-32", "component_kind": "parking_spot", "role": "accessory"},
+        {"component_ref": "storage-d14", "component_kind": "storage_unit", "role": "accessory"}
+      ],
+      "asking_price_brl": 1480000,
+      "minimum_price_brl": 1420000,
+      "currency": "BRL",
+      "price_valid_from": "2026-09-01",
+      "price_valid_to": null
+    },
+    "brokerage_mandates": [
+      {
+        "id": "mandate-481",
+        "type": "BrokerageMandate",
+        "authorizer_refs": ["party-mariana-carvalho", "party-rafael-carvalho"],
+        "agency_ref": "organization-alameda-negocios",
+        "broker_refs": ["party-camila-torres", "party-eduardo-mello"],
+        "exclusive": true,
+        "minimum_price_brl": 1420000,
+        "commission_percent": 6,
+        "valid_from": "2026-04-01",
+        "valid_to": "2027-03-31",
+        "contract_ref": "contract-exclusive-mandate-481",
+        "territory": "São Paulo · portais e rede parceira",
+        "partner_agency_refs": ["organization-ponte-alta"]
+      }
+    ],
+    "parties_and_organizations": [
+      {"id": "party-mariana-carvalho", "type": "Person", "display_name": "Mariana Alves de Carvalho", "role_contexts": ["owner", "possessor", "occupant", "authorizer"]},
+      {"id": "party-rafael-carvalho", "type": "Person", "display_name": "Rafael Carvalho Neto", "role_contexts": ["owner", "authorizer"]},
+      {"id": "party-camila-torres", "type": "Realtor", "display_name": "Camila Torres", "creci": "182.443-F", "role_contexts": ["realtor"]},
+      {"id": "party-eduardo-mello", "type": "Realtor", "display_name": "Eduardo Mello", "creci": "204.718-F", "role_contexts": ["realtor"]},
+      {"id": "party-fernanda-nogueira", "type": "Person", "display_name": "Fernanda Nogueira", "role_contexts": ["syndic"]},
+      {"id": "party-carlos-vaz", "type": "Person", "display_name": "Carlos Vaz", "role_contexts": ["vice_syndic"]},
+      {"id": "organization-alameda-negocios", "type": "Organization", "display_name": "Alameda Negócios Imobiliários Ltda.", "tax_id": "12.345.678/0001-90", "creci": "J-28.491", "role_contexts": ["agency", "advertiser"]},
+      {"id": "organization-ponte-alta", "type": "Organization", "display_name": "Ponte Alta Consultoria", "role_contexts": ["partner_agency"]},
+      {"id": "organization-plena-gestao", "type": "Organization", "display_name": "Plena Gestão Condominial", "role_contexts": ["administrator"]}
+    ],
+    "listings": [
+      {
+        "id": "listing-jardins-142",
+        "type": "Listing",
+        "marketable_bundle_ref": "marketable-bundle-mb-481",
+        "status": "published",
+        "asking_price_brl": 1480000,
+        "currency": "BRL",
+        "portal_ref": "portal-alameda",
+        "channel_refs": ["site-proprio", "instagram", "portal-parceiro"],
+        "advertiser_ref": "organization-alameda-negocios",
+        "description": "Unidade residencial em condomínio, com duas vagas e depósito.",
+        "media_refs": ["photos-jardins-142-01", "photos-jardins-142-02"],
+        "valid_from": "2026-09-01",
+        "valid_to": null,
+        "publication_status": "published"
+      }
+    ],
+    "publication_status": {
+      "type": "PublicationStatus",
+      "current": "published",
+      "valid_from": "2026-09-01",
+      "history": [
+        {"status": "draft", "from": "2026-03-15", "to": "2026-08-20"},
+        {"status": "under_review", "from": "2026-08-20", "to": "2026-09-01"},
+        {"status": "published", "from": "2026-09-01", "to": null}
+      ]
+    },
+    "regulatory_evidence": [
+      {"id": "technical-habite-se-481", "kind": "habite_se", "status": "verified", "issued_by": "São Paulo municipality", "valid_from": "2018-07-20", "document_ref": "habite-se-481.pdf"},
+      {"id": "technical-avcb-481", "kind": "avcb", "status": "verified", "issued_by": "Corpo de Bombeiros", "valid_from": "2026-02-01", "valid_to": "2027-02-01", "document_ref": "avcb-481.pdf"},
+      {"id": "technical-renovation-481", "kind": "renovation_report", "status": "verified", "issued_by": "Engenharia Demo", "valid_from": "2024-06-15", "document_ref": "laudo-renovacao-481.pdf"}
+    ],
+    "contract_documents": [
+      {"id": "contract-convention-alameda", "kind": "condominium_convention", "status": "current", "hash": "sha256:convention-alameda-demo"},
+      {"id": "contract-internal-rules-alameda", "kind": "internal_rules", "status": "current", "hash": "sha256:rules-alameda-demo"},
+      {"id": "contract-exclusive-mandate-481", "kind": "brokerage_mandate", "status": "signed", "hash": "sha256:mandate-481-demo"},
+      {"id": "contract-power-of-attorney-481", "kind": "power_of_attorney", "status": "current", "valid_to": "2027-02-10", "hash": "sha256:poa-481-demo"}
+    ],
+    "demand_visits_opportunities": [
+      {"id": "opportunity-481", "type": "Opportunity", "party_ref": "party-helena-duarte", "status": "qualified", "source": "portal-alameda", "created_at": "2026-09-20"},
+      {"id": "visit-481", "type": "Visit", "party_ref": "party-helena-duarte", "scheduled_at": "2026-09-30T14:00:00-03:00", "status": "scheduled", "notes": "Visita acompanhada pela corretora Camila Torres"}
+    ],
+    "offers_acceptance_agreements": [
+      {"id": "offer-481", "type": "Offer", "buyer_ref": "party-helena-duarte", "value_brl": 1410000, "currency": "BRL", "financing": "private_bank", "condition": "20% sinal", "status": "under_review", "valid_until": "2026-10-02"},
+      {"id": "acceptance-481", "type": "AcceptanceAct", "offer_ref": "offer-481", "status": "pending", "response_deadline": "2026-10-02"},
+      {"id": "agreement-481", "type": "Agreement", "status": "draft", "parties": ["party-mariana-carvalho", "party-rafael-carvalho", "party-helena-duarte"], "subject_ref": "marketable-bundle-mb-481"}
+    ],
+    "contractual_obligations": [
+      {"id": "obligation-481-1", "type": "Obligation", "kind": "deliver_clear_registry", "responsible_ref": "party-mariana-carvalho", "beneficiary_ref": "party-helena-duarte", "status": "pending", "due_at": "2026-10-10"},
+      {"id": "obligation-481-2", "type": "Obligation", "kind": "pay_brokerage_commission", "responsible_ref": "organization-alameda-negocios", "beneficiary_ref": "organization-ponte-alta", "status": "pending", "due_at": null}
+    ],
+    "payments_settlement_and_closing": {
+      "closing_case": {"id": "closing-case-481", "type": "ClosingCase", "status": "not_started", "opened_at": null},
+      "payments": [{"id": "payment-481-deposit", "type": "Payment", "kind": "deposit", "status": "pending", "amount_brl": 282000, "payer_ref": "party-helena-duarte"}],
+      "allocation": {"id": "allocation-481", "type": "Allocation", "status": "pending", "recipients": ["party-mariana-carvalho", "party-rafael-carvalho"]},
+      "settlement": {"id": "settlement-481", "type": "Settlement", "status": "pending", "currency": "BRL"},
+      "milestones": [
+        {"kind": "due_diligence", "status": "pending", "completed_at": null},
+        {"kind": "financing_approval", "status": "pending", "completed_at": null},
+        {"kind": "deed_signed", "status": "pending", "completed_at": null},
+        {"kind": "title_transferred", "status": "pending", "completed_at": null},
+        {"kind": "possession_transferred", "status": "pending", "completed_at": null},
+        {"kind": "payment_settled", "status": "pending", "completed_at": null},
+        {"kind": "commission_settled", "status": "pending", "completed_at": null}
+      ]
+    },
+    "documents": [
+      {"file": "matricula-184729.pdf", "kind": "registry_evidence", "status": "hash verified", "hash": "sha256:matricula-184729"},
+      {"file": "certidao-onus-2026.pdf", "kind": "registry_transcription", "status": "verified", "hash": "sha256:certidao-onus-2026"},
+      {"file": "convencao-alameda.pdf", "kind": "condominium_convention", "status": "current", "hash": "sha256:conv-alameda"},
+      {"file": "mandato-exclusivo.pdf", "kind": "brokerage_mandate", "status": "signed", "hash": "sha256:mandate-481"},
+      {"file": "laudo-avaliacao.pdf", "kind": "valuation_report", "status": "verified", "hash": "sha256:valuation-481"}
+    ],
+    "closing_case": {"status": "not_started", "title_transfer": "pending", "possession_transfer": "pending", "payment": "pending", "commission": "pending"}
+  }
+}
