@@ -1,0 +1,3987 @@
+{
+  "macro_area": {
+    "id": "property",
+    "order": 1,
+    "label": "Property"
+  },
+  "subarea": {
+    "id": "location_territorial_context",
+    "order": 2,
+    "label": "Location and Territorial Context",
+    "facet_number": 2,
+    "description": "Spatial identity, address, jurisdiction and territorial context.",
+    "typical_concepts": {
+      "additional_property": {
+        "ref": "base0001.additional_property@1",
+        "kind": "property",
+        "definition": "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. https://schema.org/width, https://schema.org/color, https://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/MerchantReturnPolicy",
+              "https://schema.org/Offer",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/QualitativeValue",
+              "https://schema.org/QuantitativeValue"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PropertyValue"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/additionalProperty",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "address": {
+        "ref": "base0001.address@1",
+        "kind": "property",
+        "definition": "Physical address of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/PostalAddress",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/address",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/address",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "address_country": {
+        "ref": "base0001.address_country@1",
+        "kind": "property",
+        "definition": "The country. Recommended to be in 2-letter [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) format, for example \"US\". For backward compatibility, a 3-letter [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such as \"SGP\" or a full country name such as \"Singapore\" can also be used.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DefinedRegion",
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape",
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Country",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/addressCountry",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "address_locality": {
+        "ref": "base0001.address_locality@1",
+        "kind": "property",
+        "definition": "The locality in which the street address is, and which is in the region. For example, Mountain View.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/addressLocality",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/addressLocality",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasMunicipality",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "address_region": {
+        "ref": "base0001.address_region@1",
+        "kind": "property",
+        "definition": "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level [Administrative division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country) such as the Province in Italy or Region in Germany.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DefinedRegion",
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdministrativeArea",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/addressRegion",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasCountrySubdivision",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "aggregate_rating": {
+        "ref": "base0001.aggregate_rating@1",
+        "kind": "property",
+        "definition": "The overall rating, based on a collection of reviews or ratings, of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AggregateRating"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/aggregateRating",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "amenity_feature": {
+        "ref": "base0001.amenity_feature@1",
+        "kind": "property",
+        "definition": "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/FloorPlan",
+              "https://schema.org/LodgingBusiness",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/LocationFeatureSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/amenityFeature",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "applicable_certificate": {
+        "ref": "base0001.applicable_certificate@1",
+        "kind": "property",
+        "definition": "Certification information about a product, organization, service, place, or person.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [
+              "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/isReferencedIn",
+              "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy"
+            ],
+            "range_refs": [
+              "https://schema.org/Certification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#ApplicableCertificate",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasCertification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "area_served": {
+        "ref": "base0001.area_served@1",
+        "kind": "property",
+        "definition": "The geographic area where a service or offered item is provided.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/DeliveryChargeSpecification",
+              "https://schema.org/Demand",
+              "https://schema.org/FinancialIncentive",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdministrativeArea",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/areaServed",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasServiceArea",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "box": {
+        "ref": "base0001.box@1",
+        "kind": "property",
+        "definition": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/box",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "branch_code": {
+        "ref": "base0001.branch_code@1",
+        "kind": "property",
+        "definition": "A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\\n\\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is a branchCode for a particular branch.\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/branchCode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "circle": {
+        "ref": "base0001.circle@1",
+        "kind": "property",
+        "definition": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/circle",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contained_in": {
+        "ref": "base0001.contained_in@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and one that contains it.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containedIn",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contained_in_place": {
+        "ref": "base0001.contained_in_place@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and one that contains it.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containedInPlace",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "contains_place": {
+        "ref": "base0001.contains_place@1",
+        "kind": "property",
+        "definition": "The basic containment relation between a place and another that it contains.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/containsPlace",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "elevation": {
+        "ref": "base0001.elevation@1",
+        "kind": "property",
+        "definition": "The elevation of a location ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of the form 'NUMBER UNIT\\_OF\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/elevation",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "event": {
+        "ref": "base0001.event@1",
+        "kind": "property",
+        "definition": "Upcoming or past event associated with this place, organization, or action.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/InformAction",
+              "https://schema.org/InviteAction",
+              "https://schema.org/JoinAction",
+              "https://schema.org/LeaveAction",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/PlayAction"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/event",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "events": {
+        "ref": "base0001.events@1",
+        "kind": "property",
+        "definition": "Upcoming or past events associated with this place or organization.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Event"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/events",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "extended_address": {
+        "ref": "base0001.extended_address@1",
+        "kind": "property",
+        "definition": "An address extension such as an apartment number, C/O or alternative name.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/extendedAddress",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "fax_number": {
+        "ref": "base0001.fax_number@1",
+        "kind": "property",
+        "definition": "The fax number.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/faxNumber",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/faxNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "g_lnid": {
+        "ref": "base0001.g_lnid@1",
+        "kind": "property",
+        "definition": "The [Global Location Number](http://www.gs1.org/gln) (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#gLNId",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/globalLocationNumber",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/globalLocationNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo": {
+        "ref": "base0001.geo@1",
+        "kind": "property",
+        "definition": "The geo coordinates of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_contains": {
+        "ref": "base0001.geo_contains@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. \"a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoContains",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_covered_by": {
+        "ref": "base0001.geo_covered_by@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCoveredBy",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_covers": {
+        "ref": "base0001.geo_covers@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. \"Every point of b is a point of (the interior or boundary of) a\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCovers",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_crosses": {
+        "ref": "base0001.geo_crosses@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: \"a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoCrosses",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_disjoint": {
+        "ref": "base0001.geo_disjoint@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: \"they have no point in common. They form a set of disconnected geometries.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoDisjoint",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_equals": {
+        "ref": "base0001.geo_equals@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM). \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoEquals",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_intersects": {
+        "ref": "base0001.geo_intersects@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoIntersects",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_overlaps": {
+        "ref": "base0001.geo_overlaps@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoOverlaps",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_touches": {
+        "ref": "base0001.geo_touches@1",
+        "kind": "property",
+        "definition": "Represents spatial relations in which two geometries (or the places they represent) touch: \"they have at least one boundary point in common, but no interior points.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoTouches",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "geo_within": {
+        "ref": "base0001.geo_within@1",
+        "kind": "property",
+        "definition": "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/GeospatialGeometry",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/geoWithin",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_drive_through_service": {
+        "ref": "base0001.has_drive_through_service@1",
+        "kind": "property",
+        "definition": "Indicates whether some facility (e.g. [[FoodEstablishment]], [[CovidTestingFacility]]) offers a service that can be used by driving through in a car. In the case of [[CovidTestingFacility]] such facilities could potentially help with social distancing from other potentially-infected users.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasDriveThroughService",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_gs1_digital_link": {
+        "ref": "base0001.has_gs1_digital_link@1",
+        "kind": "property",
+        "definition": "The <a href=\"https://www.gs1.org/standards/gs1-digital-link\">GS1 digital link</a> associated with the object. This URL should conform to the particular requirements of digital links. The link should only contain the Application Identifiers (AIs) that are relevant for the entity being annotated, for instance a [[Product]] or an [[Organization]], and for the correct granularity. In particular, for products:<ul><li>A Digital Link that contains a serial number (AI <code>21</code>) should only be present on instances of [[IndividualProduct]]</li><li>A Digital Link that contains a lot number (AI <code>10</code>) should be annotated as [[SomeProducts]] if only products from that lot are sold, or [[IndividualProduct]] if there is only a specific product.</li><li>A Digital Link that contains a global model number (AI <code>8013</code>) should be attached to a [[Product]] or a [[ProductModel]].</li></ul> Other item types should be adapted similarly.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [
+              "https://schema.org/identifier"
+            ],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasGS1DigitalLink",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_map": {
+        "ref": "base0001.has_map@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Map",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/hasMap",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "has_postal_code": {
+        "ref": "base0001.has_postal_code@1",
+        "kind": "property",
+        "definition": "The postal code. For example, 94043.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/DefinedRegion",
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/GeoShape",
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#postcodeCode",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/postalCode",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/postalCode",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "is_accessible_for_free": {
+        "ref": "base0001.is_accessible_for_free@1",
+        "kind": "property",
+        "definition": "A flag to signal that the item, event, or place is accessible for free.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isAccessibleForFree",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "isic_v4": {
+        "ref": "base0001.isic_v4@1",
+        "kind": "property",
+        "definition": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/isicV4",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "keywords": {
+        "ref": "base0001.keywords@1",
+        "kind": "property",
+        "definition": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/DefinedTerm",
+              "https://schema.org/Text",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/keywords",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "latitude": {
+        "ref": "base0001.latitude@1",
+        "kind": "property",
+        "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Locations/hasLatitude"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/latitude",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "line": {
+        "ref": "base0001.line@1",
+        "kind": "property",
+        "definition": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/line",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "logo": {
+        "ref": "base0001.logo@1",
+        "kind": "property",
+        "definition": "An associated logo.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/Certification",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [
+              "https://schema.org/image"
+            ],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#logoReferencedDocument",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/logo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "longitude": {
+        "ref": "base0001.longitude@1",
+        "kind": "property",
+        "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoCoordinates",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Locations/hasLongitude"
+            ],
+            "range_refs": [
+              "https://schema.org/Number",
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/longitude",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "map": {
+        "ref": "base0001.map@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/map",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "maps": {
+        "ref": "base0001.maps@1",
+        "kind": "property",
+        "definition": "A URL to a map of the place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maps",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "maximum_attendee_capacity": {
+        "ref": "base0001.maximum_attendee_capacity@1",
+        "kind": "property",
+        "definition": "The total number of individuals that may attend an event or venue.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Event",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://www.omg.org/spec/Commons/Quantities/hasUpperBound"
+            ],
+            "range_refs": [
+              "https://schema.org/Integer"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/maximumAttendeeCapacity",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "opening_hours_specification": {
+        "ref": "base0001.opening_hours_specification@1",
+        "kind": "property",
+        "definition": "The opening hours of a certain place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OpeningHoursSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/openingHoursSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "photo": {
+        "ref": "base0001.photo@1",
+        "kind": "property",
+        "definition": "A photograph of this place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [
+              "https://schema.org/image"
+            ],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/Photograph"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/photo",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "photos": {
+        "ref": "base0001.photos@1",
+        "kind": "property",
+        "definition": "Photographs of this place.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/ImageObject",
+              "https://schema.org/Photograph"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/photos",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "polygon": {
+        "ref": "base0001.polygon@1",
+        "kind": "property",
+        "definition": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/GeoShape"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/polygon",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "post_office_box": {
+        "ref": "base0001.post_office_box@1",
+        "kind": "property",
+        "definition": "The post office box number for PO box addresses.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#postOfficeBox",
+              "source_version": null
+            },
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/postOfficeBoxNumber",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/postOfficeBoxNumber",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "promotional_message": {
+        "ref": "base0001.promotional_message@1",
+        "kind": "property",
+        "definition": "A slogan or motto associated with the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "http://unece.org/vocab#PromotionalMessage",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/slogan",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "public_access": {
+        "ref": "base0001.public_access@1",
+        "kind": "property",
+        "definition": "A flag to signal that the [[Place]] is open to public visitors.  If this property is omitted there is no assumed default boolean value.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/publicAccess",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "review": {
+        "ref": "base0001.review@1",
+        "kind": "property",
+        "definition": "A review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Brand",
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Event",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/review",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "reviews": {
+        "ref": "base0001.reviews@1",
+        "kind": "property",
+        "definition": "Review of the item.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/CreativeWork",
+              "https://schema.org/Offer",
+              "https://schema.org/Organization",
+              "https://schema.org/Place",
+              "https://schema.org/Product"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Review"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/reviews",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "service_area": {
+        "ref": "base0001.service_area@1",
+        "kind": "property",
+        "definition": "The geographic area where the service is provided.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/Organization",
+              "https://schema.org/Service"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/AdministrativeArea",
+              "https://schema.org/GeoShape",
+              "https://schema.org/Place"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/serviceArea",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "smoking_allowed": {
+        "ref": "base0001.smoking_allowed@1",
+        "kind": "property",
+        "definition": "Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Boolean"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/smokingAllowed",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "special_opening_hours_specification": {
+        "ref": "base0001.special_opening_hours_specification@1",
+        "kind": "property",
+        "definition": "The special opening hours of a certain place.\\n\\nUse this to explicitly override general opening hours brought in scope by [[openingHoursSpecification]] or [[openingHours]].\n      ",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/OpeningHoursSpecification"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/specialOpeningHoursSpecification",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "street_address": {
+        "ref": "base0001.street_address@1",
+        "kind": "property",
+        "definition": "The street address. For example, 1600 Amphitheatre Pkwy.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/PostalAddress"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/streetAddress",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/streetAddress",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "telephone": {
+        "ref": "base0001.telephone@1",
+        "kind": "property",
+        "definition": "The telephone number.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/ContactPoint",
+              "https://schema.org/Organization",
+              "https://schema.org/Person",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/Text"
+            ]
+          },
+          "sources": [
+            {
+              "source": "external",
+              "source_ref": "https://ref.gs1.org/voc/telephone",
+              "source_version": null
+            },
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/telephone",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      },
+      "tour_booking_page": {
+        "ref": "base0001.tour_booking_page@1",
+        "kind": "property",
+        "definition": "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
+        "labels": [],
+        "parent_refs": [],
+        "equivalent_refs": [],
+        "domain_refs": [],
+        "range_refs": [],
+        "quantity_kind_refs": [],
+        "applicable_unit_refs": [],
+        "semantics": {},
+        "provenance": {
+          "source_constraints": {
+            "domain_refs": [
+              "https://schema.org/Accommodation",
+              "https://schema.org/ApartmentComplex",
+              "https://schema.org/Place"
+            ],
+            "parent_refs": [],
+            "range_refs": [
+              "https://schema.org/URL"
+            ]
+          },
+          "sources": [
+            {
+              "source": "schemaorg",
+              "source_ref": "https://schema.org/tourBookingPage",
+              "source_version": null
+            }
+          ]
+        },
+        "status": null,
+        "institution": null,
+        "valid_from": null,
+        "valid_to": null
+      }
+    },
+    "candidate_concepts": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the commonly used short code. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MapURL",
+        "source_native_name": "MapURL",
+        "source_label": "Map URL",
+        "source_definition": "A Uniform Resource Identifier (URI) to a map of the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxLot",
+        "source_native_name": "TaxLot",
+        "source_label": "Tax Lot",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the short code that is commonly used. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxTract",
+        "source_native_name": "TaxTract",
+        "source_label": "Tax Tract",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Township",
+        "source_native_name": "Township",
+        "source_label": "Township",
+        "source_definition": "A subdivision of the county.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MlsStatus",
+        "source_native_name": "MlsStatus",
+        "source_label": "MLS Status",
+        "source_definition": "A local or regional status that is well known by business users. Each MlsStatus field must map to a single StandardStatus. Multiple MlsStatus fields may map to a single StandardStatus.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.MlsStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CityRegion",
+        "source_native_name": "CityRegion",
+        "source_label": "City Region",
+        "source_definition": "A subsection or area of a defined city (e.g., Soho in New York City; Ironbound in Newark, New Jersey; Georgetown in Washington, DC).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PostalCity",
+        "source_native_name": "PostalCity",
+        "source_label": "Postal City",
+        "source_definition": "The official city per the U.S. Postal Service (USPS), which may be different from the recorded city.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.PostalCity",
+        "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.StreetName",
+        "source_native_name": "StreetName",
+        "source_label": "Street Name",
+        "source_definition": "The street name portion of the building's street address.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CityRegion",
+        "source_native_name": "CityRegion",
+        "source_label": "City Region",
+        "source_definition": "A subsection or area of a defined city (e.g., SOHO in New York, NY; Ironbound in Newark, NJ; Inside the Beltway).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PostalCity",
+        "source_native_name": "PostalCity",
+        "source_label": "Postal City",
+        "source_definition": "The official city per the U.S. Postal Service (USPS), which may be different from the recorded city.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PostalCity",
+        "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StreetName",
+        "source_native_name": "StreetName",
+        "source_label": "Street Name",
+        "source_definition": "The street name portion of a listed property's street address.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitNumber",
+        "source_native_name": "UnitNumber",
+        "source_label": "Unit Number",
+        "source_definition": "A text field containing the unit number or portion of a larger building or complex that should appear following the street suffix or, if it exists, the street suffix direction in the street address (e.g., Apt G, #55).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CrossStreet",
+        "source_native_name": "CrossStreet",
+        "source_label": "Cross Street",
+        "source_definition": "Indicated the nearest cross street to the property.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CrossStreet",
+        "source_native_name": "CrossStreet",
+        "source_label": "Cross Street",
+        "source_definition": "The nearest cross streets to the property. This field is in addition to and independent of the Driving Directions field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseAmount",
+        "source_native_name": "LeaseAmount",
+        "source_label": "Lease Amount",
+        "source_definition": "The amount of any lease the business pays for its current location.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StateRegion",
+        "source_native_name": "StateRegion",
+        "source_label": "State Region",
+        "source_definition": "A subsection or area of a defined state or province (e.g., Florida Keys, Hudson Valley in New York, Silicon Valley in California).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.StreetNumber",
+        "source_native_name": "StreetNumber",
+        "source_label": "Street Number",
+        "source_definition": "The street number portion of the building's street address. In some areas, the street number may contain non-numeric characters. This field can also contain extensions and modifiers to the street number, such as \"1/2\" or \"-B.\" This field should not include prefixes, direction or suffixes.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.StreetSuffix",
+        "source_native_name": "StreetSuffix",
+        "source_label": "Street Suffix",
+        "source_definition": "The suffix portion of the street address.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.StreetSuffix",
+        "source_enum_ref": "org.reso.metadata.enums.StreetSuffix",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "lexicon_binding": {
+      "authority_repository": "megawebsol/quipu-knowledge-hub",
+      "authority_path": "semantic-space/lexicon/bases/base0001/lexicon.json",
+      "authority_blob_sha": "a90dee2dbf6aa60aa894a7e442dfc4af3e62c4f5",
+      "base_id": "base0001",
+      "rule": "Every key in typical_concepts is an exact LexiconTerm.symbol. External dictionary fields remain candidates until explicitly mapped/adjudicated."
+    },
+    "form_fields": [
+      {
+        "id": "address",
+        "label": "address",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "geographic_coordinates",
+        "label": "geographic coordinates",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "country",
+        "label": "country",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Country",
+            "source_native_name": "Country",
+            "source_data_type": "org.reso.metadata.enums.Country",
+            "source_enum_ref": "org.reso.metadata.enums.Country",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "address_country",
+              "ref": "base0001.address_country@1",
+              "kind": "property",
+              "definition": "The country. Recommended to be in 2-letter [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) format, for example \"US\". For backward compatibility, a 3-letter [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such as \"SGP\" or a full country name such as \"Singapore\" can also be used.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "label": "region",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "municipality",
+        "label": "municipality",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "district",
+        "label": "district",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "neighborhood",
+        "label": "neighborhood",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "postal_code",
+        "label": "postal code",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PostalCode",
+            "source_native_name": "PostalCode",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "has_postal_code",
+              "ref": "base0001.has_postal_code@1",
+              "kind": "property",
+              "definition": "The postal code. For example, 94043.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "urban_context",
+        "label": "urban context",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "rural_context",
+        "label": "rural context",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "zoning",
+        "label": "zoning",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Zoning",
+            "source_native_name": "Zoning",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "cadastral_geography",
+        "label": "cadastral geography",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "georeferencing",
+        "label": "georeferencing",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "territorial_restriction",
+        "label": "territorial restriction",
+        "usable_in_forms": true,
+        "mapping_status": "form_field_preserved_from_v0.2.1_requires_source_or_semantic_binding"
+      },
+      {
+        "id": "building_city",
+        "label": "city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.City",
+            "source_native_name": "City",
+            "source_data_type": "org.reso.metadata.enums.City",
+            "source_enum_ref": "org.reso.metadata.enums.City",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "address_locality",
+              "ref": "base0001.address_locality@1",
+              "kind": "property",
+              "definition": "The locality in which the street address is, and which is in the region. For example, Mountain View.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "city",
+        "label": "city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.City",
+            "source_native_name": "City",
+            "source_data_type": "org.reso.metadata.enums.City",
+            "source_enum_ref": "org.reso.metadata.enums.City",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "address_locality",
+              "ref": "base0001.address_locality@1",
+              "kind": "property",
+              "definition": "The locality in which the street address is, and which is in the region. For example, Mountain View.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_zoning",
+        "label": "zoning",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Zoning",
+            "source_native_name": "Zoning",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "map_url",
+        "label": "map url",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.MapURL",
+            "source_native_name": "MapURL",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_lot",
+        "label": "tax lot",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxLot",
+            "source_native_name": "TaxLot",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_country",
+        "label": "country",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Country",
+            "source_native_name": "Country",
+            "source_data_type": "org.reso.metadata.enums.Country",
+            "source_enum_ref": "org.reso.metadata.enums.Country",
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "address_country",
+              "ref": "base0001.address_country@1",
+              "kind": "property",
+              "definition": "The country. Recommended to be in 2-letter [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) format, for example \"US\". For backward compatibility, a 3-letter [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such as \"SGP\" or a full country name such as \"Singapore\" can also be used.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_latitude",
+        "label": "latitude",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Latitude",
+            "source_native_name": "Latitude",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "latitude",
+              "ref": "base0001.latitude@1",
+              "kind": "property",
+              "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_tax_block",
+        "label": "tax block",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.TaxBlock",
+            "source_native_name": "TaxBlock",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "latitude",
+        "label": "latitude",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Latitude",
+            "source_native_name": "Latitude",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "latitude",
+              "ref": "base0001.latitude@1",
+              "kind": "property",
+              "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "tax_block",
+        "label": "tax block",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxBlock",
+            "source_native_name": "TaxBlock",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "tax_tract",
+        "label": "tax tract",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.TaxTract",
+            "source_native_name": "TaxTract",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "township",
+        "label": "township",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Township",
+            "source_native_name": "Township",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_longitude",
+        "label": "longitude",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.Longitude",
+            "source_native_name": "Longitude",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "longitude",
+              "ref": "base0001.longitude@1",
+              "kind": "property",
+              "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "longitude",
+        "label": "longitude",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.Longitude",
+            "source_native_name": "Longitude",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_exact_lexicon_name",
+            "lexicon_binding": {
+              "symbol": "longitude",
+              "ref": "base0001.longitude@1",
+              "kind": "property",
+              "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+              "match_method": "exact_symbol_or_label",
+              "confidence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "mls_status",
+        "label": "mls status",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.MlsStatus",
+            "source_native_name": "MlsStatus",
+            "source_data_type": "org.reso.metadata.enums.MlsStatus",
+            "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_city_region",
+        "label": "city region",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CityRegion",
+            "source_native_name": "CityRegion",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_postal_city",
+        "label": "postal city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PostalCity",
+            "source_native_name": "PostalCity",
+            "source_data_type": "org.reso.metadata.enums.PostalCity",
+            "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_postal_code",
+        "label": "postal code",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.PostalCode",
+            "source_native_name": "PostalCode",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "has_postal_code",
+              "ref": "base0001.has_postal_code@1",
+              "kind": "property",
+              "definition": "The postal code. For example, 94043.",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_street_name",
+        "label": "street name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.StreetName",
+            "source_native_name": "StreetName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "city_region",
+        "label": "city region",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CityRegion",
+            "source_native_name": "CityRegion",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "postal_city",
+        "label": "postal city",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.PostalCity",
+            "source_native_name": "PostalCity",
+            "source_data_type": "org.reso.metadata.enums.PostalCity",
+            "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "street_name",
+        "label": "street name",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.StreetName",
+            "source_native_name": "StreetName",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "unit_number",
+        "label": "unit number",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.UnitNumber",
+            "source_native_name": "UnitNumber",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_cross_street",
+        "label": "cross street",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.CrossStreet",
+            "source_native_name": "CrossStreet",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "cross_street",
+        "label": "cross street",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.CrossStreet",
+            "source_native_name": "CrossStreet",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "lease_amount",
+        "label": "lease amount",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.LeaseAmount",
+            "source_native_name": "LeaseAmount",
+            "source_data_type": "Edm.Decimal",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "state_region",
+        "label": "state region",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Property.StateRegion",
+            "source_native_name": "StateRegion",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_parcel_number",
+        "label": "parcel number",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.ParcelNumber",
+            "source_native_name": "ParcelNumber",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "mapped_contextual_crosswalk",
+            "lexicon_binding": {
+              "symbol": "identifier",
+              "ref": "base0001.identifier@1",
+              "kind": "property",
+              "definition": "{\"text\":null}",
+              "match_method": "curated_contextual_crosswalk",
+              "confidence": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "id": "building_street_number",
+        "label": "street number",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.StreetNumber",
+            "source_native_name": "StreetNumber",
+            "source_data_type": "Edm.String",
+            "source_enum_ref": null,
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      },
+      {
+        "id": "building_street_suffix",
+        "label": "street suffix",
+        "usable_in_forms": true,
+        "source_fields": [
+          {
+            "source": "RESO DD 2.1",
+            "source_path": "Building.StreetSuffix",
+            "source_native_name": "StreetSuffix",
+            "source_data_type": "org.reso.metadata.enums.StreetSuffix",
+            "source_enum_ref": "org.reso.metadata.enums.StreetSuffix",
+            "mapping_status": "candidate_requires_semantic_adjudication",
+            "lexicon_binding": null
+          }
+        ]
+      }
+    ],
+    "source_fields": [
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.City",
+        "source_native_name": "City",
+        "source_label": "City",
+        "source_definition": "The city in the listing address.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.City",
+        "source_enum_ref": "org.reso.metadata.enums.City",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "address_locality",
+          "ref": "base0001.address_locality@1",
+          "kind": "property",
+          "definition": "The locality in which the street address is, and which is in the region. For example, Mountain View.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.City",
+        "source_native_name": "City",
+        "source_label": "City",
+        "source_definition": "The city in the listing address.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.City",
+        "source_enum_ref": "org.reso.metadata.enums.City",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "address_locality",
+          "ref": "base0001.address_locality@1",
+          "kind": "property",
+          "definition": "The locality in which the street address is, and which is in the region. For example, Mountain View.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the commonly used short code. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MapURL",
+        "source_native_name": "MapURL",
+        "source_label": "Map URL",
+        "source_definition": "A Uniform Resource Identifier (URI) to a map of the property.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxLot",
+        "source_native_name": "TaxLot",
+        "source_label": "Tax Lot",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Zoning",
+        "source_native_name": "Zoning",
+        "source_label": "Zoning",
+        "source_definition": "A division of the city or county into areas of different permissible land uses. This field should be used for the short code that is commonly used. For full textual descriptions, please use the ZoningDescription field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Country",
+        "source_native_name": "Country",
+        "source_label": "Country",
+        "source_definition": "The country abbreviation in the building's postal address.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.Country",
+        "source_enum_ref": "org.reso.metadata.enums.Country",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "address_country",
+          "ref": "base0001.address_country@1",
+          "kind": "property",
+          "definition": "The country. Recommended to be in 2-letter [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) format, for example \"US\". For backward compatibility, a 3-letter [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such as \"SGP\" or a full country name such as \"Singapore\" can also be used.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Country",
+        "source_native_name": "Country",
+        "source_label": "Country",
+        "source_definition": "The country abbreviation in a postal address.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.Country",
+        "source_enum_ref": "org.reso.metadata.enums.Country",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "address_country",
+          "ref": "base0001.address_country@1",
+          "kind": "property",
+          "definition": "The country. Recommended to be in 2-letter [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1) format, for example \"US\". For backward compatibility, a 3-letter [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code such as \"SGP\" or a full country name such as \"Singapore\" can also be used.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Latitude",
+        "source_native_name": "Latitude",
+        "source_label": "Latitude",
+        "source_definition": "The geographic latitude of some reference point on the property, specified in degrees and decimal parts. Positive numbers must not include the plus symbol.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "latitude",
+          "ref": "base0001.latitude@1",
+          "kind": "property",
+          "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Latitude",
+        "source_native_name": "Latitude",
+        "source_label": "Latitude",
+        "source_definition": "The geographic latitude of some reference point on the property, specified in degrees and decimal parts. Positive numbers must not include the plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "latitude",
+          "ref": "base0001.latitude@1",
+          "kind": "property",
+          "definition": "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxBlock",
+        "source_native_name": "TaxBlock",
+        "source_label": "Tax Block",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.TaxTract",
+        "source_native_name": "TaxTract",
+        "source_label": "Tax Tract",
+        "source_definition": "A type of legal description for land in developed areas where streets or other rights-of-ways delineate large parcels of land referred to as divided into lots on which homes or other types of developments are built. An example would read \"Lot 12 of Block 45 of Tract 3002 of the City of San Dunes, Desert County.\" Such a description would also reference an official plat filed with the clerk or recorder for that area which shows the location of the block and often the dimensions of the lots therein.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Township",
+        "source_native_name": "Township",
+        "source_label": "Township",
+        "source_definition": "A subdivision of the county.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.Longitude",
+        "source_native_name": "Longitude",
+        "source_label": "Longitude",
+        "source_definition": "The geographic longitude of some reference point on the property, specified in degrees and decimal parts. Positive numbers must not include the plus symbol.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "longitude",
+          "ref": "base0001.longitude@1",
+          "kind": "property",
+          "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.Longitude",
+        "source_native_name": "Longitude",
+        "source_label": "Longitude",
+        "source_definition": "The geographic longitude of some reference point on the property, specified in degrees and decimal parts. Positive numbers must not include the plus symbol.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_exact_lexicon_name",
+        "binding": {
+          "symbol": "longitude",
+          "ref": "base0001.longitude@1",
+          "kind": "property",
+          "definition": "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+          "match_method": "exact_symbol_or_label",
+          "confidence": 1
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.MlsStatus",
+        "source_native_name": "MlsStatus",
+        "source_label": "MLS Status",
+        "source_definition": "A local or regional status that is well known by business users. Each MlsStatus field must map to a single StandardStatus. Multiple MlsStatus fields may map to a single StandardStatus.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.MlsStatus",
+        "source_enum_ref": "org.reso.metadata.enums.MlsStatus",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CityRegion",
+        "source_native_name": "CityRegion",
+        "source_label": "City Region",
+        "source_definition": "A subsection or area of a defined city (e.g., Soho in New York City; Ironbound in Newark, New Jersey; Georgetown in Washington, DC).",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PostalCity",
+        "source_native_name": "PostalCity",
+        "source_label": "Postal City",
+        "source_definition": "The official city per the U.S. Postal Service (USPS), which may be different from the recorded city.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.PostalCity",
+        "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.PostalCode",
+        "source_native_name": "PostalCode",
+        "source_label": "Postal Code",
+        "source_definition": "The postal code portion of the building's street or mailing address.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "has_postal_code",
+          "ref": "base0001.has_postal_code@1",
+          "kind": "property",
+          "definition": "The postal code. For example, 94043.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.StreetName",
+        "source_native_name": "StreetName",
+        "source_label": "Street Name",
+        "source_definition": "The street name portion of the building's street address.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CityRegion",
+        "source_native_name": "CityRegion",
+        "source_label": "City Region",
+        "source_definition": "A subsection or area of a defined city (e.g., SOHO in New York, NY; Ironbound in Newark, NJ; Inside the Beltway).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PostalCity",
+        "source_native_name": "PostalCity",
+        "source_label": "Postal City",
+        "source_definition": "The official city per the U.S. Postal Service (USPS), which may be different from the recorded city.",
+        "source_resource": "Property",
+        "source_data_type": "org.reso.metadata.enums.PostalCity",
+        "source_enum_ref": "org.reso.metadata.enums.PostalCity",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.PostalCode",
+        "source_native_name": "PostalCode",
+        "source_label": "Postal Code",
+        "source_definition": "The postal code portion of a street or mailing address.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "has_postal_code",
+          "ref": "base0001.has_postal_code@1",
+          "kind": "property",
+          "definition": "The postal code. For example, 94043.",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StreetName",
+        "source_native_name": "StreetName",
+        "source_label": "Street Name",
+        "source_definition": "The street name portion of a listed property's street address.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.UnitNumber",
+        "source_native_name": "UnitNumber",
+        "source_label": "Unit Number",
+        "source_definition": "A text field containing the unit number or portion of a larger building or complex that should appear following the street suffix or, if it exists, the street suffix direction in the street address (e.g., Apt G, #55).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.CrossStreet",
+        "source_native_name": "CrossStreet",
+        "source_label": "Cross Street",
+        "source_definition": "Indicated the nearest cross street to the property.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.CrossStreet",
+        "source_native_name": "CrossStreet",
+        "source_label": "Cross Street",
+        "source_definition": "The nearest cross streets to the property. This field is in addition to and independent of the Driving Directions field.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.LeaseAmount",
+        "source_native_name": "LeaseAmount",
+        "source_label": "Lease Amount",
+        "source_definition": "The amount of any lease the business pays for its current location.",
+        "source_resource": "Property",
+        "source_data_type": "Edm.Decimal",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Property.StateRegion",
+        "source_native_name": "StateRegion",
+        "source_label": "State Region",
+        "source_definition": "A subsection or area of a defined state or province (e.g., Florida Keys, Hudson Valley in New York, Silicon Valley in California).",
+        "source_resource": "Property",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.ParcelNumber",
+        "source_native_name": "ParcelNumber",
+        "source_label": "Parcel Number",
+        "source_definition": "A number used to uniquely identify a parcel or lot. This number is typically issued by the county or county assessor. The APN (Assessor's Parcel Number) format varies from county to county. It is recommended that all parcel numbers be transmitted without dashes or hyphens.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "mapped_contextual_crosswalk",
+        "binding": {
+          "symbol": "identifier",
+          "ref": "base0001.identifier@1",
+          "kind": "property",
+          "definition": "{\"text\":null}",
+          "match_method": "curated_contextual_crosswalk",
+          "confidence": 0.95
+        }
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.StreetNumber",
+        "source_native_name": "StreetNumber",
+        "source_label": "Street Number",
+        "source_definition": "The street number portion of the building's street address. In some areas, the street number may contain non-numeric characters. This field can also contain extensions and modifiers to the street number, such as \"1/2\" or \"-B.\" This field should not include prefixes, direction or suffixes.",
+        "source_resource": "Building",
+        "source_data_type": "Edm.String",
+        "source_enum_ref": null,
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      },
+      {
+        "source": "RESO DD 2.1",
+        "source_id": "reso-dd-2.1.0",
+        "source_path": "Building.StreetSuffix",
+        "source_native_name": "StreetSuffix",
+        "source_label": "Street Suffix",
+        "source_definition": "The suffix portion of the street address.",
+        "source_resource": "Building",
+        "source_data_type": "org.reso.metadata.enums.StreetSuffix",
+        "source_enum_ref": "org.reso.metadata.enums.StreetSuffix",
+        "source_is_collection": false,
+        "source_nullable": true,
+        "mapping_status": "candidate_unmapped_to_universal_lexicon_v2",
+        "status": "candidate_requires_semantic_adjudication"
+      }
+    ],
+    "form_contract": {
+      "rule": "Form field identity is operational UI/CRUD identity and MUST NOT be conflated with LexiconTerm.symbol.",
+      "semantic_rule": "LexiconTerm.ref/symbol provide semantic binding when available; absence of an adjudicated binding does not make a source field unusable in forms."
+    }
+  }
+}
